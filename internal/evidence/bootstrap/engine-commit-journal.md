@@ -6,4 +6,4 @@
 - Validation before commit: staged whitespace check passed; shared skill syntax validator passed separately in Docs.
 - Proof boundary: documentation/bootstrap only. No runtime source, executable sample, runtime test result, benchmark or production maturity is established.
 - Commit author/committer: Cephalon-Neza with repository-local Git identity.
-- Remaining bootstrap validation: remote metadata/Project/task mirrors and cross-repository alignment readback.
+- Bootstrap validation: skill syntax and live metadata/document checks passed; machine-readable details are in [validation.json](validation.json). Final delivery checks confirm repository-local identity and branch alignment separately; this evidence has no Docs/Samples commit journal.

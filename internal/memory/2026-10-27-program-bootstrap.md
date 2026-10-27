@@ -19,6 +19,7 @@ Timezone: Asia/Bangkok. Status: initial planning and GitHub/repository setup; se
 - Canonical shared skill: `skills/cehpalon-engine/SKILL.md`; each repo has AGENTS.md and Claude/Gemini entry files. Other tools must load the same guidance through their supported context mechanism; no vendor runtime integration is claimed.
 - Primary integrated two bounded read/research/document-writing agent assignments; only primary performed remote writes.
 - [Engine commit trace](../evidence/bootstrap/engine-commit-journal.md) records only Engine SHA. Repository bootstrap is not feature maturity.
+- Bootstrap issue #1 is completed after document/metadata checks; #2, #3, #4 and #23 are Ready. The remaining implementation tasks stay Backlog. The baseline closure does not approve every proposed architecture choice or certify runtime features.
 
 ## Research findings
 

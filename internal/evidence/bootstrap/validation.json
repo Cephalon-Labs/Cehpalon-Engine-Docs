@@ -1,0 +1,2242 @@
+{
+  "observed_at_utc": "2026-10-27T07:14:05.950464+00:00",
+  "scope": "Bootstrap metadata/documents only; no runtime tests, benchmark, CI pass or production proof",
+  "engine_revision": "34521e5ddd1b0ad7ab664dba825c69161e4344fc",
+  "checks_passed": 558,
+  "checks_total": 558,
+  "success": true,
+  "checks": [
+    {
+      "check": "Cehpalon-Engine: private/main",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine: local MIT license",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine: author and committer identity",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs: private/main",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs: local MIT license",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs: author and committer identity",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples: private/main",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples: local MIT license",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples: author and committer identity",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\AGENTS.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\AGENTS.md: link ../Cehpalon-Engine-Docs/skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\AGENTS.md: link ../Cehpalon-Engine-Docs/internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\CLAUDE.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\CLAUDE.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\GEMINI.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\GEMINI.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\Benchmarks\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\src\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\Tests\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\AGENTS.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\AGENTS.md: link skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\AGENTS.md: link internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\CLAUDE.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\CLAUDE.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\GEMINI.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\GEMINI.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link internal/planning/2026-10-27-program-plan.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link internal/requirements/coverage.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link internal/research/2026-10-27-reference-study.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link internal/standards/delivery-and-maturity.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link tasks/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: link public/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\evidence\\bootstrap\\engine-commit-journal.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\evidence\\bootstrap\\engine-commit-journal.md: link validation.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-program-bootstrap.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-program-bootstrap.md: link ../evidence/bootstrap/engine-commit-journal.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: link 2026-10-27-program-bootstrap.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: link ../planning/2026-10-27-program-plan.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: link ../../skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\2026-10-27-program-plan.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\2026-10-27-program-plan.md: link ../research/2026-10-27-reference-study.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\2026-10-27-user-request.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: link 2026-10-27-user-request.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: link ../memory/2026-10-27-program-bootstrap.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\research\\2026-10-27-reference-study.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\standards\\delivery-and-maturity.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\public\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\skills\\cehpalon-engine\\SKILL.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\1.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\10.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\11.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\12.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\13.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\14.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\15.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\16.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\17.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\18.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\19.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\2.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\20.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\21.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\22.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\23.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\3.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\4.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\5.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\6.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\7.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\8.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\9.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\AGENTS.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\AGENTS.md: link ../Cehpalon-Engine-Docs/skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\AGENTS.md: link ../Cehpalon-Engine-Docs/internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\CLAUDE.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\CLAUDE.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\GEMINI.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\GEMINI.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: link small-api/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: link multitenant-business/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: link ai-retrieval/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\ai-retrieval\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\multitenant-business\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\small-api\\README.md: UTF-8 text",
+      "passed": true
+    },
+    {
+      "check": "Exactly 23 planned Engine issues, no duplicate bootstrap issues",
+      "passed": true
+    },
+    {
+      "check": "Project 4 identity/private/open",
+      "passed": true
+    },
+    {
+      "check": "Project has exactly the 23 Engine issues",
+      "passed": true
+    },
+    {
+      "check": "#1: title",
+      "passed": true
+    },
+    {
+      "check": "#1: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#1: labels",
+      "passed": true
+    },
+    {
+      "check": "#1: owner",
+      "passed": true
+    },
+    {
+      "check": "#1: milestone",
+      "passed": true
+    },
+    {
+      "check": "#1: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#1: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#1: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#1: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#1: Status",
+      "passed": true
+    },
+    {
+      "check": "#1: Priority",
+      "passed": true
+    },
+    {
+      "check": "#1: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#1: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#1: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#1: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#1: Feature",
+      "passed": true
+    },
+    {
+      "check": "#1: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#1: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#1: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#1: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#2: title",
+      "passed": true
+    },
+    {
+      "check": "#2: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#2: labels",
+      "passed": true
+    },
+    {
+      "check": "#2: owner",
+      "passed": true
+    },
+    {
+      "check": "#2: milestone",
+      "passed": true
+    },
+    {
+      "check": "#2: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#2: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#2: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#2: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#2: Status",
+      "passed": true
+    },
+    {
+      "check": "#2: Priority",
+      "passed": true
+    },
+    {
+      "check": "#2: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#2: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#2: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#2: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#2: Feature",
+      "passed": true
+    },
+    {
+      "check": "#2: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#2: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#2: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#2: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#3: title",
+      "passed": true
+    },
+    {
+      "check": "#3: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#3: labels",
+      "passed": true
+    },
+    {
+      "check": "#3: owner",
+      "passed": true
+    },
+    {
+      "check": "#3: milestone",
+      "passed": true
+    },
+    {
+      "check": "#3: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#3: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#3: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#3: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#3: Status",
+      "passed": true
+    },
+    {
+      "check": "#3: Priority",
+      "passed": true
+    },
+    {
+      "check": "#3: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#3: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#3: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#3: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#3: Feature",
+      "passed": true
+    },
+    {
+      "check": "#3: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#3: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#3: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#3: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#4: title",
+      "passed": true
+    },
+    {
+      "check": "#4: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#4: labels",
+      "passed": true
+    },
+    {
+      "check": "#4: owner",
+      "passed": true
+    },
+    {
+      "check": "#4: milestone",
+      "passed": true
+    },
+    {
+      "check": "#4: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#4: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#4: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#4: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#4: Status",
+      "passed": true
+    },
+    {
+      "check": "#4: Priority",
+      "passed": true
+    },
+    {
+      "check": "#4: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#4: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#4: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#4: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#4: Feature",
+      "passed": true
+    },
+    {
+      "check": "#4: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#4: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#4: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#4: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#5: title",
+      "passed": true
+    },
+    {
+      "check": "#5: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#5: labels",
+      "passed": true
+    },
+    {
+      "check": "#5: owner",
+      "passed": true
+    },
+    {
+      "check": "#5: milestone",
+      "passed": true
+    },
+    {
+      "check": "#5: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#5: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#5: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#5: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#5: Status",
+      "passed": true
+    },
+    {
+      "check": "#5: Priority",
+      "passed": true
+    },
+    {
+      "check": "#5: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#5: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#5: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#5: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#5: Feature",
+      "passed": true
+    },
+    {
+      "check": "#5: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#5: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#5: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#5: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#6: title",
+      "passed": true
+    },
+    {
+      "check": "#6: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#6: labels",
+      "passed": true
+    },
+    {
+      "check": "#6: owner",
+      "passed": true
+    },
+    {
+      "check": "#6: milestone",
+      "passed": true
+    },
+    {
+      "check": "#6: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#6: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#6: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#6: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#6: Status",
+      "passed": true
+    },
+    {
+      "check": "#6: Priority",
+      "passed": true
+    },
+    {
+      "check": "#6: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#6: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#6: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#6: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#6: Feature",
+      "passed": true
+    },
+    {
+      "check": "#6: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#6: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#6: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#6: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#7: title",
+      "passed": true
+    },
+    {
+      "check": "#7: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#7: labels",
+      "passed": true
+    },
+    {
+      "check": "#7: owner",
+      "passed": true
+    },
+    {
+      "check": "#7: milestone",
+      "passed": true
+    },
+    {
+      "check": "#7: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#7: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#7: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#7: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#7: Status",
+      "passed": true
+    },
+    {
+      "check": "#7: Priority",
+      "passed": true
+    },
+    {
+      "check": "#7: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#7: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#7: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#7: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#7: Feature",
+      "passed": true
+    },
+    {
+      "check": "#7: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#7: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#7: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#7: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#8: title",
+      "passed": true
+    },
+    {
+      "check": "#8: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#8: labels",
+      "passed": true
+    },
+    {
+      "check": "#8: owner",
+      "passed": true
+    },
+    {
+      "check": "#8: milestone",
+      "passed": true
+    },
+    {
+      "check": "#8: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#8: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#8: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#8: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#8: Status",
+      "passed": true
+    },
+    {
+      "check": "#8: Priority",
+      "passed": true
+    },
+    {
+      "check": "#8: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#8: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#8: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#8: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#8: Feature",
+      "passed": true
+    },
+    {
+      "check": "#8: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#8: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#8: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#8: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#9: title",
+      "passed": true
+    },
+    {
+      "check": "#9: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#9: labels",
+      "passed": true
+    },
+    {
+      "check": "#9: owner",
+      "passed": true
+    },
+    {
+      "check": "#9: milestone",
+      "passed": true
+    },
+    {
+      "check": "#9: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#9: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#9: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#9: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#9: Status",
+      "passed": true
+    },
+    {
+      "check": "#9: Priority",
+      "passed": true
+    },
+    {
+      "check": "#9: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#9: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#9: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#9: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#9: Feature",
+      "passed": true
+    },
+    {
+      "check": "#9: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#9: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#9: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#9: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#10: title",
+      "passed": true
+    },
+    {
+      "check": "#10: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#10: labels",
+      "passed": true
+    },
+    {
+      "check": "#10: owner",
+      "passed": true
+    },
+    {
+      "check": "#10: milestone",
+      "passed": true
+    },
+    {
+      "check": "#10: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#10: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#10: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#10: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#10: Status",
+      "passed": true
+    },
+    {
+      "check": "#10: Priority",
+      "passed": true
+    },
+    {
+      "check": "#10: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#10: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#10: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#10: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#10: Feature",
+      "passed": true
+    },
+    {
+      "check": "#10: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#10: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#10: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#10: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#11: title",
+      "passed": true
+    },
+    {
+      "check": "#11: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#11: labels",
+      "passed": true
+    },
+    {
+      "check": "#11: owner",
+      "passed": true
+    },
+    {
+      "check": "#11: milestone",
+      "passed": true
+    },
+    {
+      "check": "#11: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#11: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#11: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#11: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#11: Status",
+      "passed": true
+    },
+    {
+      "check": "#11: Priority",
+      "passed": true
+    },
+    {
+      "check": "#11: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#11: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#11: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#11: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#11: Feature",
+      "passed": true
+    },
+    {
+      "check": "#11: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#11: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#11: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#11: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#12: title",
+      "passed": true
+    },
+    {
+      "check": "#12: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#12: labels",
+      "passed": true
+    },
+    {
+      "check": "#12: owner",
+      "passed": true
+    },
+    {
+      "check": "#12: milestone",
+      "passed": true
+    },
+    {
+      "check": "#12: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#12: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#12: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#12: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#12: Status",
+      "passed": true
+    },
+    {
+      "check": "#12: Priority",
+      "passed": true
+    },
+    {
+      "check": "#12: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#12: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#12: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#12: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#12: Feature",
+      "passed": true
+    },
+    {
+      "check": "#12: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#12: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#12: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#12: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#13: title",
+      "passed": true
+    },
+    {
+      "check": "#13: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#13: labels",
+      "passed": true
+    },
+    {
+      "check": "#13: owner",
+      "passed": true
+    },
+    {
+      "check": "#13: milestone",
+      "passed": true
+    },
+    {
+      "check": "#13: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#13: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#13: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#13: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#13: Status",
+      "passed": true
+    },
+    {
+      "check": "#13: Priority",
+      "passed": true
+    },
+    {
+      "check": "#13: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#13: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#13: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#13: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#13: Feature",
+      "passed": true
+    },
+    {
+      "check": "#13: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#13: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#13: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#13: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#14: title",
+      "passed": true
+    },
+    {
+      "check": "#14: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#14: labels",
+      "passed": true
+    },
+    {
+      "check": "#14: owner",
+      "passed": true
+    },
+    {
+      "check": "#14: milestone",
+      "passed": true
+    },
+    {
+      "check": "#14: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#14: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#14: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#14: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#14: Status",
+      "passed": true
+    },
+    {
+      "check": "#14: Priority",
+      "passed": true
+    },
+    {
+      "check": "#14: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#14: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#14: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#14: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#14: Feature",
+      "passed": true
+    },
+    {
+      "check": "#14: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#14: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#14: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#14: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#15: title",
+      "passed": true
+    },
+    {
+      "check": "#15: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#15: labels",
+      "passed": true
+    },
+    {
+      "check": "#15: owner",
+      "passed": true
+    },
+    {
+      "check": "#15: milestone",
+      "passed": true
+    },
+    {
+      "check": "#15: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#15: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#15: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#15: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#15: Status",
+      "passed": true
+    },
+    {
+      "check": "#15: Priority",
+      "passed": true
+    },
+    {
+      "check": "#15: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#15: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#15: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#15: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#15: Feature",
+      "passed": true
+    },
+    {
+      "check": "#15: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#15: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#15: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#15: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#16: title",
+      "passed": true
+    },
+    {
+      "check": "#16: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#16: labels",
+      "passed": true
+    },
+    {
+      "check": "#16: owner",
+      "passed": true
+    },
+    {
+      "check": "#16: milestone",
+      "passed": true
+    },
+    {
+      "check": "#16: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#16: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#16: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#16: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#16: Status",
+      "passed": true
+    },
+    {
+      "check": "#16: Priority",
+      "passed": true
+    },
+    {
+      "check": "#16: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#16: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#16: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#16: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#16: Feature",
+      "passed": true
+    },
+    {
+      "check": "#16: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#16: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#16: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#16: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#17: title",
+      "passed": true
+    },
+    {
+      "check": "#17: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#17: labels",
+      "passed": true
+    },
+    {
+      "check": "#17: owner",
+      "passed": true
+    },
+    {
+      "check": "#17: milestone",
+      "passed": true
+    },
+    {
+      "check": "#17: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#17: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#17: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#17: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#17: Status",
+      "passed": true
+    },
+    {
+      "check": "#17: Priority",
+      "passed": true
+    },
+    {
+      "check": "#17: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#17: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#17: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#17: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#17: Feature",
+      "passed": true
+    },
+    {
+      "check": "#17: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#17: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#17: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#17: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#18: title",
+      "passed": true
+    },
+    {
+      "check": "#18: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#18: labels",
+      "passed": true
+    },
+    {
+      "check": "#18: owner",
+      "passed": true
+    },
+    {
+      "check": "#18: milestone",
+      "passed": true
+    },
+    {
+      "check": "#18: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#18: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#18: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#18: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#18: Status",
+      "passed": true
+    },
+    {
+      "check": "#18: Priority",
+      "passed": true
+    },
+    {
+      "check": "#18: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#18: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#18: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#18: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#18: Feature",
+      "passed": true
+    },
+    {
+      "check": "#18: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#18: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#18: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#18: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#19: title",
+      "passed": true
+    },
+    {
+      "check": "#19: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#19: labels",
+      "passed": true
+    },
+    {
+      "check": "#19: owner",
+      "passed": true
+    },
+    {
+      "check": "#19: milestone",
+      "passed": true
+    },
+    {
+      "check": "#19: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#19: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#19: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#19: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#19: Status",
+      "passed": true
+    },
+    {
+      "check": "#19: Priority",
+      "passed": true
+    },
+    {
+      "check": "#19: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#19: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#19: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#19: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#19: Feature",
+      "passed": true
+    },
+    {
+      "check": "#19: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#19: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#19: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#19: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#20: title",
+      "passed": true
+    },
+    {
+      "check": "#20: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#20: labels",
+      "passed": true
+    },
+    {
+      "check": "#20: owner",
+      "passed": true
+    },
+    {
+      "check": "#20: milestone",
+      "passed": true
+    },
+    {
+      "check": "#20: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#20: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#20: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#20: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#20: Status",
+      "passed": true
+    },
+    {
+      "check": "#20: Priority",
+      "passed": true
+    },
+    {
+      "check": "#20: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#20: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#20: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#20: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#20: Feature",
+      "passed": true
+    },
+    {
+      "check": "#20: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#20: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#20: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#20: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#21: title",
+      "passed": true
+    },
+    {
+      "check": "#21: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#21: labels",
+      "passed": true
+    },
+    {
+      "check": "#21: owner",
+      "passed": true
+    },
+    {
+      "check": "#21: milestone",
+      "passed": true
+    },
+    {
+      "check": "#21: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#21: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#21: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#21: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#21: Status",
+      "passed": true
+    },
+    {
+      "check": "#21: Priority",
+      "passed": true
+    },
+    {
+      "check": "#21: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#21: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#21: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#21: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#21: Feature",
+      "passed": true
+    },
+    {
+      "check": "#21: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#21: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#21: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#21: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#22: title",
+      "passed": true
+    },
+    {
+      "check": "#22: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#22: labels",
+      "passed": true
+    },
+    {
+      "check": "#22: owner",
+      "passed": true
+    },
+    {
+      "check": "#22: milestone",
+      "passed": true
+    },
+    {
+      "check": "#22: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#22: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#22: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#22: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#22: Status",
+      "passed": true
+    },
+    {
+      "check": "#22: Priority",
+      "passed": true
+    },
+    {
+      "check": "#22: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#22: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#22: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#22: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#22: Feature",
+      "passed": true
+    },
+    {
+      "check": "#22: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#22: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#22: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#22: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "#23: title",
+      "passed": true
+    },
+    {
+      "check": "#23: native Issue Type",
+      "passed": true
+    },
+    {
+      "check": "#23: labels",
+      "passed": true
+    },
+    {
+      "check": "#23: owner",
+      "passed": true
+    },
+    {
+      "check": "#23: milestone",
+      "passed": true
+    },
+    {
+      "check": "#23: native issue state",
+      "passed": true
+    },
+    {
+      "check": "#23: Markdown matches remote issue body",
+      "passed": true
+    },
+    {
+      "check": "#23: resolved mirror reference",
+      "passed": true
+    },
+    {
+      "check": "#23: stable Project item identity",
+      "passed": true
+    },
+    {
+      "check": "#23: Status",
+      "passed": true
+    },
+    {
+      "check": "#23: Priority",
+      "passed": true
+    },
+    {
+      "check": "#23: Maturity",
+      "passed": true
+    },
+    {
+      "check": "#23: Estimate low (h)",
+      "passed": true
+    },
+    {
+      "check": "#23: Estimate high (h)",
+      "passed": true
+    },
+    {
+      "check": "#23: Estimate (h)",
+      "passed": true
+    },
+    {
+      "check": "#23: Feature",
+      "passed": true
+    },
+    {
+      "check": "#23: Test gate",
+      "passed": true
+    },
+    {
+      "check": "#23: Benchmark gate",
+      "passed": true
+    },
+    {
+      "check": "#23: unmeasured actual/remaining hours are unset",
+      "passed": true
+    },
+    {
+      "check": "#23: no Docs/Samples SHA in commit journal",
+      "passed": true
+    },
+    {
+      "check": "Initial full Engine SHA traced in issue #1 comment",
+      "passed": true
+    },
+    {
+      "check": "Initial full Engine SHA recorded in #1 body and mirror",
+      "passed": true
+    }
+  ]
+}
