@@ -1,0 +1,656 @@
+{
+  "project_number": 4,
+  "project_id": "PVT_kwDOEDryKs4Bo6sb",
+  "issues": {
+    "baseline": {
+      "number": 1,
+      "node_id": "I_kwDOVY38nc8AAAABaOFxSg",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/1",
+      "body": "<!-- cehpalon-task: baseline -->\n## Outcome\nEstablish three-repository baseline and shared AI governance\n\n## Scope and acceptance criteria\n- [ ] Create private MIT Engine, Docs and Samples repositories and Project\n- [ ] Create native issue types, labels, priorities, milestones and task mirrors\n- [ ] Verify local/remote revision alignment, author identity and Engine SHA trace\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:governance\n- Priority: P0 (Project field)\n- Milestone: W0 - Baseline and Research\n- Owner: Cephalon-Neza\n- Dependencies: None\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: governance\n- Estimated person-hours: 4–8 (low confidence; planning midpoint 6)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/1.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IZM",
+      "fields_initialized": true
+    },
+    "architecture": {
+      "number": 2,
+      "node_id": "I_kwDOVY38nc8AAAABaOFzoA",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/2",
+      "body": "<!-- cehpalon-task: architecture -->\n## Outcome\nDefine requirements, capability matrix and architecture ADRs\n\n## Scope and acceptance criteria\n- [ ] Map each user requirement to feature, sample and evidence gate\n- [ ] Define portable operation contracts, supported profile combinations and activation boundaries\n- [ ] Record accepted versus proposed design and prioritized first providers\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:architecture\n- Priority: P0 (Project field)\n- Milestone: W0 - Baseline and Research\n- Owner: Cephalon-Neza\n- Dependencies: #1\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: architecture\n- Estimated person-hours: 16–32 (low confidence; planning midpoint 24)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/2.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IeI",
+      "fields_initialized": true
+    },
+    "platform": {
+      "number": 3,
+      "node_id": "I_kwDOVY38nc8AAAABaOF1sg",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/3",
+      "body": "<!-- cehpalon-task: platform -->\n## Outcome\nQualify .NET 11 RC3 SDK and maintain .NET 12 research track\n\n## Scope and acceptance criteria\n- [ ] Verify exact SDK distribution, checksums, go-live status and provider compatibility\n- [ ] Pin SDK and dependency policy without replacing unrelated system runtimes\n- [ ] Track .NET 12 proposals separately from supported public contracts\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:runtime\n- Priority: P0 (Project field)\n- Milestone: W0 - Baseline and Research\n- Owner: Cephalon-Neza\n- Dependencies: #1\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: runtime\n- Estimated person-hours: 8–24 (low confidence; planning midpoint 16)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/3.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IjM",
+      "fields_initialized": true
+    },
+    "research": {
+      "number": 4,
+      "node_id": "I_kwDOVY38nc8AAAABaOF4Fg",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/4",
+      "body": "<!-- cehpalon-task: research -->\n## Outcome\nCompare framework, runtime, OS and architecture reference approaches\n\n## Scope and acceptance criteria\n- [ ] Expand initial official-source comparison with versioned feature and tradeoff matrix\n- [ ] Study OS/GC/network/server constraints and define Engine scope\n- [ ] Predeclare experiments before making superiority or performance claims\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:architecture\n- Priority: P1 (Project field)\n- Milestone: W0 - Baseline and Research\n- Owner: Cephalon-Neza\n- Dependencies: #1\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: architecture\n- Estimated person-hours: 16–32 (low confidence; planning midpoint 24)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/4.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IoU",
+      "fields_initialized": true
+    },
+    "core": {
+      "number": 5,
+      "node_id": "I_kwDOVY38nc8AAAABaOF6_Q",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/5",
+      "body": "<!-- cehpalon-task: core -->\n## Outcome\nImplement host-agnostic operation contracts and core dispatch\n\n## Scope and acceptance criteria\n- [ ] Build small portable contracts without host/provider objects\n- [ ] Prove result/error/cancellation and dependency boundaries\n- [ ] Use the same business operation in consumer contract tests\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:core\n- Priority: P0 (Project field)\n- Milestone: W1 - Core and Composition\n- Owner: Cephalon-Neza\n- Dependencies: #2, #3\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: core\n- Estimated person-hours: 32–64 (low confidence; planning midpoint 48)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/5.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Iuo",
+      "fields_initialized": true
+    },
+    "composition": {
+      "number": 6,
+      "node_id": "I_kwDOVY38nc8AAAABaOF9Mg",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/6",
+      "body": "<!-- cehpalon-task: composition -->\n## Outcome\nCompile appsettings into a validated immutable activation plan\n\n## Scope and acceptance criteria\n- [ ] Reject invalid dependencies and incompatible profiles before callbacks\n- [ ] Prove explicit false causes zero module-owned activation\n- [ ] Explain effective enabled modules and test API-only, API+GraphQL and Worker-only\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:configuration\n- Priority: P0 (Project field)\n- Milestone: W1 - Core and Composition\n- Owner: Cephalon-Neza\n- Dependencies: #5\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: configuration\n- Estimated person-hours: 40–80 (low confidence; planning midpoint 60)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/6.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Izc",
+      "fields_initialized": true
+    },
+    "tenancy": {
+      "number": 7,
+      "node_id": "I_kwDOVY38nc8AAAABaOF_sA",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/7",
+      "body": "<!-- cehpalon-task: tenancy -->\n## Outcome\nEnforce tenant isolation across operation and provider boundaries\n\n## Scope and acceptance criteria\n- [ ] Define trusted tenant resolution and immutable operation context\n- [ ] Prove negative cross-tenant cases including jobs/events/cache/retrieval\n- [ ] Document every supported isolation model and provider-specific proof\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:tenancy\n- Priority: P0 (Project field)\n- Milestone: W1 - Core and Composition\n- Owner: Cephalon-Neza\n- Dependencies: #5, #2\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: tenancy\n- Estimated person-hours: 32–64 (low confidence; planning midpoint 48)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/7.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0I3Y",
+      "fields_initialized": true
+    },
+    "identity": {
+      "number": 8,
+      "node_id": "I_kwDOVY38nc8AAAABaOGB2A",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/8",
+      "body": "<!-- cehpalon-task: identity -->\n## Outcome\nImplement identity and authorization capability contracts\n\n## Scope and acceptance criteria\n- [ ] Use established protocol implementations and explicit trust boundaries\n- [ ] Prove authentication, policy denial and tenant binding on real sample paths\n- [ ] Document token/session/key lifecycle and failure behavior\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:identity\n- Priority: P0 (Project field)\n- Milestone: W1 - Core and Composition\n- Owner: Cephalon-Neza\n- Dependencies: #5, #7\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: identity\n- Estimated person-hours: 32–64 (low confidence; planning midpoint 48)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/8.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0I9o",
+      "fields_initialized": true
+    },
+    "rest_graphql": {
+      "number": 9,
+      "node_id": "I_kwDOVY38nc8AAAABaOGD_A",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/9",
+      "body": "<!-- cehpalon-task: rest_graphql -->\n## Outcome\nReuse business operations through API and GraphQL adapters\n\n## Scope and acceptance criteria\n- [ ] Map one operation to both transports with explicit contracts\n- [ ] Prove policy, tenant, error, validation and cancellation parity\n- [ ] Prove disabled entrypoints do no work and schema exposure matches configuration\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:transports\n- Priority: P1 (Project field)\n- Milestone: W2 - Transports and Small API\n- Owner: Cephalon-Neza\n- Dependencies: #6, #8\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: transports\n- Estimated person-hours: 40–80 (low confidence; planning midpoint 60)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/9.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JDo",
+      "fields_initialized": true
+    },
+    "rpc_streaming": {
+      "number": 10,
+      "node_id": "I_kwDOVY38nc8AAAABaOGGRw",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/10",
+      "body": "<!-- cehpalon-task: rpc_streaming -->\n## Outcome\nAdd gRPC, JSON-RPC and SSE capability-specific adapters\n\n## Scope and acceptance criteria\n- [ ] Define protocol-specific schema/error/deadline and streaming mappings\n- [ ] Reuse supported handlers without treating every operation as every protocol\n- [ ] Run adapter conformance and unsupported-capability diagnostics\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:transports\n- Priority: P2 (Project field)\n- Milestone: W2 - Transports and Small API\n- Owner: Cephalon-Neza\n- Dependencies: #9\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: transports\n- Estimated person-hours: 48–96 (low confidence; planning midpoint 72)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/10.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JIo",
+      "fields_initialized": true
+    },
+    "small_sample": {
+      "number": 11,
+      "node_id": "I_kwDOVY38nc8AAAABaOGIZQ",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/11",
+      "body": "<!-- cehpalon-task: small_sample -->\n## Outcome\nDeliver the Small API sample and profile portability proof\n\n## Scope and acceptance criteria\n- [ ] Consume Engine as an external project/package with a pinned revision\n- [ ] Demonstrate API-only and opt-in additional transport with shared business logic\n- [ ] Measure startup, idle footprint and disabled-module activation\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:samples\n- Priority: P1 (Project field)\n- Milestone: W2 - Transports and Small API\n- Owner: Cephalon-Neza\n- Dependencies: #9\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: samples\n- Estimated person-hours: 24–48 (low confidence; planning midpoint 36)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/11.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JPM",
+      "fields_initialized": true
+    },
+    "data": {
+      "number": 12,
+      "node_id": "I_kwDOVY38nc8AAAABaOGK8g",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/12",
+      "body": "<!-- cehpalon-task: data -->\n## Outcome\nDefine data/document capabilities and first real provider adapters\n\n## Scope and acceptance criteria\n- [ ] Choose first SQL/document providers from compatibility results\n- [ ] Prove transactions, query limits, concurrency, isolation and migrations per provider\n- [ ] Reject unsupported semantics instead of silently weakening guarantees\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:data\n- Priority: P1 (Project field)\n- Milestone: W3 - State and Durable Business\n- Owner: Cephalon-Neza\n- Dependencies: #5, #7, #3\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: data\n- Estimated person-hours: 48–96 (low confidence; planning midpoint 72)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/12.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JUg",
+      "fields_initialized": true
+    },
+    "cache": {
+      "number": 13,
+      "node_id": "I_kwDOVY38nc8AAAABaOGNtg",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/13",
+      "body": "<!-- cehpalon-task: cache -->\n## Outcome\nAdd local and distributed cache capability adapters\n\n## Scope and acceptance criteria\n- [ ] Define expiration, serialization, key scoping and invalidation semantics\n- [ ] Prove tenant isolation and distributed failure/stampede behavior\n- [ ] Measure realistic cache paths against provider baseline\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:cache\n- Priority: P2 (Project field)\n- Milestone: W3 - State and Durable Business\n- Owner: Cephalon-Neza\n- Dependencies: #7, #12\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: cache\n- Estimated person-hours: 24–48 (low confidence; planning midpoint 36)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/13.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JZ4",
+      "fields_initialized": true
+    },
+    "events": {
+      "number": 14,
+      "node_id": "I_kwDOVY38nc8AAAABaOGQHw",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/14",
+      "body": "<!-- cehpalon-task: events -->\n## Outcome\nImplement durable eventing, Worker and scaling contracts\n\n## Scope and acceptance criteria\n- [ ] Prove outbox/inbox boundaries, idempotency and provider delivery guarantees\n- [ ] Test duplicate, crash, retry, poison messages, ordering scope and recovery\n- [ ] Prove scale-out worker behavior and disabled Worker has no startup work\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:eventing\n- Priority: P1 (Project field)\n- Milestone: W3 - State and Durable Business\n- Owner: Cephalon-Neza\n- Dependencies: #6, #12, #8\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: eventing\n- Estimated person-hours: 64–128 (low confidence; planning midpoint 96)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/14.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JeY",
+      "fields_initialized": true
+    },
+    "business_sample": {
+      "number": 15,
+      "node_id": "I_kwDOVY38nc8AAAABaOGSWQ",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/15",
+      "body": "<!-- cehpalon-task: business_sample -->\n## Outcome\nDeliver the multitenant API, Worker and SQL business sample\n\n## Scope and acceptance criteria\n- [ ] Reuse business handlers across declared local/distributed profiles\n- [ ] Run real-provider E2E tenant authorization and recovery scenarios\n- [ ] Record throughput, tail latency, backlog and resource limits under declared load\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:samples\n- Priority: P1 (Project field)\n- Milestone: W3 - State and Durable Business\n- Owner: Cephalon-Neza\n- Dependencies: #14, #9, #12\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: samples\n- Estimated person-hours: 40–80 (low confidence; planning midpoint 60)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/15.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JjY",
+      "fields_initialized": true
+    },
+    "ai": {
+      "number": 16,
+      "node_id": "I_kwDOVY38nc8AAAABaOGUlw",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/16",
+      "body": "<!-- cehpalon-task: ai -->\n## Outcome\nImplement provider-neutral AI, Agent and Retrieval capabilities\n\n## Scope and acceptance criteria\n- [ ] Separate model, embeddings, retrieval, tool and agent lifecycle contracts\n- [ ] Prove tenant-scoped retrieval, tool authorization, budgets and cancellation\n- [ ] Declare provider-specific structured-output, tool and failure capabilities\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:ai\n- Priority: P1 (Project field)\n- Milestone: W4 - AI and Operations\n- Owner: Cephalon-Neza\n- Dependencies: #6, #7, #8, #12\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: ai\n- Estimated person-hours: 64–128 (low confidence; planning midpoint 96)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/16.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Jm0",
+      "fields_initialized": true
+    },
+    "ai_sample": {
+      "number": 17,
+      "node_id": "I_kwDOVY38nc8AAAABaOGXBQ",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/17",
+      "body": "<!-- cehpalon-task: ai_sample -->\n## Outcome\nDeliver AI/Agent and Retrieval sample with bounded evaluations\n\n## Scope and acceptance criteria\n- [ ] Run deterministic fixtures and separately labeled real-provider E2E\n- [ ] Test adversarial retrieval/tool boundaries and cross-tenant denial\n- [ ] Measure task success, latency, token/cost budgets and failure recovery\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:samples\n- Priority: P1 (Project field)\n- Milestone: W4 - AI and Operations\n- Owner: Cephalon-Neza\n- Dependencies: #16\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: samples\n- Estimated person-hours: 40–80 (low confidence; planning midpoint 60)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/17.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JrE",
+      "fields_initialized": true
+    },
+    "observability": {
+      "number": 18,
+      "node_id": "I_kwDOVY38nc8AAAABaOGZkw",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/18",
+      "body": "<!-- cehpalon-task: observability -->\n## Outcome\nProvide observability, resilience and resource-budget integration\n\n## Scope and acceptance criteria\n- [ ] Define trace/log/metric contracts, propagation and sensitive-data policy\n- [ ] Integrate cancellation/deadlines/rate/resource budgets on supported paths\n- [ ] Measure telemetry overhead and prove shutdown/recovery visibility\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:observability\n- Priority: P1 (Project field)\n- Milestone: W4 - AI and Operations\n- Owner: Cephalon-Neza\n- Dependencies: #5, #6\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: observability\n- Estimated person-hours: 32–64 (low confidence; planning midpoint 48)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/18.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Jw4",
+      "fields_initialized": true
+    },
+    "hosting": {
+      "number": 19,
+      "node_id": "I_kwDOVY38nc8AAAABaOGbwQ",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/19",
+      "body": "<!-- cehpalon-task: hosting -->\n## Outcome\nQualify host and deployment profiles through a capability matrix\n\n## Scope and acceptance criteria\n- [ ] Prove selected Windows/Linux, container, proxy and Kubernetes profiles first\n- [ ] List serverless/edge filesystem/streaming/background constraints per target\n- [ ] Validate startup, shutdown, health, configuration and scaling/rollback paths\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:hosting\n- Priority: P2 (Project field)\n- Milestone: W4 - AI and Operations\n- Owner: Cephalon-Neza\n- Dependencies: #6, #18\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: hosting\n- Estimated person-hours: 48–96 (low confidence; planning midpoint 72)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/19.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0J3o",
+      "fields_initialized": true
+    },
+    "tooling": {
+      "number": 20,
+      "node_id": "I_kwDOVY38nc8AAAABaOGd4Q",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/20",
+      "body": "<!-- cehpalon-task: tooling -->\n## Outcome\nBuild CLI, scaffolding and operation-contract code generation\n\n## Scope and acceptance criteria\n- [ ] Generate minimal selected profiles and compatible transport schemas\n- [ ] Fail on unsupported combinations with actionable diagnostics\n- [ ] Validate generated consumers build and E2E behavior matches selected features\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:tooling\n- Priority: P2 (Project field)\n- Milestone: W5 - Tooling and Distribution\n- Owner: Cephalon-Neza\n- Dependencies: #2, #11\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: tooling\n- Estimated person-hours: 40–80 (low confidence; planning midpoint 60)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/20.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0J8k",
+      "fields_initialized": true
+    },
+    "quality": {
+      "number": 21,
+      "node_id": "I_kwDOVY38nc8AAAABaOGgPw",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/21",
+      "body": "<!-- cehpalon-task: quality -->\n## Outcome\nPredeclare testing, security and benchmark conformance strategy\n\n## Scope and acceptance criteria\n- [ ] Define feature/provider/version/host proof matrix for all three sample lanes\n- [ ] Specify baseline, workloads, thresholds, raw evidence and failure retention\n- [ ] Separate correctness, security, performance, CI blockers and M0-M4 decisions\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:quality\n- Priority: P0 (Project field)\n- Milestone: W0 - Baseline and Research\n- Owner: Cephalon-Neza\n- Dependencies: #2, #3\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: quality\n- Estimated person-hours: 24–48 (low confidence; planning midpoint 36)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/21.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0KEI",
+      "fields_initialized": true
+    },
+    "package": {
+      "number": 22,
+      "node_id": "I_kwDOVY38nc8AAAABaOGifg",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/22",
+      "body": "<!-- cehpalon-task: package -->\n## Outcome\nPrepare NuGet packaging and developer documentation readiness\n\n## Scope and acceptance criteria\n- [ ] Validate local pack/install/upgrade and dependency/license/package metadata\n- [ ] Write tested quickstarts, compatibility/deprecation and migration policy\n- [ ] Produce release checklist; public publication requires separate explicit authorization\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:release\n- Priority: P2 (Project field)\n- Milestone: W5 - Tooling and Distribution\n- Owner: Cephalon-Neza\n- Dependencies: #11, #15, #17, #20\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: release\n- Estimated person-hours: 24–48 (low confidence; planning midpoint 36)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/22.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0KKY",
+      "fields_initialized": true
+    },
+    "sync": {
+      "number": 23,
+      "node_id": "I_kwDOVY38nc8AAAABaOGk5A",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/23",
+      "body": "<!-- cehpalon-task: sync -->\n## Outcome\nMaintain conflict-aware GitHub and Markdown synchronization\n\n## Scope and acceptance criteria\n- [ ] Validate native Type, Labels, Priority, milestone, status and hours in task mirrors\n- [ ] Detect concurrent edits and migrations without duplicate cards\n- [ ] Keep Engine-only SHA journal and observed-state readback snapshots\n\n## Tracking\n- Type: Task (native issue type)\n- Labels: area:governance\n- Priority: P1 (Project field)\n- Milestone: W0 - Baseline and Research\n- Owner: Cephalon-Neza\n- Dependencies: #1\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: governance\n- Estimated person-hours: 16–32 (low confidence; planning midpoint 24)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Not required for this task: planning/documentation/tooling-readiness scope has no runtime performance claim.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/23.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0KOs",
+      "fields_initialized": true
+    }
+  },
+  "milestones": {
+    "W0": {
+      "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/1",
+      "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/milestone/1",
+      "labels_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/1/labels",
+      "id": 18959060,
+      "node_id": "MI_kwDOVY38nc4BIUrU",
+      "number": 1,
+      "title": "W0 - Baseline and Research",
+      "description": "W0 workstream. Not a calendar week or delivery-date promise. See Docs program plan for scope and evidence gates.",
+      "creator": {
+        "login": "Cephalon-Neza",
+        "id": 272007299,
+        "node_id": "U_kgDOEDaAgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/272007299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cephalon-Neza",
+        "html_url": "https://github.com/Cephalon-Neza",
+        "followers_url": "https://api.github.com/users/Cephalon-Neza/followers",
+        "following_url": "https://api.github.com/users/Cephalon-Neza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cephalon-Neza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cephalon-Neza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cephalon-Neza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cephalon-Neza/orgs",
+        "repos_url": "https://api.github.com/users/Cephalon-Neza/repos",
+        "events_url": "https://api.github.com/users/Cephalon-Neza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cephalon-Neza/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-27T07:05:58Z",
+      "updated_at": "2026-10-27T07:05:58Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    "W1": {
+      "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/2",
+      "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/milestone/2",
+      "labels_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/2/labels",
+      "id": 18959061,
+      "node_id": "MI_kwDOVY38nc4BIUrV",
+      "number": 2,
+      "title": "W1 - Core and Composition",
+      "description": "W1 workstream. Not a calendar week or delivery-date promise. See Docs program plan for scope and evidence gates.",
+      "creator": {
+        "login": "Cephalon-Neza",
+        "id": 272007299,
+        "node_id": "U_kgDOEDaAgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/272007299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cephalon-Neza",
+        "html_url": "https://github.com/Cephalon-Neza",
+        "followers_url": "https://api.github.com/users/Cephalon-Neza/followers",
+        "following_url": "https://api.github.com/users/Cephalon-Neza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cephalon-Neza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cephalon-Neza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cephalon-Neza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cephalon-Neza/orgs",
+        "repos_url": "https://api.github.com/users/Cephalon-Neza/repos",
+        "events_url": "https://api.github.com/users/Cephalon-Neza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cephalon-Neza/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-27T07:05:58Z",
+      "updated_at": "2026-10-27T07:05:58Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    "W2": {
+      "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/3",
+      "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/milestone/3",
+      "labels_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/3/labels",
+      "id": 18959062,
+      "node_id": "MI_kwDOVY38nc4BIUrW",
+      "number": 3,
+      "title": "W2 - Transports and Small API",
+      "description": "W2 workstream. Not a calendar week or delivery-date promise. See Docs program plan for scope and evidence gates.",
+      "creator": {
+        "login": "Cephalon-Neza",
+        "id": 272007299,
+        "node_id": "U_kgDOEDaAgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/272007299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cephalon-Neza",
+        "html_url": "https://github.com/Cephalon-Neza",
+        "followers_url": "https://api.github.com/users/Cephalon-Neza/followers",
+        "following_url": "https://api.github.com/users/Cephalon-Neza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cephalon-Neza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cephalon-Neza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cephalon-Neza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cephalon-Neza/orgs",
+        "repos_url": "https://api.github.com/users/Cephalon-Neza/repos",
+        "events_url": "https://api.github.com/users/Cephalon-Neza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cephalon-Neza/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-27T07:05:59Z",
+      "updated_at": "2026-10-27T07:05:59Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    "W3": {
+      "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/4",
+      "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/milestone/4",
+      "labels_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/4/labels",
+      "id": 18959063,
+      "node_id": "MI_kwDOVY38nc4BIUrX",
+      "number": 4,
+      "title": "W3 - State and Durable Business",
+      "description": "W3 workstream. Not a calendar week or delivery-date promise. See Docs program plan for scope and evidence gates.",
+      "creator": {
+        "login": "Cephalon-Neza",
+        "id": 272007299,
+        "node_id": "U_kgDOEDaAgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/272007299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cephalon-Neza",
+        "html_url": "https://github.com/Cephalon-Neza",
+        "followers_url": "https://api.github.com/users/Cephalon-Neza/followers",
+        "following_url": "https://api.github.com/users/Cephalon-Neza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cephalon-Neza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cephalon-Neza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cephalon-Neza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cephalon-Neza/orgs",
+        "repos_url": "https://api.github.com/users/Cephalon-Neza/repos",
+        "events_url": "https://api.github.com/users/Cephalon-Neza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cephalon-Neza/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-27T07:06:00Z",
+      "updated_at": "2026-10-27T07:06:00Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    "W4": {
+      "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/5",
+      "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/milestone/5",
+      "labels_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/5/labels",
+      "id": 18959064,
+      "node_id": "MI_kwDOVY38nc4BIUrY",
+      "number": 5,
+      "title": "W4 - AI and Operations",
+      "description": "W4 workstream. Not a calendar week or delivery-date promise. See Docs program plan for scope and evidence gates.",
+      "creator": {
+        "login": "Cephalon-Neza",
+        "id": 272007299,
+        "node_id": "U_kgDOEDaAgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/272007299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cephalon-Neza",
+        "html_url": "https://github.com/Cephalon-Neza",
+        "followers_url": "https://api.github.com/users/Cephalon-Neza/followers",
+        "following_url": "https://api.github.com/users/Cephalon-Neza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cephalon-Neza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cephalon-Neza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cephalon-Neza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cephalon-Neza/orgs",
+        "repos_url": "https://api.github.com/users/Cephalon-Neza/repos",
+        "events_url": "https://api.github.com/users/Cephalon-Neza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cephalon-Neza/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-27T07:06:01Z",
+      "updated_at": "2026-10-27T07:06:01Z",
+      "due_on": null,
+      "closed_at": null
+    },
+    "W5": {
+      "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/6",
+      "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/milestone/6",
+      "labels_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/milestones/6/labels",
+      "id": 18959065,
+      "node_id": "MI_kwDOVY38nc4BIUrZ",
+      "number": 6,
+      "title": "W5 - Tooling and Distribution",
+      "description": "W5 workstream. Not a calendar week or delivery-date promise. See Docs program plan for scope and evidence gates.",
+      "creator": {
+        "login": "Cephalon-Neza",
+        "id": 272007299,
+        "node_id": "U_kgDOEDaAgw",
+        "avatar_url": "https://avatars.githubusercontent.com/u/272007299?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Cephalon-Neza",
+        "html_url": "https://github.com/Cephalon-Neza",
+        "followers_url": "https://api.github.com/users/Cephalon-Neza/followers",
+        "following_url": "https://api.github.com/users/Cephalon-Neza/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Cephalon-Neza/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Cephalon-Neza/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Cephalon-Neza/subscriptions",
+        "organizations_url": "https://api.github.com/users/Cephalon-Neza/orgs",
+        "repos_url": "https://api.github.com/users/Cephalon-Neza/repos",
+        "events_url": "https://api.github.com/users/Cephalon-Neza/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Cephalon-Neza/received_events",
+        "type": "User",
+        "user_view_type": "public",
+        "site_admin": false
+      },
+      "open_issues": 0,
+      "closed_issues": 0,
+      "state": "open",
+      "created_at": "2026-10-27T07:06:01Z",
+      "updated_at": "2026-10-27T07:06:01Z",
+      "due_on": null,
+      "closed_at": null
+    }
+  },
+  "fields": {
+    "Title": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlSA",
+      "name": "Title",
+      "type": "ProjectV2Field"
+    },
+    "Assignees": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlSI",
+      "name": "Assignees",
+      "type": "ProjectV2Field"
+    },
+    "Status": {
+      "id": "PVTSSF_lADOEDryKs4Bo6sbzhnYlSU",
+      "name": "Status",
+      "options": [
+        {
+          "id": "fda3be62",
+          "name": "Backlog"
+        },
+        {
+          "id": "9629fcfa",
+          "name": "Ready"
+        },
+        {
+          "id": "0e9bc0b1",
+          "name": "In Progress"
+        },
+        {
+          "id": "6e79f625",
+          "name": "Review"
+        },
+        {
+          "id": "17369a1c",
+          "name": "Test"
+        },
+        {
+          "id": "6c3ea5fe",
+          "name": "Benchmark"
+        },
+        {
+          "id": "913e83ba",
+          "name": "Blocked"
+        },
+        {
+          "id": "f77fcf71",
+          "name": "Done"
+        }
+      ],
+      "type": "ProjectV2SingleSelectField"
+    },
+    "Labels": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlSc",
+      "name": "Labels",
+      "type": "ProjectV2Field"
+    },
+    "Linked pull requests": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlSo",
+      "name": "Linked pull requests",
+      "type": "ProjectV2Field"
+    },
+    "Milestone": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlSw",
+      "name": "Milestone",
+      "type": "ProjectV2Field"
+    },
+    "Repository": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlS4",
+      "name": "Repository",
+      "type": "ProjectV2Field"
+    },
+    "Reviewers": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlTI",
+      "name": "Reviewers",
+      "type": "ProjectV2Field"
+    },
+    "Parent issue": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlTQ",
+      "name": "Parent issue",
+      "type": "ProjectV2Field"
+    },
+    "Sub-issues progress": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlTY",
+      "name": "Sub-issues progress",
+      "type": "ProjectV2Field"
+    },
+    "Created": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlTc",
+      "name": "Created",
+      "type": "ProjectV2Field"
+    },
+    "Updated": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlTg",
+      "name": "Updated",
+      "type": "ProjectV2Field"
+    },
+    "Closed": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYlTk",
+      "name": "Closed",
+      "type": "ProjectV2Field"
+    },
+    "Priority": {
+      "id": "PVTSSF_lADOEDryKs4Bo6sbzhnYn4I",
+      "name": "Priority",
+      "options": [
+        {
+          "id": "a8cf714d",
+          "name": "P0"
+        },
+        {
+          "id": "1db68e23",
+          "name": "P1"
+        },
+        {
+          "id": "af79ee27",
+          "name": "P2"
+        },
+        {
+          "id": "bd9018df",
+          "name": "P3"
+        }
+      ],
+      "type": "ProjectV2SingleSelectField"
+    },
+    "Estimate (h)": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYn4M",
+      "name": "Estimate (h)",
+      "type": "ProjectV2Field"
+    },
+    "Estimate low (h)": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYn4Q",
+      "name": "Estimate low (h)",
+      "type": "ProjectV2Field"
+    },
+    "Estimate high (h)": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYn5M",
+      "name": "Estimate high (h)",
+      "type": "ProjectV2Field"
+    },
+    "Actual (h)": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYn5Q",
+      "name": "Actual (h)",
+      "type": "ProjectV2Field"
+    },
+    "Remaining (h)": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYn5U",
+      "name": "Remaining (h)",
+      "type": "ProjectV2Field"
+    },
+    "Maturity": {
+      "id": "PVTSSF_lADOEDryKs4Bo6sbzhnYn6o",
+      "name": "Maturity",
+      "options": [
+        {
+          "id": "03010ea3",
+          "name": "M0"
+        },
+        {
+          "id": "0d2f020f",
+          "name": "M1"
+        },
+        {
+          "id": "a4f11eca",
+          "name": "M2"
+        },
+        {
+          "id": "d618a1c7",
+          "name": "M3"
+        },
+        {
+          "id": "bb195cc7",
+          "name": "M4"
+        }
+      ],
+      "type": "ProjectV2SingleSelectField"
+    },
+    "Test gate": {
+      "id": "PVTSSF_lADOEDryKs4Bo6sbzhnYn7Q",
+      "name": "Test gate",
+      "options": [
+        {
+          "id": "384ee7a5",
+          "name": "Planned"
+        },
+        {
+          "id": "c6e30d15",
+          "name": "Passed"
+        },
+        {
+          "id": "7580e81d",
+          "name": "Failed"
+        },
+        {
+          "id": "08757640",
+          "name": "Blocked"
+        },
+        {
+          "id": "391b3708",
+          "name": "Not required"
+        }
+      ],
+      "type": "ProjectV2SingleSelectField"
+    },
+    "Benchmark gate": {
+      "id": "PVTSSF_lADOEDryKs4Bo6sbzhnYn8A",
+      "name": "Benchmark gate",
+      "options": [
+        {
+          "id": "6c7483fc",
+          "name": "Planned"
+        },
+        {
+          "id": "f1ce04dd",
+          "name": "Passed"
+        },
+        {
+          "id": "db87edc3",
+          "name": "Failed"
+        },
+        {
+          "id": "3810828d",
+          "name": "Blocked"
+        },
+        {
+          "id": "28e35fb5",
+          "name": "Not required"
+        }
+      ],
+      "type": "ProjectV2SingleSelectField"
+    },
+    "Feature": {
+      "id": "PVTF_lADOEDryKs4Bo6sbzhnYn94",
+      "name": "Feature",
+      "type": "ProjectV2Field"
+    }
+  },
+  "scope": "Observed bootstrap state; refresh before later synchronization. Actual/Remaining hours unset intentionally."
+}

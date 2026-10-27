@@ -1,0 +1,532 @@
+{
+  "schema_version": 1,
+  "created": "2026-10-27",
+  "status": "Initial planning estimates; no runtime implementation certified",
+  "tasks": [
+    {
+      "key": "baseline",
+      "number_hint": 1,
+      "type": "Task",
+      "priority": "P0",
+      "milestone": "W0",
+      "area": "governance",
+      "estimate_low": 4,
+      "estimate_high": 8,
+      "dependencies": [],
+      "title": "Establish three-repository baseline and shared AI governance",
+      "acceptance": [
+        "Create private MIT Engine, Docs and Samples repositories and Project",
+        "Create native issue types, labels, priorities, milestones and task mirrors",
+        "Verify local/remote revision alignment, author identity and Engine SHA trace"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "architecture",
+      "number_hint": 2,
+      "type": "Task",
+      "priority": "P0",
+      "milestone": "W0",
+      "area": "architecture",
+      "estimate_low": 16,
+      "estimate_high": 32,
+      "dependencies": [
+        "baseline"
+      ],
+      "title": "Define requirements, capability matrix and architecture ADRs",
+      "acceptance": [
+        "Map each user requirement to feature, sample and evidence gate",
+        "Define portable operation contracts, supported profile combinations and activation boundaries",
+        "Record accepted versus proposed design and prioritized first providers"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "platform",
+      "number_hint": 3,
+      "type": "Task",
+      "priority": "P0",
+      "milestone": "W0",
+      "area": "runtime",
+      "estimate_low": 8,
+      "estimate_high": 24,
+      "dependencies": [
+        "baseline"
+      ],
+      "title": "Qualify .NET 11 RC3 SDK and maintain .NET 12 research track",
+      "acceptance": [
+        "Verify exact SDK distribution, checksums, go-live status and provider compatibility",
+        "Pin SDK and dependency policy without replacing unrelated system runtimes",
+        "Track .NET 12 proposals separately from supported public contracts"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "research",
+      "number_hint": 4,
+      "type": "Task",
+      "priority": "P1",
+      "milestone": "W0",
+      "area": "architecture",
+      "estimate_low": 16,
+      "estimate_high": 32,
+      "dependencies": [
+        "baseline"
+      ],
+      "title": "Compare framework, runtime, OS and architecture reference approaches",
+      "acceptance": [
+        "Expand initial official-source comparison with versioned feature and tradeoff matrix",
+        "Study OS/GC/network/server constraints and define Engine scope",
+        "Predeclare experiments before making superiority or performance claims"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "core",
+      "number_hint": 5,
+      "type": "Feature",
+      "priority": "P0",
+      "milestone": "W1",
+      "area": "core",
+      "estimate_low": 32,
+      "estimate_high": 64,
+      "dependencies": [
+        "architecture",
+        "platform"
+      ],
+      "title": "Implement host-agnostic operation contracts and core dispatch",
+      "acceptance": [
+        "Build small portable contracts without host/provider objects",
+        "Prove result/error/cancellation and dependency boundaries",
+        "Use the same business operation in consumer contract tests"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "composition",
+      "number_hint": 6,
+      "type": "Feature",
+      "priority": "P0",
+      "milestone": "W1",
+      "area": "configuration",
+      "estimate_low": 40,
+      "estimate_high": 80,
+      "dependencies": [
+        "core"
+      ],
+      "title": "Compile appsettings into a validated immutable activation plan",
+      "acceptance": [
+        "Reject invalid dependencies and incompatible profiles before callbacks",
+        "Prove explicit false causes zero module-owned activation",
+        "Explain effective enabled modules and test API-only, API+GraphQL and Worker-only"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "tenancy",
+      "number_hint": 7,
+      "type": "Feature",
+      "priority": "P0",
+      "milestone": "W1",
+      "area": "tenancy",
+      "estimate_low": 32,
+      "estimate_high": 64,
+      "dependencies": [
+        "core",
+        "architecture"
+      ],
+      "title": "Enforce tenant isolation across operation and provider boundaries",
+      "acceptance": [
+        "Define trusted tenant resolution and immutable operation context",
+        "Prove negative cross-tenant cases including jobs/events/cache/retrieval",
+        "Document every supported isolation model and provider-specific proof"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "identity",
+      "number_hint": 8,
+      "type": "Feature",
+      "priority": "P0",
+      "milestone": "W1",
+      "area": "identity",
+      "estimate_low": 32,
+      "estimate_high": 64,
+      "dependencies": [
+        "core",
+        "tenancy"
+      ],
+      "title": "Implement identity and authorization capability contracts",
+      "acceptance": [
+        "Use established protocol implementations and explicit trust boundaries",
+        "Prove authentication, policy denial and tenant binding on real sample paths",
+        "Document token/session/key lifecycle and failure behavior"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "rest_graphql",
+      "number_hint": 9,
+      "type": "Feature",
+      "priority": "P1",
+      "milestone": "W2",
+      "area": "transports",
+      "estimate_low": 40,
+      "estimate_high": 80,
+      "dependencies": [
+        "composition",
+        "identity"
+      ],
+      "title": "Reuse business operations through API and GraphQL adapters",
+      "acceptance": [
+        "Map one operation to both transports with explicit contracts",
+        "Prove policy, tenant, error, validation and cancellation parity",
+        "Prove disabled entrypoints do no work and schema exposure matches configuration"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "rpc_streaming",
+      "number_hint": 10,
+      "type": "Feature",
+      "priority": "P2",
+      "milestone": "W2",
+      "area": "transports",
+      "estimate_low": 48,
+      "estimate_high": 96,
+      "dependencies": [
+        "rest_graphql"
+      ],
+      "title": "Add gRPC, JSON-RPC and SSE capability-specific adapters",
+      "acceptance": [
+        "Define protocol-specific schema/error/deadline and streaming mappings",
+        "Reuse supported handlers without treating every operation as every protocol",
+        "Run adapter conformance and unsupported-capability diagnostics"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "small_sample",
+      "number_hint": 11,
+      "type": "Task",
+      "priority": "P1",
+      "milestone": "W2",
+      "area": "samples",
+      "estimate_low": 24,
+      "estimate_high": 48,
+      "dependencies": [
+        "rest_graphql"
+      ],
+      "title": "Deliver the Small API sample and profile portability proof",
+      "acceptance": [
+        "Consume Engine as an external project/package with a pinned revision",
+        "Demonstrate API-only and opt-in additional transport with shared business logic",
+        "Measure startup, idle footprint and disabled-module activation"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "data",
+      "number_hint": 12,
+      "type": "Feature",
+      "priority": "P1",
+      "milestone": "W3",
+      "area": "data",
+      "estimate_low": 48,
+      "estimate_high": 96,
+      "dependencies": [
+        "core",
+        "tenancy",
+        "platform"
+      ],
+      "title": "Define data/document capabilities and first real provider adapters",
+      "acceptance": [
+        "Choose first SQL/document providers from compatibility results",
+        "Prove transactions, query limits, concurrency, isolation and migrations per provider",
+        "Reject unsupported semantics instead of silently weakening guarantees"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "cache",
+      "number_hint": 13,
+      "type": "Feature",
+      "priority": "P2",
+      "milestone": "W3",
+      "area": "cache",
+      "estimate_low": 24,
+      "estimate_high": 48,
+      "dependencies": [
+        "tenancy",
+        "data"
+      ],
+      "title": "Add local and distributed cache capability adapters",
+      "acceptance": [
+        "Define expiration, serialization, key scoping and invalidation semantics",
+        "Prove tenant isolation and distributed failure/stampede behavior",
+        "Measure realistic cache paths against provider baseline"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "events",
+      "number_hint": 14,
+      "type": "Feature",
+      "priority": "P1",
+      "milestone": "W3",
+      "area": "eventing",
+      "estimate_low": 64,
+      "estimate_high": 128,
+      "dependencies": [
+        "composition",
+        "data",
+        "identity"
+      ],
+      "title": "Implement durable eventing, Worker and scaling contracts",
+      "acceptance": [
+        "Prove outbox/inbox boundaries, idempotency and provider delivery guarantees",
+        "Test duplicate, crash, retry, poison messages, ordering scope and recovery",
+        "Prove scale-out worker behavior and disabled Worker has no startup work"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "business_sample",
+      "number_hint": 15,
+      "type": "Task",
+      "priority": "P1",
+      "milestone": "W3",
+      "area": "samples",
+      "estimate_low": 40,
+      "estimate_high": 80,
+      "dependencies": [
+        "events",
+        "rest_graphql",
+        "data"
+      ],
+      "title": "Deliver the multitenant API, Worker and SQL business sample",
+      "acceptance": [
+        "Reuse business handlers across declared local/distributed profiles",
+        "Run real-provider E2E tenant authorization and recovery scenarios",
+        "Record throughput, tail latency, backlog and resource limits under declared load"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "ai",
+      "number_hint": 16,
+      "type": "Feature",
+      "priority": "P1",
+      "milestone": "W4",
+      "area": "ai",
+      "estimate_low": 64,
+      "estimate_high": 128,
+      "dependencies": [
+        "composition",
+        "tenancy",
+        "identity",
+        "data"
+      ],
+      "title": "Implement provider-neutral AI, Agent and Retrieval capabilities",
+      "acceptance": [
+        "Separate model, embeddings, retrieval, tool and agent lifecycle contracts",
+        "Prove tenant-scoped retrieval, tool authorization, budgets and cancellation",
+        "Declare provider-specific structured-output, tool and failure capabilities"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "ai_sample",
+      "number_hint": 17,
+      "type": "Task",
+      "priority": "P1",
+      "milestone": "W4",
+      "area": "samples",
+      "estimate_low": 40,
+      "estimate_high": 80,
+      "dependencies": [
+        "ai"
+      ],
+      "title": "Deliver AI/Agent and Retrieval sample with bounded evaluations",
+      "acceptance": [
+        "Run deterministic fixtures and separately labeled real-provider E2E",
+        "Test adversarial retrieval/tool boundaries and cross-tenant denial",
+        "Measure task success, latency, token/cost budgets and failure recovery"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "observability",
+      "number_hint": 18,
+      "type": "Feature",
+      "priority": "P1",
+      "milestone": "W4",
+      "area": "observability",
+      "estimate_low": 32,
+      "estimate_high": 64,
+      "dependencies": [
+        "core",
+        "composition"
+      ],
+      "title": "Provide observability, resilience and resource-budget integration",
+      "acceptance": [
+        "Define trace/log/metric contracts, propagation and sensitive-data policy",
+        "Integrate cancellation/deadlines/rate/resource budgets on supported paths",
+        "Measure telemetry overhead and prove shutdown/recovery visibility"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "hosting",
+      "number_hint": 19,
+      "type": "Feature",
+      "priority": "P2",
+      "milestone": "W4",
+      "area": "hosting",
+      "estimate_low": 48,
+      "estimate_high": 96,
+      "dependencies": [
+        "composition",
+        "observability"
+      ],
+      "title": "Qualify host and deployment profiles through a capability matrix",
+      "acceptance": [
+        "Prove selected Windows/Linux, container, proxy and Kubernetes profiles first",
+        "List serverless/edge filesystem/streaming/background constraints per target",
+        "Validate startup, shutdown, health, configuration and scaling/rollback paths"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "tooling",
+      "number_hint": 20,
+      "type": "Feature",
+      "priority": "P2",
+      "milestone": "W5",
+      "area": "tooling",
+      "estimate_low": 40,
+      "estimate_high": 80,
+      "dependencies": [
+        "architecture",
+        "small_sample"
+      ],
+      "title": "Build CLI, scaffolding and operation-contract code generation",
+      "acceptance": [
+        "Generate minimal selected profiles and compatible transport schemas",
+        "Fail on unsupported combinations with actionable diagnostics",
+        "Validate generated consumers build and E2E behavior matches selected features"
+      ],
+      "benchmark_required": true,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "quality",
+      "number_hint": 21,
+      "type": "Task",
+      "priority": "P0",
+      "milestone": "W0",
+      "area": "quality",
+      "estimate_low": 24,
+      "estimate_high": 48,
+      "dependencies": [
+        "architecture",
+        "platform"
+      ],
+      "title": "Predeclare testing, security and benchmark conformance strategy",
+      "acceptance": [
+        "Define feature/provider/version/host proof matrix for all three sample lanes",
+        "Specify baseline, workloads, thresholds, raw evidence and failure retention",
+        "Separate correctness, security, performance, CI blockers and M0-M4 decisions"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "package",
+      "number_hint": 22,
+      "type": "Task",
+      "priority": "P2",
+      "milestone": "W5",
+      "area": "release",
+      "estimate_low": 24,
+      "estimate_high": 48,
+      "dependencies": [
+        "small_sample",
+        "business_sample",
+        "ai_sample",
+        "tooling"
+      ],
+      "title": "Prepare NuGet packaging and developer documentation readiness",
+      "acceptance": [
+        "Validate local pack/install/upgrade and dependency/license/package metadata",
+        "Write tested quickstarts, compatibility/deprecation and migration policy",
+        "Produce release checklist; public publication requires separate explicit authorization"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    },
+    {
+      "key": "sync",
+      "number_hint": 23,
+      "type": "Task",
+      "priority": "P1",
+      "milestone": "W0",
+      "area": "governance",
+      "estimate_low": 16,
+      "estimate_high": 32,
+      "dependencies": [
+        "baseline"
+      ],
+      "title": "Maintain conflict-aware GitHub and Markdown synchronization",
+      "acceptance": [
+        "Validate native Type, Labels, Priority, milestone, status and hours in task mirrors",
+        "Detect concurrent edits and migrations without duplicate cards",
+        "Keep Engine-only SHA journal and observed-state readback snapshots"
+      ],
+      "benchmark_required": false,
+      "actual_hours": null,
+      "maturity": "M0"
+    }
+  ]
+}
