@@ -8,7 +8,7 @@ from pathlib import Path
 from unittest.mock import patch
 import pull_tracking
 from pull_tracking import (JOURNAL_RELATIVE, LOCK_RELATIVE, SNAPSHOT_RELATIVE,
-                           digest, exclusive_pull, reconcile, render)
+                           digest, exclusive_pull, reconcile, reconcile_milestone_counts, render)
 
 
 def row(number=1, body='Original issue body\n'):
@@ -31,6 +31,22 @@ class ConflictTests(unittest.TestCase):
 
     def tearDown(self):
         self.temp.cleanup()
+
+    def test_stale_rest_milestone_counters_are_retained_without_overriding_agreeing_native_counts(self):
+        rest = [{'number': 1, 'title': 'W0', 'open_issues': 1, 'closed_issues': 0}]
+        graph = [{'number': 1, 'open': {'totalCount': 0}, 'closed': {'totalCount': 1}}]
+        rows = {'1': {'milestone_number': 1, 'state': 'closed'}}
+        result = reconcile_milestone_counts(rest, graph, rows)[0]
+        self.assertEqual((0, 1), (result['open_issues'], result['closed_issues']))
+        self.assertEqual((1, 0), (result['rest_reported_open_issues'], result['rest_reported_closed_issues']))
+        self.assertFalse(result['rest_counter_consistent'])
+
+    def test_disagreeing_graphql_and_native_issue_counts_stop_synchronization(self):
+        rest = [{'number': 1, 'title': 'W0', 'open_issues': 1, 'closed_issues': 0}]
+        graph = [{'number': 1, 'open': {'totalCount': 1}, 'closed': {'totalCount': 0}}]
+        rows = {'1': {'milestone_number': 1, 'state': 'closed'}}
+        with self.assertRaisesRegex(ValueError, 'observations disagree'):
+            reconcile_milestone_counts(rest, graph, rows)
 
     def test_remote_only_change_updates_mirror_and_keeps_null_hours(self):
         changed = row(body='Remote decision changed\n')

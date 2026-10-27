@@ -13,4 +13,6 @@ If a lock/recovery marker remains, inspect its recorded owner and retained befor
 
 Full bidirectional writes, reviewed metadata edit plans and migration resolution remain Engine issue #23 scope. The W0 delivery used a bounded change plan for existing issues, then pulled/verified live state; it is not a generic automatic remote writer.
 
+Milestone counters use GraphQL issue connections checked against fetched native issue states. REST-reported counters are retained separately with a consistency flag; a disagreement between GraphQL and fetched issues stops synchronization. This handles the observed W0 REST counter mismatch without changing issue state or hiding the reported source value.
+
 `bootstrap-github.py`, `validate-bootstrap.py` and the bootstrap snapshot/report are frozen initial-baseline artifacts. Do not use them as current-state synchronization or validation after W0 changes; they intentionally describe earlier assumptions and IDs.

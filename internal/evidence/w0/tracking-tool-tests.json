@@ -1,14 +1,14 @@
 {
   "observed_date": "2026-10-27",
-  "suite": "Tracking conflict/recovery offline regression",
+  "suite": "Tracking conflict, recovery and milestone consistency offline regression",
   "command": "python -m unittest discover -s tools -p test_pull_tracking.py -v",
   "result": "Passed",
-  "tests_run": 15,
+  "tests_run": 17,
   "failures": 0,
   "errors": 0,
   "source_sha256": {
-    "tools/pull_tracking.py": "fe0de7739c6a03cc897ad494c5d02483b8616265d43cf7796751167a98c9d29e",
-    "tools/test_pull_tracking.py": "d5415a22c8bb7f4c67fbfd4b020466ddbaa32dc0e35b3b6ef42e0332757dfa52"
+    "tools/pull_tracking.py": "1c73a74fdc9b57de84fc196a808099d019528375510ece3b7e9573121e8e017a",
+    "tools/test_pull_tracking.py": "97d575ebbbe3fb9f50356b9fbddd9db389d05931d6ce975f1fbfaf91a25a58a5"
   },
   "scope": "Local tracking-tool tests only; no GitHub writes, SDK/provider/sample runtime tests, benchmark or hosted CI proof"
 }

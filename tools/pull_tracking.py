@@ -196,6 +196,26 @@ def gh(*args, body=None):
     return value
 
 
+def reconcile_milestone_counts(rest_milestones, graphql_milestones, rows):
+    """Retain REST counters, but use independently agreeing issue/GraphQL counts."""
+    indexed = {item['number']: item for item in graphql_milestones}
+    result = []
+    for milestone in rest_milestones:
+        graph = indexed.get(milestone['number'])
+        if graph is None:
+            raise ValueError('Milestone identity missing from GraphQL; review before syncing')
+        members = [row for row in rows.values() if row['milestone_number'] == milestone['number']]
+        observed = {state: sum(row['state'] == state for row in members) for state in ['open', 'closed']}
+        if observed != {state: graph[state]['totalCount'] for state in ['open', 'closed']}:
+            raise ValueError('Concurrent issue/milestone observations disagree; retry from fresh state instead of asserting synchronization')
+        result.append({**milestone, 'rest_reported_open_issues': milestone['open_issues'],
+                       'rest_reported_closed_issues': milestone['closed_issues'],
+                       'open_issues': observed['open'], 'closed_issues': observed['closed'],
+                       'count_source': 'GraphQL milestone issue connections verified against fetched native issue states',
+                       'rest_counter_consistent': (milestone['open_issues'], milestone['closed_issues']) == (observed['open'], observed['closed'])})
+    return result
+
+
 def fetch():
     pages = gh('api', f'repos/{REPO}/issues?state=all&per_page=100', '--paginate', '--slurp')
     issues = [x for page in pages for x in page if 'pull_request' not in x]
@@ -237,10 +257,14 @@ def fetch():
                             'title': issue['title'], 'url': issue['html_url'], 'body': issue['body'],
                             'state': issue['state'], 'updated_at': issue['updated_at'], 'type': issue['type']['name'],
                             'labels': sorted(x['name'] for x in issue['labels']), 'assignees': sorted(x['login'] for x in issue['assignees']),
-                            'milestone': issue['milestone']['title'], 'fields': fields}
+                            'milestone': issue['milestone']['title'], 'milestone_number': issue['milestone']['number'], 'fields': fields}
     if len(rows) != len(indexed):
         raise ValueError('Project/Engine issue sets differ')
-    return rows, milestones
+    query = '{repository(owner:"Cephalon-Labs",name:"Cehpalon-Engine"){milestones(first:100,states:[OPEN,CLOSED]){pageInfo{hasNextPage} nodes{number open:issues(states:OPEN){totalCount} closed:issues(states:CLOSED){totalCount}}}}}'
+    graph = gh('api', 'graphql', '--input', '-', body={'query': query})['data']['repository']['milestones']
+    if graph['pageInfo']['hasNextPage']:
+        raise ValueError('More than 100 milestones; add reviewed pagination support before syncing')
+    return rows, reconcile_milestone_counts(milestones, graph['nodes'], rows)
 
 
 def render(row):

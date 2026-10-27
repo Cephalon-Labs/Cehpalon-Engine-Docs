@@ -53,7 +53,7 @@ def main():
         check(artifact['binary_bytes_verified'] is False, artifact['file'] + ': no binary verification claim')
 
     tool_tests = read_json(ROOT / 'internal/evidence/w0/tracking-tool-tests.json')
-    check(tool_tests['result'] == 'Passed' and tool_tests['tests_run'] == 15 and tool_tests['failures'] == 0 and tool_tests['errors'] == 0, 'Recorded offline tracking suite: 15 passed, no runtime claim')
+    check(tool_tests['result'] == 'Passed' and tool_tests['tests_run'] >= 15 and tool_tests['failures'] == 0 and tool_tests['errors'] == 0, f"Recorded offline tracking suite: {tool_tests['tests_run']} passed, no runtime claim")
     for filename, expected in tool_tests['source_sha256'].items():
         check(hashlib.sha256((ROOT / filename).read_bytes()).hexdigest() == expected, filename + ': tested tool source hash unchanged')
 

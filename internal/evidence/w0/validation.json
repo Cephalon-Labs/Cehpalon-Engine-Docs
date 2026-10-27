@@ -1,10 +1,10 @@
 {
-  "observed_at_utc": "2026-10-27T07:54:36.009720+00:00",
+  "observed_at_utc": "2026-10-27T07:59:37.587080+00:00",
   "engine_revision": "cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
   "scope": "W0 document/provenance/tracking verification only; no SDK binary or model byte verification, runtime test, benchmark, hosted CI or production proof",
   "success": true,
-  "checks_passed": 266,
-  "checks_total": 266,
+  "checks_passed": 268,
+  "checks_total": 268,
   "checks": [
     {
       "check": "Candidate inventory claims no runtime qualification",
@@ -79,7 +79,7 @@
       "passed": true
     },
     {
-      "check": "Recorded offline tracking suite: 15 passed, no runtime claim",
+      "check": "Recorded offline tracking suite: 17 passed, no runtime claim",
       "passed": true
     },
     {
@@ -404,6 +404,14 @@
     },
     {
       "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../evidence/w0/model-candidates.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../evidence/w0/validation.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../evidence/w0/tracking-tool-tests.json",
       "passed": true
     },
     {
