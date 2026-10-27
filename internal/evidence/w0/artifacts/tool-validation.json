@@ -1,8 +1,8 @@
 {
-  "observed_at_utc": "2026-10-27T11:26:39.765156+00:00",
+  "observed_at_utc": "2026-10-27T12:01:44.337131+00:00",
   "status": "passed",
   "scope": "Offline local-file artifact safety checks; no network, downloaded binary or model execution",
-  "retained_test_root": "D:\\Cephalon\\.tools\\artifact-tests\\20261027T112639623598Z",
+  "retained_test_root": "D:\\Cephalon\\.tools\\artifact-tests\\20261027T120144187563Z",
   "passed": 6,
   "total": 6,
   "cases": [

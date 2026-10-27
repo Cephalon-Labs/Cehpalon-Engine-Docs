@@ -2,6 +2,8 @@
 
 วันที่: 2026-10-27; สถานะ **W0 design selected; runtime qualification pending (M0)**
 
+Continuation: [SDK/artifact and two-way tracking qualification](w0-qualification-and-sync.md) records actual bounded checks and the hosted-CI blocker. The design budgets below remain unmeasured and Engine runtime features remain M0.
+
 ผู้ใช้สั่งให้ใช้ agent ศึกษาและเลือกทั้งสาม Samples รอบนี้ primary รวมผลงาน agent ราย lane ตรวจแหล่งทางการและข้อขัดกันของ resource/semantics แล้วบันทึกเป็น ADR การเลือกนี้ทำให้เริ่ม qualification ได้ ไม่ใช่ผลทดสอบ provider จริง
 
 | Sample | Provider ชุดแรก | Workload และเกณฑ์สำคัญที่ประกาศก่อนวัด |
@@ -35,8 +37,8 @@ Small API ต้องไม่พึ่ง SQL/broker/AI จึงใช้ fix
 
 ## สถานะงานและทางเดินต่อ
 
-งาน #2 architecture/requirements, #4 reference decision study และ #21 predeclared test strategy ส่งมอบในขอบเขต W0 document selection ได้ ส่วน #3 ยังต้อง SDK/artifact/driver qualification และ #23 ยังต้องขยาย synchronization เป็น reviewed bidirectional workflow กับ metadata update/migration coverage จึงไม่ปิดสองงานนี้จากการเลือก provider เพียงอย่างเดียว
+ในรอบ selection เดิม งาน #2 architecture/requirements, #4 reference decision study และ #21 predeclared test strategy ส่งมอบในขอบเขต W0 document selection ได้ ส่วน #3/#23 ยังเปิดไว้เพราะการเลือก provider เพียงอย่างเดียวไม่ใช่ qualification หรือ tool delivery
 
-หลังตรวจเอกสารและ live readback: #2/#4/#21 ปิดเป็น Done/Test Passed สำหรับงานเอกสารรอบนี้แล้ว #3/#23 ยังเปิดอยู่ จึงยังไม่ปิด W0 milestone ผลตรวจอยู่ใน [W0 validation](../evidence/w0/validation.json) และ [offline tracking tests](../evidence/w0/tracking-tool-tests.json) ทั้งสองส่วนไม่ใช่ runtime test/benchmark/CI proof
+ผลรอบ selection เดิมอยู่ใน [W0 validation](../evidence/w0/validation.json) และ [offline tracking tests](../evidence/w0/tracking-tool-tests.json) ไม่ใช่ผล current qualification ปัจจุบัน #23 ส่งมอบและปิด Done แล้ว ส่วน #3 เปิด Blocked สำหรับ listed-supported Windows proof และ account CI blocker ดู [continuation ล่าสุด](w0-qualification-and-sync.md) W0 จึงยังเปิดอยู่
 
 ก่อนเริ่ม Core/provider implementation ให้ปิด qualification ที่เป็น dependency ของงานนั้น ระบุ image/binary/package locks, actual supported OS, fixture/gold hashes และคำสั่งรันทดสอบ ห้ามนำ metadata checks ในรอบนี้ไปอ้างว่า .NET11/provider/E2E หรือ benchmark ผ่านแล้ว

@@ -1,0 +1,471 @@
+{
+  "observed_at_utc": "2026-10-27T12:23:49.567604+00:00",
+  "scope": "Current tracking, source/evidence integrity, local tests and owned cleanup. Not hosted-CI/Engine runtime/E2E/benchmark/production qualification.",
+  "engine_revision": "5a6795b34535fdc311b519e8d452ea1c9f715bba",
+  "checks": [
+    {
+      "name": "Exact Engine HEAD and clean tracked source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Directory.Packages.props",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/PlatformQualification.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/run-owned-fixtures.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/collect-package-evidence.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine source bytes: Tests/PlatformQualification/README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual SDK archive: linux-x64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual SDK archive: win-x64",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Locked package graph count",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Windows support limitation retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "WSL distribution listed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact-source local smoke: win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact-source local smoke: linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual cached artifact: Qwen3-Embedding-0.6B-Q8_0.gguf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual cached artifact: Qwen3-4B-Q4_K_M.gguf",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual cached artifact: ollama-linux-amd64.tar.zst",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual cached artifact: llama-b11669-bin-ubuntu-x64.tar.gz",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Five provider component probes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Installed provider identity: postgresql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Installed provider identity: rabbitmq",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Installed provider identity: keycloak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Installed provider identity: qdrant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Installed provider identity: valkey-optional",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Owned cleanup evidence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "No current private fixture secrets",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Owned loopback port remains closed: postgresql",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Owned loopback port remains closed: rabbitmq",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Owned loopback port remains closed: keycloak",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Owned loopback port remains closed: qdrant",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Owned loopback port remains closed: valkey-optional",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested tool source: tools/pull_tracking.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested tool source: tools/sync_tracking.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested tool source: tools/test_pull_tracking.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested tool source: tools/test_sync_tracking.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tracking offline suite: windows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tracking offline suite: wsl-ubuntu22.04.5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Artifact helper offline checks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Peer repair repro retained as reviewer attestation",
+      "passed": true,
+      "detail": "Inline/not standalone-file proof; source hashes and individual cases in tool-tests.json"
+    },
+    {
+      "name": "Live two-way roundtrip and idempotence",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hosted CI is blocked before steps: Cehpalon-Engine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Hosted CI is blocked before steps: Cehpalon-Engine-Docs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Project4 and exactly23 original mirrors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Task journal resolves as Engine commit: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Task journal resolves as Engine commit: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Task journal resolves as Engine commit: 5a6795b34535fdc311b519e8d452ea1c9f715bba",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Task journal resolves as Engine commit: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Task journal resolves as Engine commit: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native metadata: #1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Task journal resolves as Engine commit: 34521e5ddd1b0ad7ab664dba825c69161e4344fc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#3 remains open Blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#23 closed Done, local/live gate Passed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "W0 remains open with1pending/5closed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT identity: Cehpalon-Engine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT identity: Cehpalon-Engine-Docs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT identity: Cehpalon-Engine-Samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Markdown local/cross-repository blob links",
+      "passed": true,
+      "detail": {
+        "checked": 258,
+        "broken": []
+      }
+    }
+  ],
+  "exact_source_provenance": {
+    "engine_revision": "5a6795b34535fdc311b519e8d452ea1c9f715bba",
+    "source_sha256": {
+      "global.json": "be8663081fd82196ac86e65e9021d58d7c03a13574ce8cd4dc803937fc3ba30e",
+      "Directory.Packages.props": "6fe1fe174b777985a3040f5f78b699d6646cc5bdc92001238e70210c4bed1c9e",
+      "Tests/PlatformQualification/PlatformQualification.csproj": "d4141da578c945bf8ec2bdb44b41a5ac825599996f927e478b0fe27986a5e8e3",
+      "Tests/PlatformQualification/NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+      "Tests/PlatformQualification/packages.lock.json": "98cb27d7ac2346a86e0eb4877d663663e925e0d6be54769e0e31abdc369f4280",
+      "Tests/PlatformQualification/Program.cs": "f4039f087794c9313fb02cea6b3fc43832385cf83f2207daeadcc41649d44b1d",
+      "Tests/PlatformQualification/run-owned-fixtures.py": "3ee2aeca5126dee4333fce3a75a06e7a82a75fedef1b95fe3c57a17fb703626a",
+      "Tests/PlatformQualification/collect-package-evidence.py": "33d40fb8bf0bf6bce644ddbd9559d8d6e6217c7800a720493af54e08e7a6ae3c",
+      "Tests/PlatformQualification/README.md": "2a35dd2fd3d08632e5da2c20c57514edafa9a6fa7b4b1d71920f05b2a7ec1935"
+    },
+    "outputs": [
+      "exact-engine-win.json",
+      "exact-engine-linux.json"
+    ],
+    "execution": "Fresh locked restore and Release build at exact Engine HEAD followed by run-owned-fixtures.py using private owned state; fixtures subsequently stopped. No hosted CI result."
+  },
+  "late_environment_observations": [
+    {
+      "name": "Current owned-container query",
+      "status": "Unavailable",
+      "exit_code": 1,
+      "message": "request returned Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/containers/json?all=1&filters=%7B%22label%22%3A%7B%22cehpalon.w0.qualification%3D7c326be9b015%22%3Atrue%7D%7D, check if the server supports the requested API version",
+      "boundary": "Earlier successful cleanup evidence retained; no new Docker absence claim. Docker Desktop/shared services not restarted or modified."
+    },
+    {
+      "name": "Current owned-network query",
+      "status": "Unavailable",
+      "exit_code": 1,
+      "message": "request returned Internal Server Error for API route and version http://%2F%2F.%2Fpipe%2Fdocker_engine/v1.24/networks?filters=%7B%22label%22%3A%7B%22cehpalon.w0.qualification%3D7c326be9b015%22%3Atrue%7D%7D, check if the server supports the requested API version",
+      "boundary": "Earlier successful cleanup evidence retained; no new Docker absence claim. Docker Desktop/shared services not restarted or modified."
+    }
+  ],
+  "tracking_counts": {
+    "total": 23,
+    "closed": 5,
+    "open": 18,
+    "w0_open": 1,
+    "w0_closed": 5
+  },
+  "passed": 82,
+  "total": 82,
+  "status": "passed-with-environment-limit",
+  "unavailable_checks": 2,
+  "known_blockers": [
+    "Hosted CI rejected before steps by reported account payments or spending limit; no hosted pass",
+    "Listed supported Windows smoke still required for #3; local Windows26H2 observational only"
+  ],
+  "retained_auxiliary_attempt_note": "Initial auxiliary invocation aborted at Docker API query. Next invocation incorrectly assumed every native issue Type was Task (13 are Feature) and resolved publisher-source/self-report links at a wrong local base. That failed report is retained in final-validation-attempt02.json. Corrected validator preserves native Types and scopes link checks to maintained docs; no production source/test thresholds or remote issue Types were changed. Late Docker API unavailability remains explicit."
+}

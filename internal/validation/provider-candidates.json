@@ -1,15 +1,17 @@
 {
   "schema_version": 1,
   "decision_date": "2026-10-27",
-  "decision_status": "Accepted for W0 planning; implementation qualification pending",
+  "decision_status": "Accepted W0 selections; bounded component qualification observed; Engine runtime features remain M0",
   "runtime_maturity": "M0",
   "platform": {
     "sdk": "11.0.100-rc.3.26522.148",
     "runtime": "11.0.0-rc.3.26522.148",
     "tfm_candidate": "net11.0",
-    "reference_os": "Linux x64 glibc; exact supported OS/image digest pending qualification",
-    "functional_secondary_os": "Windows x64; qualification pending",
-    "sdk_binaries_verified": false
+    "reference_os": "WSL Ubuntu 22.04.5 x64/glibc2.35; distribution listed in checked .NET11 support table; not deployment proof",
+    "functional_secondary_os": "Local Windows11 Pro26H2/build26300.9711 observational smoke passed; not listed in checked support table; supported-Windows proof Blocked",
+    "sdk_binaries_verified": true,
+    "qualification_report": "../planning/w0-qualification-and-sync.md",
+    "hosted_ci": "Blocked before steps by reported account payments or spending limit; no hosted CI pass"
   },
   "profiles": [
     {
@@ -137,7 +139,9 @@
         {
           "role": "generation-portability",
           "name": "llama.cpp server",
-          "version": "0.7.0"
+          "version": "0.7.0",
+          "actual_version_observed": "0.7.0-dev (build11669, commit620d2225c)",
+          "qualification_lock": "../evidence/w0/artifacts/inference-binaries.json"
         },
         {
           "role": "weights",
@@ -153,7 +157,8 @@
         {
           "role": "vector",
           "name": "Qdrant",
-          "version": "1.20.0"
+          "version": "1.20.0",
+          "registry_tag": "v1.20.0"
         },
         {
           "role": "identity-real-provider-tiers",
@@ -213,12 +218,53 @@
   ],
   "common": {
     "numbers_are": "Predeclared engineering budgets, not measured results or production SLO promises",
-    "image_digests": null,
-    "package_lock_hashes": null,
+    "image_digests": {
+      "postgresql": {
+        "index": "sha256:edb0c08dc33befd0262ab3b5cf1c4f3f8cfd8b09e88c05b45adee29d6761ddb6",
+        "linux_amd64": "sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+        "config": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+        "pull_reference": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d"
+      },
+      "rabbitmq": {
+        "index": "sha256:d9e71c639c9476bbfc78ac7b2948d9b93af2c63ee9b3226ccadd5af2d7113b78",
+        "linux_amd64": "sha256:184d4ae2a5d7fd4cbe1ad7165d1fb6c1377735ed2744c6be478deed5e8f0ba88",
+        "config": "sha256:f145e7a82c858bcb253703571f5dce9ca48854358a68025c638e3fb5a4318969",
+        "pull_reference": "registry-1.docker.io/library/rabbitmq@sha256:184d4ae2a5d7fd4cbe1ad7165d1fb6c1377735ed2744c6be478deed5e8f0ba88"
+      },
+      "keycloak": {
+        "index": "sha256:a78d6b79572168cb25886b80a8b5b8d4ed4390743e3eecb810538683e209dd6b",
+        "linux_amd64": "sha256:3e1ac632e743660017b1e6bb4c3ffc800fd02c82cdd0db858cd03456a98a8dfc",
+        "config": "sha256:b55801be6ce15109868bd056dc18d62d47106bfaad7ffbd1a5d804192ec98257",
+        "pull_reference": "quay.io/keycloak/keycloak@sha256:3e1ac632e743660017b1e6bb4c3ffc800fd02c82cdd0db858cd03456a98a8dfc"
+      },
+      "qdrant": {
+        "index": "sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2",
+        "linux_amd64": "sha256:2d1b0bfd0a961275481ea09400fc98008216ae54e1b52ed7d24520d63050c644",
+        "config": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+        "pull_reference": "registry-1.docker.io/qdrant/qdrant@sha256:2d1b0bfd0a961275481ea09400fc98008216ae54e1b52ed7d24520d63050c644"
+      },
+      "valkey-optional": {
+        "index": "sha256:3add1a336a920ea54770a001ab6feb3da5fceea96a40373a3a2cd469b815f0b7",
+        "linux_amd64": "sha256:b94f4063db6015ab2fd39a764c241a107aa176c5e7801742af81f4f8f3cb532a",
+        "config": "sha256:73c18bbc52a293133732c020f09e16aed862ee30885cb1dba5ad52c1b973d5ac",
+        "pull_reference": "registry-1.docker.io/valkey/valkey@sha256:b94f4063db6015ab2fd39a764c241a107aa176c5e7801742af81f4f8f3cb532a"
+      }
+    },
+    "package_lock_hashes": {
+      "Tests/PlatformQualification/packages.lock.json": "98cb27d7ac2346a86e0eb4877d663663e925e0d6be54769e0e31abdc369f4280"
+    },
     "dataset_hashes": null,
     "provider_runtime_qualified": false,
     "external_paid_calls": 0,
     "topology_switch": "startup configuration plus restart/redeploy",
-    "required_manifest": "exact artifacts/runtime/images/models/config/fixtures/Engine SHA/hardware/tool versions before first run"
+    "required_manifest": "exact artifacts/runtime/images/models/config/fixtures/Engine SHA/hardware/tool versions before first run",
+    "artifact_byte_identity_verified": true,
+    "component_smoke": {
+      "platform_driver": "14/14 per local host with owned PostgreSQL/RabbitMQ",
+      "provider_images": "5/5 local component probes; all owned fixtures cleaned",
+      "model_inference": "Not run",
+      "report": "../planning/w0-qualification-and-sync.md"
+    },
+    "qualification_boundary": "Component smoke and artifact identity only; no Engine runtime/profile/E2E/HA/workload/performance/production qualification; dataset hashes remain null"
   }
 }

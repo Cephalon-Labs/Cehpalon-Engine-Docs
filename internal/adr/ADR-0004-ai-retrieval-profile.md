@@ -5,6 +5,8 @@
 - ขอบเขต: Engine #2, #3, #16, #17, #21; runtime maturity **M0**
 - ผู้ตัดสินใจรอบนี้: ทีม agent ตามคำสั่งผู้ใช้ให้ศึกษาและเลือก provider โดย primary เป็นผู้รวมผลและเขียน remote
 
+Qualification update: [actual artifact byte/runner/dependency checks](../planning/w0-qualification-and-sync.md) are now available. Image selector for Qdrant is `v1.20.0`; llama's selected release resolves to a same-commit nightly with actual version string `0.7.0-dev/build11669`. No modelserver, inference/embedding quality, tool-loop or model cancellation conformance ran. Initial expected-checksum observations below remain historical metadata evidence.
+
 ## บริบทและผลที่ต้องการ
 
 ต้องมี sample ที่นำ business operation เดิมผ่าน retrieval → model → bounded tool loop → schema-validated answer ได้ โดยสลับ provider ผ่าน contract ที่ประกาศรองรับ การทดสอบต้องแยกความถูกต้องของ orchestration ออกจากคุณภาพของ model จริง และทำซ้ำได้โดยไม่จำเป็นต้อง provision cloud หรือซื้อบริการ

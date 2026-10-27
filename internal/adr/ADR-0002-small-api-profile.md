@@ -6,6 +6,8 @@
 - งานที่เกี่ยวข้อง: Engine #2, #3, #5, #6, #9, #11 และ #21
 - Protocol: [Small API workload](../validation/small-api-workload.md)
 
+Qualification update: [bounded SDK/HTTPS/GraphQL checks](../planning/w0-qualification-and-sync.md) ran; Engine zero-activation/transport conformance and this workload did not run. Actual package graph includes Nitro under a different license even with no IDE exposure; distribution review is still pending.
+
 ## บริบทและเป้าหมาย
 
 Sample นี้ต้องพิสูจน์ว่าผู้ใช้ขนาดเล็กเริ่มจาก API อย่างเดียวได้ โดยไม่มีฐานข้อมูล, broker, Worker, GraphQL หรือ AI ที่ไม่ได้เลือกทำงาน และเปิด transport เพิ่มให้ business operation เดิมผ่าน config ได้ภายหลัง ขอบเขตนี้เป็น public synthetic catalog สำหรับทดสอบ Engine ไม่ใช่ SaaS ที่มีข้อมูลจริงหรือ durability requirement

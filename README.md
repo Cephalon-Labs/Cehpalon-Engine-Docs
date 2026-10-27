@@ -6,6 +6,7 @@ This is a new baseline. Historical project notes are context only; they do not e
 
 - [Program plan](internal/planning/2026-10-27-program-plan.md)
 - [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
+- [Current W0 SDK/artifact and two-way sync qualification](internal/planning/w0-qualification-and-sync.md)
 - [Requirements coverage](internal/requirements/coverage.md)
 - [Research and reference comparison](internal/research/2026-10-27-reference-study.md)
 - [Delivery and maturity standard](internal/standards/delivery-and-maturity.md)

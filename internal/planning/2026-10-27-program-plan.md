@@ -2,6 +2,8 @@
 
 สถานะ: แผนพัฒนาเริ่มต้น ขอบเขต feature และตัวเลขชั่วโมงยังเป็นข้อเสนอ ไม่มี runtime feature ที่ได้รับการรับรองจากการตั้ง repository รอบนี้
 
+Latest W0 continuation: [qualification and two-way tracking](w0-qualification-and-sync.md). Statements about the initially absent SDK/implementation below describe the earlier baseline; current bounded SDK/driver/artifact outcomes and CI blocker are in that continuation.
+
 ## ข้อกำหนดที่ยืนยันจากผู้ใช้
 
 - ใช้สาม repository แยกกัน: `Cehpalon-Engine`, `Cehpalon-Engine-Docs`, `Cehpalon-Engine-Samples` ภายใต้ `Cephalon-Labs` และใช้บัญชี `Cephalon-Neza`
@@ -46,7 +48,7 @@ TDD/BDD/DDD เป็นวิธีพัฒนาและออกแบบ �
 | Business | Tenant-aware API + Worker + SQL | ป้องกัน tenant ข้ามกัน, authz ทุกทางเข้า, outbox/inbox, retry/duplicate/crash recovery; เพิ่ม API+GraphQL ด้วย handler เดิม |
 | AI | Provider adapters + Agent + Retrieval | เปลี่ยน model provider ผ่าน contract ที่ประกาศ, tenant-scoped retrieval, tool permissions, cancellation, cost/token budgets, audit และ adversarial evaluation |
 
-ทั้งสาม lane อยู่ในแผนเดียวกัน ใช้ Core/Composition ร่วมกันและเดินตาม dependencies เพื่อหลีกเลี่ยงสร้างแกนแยกสามชุด W0 เลือก provider candidates/workload/budgets แล้วใน [decision package](w0-decisions.md) และ ADR-0001–0004 ส่วน SDK/driver/artifact/runtime qualification ยัง pending จึงไม่อ้าง compatibility จากการเลือกเพียงอย่างเดียว
+ทั้งสาม lane อยู่ในแผนเดียวกัน ใช้ Core/Composition ร่วมกันและเดินตาม dependencies เพื่อหลีกเลี่ยงสร้างแกนแยกสามชุด W0 เลือก provider candidates/workload/budgets แล้วใน [decision package](w0-decisions.md) และ ADR-0001–0004 ปัจจุบัน SDK/driver/artifact component checks มีผลตาม [qualification report](w0-qualification-and-sync.md) แต่ listed-supported Windows proof ยัง Blocked และ Engine runtime/profile qualification ยัง pending ไม่อ้าง compatibility จากการเลือกเพียงอย่างเดียว
 
 ## แผนตาม milestone
 

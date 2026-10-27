@@ -1,0 +1,71 @@
+{
+  "observed_at_utc": "2026-10-27T12:17:36.276028+00:00",
+  "scope": "Offline tracking regression suite; not hosted CI or Engine runtime proof",
+  "source_sha256": {
+    "tools/pull_tracking.py": "18dc4b7b250dd67021adfaf4045797ceee4aa62c954ebaaee779699f173f9297",
+    "tools/sync_tracking.py": "3bdeeeebe11df0b47e7b952ca581b182031976efbbcd2b63b17a4a77b0393115",
+    "tools/test_pull_tracking.py": "b6b28d15dbe495467b4a95541f0fb296082faac2af59d041951bec37fe9befcd",
+    "tools/test_sync_tracking.py": "24f86ff20ed0a2a5a3ccebd3de4f1055aa02545549e2a7a9dc914f73095b5102"
+  },
+  "runs": [
+    {
+      "host": "windows",
+      "command": [
+        "python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tools",
+        "-p",
+        "test_*tracking.py",
+        "-v"
+      ],
+      "exit_code": 0,
+      "tests": 59,
+      "passed": true,
+      "raw_output": "tool-tests-windows.txt",
+      "output_sha256": "62eecbb1cdadea3f935fa47ad835d33751bd1065427a8e176e5f9668c11264c8"
+    },
+    {
+      "host": "wsl-ubuntu22.04.5",
+      "command": [
+        "wsl",
+        "--",
+        "bash",
+        "-lc",
+        "cd /mnt/d/Cephalon/Cehpalon-Engine-Docs && python3 -m unittest discover -s tools -p \"test_*tracking.py\" -v"
+      ],
+      "exit_code": 0,
+      "tests": 59,
+      "passed": true,
+      "raw_output": "tool-tests-wsl-ubuntu22.04.5.txt",
+      "output_sha256": "ca88548a3ef1a29fde999e448750024fab6f344a6e1679380b2b30f5ddfe0e8d"
+    }
+  ],
+  "artifact_helper": {
+    "report": "../artifacts/tool-validation.json",
+    "passed": 6,
+    "total": 6
+  },
+  "independent_peer_review": {
+    "reviewer": "/root/w0_ai",
+    "execution_mode": "Inline Python stdin using offline FakeTransport; script not saved as file",
+    "script_path": null,
+    "script_sha256": null,
+    "source_edits": false,
+    "passed": 4,
+    "total": 4,
+    "source_sha256_at_review": {
+      "sync_tracking.py": "3bdeeeebe11df0b47e7b952ca581b182031976efbbcd2b63b17a4a77b0393115",
+      "pull_tracking.py": "18dc4b7b250dd67021adfaf4045797ceee4aa62c954ebaaee779699f173f9297"
+    },
+    "cases": [
+      "Rehashed complete checkpoint with index0 rejected before calls",
+      "Rehashed later local anchors rejected and body preserved",
+      "Stale milestone check rejected with snapshot unchanged",
+      "Normal title PATCH lost ACK then resume Priority: exactly one issue and one Project fake mutation"
+    ],
+    "provenance_limit": "Reviewer reported results and retained temp fixtures; full inline stdout remains in agent turn history. No standalone script hash is claimed."
+  }
+}

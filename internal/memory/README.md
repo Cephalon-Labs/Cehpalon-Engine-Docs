@@ -2,7 +2,7 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest continuation: [2026-10-27 W0 provider/workload/ADR decisions](2026-10-27-w0-provider-decisions.md). This succeeds the bootstrap handoff; refresh current tracking before work.
+Latest continuation: [2026-10-27 W0 qualification and two-way sync](2026-10-27-w0-qualification-and-sync.md). This succeeds the [provider/workload/ADR handoff](2026-10-27-w0-provider-decisions.md); refresh current tracking and CI before work.
 
 - [2026-10-27 new baseline and user decisions](2026-10-27-program-bootstrap.md)
 - [Program plan](../planning/2026-10-27-program-plan.md)

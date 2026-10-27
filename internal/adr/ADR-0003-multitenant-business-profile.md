@@ -6,6 +6,8 @@
 - งานที่เกี่ยวข้อง: Engine #2, #3, #7, #8, #12, #13, #14, #15, #21
 - คู่เอกสาร: [workload และเกณฑ์ตรวจรับ](../validation/business-workload.md)
 
+Qualification update: [SDK/driver/artifact results](../planning/w0-qualification-and-sync.md) include actual images/OS/Java/Erlang, real PostgreSQL and RabbitMQ client smoke and owned-fixture cleanup. They do not establish RLS/tenant/outbox/inbox/HA/business workflow or this workload's acceptance gates.
+
 ## บริบทและคำตัดสิน
 
 เลือกธุรกิจตัวอย่าง **คำสั่งซื้อและการจองสินค้าแยกตาม tenant** เพื่อพิสูจน์ API → SQL transaction/outbox → broker → Worker/inbox → สถานะคำสั่งซื้อ และใช้ handlers/contracts เดิมใน profile ที่ประกาศรองรับ ผู้ใช้เลือก lane นี้พร้อม Small API และ AI/Retrieval จึงเลือก infrastructure ที่ใช้ร่วมกันได้โดยไม่บังคับให้ทุก lane ต้องเปิดทั้งหมด

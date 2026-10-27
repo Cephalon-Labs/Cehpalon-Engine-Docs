@@ -6,6 +6,8 @@
 
 ผู้ใช้มอบหมายให้ศึกษาและเลือก provider/workload/เกณฑ์ทดสอบสำหรับ Samples ทั้งสามแนวพร้อม ADR ข้อเลือกในชุด ADR นี้เป็นการตัดสินใจทางวิศวกรรมภายในขอบเขตดังกล่าว ไม่ใช่การรับรองว่าผู้ใช้ลงนามรับทุกค่า SLO หรือว่าระบบทำงานผ่านแล้ว Runtime maturity ยังคง M0
 
+Qualification continuation: [actual SDK/driver/artifact and sync results](../planning/w0-qualification-and-sync.md). Private SDK pins and bounded vendor smoke now exist; supported-Windows/hosted CI remains blocked. Initial metadata-only observations in this decision are retained as history and do not override the newer scoped evidence.
+
 เกี่ยวข้องกับ Engine issues #2, #3, #4, #6, #11, #15, #17, #21 และ #23
 
 ## Context

@@ -2,6 +2,8 @@
 
 วันที่ตรวจ: 2026-10-27 (Asia/Bangkok); ขอบเขต Engine #3 และ ADR-0003/0004
 
+Primary integration ต่อจากรายงาน agent นี้: image/OS/Java/Erlang/start/probe จริงครบ5ตัวและ SDK/driver smoke14/14ต่อlocalhost เสร็จแล้ว ดู [current qualification report](../../../planning/w0-qualification-and-sync.md) ข้อความ pending ด้านล่างเป็นขอบเขตตอนส่งมอบจาก agent; model import/inference/conformance และ supported-Windows proofยังไม่เสร็จ
+
 สถานะ: **ตรวจ actual model/archive bytes และ registry manifest/config identities แล้ว; bounded Linux runner version/dependency smoke ผ่านตามเงื่อนไขด้านล่าง** ไม่มี modelserver, inference, model-quality benchmark, provider container หรือ SDK ถูกเริ่มโดย agent นี้ Runtime feature maturity ยัง M0 การตรวจนี้ไม่ใช่ security audit หรือการรับรอง production
 
 ## Model files ที่ตรวจจาก bytes จริง

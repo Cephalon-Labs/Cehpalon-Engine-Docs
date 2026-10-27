@@ -1,0 +1,36 @@
+{
+  "started_at_utc": "2026-10-27T11:43:12.555693+00:00",
+  "scope": "Reversible existing issue23 body/Priority roundtrip; no new issue, actual-hours edit, Engine runtime or benchmark proof",
+  "checks": [
+    {
+      "name": "remote-only body edit seeded in existing issue23",
+      "passed": true
+    },
+    {
+      "name": "GitHub-to-Docs pull preserved exact remote marker",
+      "passed": true
+    },
+    {
+      "name": "stale Project-only plan rejected without overwriting remote P3 or local P1 edit",
+      "passed": true
+    },
+    {
+      "name": "original issue23 body/Priority/other metadata restored; no duplicate issue or actual-hour mutation",
+      "passed": true
+    }
+  ],
+  "before_conflict_updated_at": "2026-10-27T11:45:31Z",
+  "project_only_conflict_kept_issue_revision": true,
+  "finished_at_utc": "2026-10-27T11:49:49.822171+00:00",
+  "success": true,
+  "idempotent_completed_restore_replay": {
+    "status": "already-applied",
+    "remote_operations": 0
+  },
+  "retained_attempts": [
+    {
+      "outcome": "Auxiliary verifier initially indexed absent Actual-hours key after successful forward state/body assertions; corrected to get(None). Core apply succeeded and all test changes were later restored."
+    }
+  ],
+  "forward_checkpoint_verified_operations": 2
+}
