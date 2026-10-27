@@ -1,0 +1,305 @@
+{
+  "scope": "Uncommitted isolated W1Core source, primary must integrate and retest exact committedsource; no supportedWindows/hostedCI/benchmark claims",
+  "source_sha256": {
+    "src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj": "99c4640d85dbb93e3833d6e3c0ce9c515146aa61bcdbaabdb512332ddbbd74e5",
+    "src/Cehpalon.Engine.Core/Contracts.cs": "81c4f8e7ef7d3db8a3da66c3a07b47e0db522ab7fee0187974c59b1ccc9954f5",
+    "src/Cehpalon.Engine.Core/OperationRegistry.cs": "1913777dae7f0d065d4634665e724ceb436c1fa487bf01efb9d8bf9cd9e46012",
+    "src/Cehpalon.Engine.Core/OperationResult.cs": "65b920c5a1befe0d21630146507a9d537e9450a4fc902ba7c8f24075408ab755",
+    "src/Cehpalon.Engine.Core/packages.lock.json": "b5d92ac7cd604d998f35dee72e747dd203d49c3031da32b96e1f58246cd2bd87",
+    "src/Cehpalon.Engine.Core/README.md": "3d672bc95a1da59161da054a253d66d43551748111e86aff5b148b23a2a22cdc",
+    "Tests/Core.ContractTests/Core.ContractTests.csproj": "e1887a368034b7ade40c2eb7a73dab9a26cb6cc34f50de6a48c725e143444a5e",
+    "Tests/Core.ContractTests/packages.lock.json": "68d39576413d0fdf775ac43dfb0c9d914d64d81a2058140d40d3fb260256c8f7",
+    "Tests/Core.ContractTests/Program.cs": "53d983e641789b3e8fe7366783ae92f6350c67118ab47f50cbef04e2e010e650",
+    "Tests/Core.ContractTests/README.md": "787fe100b925f997939cd32e90be85d1c19018a0d76fbcf7426d78fc69978401"
+  },
+  "windows": {
+    "observedAtUtc": "2026-10-27T12:44:56.1942435+00:00",
+    "framework": ".NET 11.0.0-rc.3.26522.148",
+    "os": "Microsoft Windows 10.0.26300",
+    "architecture": "X64",
+    "scope": "BCL-only experimental Core component contracts. Not tenant/identity authority, supported-Windows/hosted-CI/transport/provider/E2E/benchmark/production qualification.",
+    "passed": 32,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "canonical-id-grammar-and-boundaries",
+        "passed": true
+      },
+      {
+        "name": "attribute-validates-id-without-handler-activation",
+        "passed": true
+      },
+      {
+        "name": "success-result-and-error-access-guard",
+        "passed": true
+      },
+      {
+        "name": "failure-result-and-value-access-guard",
+        "passed": true
+      },
+      {
+        "name": "nullable-success-is-intentional",
+        "passed": true
+      },
+      {
+        "name": "error-code-message-contract",
+        "passed": true
+      },
+      {
+        "name": "context-defensive-snapshot-and-readonly-view",
+        "passed": true
+      },
+      {
+        "name": "context-rejects-invalid-and-unbounded-metadata",
+        "passed": true
+      },
+      {
+        "name": "registration-build-and-enumeration-invoke-no-factory",
+        "passed": true
+      },
+      {
+        "name": "registry-snapshot-is-independent-and-ordinally-ordered",
+        "passed": true
+      },
+      {
+        "name": "duplicate-invalid-and-null-factory-registration-rejected",
+        "passed": true
+      },
+      {
+        "name": "unknown-operation-returns-known-error-with-zero-factory",
+        "passed": true
+      },
+      {
+        "name": "request-type-mismatch-does-zero-factory-work",
+        "passed": true
+      },
+      {
+        "name": "response-type-mismatch-does-zero-factory-work",
+        "passed": true
+      },
+      {
+        "name": "invalid-context-and-id-before-factory",
+        "passed": true
+      },
+      {
+        "name": "already-canceled-dispatch-before-factory",
+        "passed": true
+      },
+      {
+        "name": "handler-receives-request-context-and-exact-token",
+        "passed": true
+      },
+      {
+        "name": "factory-triggered-cancellation-skips-handler-and-disposes-owned-instance",
+        "passed": true
+      },
+      {
+        "name": "business-failure-is-preserved-and-handler-disposed",
+        "passed": true
+      },
+      {
+        "name": "unexpected-exception-propagates-and-handler-disposed",
+        "passed": true
+      },
+      {
+        "name": "cooperative-cancellation-propagates-and-disposes",
+        "passed": true
+      },
+      {
+        "name": "asynchronous-disposal-is-awaited-before-completion",
+        "passed": true
+      },
+      {
+        "name": "async-disposal-preferred-over-sync-without-double-dispose",
+        "passed": true
+      },
+      {
+        "name": "faulty-null-result-rejected-and-handler-disposed",
+        "passed": true
+      },
+      {
+        "name": "faulty-null-factory-result-rejected",
+        "passed": true
+      },
+      {
+        "name": "factory-exception-is-not-converted-to-business-error",
+        "passed": true
+      },
+      {
+        "name": "cleanup-only-failure-propagates",
+        "passed": true
+      },
+      {
+        "name": "execution-and-cleanup-failures-both-preserved-in-order",
+        "passed": true
+      },
+      {
+        "name": "cancellation-plus-cleanup-failure-retains-cancellation-token",
+        "passed": true
+      },
+      {
+        "name": "concurrent-dispatches-use-independent-owned-handlers",
+        "passed": true
+      },
+      {
+        "name": "independent-callers-share-one-business-contract-and-handler",
+        "passed": true
+      },
+      {
+        "name": "core-assembly-has-only-bcl-references",
+        "passed": true
+      }
+    ]
+  },
+  "linux": {
+    "observedAtUtc": "2026-10-27T12:43:55.7984374+00:00",
+    "framework": ".NET 11.0.0-rc.3.26522.148",
+    "os": "Ubuntu 22.04.5 LTS",
+    "architecture": "X64",
+    "scope": "BCL-only experimental Core component contracts. Not tenant/identity authority, supported-Windows/hosted-CI/transport/provider/E2E/benchmark/production qualification.",
+    "passed": 32,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "canonical-id-grammar-and-boundaries",
+        "passed": true
+      },
+      {
+        "name": "attribute-validates-id-without-handler-activation",
+        "passed": true
+      },
+      {
+        "name": "success-result-and-error-access-guard",
+        "passed": true
+      },
+      {
+        "name": "failure-result-and-value-access-guard",
+        "passed": true
+      },
+      {
+        "name": "nullable-success-is-intentional",
+        "passed": true
+      },
+      {
+        "name": "error-code-message-contract",
+        "passed": true
+      },
+      {
+        "name": "context-defensive-snapshot-and-readonly-view",
+        "passed": true
+      },
+      {
+        "name": "context-rejects-invalid-and-unbounded-metadata",
+        "passed": true
+      },
+      {
+        "name": "registration-build-and-enumeration-invoke-no-factory",
+        "passed": true
+      },
+      {
+        "name": "registry-snapshot-is-independent-and-ordinally-ordered",
+        "passed": true
+      },
+      {
+        "name": "duplicate-invalid-and-null-factory-registration-rejected",
+        "passed": true
+      },
+      {
+        "name": "unknown-operation-returns-known-error-with-zero-factory",
+        "passed": true
+      },
+      {
+        "name": "request-type-mismatch-does-zero-factory-work",
+        "passed": true
+      },
+      {
+        "name": "response-type-mismatch-does-zero-factory-work",
+        "passed": true
+      },
+      {
+        "name": "invalid-context-and-id-before-factory",
+        "passed": true
+      },
+      {
+        "name": "already-canceled-dispatch-before-factory",
+        "passed": true
+      },
+      {
+        "name": "handler-receives-request-context-and-exact-token",
+        "passed": true
+      },
+      {
+        "name": "factory-triggered-cancellation-skips-handler-and-disposes-owned-instance",
+        "passed": true
+      },
+      {
+        "name": "business-failure-is-preserved-and-handler-disposed",
+        "passed": true
+      },
+      {
+        "name": "unexpected-exception-propagates-and-handler-disposed",
+        "passed": true
+      },
+      {
+        "name": "cooperative-cancellation-propagates-and-disposes",
+        "passed": true
+      },
+      {
+        "name": "asynchronous-disposal-is-awaited-before-completion",
+        "passed": true
+      },
+      {
+        "name": "async-disposal-preferred-over-sync-without-double-dispose",
+        "passed": true
+      },
+      {
+        "name": "faulty-null-result-rejected-and-handler-disposed",
+        "passed": true
+      },
+      {
+        "name": "faulty-null-factory-result-rejected",
+        "passed": true
+      },
+      {
+        "name": "factory-exception-is-not-converted-to-business-error",
+        "passed": true
+      },
+      {
+        "name": "cleanup-only-failure-propagates",
+        "passed": true
+      },
+      {
+        "name": "execution-and-cleanup-failures-both-preserved-in-order",
+        "passed": true
+      },
+      {
+        "name": "cancellation-plus-cleanup-failure-retains-cancellation-token",
+        "passed": true
+      },
+      {
+        "name": "concurrent-dispatches-use-independent-owned-handlers",
+        "passed": true
+      },
+      {
+        "name": "independent-callers-share-one-business-contract-and-handler",
+        "passed": true
+      },
+      {
+        "name": "core-assembly-has-only-bcl-references",
+        "passed": true
+      }
+    ]
+  },
+  "retained_attempts": [
+    "build-attempt01 ambient sourceCPM NU1507",
+    "build-attempt02 targettyped new IDictionary compileerror",
+    "build-attempt03 first31cases",
+    "windows-attempt01/linux-attempt01 prior31cases",
+    "build-attempt04 Windows32cases cancellationguard",
+    "linux-build-attempt02 Linux32cases cancellationguard"
+  ],
+  "peer_review": {
+    "path": ".local/peer-review",
+    "finding": "3malformedescapedUTF16inputs throw during Composition traversal; reportedpeer/root, fix pending"
+  }
+}

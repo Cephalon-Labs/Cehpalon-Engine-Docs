@@ -1,0 +1,14 @@
+  Determining projects to restore...
+D:\Cephalon\.worktrees\w1-composition\src\Cehpalon.Engine.Composition\Cehpalon.Engine.Composition.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME [D:\Cephalon\.worktrees\w1-composition\Tests\Composition.ContractTests\Composition.ContractTests.csproj]
+D:\Cephalon\.worktrees\w1-composition\Tests\Composition.ContractTests\Composition.ContractTests.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME
+  Failed to restore D:\Cephalon\.worktrees\w1-composition\src\Cehpalon.Engine.Composition\Cehpalon.Engine.Composition.csproj (in 1 ms).
+  Failed to restore D:\Cephalon\.worktrees\w1-composition\Tests\Composition.ContractTests\Composition.ContractTests.csproj (in 2 ms).
+
+Build FAILED.
+
+D:\Cephalon\.worktrees\w1-composition\src\Cehpalon.Engine.Composition\Cehpalon.Engine.Composition.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME [D:\Cephalon\.worktrees\w1-composition\Tests\Composition.ContractTests\Composition.ContractTests.csproj]
+D:\Cephalon\.worktrees\w1-composition\Tests\Composition.ContractTests\Composition.ContractTests.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.13

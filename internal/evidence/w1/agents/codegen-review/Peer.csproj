@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ManagePackageVersionsCentrally>false</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.14.0" />
+    <Reference Include="Cehpalon.Engine.CodeGeneration" HintPath="D:/Cephalon/.worktrees/w1-codegen/src/Cehpalon.Engine.CodeGeneration/bin/Release/netstandard2.0/Cehpalon.Engine.CodeGeneration.dll" />
+    <Reference Include="Cehpalon.Engine.Core" HintPath="D:/Cephalon/.worktrees/w1-core/src/Cehpalon.Engine.Core/bin/Release/net11.0/Cehpalon.Engine.Core.dll" />
+  </ItemGroup>
+</Project>

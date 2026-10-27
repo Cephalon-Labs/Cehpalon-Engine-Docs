@@ -2,7 +2,7 @@
 
 Source: [preserved user request](2026-10-27-user-request.md) and [2026-10-27 clarifications](../memory/2026-10-27-program-bootstrap.md). This map is planning coverage, not implementation coverage. All runtime capabilities start at M0.
 
-W0 refinement now has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md). REQ-02/04/05/06/07/08/09/10/12/19 have selected first-proof candidates and budgets; provider/runtime qualification and execution evidence are still pending.
+W0 refinement has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md) and [bounded SDK/artifact qualification](../planning/w0-qualification-and-sync.md). REQ-03/04/13 now have an experimental [W1 Core/Composition/code-generation slice](../planning/w1-core-composition-codegen.md). This is partial implementation coverage, not full requirement acceptance: real transports/providers, tenant/identity, all three lane workloads and #3 supported-Windows proof remain outstanding.
 
 | Requirement | Initial Engine issues | First proof / boundary |
 | --- | --- | --- |

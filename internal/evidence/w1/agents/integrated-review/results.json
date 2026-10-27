@@ -1,0 +1,57 @@
+{
+  "observedAtUtc": "2026-10-27T12:50:37.338769+00:00",
+  "scope": "Independent bounded read-only adversarial review of integrated Core/Composition; no benchmark or source edits",
+  "sourceBefore": {
+    "src/Cehpalon.Engine.Core/Contracts.cs": "81c4f8e7ef7d3db8a3da66c3a07b47e0db522ab7fee0187974c59b1ccc9954f5",
+    "src/Cehpalon.Engine.Core/OperationRegistry.cs": "1913777dae7f0d065d4634665e724ceb436c1fa487bf01efb9d8bf9cd9e46012",
+    "src/Cehpalon.Engine.Core/OperationResult.cs": "65b920c5a1befe0d21630146507a9d537e9450a4fc902ba7c8f24075408ab755",
+    "src/Cehpalon.Engine.Composition/Contracts.cs": "6c38370e3c79e2bf4a374545912a254c74289be7a921d4c933759664c61fa010",
+    "src/Cehpalon.Engine.Composition/CompositionCompiler.cs": "e0fb34e20e9e15b64efb5068d6090a52834d9781cf4f83835c5954d5a4405ce2",
+    "src/Cehpalon.Engine.Composition/PlanActivator.cs": "77fce0d6a3e80addc0022251b010b72efdd4f3da33d9774b4db907779c8571b2"
+  },
+  "sourceAfter": {
+    "src/Cehpalon.Engine.Core/Contracts.cs": "81c4f8e7ef7d3db8a3da66c3a07b47e0db522ab7fee0187974c59b1ccc9954f5",
+    "src/Cehpalon.Engine.Core/OperationRegistry.cs": "1913777dae7f0d065d4634665e724ceb436c1fa487bf01efb9d8bf9cd9e46012",
+    "src/Cehpalon.Engine.Core/OperationResult.cs": "65b920c5a1befe0d21630146507a9d537e9450a4fc902ba7c8f24075408ab755",
+    "src/Cehpalon.Engine.Composition/Contracts.cs": "6c38370e3c79e2bf4a374545912a254c74289be7a921d4c933759664c61fa010",
+    "src/Cehpalon.Engine.Composition/CompositionCompiler.cs": "e0fb34e20e9e15b64efb5068d6090a52834d9781cf4f83835c5954d5a4405ce2",
+    "src/Cehpalon.Engine.Composition/PlanActivator.cs": "77fce0d6a3e80addc0022251b010b72efdd4f3da33d9774b4db907779c8571b2"
+  },
+  "sourceStable": true,
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "factory-cancellation-plus-async-cleanup-failure-preserves-both-without-business-call",
+      "passed": true
+    },
+    {
+      "name": "missing-last-enabled-registration-rejects-before-all-activation-including-disabled-dangerous-factory",
+      "passed": true
+    },
+    {
+      "name": "aliased-module-resource-rejected-with-single-owned-rollback",
+      "passed": true
+    },
+    {
+      "name": "concurrent-failed-lease-disposal-shares-single-observed-failure",
+      "passed": true
+    },
+    {
+      "name": "activation-plan-cannot-be-constructed-through-public-api",
+      "passed": true
+    },
+    {
+      "name": "malformed-escaped-unicode-produces-sanitized-diagnostics",
+      "passed": true
+    },
+    {
+      "name": "entrypoint-cannot-be-implicitly-activated-through-support-dependency",
+      "passed": true
+    },
+    {
+      "name": "infinite-dependency-enumerator-is-bounded-and-rejected",
+      "passed": true
+    }
+  ]
+}

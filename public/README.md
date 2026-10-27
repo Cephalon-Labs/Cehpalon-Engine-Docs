@@ -2,6 +2,8 @@
 
 This folder is reserved for developer-facing Markdown suitable for a future Astro documentation site.
 
-Current status: planning baseline. No runtime API, configuration schema, database provider, transport adapter or deployment target is certified by these documents yet.
+Current status: experimental component guides are available; no stable runtime API, database provider, transport adapter or deployment target is certified by these documents.
+
+- [Experimental Core, Composition and operation code generation](guides/experimental-core-composition-codegen.md): tested bounded contracts and an executable in-process consumer, with explicit platform/profile/ownership limits.
 
 Publish guides with tested versions, supported profiles, runnable Samples and limitations when evidence exists. Keep research, internal planning, task mirrors, operational evidence and AI handoffs under internal folders.

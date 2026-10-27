@@ -1,0 +1,3 @@
+{"name":"invalid-profile-surrogate","result":false,"diagnostics":["CFG_JSON"]}
+{"name":"invalid-module-name-surrogate","result":false,"diagnostics":["CFG_JSON"]}
+{"name":"invalid-property-name-surrogate","result":false,"diagnostics":["CFG_JSON"]}

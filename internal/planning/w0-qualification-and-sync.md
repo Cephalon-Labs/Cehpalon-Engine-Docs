@@ -2,6 +2,8 @@
 
 วันที่: 2026-10-27 (Asia/Bangkok). Related Engine issues #3 และ #23
 
+This is the completed W0 qualification snapshot. [W1 continuation](w1-core-composition-codegen.md) supersedes its current-state tracking/source assertions; retained test and validation records still describe their exact original revisions. #3 remains Blocked.
+
 ## ผลที่ตรวจจริง
 
 | ส่วน | หลักฐานและขอบเขต |

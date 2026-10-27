@@ -1,0 +1,1761 @@
+{
+  "observed_at_utc": "2026-10-27T13:44:35.535971+00:00",
+  "engine_revision": "fee491cecaba04232207a1a2884057498e81213e",
+  "scope": "Delivery integrity, exact local source/contract/consumer proofs, scoped benchmark analysis and live tracking consistency. Not full platform/feature/hosted-CI/production qualification.",
+  "checks": [
+    {
+      "name": "Engine exact clean HEAD",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Samples clean and Engine pin exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact-source contracts: win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Core/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Core/OperationRegistry.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Core/OperationResult.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Core/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Composition/CompositionCompiler.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Composition/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Composition/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.Composition/PlanActivator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.CodeGeneration/OperationRegistryGenerator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: src/Cehpalon.Engine.CodeGeneration/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/Core.ContractTests/Core.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/Core.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/Core.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/Composition.ContractTests/Composition.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/Composition.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/Composition.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/collect-package-evidence.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/CompilerFixture/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/CompilerFixture/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Tests/CodeGeneration.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Benchmarks/W1.Components/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Benchmarks/W1.Components/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Benchmarks/W1.Components/W1.Components.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Directory.Packages.props",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: Cehpalon.Engine.slnx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes win: tools/verify_w1.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: Core.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: Composition.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: CodeGeneration.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual compiler consumer and runtime isolation: win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generated fixture bytes: win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Pinned in-process consumer: win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core/PortableCore.Consumer.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core/engine-lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: tools/verify_portable_core.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core\\profiles\\api-graphql.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core\\profiles\\api-only.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes win: portable-core\\profiles\\worker-only.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer emitted source bytes: win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact-source contracts: linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Core/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Core/OperationRegistry.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Core/OperationResult.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Core/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Composition/CompositionCompiler.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Composition/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Composition/PlanActivator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.Composition/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.CodeGeneration/OperationRegistryGenerator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: src/Cehpalon.Engine.CodeGeneration/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/Core.ContractTests/Core.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/Core.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/Core.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/Composition.ContractTests/Composition.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/Composition.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/Composition.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/CompilerFixture/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/CompilerFixture/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/collect-package-evidence.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Tests/CodeGeneration.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Benchmarks/W1.Components/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Benchmarks/W1.Components/W1.Components.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Benchmarks/W1.Components/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Directory.Packages.props",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: Cehpalon.Engine.slnx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Tested source/blob bytes linux: tools/verify_w1.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: Core.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: Composition.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: CodeGeneration.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Actual compiler consumer and runtime isolation: linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generated fixture bytes: linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Pinned in-process consumer: linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/PortableCore.Consumer.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/engine-lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: tools/verify_portable_core.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/profiles/api-graphql.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/profiles/api-only.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer tested source/blob bytes linux: portable-core/profiles/worker-only.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer emitted source bytes: linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generated registry byte equality across observed hosts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BCL-only independent project references: Core",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "BCL-only independent project references: Composition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "13-package artifact inventory consistency",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent Core/Composition review8/8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent exact semantic repro5/5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reviewed generator matches delivered source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Accepted complete benchmark run",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Protocol unchanged since measurement",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "All raw repetitions retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Benchmark correctness and independent guardrail recomputation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Invalid first attempt retained and excluded",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact hosted CI block not counted as pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/build-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/build-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/build-final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/fixture-build-final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/generated-registry.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/package-advisory.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/package-inventory.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/provenance.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/restore-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/retained-attempts.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/win-compiler-consumer.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-before-symbol-fix/win-driver.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/observed-generator-before.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/output-after-fix.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/output-before-fix.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/output.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/Peer.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/results-after-fix.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/results-before-fix.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/results.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/review-after-fix.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/codegen-review/review-before-fix.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt01-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt02-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt02-restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt02-win.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt02-win.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt03-linux-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt03-linux-restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt03-linux.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt03-linux.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt04-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt04-restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt04-win.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt04-win.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt05-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt05-win.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt05-win.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt06-linux-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt06-linux-restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt06-linux.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt06-linux.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt07-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt07-restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt07-win.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt07-win.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt08-linux-build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt08-linux-restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt08-linux.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-attempt08-linux.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/composition/composition-handoff.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/build-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/build-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/build-attempt03.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/build-attempt04.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/build-final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/handoff-summary.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-attempt01.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-attempt02.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-build-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-build-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-restore-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/linux-restore-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/restore-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/restore-final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/restore-locked-final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/windows-attempt01.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/windows-attempt01.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/windows-attempt02.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/windows-attempt02.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/windows-final.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/core/windows-final.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integrated-review/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integrated-review/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integrated-review/results.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integrated-review/Review.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integrated-review/run.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/CodeGeneration.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/CodeGeneration.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/compiler-fixture-generated.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/compiler-fixture.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/Composition.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/Composition.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/Core.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/Core.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/integration-before-symbol-fix/sdk-version.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/peer-review/PeerReview.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/peer-review/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/peer-review/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/peer-review/results-after-fix.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: agents/peer-review/results.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/host-cpu.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/host-memory.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/result.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/review.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/run.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/wsl-cpu.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/wsl-kernel.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt01/wsl-memory.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/host-cpu.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/host-memory.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/result.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/run.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/wsl-cpu.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/wsl-kernel.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: benchmark-attempt02/wsl-memory.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-linux/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-linux/consumer.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-linux/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-linux/OperationRegistrations.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-linux/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-linux/run.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-win/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-win/consumer.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-win/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-win/OperationRegistrations.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-win/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: consumer-win/run.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/CodeGeneration.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/CodeGeneration.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/compiler-fixture-generated.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/compiler-fixture.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/Composition.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/Composition.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/Core.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/Core.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-linux/sdk-version.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/CodeGeneration.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/CodeGeneration.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/compiler-fixture-generated.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/compiler-fixture.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/Composition.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/Composition.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/Core.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/Core.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: exact-win/sdk-version.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: hosted-ci.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/CodeGeneration.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/CodeGeneration.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/compiler-fixture-generated.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/compiler-fixture.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/Composition.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/Composition.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/Core.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/Core.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-linux/sdk-version.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/build.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/CodeGeneration.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/CodeGeneration.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/compiler-fixture-generated.g.cs.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/compiler-fixture.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/Composition.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/Composition.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/Core.ContractTests.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/Core.ContractTests.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/restore.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/sdk-info.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: integration-corrected-win/sdk-version.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Retained evidence bytes: package-inventory.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Original23 identities and Project4 preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: fee491cecaba04232207a1a2884057498e81213e",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: fee491cecaba04232207a1a2884057498e81213e",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: fee491cecaba04232207a1a2884057498e81213e",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: 5a6795b34535fdc311b519e8d452ea1c9f715bba",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Exact mirror and native fields: #1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal resolution: 34521e5ddd1b0ad7ab664dba825c69161e4344fc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Scoped delivery gates with full dependency still blocked: #5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Scoped delivery gates with full dependency still blocked: #6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#20 full task remains open/planned beyond delivered generator",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#3 body/state/fields unchanged and Blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#23 stays closed Done",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT and Git identity: Cehpalon-Engine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Published source HEAD: Cehpalon-Engine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT and Git identity: Cehpalon-Engine-Docs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT and Git identity: Cehpalon-Engine-Samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Published source HEAD: Cehpalon-Engine-Samples",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Maintained Markdown links across three repos",
+      "passed": true,
+      "detail": {
+        "checked": 318,
+        "broken": [],
+        "excluded": "Raw publisher/agent evidence captures resolve at original bases and are validated by bytes, not rewritten"
+      }
+    }
+  ],
+  "samples_execution_revision": "16524f4043b2bce6d2fcf0d5627a4ea494feb463",
+  "tracking_counts": {
+    "total": 23,
+    "closed": 5,
+    "open": 18
+  },
+  "passed": 347,
+  "total": 347,
+  "status": "passed",
+  "known_limits": [
+    "#3 supported-Windows qualification remains Blocked; local Windows26H2 observational only",
+    "Hosted CI failed before any step due reported account payments or spending limit; no CI pass",
+    "Full #5/#6 dependency gates and full #20 CLI/scaffolding/transport/E2E/benchmark scope remain outstanding; umbrella M0"
+  ],
+  "auxiliary_validation_note": "First private validator invocation used host-native backslashes from the Windows consumer manifest in git show blob syntax. Corrected the checker to normalize Git paths to forward slashes; no consumer manifest/source or runtime tests were changed."
+}

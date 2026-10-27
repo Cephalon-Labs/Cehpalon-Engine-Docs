@@ -2,7 +2,7 @@
 
 สถานะ: แผนพัฒนาเริ่มต้น ขอบเขต feature และตัวเลขชั่วโมงยังเป็นข้อเสนอ ไม่มี runtime feature ที่ได้รับการรับรองจากการตั้ง repository รอบนี้
 
-Latest W0 continuation: [qualification and two-way tracking](w0-qualification-and-sync.md). Statements about the initially absent SDK/implementation below describe the earlier baseline; current bounded SDK/driver/artifact outcomes and CI blocker are in that continuation.
+Latest continuation: [W1 Core/Composition and code generation](w1-core-composition-codegen.md), following [W0 qualification and two-way tracking](w0-qualification-and-sync.md). Statements about the initially absent SDK/implementation below describe the earlier baseline. [ADR-0005](../adr/ADR-0005-w1-portable-core-composition.md) permits bounded portable development while keeping #3 and full acceptance/platform gates blocked.
 
 ## ข้อกำหนดที่ยืนยันจากผู้ใช้
 

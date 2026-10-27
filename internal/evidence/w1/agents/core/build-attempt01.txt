@@ -1,0 +1,14 @@
+  Determining projects to restore...
+D:\Cephalon\.worktrees\w1-core\src\Cehpalon.Engine.Core\Cehpalon.Engine.Core.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME [D:\Cephalon\.worktrees\w1-core\Tests\Core.ContractTests\Core.ContractTests.csproj]
+D:\Cephalon\.worktrees\w1-core\Tests\Core.ContractTests\Core.ContractTests.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME
+  Failed to restore D:\Cephalon\.worktrees\w1-core\Tests\Core.ContractTests\Core.ContractTests.csproj (in 67 ms).
+  Failed to restore D:\Cephalon\.worktrees\w1-core\src\Cehpalon.Engine.Core\Cehpalon.Engine.Core.csproj (in 60 ms).
+
+Build FAILED.
+
+D:\Cephalon\.worktrees\w1-core\src\Cehpalon.Engine.Core\Cehpalon.Engine.Core.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME [D:\Cephalon\.worktrees\w1-core\Tests\Core.ContractTests\Core.ContractTests.csproj]
+D:\Cephalon\.worktrees\w1-core\Tests\Core.ContractTests\Core.ContractTests.csproj : error NU1507: Warning As Error: There are 2 package sources defined in your configuration. When using central package management, map your package sources with package source mapping (https://aka.ms/nuget-package-source-mapping) or specify a single package source. The following sources are defined: nuget.org, CME
+    0 Warning(s)
+    2 Error(s)
+
+Time Elapsed 00:00:00.59

@@ -1,0 +1,9 @@
+  Determining projects to restore...
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj (in 188 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj (in 188 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Core.ContractTests/Core.ContractTests.csproj (in 188 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj (in 188 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Composition.ContractTests/Composition.ContractTests.csproj (in 188 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Benchmarks/W1.Components/W1.Components.csproj (in 188 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj (in 422 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj (in 399 ms).

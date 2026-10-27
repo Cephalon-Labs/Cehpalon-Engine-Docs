@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net11.0</TargetFramework><OutputType>Exe</OutputType><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj" />
+    <ProjectReference Include="D:/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj" />
+  </ItemGroup>
+</Project>

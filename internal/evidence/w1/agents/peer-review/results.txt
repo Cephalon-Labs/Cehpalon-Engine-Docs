@@ -1,0 +1,3 @@
+{"name":"invalid-profile-surrogate","exception":"InvalidOperationException","message":"Cannot read incomplete UTF-16 JSON text as string with missing low surrogate."}
+{"name":"invalid-module-name-surrogate","exception":"InvalidOperationException","message":"Cannot read incomplete UTF-16 JSON text as string with missing low surrogate."}
+{"name":"invalid-property-name-surrogate","exception":"InvalidOperationException","message":"Cannot read incomplete UTF-16 JSON text as string with missing low surrogate."}

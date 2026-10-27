@@ -1,0 +1,192 @@
+{
+  "observed_at_utc": "2026-10-27T13:13:55.423591+00:00",
+  "scope": "Actual hosted workflow outcomes at the W1 Engine revision; blocked jobs never count as tests passed",
+  "runs": [
+    {
+      "conclusion": "failure",
+      "databaseId": 40509385311,
+      "headSha": "fee491cecaba04232207a1a2884057498e81213e",
+      "status": "completed",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385311",
+      "workflowName": "W1 portable component contracts",
+      "jobs": [
+        {
+          "id": 122206954901,
+          "run_id": 40509385311,
+          "workflow_name": "W1 portable component contracts",
+          "head_branch": "main",
+          "run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385311",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOVY38nc8AAAAcdBollQ",
+          "head_sha": "fee491cecaba04232207a1a2884057498e81213e",
+          "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/jobs/122206954901",
+          "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385311/job/122206954901",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-10-27T13:08:06Z",
+          "started_at": "2026-10-27T13:08:06Z",
+          "completed_at": "2026-10-27T13:08:09Z",
+          "name": "portable-contracts (ubuntu-24.04)",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/check-runs/122206954901",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": 0,
+          "runner_name": "",
+          "runner_group_id": 0,
+          "runner_group_name": ""
+        },
+        {
+          "id": 122206955397,
+          "run_id": 40509385311,
+          "workflow_name": "W1 portable component contracts",
+          "head_branch": "main",
+          "run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385311",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOVY38nc8AAAAcdBonhQ",
+          "head_sha": "fee491cecaba04232207a1a2884057498e81213e",
+          "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/jobs/122206955397",
+          "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385311/job/122206955397",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-10-27T13:08:06Z",
+          "started_at": "2026-10-27T13:08:06Z",
+          "completed_at": "2026-10-27T13:08:09Z",
+          "name": "portable-contracts (windows-2025)",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/check-runs/122206955397",
+          "labels": [
+            "windows-2025"
+          ],
+          "runner_id": 0,
+          "runner_name": "",
+          "runner_group_id": 0,
+          "runner_group_name": ""
+        }
+      ],
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/fee491cecaba04232207a1a2884057498e81213e/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/fee491cecaba04232207a1a2884057498e81213e/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        }
+      ],
+      "executed_step_count": 0,
+      "classification": "Blocked before steps by reported account payments or spending limit",
+      "runtime_test_pass": false
+    },
+    {
+      "conclusion": "failure",
+      "databaseId": 40509385312,
+      "headSha": "fee491cecaba04232207a1a2884057498e81213e",
+      "status": "completed",
+      "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385312",
+      "workflowName": "Platform qualification",
+      "jobs": [
+        {
+          "id": 122206955194,
+          "run_id": 40509385312,
+          "workflow_name": "Platform qualification",
+          "head_branch": "main",
+          "run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385312",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOVY38nc8AAAAcdBomug",
+          "head_sha": "fee491cecaba04232207a1a2884057498e81213e",
+          "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/jobs/122206955194",
+          "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385312/job/122206955194",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-10-27T13:08:06Z",
+          "started_at": "2026-10-27T13:08:06Z",
+          "completed_at": "2026-10-27T13:08:09Z",
+          "name": "SDK and driver smoke (ubuntu-24.04)",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/check-runs/122206955194",
+          "labels": [
+            "ubuntu-24.04"
+          ],
+          "runner_id": 0,
+          "runner_name": "",
+          "runner_group_id": 0,
+          "runner_group_name": ""
+        },
+        {
+          "id": 122206955431,
+          "run_id": 40509385312,
+          "workflow_name": "Platform qualification",
+          "head_branch": "main",
+          "run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385312",
+          "run_attempt": 1,
+          "node_id": "CR_kwDOVY38nc8AAAAcdBonpw",
+          "head_sha": "fee491cecaba04232207a1a2884057498e81213e",
+          "url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/actions/jobs/122206955431",
+          "html_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/40509385312/job/122206955431",
+          "status": "completed",
+          "conclusion": "failure",
+          "created_at": "2026-10-27T13:08:06Z",
+          "started_at": "2026-10-27T13:08:06Z",
+          "completed_at": "2026-10-27T13:08:09Z",
+          "name": "SDK and driver smoke (windows-2025)",
+          "steps": [],
+          "check_run_url": "https://api.github.com/repos/Cephalon-Labs/Cehpalon-Engine/check-runs/122206955431",
+          "labels": [
+            "windows-2025"
+          ],
+          "runner_id": 0,
+          "runner_name": "",
+          "runner_group_id": 0,
+          "runner_group_name": ""
+        }
+      ],
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/fee491cecaba04232207a1a2884057498e81213e/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/fee491cecaba04232207a1a2884057498e81213e/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        }
+      ],
+      "executed_step_count": 0,
+      "classification": "Blocked before steps by reported account payments or spending limit",
+      "runtime_test_pass": false
+    }
+  ]
+}

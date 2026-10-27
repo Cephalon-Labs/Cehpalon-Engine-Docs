@@ -1,0 +1,1 @@
+Component guardrails: 8/8; all raw repetitions retained in /mnt/d/Cephalon/Cehpalon-Engine-Docs/internal/evidence/w1/benchmark-attempt02/result.json

@@ -1,0 +1,9 @@
+/mnt/d/Cephalon/.tools/dotnet11/linux-x64/sdk/11.0.100-rc.3.26522.148/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [/mnt/d/Cephalon/.worktrees/w1-composition/Tests/Composition.ContractTests/Composition.ContractTests.csproj]
+  Cehpalon.Engine.Composition -> /mnt/d/Cephalon/.worktrees/w1-composition/src/Cehpalon.Engine.Composition/bin/Release/net11.0/Cehpalon.Engine.Composition.dll
+  Composition.ContractTests -> /mnt/d/Cephalon/.worktrees/w1-composition/Tests/Composition.ContractTests/bin/Release/net11.0/Composition.ContractTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:09.28

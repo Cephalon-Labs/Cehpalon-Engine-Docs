@@ -19,6 +19,7 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Config selects a compatible capability set. Validate the graph and build an immutable plan before activation. Reject incompatible selections with actionable diagnostics.
 - Explicitly disabled modules must do no module-owned factory, constructor, connection, endpoint or background work. Prove this; shared dependencies required elsewhere must be distinguished.
 - Changing transports/topologies/providers preserves only the semantics declared in their compatibility contracts. Do not hide differences in consistency, retries, transactions, queries, streaming or lifetime.
+- Generated operation registrations remain typed and lazy: code generation does not activate modules or provide tenant authority. Deduplicate declarations by semantic symbol identity, validate partial declarations together, and prove emitted consumers compile. Display names are not unique symbol identities.
 - Tenant and authorization boundaries apply to every supported entrypoint and state/event/cache/retrieval/tool path.
 
 ## Delivery and traceability

@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored D:\Cephalon\.worktrees\w1-core\src\Cehpalon.Engine.Core\Cehpalon.Engine.Core.csproj (in 3 ms).
+  Restored D:\Cephalon\.worktrees\w1-core\Tests\Core.ContractTests\Core.ContractTests.csproj (in 10 ms).

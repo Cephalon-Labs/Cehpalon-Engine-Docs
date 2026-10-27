@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored /mnt/d/Cephalon/.worktrees/w1-composition/Tests/Composition.ContractTests/Composition.ContractTests.csproj (in 150 ms).
+  Restored /mnt/d/Cephalon/.worktrees/w1-composition/src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj (in 147 ms).

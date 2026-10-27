@@ -1,0 +1,37 @@
+{
+  "issue": 6,
+  "source_state": "Uncommitted isolated agent worktree; primary must integrate and rerun exact committed Engine revision",
+  "scope": "BCL compiler and recorder lifecycle component proofs only; notrealAPI/GraphQL/Worker/provider/tenant/E2E/benchmark/CI/production",
+  "sources": {
+    "src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj": "0c846782b7aab61ec6d05f399ee135f643484727d68c84791869e75e4d7a5f25",
+    "src/Cehpalon.Engine.Composition/CompositionCompiler.cs": "e0fb34e20e9e15b64efb5068d6090a52834d9781cf4f83835c5954d5a4405ce2",
+    "src/Cehpalon.Engine.Composition/Contracts.cs": "6c38370e3c79e2bf4a374545912a254c74289be7a921d4c933759664c61fa010",
+    "src/Cehpalon.Engine.Composition/packages.lock.json": "b5d92ac7cd604d998f35dee72e747dd203d49c3031da32b96e1f58246cd2bd87",
+    "src/Cehpalon.Engine.Composition/PlanActivator.cs": "77fce0d6a3e80addc0022251b010b72efdd4f3da33d9774b4db907779c8571b2",
+    "src/Cehpalon.Engine.Composition/README.md": "798d527b129adae096e75147c80e99888ab624005336d7280a3083bd2825bbab",
+    "Tests/Composition.ContractTests/Composition.ContractTests.csproj": "1f4913c0a6ceef06de933ae2fcf1d4699e3726ec22c284ef6bc58a99ffbabc1e",
+    "Tests/Composition.ContractTests/packages.lock.json": "d7b5ee33907d69d24acd9e4d6ad66eb225ea95977b85567732ca5519aad338b4",
+    "Tests/Composition.ContractTests/Program.cs": "2e873106fa3c4bd31a18a0e4fa1a55f77a5ce8fc9536c6c77e49d315fd8b87b4",
+    "Tests/Composition.ContractTests/README.md": "0bc4e3b4b35e12c4735e5e527feabec39eb49eebe4cef70e7e68bbd8db8155a6"
+  },
+  "tests": {
+    "windows": ".local/composition-attempt07-win.json",
+    "wsl_linux": ".local/composition-attempt08-linux.json"
+  },
+  "retained_failed_attempts": [
+    {
+      "path": ".local/composition-attempt01-build.txt",
+      "reason": "NU1507 machine2sources/CPM; explicitsingle-sourcequalifiedconfigrestorefixed withoutglobalchange"
+    },
+    {
+      "path": ".local/composition-attempt04-win.json",
+      "reason": "74/75 invalidliteralUTF16 causedArgumentException; fixedscopedparsecatch and retainedregression"
+    }
+  ],
+  "independent_peer_finding": {
+    "reviewer": "/root/w1_core",
+    "finding": "EscapedlonesurrogateName/GetString canthrowInvalidOperationException afterParse",
+    "fix": "ScopedJSONstring/propertyprevalidation +safeCFG_JSON; five regressioncases",
+    "retest": "Peerreports3/3previousreprosnowreturndiagnostics; logsintheirworktree .local/peer-review/results-after-fix.txt"
+  }
+}

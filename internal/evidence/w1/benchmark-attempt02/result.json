@@ -1,0 +1,256 @@
+{
+  "observedAtUtc": "2026-10-27T13:22:17.6547459+00:00",
+  "scope": "Warm synchronous component regression smoke only; local WSL/shared host, no production/E2E/transport/tenant/generator-speed qualification.",
+  "protocol": "Docs internal/validation/w1-component-protocol.md, declared before measurement; no outlier filtering",
+  "environment": {
+    "os": "Ubuntu 22.04.5 LTS",
+    "framework": ".NET 11.0.0-rc.3.26522.148",
+    "architecture": "X64",
+    "logicalProcessors": 20,
+    "affinity": "0xfffff",
+    "gcTotalAvailableMemoryBytes": 33520726016,
+    "serverGC": false,
+    "stopwatchFrequency": 1000000000
+  },
+  "dispatch": {
+    "iterations": 100000,
+    "warmup": 10000,
+    "repetitions": 5,
+    "runs": [
+      {
+        "repetition": 0,
+        "order": "direct,dispatcher",
+        "direct": {
+          "Iterations": 100000,
+          "ElapsedTicks": 5560813,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 55.60813,
+          "BytesPerOperation": 56
+        },
+        "dispatcher": {
+          "Iterations": 100000,
+          "ElapsedTicks": 15898080,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 158.9808,
+          "BytesPerOperation": 56
+        }
+      },
+      {
+        "repetition": 1,
+        "order": "dispatcher,direct",
+        "direct": {
+          "Iterations": 100000,
+          "ElapsedTicks": 2986468,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 29.86468,
+          "BytesPerOperation": 56
+        },
+        "dispatcher": {
+          "Iterations": 100000,
+          "ElapsedTicks": 13669231,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 136.69231,
+          "BytesPerOperation": 56
+        }
+      },
+      {
+        "repetition": 2,
+        "order": "direct,dispatcher",
+        "direct": {
+          "Iterations": 100000,
+          "ElapsedTicks": 3079474,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 30.79474,
+          "BytesPerOperation": 56
+        },
+        "dispatcher": {
+          "Iterations": 100000,
+          "ElapsedTicks": 12428299,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 124.28299,
+          "BytesPerOperation": 56
+        }
+      },
+      {
+        "repetition": 3,
+        "order": "dispatcher,direct",
+        "direct": {
+          "Iterations": 100000,
+          "ElapsedTicks": 2853545,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 28.53545,
+          "BytesPerOperation": 56
+        },
+        "dispatcher": {
+          "Iterations": 100000,
+          "ElapsedTicks": 12481153,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 124.81153,
+          "BytesPerOperation": 56
+        }
+      },
+      {
+        "repetition": 4,
+        "order": "direct,dispatcher",
+        "direct": {
+          "Iterations": 100000,
+          "ElapsedTicks": 2929092,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 29.29092,
+          "BytesPerOperation": 56
+        },
+        "dispatcher": {
+          "Iterations": 100000,
+          "ElapsedTicks": 12153378,
+          "AllocatedBytes": 5600000,
+          "Checksum": 4999950000,
+          "NanosecondsPerOperation": 121.53378,
+          "BytesPerOperation": 56
+        }
+      }
+    ],
+    "medianExtraNanoseconds": 96.27608000000001,
+    "medianExtraBytes": 0,
+    "created": 1000000,
+    "disposed": 1000000
+  },
+  "smallComposition": {
+    "iterations": 1000,
+    "warmup": 100,
+    "repetitions": 5,
+    "runs": [
+      {
+        "Iterations": 1000,
+        "ElapsedTicks": 17573730,
+        "AllocatedBytes": 9096240,
+        "Checksum": 2000,
+        "NanosecondsPerOperation": 17573.73,
+        "BytesPerOperation": 9096.24
+      },
+      {
+        "Iterations": 1000,
+        "ElapsedTicks": 16727245,
+        "AllocatedBytes": 9096240,
+        "Checksum": 2000,
+        "NanosecondsPerOperation": 16727.245,
+        "BytesPerOperation": 9096.24
+      },
+      {
+        "Iterations": 1000,
+        "ElapsedTicks": 16818350,
+        "AllocatedBytes": 9096240,
+        "Checksum": 2000,
+        "NanosecondsPerOperation": 16818.35,
+        "BytesPerOperation": 9096.24
+      },
+      {
+        "Iterations": 1000,
+        "ElapsedTicks": 18126363,
+        "AllocatedBytes": 9096240,
+        "Checksum": 2000,
+        "NanosecondsPerOperation": 18126.363,
+        "BytesPerOperation": 9096.24
+      },
+      {
+        "Iterations": 1000,
+        "ElapsedTicks": 16763753,
+        "AllocatedBytes": 9096240,
+        "Checksum": 2000,
+        "NanosecondsPerOperation": 16763.753,
+        "BytesPerOperation": 9096.24
+      }
+    ]
+  },
+  "largeComposition": {
+    "nodes": 128,
+    "iterations": 100,
+    "warmup": 10,
+    "repetitions": 5,
+    "runs": [
+      {
+        "Iterations": 100,
+        "ElapsedTicks": 802835620,
+        "AllocatedBytes": 93173120,
+        "Checksum": 12800,
+        "NanosecondsPerOperation": 8028356.2,
+        "BytesPerOperation": 931731.2
+      },
+      {
+        "Iterations": 100,
+        "ElapsedTicks": 487953260,
+        "AllocatedBytes": 93172880,
+        "Checksum": 12800,
+        "NanosecondsPerOperation": 4879532.6,
+        "BytesPerOperation": 931728.8
+      },
+      {
+        "Iterations": 100,
+        "ElapsedTicks": 134299784,
+        "AllocatedBytes": 93173120,
+        "Checksum": 12800,
+        "NanosecondsPerOperation": 1342997.84,
+        "BytesPerOperation": 931731.2
+      },
+      {
+        "Iterations": 100,
+        "ElapsedTicks": 117209115,
+        "AllocatedBytes": 92443760,
+        "Checksum": 12800,
+        "NanosecondsPerOperation": 1172091.15,
+        "BytesPerOperation": 924437.6
+      },
+      {
+        "Iterations": 100,
+        "ElapsedTicks": 104136886,
+        "AllocatedBytes": 91640080,
+        "Checksum": 12800,
+        "NanosecondsPerOperation": 1041368.86,
+        "BytesPerOperation": 916400.8
+      }
+    ]
+  },
+  "checks": [
+    {
+      "name": "owned handler counts",
+      "passed": true
+    },
+    {
+      "name": "all per-run checksums exact",
+      "passed": true
+    },
+    {
+      "name": "median dispatch extra time \u003C=20us/op",
+      "passed": true
+    },
+    {
+      "name": "median dispatch extra allocation \u003C=1024B/op",
+      "passed": true
+    },
+    {
+      "name": "small median \u003C=2ms/compile",
+      "passed": true
+    },
+    {
+      "name": "small median \u003C=128KiB/compile",
+      "passed": true
+    },
+    {
+      "name": "128node median \u003C=10ms/compile",
+      "passed": true
+    },
+    {
+      "name": "128node median \u003C=2MiB/compile",
+      "passed": true
+    }
+  ],
+  "passed": true
+}
