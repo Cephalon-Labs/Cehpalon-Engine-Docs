@@ -1,0 +1,9 @@
+{
+  "source_url": "https://api.github.com/repos/ggml-org/llama.cpp/git/ref/tags/b11669",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "docker_content_digest": null,
+  "bytes": 337,
+  "sha256": "b83d157fb5b05e58c62c55c3c781e35d49a99eba381403f36be62e60b01d7479",
+  "observed_at_utc": "2026-10-27T11:16:51.877861+00:00"
+}

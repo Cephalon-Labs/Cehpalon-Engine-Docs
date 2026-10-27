@@ -1,0 +1,9 @@
+{
+  "source_url": "https://raw.githubusercontent.com/ggml-org/llama.cpp/v0.7.0/LICENSE",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "docker_content_digest": null,
+  "bytes": 1078,
+  "sha256": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+  "observed_at_utc": "2026-10-27T11:29:27.489946+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-27T11:13:17.760260+00:00",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B-GGUF/resolve/370f27d7550e0def9b39c1f16d3fbaa13aa67728/Qwen3-Embedding-0.6B-Q8_0.gguf?download=true",
+  "destination": "D:\\Cephalon\\.tools\\models\\Qwen3-Embedding-0.6B-Q8_0.gguf",
+  "expected_size": 639150592,
+  "expected_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+  "status": "verified-bytes",
+  "partial_path": "D:\\Cephalon\\.tools\\models\\Qwen3-Embedding-0.6B-Q8_0.gguf.attempt-20261027T111317760260Z.part",
+  "http_status": 200,
+  "content_length": "639150592",
+  "final_host": "us.aws.cdn.hf.co",
+  "actual_size": 639150592,
+  "actual_sha256": "06507c7b42688469c4e7298b0a1e16deff06caf291cf0a5b278c308249c3e439",
+  "elapsed_seconds": 26.046,
+  "finished_at_utc": "2026-10-27T11:13:43.816592+00:00"
+}

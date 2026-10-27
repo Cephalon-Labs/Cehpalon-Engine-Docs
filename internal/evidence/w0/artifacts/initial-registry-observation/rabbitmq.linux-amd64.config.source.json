@@ -1,0 +1,9 @@
+{
+  "source_url": "https://registry-1.docker.io/v2/library/rabbitmq/blobs/sha256:efeabeb9685e0e6024cddc980902c03bb7ed840a5ccdd435631369a472be142b",
+  "status": 200,
+  "content_type": "application/octet-stream",
+  "docker_content_digest": null,
+  "bytes": 14160,
+  "sha256": "efeabeb9685e0e6024cddc980902c03bb7ed840a5ccdd435631369a472be142b",
+  "observed_at_utc": "2026-10-27T11:13:14.343176+00:00"
+}

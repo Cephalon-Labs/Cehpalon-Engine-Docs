@@ -1,0 +1,9 @@
+{
+  "source_url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B-GGUF/revision/370f27d7550e0def9b39c1f16d3fbaa13aa67728?blobs=true",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "docker_content_digest": null,
+  "bytes": 5986,
+  "sha256": "3099340b230fa78e9bd51abc1379e106a6da96c2bdc5073f574006d8bee7df1a",
+  "observed_at_utc": "2026-10-27T11:13:17.751240+00:00"
+}

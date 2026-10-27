@@ -3,3 +3,6 @@
 *.json text eol=lf
 *.py text eol=lf
 *.ps1 text eol=lf
+# Task mirrors contain exact GitHub body bytes, including mixed LF/CRLF.
+tasks/*.md -text
+internal/evidence/** -text

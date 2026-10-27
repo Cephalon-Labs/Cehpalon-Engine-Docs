@@ -1,0 +1,9 @@
+{
+  "source_url": "https://github.com/ggml-org/llama.cpp/releases/download/v0.7.0/nightly-tag.txt",
+  "status": 200,
+  "content_type": "application/octet-stream",
+  "docker_content_digest": null,
+  "bytes": 7,
+  "sha256": "0bbf7c261e41e777ad8d70f2c83f8d7dd2ae4d7e41a9b6f26926fbc902209c70",
+  "observed_at_utc": "2026-10-27T11:16:50.990371+00:00"
+}

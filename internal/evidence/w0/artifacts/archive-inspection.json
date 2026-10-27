@@ -1,0 +1,62 @@
+{
+  "observed_at_utc": "2026-10-27T11:18:49.906204+00:00",
+  "inspection": "Native tar read-only listing/member stdout; no filesystem extraction or binary execution",
+  "artifacts": [
+    {
+      "name": "ollama",
+      "archive_path": "D:\\Cephalon\\.tools\\binaries\\ollama\\v0.40.11\\ollama-linux-amd64.tar.zst",
+      "selected_member": "bin/ollama",
+      "member_bytes": 40779408,
+      "member_sha256": "b0a4becfaf872e3ad5d2e9051244e0dfe55409f03d6e2cd9bd9c34400e201b4c",
+      "elf_class": 64,
+      "elf_byte_order": "little-endian",
+      "elf_machine": 62,
+      "x86_64": true,
+      "cpu_backends_in_archive": [
+        "lib/ollama/libggml-cpu-alderlake.so",
+        "lib/ollama/libggml-cpu-cannonlake.so",
+        "lib/ollama/libggml-cpu-cascadelake.so",
+        "lib/ollama/libggml-cpu-cooperlake.so",
+        "lib/ollama/libggml-cpu-haswell.so",
+        "lib/ollama/libggml-cpu-icelake.so",
+        "lib/ollama/libggml-cpu-ivybridge.so",
+        "lib/ollama/libggml-cpu-piledriver.so",
+        "lib/ollama/libggml-cpu-sandybridge.so",
+        "lib/ollama/libggml-cpu-sapphirerapids.so",
+        "lib/ollama/libggml-cpu-skylakex.so",
+        "lib/ollama/libggml-cpu-sse42.so",
+        "lib/ollama/libggml-cpu-x64.so",
+        "lib/ollama/libggml-cpu-zen4.so"
+      ],
+      "isa_boundary": "ELF machine and archive backend names inspected; exact dispatched ISA/loader dependencies require primary runtime inspection; binary not executed"
+    },
+    {
+      "name": "llama-cpp",
+      "archive_path": "D:\\Cephalon\\.tools\\binaries\\llama-cpp\\v0.7.0\\llama-b11669-bin-ubuntu-x64.tar.gz",
+      "selected_member": "llama-b11669/llama-server",
+      "member_bytes": 17864,
+      "member_sha256": "3f2b53013c2eb596c8aca87e4740240a41f95bcebf72e61084d6d5ba0db761cc",
+      "elf_class": 64,
+      "elf_byte_order": "little-endian",
+      "elf_machine": 62,
+      "x86_64": true,
+      "cpu_backends_in_archive": [
+        "llama-b11669/libggml-cpu-cooperlake.so",
+        "llama-b11669/libggml-cpu-piledriver.so",
+        "llama-b11669/libggml-cpu-zen4.so",
+        "llama-b11669/libggml-cpu-alderlake.so",
+        "llama-b11669/libggml-cpu-sse42.so",
+        "llama-b11669/libggml-cpu-haswell.so",
+        "llama-b11669/libggml-cpu-cannonlake.so",
+        "llama-b11669/libggml-cpu-sapphirerapids.so",
+        "llama-b11669/libggml-cpu-cascadelake.so",
+        "llama-b11669/libggml-cpu-sandybridge.so",
+        "llama-b11669/libggml-cpu-ivybridge.so",
+        "llama-b11669/libggml-cpu-skylakex.so",
+        "llama-b11669/libggml-cpu-icelake.so",
+        "llama-b11669/libggml-cpu-x64.so"
+      ],
+      "isa_boundary": "ELF machine and archive backend names inspected; exact dispatched ISA/loader dependencies require primary runtime inspection; binary not executed"
+    }
+  ]
+}

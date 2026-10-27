@@ -1,0 +1,33 @@
+{
+  "observed_at_utc": "2026-10-27T11:19:47.914198+00:00",
+  "scope": "Offline local-file qualification safety checks, no network/binary execution",
+  "retained_test_root": "D:\\Cephalon\\.tools\\artifact-tests\\20261027T111947640907Z",
+  "passed": 5,
+  "total": 6,
+  "cases": [
+    {
+      "name": "successful file bytes and reread hash",
+      "passed": true
+    },
+    {
+      "name": "valid existing destination retained without overwrite",
+      "passed": true
+    },
+    {
+      "name": "checksum mismatch keeps complete attempted bytes and never promotes destination",
+      "passed": true
+    },
+    {
+      "name": "mismatched existing destination never overwritten",
+      "passed": true
+    },
+    {
+      "name": "changing JSON observation retains prior bytes",
+      "passed": false
+    },
+    {
+      "name": "changing source preserves both content hashes",
+      "passed": true
+    }
+  ]
+}

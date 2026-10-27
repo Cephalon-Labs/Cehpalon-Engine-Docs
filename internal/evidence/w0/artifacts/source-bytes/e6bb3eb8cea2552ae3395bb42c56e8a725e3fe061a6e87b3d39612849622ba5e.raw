@@ -1,0 +1,25 @@
+Package: libgomp1
+Source: gcc-12
+Priority: optional
+Section: libs
+Installed-Size: 320
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Architecture: amd64
+Version: 12.3.0-1ubuntu1~22.04.3
+Depends: gcc-12-base (= 12.3.0-1ubuntu1~22.04.3), libc6 (>= 2.34)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: pool/main/g/gcc-12/libgomp1_12.3.0-1ubuntu1~22.04.3_amd64.deb
+Size: 126570
+MD5sum: 8c0f854a173ea76235e00e881f3654b2
+SHA1: 10caed1a8ea8455e10da26e7ab92e037c04b60ab
+SHA256: 870c27299185a5dd4accad3b15bf82a7409fd7073cccaa8025875307da4d0ce2
+SHA512: 0730f74d50ceadc692d39afc2a9a4429dde5342f1715a26eda48842985728b73cae9331816401dbd8aaa6d3d915443fb54850ea928f3d3beb110771fa8ec1dc1
+Homepage: http://gcc.gnu.org/
+Description: GCC OpenMP (GOMP) support library
+Description-md5: 9651123458dd1bf3c162dfb6a6292ff4
+Multi-Arch: same
+Original-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Origin: Ubuntu
+Bugs: https://bugs.launchpad.net/ubuntu/+filebug
+Task: ubuntu-desktop-minimal, ubuntu-desktop, ubuntu-desktop-raspi, kubuntu-desktop, xubuntu-core, xubuntu-desktop, lubuntu-desktop, ubuntustudio-desktop-core, ubuntustudio-desktop, ubuntukylin-desktop, ubuntu-mate-core, ubuntu-mate-desktop, ubuntu-budgie-desktop, ubuntu-budgie-desktop-raspi
+Build-Essential: yes

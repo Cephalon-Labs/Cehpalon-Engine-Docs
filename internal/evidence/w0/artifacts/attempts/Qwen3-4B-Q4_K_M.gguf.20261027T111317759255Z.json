@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-27T11:13:17.759255+00:00",
+  "source_url": "https://huggingface.co/Qwen/Qwen3-4B-GGUF/resolve/bc640142c66e1fdd12af0bd68f40445458f3869b/Qwen3-4B-Q4_K_M.gguf?download=true",
+  "destination": "D:\\Cephalon\\.tools\\models\\Qwen3-4B-Q4_K_M.gguf",
+  "expected_size": 2497280256,
+  "expected_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "status": "verified-bytes",
+  "partial_path": "D:\\Cephalon\\.tools\\models\\Qwen3-4B-Q4_K_M.gguf.attempt-20261027T111317759255Z.part",
+  "http_status": 200,
+  "content_length": "2497280256",
+  "final_host": "us.aws.cdn.hf.co",
+  "actual_size": 2497280256,
+  "actual_sha256": "7485fe6f11af29433bc51cab58009521f205840f5b4ae3a32fa7f92e8534fdf5",
+  "elapsed_seconds": 78.437,
+  "finished_at_utc": "2026-10-27T11:14:36.205654+00:00"
+}

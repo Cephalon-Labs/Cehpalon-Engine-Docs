@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-27T11:16:51.880864+00:00",
+  "source_url": "https://github.com/ggml-org/llama.cpp/releases/download/b11669/llama-b11669-bin-ubuntu-x64.tar.gz",
+  "destination": "D:\\Cephalon\\.tools\\binaries\\llama-cpp\\v0.7.0\\llama-b11669-bin-ubuntu-x64.tar.gz",
+  "expected_size": 17851611,
+  "expected_sha256": "cf07c1c112d709bd67e522017471de57ed0ec8bea031d732c5422351c07f65ac",
+  "status": "verified-bytes",
+  "partial_path": "D:\\Cephalon\\.tools\\binaries\\llama-cpp\\v0.7.0\\llama-b11669-bin-ubuntu-x64.tar.gz.attempt-20261027T111651880864Z.part",
+  "http_status": 200,
+  "content_length": "17851611",
+  "final_host": "release-assets.githubusercontent.com",
+  "actual_size": 17851611,
+  "actual_sha256": "cf07c1c112d709bd67e522017471de57ed0ec8bea031d732c5422351c07f65ac",
+  "elapsed_seconds": 1.25,
+  "finished_at_utc": "2026-10-27T11:16:53.129517+00:00"
+}

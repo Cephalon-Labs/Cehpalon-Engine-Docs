@@ -1,0 +1,9 @@
+{
+  "source_url": "https://raw.githubusercontent.com/ollama/ollama/v0.40.11/LICENSE",
+  "status": 200,
+  "content_type": "text/plain; charset=utf-8",
+  "docker_content_digest": null,
+  "bytes": 1058,
+  "sha256": "5934ed2ce0d15154bcdb9c85203210abac0da4314af34081e36df4599f90b226",
+  "observed_at_utc": "2026-10-27T11:29:27.009142+00:00"
+}

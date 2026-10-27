@@ -1,0 +1,58 @@
+{
+  "observed_at_utc": "2026-10-27T11:16:53.131020+00:00",
+  "scope": "Archive identity only; binaries not executed",
+  "binaries": [
+    {
+      "started_at_utc": "2026-10-27T11:16:49.211321+00:00",
+      "source_url": "https://github.com/ollama/ollama/releases/download/v0.40.11/ollama-linux-amd64.tar.zst",
+      "destination": "D:\\Cephalon\\.tools\\binaries\\ollama\\v0.40.11\\ollama-linux-amd64.tar.zst",
+      "expected_size": 1508659610,
+      "expected_sha256": "7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d",
+      "status": "verified-existing",
+      "partial_path": "D:\\Cephalon\\.tools\\binaries\\ollama\\v0.40.11\\ollama-linux-amd64.tar.zst.attempt-20261027T111649211321Z.part",
+      "actual_size": 1508659610,
+      "actual_sha256": "7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d",
+      "finished_at_utc": "2026-10-27T11:16:50.388699+00:00",
+      "name": "ollama",
+      "repository": "ollama/ollama",
+      "release_tag": "v0.40.11",
+      "release_published_at": "2026-10-24T00:30:13Z",
+      "asset_name": "ollama-linux-amd64.tar.zst",
+      "publisher_asset_digest": "sha256:7bedab90dd122661be78798e9f0edf37fccf0cccf2699d2c58ea1a3afdc04b6d",
+      "published_release_metadata_sha256": "ca87ab102c26a0ddcbe5d9cb7051afa7077fcb28b7ba939d17895af1eea2339b",
+      "official_nightly_marker_chain": null,
+      "build_isa_boundary": "Linux x64 release asset selected; exact CPU ISA, dynamic loader and linked libraries pending safe archive/ELF inspection and primary runtime smoke."
+    },
+    {
+      "started_at_utc": "2026-10-27T11:16:51.880864+00:00",
+      "source_url": "https://github.com/ggml-org/llama.cpp/releases/download/b11669/llama-b11669-bin-ubuntu-x64.tar.gz",
+      "destination": "D:\\Cephalon\\.tools\\binaries\\llama-cpp\\v0.7.0\\llama-b11669-bin-ubuntu-x64.tar.gz",
+      "expected_size": 17851611,
+      "expected_sha256": "cf07c1c112d709bd67e522017471de57ed0ec8bea031d732c5422351c07f65ac",
+      "status": "verified-bytes",
+      "partial_path": "D:\\Cephalon\\.tools\\binaries\\llama-cpp\\v0.7.0\\llama-b11669-bin-ubuntu-x64.tar.gz.attempt-20261027T111651880864Z.part",
+      "http_status": 200,
+      "content_length": "17851611",
+      "final_host": "release-assets.githubusercontent.com",
+      "actual_size": 17851611,
+      "actual_sha256": "cf07c1c112d709bd67e522017471de57ed0ec8bea031d732c5422351c07f65ac",
+      "elapsed_seconds": 1.25,
+      "finished_at_utc": "2026-10-27T11:16:53.129517+00:00",
+      "name": "llama-cpp",
+      "repository": "ggml-org/llama.cpp",
+      "release_tag": "v0.7.0",
+      "release_published_at": "2026-10-15T17:13:19Z",
+      "asset_name": "llama-b11669-bin-ubuntu-x64.tar.gz",
+      "publisher_asset_digest": "sha256:cf07c1c112d709bd67e522017471de57ed0ec8bea031d732c5422351c07f65ac",
+      "published_release_metadata_sha256": "b288fc311ca5d049632620b2c669e96312594aba75d0adc70c1a9ca87090f20d",
+      "official_nightly_marker_chain": {
+        "versioned_release": "v0.7.0",
+        "nightly_tag": "b11669",
+        "source_commit": "620d2225cc436ab0b001e3200e590e3b286ef9ab",
+        "marker_sha256": "0bbf7c261e41e777ad8d70f2c83f8d7dd2ae4d7e41a9b6f26926fbc902209c70",
+        "nightly_release_metadata_sha256": "978f9c9825e717649984c9558b0458b01aafef78981c47ed075087f41bf257d5"
+      },
+      "build_isa_boundary": "Linux x64 release asset selected; exact CPU ISA, dynamic loader and linked libraries pending safe archive/ELF inspection and primary runtime smoke."
+    }
+  ]
+}

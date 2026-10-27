@@ -1,0 +1,177 @@
+{
+  "observed_at_utc": "2026-10-27T11:13:24.652310+00:00",
+  "scope": "Registry index/platform/config bytes only; no image pull, filesystem inspection or provider execution",
+  "images": [
+    {
+      "name": "postgresql",
+      "registry": "registry-1.docker.io",
+      "repository": "library/postgres",
+      "tag": "18.6",
+      "observed_at_utc": "2026-10-27T11:13:06.707246+00:00",
+      "index_digest": "sha256:edb0c08dc33befd0262ab3b5cf1c4f3f8cfd8b09e88c05b45adee29d6761ddb6",
+      "index_media_type": "application/vnd.oci.image.index.v1+json",
+      "status": "verified-registry-metadata",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "linux_amd64_digest": "sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+      "pull_reference": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+      "config_digest": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+      "config_architecture": "amd64",
+      "config_os": "linux",
+      "created": "2026-10-21T00:37:01.146225564Z",
+      "version_environment": [
+        "PG_VERSION=18.6-1.pgdg13+2"
+      ],
+      "published_labels": {},
+      "base_os_java_erlang_boundary": "Config and history preserved; exact installed /etc/os-release and Java/Erlang package versions require actual container inspection by primary."
+    },
+    {
+      "name": "rabbitmq",
+      "registry": "registry-1.docker.io",
+      "repository": "library/rabbitmq",
+      "tag": "4.4.0-management",
+      "observed_at_utc": "2026-10-27T11:13:10.548488+00:00",
+      "index_digest": "sha256:d6e0b463f6b4e1e840da82f28aa117c00b1b6a3009b1f418bd270741de0d8871",
+      "index_media_type": "application/vnd.oci.image.index.v1+json",
+      "status": "verified-registry-metadata",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "linux_amd64_digest": "sha256:9f48a2c0a501c5a7cf520d69eb3369ba85e614a195dde071f3dfa20077e54d26",
+      "pull_reference": "registry-1.docker.io/library/rabbitmq@sha256:9f48a2c0a501c5a7cf520d69eb3369ba85e614a195dde071f3dfa20077e54d26",
+      "config_digest": "sha256:efeabeb9685e0e6024cddc980902c03bb7ed840a5ccdd435631369a472be142b",
+      "config_architecture": "amd64",
+      "config_os": "linux",
+      "created": "2026-10-27T00:31:34.774706086Z",
+      "version_environment": [
+        "ERLANG_INSTALL_PATH_PREFIX=/opt/erlang",
+        "RABBITMQ_VERSION=4.4.0"
+      ],
+      "published_labels": {
+        "org.opencontainers.image.created": "2026-10-25T10:26:07.538865+00:00",
+        "org.opencontainers.image.description": "The Ubuntu container image maintained by Canonical\n\nUbuntu is a Debian-based Linux operating system that runs from the desktop to the cloud, to all your internet connected things.\nIt is the world's most popular operating system across public clouds and OpenStack clouds.\nIt is the number one platform for containers; from Docker to Kubernetes to LXD, Ubuntu can run your containers at scale.\nFast, secure and simple, Ubuntu powers millions of PCs worldwide.\n",
+        "org.opencontainers.image.title": "ubuntu",
+        "org.opencontainers.image.version": "26.04"
+      },
+      "base_os_java_erlang_boundary": "Config and history preserved; exact installed /etc/os-release and Java/Erlang package versions require actual container inspection by primary."
+    },
+    {
+      "name": "keycloak",
+      "registry": "quay.io",
+      "repository": "keycloak/keycloak",
+      "tag": "26.8.1",
+      "observed_at_utc": "2026-10-27T11:13:14.345680+00:00",
+      "index_digest": "sha256:a78d6b79572168cb25886b80a8b5b8d4ed4390743e3eecb810538683e209dd6b",
+      "index_media_type": "application/vnd.oci.image.index.v1+json",
+      "status": "verified-registry-metadata",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "linux_amd64_digest": "sha256:3e1ac632e743660017b1e6bb4c3ffc800fd02c82cdd0db858cd03456a98a8dfc",
+      "pull_reference": "quay.io/keycloak/keycloak@sha256:3e1ac632e743660017b1e6bb4c3ffc800fd02c82cdd0db858cd03456a98a8dfc",
+      "config_digest": "sha256:b55801be6ce15109868bd056dc18d62d47106bfaad7ffbd1a5d804192ec98257",
+      "config_architecture": "amd64",
+      "config_os": "linux",
+      "created": "2026-10-23T09:44:27.644258821Z",
+      "version_environment": [
+        "KC_RUN_IN_CONTAINER=true"
+      ],
+      "published_labels": {
+        "architecture": "x86_64",
+        "build-date": "2026-10-13T12:43:35Z",
+        "com.redhat.build-host": "",
+        "com.redhat.component": "",
+        "com.redhat.license_terms": "",
+        "cpe": "cpe:/a:redhat:enterprise_linux:9::appstream",
+        "description": "Keycloak Server Image",
+        "distribution-scope": "public",
+        "io.buildah.version": "1.45.0",
+        "io.k8s.description": "Keycloak Server Image",
+        "io.k8s.display-name": "Keycloak Server",
+        "io.openshift.expose-services": "",
+        "io.openshift.tags": "keycloak security identity",
+        "maintainer": "https://www.keycloak.org/",
+        "name": "keycloak",
+        "org.opencontainers.image.created": "2026-10-23T09:43:53.044Z",
+        "org.opencontainers.image.description": "",
+        "org.opencontainers.image.documentation": "https://www.keycloak.org/documentation",
+        "org.opencontainers.image.licenses": "Apache-2.0",
+        "org.opencontainers.image.revision": "26018f2a4c6155cfe2c28f078996390bf5191946",
+        "org.opencontainers.image.source": "https://github.com/keycloak-rel/keycloak-rel",
+        "org.opencontainers.image.title": "keycloak-rel",
+        "org.opencontainers.image.url": "https://github.com/keycloak-rel/keycloak-rel",
+        "org.opencontainers.image.version": "26.8.1",
+        "release": "",
+        "summary": "Keycloak Server Image",
+        "url": "https://www.keycloak.org/",
+        "vcs-ref": "",
+        "vcs-type": "git",
+        "vendor": "https://www.keycloak.org/",
+        "version": "26.8.1"
+      },
+      "base_os_java_erlang_boundary": "Config and history preserved; exact installed /etc/os-release and Java/Erlang package versions require actual container inspection by primary."
+    },
+    {
+      "name": "qdrant",
+      "registry": "registry-1.docker.io",
+      "repository": "qdrant/qdrant",
+      "tag": "v1.20.0",
+      "observed_at_utc": "2026-10-27T11:13:17.267407+00:00",
+      "index_digest": "sha256:9bfc89f9914fc14876a88c05270685921a55b8877b254a98bcc1cc2f0a424cd2",
+      "index_media_type": "application/vnd.oci.image.index.v1+json",
+      "status": "verified-registry-metadata",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "linux_amd64_digest": "sha256:2d1b0bfd0a961275481ea09400fc98008216ae54e1b52ed7d24520d63050c644",
+      "pull_reference": "registry-1.docker.io/qdrant/qdrant@sha256:2d1b0bfd0a961275481ea09400fc98008216ae54e1b52ed7d24520d63050c644",
+      "config_digest": "sha256:8a80c5500151ab2b08eb5874698b81b6b8addbc53ef4fb0c47f516680cf413d2",
+      "config_architecture": "amd64",
+      "config_os": "linux",
+      "created": "2026-10-21T19:12:49.138458511Z",
+      "version_environment": [],
+      "published_labels": {
+        "org.opencontainers.image.description": "Official Qdrant image",
+        "org.opencontainers.image.documentation": "https://qdrant.com/docs",
+        "org.opencontainers.image.source": "https://github.com/qdrant/qdrant",
+        "org.opencontainers.image.title": "Qdrant",
+        "org.opencontainers.image.url": "https://qdrant.com/",
+        "org.opencontainers.image.vendor": "Qdrant",
+        "org.opencontainers.image.version": "v1.20.0"
+      },
+      "base_os_java_erlang_boundary": "Config and history preserved; exact installed /etc/os-release and Java/Erlang package versions require actual container inspection by primary."
+    },
+    {
+      "name": "valkey-optional",
+      "registry": "registry-1.docker.io",
+      "repository": "valkey/valkey",
+      "tag": "9.1.3",
+      "observed_at_utc": "2026-10-27T11:13:21.030454+00:00",
+      "index_digest": "sha256:3add1a336a920ea54770a001ab6feb3da5fceea96a40373a3a2cd469b815f0b7",
+      "index_media_type": "application/vnd.oci.image.index.v1+json",
+      "status": "verified-registry-metadata",
+      "platform": {
+        "architecture": "amd64",
+        "os": "linux"
+      },
+      "linux_amd64_digest": "sha256:b94f4063db6015ab2fd39a764c241a107aa176c5e7801742af81f4f8f3cb532a",
+      "pull_reference": "registry-1.docker.io/valkey/valkey@sha256:b94f4063db6015ab2fd39a764c241a107aa176c5e7801742af81f4f8f3cb532a",
+      "config_digest": "sha256:73c18bbc52a293133732c020f09e16aed862ee30885cb1dba5ad52c1b973d5ac",
+      "config_architecture": "amd64",
+      "config_os": "linux",
+      "created": "2026-10-26T23:45:27.037757339Z",
+      "version_environment": [
+        "VALKEY_VERSION=9.1.3"
+      ],
+      "published_labels": {
+        "org.opencontainers.image.source": "https://github.com/valkey-io/valkey"
+      },
+      "base_os_java_erlang_boundary": "Config and history preserved; exact installed /etc/os-release and Java/Erlang package versions require actual container inspection by primary."
+    }
+  ]
+}

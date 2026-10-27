@@ -29,6 +29,8 @@ SNAPSHOT_RELATIVE = Path('internal/evidence/tracking/github-observed.json')
 LOCK_RELATIVE = Path('.local/tracking-pull.lock')
 JOURNAL_RELATIVE = Path('.local/tracking-pull-journal.json')
 _UNSET = object()
+PROJECT_FIELDS = ('Status', 'Priority', 'Estimate low (h)', 'Estimate (h)', 'Estimate high (h)',
+                  'Actual (h)', 'Remaining (h)', 'Maturity', 'Test gate', 'Benchmark gate', 'Feature')
 
 
 def digest(value):
@@ -89,8 +91,13 @@ def _require_lock(root, token):
 
 
 def _text_from_bytes(value):
-    # Match Path.read_text's universal-newline interpretation used by anchors.
-    return value.decode('utf-8').replace('\r\n', '\n').replace('\r', '\n')
+    # Preserve body bytes/newlines instead of silently normalizing issue prose.
+    return value.decode('utf-8')
+
+
+def read_tracking_text(path):
+    with path.open('r', encoding='utf-8', newline='') as stream:
+        return stream.read()
 
 
 def _read_existing(path):
@@ -219,13 +226,15 @@ def reconcile_milestone_counts(rest_milestones, graphql_milestones, rows):
 def fetch():
     pages = gh('api', f'repos/{REPO}/issues?state=all&per_page=100', '--paginate', '--slurp')
     issues = [x for page in pages for x in page if 'pull_request' not in x]
+    if not 0 < len(issues) <= 1000 or len({x['number'] for x in issues}) != len(issues):
+        raise ValueError('Issue pagination is duplicated or exceeds the 1000-issue reviewed bound')
     milestone_pages = gh('api', f'repos/{REPO}/milestones?state=all&per_page=100', '--paginate', '--slurp')
     milestones = [{k: x[k] for k in ('number', 'title', 'state', 'description', 'due_on', 'open_issues', 'closed_issues')}
                   for page in milestone_pages for x in page]
     items, cursor = [], None
     while True:
         after = ',after:' + json.dumps(cursor) if cursor else ''
-        query = '''{organization(login:"Cephalon-Labs"){projectV2(number:4){id title public closed items(first:100AFTER){pageInfo{hasNextPage endCursor} nodes{id content{... on Issue{number id repository{nameWithOwner}}} fieldValues(first:50){nodes{... on ProjectV2ItemFieldSingleSelectValue{name field{... on ProjectV2SingleSelectField{name}}} ... on ProjectV2ItemFieldNumberValue{number field{... on ProjectV2Field{name}}} ... on ProjectV2ItemFieldTextValue{text field{... on ProjectV2Field{name}}}}}}}}}}'''.replace('AFTER', after)
+        query = '''{organization(login:"Cephalon-Labs"){projectV2(number:4){id title public closed items(first:100AFTER){pageInfo{hasNextPage endCursor} nodes{id content{... on Issue{number id repository{nameWithOwner}}} fieldValues(first:100){pageInfo{hasNextPage} nodes{... on ProjectV2ItemFieldSingleSelectValue{name field{... on ProjectV2SingleSelectField{name}}} ... on ProjectV2ItemFieldNumberValue{number field{... on ProjectV2Field{name}}} ... on ProjectV2ItemFieldTextValue{text field{... on ProjectV2Field{name}}}}}}}}}}'''.replace('AFTER', after)
         project = gh('api', 'graphql', '--input', '-', body={'query': query})['data']['organization']['projectV2']
         if project['id'] != PROJECT_ID or project['public'] or project['closed']:
             raise ValueError('Unexpected Project identity, privacy or lifecycle; review before syncing.')
@@ -240,6 +249,8 @@ def fetch():
         if not content or content.get('repository', {}).get('nameWithOwner') != REPO:
             raise ValueError('Project contains a draft or non-Engine item; review its tracking scope explicitly.')
         number = content['number']
+        if item['fieldValues'].get('pageInfo', {}).get('hasNextPage'):
+            raise ValueError('More than 100 values on a Project item; review field pagination before syncing')
         if number in indexed:
             raise ValueError(f'Duplicate Project item for issue #{number}')
         indexed[number] = item
@@ -249,6 +260,8 @@ def fetch():
         if number not in indexed:
             raise ValueError(f'Engine issue #{number} is absent from Project; link it explicitly before syncing.')
         item = indexed[number]
+        if item['content']['id'] != issue['node_id']:
+            raise ValueError(f'Issue #{number} REST/Project identity observations disagree')
         fields = {v['field']['name']: v.get('name', v.get('number', v.get('text')))
                   for v in item['fieldValues']['nodes'] if v.get('field')}
         if not issue.get('type') or not issue['labels'] or not issue.get('milestone') or fields.get('Priority') not in ['P0', 'P1', 'P2', 'P3']:
@@ -260,24 +273,38 @@ def fetch():
                             'milestone': issue['milestone']['title'], 'milestone_number': issue['milestone']['number'], 'fields': fields}
     if len(rows) != len(indexed):
         raise ValueError('Project/Engine issue sets differ')
-    query = '{repository(owner:"Cephalon-Labs",name:"Cehpalon-Engine"){milestones(first:100,states:[OPEN,CLOSED]){pageInfo{hasNextPage} nodes{number open:issues(states:OPEN){totalCount} closed:issues(states:CLOSED){totalCount}}}}}'
-    graph = gh('api', 'graphql', '--input', '-', body={'query': query})['data']['repository']['milestones']
-    if graph['pageInfo']['hasNextPage']:
-        raise ValueError('More than 100 milestones; add reviewed pagination support before syncing')
-    return rows, reconcile_milestone_counts(milestones, graph['nodes'], rows)
+    graph_milestones, cursor = [], None
+    while True:
+        after = ',after:' + json.dumps(cursor) if cursor else ''
+        query = '{repository(owner:"Cephalon-Labs",name:"Cehpalon-Engine"){milestones(first:100,states:[OPEN,CLOSED]' + after + '){pageInfo{hasNextPage endCursor} nodes{number open:issues(states:OPEN){totalCount} closed:issues(states:CLOSED){totalCount}}}}}'
+        graph = gh('api', 'graphql', '--input', '-', body={'query': query})['data']['repository']['milestones']
+        graph_milestones.extend(graph['nodes'])
+        if not graph['pageInfo']['hasNextPage']:
+            break
+        cursor = graph['pageInfo']['endCursor']
+    if len({x['number'] for x in graph_milestones}) != len(graph_milestones) or len({x['number'] for x in milestones}) != len(milestones):
+        raise ValueError('Duplicate paginated milestone identity')
+    return rows, reconcile_milestone_counts(milestones, graph_milestones, rows)
+
+
+def editable(row):
+    """Canonical editable values; null remains different from measured zero."""
+    return {'issue': {'title': row['title'], 'type': row['type'], 'labels': sorted(row['labels']),
+                      'assignees': sorted(row['assignees']), 'state': row['state'],
+                      'milestone_number': row.get('milestone_number'), 'body': row.get('body') or ''},
+            'project': {name: row['fields'].get(name) for name in PROJECT_FIELDS}}
 
 
 def render(row):
-    fields = row['fields']
-    metadata = {'GitHub': row['url'], 'Project': 'https://github.com/orgs/Cephalon-Labs/projects/4',
-                'Project item ID': row['item_id'], 'Status': fields.get('Status'), 'Native issue state': row['state'],
-                'Type': row['type'], 'Labels': ', '.join(row['labels']), 'Priority': fields.get('Priority'),
-                'Milestone': row['milestone'], 'Owner': ', '.join(row['assignees']),
-                'Estimated hours (low/mid/high)': f"{fields.get('Estimate low (h)')} / {fields.get('Estimate (h)')} / {fields.get('Estimate high (h)')}",
-                'Actual hours': fields.get('Actual (h)'), 'Remaining estimate': fields.get('Remaining (h)'),
-                'Maturity': fields.get('Maturity'), 'Test gate': fields.get('Test gate'), 'Benchmark gate': fields.get('Benchmark gate')}
-    header = '\n'.join('- ' + key + ': ' + ('null' if value is None else str(value)) for key, value in metadata.items())
-    return f"# #{row['number']} — {row['title']}\n\n{header}\n\n" + row['body'].rstrip() + '\n'
+    values = editable(row)
+    metadata = {'schema_version': 1, 'repository': REPO, 'project_id': PROJECT_ID,
+                'identity': {key: row[key] for key in ('number', 'node_id', 'item_id', 'url')},
+                'issue': {key: value for key, value in values['issue'].items() if key != 'body'},
+                'project': values['project']}
+    header = json.dumps(metadata, ensure_ascii=False, indent=2)
+    return (f"# Engine issue #{row['number']}\n\n<!-- cehpalon-tracking:v1 -->\n```json\n"
+            + header + '\n```\n<!-- /cehpalon-tracking -->\n\n<!-- cehpalon-issue-body -->\n'
+            + values['issue']['body'])
 
 
 def legacy_anchor(root):
@@ -292,6 +319,16 @@ def legacy_anchor(root):
     return result
 
 
+def milestone_metadata(milestones):
+    """Scope of --check: native metadata and independently verified counts.
+
+    Raw REST counter diagnostics can lag independently and are retained by pull,
+    but do not invalidate an otherwise agreeing authoritative observation.
+    """
+    keys = ('number', 'title', 'state', 'description', 'due_on', 'open_issues', 'closed_issues')
+    return sorted(({key: value.get(key) for key in keys} for value in milestones), key=lambda value: value['number'])
+
+
 def reconcile(root, previous, rows, check_only=False, milestones=None,
               snapshot_expected=_UNSET, _lock_token=None):
     if _lock_token is None:
@@ -301,8 +338,8 @@ def reconcile(root, previous, rows, check_only=False, milestones=None,
     if (root / JOURNAL_RELATIVE).exists():
         raise ValueError('Unresolved tracking recovery journal; review before another pull')
     snapshot_path = root / SNAPSHOT_RELATIVE
+    original_snapshot = _read_existing(snapshot_path)
     if snapshot_expected is _UNSET:
-        original_snapshot = _read_existing(snapshot_path)
         snapshot_expected = digest(_text_from_bytes(original_snapshot)) if original_snapshot is not None else None
     if set(previous) - set(rows):
         raise ValueError('Tracked issues disappeared; review deletion/migration explicitly. No files were deleted.')
@@ -313,16 +350,22 @@ def reconcile(root, previous, rows, check_only=False, milestones=None,
             require_identity(previous[number], row, number)
             if not path.exists():
                 raise ValueError(f'Tracked local mirror missing: {path}')
-            require_unchanged_local(path.read_text(encoding='utf-8'), previous[number]['mirror_sha256'], path)
+            require_unchanged_local(read_tracking_text(path), previous[number]['mirror_sha256'], path)
             expected[path] = previous[number]['mirror_sha256']
         elif path.exists():
             raise ValueError(f'Unanchored existing task mirror: {path}')
         else:
             expected[path] = None
         content = render(row)
-        if check_only and (not path.exists() or path.read_text(encoding='utf-8') != content):
+        if check_only and (not path.exists() or read_tracking_text(path) != content):
             raise ValueError(f'Live GitHub differs from Docs mirror: #{number}; run reviewed pull')
         planned[path] = content
+    if check_only and milestones is not None:
+        if original_snapshot is None:
+            raise ValueError('No observed snapshot exists to verify milestone metadata')
+        stored_milestones = json.loads(_text_from_bytes(original_snapshot)).get('milestones', [])
+        if milestone_metadata(stored_milestones) != milestone_metadata(milestones):
+            raise ValueError('Live milestone metadata/counts differ from the Docs snapshot; run reviewed pull')
     reconciled = {number: {**row, 'mirror_sha256': digest(render(row)), 'remote_sha256': digest(canonical(row))} for number, row in rows.items()}
     if not check_only:
         # Insertion order commits the snapshot after all mirrors. A partial
@@ -341,7 +384,7 @@ def main():
     parser.add_argument('--check', action='store_true', help='Read live state and fail on drift without updating mirrors or snapshot')
     args = parser.parse_args()
     with exclusive_pull(ROOT) as token:
-        original_snapshot = SNAPSHOT.read_text(encoding='utf-8') if SNAPSHOT.exists() else None
+        original_snapshot = read_tracking_text(SNAPSHOT) if SNAPSHOT.exists() else None
         previous = json.loads(original_snapshot)['issues'] if original_snapshot is not None else legacy_anchor(ROOT)
         rows, milestones = fetch()
         reconcile(ROOT, previous, rows, args.check, milestones,

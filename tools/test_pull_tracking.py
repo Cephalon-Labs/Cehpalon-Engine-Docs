@@ -233,6 +233,30 @@ class ConflictTests(unittest.TestCase):
         self.assertEqual(local, second_path.read_text(encoding='utf-8'))
         self.assertTrue((self.root / JOURNAL_RELATIVE).exists())
 
+    def test_check_mode_detects_milestone_metadata_drift_with_unchanged_issues(self):
+        milestone = {'number': 1, 'title': 'W0', 'state': 'open', 'description': 'Original',
+                     'due_on': None, 'open_issues': 1, 'closed_issues': 0}
+        observed = reconcile(self.root, self.previous, {'1': self.original}, milestones=[milestone])
+        changes = {'title': 'Renamed W0', 'state': 'closed', 'description': 'New scope',
+                   'due_on': '2026-11-01T00:00:00Z', 'open_issues': 2, 'closed_issues': 1}
+        for field, value in changes.items():
+            with self.subTest(field=field):
+                changed = {**milestone, field: value}
+                with self.assertRaisesRegex(ValueError, 'milestone metadata/counts differ'):
+                    reconcile(self.root, observed, {'1': self.original}, check_only=True, milestones=[changed])
+
+    def test_check_mode_ignores_only_raw_rest_counter_diagnostic_drift(self):
+        milestone = {'number': 1, 'title': 'W0', 'state': 'open', 'description': 'Scope', 'due_on': None,
+                     'open_issues': 1, 'closed_issues': 0, 'rest_reported_open_issues': 1,
+                     'rest_reported_closed_issues': 0, 'rest_counter_consistent': True}
+        observed = reconcile(self.root, self.previous, {'1': self.original}, milestones=[milestone])
+        snapshot = self.root / SNAPSHOT_RELATIVE
+        before = snapshot.read_bytes()
+        changed_diagnostics = {**milestone, 'rest_reported_open_issues': 0,
+                               'rest_reported_closed_issues': 1, 'rest_counter_consistent': False}
+        reconcile(self.root, observed, {'1': self.original}, check_only=True, milestones=[changed_diagnostics])
+        self.assertEqual(before, snapshot.read_bytes())
+
 
 if __name__ == '__main__':
     unittest.main()

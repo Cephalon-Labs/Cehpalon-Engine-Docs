@@ -1,0 +1,220 @@
+{
+  "observed_at_utc": "2026-10-27T11:29:27.881332+00:00",
+  "scope": "Preserved source-byte hash and report-relative-link checks only",
+  "passed": 53,
+  "total": 53,
+  "checks": [
+    {
+      "check": "initial-registry-observation\\keycloak.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\keycloak.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\keycloak.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\postgresql.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\postgresql.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\postgresql.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\qdrant.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\qdrant.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\qdrant.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\rabbitmq.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\rabbitmq.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\rabbitmq.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\valkey-optional.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\valkey-optional.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "initial-registry-observation\\valkey-optional.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\keycloak.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\keycloak.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\keycloak.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-cpp.nightly-ref.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-cpp.nightly-release.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-cpp.nightly-tag.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-cpp.release.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-cpp.versioned-license.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-mmproj-security-pr.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\llama-published-advisories.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\ollama-published-advisories.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\ollama.release.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\ollama.versioned-license.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\postgresql.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\postgresql.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\postgresql.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\qdrant.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\qdrant.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\qdrant.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\Qwen3-4B-Q4_K_M.gguf.publisher.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\Qwen3-Embedding-0.6B-Q8_0.gguf.publisher.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\rabbitmq.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\rabbitmq.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\rabbitmq.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\ubuntu-jammy-updates.InRelease.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\valkey-optional.index.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\valkey-optional.linux-amd64.config.source.json",
+      "passed": true
+    },
+    {
+      "check": "sources\\valkey-optional.linux-amd64.manifest.source.json",
+      "passed": true
+    },
+    {
+      "check": "local link model-artifacts.json",
+      "passed": true
+    },
+    {
+      "check": "local link inference-binaries.json",
+      "passed": true
+    },
+    {
+      "check": "local link llama-cpp.runtime-inspection.json",
+      "passed": true
+    },
+    {
+      "check": "local link llama-cpp-local-dependency.json",
+      "passed": true
+    },
+    {
+      "check": "local link archive-inspection.json",
+      "passed": true
+    },
+    {
+      "check": "local link runtime-binary-inspection.json",
+      "passed": true
+    },
+    {
+      "check": "local link ollama.runtime-inspection.json",
+      "passed": true
+    },
+    {
+      "check": "local link container-manifests.json",
+      "passed": true
+    },
+    {
+      "check": "local link failed-selector-attempts.json",
+      "passed": true
+    },
+    {
+      "check": "local link tool-validation.json",
+      "passed": true
+    }
+  ]
+}

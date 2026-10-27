@@ -1,0 +1,16 @@
+{
+  "started_at_utc": "2026-10-27T11:24:31.659065+00:00",
+  "source_url": "https://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/libgomp1_12.3.0-1ubuntu1~22.04.3_amd64.deb",
+  "destination": "D:\\Cephalon\\.tools\\packages\\ubuntu\\libgomp1_12.3.0-1ubuntu1~22.04.3_amd64.deb",
+  "expected_size": 126570,
+  "expected_sha256": "870c27299185a5dd4accad3b15bf82a7409fd7073cccaa8025875307da4d0ce2",
+  "status": "verified-bytes",
+  "partial_path": "D:\\Cephalon\\.tools\\packages\\ubuntu\\libgomp1_12.3.0-1ubuntu1~22.04.3_amd64.deb.attempt-20261027T112431659065Z.part",
+  "http_status": 200,
+  "content_length": "126570",
+  "final_host": "archive.ubuntu.com",
+  "actual_size": 126570,
+  "actual_sha256": "870c27299185a5dd4accad3b15bf82a7409fd7073cccaa8025875307da4d0ce2",
+  "elapsed_seconds": 1.36,
+  "finished_at_utc": "2026-10-27T11:24:33.025406+00:00"
+}

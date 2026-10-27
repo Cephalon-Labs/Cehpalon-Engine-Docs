@@ -1,0 +1,9 @@
+{
+  "source_url": "https://api.github.com/repos/ollama/ollama/releases/tags/v0.40.11",
+  "status": 200,
+  "content_type": "application/json; charset=utf-8",
+  "docker_content_digest": null,
+  "bytes": 30964,
+  "sha256": "ca87ab102c26a0ddcbe5d9cb7051afa7077fcb28b7ba939d17895af1eea2339b",
+  "observed_at_utc": "2026-10-27T11:16:49.210319+00:00"
+}
