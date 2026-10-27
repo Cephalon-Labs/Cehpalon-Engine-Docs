@@ -37,4 +37,6 @@ Small API ต้องไม่พึ่ง SQL/broker/AI จึงใช้ fix
 
 งาน #2 architecture/requirements, #4 reference decision study และ #21 predeclared test strategy ส่งมอบในขอบเขต W0 document selection ได้ ส่วน #3 ยังต้อง SDK/artifact/driver qualification และ #23 ยังต้องขยาย synchronization เป็น reviewed bidirectional workflow กับ metadata update/migration coverage จึงไม่ปิดสองงานนี้จากการเลือก provider เพียงอย่างเดียว
 
+หลังตรวจเอกสารและ live readback: #2/#4/#21 ปิดเป็น Done/Test Passed สำหรับงานเอกสารรอบนี้แล้ว #3/#23 ยังเปิดอยู่ จึงยังไม่ปิด W0 milestone ผลตรวจอยู่ใน [W0 validation](../evidence/w0/validation.json) และ [offline tracking tests](../evidence/w0/tracking-tool-tests.json) ทั้งสองส่วนไม่ใช่ runtime test/benchmark/CI proof
+
 ก่อนเริ่ม Core/provider implementation ให้ปิด qualification ที่เป็น dependency ของงานนั้น ระบุ image/binary/package locks, actual supported OS, fixture/gold hashes และคำสั่งรันทดสอบ ห้ามนำ metadata checks ในรอบนี้ไปอ้างว่า .NET11/provider/E2E หรือ benchmark ผ่านแล้ว

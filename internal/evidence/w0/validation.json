@@ -1,10 +1,10 @@
 {
-  "observed_at_utc": "2026-10-27T07:51:31.566016+00:00",
+  "observed_at_utc": "2026-10-27T07:54:36.009720+00:00",
   "engine_revision": "cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
   "scope": "W0 document/provenance/tracking verification only; no SDK binary or model byte verification, runtime test, benchmark, hosted CI or production proof",
   "success": true,
-  "checks_passed": 258,
-  "checks_total": 258,
+  "checks_passed": 266,
+  "checks_total": 266,
   "checks": [
     {
       "check": "Candidate inventory claims no runtime qualification",
@@ -76,6 +76,18 @@
     },
     {
       "check": "Qwen3-Embedding-0.6B-Q8_0.gguf: no binary verification claim",
+      "passed": true
+    },
+    {
+      "check": "Recorded offline tracking suite: 15 passed, no runtime claim",
+      "passed": true
+    },
+    {
+      "check": "tools/pull_tracking.py: tested tool source hash unchanged",
+      "passed": true
+    },
+    {
+      "check": "tools/test_pull_tracking.py: tested tool source hash unchanged",
       "passed": true
     },
     {
@@ -667,6 +679,10 @@
       "passed": true
     },
     {
+      "check": "#23: remaining qualification/full sync scope stays open",
+      "passed": true
+    },
+    {
       "check": "#22: live issue/Project metadata equals task mirror",
       "passed": true
     },
@@ -700,6 +716,10 @@
     },
     {
       "check": "#21: journal SHA belongs to Engine",
+      "passed": true
+    },
+    {
+      "check": "#21: W0 document scope completed after validation",
       "passed": true
     },
     {
@@ -979,6 +999,10 @@
       "passed": true
     },
     {
+      "check": "#4: W0 document scope completed after validation",
+      "passed": true
+    },
+    {
       "check": "#3: live issue/Project metadata equals task mirror",
       "passed": true
     },
@@ -999,6 +1023,10 @@
       "passed": true
     },
     {
+      "check": "#3: remaining qualification/full sync scope stays open",
+      "passed": true
+    },
+    {
       "check": "#2: live issue/Project metadata equals task mirror",
       "passed": true
     },
@@ -1016,6 +1044,10 @@
     },
     {
       "check": "#2: journal SHA belongs to Engine",
+      "passed": true
+    },
+    {
+      "check": "#2: W0 document scope completed after validation",
       "passed": true
     },
     {
