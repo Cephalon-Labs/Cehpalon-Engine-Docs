@@ -2,6 +2,8 @@
 
 วันที่ตรวจแหล่งข้อมูล: **2026-10-27**
 
+W0 provider/workload refinement: [selected decisions and ADRs](../planning/w0-decisions.md). Initial reference comparison below remains document-review evidence; actual provider/SDK qualification is a separate gate.
+
 สถานะ: **อ่านเอกสารทางการเบื้องต้นและคัดหัวข้อศึกษาต่อ** ยังไม่มีการติดตั้ง ทดสอบ integration, benchmark หรือพิสูจน์ความพร้อมใช้งานจริงจากการศึกษานี้ เอกสารนี้เป็นข้อเสนอสำหรับโครงการใหม่ ไม่ใช่รายงานสถานะ implementation เดิม
 
 การเลือกเวอร์ชัน .NET 11/12, SDK, dependency และ support policy ให้ยึดผลตรวจสอบแพลตฟอร์มและการตัดสินใจที่ผู้รับผิดชอบโครงการบันทึกแยกต่างหาก เอกสารนี้ไม่ประกาศว่า packages ที่อ้างอิงรองรับ .NET รุ่นใดแล้ว

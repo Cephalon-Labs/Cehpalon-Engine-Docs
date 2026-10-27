@@ -2,6 +2,8 @@
 
 Source: [preserved user request](2026-10-27-user-request.md) and [2026-10-27 clarifications](../memory/2026-10-27-program-bootstrap.md). This map is planning coverage, not implementation coverage. All runtime capabilities start at M0.
 
+W0 refinement now has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md). REQ-02/04/05/06/07/08/09/10/12/19 have selected first-proof candidates and budgets; provider/runtime qualification and execution evidence are still pending.
+
 | Requirement | Initial Engine issues | First proof / boundary |
 | --- | --- | --- |
 | REQ-01 — comparative software/kernel/runtime/server/OS/pattern research | #2, #4, #21 | Official-source comparison, scope and predeclared experiments; no exhaustive study or superiority claim |

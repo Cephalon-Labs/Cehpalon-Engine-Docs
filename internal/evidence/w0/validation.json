@@ -1,0 +1,1042 @@
+{
+  "observed_at_utc": "2026-10-27T07:51:31.566016+00:00",
+  "engine_revision": "cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+  "scope": "W0 document/provenance/tracking verification only; no SDK binary or model byte verification, runtime test, benchmark, hosted CI or production proof",
+  "success": true,
+  "checks_passed": 258,
+  "checks_total": 258,
+  "checks": [
+    {
+      "check": "Candidate inventory claims no runtime qualification",
+      "passed": true
+    },
+    {
+      "check": "All three selected sample lanes present",
+      "passed": true
+    },
+    {
+      "check": "small-api: ADR/protocol pair",
+      "passed": true
+    },
+    {
+      "check": "multitenant-business: ADR/protocol pair",
+      "passed": true
+    },
+    {
+      "check": "ai-agent-retrieval: ADR/protocol pair",
+      "passed": true
+    },
+    {
+      "check": "ADR-0001-w0-profile-and-proof-boundaries.md: W0 decision and proof boundary",
+      "passed": true
+    },
+    {
+      "check": "ADR-0002-small-api-profile.md: W0 decision and proof boundary",
+      "passed": true
+    },
+    {
+      "check": "ADR-0003-multitenant-business-profile.md: W0 decision and proof boundary",
+      "passed": true
+    },
+    {
+      "check": "ADR-0004-ai-retrieval-profile.md: W0 decision and proof boundary",
+      "passed": true
+    },
+    {
+      "check": "Preserved .NET metadata source hash",
+      "passed": true
+    },
+    {
+      "check": "SDK/runtime candidate matches preserved official metadata",
+      "passed": true
+    },
+    {
+      "check": "SDK published expected SHA512 values are well formed; binaries unverified",
+      "passed": true
+    },
+    {
+      "check": "Qwen3-4B-Q4_K_M.gguf: metadata source hash",
+      "passed": true
+    },
+    {
+      "check": "Qwen3-4B-Q4_K_M.gguf: pinned publisher metadata identity",
+      "passed": true
+    },
+    {
+      "check": "Qwen3-4B-Q4_K_M.gguf: no binary verification claim",
+      "passed": true
+    },
+    {
+      "check": "Qwen3-Embedding-0.6B-Q8_0.gguf: metadata source hash",
+      "passed": true
+    },
+    {
+      "check": "Qwen3-Embedding-0.6B-Q8_0.gguf: pinned publisher metadata identity",
+      "passed": true
+    },
+    {
+      "check": "Qwen3-Embedding-0.6B-Q8_0.gguf: no binary verification claim",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\AGENTS.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\AGENTS.md: local link ../Cehpalon-Engine-Docs/skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\AGENTS.md: local link ../Cehpalon-Engine-Docs/internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\CLAUDE.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\CLAUDE.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\GEMINI.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\GEMINI.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\README.md: local link docs/w0-profiles.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\Benchmarks\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\Benchmarks\\README.md: local link ../docs/w0-profiles.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\docs\\w0-profiles.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\src\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\Tests\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine\\Tests\\README.md: local link ../docs/w0-profiles.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine: local Git user.name",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine: local Git user.email",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\AGENTS.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\AGENTS.md: local link skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\AGENTS.md: local link internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\CLAUDE.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\CLAUDE.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\GEMINI.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\GEMINI.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link internal/planning/2026-10-27-program-plan.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link internal/planning/w0-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link internal/requirements/coverage.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link internal/research/2026-10-27-reference-study.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link internal/standards/delivery-and-maturity.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link tasks/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\README.md: local link public/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ADR-0002-small-api-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ../validation/small-api-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ADR-0003-multitenant-business-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ../validation/business-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ADR-0004-ai-retrieval-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ../validation/ai-retrieval-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0001-w0-profile-and-proof-boundaries.md: local link ../evidence/w0/dotnet-11-candidate.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0002-small-api-profile.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0002-small-api-profile.md: local link ../validation/small-api-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0003-multitenant-business-profile.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0003-multitenant-business-profile.md: local link ../validation/business-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0003-multitenant-business-profile.md: local link ../validation/business-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0004-ai-retrieval-profile.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0004-ai-retrieval-profile.md: local link ADR-0003-multitenant-business-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\adr\\ADR-0004-ai-retrieval-profile.md: local link ../validation/ai-retrieval-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\evidence\\bootstrap\\engine-commit-journal.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\evidence\\bootstrap\\engine-commit-journal.md: local link validation.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\evidence\\w0\\engine-commit-journal.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-program-bootstrap.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-program-bootstrap.md: local link ../evidence/bootstrap/engine-commit-journal.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-w0-provider-decisions.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-w0-provider-decisions.md: local link ../planning/w0-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-w0-provider-decisions.md: local link ../adr/ADR-0001-w0-profile-and-proof-boundaries.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\2026-10-27-w0-provider-decisions.md: local link ../evidence/w0/engine-commit-journal.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: local link 2026-10-27-w0-provider-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: local link 2026-10-27-program-bootstrap.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: local link ../planning/2026-10-27-program-plan.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\memory\\README.md: local link ../../skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\2026-10-27-program-plan.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\2026-10-27-program-plan.md: local link w0-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\2026-10-27-program-plan.md: local link ../research/2026-10-27-reference-study.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\2026-10-27-program-plan.md: local link w0-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../adr/ADR-0001-w0-profile-and-proof-boundaries.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../adr/ADR-0002-small-api-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../validation/small-api-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../adr/ADR-0003-multitenant-business-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../validation/business-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../adr/ADR-0004-ai-retrieval-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../validation/ai-retrieval-workload.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../validation/provider-candidates.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../validation/qualification-checklist.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\planning\\w0-decisions.md: local link ../evidence/w0/model-candidates.json",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\2026-10-27-user-request.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: local link 2026-10-27-user-request.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: local link ../memory/2026-10-27-program-bootstrap.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\requirements\\coverage.md: local link ../planning/w0-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\research\\2026-10-27-reference-study.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\research\\2026-10-27-reference-study.md: local link ../planning/w0-decisions.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\standards\\delivery-and-maturity.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\ai-retrieval-workload.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\ai-retrieval-workload.md: local link ../adr/ADR-0004-ai-retrieval-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\ai-retrieval-workload.md: local link ../adr/ADR-0004-ai-retrieval-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\business-workload.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\business-workload.md: local link ../adr/ADR-0003-multitenant-business-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\qualification-checklist.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\small-api-workload.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\internal\\validation\\small-api-workload.md: local link ../adr/ADR-0002-small-api-profile.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\public\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\skills\\cehpalon-engine\\SKILL.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\1.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\10.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\11.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\12.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\13.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\14.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\15.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\16.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\17.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\18.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\19.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\2.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\20.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\21.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\22.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\23.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\3.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\4.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\5.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\6.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\7.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\8.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\9.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tasks\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs\\tools\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs: local Git user.name",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Docs: local Git user.email",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\AGENTS.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\AGENTS.md: local link ../Cehpalon-Engine-Docs/skills/cehpalon-engine/SKILL.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\AGENTS.md: local link ../Cehpalon-Engine-Docs/internal/memory/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\CLAUDE.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\CLAUDE.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\GEMINI.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\GEMINI.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: local link small-api/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: local link multitenant-business/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: local link ai-retrieval/README.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\README.md: local link AGENTS.md",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\ai-retrieval\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\multitenant-business\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples\\small-api\\README.md: UTF-8",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples: local Git user.name",
+      "passed": true
+    },
+    {
+      "check": "Cehpalon-Engine-Samples: local Git user.email",
+      "passed": true
+    },
+    {
+      "check": "Stable issue/milestone population; no duplicate bootstrap creation",
+      "passed": true
+    },
+    {
+      "check": "Live milestone metadata matches observed snapshot",
+      "passed": true
+    },
+    {
+      "check": "#23: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#23: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#23: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#23: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#22: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#22: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#22: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#22: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#21: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#21: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#21: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#21: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#21: journal SHA belongs to Engine",
+      "passed": true
+    },
+    {
+      "check": "#20: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#20: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#20: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#20: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#19: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#19: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#19: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#19: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#18: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#18: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#18: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#18: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#17: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#17: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#17: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#17: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#16: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#16: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#16: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#16: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#15: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#15: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#15: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#15: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#14: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#14: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#14: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#14: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#13: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#13: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#13: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#13: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#12: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#12: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#12: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#12: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#11: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#11: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#11: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#11: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#10: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#10: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#10: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#10: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#9: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#9: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#9: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#9: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#8: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#8: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#8: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#8: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#7: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#7: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#7: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#7: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#6: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#6: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#6: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#6: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#5: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#5: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#5: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#5: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#4: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#4: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#4: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#4: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#4: journal SHA belongs to Engine",
+      "passed": true
+    },
+    {
+      "check": "#3: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#3: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#3: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#3: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#3: journal SHA belongs to Engine",
+      "passed": true
+    },
+    {
+      "check": "#2: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#2: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#2: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#2: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#2: journal SHA belongs to Engine",
+      "passed": true
+    },
+    {
+      "check": "#1: live issue/Project metadata equals task mirror",
+      "passed": true
+    },
+    {
+      "check": "#1: observed remote fingerprint current",
+      "passed": true
+    },
+    {
+      "check": "#1: runtime maturity remains M0",
+      "passed": true
+    },
+    {
+      "check": "#1: unknown actual person-hours unset",
+      "passed": true
+    },
+    {
+      "check": "#1: journal SHA belongs to Engine",
+      "passed": true
+    }
+  ]
+}

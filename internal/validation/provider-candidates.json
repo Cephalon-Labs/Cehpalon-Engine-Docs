@@ -1,0 +1,224 @@
+{
+  "schema_version": 1,
+  "decision_date": "2026-10-27",
+  "decision_status": "Accepted for W0 planning; implementation qualification pending",
+  "runtime_maturity": "M0",
+  "platform": {
+    "sdk": "11.0.100-rc.3.26522.148",
+    "runtime": "11.0.0-rc.3.26522.148",
+    "tfm_candidate": "net11.0",
+    "reference_os": "Linux x64 glibc; exact supported OS/image digest pending qualification",
+    "functional_secondary_os": "Windows x64; qualification pending",
+    "sdk_binaries_verified": false
+  },
+  "profiles": [
+    {
+      "id": "small-api",
+      "adr": "../adr/ADR-0002-small-api-profile.md",
+      "protocol": "small-api-workload.md",
+      "providers": [
+        {
+          "role": "host",
+          "name": "Kestrel/ASP.NET Core Minimal API",
+          "version": "11.0.0-rc.3.26522.148"
+        },
+        {
+          "role": "state",
+          "name": "Bounded BCL in-memory synthetic fixture",
+          "version": "sample-v1; generator pending"
+        },
+        {
+          "role": "graphql-opt-in",
+          "name": "HotChocolate.AspNetCore",
+          "version": "16.7.1",
+          "default_enabled": false
+        }
+      ],
+      "disabled_by_default": [
+        "GraphQL",
+        "Worker",
+        "SQL",
+        "cache",
+        "broker",
+        "identity-provider",
+        "AI",
+        "retrieval"
+      ],
+      "app_budget": {
+        "vcpu": 2,
+        "memory_gib": 2
+      },
+      "load": {
+        "rate_rps": 1000,
+        "warmup_seconds": 60,
+        "measurement_seconds": 180,
+        "paired_repetitions": 5
+      },
+      "dataset": {
+        "records": 10000,
+        "id": "cehpalon-small-api-v1"
+      },
+      "latency_budget_ms": {
+        "p95": 20,
+        "p99": 50
+      }
+    },
+    {
+      "id": "multitenant-business",
+      "adr": "../adr/ADR-0003-multitenant-business-profile.md",
+      "protocol": "business-workload.md",
+      "providers": [
+        {
+          "role": "sql",
+          "name": "PostgreSQL",
+          "version": "18.6"
+        },
+        {
+          "role": "sql-client",
+          "name": "Npgsql async ADO.NET",
+          "version": "10.0.3"
+        },
+        {
+          "role": "broker",
+          "name": "RabbitMQ",
+          "version": "4.4.0"
+        },
+        {
+          "role": "broker-client",
+          "name": "RabbitMQ.Client",
+          "version": "7.2.2"
+        },
+        {
+          "role": "identity",
+          "name": "Keycloak",
+          "version": "26.8.1"
+        },
+        {
+          "role": "cache-opt-in",
+          "name": "Valkey",
+          "version": "9.1.3",
+          "default_enabled": false,
+          "client_pin": null
+        }
+      ],
+      "app_budget": {
+        "vcpu": 2,
+        "memory_gib": 2,
+        "split": "API 1vCPU/1GiB + Worker 1vCPU/1GiB"
+      },
+      "load": {
+        "rate_rps": 100,
+        "warmup_seconds": 120,
+        "measurement_seconds": 600,
+        "paired_repetitions": 5
+      },
+      "dataset": {
+        "tenants": 100,
+        "stock_rows": 100000,
+        "initial_orders": 100000,
+        "id": "business-v1"
+      },
+      "latency_budget_ms": {
+        "p95": 100,
+        "p99": 250
+      },
+      "delivery": "at-least-once with duplicate-safe business effects; no global exactly-once/HA claim"
+    },
+    {
+      "id": "ai-agent-retrieval",
+      "adr": "../adr/ADR-0004-ai-retrieval-profile.md",
+      "protocol": "ai-retrieval-workload.md",
+      "providers": [
+        {
+          "role": "generation",
+          "name": "Ollama",
+          "version": "0.40.11"
+        },
+        {
+          "role": "generation-portability",
+          "name": "llama.cpp server",
+          "version": "0.7.0"
+        },
+        {
+          "role": "weights",
+          "name": "Qwen3-4B Q4_K_M",
+          "publisher_revision": "bc640142c66e1fdd12af0bd68f40445458f3869b"
+        },
+        {
+          "role": "embeddings",
+          "name": "Qwen3-Embedding-0.6B Q8_0",
+          "dimensions": 1024,
+          "publisher_revision": "370f27d7550e0def9b39c1f16d3fbaa13aa67728"
+        },
+        {
+          "role": "vector",
+          "name": "Qdrant",
+          "version": "1.20.0"
+        },
+        {
+          "role": "identity-real-provider-tiers",
+          "name": "Keycloak",
+          "version": "26.8.1"
+        }
+      ],
+      "app_budget": {
+        "vcpu": 2,
+        "memory_gib": 2
+      },
+      "model_budget": {
+        "vcpu": 8,
+        "memory_gib": 16,
+        "swap": false,
+        "isa_candidate": "AVX2"
+      },
+      "tiers": {
+        "fixture": {
+          "rate_turns_per_second": 20,
+          "warmup_seconds": 60,
+          "measurement_seconds": 300,
+          "repetitions": 3
+        },
+        "retrieval": {
+          "rate_queries_per_second": 5,
+          "warmup_queries": 100,
+          "measurement_seconds": 300,
+          "repetitions": 3
+        },
+        "model": {
+          "gold_cases": 200,
+          "warmup_turns": 20,
+          "concurrency": 1,
+          "generation_seeds": [
+            42,
+            43,
+            44
+          ]
+        }
+      },
+      "dataset": {
+        "tenants": 10,
+        "chunks": 2000,
+        "quality_cases": 200,
+        "negative_cases": 100,
+        "id": "cehpalon-ai-v1"
+      },
+      "quality_gates": {
+        "semantic_hit_at_5": 0.95,
+        "semantic_mean_recall_at_5": 0.9,
+        "grounded_answer_fraction": 0.9,
+        "tenant_leaks": 0,
+        "forbidden_tool_execution": 0
+      }
+    }
+  ],
+  "common": {
+    "numbers_are": "Predeclared engineering budgets, not measured results or production SLO promises",
+    "image_digests": null,
+    "package_lock_hashes": null,
+    "dataset_hashes": null,
+    "provider_runtime_qualified": false,
+    "external_paid_calls": 0,
+    "topology_switch": "startup configuration plus restart/redeploy",
+    "required_manifest": "exact artifacts/runtime/images/models/config/fixtures/Engine SHA/hardware/tool versions before first run"
+  }
+}

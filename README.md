@@ -5,6 +5,7 @@ Private MIT-licensed planning and documentation repository. Started on 2026-10-2
 This is a new baseline. Historical project notes are context only; they do not establish current implementation, CI results, maturity, or remote task IDs.
 
 - [Program plan](internal/planning/2026-10-27-program-plan.md)
+- [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
 - [Requirements coverage](internal/requirements/coverage.md)
 - [Research and reference comparison](internal/research/2026-10-27-reference-study.md)
 - [Delivery and maturity standard](internal/standards/delivery-and-maturity.md)

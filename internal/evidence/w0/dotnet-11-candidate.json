@@ -1,0 +1,29 @@
+{
+  "source_url": "https://builds.dotnet.microsoft.com/dotnet/release-metadata/11.0/releases.json",
+  "source_sha256": "145bf2e9b4710079f1e3f92b48224eed27184aed5f1492f9d3d9e5770ee4ea99",
+  "observed_date": "2026-10-27",
+  "sdk": "11.0.100-rc.3.26522.148",
+  "runtime": "11.0.0-rc.3.26522.148",
+  "support_phase": "go-live",
+  "candidate_files": [
+    {
+      "name": "dotnet-sdk-linux-x64.tar.gz",
+      "rid": "linux-x64",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/11.0.100-rc.3.26522.148/dotnet-sdk-11.0.100-rc.3.26522.148-linux-x64.tar.gz",
+      "hash": "77ef603622f0632ce59fc631871c9d0ec0c7402399837c659ead5b6fc7ea898f7f64a2632ecdc8d3330e608307416a36bff90a4d10179210489676167b9b80da"
+    },
+    {
+      "name": "dotnet-sdk-win-x64.tar.gz",
+      "rid": "win-x64",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/11.0.100-rc.3.26522.148/dotnet-sdk-11.0.100-rc.3.26522.148-win-x64.tar.gz",
+      "hash": "67f875dbdd7706df8af6475e690b50cbec0f217bb4e238ad1e3dab43961951dab0d15d8054810a69c405329d156d198996159cef86a6609c8173f8ec20c9eca1"
+    },
+    {
+      "name": "dotnet-sdk-win-x64.zip",
+      "rid": "win-x64",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/11.0.100-rc.3.26522.148/dotnet-sdk-11.0.100-rc.3.26522.148-win-x64.zip",
+      "hash": "dae0a0450d92b5315034db134259acffe9ec0043d93dced4fb2a9b8700520e87a99005d6845ad80716f4a8f30df24ae5363ca7c9be391797b4f53170e9b2c088"
+    }
+  ],
+  "proof_boundary": "Official distribution metadata only; SDK binaries not downloaded, binary checksums not verified, no install/restore/runtime qualification performed"
+}

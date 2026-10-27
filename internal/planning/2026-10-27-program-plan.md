@@ -46,7 +46,7 @@ TDD/BDD/DDD เป็นวิธีพัฒนาและออกแบบ �
 | Business | Tenant-aware API + Worker + SQL | ป้องกัน tenant ข้ามกัน, authz ทุกทางเข้า, outbox/inbox, retry/duplicate/crash recovery; เพิ่ม API+GraphQL ด้วย handler เดิม |
 | AI | Provider adapters + Agent + Retrieval | เปลี่ยน model provider ผ่าน contract ที่ประกาศ, tenant-scoped retrieval, tool permissions, cancellation, cost/token budgets, audit และ adversarial evaluation |
 
-ทั้งสาม lane อยู่ในแผนเดียวกัน ใช้ Core/Composition ร่วมกันและเดินตาม dependencies เพื่อหลีกเลี่ยงสร้างแกนแยกสามชุด Provider ชุดแรกยังรอเลือกหลังตรวจ SDK/driver compatibility และ workload
+ทั้งสาม lane อยู่ในแผนเดียวกัน ใช้ Core/Composition ร่วมกันและเดินตาม dependencies เพื่อหลีกเลี่ยงสร้างแกนแยกสามชุด W0 เลือก provider candidates/workload/budgets แล้วใน [decision package](w0-decisions.md) และ ADR-0001–0004 ส่วน SDK/driver/artifact/runtime qualification ยัง pending จึงไม่อ้าง compatibility จากการเลือกเพียงอย่างเดียว
 
 ## แผนตาม milestone
 
@@ -87,7 +87,7 @@ Issue รายตัวและชั่วโมงเริ่มต้น�
 
 ## คำตัดสินที่ยังต้องมีระหว่าง refinement
 
-- Provider/version/host ชุดแรกต่อ sample และ SLO/workload ที่จะใช้ทดสอบ
+- W0 เลือก provider candidates/workload และ engineering budgets แล้วตาม [decision package](w0-decisions.md); ยังต้อง freeze artifact locks/actual supported OS/hardware และ qualify ก่อนนำผลไปใช้รับรอง ไม่ถือ budgets นี้เป็น production SLO ที่ผู้ใช้ลงนามแล้ว
 - นิยาม supported profiles และขอบเขต restart/redeploy; live topology changes แยกงาน
 - รายละเอียด API contract, tenant model, security boundaries และ AI tool approval policy ของ sample
 - ขอบเขต public API, package naming และ compatibility policy ก่อน NuGet release
