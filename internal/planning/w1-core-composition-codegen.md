@@ -2,6 +2,8 @@
 
 วันที่ 2026-10-27 · Engine issues #5, #6 และส่วน code generation ของ #20
 
+Snapshot for this revision; [tenant/identity continuation](w1-tenant-identity.md) supersedes current-state tracking/source assertions while preserving these exact historical proofs.
+
 ส่งมอบส่วนพัฒนาอิสระจากการรับรอง Windows แล้ว โดยใช้ agent แยก worktree และให้ primary รวม/เขียนขึ้น GitHub คนเดียว การพัฒนานี้ไม่ปิด #3 และไม่ลบ dependency เดิม: full acceptance ของ W1 ยังรอ platform gate ส่วน CLI/scaffolding/transport-schema ของ #20 ยังเป็นงานคงเหลือ ดู [ADR-0005](../adr/ADR-0005-w1-portable-core-composition.md) และ [ADR-0006](../adr/ADR-0006-incremental-operation-code-generation.md)
 
 Engine revision ที่ตรวจจริง: `fee491cecaba04232207a1a2884057498e81213e` ใช้ SDK `11.0.100-rc.3.26522.148` และ runtime `11.0.0-rc.3.26522.148` ไม่มีการแทน system SDK หรือเผยแพร่ NuGet

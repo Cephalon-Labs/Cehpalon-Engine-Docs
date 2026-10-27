@@ -21,6 +21,8 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Changing transports/topologies/providers preserves only the semantics declared in their compatibility contracts. Do not hide differences in consistency, retries, transactions, queries, streaming or lifetime.
 - Generated operation registrations remain typed and lazy: code generation does not activate modules or provide tenant authority. Deduplicate declarations by semantic symbol identity, validate partial declarations together, and prove emitted consumers compile. Display names are not unique symbol identities.
 - Tenant and authorization boundaries apply to every supported entrypoint and state/event/cache/retrieval/tool path.
+- Caller metadata and constructed identity/membership DTOs are not authority. Protected operations must route through configured fresh identity/membership/resource/policy checks; plain Core/codegen remains unprotected unless wired to that boundary. Checked scopes are in-process capabilities, not a sandbox or atomic provider authorization.
+- Lease invalidity must latch permanently; enforce UTC validity plus a monotonic elapsed cap. Keep cleanup faults distinct from semantic access denial and preserve both execution/cleanup errors.
 
 ## Delivery and traceability
 

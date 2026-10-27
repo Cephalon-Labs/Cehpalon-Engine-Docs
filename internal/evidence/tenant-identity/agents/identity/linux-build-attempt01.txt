@@ -1,0 +1,9 @@
+/mnt/d/Cephalon/.tools/dotnet11/linux-x64/sdk/11.0.100-rc.3.26522.148/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [/mnt/d/Cephalon/.worktrees/w1-identity/Tests/Identity.ContractTests/Identity.ContractTests.csproj]
+  Cehpalon.Engine.Identity.Contracts -> /mnt/d/Cephalon/.worktrees/w1-identity/.local/identity/linux-artifacts/bin/Cehpalon.Engine.Identity.Contracts/release/Cehpalon.Engine.Identity.Contracts.dll
+  Identity.ContractTests -> /mnt/d/Cephalon/.worktrees/w1-identity/.local/identity/linux-artifacts/bin/Identity.ContractTests/release/Identity.ContractTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:08.45

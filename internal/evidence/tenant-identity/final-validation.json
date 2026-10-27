@@ -1,0 +1,946 @@
+{
+  "observed_at_utc": "2026-10-27T18:04:46.791260+00:00",
+  "engine_revision": "90d136dea3a76545e2994f64e2b3f6e096d83285",
+  "scope": "Exact local source, scoped contracts/consumer/benchmark and tracking integrity; not full IdP/provider/host/production qualification",
+  "checks": [
+    {
+      "name": "Engine exact clean committed source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Samples exact Engine pin and clean",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Component checks258 perhost win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Core/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Core/OperationRegistry.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Core/OperationResult.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Core/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Composition/CompositionCompiler.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Composition/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Composition/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Composition/PlanActivator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.CodeGeneration/OperationRegistryGenerator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.CodeGeneration/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Identity.Contracts/Cehpalon.Engine.Identity.Contracts.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Identity.Contracts/IdentityContracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Identity.Contracts/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Tenancy/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Tenancy/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: src/Cehpalon.Engine.Tenancy/TenantOperationDispatcher.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Core.ContractTests/Core.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Core.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Core.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Composition.ContractTests/Composition.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Composition.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Composition.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/collect-package-evidence.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/CompilerFixture/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/CompilerFixture/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/CodeGeneration.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Identity.ContractTests/Identity.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Identity.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Identity.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Tenancy.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Tenancy.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Tests/Tenancy.ContractTests/Tenancy.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Benchmarks/W1.Components/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Benchmarks/W1.Components/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Benchmarks/W1.Components/W1.Components.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Benchmarks/Tenancy.Components/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Benchmarks/Tenancy.Components/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Benchmarks/Tenancy.Components/Tenancy.Components.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Directory.Packages.props",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: Cehpalon.Engine.slnx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob win: tools/verify_w1.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: Core.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: Composition.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: CodeGeneration.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: Identity.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes win: Tenancy.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Compiler fixture runtime isolation win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Pinned tenant consumer10 win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: tenant-identity/TenantIdentity.Consumer.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: tenant-identity/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: tenant-identity/engine-lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: tenant-identity/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: tools/verify_tenant_identity.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob win: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generated gateway bytes win",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Component checks258 perhost linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Core/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Core/OperationRegistry.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Core/OperationResult.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Core/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Composition/CompositionCompiler.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Composition/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Composition/PlanActivator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Composition/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.CodeGeneration/OperationRegistryGenerator.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.CodeGeneration/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Identity.Contracts/Cehpalon.Engine.Identity.Contracts.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Identity.Contracts/IdentityContracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Identity.Contracts/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Tenancy/Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Tenancy/TenantOperationDispatcher.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: src/Cehpalon.Engine.Tenancy/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Core.ContractTests/Core.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Core.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Core.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Composition.ContractTests/Composition.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Composition.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Composition.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/CompilerFixture/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/CompilerFixture/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/collect-package-evidence.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/CodeGeneration.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Identity.ContractTests/Identity.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Identity.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Identity.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Tenancy.ContractTests/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Tenancy.ContractTests/Tenancy.ContractTests.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Tests/Tenancy.ContractTests/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Benchmarks/W1.Components/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Benchmarks/W1.Components/W1.Components.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Benchmarks/W1.Components/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Benchmarks/Tenancy.Components/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Benchmarks/Tenancy.Components/Tenancy.Components.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Benchmarks/Tenancy.Components/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Directory.Packages.props",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: Cehpalon.Engine.slnx",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Source/blob linux: tools/verify_w1.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: Core.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: Composition.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: CodeGeneration.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: Identity.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Result bytes linux: Tenancy.ContractTests",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Compiler fixture runtime isolation linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Pinned tenant consumer10 linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: tenant-identity/TenantIdentity.Consumer.csproj",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: tenant-identity/Program.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: tenant-identity/engine-lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: tenant-identity/packages.lock.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: tools/verify_tenant_identity.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: global.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Consumer source/blob linux: NuGet.Config",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generated gateway bytes linux",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Generated gateway identical observed hosts",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Independent exact-final-DLL11/11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reviewed source bytes Contracts.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Reviewed source bytes TenantOperationDispatcher.cs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Complete predeclared paired benchmark",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Performance independent recomputation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Every raw authorized/denied checksum and business counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "CI blocked before4jobs, no pass",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Project4 original23identities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #23",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #21",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal fee491cecaba04232207a1a2884057498e81213e",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #18",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #17",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #9",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal 90d136dea3a76545e2994f64e2b3f6e096d83285",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal 90d136dea3a76545e2994f64e2b3f6e096d83285",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal fee491cecaba04232207a1a2884057498e81213e",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal fee491cecaba04232207a1a2884057498e81213e",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal 5a6795b34535fdc311b519e8d452ea1c9f715bba",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal cf1d3a5e7867c91e0967b15e414f3c048dbbc715",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Mirror/native unchangedmetadata #1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Engine-only journal 34521e5ddd1b0ad7ab664dba825c69161e4344fc",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "#3 exactly unchanged Blocked",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Full scope still open with scoped evidence #7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Full scope still open with scoped evidence #8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Maintained Markdown links",
+      "passed": true,
+      "detail": {
+        "checked": 367,
+        "broken": [],
+        "excluded": "Raw evidence captures preserved at original bases"
+      }
+    },
+    {
+      "name": "Private MIT identity Cehpalon-Engine",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT identity Cehpalon-Engine-Docs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Private MIT identity Cehpalon-Engine-Samples",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "samples_execution_revision": "fb7ad58c7bab3b404a99b64ef5bcdaa30cb12366",
+  "tracking_counts": {
+    "total": 23,
+    "closed": 5,
+    "open": 18
+  },
+  "passed": 184,
+  "total": 184,
+  "status": "passed",
+  "limits": [
+    "No real IdP/token/provider/transport/production qualification",
+    "Windows26H2 observational only; #3 unchanged Blocked",
+    "Fresh sources, snapshot callbacks, clock and business/provider code trusted; no sandbox or atomic authorization/read guarantee",
+    "Full #7/#8 acceptance/gates remain outstanding; no billing or public/NuGet publication changes"
+  ]
+}

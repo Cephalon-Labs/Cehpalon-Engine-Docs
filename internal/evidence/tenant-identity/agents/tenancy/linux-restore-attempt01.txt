@@ -1,0 +1,5 @@
+  Determining projects to restore...
+  Restored /mnt/d/Cephalon/.worktrees/w1-tenancy/src/Cehpalon.Engine.Identity.Contracts/Cehpalon.Engine.Identity.Contracts.csproj (in 117 ms).
+  Restored /mnt/d/Cephalon/.worktrees/w1-tenancy/src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj (in 117 ms).
+  Restored /mnt/d/Cephalon/.worktrees/w1-tenancy/src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj (in 122 ms).
+  Restored /mnt/d/Cephalon/.worktrees/w1-tenancy/Tests/Tenancy.ContractTests/Tenancy.ContractTests.csproj (in 122 ms).

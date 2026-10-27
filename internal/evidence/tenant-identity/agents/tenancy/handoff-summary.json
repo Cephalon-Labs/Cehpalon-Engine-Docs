@@ -1,0 +1,36 @@
+{
+  "source_state": "Frozen uncommitted isolated agent worktree; primary must integrate/retest committed Engine source",
+  "scope": "Portable tenant/identity authorization contracts and Core private bridge; no supportedWindows/hostedCI/realIdP/provider/transport/E2E/benchmark/production qualification",
+  "source_sha256": {
+    "src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj": "fc6e68d0ca576d1209625d770408208e476cd34b938e3b79e8774e67d5aedc3a",
+    "src/Cehpalon.Engine.Tenancy/Contracts.cs": "d3c6f71fe4b44cffc04d22cd5fada5855f608a1898f1a94d515ac2c2bee67e47",
+    "src/Cehpalon.Engine.Tenancy/packages.lock.json": "b40c18ae5e41b9aea8ee31707b4533cbed25e18d9b80d4c34c0c5b3c259d94b4",
+    "src/Cehpalon.Engine.Tenancy/README.md": "ebf78e7f3ced84bf83f7876e207d89ba3d872673c7374474ffa88770f5ebfc18",
+    "src/Cehpalon.Engine.Tenancy/TenantOperationDispatcher.cs": "00c60c0fa60f69b98bdb3daee675ff2ab8cfc96c1bd346a5e3612e8b9d72d063",
+    "Tests/Tenancy.ContractTests/packages.lock.json": "96e95792a96f3046214d562b765fcab14747278f4950ba455b10ee983bdbb347",
+    "Tests/Tenancy.ContractTests/Program.cs": "e981bee7a66a8f5276dae052646cafcdb1db8db6d7eaa0f1a973490798de402c",
+    "Tests/Tenancy.ContractTests/README.md": "9dddd5e1212d3226ec42b45e9a193e8ad17eb061aefa3b7fa8b44e37e2e72b40",
+    "Tests/Tenancy.ContractTests/Tenancy.ContractTests.csproj": "21896101f51dbe45ff63b7502c8b000e6a4b37557cb09631b80b0afe9d29860a"
+  },
+  "windows_result": ".local/tenant-tests/windows-after-cleanup-fix.json",
+  "linux_result": ".local/tenant-tests/linux-final.json",
+  "passed_per_host": 70,
+  "retained_attempts": [
+    {
+      "path": ".local/tenant-tests/windows-attempt01.json",
+      "outcome": "61/63, two cumulative fixture read-count assertions incorrect after previous successful calls; fixedoracle and strengthened same-dispatcher refresh checks"
+    },
+    {
+      "path": ".local/tenant-tests/windows-before-clock-fix.json",
+      "outcome": "65/69, four new regressions reproduced absent monotonic cap and observed-invalidity lease resurrection"
+    },
+    {
+      "path": ".local/tenant-tests/windows-before-cleanup-fix.json",
+      "outcome": "69/70, cleanup-only TenantAccessDenied incorrectly mapped to semantic denial after business work; now unexpected cleanup wrapper preserves original cause"
+    }
+  ],
+  "public_api": "See Contracts.cs and TenantOperationDispatcher.cs; no Core modifications",
+  "identity_copy_note": "Readonly peer Identity source copied for standalone build only; do not integrate that folder from this worktree",
+  "review_status": "Independent reviewer verified final exact DLL5b2bf3... 11/11 (2 original clock cases plus9 adversarial including cleanup-only classification), no remaining material finding; identity peer separately replayed public resurrection repro successfully",
+  "independent_review_path": "D:/Cephalon/.worktrees/w1-tenant-review/.local/boundary-review/review-final.json"
+}

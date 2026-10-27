@@ -1,0 +1,39 @@
+{
+  "reviewer": "/root/tenant_boundary_review",
+  "observed_at_utc": "2026-10-27T15:03:22.097505+00:00",
+  "scope": "Independent copied-DLL in-process adversarial contracts; Windows observational only, no IdP/provider/benchmark/production proof",
+  "lease_repros": {
+    "before": "results-before.json",
+    "after": "results-after.json",
+    "unchanged_repro_source_sha256": "d0dfc0125202e7cfaf88f675c921594df8523ad87d6a53ad7c09775c7d502fc2",
+    "postfix_expected_rejections": 2,
+    "original_incorrect_successes": 2
+  },
+  "additional_review": {
+    "result": "../boundary-extra/results.json",
+    "passed": 8,
+    "failed": 0,
+    "source_sha256": "0036828db7c81da52ba639c0ba57e57c62908382b9b5be0bd71ada95569a6670"
+  },
+  "fixed_source_sha256": {
+    "Contracts.cs": "d3c6f71fe4b44cffc04d22cd5fada5855f608a1898f1a94d515ac2c2bee67e47",
+    "TenantOperationDispatcher.cs": "b39f4498e94bdc38349a60821e4aeee53f8fe89afe3d3eaa5ff9d7578aea8e59"
+  },
+  "source_matches_current_peer": {
+    "Contracts.cs": true,
+    "TenantOperationDispatcher.cs": false
+  },
+  "loaded_dll_sha256": {
+    "Cehpalon.Engine.Core.dll": "d694f887386ce33071e5a40ff3d6debe2ef48c6033bc104490cdd2ec5eaf0bb9",
+    "Cehpalon.Engine.Identity.Contracts.dll": "98e618d3059ffe220356e6ac39bd7517db4a6d372f0b8be7d753c01bc49f0fd1",
+    "Cehpalon.Engine.Tenancy.dll": "3db4138c93c8d56bb0c8b6a3b56efa429affceacf4fbaee91774d628be47f0a3"
+  },
+  "before_dll_sha256": {
+    "Cehpalon.Engine.Core.dll": "d694f887386ce33071e5a40ff3d6debe2ef48c6033bc104490cdd2ec5eaf0bb9",
+    "Cehpalon.Engine.Identity.Contracts.dll": "98e618d3059ffe220356e6ac39bd7517db4a6d372f0b8be7d753c01bc49f0fd1",
+    "Cehpalon.Engine.Tenancy.dll": "1c06748671251240ff5da64841b6a0dc97891c3cce7060336f64415d6b617d05"
+  },
+  "copied_fixed_dll_matches_peer": false,
+  "auxiliary_correction": "First post-fix QA build accidentally globbed older artifacts AssemblyInfo files; fixed private Review.csproj Compile include only. Repro Program.cs unchanged. Failed build retained after-build.txt.",
+  "remaining_material_findings": []
+}

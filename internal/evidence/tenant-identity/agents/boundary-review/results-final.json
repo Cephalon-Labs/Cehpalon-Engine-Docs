@@ -1,0 +1,20 @@
+{
+  "observed_at_utc": "2026-10-27T15:06:21.7106999+00:00",
+  "scope": "Independent fake-clock lease repro; not provider/identity/production or benchmark proof",
+  "results": [
+    {
+      "name": "monotonic duration despite UTC rollback within validity",
+      "expected_rejection_observed": true,
+      "returned_success": false,
+      "factory_calls": 1,
+      "dispose_calls": 1
+    },
+    {
+      "name": "expired lease resurrection after UTC rollback",
+      "expected_rejection_observed": true,
+      "returned_success": false,
+      "factory_calls": 1,
+      "dispose_calls": 1
+    }
+  ]
+}

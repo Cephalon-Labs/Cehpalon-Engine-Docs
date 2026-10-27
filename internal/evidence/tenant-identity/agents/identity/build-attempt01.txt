@@ -1,0 +1,11 @@
+D:\Cephalon\.tools\dotnet11\win-x64\sdk\11.0.100-rc.3.26522.148\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Cephalon\.worktrees\w1-identity\Tests\Identity.ContractTests\Identity.ContractTests.csproj]
+  Cehpalon.Engine.Identity.Contracts -> D:\Cephalon\.worktrees\w1-identity\src\Cehpalon.Engine.Identity.Contracts\bin\Release\net11.0\Cehpalon.Engine.Identity.Contracts.dll
+D:\Cephalon\.worktrees\w1-identity\Tests\Identity.ContractTests\Program.cs(37,49): error CS8604: Possible null reference argument for parameter 'key' in 'void Dictionary<PrincipalId, int>.Add(PrincipalId key, int value)'. [D:\Cephalon\.worktrees\w1-identity\Tests\Identity.ContractTests\Identity.ContractTests.csproj]
+
+Build FAILED.
+
+D:\Cephalon\.worktrees\w1-identity\Tests\Identity.ContractTests\Program.cs(37,49): error CS8604: Possible null reference argument for parameter 'key' in 'void Dictionary<PrincipalId, int>.Add(PrincipalId key, int value)'. [D:\Cephalon\.worktrees\w1-identity\Tests\Identity.ContractTests\Identity.ContractTests.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:01.73

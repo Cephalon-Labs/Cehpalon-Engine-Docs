@@ -1,0 +1,3 @@
+  Determining projects to restore...
+  Restored D:\Cephalon\.worktrees\w1-identity\Tests\Identity.ContractTests\Identity.ContractTests.csproj (in 65 ms).
+  Restored D:\Cephalon\.worktrees\w1-identity\src\Cehpalon.Engine.Identity.Contracts\Cehpalon.Engine.Identity.Contracts.csproj (in 60 ms).

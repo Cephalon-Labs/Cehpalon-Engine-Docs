@@ -1,0 +1,7 @@
+{
+  "scope": "Independent unchanged public-API repro before rerun of peer clockfix",
+  "repro_program_sha256": "f0f26e2ea7238cc676efe1871d3d5060e60163eec078f4e369911a05da235e34",
+  "original_output_sha256": "d4079ea1102c75310112ceb4b4fb75a325419e79769ff363c0934324d923bb5c",
+  "old_copied_tenancy_dll_sha256": "1c06748671251240ff5da64841b6a0dc97891c3cce7060336f64415d6b617d05",
+  "new_peer_tenancy_dll_sha256": "3db4138c93c8d56bb0c8b6a3b56efa429affceacf4fbaee91774d628be47f0a3"
+}

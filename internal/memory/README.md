@@ -2,7 +2,7 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest continuation: [2026-10-27 W1 portable Core/Composition/code generation](2026-10-27-w1-core-composition-codegen.md). This succeeds the [W0 qualification handoff](2026-10-27-w0-qualification-and-sync.md); refresh current tracking and CI before work.
+Latest continuation: [2026-10-28 portable tenant/identity](2026-10-28-tenant-identity.md). This succeeds the [W1 Core/Composition/codegen handoff](2026-10-27-w1-core-composition-codegen.md); refresh current tracking and CI before work.
 
 - [2026-10-27 new baseline and user decisions](2026-10-27-program-bootstrap.md)
 - [Program plan](../planning/2026-10-27-program-plan.md)

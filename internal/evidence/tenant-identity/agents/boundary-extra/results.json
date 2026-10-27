@@ -1,0 +1,40 @@
+{
+  "observed_at_utc": "2026-10-27T15:02:49.7471863+00:00",
+  "scope": "Independent in-process adversarial boundary checks with copied peer DLLs; not real provider/identity/host/deployment/benchmark proof",
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "public DTO construction exposes no grant or raw Core bridge",
+      "passed": true
+    },
+    {
+      "name": "nested A then B revokes inner while restoring independent outer context",
+      "passed": true
+    },
+    {
+      "name": "one registry with two trusted identity sources overlaps without context crossover",
+      "passed": true
+    },
+    {
+      "name": "deep freeze survives real asynchronous authority wait and original nested mutation",
+      "passed": true
+    },
+    {
+      "name": "provider-port guard rejects authoritative resource moved after policy lookup",
+      "passed": true
+    },
+    {
+      "name": "public identity-shaped metadata cannot authenticate anonymous source",
+      "passed": true
+    },
+    {
+      "name": "source failure on a second invocation never reuses prior authorized grant",
+      "passed": true
+    },
+    {
+      "name": "execution and cleanup faults revoke retained context and preserve both failures",
+      "passed": true
+    }
+  ]
+}

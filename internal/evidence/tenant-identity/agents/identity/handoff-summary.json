@@ -1,0 +1,24 @@
+{
+  "scope": "Uncommitted isolated identity contract source; root must integrate and test exact Engine commit. No JWT/OIDC/tenant/provider/supportedWindows/CI/benchmark proof",
+  "source_sha256": {
+    "src/Cehpalon.Engine.Identity.Contracts/Cehpalon.Engine.Identity.Contracts.csproj": "d8f58c0cc534918c61b9f248f8954618ab478f3a6382787115c0fb5844a3dd62",
+    "src/Cehpalon.Engine.Identity.Contracts/IdentityContracts.cs": "d4e1d14baa22c8a39997a7030214754facb747445455bbd072ee835c9ead2eda",
+    "src/Cehpalon.Engine.Identity.Contracts/packages.lock.json": "b5d92ac7cd604d998f35dee72e747dd203d49c3031da32b96e1f58246cd2bd87",
+    "src/Cehpalon.Engine.Identity.Contracts/README.md": "8d5c71fe37214887999c8c719e9e257494effa81dd3b536f5e44539b76a4fc70",
+    "Tests/Identity.ContractTests/Identity.ContractTests.csproj": "0fbea0aaf90e22984f0e42060a646d84cace8a75b70f2ed9daf9d97b8615cbac",
+    "Tests/Identity.ContractTests/packages.lock.json": "7c70271367cdea41b8c211d8185a1395b31f854fa9b25f4f0b98963383f8435e",
+    "Tests/Identity.ContractTests/Program.cs": "3be33cd2992bfed68d6f5d1406e193588bda177ed2976fcd50e7634cc034b674",
+    "Tests/Identity.ContractTests/README.md": "ed3521973bc324ae6a1f72cbb9204a786716842a77a1f28cae1ce726405ec86e"
+  },
+  "tests": {
+    "windows": ".local/identity/windows-attempt01.json",
+    "wsl_linux": ".local/identity/linux-attempt01.json"
+  },
+  "passed_per_host": 34,
+  "retained_failed_attempts": [
+    {
+      "file": ".local/identity/build-attempt01.txt",
+      "reason": "Test nullable-flow warning-as-error after Equals(null) assertion; reordered test dictionary before null comparison; production source unchanged"
+    }
+  ]
+}

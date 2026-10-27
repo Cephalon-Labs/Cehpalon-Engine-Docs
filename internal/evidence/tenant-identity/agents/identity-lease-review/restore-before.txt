@@ -1,0 +1,5 @@
+  Determining projects to restore...
+  Restored D:\Cephalon\.worktrees\w1-identity\.local\lease-review\LeaseReview.csproj (in 4 ms).
+  Restored D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Core\Cehpalon.Engine.Core.csproj (in 16 ms).
+  Restored D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Identity.Contracts\Cehpalon.Engine.Identity.Contracts.csproj (in 16 ms).
+  Restored D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Tenancy\Cehpalon.Engine.Tenancy.csproj (in 17 ms).

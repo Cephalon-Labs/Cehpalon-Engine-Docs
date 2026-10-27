@@ -1,0 +1,9 @@
+{
+  "scope": "Independent in-process still-active lease clock rollback repro; no realprovider or identityproof",
+  "result": 0,
+  "resurrected": false,
+  "events": [
+    "Denied after expiry",
+    "Remained denied after clock rollback"
+  ]
+}

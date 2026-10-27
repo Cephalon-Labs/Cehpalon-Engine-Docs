@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net11.0</TargetFramework><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><IsPackable>false</IsPackable></PropertyGroup>
+  <ItemGroup><ProjectReference Include="D:/Cephalon/.worktrees/w1-tenancy/src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj" /></ItemGroup>
+</Project>

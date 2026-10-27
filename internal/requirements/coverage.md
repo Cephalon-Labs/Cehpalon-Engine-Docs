@@ -28,3 +28,5 @@ W0 refinement has a [decision package with four ADRs and three workload protocol
 | REQ-20 — NuGet preparation and long-term evolution | #2, #22 | Local pack/install/upgrade, versioned contracts and migration/deprecation policy; publication is separate |
 
 Issue references above belong to `Cephalon-Labs/Cehpalon-Engine`. Detailed acceptance criteria and estimates are mirrored under `tasks/<issue-number>.md`.
+
+REQ-05 now has a [portable tenant/identity contract slice](../planning/w1-tenant-identity.md) with cross-tenant fixture tests. This does not establish real IdP/provider/transport isolation or complete #7/#8 acceptance; those gates remain explicit.

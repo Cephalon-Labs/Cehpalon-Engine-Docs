@@ -1,0 +1,39 @@
+{
+  "reviewer": "/root/tenant_boundary_review",
+  "observed_at_utc": "2026-10-27T15:08:12.050995+00:00",
+  "scope": "Independent copied-DLL contract/adversarial QA, Windows observational only; no realIdP/provider/host/benchmark/production qualification",
+  "passed": 11,
+  "total": 11,
+  "lease_rejections": {
+    "count": 2,
+    "result": "results-final.json",
+    "unchanged_repro_sha256": "d0dfc0125202e7cfaf88f675c921594df8523ad87d6a53ad7c09775c7d502fc2",
+    "retained_before_result": "results-before.json"
+  },
+  "additional_adversarial": {
+    "count": 9,
+    "result": "../boundary-extra/results-final.json",
+    "source_sha256": "021b70c458ec67bfcac77ea8b9e2e908174479285b3c4c36e88c66f7aa95fe0e"
+  },
+  "reviewed_source_sha256": {
+    "Contracts.cs": "d3c6f71fe4b44cffc04d22cd5fada5855f608a1898f1a94d515ac2c2bee67e47",
+    "TenantOperationDispatcher.cs": "00c60c0fa60f69b98bdb3daee675ff2ab8cfc96c1bd346a5e3612e8b9d72d063"
+  },
+  "peer_source_stable_since_copy": {
+    "Contracts.cs": true,
+    "TenantOperationDispatcher.cs": true
+  },
+  "loaded_dll_sha256": {
+    "Cehpalon.Engine.Core.dll": "d694f887386ce33071e5a40ff3d6debe2ef48c6033bc104490cdd2ec5eaf0bb9",
+    "Cehpalon.Engine.Identity.Contracts.dll": "98e618d3059ffe220356e6ac39bd7517db4a6d372f0b8be7d753c01bc49f0fd1",
+    "Cehpalon.Engine.Tenancy.dll": "5b2bf3b597ec005dd10b9937478bbc5e819d700d57de0ed9b814b0588413c8c7"
+  },
+  "actual_loaded_dll_matches_peer": true,
+  "remaining_material_findings": [],
+  "trust_limits": [
+    "Deepfreeze callback, sources, policy and business/provider code are trusted; this is not a sandbox",
+    "Checked context is an active in-process data-bound capability, not cryptographic or cross-process authority",
+    "Actual provider transactions/revocation/TOCTOU isolation require provider-specific proof"
+  ],
+  "auxiliary_attempts": "after-build.txt preserved for accidental private-QA artifactglob; fixed only privatecsproj explicitCompile. Earlier8caseProgram reconstructed by reversing append-only ninthcase, matches original recorded sourcehash."
+}

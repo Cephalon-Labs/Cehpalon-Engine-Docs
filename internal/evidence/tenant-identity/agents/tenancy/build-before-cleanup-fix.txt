@@ -1,0 +1,13 @@
+D:\Cephalon\.tools\dotnet11\win-x64\sdk\11.0.100-rc.3.26522.148\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Cephalon\.worktrees\w1-tenancy\Tests\Tenancy.ContractTests\Tenancy.ContractTests.csproj]
+D:\Cephalon\.tools\dotnet11\win-x64\sdk\11.0.100-rc.3.26522.148\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Identity.Contracts\Cehpalon.Engine.Identity.Contracts.csproj]
+D:\Cephalon\.tools\dotnet11\win-x64\sdk\11.0.100-rc.3.26522.148\Sdks\Microsoft.NET.Sdk\targets\Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Core\Cehpalon.Engine.Core.csproj]
+  Cehpalon.Engine.Core -> D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Core\bin\Release\net11.0\Cehpalon.Engine.Core.dll
+  Cehpalon.Engine.Identity.Contracts -> D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Identity.Contracts\bin\Release\net11.0\Cehpalon.Engine.Identity.Contracts.dll
+  Cehpalon.Engine.Tenancy -> D:\Cephalon\.worktrees\w1-tenancy\src\Cehpalon.Engine.Tenancy\bin\Release\net11.0\Cehpalon.Engine.Tenancy.dll
+  Tenancy.ContractTests -> D:\Cephalon\.worktrees\w1-tenancy\Tests\Tenancy.ContractTests\bin\Release\net11.0\Tenancy.ContractTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.59

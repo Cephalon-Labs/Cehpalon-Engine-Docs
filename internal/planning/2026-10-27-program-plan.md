@@ -2,7 +2,7 @@
 
 สถานะ: แผนพัฒนาเริ่มต้น ขอบเขต feature และตัวเลขชั่วโมงยังเป็นข้อเสนอ ไม่มี runtime feature ที่ได้รับการรับรองจากการตั้ง repository รอบนี้
 
-Latest continuation: [W1 Core/Composition and code generation](w1-core-composition-codegen.md), following [W0 qualification and two-way tracking](w0-qualification-and-sync.md). Statements about the initially absent SDK/implementation below describe the earlier baseline. [ADR-0005](../adr/ADR-0005-w1-portable-core-composition.md) permits bounded portable development while keeping #3 and full acceptance/platform gates blocked.
+Latest continuation: [W1 tenant/identity contracts](w1-tenant-identity.md), following [Core/Composition/codegen](w1-core-composition-codegen.md) and [W0 qualification](w0-qualification-and-sync.md). Statements about initially absent implementation describe the earlier baseline. ADR-0005/0007 permit bounded portable development while preserving #3 and full acceptance/platform gates.
 
 ## ข้อกำหนดที่ยืนยันจากผู้ใช้
 
