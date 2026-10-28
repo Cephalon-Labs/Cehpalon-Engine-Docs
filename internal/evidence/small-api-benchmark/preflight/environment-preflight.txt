@@ -1,0 +1,50 @@
+uid=1000(tom) gid=1000(tom) groups=1000(tom),4(adm),8(mail),20(dialout),24(cdrom),25(floppy),27(sudo),29(audio),30(dip),44(video),46(plugdev),116(netdev),1001(docker)
+Linux TOM-NPC 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.5 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
+0::/non-systemd
+Cpus_allowed_list:	0-19
+Mems_allowed_list:	0
+cpuset cpu io memory hugetlb pids rdma
+cpuset cpu io memory pids
+max 100000
+max
+0-19
+cgroup_write_no
+max 100000
+max
+0-19
+CPU CORE SOCKET ONLINE
+  0    0      0    yes
+  1    0      0    yes
+  2    1      0    yes
+  3    1      0    yes
+  4    2      0    yes
+  5    2      0    yes
+  6    3      0    yes
+  7    3      0    yes
+  8    4      0    yes
+  9    4      0    yes
+ 10    5      0    yes
+ 11    5      0    yes
+ 12    6      0    yes
+ 13    6      0    yes
+ 14    7      0    yes
+ 15    7      0    yes
+ 16    8      0    yes
+ 17    8      0    yes
+ 18    9      0    yes
+ 19    9      0    yes
+               total        used        free      shared  buff/cache   available
+Mem:     33520726016  1493893120 29947981824     6922240  2078851072 31690366976
+Swap:     8589934592           0  8589934592
