@@ -10,3 +10,5 @@ The [protected HTTP/GraphQL guide](protected-http-graphql.md) describes the boun
 - [Experimental tenant/identity boundary](guides/experimental-tenant-identity.md): fresh authority checks, checked context lifetime and cross-tenant fixture proof; no real IdP/provider qualification.
 
 Publish guides with tested versions, supported profiles, runnable Samples and limitations when evidence exists. Keep research, internal planning, task mirrors, operational evidence and AI handoffs under internal folders.
+
+- [Experimental public Small API measurements and limits](small-api-measurements.md)

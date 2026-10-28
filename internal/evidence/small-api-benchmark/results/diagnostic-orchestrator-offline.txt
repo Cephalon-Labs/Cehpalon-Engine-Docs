@@ -1,0 +1,4 @@
+Passed Python compilation.
+Passed offline fake-server12attempt matrix: rates100BE/500EB/2000BE forHTTP/GQL;11timedreports+1knownfailedcollectorpreflight retained;all12attemptsaccounted;diagnosticsnotacceptancebudgets.
+Passed isolated child-driver mocks: known diagnostic failed collector preflight continues once; standard acceptance path fails; a missing result after successful preflight aborts as unknown infrastructure; no retries.
+No actual measurements, commits or remote writes.

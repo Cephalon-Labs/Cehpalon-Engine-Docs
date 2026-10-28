@@ -2,7 +2,7 @@
 
 - วันที่: 2026-10-27 (Asia/Bangkok)
 - Decision: [ADR-0002](../adr/ADR-0002-small-api-profile.md)
-- สถานะ: **Predeclared engineering design; not executed** ตัวเลขทั้งหมดเป็น design budgets และยังไม่มี measured result
+- สถานะเดิมเมื่อ freeze W0: **Predeclared engineering design; not executed**. Continuation2026-10-28: [complete nonqualifying observations](../planning/w2-small-api-conformance-benchmark.md) now exist, with startup FAIL and GraphQL stability INVALID; reference/full gates remain Blocked. The budgets below are unchanged.
 - Maturity: M0; task #11 และ adapter/core/config tasks ต้องแนบ evidence ของ revision ที่รันจริง
 
 ## 1. Reference environment และ preflight

@@ -1,0 +1,9 @@
+{
+  "repository": "Cephalon-Labs/Cehpalon-Engine-Samples",
+  "path": "small-api-benchmark/evidence/2026-10-28/retention-manifest.json",
+  "sha256": "65aebaf213b6ca4043ab8d8caf5f266f133886e1247f5770958cf5ea415c7d89",
+  "scope": "Full raw records and all retained attempts are in Samples, not duplicated in Docs.",
+  "private_material_included": false,
+  "evidence_commit": "64b45dc0b46230d559a7d992e88d8efb9c51e3ea",
+  "immutable_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/64b45dc0b46230d559a7d992e88d8efb9c51e3ea/small-api-benchmark/evidence/2026-10-28"
+}

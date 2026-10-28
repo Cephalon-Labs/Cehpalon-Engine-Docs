@@ -1,0 +1,84 @@
+{
+  "scope": "Existing issues9/11 and Project4 only; no issue creation/deletion/maturity promotion.",
+  "plan_sha256": "ae8b1a79b333fe4b22e950dc46c1e017e1bed89783ee3fe7ac0eec53661e1b0b",
+  "dryrun": "passed",
+  "apply": "applied",
+  "operations": [
+    {
+      "number": 9,
+      "kind": "issue",
+      "fields": [
+        "body"
+      ]
+    },
+    {
+      "number": 9,
+      "kind": "project",
+      "fields": [
+        "Benchmark gate"
+      ]
+    },
+    {
+      "number": 11,
+      "kind": "issue",
+      "fields": [
+        "body"
+      ]
+    },
+    {
+      "number": 11,
+      "kind": "project",
+      "fields": [
+        "Benchmark gate"
+      ]
+    }
+  ],
+  "issue3_editable_and_body_unchanged": true,
+  "issue3_editable_sha256": "d57b1df342b1a4b184a701dc1442b25ed65a5c1cce7f1109b6b45984b88df74f",
+  "issues": [
+    {
+      "number": 9,
+      "type": "Feature",
+      "labels": [
+        "area:transports"
+      ],
+      "state": "open",
+      "project": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "transports"
+      },
+      "body_sha256": "abd750a49e8041599b5ecfefcc2bf1dccce42f57256dd3d6de46cb24f250edf0"
+    },
+    {
+      "number": 11,
+      "type": "Task",
+      "labels": [
+        "area:samples"
+      ],
+      "state": "open",
+      "project": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 24.0,
+        "Estimate (h)": 36.0,
+        "Estimate high (h)": 48.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "samples"
+      },
+      "body_sha256": "8451d5ee8d708cceb2dcf9c4bec98aa63e2a3a63a58dc34c8d3475f131c2d2a8"
+    }
+  ]
+}

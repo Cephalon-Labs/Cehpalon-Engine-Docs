@@ -1,0 +1,45 @@
+{
+  "observed_at_utc": "2026-10-28T07:33:33.037156+00:00",
+  "status": "passed",
+  "review_scope": "Read-only source/build/host lifetime/TLS/probe evidence audit; no rerun or measurement",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "compiled_samples_revision": "9d915f90b66d90e44c7a54f8a5d6b4415df799e5",
+  "observed_samples_revision": "d9f401a5c0de2687ba20b511f62715c7bdd69e23",
+  "verified_frozen_source_files": 106,
+  "unchanged_build_inputs": 12,
+  "only_postbuild_change": [
+    "tools/benchmark_small_api.py"
+  ],
+  "assembly_sha256": "3f01043c103f4b86b43ffc9e4783861e8865e9b9d7535c8322af6d0001f3d106",
+  "server_shutdowns_verified": 172,
+  "shared_ca_readies_verified": 172,
+  "state_reports_verified": 172,
+  "driver_load_results": 32,
+  "actual_tls_connections": 4233,
+  "actual_tls_ciphers": [
+    "TLS_AES_256_GCM_SHA384"
+  ],
+  "graphql_positive_probes_sample": {
+    "hostFactories": 1,
+    "apiFactories": 1,
+    "graphQLFactories": 1,
+    "graphQLServices": 28,
+    "forbiddenFactories": 0,
+    "endpointCount": 9,
+    "graphQLDiagnosticConstructors": 1,
+    "graphQLExecutorInitializations": 1,
+    "graphQLSchemasReady": 1
+  },
+  "material_boundaries": [
+    "Baseline and Engine are paths in the same binary/package graph: RSS compares activation/path overhead, not separate stripped distributions.",
+    "Baseline shares portable Core result/context/interface and binding representation types plus factory; it bypasses Core runtime dispatch/generated registration/Composition compilation and plan activation.",
+    "Common startup still constructs pure ModuleRegistration metadata for the native branch, though it does not compile or activate a plan. Treat this as a native/direct-dispatch baseline with shared fixture scaffolding, not an Engine-free minimal distribution.",
+    "SchemasReady is observed through a real executor-created callback, not a separately hooked schema constructor.",
+    "Public synthetic fixed server-owned principal is not authentication/tenant/provider proof; protected fixture remains separate.",
+    "Shared WSL/nonreserved affinity/no2GiBcap invalidates reference qualification.",
+    "Startup p95 absolute1000ms budgets fail both variants/transports; do not relabel failure.",
+    "GraphQL Engine p95 CV0.12368092068471122 exceeds0.10, invalidating canonical performance series despite favorable individual-pair latencies.",
+    "#3 remains Blocked; diagnostics cannot replace the canonical1000req/s series."
+  ],
+  "no_owned_benchmark_dotnet_children_at_postrun_proc_check": true
+}

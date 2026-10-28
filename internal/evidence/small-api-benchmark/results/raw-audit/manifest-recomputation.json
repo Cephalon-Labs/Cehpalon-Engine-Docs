@@ -1,0 +1,366 @@
+[
+  {
+    "path": "load\\graphql\\00-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\00-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\01-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\01-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\02-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\02-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\03-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\03-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\04-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\graphql\\04-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "72db14efaf0a6aa51b1b6e415118d02398fa94c3415f482bde00d4ccce91a97d",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+  },
+  {
+    "path": "load\\http\\00-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\00-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\01-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\01-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\02-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\02-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\03-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\03-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\04-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "load\\http\\04-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 180000,
+    "wire_hash": "63b4c7f68074b294c4eb758777980d6ad7da51695f463429a4be49d0a747c2f6",
+    "logical_hash": "970c8adcbada1703c865f3748682bcdfef1b876ae15be318381d6665231f4581",
+    "gzip_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+  },
+  {
+    "path": "idle\\graphql\\00-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\00-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\01-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\01-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\02-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\02-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\03-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\03-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\04-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\graphql\\04-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "fd4495506c539762104beabc4db0414fafb500aa7fb61228f17696231c20815b",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "b16966ee038b07070fe24be41a12755ac7e14c1d2d2b36e1002fd754dd36f625"
+  },
+  {
+    "path": "idle\\http\\00-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\00-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\01-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\01-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\02-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\02-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\03-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\03-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\04-baseline\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "idle\\http\\04-engine\\warmup\\offered-manifest.jsonl.gz",
+    "rows": 60000,
+    "wire_hash": "3b8c25be0ecb1b5e113b3430c4b61270c4ee0b20a6e0c77f0c5e0a9f45d65a35",
+    "logical_hash": "847efb2c01a3523bef8ee34b5616cae4a1cd6208b6b96474291fb3376919a430",
+    "gzip_sha256": "e3b495ac20d9aa956965d46dcbe71ff786d838e6efd9140e33e6b6d43f18d134"
+  },
+  {
+    "path": "diagnostics\\graphql\\0100-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 18000,
+    "wire_hash": "0780c8a1326adc1fe719aa6ab3da72b3647c486e05ab689604671748cbe543fc",
+    "logical_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+    "gzip_sha256": "88c6a783ca93b9e241307ad1f87de92795c29f46172d4ebd0d74e0ca80807316"
+  },
+  {
+    "path": "diagnostics\\graphql\\0100-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 18000,
+    "wire_hash": "0780c8a1326adc1fe719aa6ab3da72b3647c486e05ab689604671748cbe543fc",
+    "logical_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+    "gzip_sha256": "88c6a783ca93b9e241307ad1f87de92795c29f46172d4ebd0d74e0ca80807316"
+  },
+  {
+    "path": "diagnostics\\graphql\\0500-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 90000,
+    "wire_hash": "db14b6aa0d22bca36b750ff4282c423925aef00bafe7cfa8aeda6b1c243d409b",
+    "logical_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+    "gzip_sha256": "e24451dc74ad3b00d7276865db6877721089726fd53abdce628d613176290483"
+  },
+  {
+    "path": "diagnostics\\graphql\\0500-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 90000,
+    "wire_hash": "db14b6aa0d22bca36b750ff4282c423925aef00bafe7cfa8aeda6b1c243d409b",
+    "logical_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+    "gzip_sha256": "e24451dc74ad3b00d7276865db6877721089726fd53abdce628d613176290483"
+  },
+  {
+    "path": "diagnostics\\graphql\\2000-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 360000,
+    "wire_hash": "fd67da77b2fd94e6ba4ed3addfa5049b68aafdf185a7fd0a624dc8ce42214b3c",
+    "logical_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+    "gzip_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+  },
+  {
+    "path": "diagnostics\\graphql\\2000-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 360000,
+    "wire_hash": "fd67da77b2fd94e6ba4ed3addfa5049b68aafdf185a7fd0a624dc8ce42214b3c",
+    "logical_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+    "gzip_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+  },
+  {
+    "path": "diagnostics\\http\\0100-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 18000,
+    "wire_hash": "657daf6d97ed50b29711ea37dafceb6a31b7fb444f745ee15ec071f75c84443b",
+    "logical_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+    "gzip_sha256": "b63ed367361f899fb527183ca9b80469c6c16278c57d679b28c85ffea71af2f4"
+  },
+  {
+    "path": "diagnostics\\http\\0100-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 18000,
+    "wire_hash": "657daf6d97ed50b29711ea37dafceb6a31b7fb444f745ee15ec071f75c84443b",
+    "logical_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+    "gzip_sha256": "b63ed367361f899fb527183ca9b80469c6c16278c57d679b28c85ffea71af2f4"
+  },
+  {
+    "path": "diagnostics\\http\\0500-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 90000,
+    "wire_hash": "56f640c9bde8d4dafd626f3a6107ff26959afee86f35068fd037db265286fd08",
+    "logical_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+    "gzip_sha256": "46467f0bbdfa39494992dbf77f026e1a8d3b1816ff54e58063f5c413fb7a140c"
+  },
+  {
+    "path": "diagnostics\\http\\0500-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 90000,
+    "wire_hash": "56f640c9bde8d4dafd626f3a6107ff26959afee86f35068fd037db265286fd08",
+    "logical_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+    "gzip_sha256": "46467f0bbdfa39494992dbf77f026e1a8d3b1816ff54e58063f5c413fb7a140c"
+  },
+  {
+    "path": "diagnostics\\http\\2000-baseline\\driver\\offered-manifest.jsonl.gz",
+    "rows": 360000,
+    "wire_hash": "ac61414d674bbd6188d9444bc404e1372c7b6bd1285423fe00fa566c4dd5447a",
+    "logical_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+    "gzip_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+  },
+  {
+    "path": "diagnostics\\http\\2000-engine\\driver\\offered-manifest.jsonl.gz",
+    "rows": 360000,
+    "wire_hash": "ac61414d674bbd6188d9444bc404e1372c7b6bd1285423fe00fa566c4dd5447a",
+    "logical_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+    "gzip_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+  }
+]

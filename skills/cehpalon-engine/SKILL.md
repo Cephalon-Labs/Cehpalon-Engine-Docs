@@ -50,3 +50,9 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Delegated work needs a bounded assignment. Isolate branches/worktrees when agents edit code; designate one integrator/remote writer for each wave. Read-only research can run independently.
 - Each handoff states changed files, validation results, assumptions, limitations and next work. Do not overwrite another agent's changes or store credentials in handoffs.
 - Vendor entry files point to these rules; vendor SDK/CLI support is only claimed after testing with the actual supported tool/version.
+
+## Measurement lessons from Small API
+
+- Keep public functional/performance fixtures distinct from protected tenant fixtures. Baselines may share representation types, packages and pure fixture metadata; declare that scope and verify they bypass the measured dispatch/activation paths. Same-binary RSS is not stripped-distribution footprint.
+- Freeze codec buffering, connection preparation, actual TLS telemetry, clock continuity and real private-file permissions before the complete attempt. A collector preflight failure is retained evidence, never a hidden retry. Affinity is not dedicated resources.
+- Check all offered records/manifests, state, lifecycle and all five CV values. Startup absolute failure, invalid CV and nonqualifying reference environment remain separate negative outcomes even when every request is correct and individual pairs pass. Preserve raw failure/audit attempts, representation-rounding corrections and their proof limits.

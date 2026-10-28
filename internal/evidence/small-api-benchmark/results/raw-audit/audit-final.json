@@ -1,0 +1,49 @@
+{
+  "observed_at_utc": "2026-10-28T07:43:04.111916+00:00",
+  "status": "consistent-with-declared-budget-failures",
+  "raw_scan_sha256": "8cad489ad76768f225d7c791fa7637c4d261964fae7133e479927d79ddee2e74",
+  "raw_scan_script_sha256": "91e5bc383b5902497cafb68d26aa0b71b82ce0a65ce6c4b522dcffaa2cd72147",
+  "adjudication_script_sha256": "5e46c3fb82ebc350783d64575216ff9d271f7f81d7fd1150611efd0ecbfdaaf8",
+  "all_gzip_records_scanned": true,
+  "counts": {
+    "manifest_rows": 6672000,
+    "gzip_files": 188,
+    "phase_rows": 8596800,
+    "semantic_error_flags": 0,
+    "timeout_budget_exceeding_rows": 0,
+    "complete_state_snapshots": 84,
+    "server_shutdowns": 172,
+    "rss_samples": 1200
+  },
+  "owned_process_identity_and_pair_order_checks": 172,
+  "compiled_source_bundle_matches_build": true,
+  "only_build_to_measure_source_delta": [
+    "tools/benchmark_small_api.py"
+  ],
+  "provenance_note": {
+    "classification": "Noncompiled orchestration-only change, explicitly verified",
+    "build_samples_revision": "9d915f90b66d90e44c7a54f8a5d6b4415df799e5",
+    "measured_samples_revision": "d9f401a5c0de2687ba20b511f62715c7bdd69e23",
+    "build_orchestrator_sha256": "a8ec9ce0be9d9feff2f77097f895e65d6b5620469a0325aa07aa31e18b3bfb37",
+    "measured_orchestrator_sha256": "a5ffdf6f84fdd294fd3cc8f2b73c731ef358fc8d4a4b6540c9045784aa519704",
+    "reason": "The only committed delta is Python orchestration; compiled C#/project/package bytes and actual DLL/deps match. Measured Python bytes separately match their frozen recorded commit. No benchmark source or raw result was changed by this adjudication."
+  },
+  "unexpected_findings": [],
+  "reference_environment_qualified": false,
+  "benchmark_acceptance_passed": false,
+  "numeric_conclusion": {
+    "startup_absolute_1s": "failed both transports",
+    "startup_baseline_extra_150ms": "passed both transports",
+    "idle_rss_and_extra_16MiB": "passed all ten pairs",
+    "main_latency_and_allocation": "passed all ten pairs",
+    "graphql_engine_p95_population_cv": 0.12368092068471122,
+    "stability_gate": "invalid; >10% CV; no outlier removed"
+  },
+  "proof_limits": [
+    "Raw offered records include status, byte count and driver semantic error classification, not full response payloads; individual business response contents cannot be independently replayed offline.",
+    "Preflight retains driver final-state validation outcome but not its complete snapshot; measured/warm-only final snapshots were independently regenerated and compared.",
+    "Network overlap from sent/completed records is reconstructable; admission/writer-queue occupancy timestamps are not retained.",
+    "Source/assembly/build hashes prove retained provenance consistency, not an independent reproducible rebuild or runtime attestation.",
+    "Shared WSL has no demonstrated dedicated2vCPU/2GiB reference; #3 remains Blocked."
+  ]
+}
