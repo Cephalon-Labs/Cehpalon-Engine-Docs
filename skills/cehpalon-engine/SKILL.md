@@ -23,6 +23,8 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Tenant and authorization boundaries apply to every supported entrypoint and state/event/cache/retrieval/tool path.
 - Caller metadata and constructed identity/membership DTOs are not authority. Protected operations must route through configured fresh identity/membership/resource/policy checks; plain Core/codegen remains unprotected unless wired to that boundary. Checked scopes are in-process capabilities, not a sandbox or atomic provider authorization.
 - Lease invalidity must latch permanently; enforce UTC validity plus a monotonic elapsed cap. Keep cleanup faults distinct from semantic access denial and preserve both execution/cleanup errors.
+- Transport adapters require explicit typed bindings and host-established authentication. A principal flag or adapter registration is not tenant authority; protected bridges must invoke fresh tenant dispatch. Unexpected vendor exceptions must be redacted, and HTTP plus GraphQL cancellation must reach the handler.
+- A disabled GraphQL plan must skip both vendor service registration and endpoint mapping. Source/package presence is not activation; report actual registration/service/factory observations separately from vendor constructor probes. A protected tenant fixture does not replace the original public W0 workload or its full performance gates.
 
 ## Delivery and traceability
 

@@ -1,0 +1,13 @@
+# Protected transport consumer protocol
+
+Predeclared 2026-10-28 for the portable part of #9/#11. This is a separate protected fixture from the unchanged public [W0 workload](small-api-workload.md). No latency, RSS or throughput acceptance is claimed here. Startup durations in the raw report are diagnostics only; dedicated paired W0 benchmarks remain Not run.
+
+Build locked Release with the exact .NET 11 RC3 SDK and pinned Hot Chocolate16.7.1 / JwtBearer11 RC3. Run on Windows26H2 as observational evidence and WSLUbuntu22.04.5 as listed-distribution evidence. Neither clears #3. Preserve all failed attempts and exact source/package hashes.
+
+Consumer owns synthetic catalogs of 10,000 fixed records per tenant (20,000 total); GetItem, ListItems and SetLabel share generated Core gateways and the same guarded business handlers over HTTP and GraphQL. This added tenant dimension changes the W0 dataset/profile; it is not execution of that public benchmark. No real IdP, database or provider dependency. Ephemeral fixture RSA keys and custom TLS CA are process-local, not tracked or installed into a trust store.
+
+Functional matrix: invalid/unsupported/all-off composition before host activation; API-only and API+GraphQL startup; actual HTTPS custom-root trust and hostname rejection; missing/invalid signature/issuer/audience/lifetime/type/ambiguous-subject JWT rejection; A/B same-ID isolation and metadata spoofing; both cross-tenant directions; fresh membership revocation, misbound owner and missing policy; validation/not-found/list/update/revision-conflict; in-flight abort before delayed write; malformed/oversized body; GET/schema/IDE/WS/introspection exposure; owned disposal and listener closure. Denials before business create/read/write zero business objects. Typed transport validators run before business dispatch; wire protocol errors may have transport-specific envelopes.
+
+API-only request exercise: 10,000 successful catalog reads with constant bounded concurrency, followed by checks of zero GraphQL registrations/services and forbidden module factories throughout startup/requests/shutdown. This is an activation check, not an open-loop load test. No throughput number is scored. Full W0 1,000-case ordered parity corpus, 100 timed cancellations/profile, 30 restart cycles and five isolated performance pairs remain Not run unless explicitly evidenced separately.
+
+Cancellation checks wait for handler entry, abort the request, and require server acknowledgement within a bounded test timeout, with no mutation after acknowledgement. This functional timeout does not replace W0's 100ms budget. Unexpected faults return safe transport errors; this does not certify arbitrary host middleware or third-party schemas.

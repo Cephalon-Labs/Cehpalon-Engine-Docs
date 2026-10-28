@@ -1,0 +1,17 @@
+{
+  "observed_at_utc": "2026-10-28T02:52:19.872456+00:00",
+  "status": "passed",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "engine_tests_per_host": 347,
+  "protected_consumer_checks_per_host": 40,
+  "source_and_package_hashes_match_committed_sources": true,
+  "issue3_editable_state_and_body_unchanged": true,
+  "issue_count": 23,
+  "issues9_11_full_status": "open/Blocked, M0; benchmark Planned",
+  "ci_jobs": 4,
+  "ci_steps": 0,
+  "ci_classification": "payment/spending rejected before execution",
+  "private_mit_repositories": 3,
+  "retained_evidence_files": 81,
+  "scope": "Final source/evidence/native-tracking consistency; not full W0 performance/provider/supported-Windows/production qualification"
+}

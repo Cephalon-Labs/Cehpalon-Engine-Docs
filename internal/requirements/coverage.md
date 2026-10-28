@@ -2,7 +2,7 @@
 
 Source: [preserved user request](2026-10-27-user-request.md) and [2026-10-27 clarifications](../memory/2026-10-27-program-bootstrap.md). This map is planning coverage, not implementation coverage. All runtime capabilities start at M0.
 
-W0 refinement has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md) and [bounded SDK/artifact qualification](../planning/w0-qualification-and-sync.md). REQ-03/04/13 now have an experimental [W1 Core/Composition/code-generation slice](../planning/w1-core-composition-codegen.md). This is partial implementation coverage, not full requirement acceptance: real transports/providers, tenant/identity, all three lane workloads and #3 supported-Windows proof remain outstanding.
+W0 refinement has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md) and [bounded SDK/artifact qualification](../planning/w0-qualification-and-sync.md). REQ-03/04/13 now have an experimental [W1 Core/Composition/code-generation slice](../planning/w1-core-composition-codegen.md). This is partial implementation coverage, not full requirement acceptance: full transport/provider and identity lifecycle acceptance, all three original lane workloads and #3 supported-Windows proof remain outstanding.
 
 | Requirement | Initial Engine issues | First proof / boundary |
 | --- | --- | --- |
@@ -29,4 +29,6 @@ W0 refinement has a [decision package with four ADRs and three workload protocol
 
 Issue references above belong to `Cephalon-Labs/Cehpalon-Engine`. Detailed acceptance criteria and estimates are mirrored under `tasks/<issue-number>.md`.
 
-REQ-05 now has a [portable tenant/identity contract slice](../planning/w1-tenant-identity.md) with cross-tenant fixture tests. This does not establish real IdP/provider/transport isolation or complete #7/#8 acceptance; those gates remain explicit.
+REQ-05 now has a [portable tenant/identity contract slice](../planning/w1-tenant-identity.md) with cross-tenant fixture tests. Its protected HTTP/GraphQL continuation is described below. Real IdP/provider isolation and full #7/#8 acceptance remain outstanding.
+
+REQ-04/05/06/12/19 now also have a bounded [protected HTTP/GraphQL and Small API slice](../planning/w2-transports-small-api.md), using generated Core gateways and shared guarded business handlers. This covers actual localhost JWT/HTTPS fixture requests and disabled-entrypoint checks, not all transports/providers, the original W0 workload, native deployment or supported-Windows proof. #9/#11 remain open for their full gates and overall maturity remains M0.
