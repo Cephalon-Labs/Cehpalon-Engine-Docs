@@ -1,0 +1,32 @@
+{
+  "observed_at_utc": "2026-10-28T08:53:22.704221+00:00",
+  "samples_source_revision": "fb77069ec2af583b29814f941643a318222b420e",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "source_hashes_match_committed_blobs": 13,
+  "windows_and_linux_inputs_identical": true,
+  "windows_conformance": "passed4000cases/400cancel/120cycles/20kAPIexercise",
+  "linux_conformance": "passed4000cases/400cancel/120cycles/20kAPIexercise",
+  "collector_preflight": [
+    {
+      "lane": "baseline-graphql",
+      "all_2000_records_retained": true,
+      "metrics_before_persistence": true
+    },
+    {
+      "lane": "baseline-http",
+      "all_2000_records_retained": true,
+      "metrics_before_persistence": true
+    },
+    {
+      "lane": "engine-graphql",
+      "all_2000_records_retained": true,
+      "metrics_before_persistence": true
+    },
+    {
+      "lane": "engine-http",
+      "all_2000_records_retained": true,
+      "metrics_before_persistence": true
+    }
+  ],
+  "classification": "Infrastructure/correctness preflight passed, not performance acceptance; full canonical remains to execute; reference/#3 Blocked"
+}
