@@ -1,0 +1,11 @@
+{
+  "samples_source_revision": "fb77069ec2af583b29814f941643a318222b420e",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "runtime": "11.0.0-rc.3.26522.148",
+  "sdk": "11.0.100-rc.3.26522.148",
+  "canonical_profile": "same native Linux SDK, app/cwd and raw output for both variants; no runtime flags/R2R/packages changed",
+  "canonical_full_protocol": "Not run yet; require full clean-source conformance and collector preflight, then all original phases and gates",
+  "reference_gate": "Blocked; shared WSL/nonreserved CPU/no2GiBcap",
+  "issue3": "Remain Blocked unchanged",
+  "raw_diagnostic_evidence": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/fb77069ec2af583b29814f941643a318222b420e/small-api-benchmark/evidence/2026-10-28-tuning"
+}
