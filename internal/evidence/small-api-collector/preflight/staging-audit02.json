@@ -1,0 +1,19 @@
+{
+  "observed_at_utc": "2026-10-28T13:54:36.279672+00:00",
+  "status": "passed",
+  "findings": [],
+  "samples_source_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "app_regular_files": 67,
+  "app_bytes": 23281577,
+  "app_source_and_target_all_hashes_independently_checked": true,
+  "app_assembly_sha256": "742451b86f81c439938d93aad19a0f568133fe9ff2910bae4458f6633cdcfdd4",
+  "sdk_regular_files_independently_hashed": 4178,
+  "sdk_regular_bytes": 549400671,
+  "sdk_symlink_targets_independently_checked": 1668,
+  "sdk_target": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk",
+  "sdk_manifest_sha256": "30ac24e0c416abc09d177b5fbcd621221e747f76f3e62a40cc1e252ac4196344",
+  "sdk_link_manifest_sha256": "3519204e8415afb5fe9e378233ac1d8c931252d79f90218393a2d1e573ae44a7",
+  "link_comparison": "Declared Windows separators normalized to POSIX and normpath; no link-target semantic change",
+  "scope": "Staging bytes and link identity only; no SDK process, test, request or timing. Actual loaded-module identity remains for runtime observation; no dedicated-resource/platform qualification."
+}

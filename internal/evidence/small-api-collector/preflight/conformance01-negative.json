@@ -1,0 +1,112 @@
+{
+  "observed_at_utc": "2026-10-28T13:42:54.202509+00:00",
+  "status": "negative_outcome_confirmed",
+  "reports": {
+    "win": {
+      "root": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\collector-conformance-win-01",
+      "manifest_status": "failed",
+      "summary_status": "failed",
+      "summary_failed": 1,
+      "samples_source_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+      "source_inputs_declared": 15,
+      "stopwatch_frequency": 10000000,
+      "lanes": [
+        {
+          "lane": "baseline-http",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 1,
+          "repeat_lifecycle_rows": 30
+        },
+        {
+          "lane": "baseline-graphql",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        },
+        {
+          "lane": "engine-http",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        },
+        {
+          "lane": "engine-graphql",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        }
+      ],
+      "failed_rows": [
+        {
+          "lane": "baseline-http",
+          "record": {
+            "index": 409,
+            "operation": "set",
+            "passed": false,
+            "expectedCode": "operation.cancelled",
+            "requestStartedTimestamp": 1962826590747,
+            "scheduledAbortTimestamp": 1962827090747,
+            "actualAbortTimestamp": 1962827142176,
+            "handlerEnteredTimestamp": 1962827145558,
+            "serverAcknowledgedTimestamp": 1962827147704,
+            "actualAbortAfterStartMilliseconds": 55.1429,
+            "serverAckAfterAbortMilliseconds": 0.5528,
+            "handlerEnteredBeforeAbort": false,
+            "noMutationAfterAck": true,
+            "ownedHandlerCompleted": true,
+            "failure": "The 5-second delayed handler had not entered before scheduled client abort."
+          },
+          "handler_entry_relative_to_abort_ms": 0.3382
+        }
+      ]
+    },
+    "linux": {
+      "root": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\collector-conformance-linux-01",
+      "manifest_status": "passed",
+      "summary_status": "passed",
+      "summary_failed": 0,
+      "samples_source_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+      "source_inputs_declared": 15,
+      "stopwatch_frequency": 1000000000,
+      "lanes": [
+        {
+          "lane": "baseline-http",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        },
+        {
+          "lane": "baseline-graphql",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        },
+        {
+          "lane": "engine-http",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        },
+        {
+          "lane": "engine-graphql",
+          "corpus_rows": 1000,
+          "cancel_rows": 100,
+          "failed_rows": 0,
+          "repeat_lifecycle_rows": 30
+        }
+      ],
+      "failed_rows": []
+    }
+  },
+  "interpretation": "Windows01 does not pass the in-flight cancellation criterion: the handler entered0.3382ms after abort. Acknowledgement0.5528ms, no mutation and joined ownership do not repair that missing in-flight condition. Linux01 passed, but the full two-host01set has a retained negative outcome.",
+  "repeat_policy": "Root declared a complete sequential Windows02 thenLinux02 repeat on unchangedsource/criteria, with no concurrent builds/audits/hash work. Retain both01hosts; do not replace or select only the failed case.",
+  "causality_boundary": "Root reports concurrent conformance and metadata/staging work; interference is possible, not established as the cause. No code bug, supported-Windows pass, provider proof or #3 unblock inferred.",
+  "staging_boundary": "Independent native app/SDK byte/link audit passed separately; staging identity does not make failed conformance pass."
+}
