@@ -1,0 +1,1 @@
+{"case":"ConsoleCase","exit":1,"output":"ConsoleCase.cs(2,1): error CS0234: The type or namespace name 'WriteLine' does not exist in the namespace 'Console' (are you missing an assembly reference?)"}

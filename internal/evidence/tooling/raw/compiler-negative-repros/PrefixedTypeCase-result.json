@@ -1,0 +1,1 @@
+{"case":"PrefixedTypeCase","exit":1,"output":"PrefixedTypeCase.cs(5,59): error CS0118: 'OperationContext' is a namespace but is used like a type"}

@@ -1,0 +1,1 @@
+{"case":"PathWrapperCase","exit":1,"output":"PathWrapperCase.cs(6,52): error CS0234: The type or namespace name 'DirectorySeparatorChar' does not exist in the namespace 'Path' (are you missing an assembly reference?)"}

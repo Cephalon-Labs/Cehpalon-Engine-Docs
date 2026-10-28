@@ -1,0 +1,27 @@
+/usr/share/dotnet/sdk/11.0.100-rc.3.26522.148/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [/home/runner/work/Cehpalon-Engine/Cehpalon-Engine/Benchmarks/Tenancy.Components/Tenancy.Components.csproj]
+/usr/share/dotnet/sdk/11.0.100-rc.3.26522.148/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.RuntimeIdentifierInference.targets(385,5): message NETSDK1057: You are using a preview version of .NET. See: https://aka.ms/dotnet-support-policy [/home/runner/work/Cehpalon-Engine/Cehpalon-Engine/Benchmarks/W1.Components/W1.Components.csproj]
+  Cehpalon.Engine.Identity.Contracts -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Identity.Contracts/release/Cehpalon.Engine.Identity.Contracts.dll
+  Cehpalon.Engine.Core -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Core/release/Cehpalon.Engine.Core.dll
+  Cehpalon.Engine.CodeGeneration -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.CodeGeneration/release/Cehpalon.Engine.CodeGeneration.dll
+  Cehpalon.Engine.Composition -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Composition/release/Cehpalon.Engine.Composition.dll
+  Cehpalon.Engine.Transports.Http -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Transports.Http/release/Cehpalon.Engine.Transports.Http.dll
+  Composition.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Composition.ContractTests/release/Composition.ContractTests.dll
+  W1.Components -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/W1.Components/release/W1.Components.dll
+  Cehpalon.Engine.Tooling -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Tooling/release/cehpalon.dll
+  Cehpalon.Engine.Transports.GraphQL -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Transports.GraphQL/release/Cehpalon.Engine.Transports.GraphQL.dll
+  Core.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Core.ContractTests/release/Core.ContractTests.dll
+  Cehpalon.Engine.Tenancy -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Cehpalon.Engine.Tenancy/release/Cehpalon.Engine.Tenancy.dll
+  Tenancy.Components -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Tenancy.Components/release/Tenancy.Components.dll
+  Identity.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Identity.ContractTests/release/Identity.ContractTests.dll
+  Tenancy.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Tenancy.ContractTests/release/Tenancy.ContractTests.dll
+  Http.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Http.ContractTests/release/Http.ContractTests.dll
+  Tooling.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/Tooling.ContractTests/release/Tooling.ContractTests.dll
+  CompilerFixture -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/CompilerFixture/release/CompilerFixture.dll
+  CodeGeneration.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/CodeGeneration.ContractTests/release/CodeGeneration.ContractTests.dll
+  GraphQL.ContractTests -> /home/runner/work/Cehpalon-Engine/Cehpalon-Engine/.local/w1-ci/artifacts/bin/GraphQL.ContractTests/release/GraphQL.ContractTests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:47.03

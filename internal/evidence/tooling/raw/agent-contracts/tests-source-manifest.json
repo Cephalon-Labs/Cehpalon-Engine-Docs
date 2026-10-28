@@ -1,0 +1,27 @@
+[
+  {
+    "path": "Tests/Tooling.ContractTests/NuGet.Config",
+    "sha256": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+    "bytes": 217
+  },
+  {
+    "path": "Tests/Tooling.ContractTests/packages.lock.json",
+    "sha256": "d1ed8ae6ccaafc3997dba8b18511c8546d2ee4c49a93641240b5289369615ea1",
+    "bytes": 299
+  },
+  {
+    "path": "Tests/Tooling.ContractTests/Program.cs",
+    "sha256": "3b53c58a60154bb42ae4fd369a3bab530cc593532e251d52cd83f9a690e9055f",
+    "bytes": 34566
+  },
+  {
+    "path": "Tests/Tooling.ContractTests/README.md",
+    "sha256": "4719ca0b5b99326d684d5dbbf68be9cc077adb7b43c9499031672fdb01175c06",
+    "bytes": 2422
+  },
+  {
+    "path": "Tests/Tooling.ContractTests/Tooling.ContractTests.csproj",
+    "sha256": "975390b46a6ab072fb5c004b8b7b52b4e0724f29202c63a836be28219a78bbce",
+    "bytes": 566
+  }
+]

@@ -1,0 +1,132 @@
+{
+  "observed_at_utc": "2026-10-28T19:32:06.330905+00:00",
+  "engine_revision": "39ae0cc6ae56045a9d3d24f94eb564efa5941254",
+  "engine_commit_journal": [
+    "3974c7d8099945e4446e210e04bca2ab630f3174",
+    "b921a6d1cde5ec5d138d8efe84b760d6241de461",
+    "39ae0cc6ae56045a9d3d24f94eb564efa5941254"
+  ],
+  "scope": "Experimental portable-request-reply source-checkout CLI subset of #20; unchanged Core/Composition/generator semantics",
+  "status": "bounded correctness passed",
+  "hosts": {
+    "windows": {
+      "component_checks_passed": 462,
+      "component_checks_failed": 0,
+      "tooling_contracts_passed": 115,
+      "compiler_fixture": {
+        "passed": true,
+        "handler_factory_calls": 1,
+        "handler_disposals": 1,
+        "result": "business:injected",
+        "scope": "Actual SDK compiler analyzer load, generated typed registration and Core dispatch; no transport or hosted CI proof"
+      },
+      "consumer_checks_passed": 70,
+      "consumer_names": [
+        "Program",
+        "Console",
+        "Path",
+        "JsonSerializer",
+        "File",
+        "System",
+        "OperationContext",
+        "ModuleRole"
+      ],
+      "runtime_libraries": [
+        "Cehpalon.Engine.Composition/1.0.0",
+        "Cehpalon.Engine.Core/1.0.0",
+        "PortableConsumer.PortableProof/1.0.0"
+      ],
+      "registry_sha256": "87aa59c359d36e90b6ed0e2dee6bac97fb3b060327e1c28df0ad1852d45f28ae",
+      "consumer_lock_sha256": "9eac5b4d5bb723d44e6f3b2d2222d8271bf396679942e7a883f1b9b6da720d62",
+      "engine_manifest_sha256": "cf2fb121c989180bc14097d2f7b280967c3de9e2e46922bc452a2757f35c6d7d",
+      "consumer_manifest_sha256": "fb66d6db832a8d680f2e35c0a8958ab29e1db79b0c615a050a8975abb3364b7a"
+    },
+    "linux": {
+      "component_checks_passed": 459,
+      "component_checks_failed": 0,
+      "tooling_contracts_passed": 112,
+      "compiler_fixture": {
+        "passed": true,
+        "handler_factory_calls": 1,
+        "handler_disposals": 1,
+        "result": "business:injected",
+        "scope": "Actual SDK compiler analyzer load, generated typed registration and Core dispatch; no transport or hosted CI proof"
+      },
+      "consumer_checks_passed": 70,
+      "consumer_names": [
+        "Program",
+        "Console",
+        "Path",
+        "JsonSerializer",
+        "File",
+        "System",
+        "OperationContext",
+        "ModuleRole"
+      ],
+      "runtime_libraries": [
+        "Cehpalon.Engine.Composition/1.0.0",
+        "Cehpalon.Engine.Core/1.0.0",
+        "PortableConsumer.PortableProof/1.0.0"
+      ],
+      "registry_sha256": "87aa59c359d36e90b6ed0e2dee6bac97fb3b060327e1c28df0ad1852d45f28ae",
+      "consumer_lock_sha256": "604c11af3e948d2704a444e62f7d0be5d760e5901d75ec071fbd5965d212c111",
+      "engine_manifest_sha256": "6390469068eb6a253c77ee476d768e9b8ccadf8e0736a78cb81f808da60bc697",
+      "consumer_manifest_sha256": "e491eb0537f295799ca192c8499140d47cf44a8f86fcb7f63ff1f4518ae6e362"
+    }
+  },
+  "retention": {
+    "engine_raw": {
+      "count": 139,
+      "bytes": 703015,
+      "manifest_sha256": "d4369e717e2b2bfa82b14f8a01a6f8c9a4be8fb2ddca6e2fdc0d19be62480eb5",
+      "staged_blob_verification": "all139entries independently match staged Git blob bytes and SHA256"
+    },
+    "ci": {
+      "count": 92,
+      "bytes": 482873,
+      "manifest_sha256": "91a151d381b9d089dd83b668b57697e5203469a0a0c6df94aa5c576d24b2f2f0",
+      "staged_blob_verification": "all92entries independently match staged Git blob bytes and SHA256"
+    },
+    "samples_raw": {
+      "count": 863,
+      "bytes": 1294041,
+      "manifest_sha256": "7dca12b133f18326638c8f6afb5dfd68d2f3bda68607233db1133396e5324121",
+      "committed_blob_verification": "all863entries independently match committed bytes and SHA256"
+    }
+  },
+  "hosted_ci": {
+    "contracts_run": 40754466014,
+    "platform_run": 40754466002,
+    "contracts": "passed on ubuntu-24.04 and windows-2025; exact source hashes independently match committed Git blobs",
+    "platform": "12 passed, 0 failed, 2 Not run on each hosted OS; bounded smoke only",
+    "retained_intermediate_failure_run": 40753720357,
+    "retained_intermediate_platform_pass_run": 40753720725
+  },
+  "benchmark_applicability": "Not required for bounded correctness slice: no timing/runtime performance claim. Full #20 tooling benchmark remains Planned.",
+  "tracking_boundary": {
+    "issue": 20,
+    "status": "In Progress",
+    "maturity": "M0",
+    "test_gate": "Planned",
+    "benchmark_gate": "Planned",
+    "dependencies": [
+      2,
+      11
+    ],
+    "issue3": "Blocked; body/editable metadata must remain unchanged in final readback",
+    "actual_hours": null
+  },
+  "limits": [
+    "No tenant authority/HTTP/GraphQL/Worker/provider profile from this console scaffold",
+    "No full #20 transport-schema, benchmark, packaging/global-tool, AOT/trimming or production qualification",
+    "Source hash manifest is observed selected bytes, not immutable checkout/build attestation; inherited build policy and filesystem parents are trusted",
+    "New hosted platform smoke is real execution evidence; retain #3 Blocked per user and review full qualification separately"
+  ],
+  "failed_attempts": [
+    "Windows integration02 System assembly runtime MissingMethodException retained",
+    "Five tiny compiler negative repros retained",
+    "Intermediate hosted Tooling failure on both hosts: same-named outer runner wrapper rejected allowed .local; fixed without relaxing protections"
+  ],
+  "samples_revision": "3a5cb46eb029632e7ce56f6eb37d6536cb7c2198",
+  "tracking_readback": "tracking-readback.json; 23 mirrors verified; only issue20 body changed; issue3 body/editable metadata identical Blocked"
+}

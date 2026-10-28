@@ -1,0 +1,1 @@
+{"case":"ProgramCase","exit":1,"output":"ProgramCase.cs(1,1): error CS0101: The namespace '<global namespace>' already contains a definition for 'Program'"}

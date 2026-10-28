@@ -1,0 +1,1 @@
+{"case":"PrefixedEnumCase","exit":1,"output":"PrefixedEnumCase.cs(5,62): error CS0234: The type or namespace name 'Support' does not exist in the namespace 'PortableConsumers.ModuleRole' (are you missing an assembly reference?)"}

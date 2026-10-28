@@ -1,0 +1,42 @@
+{
+  "observed_at_utc": "2026-10-28T19:37:04.145829+00:00",
+  "verified_mirrors": 23,
+  "remote_operations": 1,
+  "operation": "issue20 body only",
+  "plan_sha256": "02889e1725cb08000c6f08304723b9e7052dc33030ce75a169a700aa911c64b3",
+  "dry_run": "passed",
+  "exact_hash_apply": "applied",
+  "pull_check": "23 verified; no remote writes",
+  "issue3": {
+    "body_identical": true,
+    "editable_metadata_identical": true,
+    "status": "Blocked",
+    "body_sha256": "567ad5509f9bb700a6fa6a81a3073cb667f36621849c0f8dde1359568010e183"
+  },
+  "issue20": {
+    "editable_metadata": {
+      "project": {
+        "Status": "In Progress",
+        "Priority": "P2",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "tooling"
+      }
+    },
+    "native_type": "Feature",
+    "labels": [
+      "area:tooling"
+    ],
+    "milestone_number": 6,
+    "actual_hours": null,
+    "metadata_unchanged": true,
+    "all3_engine_journal_commits_resolve": true,
+    "body_sha256": "099c42e5a9a5d79afb2a65b0b9c50fea9ae7cdfa73c5f9b9413cabca548420b3"
+  }
+}

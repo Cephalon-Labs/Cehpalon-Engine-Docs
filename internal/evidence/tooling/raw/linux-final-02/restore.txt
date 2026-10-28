@@ -1,0 +1,20 @@
+  Determining projects to restore...
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Identity.Contracts/Cehpalon.Engine.Identity.Contracts.csproj (in 329 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Core.ContractTests/Core.ContractTests.csproj (in 335 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj (in 343 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Benchmarks/W1.Components/W1.Components.csproj (in 335 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Identity.ContractTests/Identity.ContractTests.csproj (in 342 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj (in 326 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Composition.ContractTests/Composition.ContractTests.csproj (in 338 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Http.ContractTests/Http.ContractTests.csproj (in 336 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Transports.Http/Cehpalon.Engine.Transports.Http.csproj (in 336 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj (in 328 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Tooling/Cehpalon.Engine.Tooling.csproj (in 336 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj (in 345 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Tooling.ContractTests/Tooling.ContractTests.csproj (in 337 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Benchmarks/Tenancy.Components/Tenancy.Components.csproj (in 337 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Tenancy.ContractTests/Tenancy.ContractTests.csproj (in 337 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj (in 607 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj (in 654 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Transports.GraphQL/Cehpalon.Engine.Transports.GraphQL.csproj (in 690 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/GraphQL.ContractTests/GraphQL.ContractTests.csproj (in 689 ms).

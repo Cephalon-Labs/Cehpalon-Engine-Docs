@@ -51,6 +51,12 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Each handoff states changed files, validation results, assumptions, limitations and next work. Do not overwrite another agent's changes or store credentials in handoffs.
 - Vendor entry files point to these rules; vendor SDK/CLI support is only claimed after testing with the actual supported tool/version.
 
+## Portable scaffolding continuation rules
+
+- A scaffold must build and run as an actual generated consumer. Registration text checks and recorder labels alone do not establish transport/provider profiles. Keep the experimental portable-request-reply console proof separate from the three sample lanes and full #20 qualification.
+- Keep user-selected names independent of generated namespace and framework assembly identities. Prove compiler/framework/Engine collision names with actual SDK builds and runs; a successful compile alone missed the System facade runtime collision.
+- Recognize discovered program checkout boundaries using observed Git markers, not directory names alone: hosted runners can have same-named wrapper directories. Treat source/output parents and inherited SDK/MSBuild policy as trusted; observed hashes and path checks are not immutable attestation or a filesystem/build sandbox.
+
 ## Measurement lessons from Small API
 
 - Keep public functional/performance fixtures distinct from protected tenant fixtures. Baselines may share representation types, packages and pure fixture metadata; declare that scope and verify they bypass the measured dispatch/activation paths. Same-binary RSS is not stripped-distribution footprint.
