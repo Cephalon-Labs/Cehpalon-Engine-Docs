@@ -1,0 +1,8 @@
+{
+  "repository": "Cephalon-Labs/Cehpalon-Engine-Samples",
+  "path": "small-api-benchmark/evidence/2026-10-28-tuning/execution-retention-manifest.json",
+  "execution_manifest_sha256": "3260cf989925c22a433b2624e115aeacbb11b5f54513e018d645c032d275a6ff",
+  "scope": "All actual canonical03 and conformance/preflight raw bytes; private fixtures/artifacts/dumps excluded; diagnostics include a failed preflight and no invented timed measurements.",
+  "evidence_commit": "bad8e36c04418bd5b71da2367a52a673b40da213",
+  "immutable_url": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/bad8e36c04418bd5b71da2367a52a673b40da213/small-api-benchmark/evidence/2026-10-28-tuning"
+}

@@ -1,0 +1,261 @@
+{
+  "observed_at_utc": "2026-10-28T12:31:24.761641+00:00",
+  "status": "consistent",
+  "audit_script_sha256": "42cf7971460af837a3b4c2d77ea5a7a894095f615f04e6e0d72aa4ba364c4379",
+  "input": "/home/tom/.local/share/cehpalon-benchmark-runs/benchmark-observation-03",
+  "input_manifest_sha256": "eed0bbe92d1bc4880d2845b7e03aec2d50183499d8c55e60319e68b68feb1ff8",
+  "elapsed_seconds": 98.96109652519226,
+  "counts": {
+    "manifest_rows": 6672000,
+    "gzip_files": 186,
+    "phase_rows": 8116800,
+    "semantic_error_flags": 37,
+    "timeout_budget_exceeding_rows": 0,
+    "complete_state_snapshots": 83,
+    "server_shutdowns": 172,
+    "rss_samples": 1200
+  },
+  "main_load_runs": 20,
+  "idle_runs": 20,
+  "startup_launches": 120,
+  "diagnostic_attempts": 12,
+  "diagnostic_timed_runs": 11,
+  "source_files_verified_against_recorded_commits": 106,
+  "assembly_and_build_provenance_matched": true,
+  "build_source_inputs_verified_per_host": {
+    "linux": 13,
+    "win": 13
+  },
+  "observed_tls_cipher_tuples": [
+    [
+      "TLS_AES_256_GCM_SHA384",
+      "TLSv1.3",
+      256
+    ]
+  ],
+  "maximum_recorded_clock_offset_deviation_ns": 2659,
+  "startup_numeric_recomputation": [
+    {
+      "transport": "http",
+      "baseline_p95_ms": 432.788656,
+      "engine_p95_ms": 438.697402,
+      "absolute_budget_passed": true,
+      "overhead_budget_passed": true
+    },
+    {
+      "transport": "graphql",
+      "baseline_p95_ms": 894.14629,
+      "engine_p95_ms": 902.391182,
+      "absolute_budget_passed": true,
+      "overhead_budget_passed": true
+    }
+  ],
+  "idle_pair_recomputation": [
+    {
+      "transport": "http",
+      "pair": 0,
+      "passed": true
+    },
+    {
+      "transport": "http",
+      "pair": 1,
+      "passed": true
+    },
+    {
+      "transport": "http",
+      "pair": 2,
+      "passed": true
+    },
+    {
+      "transport": "http",
+      "pair": 3,
+      "passed": true
+    },
+    {
+      "transport": "http",
+      "pair": 4,
+      "passed": true
+    },
+    {
+      "transport": "graphql",
+      "pair": 0,
+      "passed": true
+    },
+    {
+      "transport": "graphql",
+      "pair": 1,
+      "passed": true
+    },
+    {
+      "transport": "graphql",
+      "pair": 2,
+      "passed": true
+    },
+    {
+      "transport": "graphql",
+      "pair": 3,
+      "passed": true
+    },
+    {
+      "transport": "graphql",
+      "pair": 4,
+      "passed": true
+    }
+  ],
+  "main_load_pair_recomputation": [
+    {
+      "transport": "http",
+      "pair": 0,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 21183.5976,
+      "engine_bytes_per_offered": 21064.805866666666
+    },
+    {
+      "transport": "http",
+      "pair": 1,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 21183.920266666668,
+      "engine_bytes_per_offered": 21064.446577777777
+    },
+    {
+      "transport": "http",
+      "pair": 2,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 21183.856755555556,
+      "engine_bytes_per_offered": 21063.758044444443
+    },
+    {
+      "transport": "http",
+      "pair": 3,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 21185.724355555554,
+      "engine_bytes_per_offered": 21063.871244444443
+    },
+    {
+      "transport": "http",
+      "pair": 4,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 21184.12431111111,
+      "engine_bytes_per_offered": 21063.615822222222
+    },
+    {
+      "transport": "graphql",
+      "pair": 0,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 18550.258222222223,
+      "engine_bytes_per_offered": 18336.78026666667
+    },
+    {
+      "transport": "graphql",
+      "pair": 1,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 18548.353644444443,
+      "engine_bytes_per_offered": 18333.929733333334
+    },
+    {
+      "transport": "graphql",
+      "pair": 2,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 18055.78408888889,
+      "engine_bytes_per_offered": 18334.926977777777
+    },
+    {
+      "transport": "graphql",
+      "pair": 3,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 18548.62062222222,
+      "engine_bytes_per_offered": 18335.06457777778
+    },
+    {
+      "transport": "graphql",
+      "pair": 4,
+      "latency_absolute_passed": true,
+      "latency_extra_passed": true,
+      "allocation_extra_passed": true,
+      "baseline_bytes_per_offered": 18548.14768888889,
+      "engine_bytes_per_offered": 18089.5892
+    }
+  ],
+  "main_load_stability_recomputation": [
+    {
+      "transport": "http",
+      "variant": "baseline",
+      "p95_ms_all_five": [
+        0.317944,
+        0.317028,
+        0.323696,
+        0.337936,
+        0.327713
+      ],
+      "population_cv": 0.023428749402895615,
+      "budget_passed": true
+    },
+    {
+      "transport": "http",
+      "variant": "engine",
+      "p95_ms_all_five": [
+        0.339708,
+        0.323019,
+        0.326007,
+        0.325377,
+        0.323115
+      ],
+      "population_cv": 0.019075017558477413,
+      "budget_passed": true
+    },
+    {
+      "transport": "graphql",
+      "variant": "baseline",
+      "p95_ms_all_five": [
+        0.419134,
+        0.406816,
+        0.400989,
+        0.456316,
+        0.394045
+      ],
+      "population_cv": 0.05301285714197949,
+      "budget_passed": true
+    },
+    {
+      "transport": "graphql",
+      "variant": "engine",
+      "p95_ms_all_five": [
+        0.41807,
+        0.409634,
+        0.408854,
+        0.395948,
+        0.380465
+      ],
+      "population_cv": 0.03261600559888926,
+      "budget_passed": true
+    }
+  ],
+  "reference_environment_qualified": false,
+  "benchmark_acceptance_passed": false,
+  "findings": [],
+  "limits": [
+    "Raw offered records include status, byte count and driver semantic error classification, not full response payloads; individual business response contents cannot be independently replayed offline.",
+    "Preflight retains driver final-state validation outcome but not its complete snapshot; measured/warm-only final snapshots were independently regenerated and compared.",
+    "Network overlap from sent/completed records is reconstructable; admission/writer-queue occupancy timestamps are not retained.",
+    "Source/assembly/build hashes prove retained provenance consistency, not an independent reproducible rebuild or runtime attestation.",
+    "Shared WSL has no demonstrated dedicated2vCPU/2GiB reference; #3 remains Blocked."
+  ]
+}

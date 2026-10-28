@@ -6,7 +6,8 @@ This is a new baseline. Historical project notes are context only; they do not e
 
 - [Program plan](internal/planning/2026-10-27-program-plan.md)
 - [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
-- [Current Small API conformance and complete benchmark observations](internal/planning/w2-small-api-conformance-benchmark.md)
+- [Current Small API startup/variance tuning and complete rerun](internal/planning/w2-small-api-tuning.md)
+- [Prior Small API conformance and benchmark observations](internal/planning/w2-small-api-conformance-benchmark.md)
 - [Protected HTTP/GraphQL and Small API proof](internal/planning/w2-transports-small-api.md)
 - [Current W1 tenant/identity contracts and cross-tenant proof](internal/planning/w1-tenant-identity.md)
 - [W1 Core/Composition and code-generation snapshot](internal/planning/w1-core-composition-codegen.md)

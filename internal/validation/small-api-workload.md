@@ -89,3 +89,5 @@ Budgets นี้เป็นการเลือกของทีมสำห
 - แยก correctness fail, security fail, performance fail, invalid environment และ CI blocked ให้ชัด เก็บ preparation failures และ outliers โดยไม่ตัดออก
 - ถ้า source/config/dependency เปลี่ยนหลังวัด ต้องระบุ invalidate scope และรัน affected matrix ใหม่ตาม protocol ทั้งชุด ห้าม selective rerun เพื่อเลือกผลผ่าน
 - ไม่รันจริงใน W0 document selection นี้ ยังไม่มี elapsed runtime, measured RSS, throughput, latency, security assurance หรือ maturity promotion
+
+Later execution2026-10-28: [attempt03 tuning report](../planning/w2-small-api-tuning.md) supersedes prior current-result status, without changing this protocol. Numeric startup/idle/main/CV gates pass; diagnostic12attempts include11timed/one failed preflight. Reference/#3 stay Blocked. Preserve earlier failed/invalid runs rather than overwriting history.

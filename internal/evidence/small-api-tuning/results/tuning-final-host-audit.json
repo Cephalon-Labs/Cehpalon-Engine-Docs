@@ -1,0 +1,44 @@
+{
+  "observed_at_utc": "2026-10-28T12:28:39.415458+00:00",
+  "status": "passed",
+  "audit_scope": "Read-only final source/artifact/runtime/probe/TLS/cleanup consistency; no reruns, builds or source changes",
+  "samples_revision": "fb77069ec2af583b29814f941643a318222b420e",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "source_inputs_each_host": 13,
+  "conformance_both_hosts": "passed",
+  "native_app_manifest_files_verified": 67,
+  "native_app_evidence_files": 0,
+  "assembly_sha256": "5bb6c15b3b9d0cfd39b4e90a69763dacd43c0581789355e00e0fa06e0955524c",
+  "runtime_mapped_modules_verified": [
+    "shared/Microsoft.AspNetCore.App/11.0.0-rc.3.26522.148/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+    "shared/Microsoft.NETCore.App/11.0.0-rc.3.26522.148/System.Private.CoreLib.dll",
+    "shared/Microsoft.NETCore.App/11.0.0-rc.3.26522.148/libcoreclr.so",
+    "shared/Microsoft.NETCore.App/11.0.0-rc.3.26522.148/libhostpolicy.so"
+  ],
+  "runtime_host_hashes_verified": 6,
+  "server_invocations_ready_runtime_state_shutdown_reports_each": 172,
+  "all172_closed_and_owned_handlers_balanced": true,
+  "canonical_trace_instrumentation_disabled": true,
+  "all172_shared_ca_verified": true,
+  "actual_tls_driver_results": 31,
+  "actual_tls_connections": 4180,
+  "actual_tls_ciphers": [
+    "TLS_AES_256_GCM_SHA384"
+  ],
+  "numeric_budget_observations_passed": true,
+  "reference_gate_passed": false,
+  "diagnostics": "12attempts,11timed,1HTTPengine2000/s preflight failure37drops/4000; driverexit-6 preserved",
+  "possible_core_dump_metadata_only": [],
+  "sleepguard_released": true,
+  "persistent_power_plan_changed": false,
+  "cwd_proof_boundary": "Frozen orchestrator passes cwd=server_working_directory, which the invocation profile manifest sets to the exact native app directory. loaded-runtime.json independently captures four runtime modules, not per-process cwd/app mapping.",
+  "scope_boundaries": [
+    "Same-binary/package-graph native direct-dispatch comparison, not stripped distribution proof.",
+    "Schema-ready is observed via executor diagnostic, not independent constructor hook.",
+    "Public synthetic fixture is not protected tenant/IdP/provider proof.",
+    "Shared WSL affinity/no2GiBcap remains nonqualifying; #3 remains Blocked.",
+    "Diagnostic preflight failure is retained and is not silently scored as successful timed work."
+  ],
+  "unexpected_app_root_entries_metadata_only": [],
+  "no_owned_benchmark_dotnet_children_at_postrun_proc_check": true
+}

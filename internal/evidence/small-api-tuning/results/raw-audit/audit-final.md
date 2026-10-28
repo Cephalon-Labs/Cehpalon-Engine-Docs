@@ -1,0 +1,9 @@
+# Independent canonical03 raw audit
+
+Status: consistent with declared main numeric passes and one diagnostic preflight failure. All186 gzip files,8,116,800 offered phase records and6,672,000 manifest rows were checked without filtering/changing records. Independently checked82 driver-report state snapshots plus the failed preflight final-server snapshot,172 identities/pair orders/shutdowns/native runtime maps,120 starts and1200 RSS samples. All106 frozen source hashes,13 build inputs per host and staged native DLL/deps match. No provenance delta.
+
+All main startup/idle/latency/allocation/all-five-CV numerical budgets pass. HTTP startup p95 B/E432.788656/438.697402ms; GraphQL894.146290/902.391182ms. Engine GraphQL CV3.261600559888926%; all five values retained.134 phase-accounting records and31 final-server-metric snapshots before persistence passed ordering checks.
+
+Main20 runs:3,600,000 correct measured offers. All12 diagnostic attempts retained; only11 entered timing,1,512,000 measured offers correct. HTTP Engine2000/s preflight failed4000/3963 with37 offered drops. Warmup/measurement were not entered, no hidden retry. Final200write state correct;4093 factory/disposal counts =130 preparation reads +3963 admitted requests. Same preparation policy produced different initial pool observations; failed-phase later TLS events are unavailable. No Engine2000/s capacity limit is proved, and independent clean1000/s main comparisons remain valid observations.
+
+Shared WSL reference remains nonqualifying; #3 stays Blocked. No full reference/production/supported-Windows pass. Deployment, packaging, collector and metrics-window changes combine versus attempt02; no causal claim that Engine code alone improved. Raw rows lack complete response bodies. See exact scripts/audit-final.json for boundaries.

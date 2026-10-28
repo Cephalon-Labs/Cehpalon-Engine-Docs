@@ -1,0 +1,71 @@
+{
+  "scope": "Only existing issue9/11 bodies; no Project mutation, creation/deletion or maturity promotion.",
+  "plan_sha256": "dae7211c3762bdfde69606146d16250f1c487e528eb7af97a4977674597a94b7",
+  "dryrun": "passed",
+  "apply": "applied",
+  "readback": "Verified23Engine mirrors",
+  "operations": [
+    {
+      "number": 9,
+      "kind": "issue",
+      "fields": [
+        "body"
+      ]
+    },
+    {
+      "number": 11,
+      "kind": "issue",
+      "fields": [
+        "body"
+      ]
+    }
+  ],
+  "issue3_editable_and_body_unchanged": true,
+  "issue3_editable_sha256": "d57b1df342b1a4b184a701dc1442b25ed65a5c1cce7f1109b6b45984b88df74f",
+  "issues": [
+    {
+      "number": 9,
+      "type": "Feature",
+      "labels": [
+        "area:transports"
+      ],
+      "state": "open",
+      "project": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "transports"
+      },
+      "body_sha256": "91712f50b8038116f261fbb64c03a140bfba6eca1db1e73a2a2ba63efc1aad71"
+    },
+    {
+      "number": 11,
+      "type": "Task",
+      "labels": [
+        "area:samples"
+      ],
+      "state": "open",
+      "project": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 24.0,
+        "Estimate (h)": 36.0,
+        "Estimate high (h)": 48.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "samples"
+      },
+      "body_sha256": "1f363a4f8f7cb77c03230b793cc4fbfd159caaf96fddfd60b58ed044903f85b7"
+    }
+  ]
+}

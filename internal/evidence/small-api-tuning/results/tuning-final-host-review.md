@@ -1,0 +1,15 @@
+# Final native-deployment source/artifact/runtime audit
+
+Read-only audit after canonical03 finished12:24:25UTC. No builds, runtime reruns, source edits, commits or remote writes. Possible dump inspection was strictly path/existence/size metadata; no dump or private-key content was read, hashed or copied.
+
+Both Windows/Linux conformance manifests match the same13 Git source/project/lock/config/orchestration blobs at Samplesfb77069ec2af583b29814f941643a318222b420e and both passed. Engine remains6804271d429106864e01e4ec546a41dff771f84b. Runtime libraries contain no Roslyn/CodeGeneration. The Linux build manifest, staged app manifest and canonical manifest agree on DLLSHA2565bb6c15b3b9d0cfd39b4e90a69763dacd43c0581789355e00e0fa06e0955524c. All67 listed native app files match staged hashes/sizes; evidence files are absent. Pinned host/fxr plus the four actually mapped SDK/runtime modules match the SDK staging hashes.
+
+All172 server invocations use the exact staged native dotnet/app paths with tracing disabled. All172 loaded-runtime reports independently show the expected native Kestrel/CoreLib/coreclr/hostpolicy module paths. The frozen orchestrator passes its declared native server_working_directory to Popen. Caveat: loaded-runtime records module paths, not an independent per-process cwd/app map; cwd/app location is established through frozen invocation/configuration plus artifact hashes rather than a captured/proc/cwd read.
+
+All172 ready reports use the same fixture CA and TLS1.3. All172 final states/shutdown reports have10,000 records, balanced owned handlers, zero forbidden probes, graceful exit0, closed listeners and shutdown under5s. API-only GraphQL registration/services/diagnostic/executor/schema-ready counts are zero; GraphQL positive controls are present. Schema-ready remains an executor callback observation, not an independent constructor hook. Post-run/proc check found no owned benchmark dotnet children.
+
+All31 timed main/diagnostic load results retain4,180 actual TLS1.3 connections with TLS_AES_256_GCM_SHA384 over HTTP1.1. The twelve diagnostic attempts are fully accounted: eleven timed, one HTTP Engine2000/s collector preflight failed with37 drops/errors out of4000 offered, driverexit-6; it must not be represented as a successful timed diagnostic. No candidate core/core.*/*.dmp file or unexpected entry exists directly under app-final-01 at audit time; this is a directory-local metadata observation, not a whole-machine dump search or an explanation of the abort.
+
+The wrapper records exit0, guardReleased=true and persistentPowerPlanChanged=false. Canonical numeric budget observations are true while reference_gate_passed remains false. Shared WSL/nonreserved affinity/no2GiBcap/#3 Blocked, the same-binary shared-scaffolding baseline, public synthetic fixture and prior failed/invalid attempts retain their scope. No additional source/lifetime/provenance defect found in this audit; success here means evidence consistency, not reference/production qualification.
+
+Machine-readable checks: tuning-final-host-audit.json alongside this review.

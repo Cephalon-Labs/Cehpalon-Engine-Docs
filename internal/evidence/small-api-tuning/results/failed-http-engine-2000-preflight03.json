@@ -1,0 +1,546 @@
+{
+  "observed_at_utc": "2026-10-28T12:38:37.346433+00:00",
+  "audit_status": "consistent_with_retained_failed_preflight",
+  "scope": "Read-only forensic comparison of the failed Engine HTTP2000/s collector preflight and adjacent baseline; no build, retry, workload, source change, commit or remote write.",
+  "findings": [],
+  "variants": {
+    "baseline": {
+      "input_directory": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\benchmark-observation-03\\diagnostics\\http\\2000-baseline\\driver",
+      "raw_offered": 4000,
+      "correct": 4000,
+      "error_kinds": {},
+      "dropped": 0,
+      "successful_offered_fraction": 1.0,
+      "state_validation": {
+        "passed": true,
+        "reason": ""
+      },
+      "summary_preflight": {
+        "offered": 4000,
+        "correct": 4000,
+        "errors": 0,
+        "dropped": 0,
+        "successfulWithinDrain": 4000,
+        "p95Ms": 0.560039,
+        "p99Ms": 2.204316,
+        "sentP95Ms": 0.546813,
+        "maximumQueueMs": 1.180394,
+        "elapsedMs": 1999.937606,
+        "errorKinds": {}
+      },
+      "dropped_operation_counts": {},
+      "drop_clusters": [],
+      "all_drop_indexes": [],
+      "sent_not_completed_count_reconstructed_at_every_drop": [],
+      "first_completion": {
+        "index": 0,
+        "relative_ms": 2.205244
+      },
+      "first10_completions": [
+        {
+          "index": 0,
+          "operation": "get",
+          "relative_ms": 2.205244,
+          "sent_relative_ms": 1.005682
+        },
+        {
+          "index": 4,
+          "operation": "get",
+          "relative_ms": 2.451045,
+          "sent_relative_ms": 2.01189
+        },
+        {
+          "index": 1,
+          "operation": "get",
+          "relative_ms": 2.463591,
+          "sent_relative_ms": 1.680394
+        },
+        {
+          "index": 2,
+          "operation": "get",
+          "relative_ms": 2.471154,
+          "sent_relative_ms": 1.777512
+        },
+        {
+          "index": 3,
+          "operation": "get",
+          "relative_ms": 2.47794,
+          "sent_relative_ms": 1.803327
+        },
+        {
+          "index": 5,
+          "operation": "get",
+          "relative_ms": 3.03249,
+          "sent_relative_ms": 2.505015
+        },
+        {
+          "index": 6,
+          "operation": "get",
+          "relative_ms": 3.481575,
+          "sent_relative_ms": 3.008721
+        },
+        {
+          "index": 7,
+          "operation": "get",
+          "relative_ms": 3.938022,
+          "sent_relative_ms": 3.504824
+        },
+        {
+          "index": 8,
+          "operation": "get",
+          "relative_ms": 4.469668,
+          "sent_relative_ms": 4.025678
+        },
+        {
+          "index": 9,
+          "operation": "get",
+          "relative_ms": 4.823598,
+          "sent_relative_ms": 4.504613
+        }
+      ],
+      "largest_completion_gaps": [
+        {
+          "gap_ms": 5.089794,
+          "left_index": 94,
+          "left_relative_ms": 47.404965,
+          "right_index": 96,
+          "right_relative_ms": 52.494759
+        },
+        {
+          "gap_ms": 4.631398,
+          "left_index": 841,
+          "left_relative_ms": 420.93801,
+          "right_index": 842,
+          "right_relative_ms": 425.569408
+        },
+        {
+          "gap_ms": 4.310357,
+          "left_index": 3847,
+          "left_relative_ms": 1923.789814,
+          "right_index": 3848,
+          "right_relative_ms": 1928.100171
+        },
+        {
+          "gap_ms": 4.103687,
+          "left_index": 2791,
+          "left_relative_ms": 1395.871489,
+          "right_index": 2793,
+          "right_relative_ms": 1399.975176
+        },
+        {
+          "gap_ms": 3.519897,
+          "left_index": 3134,
+          "left_relative_ms": 1567.501753,
+          "right_index": 3135,
+          "right_relative_ms": 1571.02165
+        }
+      ],
+      "success_sent_to_completed_p95_ms": 0.546813,
+      "client_snapshots": {
+        "snapshot_span_ms": 2000.742676,
+        "cpu_delta_ms": 2655.9320000000002,
+        "approximate_allocated_delta_bytes": 17811376,
+        "gc_delta": [
+          0,
+          0,
+          0
+        ],
+        "threadpool_threads_before": 3,
+        "threadpool_threads_after": 4,
+        "threadpool_pending_before": 0,
+        "threadpool_pending_after": 0,
+        "threadpool_completed_work_items_delta": 4977,
+        "cpu_ms_per_snapshot_elapsed_ms": 1.327473058809288
+      },
+      "client_before": {
+        "observedTicks": 57987410160228,
+        "cpuMilliseconds": 2610.154,
+        "allocatedBytesApproximate": 738966224,
+        "gc0": 28,
+        "gc1": 7,
+        "gc2": 3,
+        "threadPoolThreads": 3,
+        "threadPoolPendingWorkItems": 0,
+        "threadPoolCompletedWorkItems": 7402
+      },
+      "client_after": {
+        "observedTicks": 57989410902904,
+        "cpuMilliseconds": 5266.086,
+        "allocatedBytesApproximate": 756777600,
+        "gc0": 28,
+        "gc1": 7,
+        "gc2": 3,
+        "threadPoolThreads": 4,
+        "threadPoolPendingWorkItems": 0,
+        "threadPoolCompletedWorkItems": 12379
+      },
+      "phase_start_ticks": 57987410348883,
+      "requests_completed_ticks": 57989410895986,
+      "frequency": 1000000000,
+      "raw_persistence_started_after_request_join": true,
+      "raw_persistence_duration_ms": 12.111019,
+      "preparation_requests": 130,
+      "preparation_requests_correct": true,
+      "preparation_tls_connection_count": 128,
+      "preparation_tls_protocols": [
+        "Tls13"
+      ],
+      "retained_preflight_tls_events_from_later_full_report": [],
+      "tls_coverage_boundary": "collector-preparation.json is a pre-phase snapshot. A failed preflight produces neither warmup nor load report, so TLS events added during this failed phase are not retained by current source.",
+      "driver_exit_code": 0,
+      "diagnostic_status": "completed",
+      "timed_measurement_executed": true,
+      "warmup_or_measurement_raw_files_exist": true,
+      "first4000_manifest_sha256": "d49fed8fdb9fca0641204d020d1a5fab555b529c500f3f8416225426e28c2ffe",
+      "independent_final_state_replay": null,
+      "input_file_sha256": {
+        "collector-preflight.json": "f5cf6be15d7b7410622c1896a0704660a92b563b24352a8fde712b47c8bd4ad6",
+        "collector-preparation.json": "98d00427d9a81193a3820ce7f60ba5ac60132d1cd0b975741f6f6122e888b796",
+        "invocation.json": "107d1740e7f8fa75a2bca56acb51869b90aa89aecfc7b27449a912abfee4402b",
+        "load-result.json": "ab26af24ecc2b6ee3ba7923192796281091d3456d2b246c962fdfd374bfeaebb",
+        "measured-evidence-accounting.json": "84004dd63fbd304c819949bb5d683d2ab3079cced9d6fd7644cc837d38400f37",
+        "measured-requests.jsonl.gz": "98ad361651c9036e025017a78d07c61a19023f2f083de8e78acefb3e012a49e3",
+        "offered-manifest.jsonl.gz": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748",
+        "preflight-evidence-accounting.json": "fd3be7200c423b7b05109c7cf833aef559321cfcafebb49e1a6182c9cb17e749",
+        "preflight-requests.jsonl.gz": "7e504af32ccab01ff73146f398e19273d6a779622be7c379f00dbb413e379134",
+        "stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.txt": "8af8dabb1b89edf51b1f4043b6438662318d4edc4c2f9f56f5d5c718fd87509d",
+        "warmup-evidence-accounting.json": "82c0d716e9d67680cf39775a4affa554ea779f6e636eae0c04da6939c9196a5c",
+        "warmup-requests.jsonl.gz": "fcf9f44051975574af92ae920952026ae667fcf6d9ba53cccf42621bd896d23a"
+      }
+    },
+    "engine": {
+      "input_directory": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\benchmark-observation-03\\diagnostics\\http\\2000-engine\\driver",
+      "raw_offered": 4000,
+      "correct": 3963,
+      "error_kinds": {
+        "offered.dropped": 37
+      },
+      "dropped": 37,
+      "successful_offered_fraction": 0.99075,
+      "state_validation": {
+        "passed": true,
+        "reason": ""
+      },
+      "summary_preflight": {
+        "offered": 4000,
+        "correct": 3963,
+        "errors": 37,
+        "dropped": 37,
+        "successfulWithinDrain": 3963,
+        "p95Ms": 1.713386,
+        "p99Ms": 70.108326,
+        "sentP95Ms": 1.775332,
+        "maximumQueueMs": 6.491331,
+        "elapsedMs": 1999.90663,
+        "errorKinds": {
+          "offered.dropped": 37
+        }
+      },
+      "dropped_operation_counts": {
+        "get": 35,
+        "list": 2
+      },
+      "drop_clusters": [
+        {
+          "first_index": 129,
+          "last_index": 161,
+          "count": 33,
+          "scheduled_start_ms": 64.5,
+          "scheduled_end_ms": 80.5,
+          "observed_drop_start_ms": 64.500627,
+          "observed_drop_end_ms": 80.500588,
+          "indexes": [
+            129,
+            130,
+            131,
+            132,
+            133,
+            134,
+            135,
+            136,
+            137,
+            138,
+            139,
+            140,
+            141,
+            142,
+            143,
+            144,
+            145,
+            146,
+            147,
+            148,
+            149,
+            150,
+            151,
+            152,
+            153,
+            154,
+            155,
+            156,
+            157,
+            158,
+            159,
+            160,
+            161
+          ]
+        },
+        {
+          "first_index": 178,
+          "last_index": 181,
+          "count": 4,
+          "scheduled_start_ms": 89.0,
+          "scheduled_end_ms": 90.5,
+          "observed_drop_start_ms": 89.000757,
+          "observed_drop_end_ms": 90.500877,
+          "indexes": [
+            178,
+            179,
+            180,
+            181
+          ]
+        }
+      ],
+      "all_drop_indexes": [
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        178,
+        179,
+        180,
+        181
+      ],
+      "sent_not_completed_count_reconstructed_at_every_drop": [
+        128
+      ],
+      "first_completion": {
+        "index": 17,
+        "relative_ms": 51.688269
+      },
+      "first10_completions": [
+        {
+          "index": 17,
+          "operation": "get",
+          "relative_ms": 51.688269,
+          "sent_relative_ms": 8.503802
+        },
+        {
+          "index": 61,
+          "operation": "get",
+          "relative_ms": 80.988113,
+          "sent_relative_ms": 30.501615
+        },
+        {
+          "index": 4,
+          "operation": "get",
+          "relative_ms": 81.052675,
+          "sent_relative_ms": 7.145623
+        },
+        {
+          "index": 6,
+          "operation": "get",
+          "relative_ms": 81.141648,
+          "sent_relative_ms": 7.201675
+        },
+        {
+          "index": 2,
+          "operation": "get",
+          "relative_ms": 81.199401,
+          "sent_relative_ms": 7.070741
+        },
+        {
+          "index": 7,
+          "operation": "get",
+          "relative_ms": 81.942886,
+          "sent_relative_ms": 7.230274
+        },
+        {
+          "index": 5,
+          "operation": "get",
+          "relative_ms": 81.990167,
+          "sent_relative_ms": 7.174508
+        },
+        {
+          "index": 3,
+          "operation": "get",
+          "relative_ms": 82.022674,
+          "sent_relative_ms": 7.111821
+        },
+        {
+          "index": 14,
+          "operation": "get",
+          "relative_ms": 82.054739,
+          "sent_relative_ms": 7.44432
+        },
+        {
+          "index": 21,
+          "operation": "get",
+          "relative_ms": 82.073096,
+          "sent_relative_ms": 10.503884
+        }
+      ],
+      "largest_completion_gaps": [
+        {
+          "gap_ms": 29.299844,
+          "left_index": 17,
+          "left_relative_ms": 51.688269,
+          "right_index": 61,
+          "right_relative_ms": 80.988113
+        },
+        {
+          "gap_ms": 6.426629,
+          "left_index": 12,
+          "left_relative_ms": 84.148516,
+          "right_index": 11,
+          "right_relative_ms": 90.575145
+        },
+        {
+          "gap_ms": 5.178896,
+          "left_index": 885,
+          "left_relative_ms": 442.96417,
+          "right_index": 887,
+          "right_relative_ms": 448.143066
+        },
+        {
+          "gap_ms": 4.697127,
+          "left_index": 3248,
+          "left_relative_ms": 1624.547353,
+          "right_index": 3250,
+          "right_relative_ms": 1629.24448
+        },
+        {
+          "gap_ms": 4.292472,
+          "left_index": 3155,
+          "left_relative_ms": 1577.802592,
+          "right_index": 3156,
+          "right_relative_ms": 1582.095064
+        }
+      ],
+      "success_sent_to_completed_p95_ms": 1.775332,
+      "client_snapshots": {
+        "snapshot_span_ms": 2000.659413,
+        "cpu_delta_ms": 2809.041,
+        "approximate_allocated_delta_bytes": 19014776,
+        "gc_delta": [
+          1,
+          0,
+          0
+        ],
+        "threadpool_threads_before": 4,
+        "threadpool_threads_after": 4,
+        "threadpool_pending_before": 0,
+        "threadpool_pending_after": 0,
+        "threadpool_completed_work_items_delta": 5434,
+        "cpu_ms_per_snapshot_elapsed_ms": 1.4040575730917775
+      },
+      "client_before": {
+        "id": 200,
+        "label": "item-00200",
+        "revision": 0,
+        "amountMinorUnits": 3400
+      },
+      "client_after": {
+        "observedTicks": 58234855454619,
+        "cpuMilliseconds": 5300.993,
+        "allocatedBytesApproximate": 746005792,
+        "gc0": 27,
+        "gc1": 7,
+        "gc2": 3,
+        "threadPoolThreads": 4,
+        "threadPoolPendingWorkItems": 0,
+        "threadPoolCompletedWorkItems": 12687
+      },
+      "phase_start_ticks": 58232854931596,
+      "requests_completed_ticks": 58234855446489,
+      "frequency": 1000000000,
+      "raw_persistence_started_after_request_join": true,
+      "raw_persistence_duration_ms": 12.656691,
+      "preparation_requests": 130,
+      "preparation_requests_correct": true,
+      "preparation_tls_connection_count": 4,
+      "preparation_tls_protocols": [
+        "Tls13"
+      ],
+      "retained_preflight_tls_events_from_later_full_report": null,
+      "tls_coverage_boundary": "collector-preparation.json is a pre-phase snapshot. A failed preflight produces neither warmup nor load report, so TLS events added during this failed phase are not retained by current source.",
+      "driver_exit_code": -6,
+      "diagnostic_status": "collector-preflight-failed",
+      "timed_measurement_executed": false,
+      "warmup_or_measurement_raw_files_exist": false,
+      "first4000_manifest_sha256": "d49fed8fdb9fca0641204d020d1a5fab555b529c500f3f8416225426e28c2ffe",
+      "independent_final_state_replay": {
+        "retained_record_count": 10000,
+        "planned_and_actual_writes": 200,
+        "expected_and_actual_state_sha256": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "factories": 4093,
+        "disposals": 4093,
+        "reads": 3893,
+        "snapshot_sha256": "55fd3b9b9731957c61fd6af19a2db19fd673941ebf39735d6dc53a6a044c252e",
+        "independent_snapshot_replay_passed": true
+      },
+      "input_file_sha256": {
+        "collector-preflight.json": "868cd493cff727b8a9a3f827c7ec2d33b458e013662fae06064626bcc9b860a7",
+        "collector-preparation.json": "017234282b4f835da82f8be2e077d07f716c2d42a643de0386728a98e29b4e33",
+        "invocation.json": "2cdc80859d355f44f463ec624fe9ff3dec2a9a059fc27f15aadeebbd9416bd24",
+        "offered-manifest.jsonl.gz": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748",
+        "preflight-evidence-accounting.json": "f5898132fcfd3a393aa21cd02d172fb69617da144b01e8562423ac2fbd4dd477",
+        "preflight-requests.jsonl.gz": "5ac1729d757ee2ed79a75806de1feb66f5b31e15530653f18b8cdce52d9bef57",
+        "stderr.txt": "1fb77ce916108e0cf53c1d46d4635366cc602e6edfbb8b3ca79197d1f861dc92",
+        "stdout.txt": "3ac58233ebe7df44355dabf98e8fb2a7b99df8e2638ac0901922ec62f0b03d73"
+      }
+    }
+  },
+  "observed": [
+    "The failed run retained4000 unique offered records:3963 correct and37 collector-created offered.dropped errors. Every dropped row has sentTicks0,httpStatus0,bodyBytes0; these are not server rejection responses.",
+    "Drops occur in two early clusters: indexes129-161 at64.5-80.5ms, then178-181 at89-90.5ms. All37 drops reconstruct128 sent-but-not-completed requests at the drop timestamp, consistent with the declared admission cap.",
+    "Engine first collector-observed completion is51.688269ms; the adjacent baseline first completion is2.205244ms. A29.299844ms completion gap follows the first Engine completion. These timestamps include the client read/validation path, not only server processing.",
+    "The failed Engine collector client snapshots show one additional Gen0 collection and stable4ThreadPool workers, with pending work0 at both boundaries. The baseline has no collection delta and3-to-4 workers. Boundary snapshots cannot locate the transient or attribute a cause.",
+    "Identical130 read-only preparation requests succeeded in both variants, but the retained preparation TLS snapshot has4 Engine connections versus128 baseline connections. Read-only parallel requests do not guarantee128 distinct pooled connections.",
+    "The failed preflight source retains the pre-phase TLS snapshot only; connection events occurring during that failure are not persisted because no warmup/load result is emitted. Missing events cannot prove that no new handshake occurred.",
+    "StatePASS is consistent with all dropped operations being reads35get/2list. It validates the planned mutations, not the37 omitted reads or the whole offered-work gate.",
+    "The source intentionally throws after a failed collector preflight; driver-6 and absence of warmup/measured files confirm this was not a2000req/s steady-state measurement. No retry or rate reduction was performed."
+  ],
+  "hypotheses_not_proven": [
+    "An early client/collector continuation or scheduling pause, a GC/JIT transient, server-side work, TLS connection creation, or shared-host contention could contribute. Existing traces do not identify where between send and collector completion the delay occurred.",
+    "Different prepared connection counts make connection establishment a plausible investigation target, but the missing in-phase TLS telemetry prevents a causal conclusion for this failure.",
+    "The single Gen0 delta is temporally unlocalized; it is not proof of a pause at the drop cluster. ThreadPool boundary counts are not proof of starvation or its absence."
+  ],
+  "prohibited_inferences": [
+    "Do not call this an Engine2000req/s capacity limit.",
+    "Do not assign a single root cause without server/client event evidence.",
+    "Do not score failed-preflight latency as a valid steady-state performance run.",
+    "Do not substitute this diagnostic for the unchanged1000req/s main series.",
+    "Numeric main/startup/idle outcomes do not qualify the shared reference environment or unblock#3."
+  ]
+}
