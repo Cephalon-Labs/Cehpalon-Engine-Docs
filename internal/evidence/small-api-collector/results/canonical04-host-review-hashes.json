@@ -1,0 +1,8 @@
+{
+  "audit_canonical04_host.py": "8f8e9f2cb345078b8da4bf1f8eaad45a66c88fed70bac03319feb756a8b0bd01",
+  "canonical04-host-fairness-audit.json": "229c4a8f80f9d90541966d0970a8aa463f938acaa3b69730f54242fb80f77bc0",
+  "canonical04-host-fairness-review.md": "c203ef7d87dcecdc381f4d11413dfd0d97e0c955fbf1043cee6749ecc7696656",
+  "canonical04-host-audit-output.txt": "b7f29c2b76bc8d06d8dad7f17c84354363d9e689f414b1a999d4aa0c28ff145b",
+  "canonical04-host-audit-output-02.txt": "9daa06b1d7c46c871fd0a27caffddf18ef0396b0a2d219b6f431f669c99d0847",
+  "canonical04-unc-audit-transport-failure.txt": "91cb1fb25491d73a621eb903b741a334a0e5e463bbeaca7426c331aa8085cd0b"
+}

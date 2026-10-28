@@ -1,0 +1,10 @@
+{
+  "compiled_samples_source": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "retained_samples_revision": "1aba2cf704d3137d1e11886fe87cc4c46b214c85",
+  "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/1aba2cf704d3137d1e11886fe87cc4c46b214c85/small-api-benchmark/evidence/2026-10-28-collector",
+  "manifest_sha256": "208e9baa5a250a3517007aa9eb72cea20a4abc07d70667b5e1ac14c4acd30d45",
+  "files": 2640,
+  "bytes": 1335210272,
+  "boundary": "Raw retained bytes in private Samples. Full source SHA here is technical provenance, never an Engine task/card commit-journal entry. No Docs self-hash loop."
+}

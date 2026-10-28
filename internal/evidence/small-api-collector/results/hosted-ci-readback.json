@@ -1,0 +1,102 @@
+{
+  "observed_at_utc": "2026-10-28T17:48:34.170662+00:00",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "access": "Authenticated gh API; connector404 unavailable for these private repositories. Read-only refresh; no CI reruns or billing mutation.",
+  "runs": [
+    {
+      "run_id": 40622737320,
+      "head_sha": "6804271d429106864e01e4ec546a41dff771f84b",
+      "jobs": [
+        {
+          "id": 122600377567,
+          "name": "portable-contracts (windows-2025)",
+          "conclusion": "failure",
+          "steps": [],
+          "annotations": [
+            {
+              "path": ".github",
+              "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/6804271d429106864e01e4ec546a41dff771f84b/.github",
+              "start_line": 1,
+              "start_column": null,
+              "end_line": 1,
+              "end_column": null,
+              "annotation_level": "failure",
+              "title": "",
+              "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+              "raw_details": ""
+            }
+          ]
+        },
+        {
+          "id": 122600377923,
+          "name": "portable-contracts (ubuntu-24.04)",
+          "conclusion": "failure",
+          "steps": [],
+          "annotations": [
+            {
+              "path": ".github",
+              "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/6804271d429106864e01e4ec546a41dff771f84b/.github",
+              "start_line": 1,
+              "start_column": null,
+              "end_line": 1,
+              "end_column": null,
+              "annotation_level": "failure",
+              "title": "",
+              "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+              "raw_details": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": 40622737252,
+      "head_sha": "6804271d429106864e01e4ec546a41dff771f84b",
+      "jobs": [
+        {
+          "id": 122600377458,
+          "name": "SDK and driver smoke (windows-2025)",
+          "conclusion": "failure",
+          "steps": [],
+          "annotations": [
+            {
+              "path": ".github",
+              "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/6804271d429106864e01e4ec546a41dff771f84b/.github",
+              "start_line": 1,
+              "start_column": null,
+              "end_line": 1,
+              "end_column": null,
+              "annotation_level": "failure",
+              "title": "",
+              "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+              "raw_details": ""
+            }
+          ]
+        },
+        {
+          "id": 122600377821,
+          "name": "SDK and driver smoke (ubuntu-24.04)",
+          "conclusion": "failure",
+          "steps": [],
+          "annotations": [
+            {
+              "path": ".github",
+              "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/6804271d429106864e01e4ec546a41dff771f84b/.github",
+              "start_line": 1,
+              "start_column": null,
+              "end_line": 1,
+              "end_column": null,
+              "annotation_level": "failure",
+              "title": "",
+              "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+              "raw_details": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "classification": "Blocked before execution; not a code failure or CI pass",
+  "job_count": 4,
+  "executed_steps": 0
+}

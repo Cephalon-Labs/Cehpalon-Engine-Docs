@@ -1,0 +1,61 @@
+{
+  "observed_at_utc": "2026-10-28T17:40:07.178641+00:00",
+  "status": "passed",
+  "scope": "Read-only host/fairness/runtime/physical-preparation metadata audit; no workloads, tests, builds or remote writes",
+  "samples_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "frozen_source_hashes_verified": 109,
+  "source_inputs_per_conformance_host": 15,
+  "app_files_verified": 67,
+  "evidence_or_compiler_libraries_in_runtime": false,
+  "assembly_sha256": "742451b86f81c439938d93aad19a0f568133fe9ff2910bae4458f6633cdcfdd4",
+  "server_groups": {
+    "startup": 120,
+    "idle": 20,
+    "load": 20,
+    "diagnostics": 12
+  },
+  "all172_identity_runtime_lifetime_probes_verified": true,
+  "startup_trace_enabled_runs": 0,
+  "runtime_mapped_modules_verified": [
+    "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/shared/Microsoft.AspNetCore.App/11.0.0-rc.3.26522.148/Microsoft.AspNetCore.Server.Kestrel.Core.dll",
+    "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/shared/Microsoft.NETCore.App/11.0.0-rc.3.26522.148/System.Private.CoreLib.dll",
+    "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/shared/Microsoft.NETCore.App/11.0.0-rc.3.26522.148/libcoreclr.so",
+    "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/shared/Microsoft.NETCore.App/11.0.0-rc.3.26522.148/libhostpolicy.so"
+  ],
+  "first_response_tls_ciphers": {
+    "TLS_AES_256_GCM_SHA384": 172
+  },
+  "physical_preparation_reports": 52,
+  "each_preparation_physical_tls_scope": {
+    "control": 1,
+    "load_held": 128
+  },
+  "held_response_semantics": "128 HTTP1.1 nonempty body leases with distinct first-use load TLS IDs, all headers before common release, body reads after release; all130 read preparations successful under shared30s deadline.",
+  "phase_telemetry_reports_verified": 136,
+  "measured_server_metrics_after_join_before_persistence_brackets": 32,
+  "new_tls_identity_events_across_phases": 134,
+  "deduplicated_physical_driver_tls_connections": 6874,
+  "deduplication_key": "driver output directory plus connectionId; repeated preparation/phase/result snapshots counted once",
+  "deduplicated_tls_pool_counts": {
+    "control": 84,
+    "load": 6790
+  },
+  "deduplicated_actual_tls_ciphers": {
+    "TLS_AES_256_GCM_SHA384": 6874
+  },
+  "owned_benchmark_dotnet_children_remaining": [],
+  "unexpected_app_entries_metadata_only": [],
+  "numeric_budget_observations_passed": true,
+  "reference_gate_passed": false,
+  "fairness_limits": [
+    "Prepared connection identity history is not proof all connections remain alive indefinitely; the simultaneous held-response barrier is the observed readiness point.",
+    "Baseline and Engine share one binary/package graph, representation types, handlers and pure fixture scaffolding; baseline bypasses Core dispatch/generated registration and Composition activation.",
+    "Per-process loaded-runtime records verify four native SDK modules, not independent historical cwd/app mappings; configured cwd and app invocation/artifact hashes provide that provenance.",
+    "Server allocation/CPU metrics bracket joined requests before raw persistence, but matching control/client instrumentation overhead is not zero.",
+    "Public synthetic fixed-principal fixture does not establish protected tenant/IdP/provider proof.",
+    "Shared WSL/nonreserved affinity/no2GiBcap remains nonqualifying; #3 stays Blocked regardless numeric outcomes.",
+    "Power/sleep launcher release is independently checked by the primary integrator, not rerun here."
+  ],
+  "audit_transport_failure": "Initial Windows UNC metadata lookup failed with WinError121 after workloads had finished; native WSL reads succeeded. This is not a workload/code/benchmark failure."
+}

@@ -1,0 +1,126 @@
+{
+  "status": "consistent",
+  "observed_at_utc": "2026-10-28T17:39:14.553508+00:00",
+  "input": "/home/tom/.local/share/cehpalon-benchmark-runs/benchmark-observation-04",
+  "samples_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+  "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+  "raw_scan_sha256": "68e9c69a42c51ad3b98cb24e53de655e8d914ae882893c28d70bee1c164b31c2",
+  "raw_scan_script_sha256": "79a951c530215764d6c4f363dccbec5883978f4dbb61fd3a82a399e649eeeaaf",
+  "finalization_script_sha256": "405807bcececd29ddaf5d7e6f0e2e324540a025eb49a7e2a10230e42ed0d87bb",
+  "input_manifest_sha256": "5323f1eb5e2523c82194c9324d764843daa24ba3b27ce4e2f149f38425d461ec",
+  "all_gzip_records_scanned": true,
+  "counts": {
+    "verified_physical_preparation_barriers": 52,
+    "manifest_rows": 6672000,
+    "gzip_files": 188,
+    "phase_tls_snapshots_verified": 136,
+    "phase_rows": 8596800,
+    "semantic_error_flags": 0,
+    "timeout_budget_exceeding_rows": 0,
+    "complete_state_snapshots": 136,
+    "server_shutdowns": 172,
+    "rss_samples": 1200
+  },
+  "source_files_verified": 109,
+  "build_input_hashes_match_per_host": {
+    "linux": 15,
+    "win": 15
+  },
+  "all_native_app_files_independently_matched_to_build": 67,
+  "fresh_server_identities": 172,
+  "predeclared_pair_orders_checked": 86,
+  "phase_accounting_records": 136,
+  "measured_server_metrics_before_persistence_records": 32,
+  "main_measured_offered_and_correct": 3600000,
+  "diagnostic_attempted": 12,
+  "diagnostic_timed_runs": 12,
+  "diagnostic_measured_offered_and_correct": 1872000,
+  "all_timed_measured_offered_and_correct": 5472000,
+  "all_entered_phase_errors": 0,
+  "original_numeric_budgets_passed": true,
+  "reference_environment_qualified": false,
+  "full_reference_acceptance_passed": false,
+  "maximum_recorded_clock_offset_deviation_ns": 4117,
+  "startup": [
+    {
+      "transport": "http",
+      "baseline_p95_ms": 401.814949,
+      "engine_p95_ms": 417.954793,
+      "absolute_budget_passed": true,
+      "overhead_budget_passed": true
+    },
+    {
+      "transport": "graphql",
+      "baseline_p95_ms": 844.554428,
+      "engine_p95_ms": 863.721846,
+      "absolute_budget_passed": true,
+      "overhead_budget_passed": true
+    }
+  ],
+  "main_all_five_p95_and_population_cv": [
+    {
+      "transport": "http",
+      "variant": "baseline",
+      "p95_ms_all_five": [
+        0.310688,
+        0.307513,
+        0.319817,
+        0.284578,
+        0.315258
+      ],
+      "population_cv": 0.0397522238835142,
+      "budget_passed": true
+    },
+    {
+      "transport": "http",
+      "variant": "engine",
+      "p95_ms_all_five": [
+        0.312662,
+        0.293807,
+        0.318286,
+        0.319622,
+        0.320555
+      ],
+      "population_cv": 0.031865658272372525,
+      "budget_passed": true
+    },
+    {
+      "transport": "graphql",
+      "variant": "baseline",
+      "p95_ms_all_five": [
+        0.379032,
+        0.389071,
+        0.394672,
+        0.3885,
+        0.393212
+      ],
+      "population_cv": 0.014059362628291114,
+      "budget_passed": true
+    },
+    {
+      "transport": "graphql",
+      "variant": "engine",
+      "p95_ms_all_five": [
+        0.393223,
+        0.41612,
+        0.358363,
+        0.390057,
+        0.397033
+      ],
+      "population_cv": 0.04769352318558627,
+      "budget_passed": true
+    }
+  ],
+  "unexpected_findings": [],
+  "limits": [
+    "Raw offered records include status, byte count and driver semantic error classification, not full response payloads; individual business response contents cannot be independently replayed offline.",
+    "Preflight retains driver final-state validation outcome but not its complete snapshot; measured/warm-only final snapshots were independently regenerated and compared.",
+    "Network overlap from sent/completed records is reconstructable; admission/writer-queue occupancy timestamps are not retained.",
+    "Source/assembly/build hashes prove retained provenance consistency, not an independent reproducible rebuild or runtime attestation.",
+    "Shared WSL has no demonstrated dedicated2vCPU/2GiB reference; #3 remains Blocked.",
+    "Physical128-response readiness is proved at the retained barrier only; later cumulative TLS history is not a live-socket count.",
+    "Native app staging files were independently rehashed; the full SDK tree was not independently rescanned during this audit. Retained SDK-reverification and actual loaded-runtime paths provide separate evidence.",
+    "Canonical03 failed preflight remains historical negative evidence; successful04 does not erase it or establish a causal Engine-only speedup.",
+    "No builds, requests, reruns, source edits, commits or remote writes were performed by this audit."
+  ]
+}

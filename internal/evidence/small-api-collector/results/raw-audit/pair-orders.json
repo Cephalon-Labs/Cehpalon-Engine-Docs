@@ -1,0 +1,690 @@
+[
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 0,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:33.431127+00:00",
+    "second_utc": "2026-10-28T14:02:33.942738+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 1,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:34.393010+00:00",
+    "second_utc": "2026-10-28T14:02:34.825926+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 2,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:35.245335+00:00",
+    "second_utc": "2026-10-28T14:02:35.627632+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 3,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:36.071466+00:00",
+    "second_utc": "2026-10-28T14:02:36.500219+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 4,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:36.915790+00:00",
+    "second_utc": "2026-10-28T14:02:37.320284+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 5,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:37.764163+00:00",
+    "second_utc": "2026-10-28T14:02:38.200741+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 6,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:38.627355+00:00",
+    "second_utc": "2026-10-28T14:02:39.027231+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 7,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:39.445572+00:00",
+    "second_utc": "2026-10-28T14:02:39.854404+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 8,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:40.242809+00:00",
+    "second_utc": "2026-10-28T14:02:40.683061+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 9,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:41.114447+00:00",
+    "second_utc": "2026-10-28T14:02:41.546179+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 10,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:41.972279+00:00",
+    "second_utc": "2026-10-28T14:02:42.395024+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 11,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:42.849531+00:00",
+    "second_utc": "2026-10-28T14:02:43.275504+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 12,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:43.695748+00:00",
+    "second_utc": "2026-10-28T14:02:44.113782+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 13,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:44.563511+00:00",
+    "second_utc": "2026-10-28T14:02:44.986776+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 14,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:45.410124+00:00",
+    "second_utc": "2026-10-28T14:02:45.814446+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 15,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:46.256641+00:00",
+    "second_utc": "2026-10-28T14:02:46.722032+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 16,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:47.135262+00:00",
+    "second_utc": "2026-10-28T14:02:47.541521+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 17,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:47.964820+00:00",
+    "second_utc": "2026-10-28T14:02:48.404570+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 18,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:48.813023+00:00",
+    "second_utc": "2026-10-28T14:02:49.246724+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 19,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:49.660302+00:00",
+    "second_utc": "2026-10-28T14:02:50.084872+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 20,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:50.473340+00:00",
+    "second_utc": "2026-10-28T14:02:50.861794+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 21,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:51.281899+00:00",
+    "second_utc": "2026-10-28T14:02:51.728434+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 22,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:52.151167+00:00",
+    "second_utc": "2026-10-28T14:02:52.567559+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 23,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:52.995884+00:00",
+    "second_utc": "2026-10-28T14:02:53.422640+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 24,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:53.831846+00:00",
+    "second_utc": "2026-10-28T14:02:54.243729+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 25,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:54.680525+00:00",
+    "second_utc": "2026-10-28T14:02:55.127450+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 26,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:55.530483+00:00",
+    "second_utc": "2026-10-28T14:02:55.949581+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 27,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:56.406127+00:00",
+    "second_utc": "2026-10-28T14:02:56.848670+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 28,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:57.254968+00:00",
+    "second_utc": "2026-10-28T14:02:57.649989+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "http",
+    "index": 29,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:02:58.057080+00:00",
+    "second_utc": "2026-10-28T14:02:58.470450+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 0,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:02:58.852003+00:00",
+    "second_utc": "2026-10-28T14:02:59.748237+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 1,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:00.625147+00:00",
+    "second_utc": "2026-10-28T14:03:01.493726+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 2,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:02.346037+00:00",
+    "second_utc": "2026-10-28T14:03:03.203359+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 3,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:04.058203+00:00",
+    "second_utc": "2026-10-28T14:03:04.933974+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 4,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:05.776376+00:00",
+    "second_utc": "2026-10-28T14:03:06.612441+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 5,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:07.462996+00:00",
+    "second_utc": "2026-10-28T14:03:08.317527+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 6,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:09.147221+00:00",
+    "second_utc": "2026-10-28T14:03:09.976765+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 7,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:10.843996+00:00",
+    "second_utc": "2026-10-28T14:03:11.734045+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 8,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:12.597279+00:00",
+    "second_utc": "2026-10-28T14:03:13.454668+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 9,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:14.341442+00:00",
+    "second_utc": "2026-10-28T14:03:15.216093+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 10,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:16.057881+00:00",
+    "second_utc": "2026-10-28T14:03:16.901078+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 11,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:17.767503+00:00",
+    "second_utc": "2026-10-28T14:03:18.633515+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 12,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:19.500751+00:00",
+    "second_utc": "2026-10-28T14:03:20.323286+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 13,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:21.200227+00:00",
+    "second_utc": "2026-10-28T14:03:22.064261+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 14,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:22.937189+00:00",
+    "second_utc": "2026-10-28T14:03:23.779502+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 15,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:24.637564+00:00",
+    "second_utc": "2026-10-28T14:03:25.513428+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 16,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:26.335621+00:00",
+    "second_utc": "2026-10-28T14:03:27.182441+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 17,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:28.054452+00:00",
+    "second_utc": "2026-10-28T14:03:28.945458+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 18,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:29.785113+00:00",
+    "second_utc": "2026-10-28T14:03:30.668015+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 19,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:31.550002+00:00",
+    "second_utc": "2026-10-28T14:03:32.463259+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 20,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:33.346278+00:00",
+    "second_utc": "2026-10-28T14:03:34.213136+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 21,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:35.089092+00:00",
+    "second_utc": "2026-10-28T14:03:35.946523+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 22,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:36.789827+00:00",
+    "second_utc": "2026-10-28T14:03:37.626690+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 23,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:38.493337+00:00",
+    "second_utc": "2026-10-28T14:03:39.383020+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 24,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:40.230309+00:00",
+    "second_utc": "2026-10-28T14:03:41.114842+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 25,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:42.005955+00:00",
+    "second_utc": "2026-10-28T14:03:42.873208+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 26,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:43.705425+00:00",
+    "second_utc": "2026-10-28T14:03:44.547812+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 27,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:45.424900+00:00",
+    "second_utc": "2026-10-28T14:03:46.279226+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 28,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:47.114786+00:00",
+    "second_utc": "2026-10-28T14:03:47.963790+00:00"
+  },
+  {
+    "phase": "startup",
+    "transport": "graphql",
+    "index": 29,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:03:48.867277+00:00",
+    "second_utc": "2026-10-28T14:03:49.744071+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "http",
+    "index": 0,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:03:50.564763+00:00",
+    "second_utc": "2026-10-28T14:07:54.020626+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "http",
+    "index": 1,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:11:57.882962+00:00",
+    "second_utc": "2026-10-28T14:16:01.470115+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "http",
+    "index": 2,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:20:05.040102+00:00",
+    "second_utc": "2026-10-28T14:24:08.597245+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "http",
+    "index": 3,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:28:12.188217+00:00",
+    "second_utc": "2026-10-28T14:32:15.779091+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "http",
+    "index": 4,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:36:19.608458+00:00",
+    "second_utc": "2026-10-28T14:40:23.182532+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "graphql",
+    "index": 0,
+    "order": "BE",
+    "first_utc": "2026-10-28T14:44:26.776094+00:00",
+    "second_utc": "2026-10-28T14:48:30.812285+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "graphql",
+    "index": 1,
+    "order": "EB",
+    "first_utc": "2026-10-28T14:52:34.864026+00:00",
+    "second_utc": "2026-10-28T14:56:38.936328+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "graphql",
+    "index": 2,
+    "order": "BE",
+    "first_utc": "2026-10-28T15:00:43.294814+00:00",
+    "second_utc": "2026-10-28T15:04:47.341992+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "graphql",
+    "index": 3,
+    "order": "EB",
+    "first_utc": "2026-10-28T15:08:51.427146+00:00",
+    "second_utc": "2026-10-28T15:12:55.498010+00:00"
+  },
+  {
+    "phase": "idle",
+    "transport": "graphql",
+    "index": 4,
+    "order": "BE",
+    "first_utc": "2026-10-28T15:16:59.791734+00:00",
+    "second_utc": "2026-10-28T15:21:03.867046+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "http",
+    "index": 0,
+    "order": "BE",
+    "first_utc": "2026-10-28T15:25:07.941507+00:00",
+    "second_utc": "2026-10-28T15:29:12.766787+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "http",
+    "index": 1,
+    "order": "EB",
+    "first_utc": "2026-10-28T15:33:17.245670+00:00",
+    "second_utc": "2026-10-28T15:37:21.973890+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "http",
+    "index": 2,
+    "order": "BE",
+    "first_utc": "2026-10-28T15:41:26.413533+00:00",
+    "second_utc": "2026-10-28T15:45:31.124383+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "http",
+    "index": 3,
+    "order": "EB",
+    "first_utc": "2026-10-28T15:49:35.615266+00:00",
+    "second_utc": "2026-10-28T15:53:40.354231+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "http",
+    "index": 4,
+    "order": "BE",
+    "first_utc": "2026-10-28T15:57:45.059021+00:00",
+    "second_utc": "2026-10-28T16:01:49.779068+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "graphql",
+    "index": 0,
+    "order": "BE",
+    "first_utc": "2026-10-28T16:05:54.276114+00:00",
+    "second_utc": "2026-10-28T16:09:59.432701+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "graphql",
+    "index": 1,
+    "order": "EB",
+    "first_utc": "2026-10-28T16:14:04.367755+00:00",
+    "second_utc": "2026-10-28T16:18:09.567566+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "graphql",
+    "index": 2,
+    "order": "BE",
+    "first_utc": "2026-10-28T16:22:14.490481+00:00",
+    "second_utc": "2026-10-28T16:26:19.654753+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "graphql",
+    "index": 3,
+    "order": "EB",
+    "first_utc": "2026-10-28T16:30:24.851449+00:00",
+    "second_utc": "2026-10-28T16:34:30.036395+00:00"
+  },
+  {
+    "phase": "load",
+    "transport": "graphql",
+    "index": 4,
+    "order": "BE",
+    "first_utc": "2026-10-28T16:38:35.230167+00:00",
+    "second_utc": "2026-10-28T16:42:40.156043+00:00"
+  },
+  {
+    "phase": "diagnostics",
+    "transport": "http",
+    "rate": 100,
+    "order": "BE",
+    "first_utc": "2026-10-28T16:46:45.346227+00:00",
+    "second_utc": "2026-10-28T16:50:48.556644+00:00"
+  },
+  {
+    "phase": "diagnostics",
+    "transport": "http",
+    "rate": 500,
+    "order": "EB",
+    "first_utc": "2026-10-28T16:54:51.883227+00:00",
+    "second_utc": "2026-10-28T16:58:55.603372+00:00"
+  },
+  {
+    "phase": "diagnostics",
+    "transport": "http",
+    "rate": 2000,
+    "order": "BE",
+    "first_utc": "2026-10-28T17:02:59.387665+00:00",
+    "second_utc": "2026-10-28T17:07:05.100784+00:00"
+  },
+  {
+    "phase": "diagnostics",
+    "transport": "graphql",
+    "rate": 100,
+    "order": "BE",
+    "first_utc": "2026-10-28T17:11:10.840302+00:00",
+    "second_utc": "2026-10-28T17:15:14.532195+00:00"
+  },
+  {
+    "phase": "diagnostics",
+    "transport": "graphql",
+    "rate": 500,
+    "order": "EB",
+    "first_utc": "2026-10-28T17:19:18.328892+00:00",
+    "second_utc": "2026-10-28T17:23:22.614294+00:00"
+  },
+  {
+    "phase": "diagnostics",
+    "transport": "graphql",
+    "rate": 2000,
+    "order": "BE",
+    "first_utc": "2026-10-28T17:27:27.037266+00:00",
+    "second_utc": "2026-10-28T17:31:33.220024+00:00"
+  }
+]

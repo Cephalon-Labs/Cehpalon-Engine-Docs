@@ -1,0 +1,27 @@
+[
+  {
+    "path": "audit-closure04.py",
+    "bytes": 17940,
+    "sha256": "ad0a1d83d960df037ab0baf759c13a5732fa0180a3110933c33e231f14151bb5"
+  },
+  {
+    "path": "audit-script-label-defect-attempt01.json",
+    "bytes": 77722,
+    "sha256": "8dcb407929062f3f0ef23e8d29a00cbf03e5ad5d42bd9787f3e418d3d242c936"
+  },
+  {
+    "path": "audit-script-label-defect-attempt01.py",
+    "bytes": 16312,
+    "sha256": "9733c32c120eac046add3c7d4fc690c2f6ac015a9a71fe0a42d888559e728ec5"
+  },
+  {
+    "path": "closure-audit04.json",
+    "bytes": 77680,
+    "sha256": "25644ece957c1080d2078706208eb7b0cc7ffc824f6da7cc5d2ca296c59dcf07"
+  },
+  {
+    "path": "closure-audit04.md",
+    "bytes": 8274,
+    "sha256": "27a03277caa635f3b5279e86e517a6f86c04ad3a327ce44987a43f1d939ae198"
+  }
+]

@@ -91,3 +91,5 @@ Budgets นี้เป็นการเลือกของทีมสำห
 - ไม่รันจริงใน W0 document selection นี้ ยังไม่มี elapsed runtime, measured RSS, throughput, latency, security assurance หรือ maturity promotion
 
 Later execution2026-10-28: [attempt03 tuning report](../planning/w2-small-api-tuning.md) supersedes prior current-result status, without changing this protocol. Numeric startup/idle/main/CV gates pass; diagnostic12attempts include11timed/one failed preflight. Reference/#3 stay Blocked. Preserve earlier failed/invalid runs rather than overwriting history.
+
+Latest execution2026-10-28–29Bangkok: [complete canonical04](../planning/w2-small-api-collector-readiness.md), after separately frozen collector physical-readiness/failure-telemetry repair. Alloriginalphases and12actualtimeddiagnostics;5.472Mmeasuredcorrect, zeroerrors/drops, numericalgatespass under unchangedbudgets. EngineGQLCV4.769352% is higherthan03butvalid. Prior failures remain retained; reference/#3/full9/11 stayBlocked/M0. This execution note does not change this workload or qualify providers/production.

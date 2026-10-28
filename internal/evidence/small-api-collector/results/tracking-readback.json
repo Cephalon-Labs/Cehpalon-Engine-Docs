@@ -1,0 +1,62 @@
+{
+  "plan_sha256": "003b757c88f3aee9042a8f20f3e23fba5dad916988c1c5be0d63837fc9622d77",
+  "reviewed_dry_run": true,
+  "applied_body_operations": [
+    9,
+    11
+  ],
+  "project_field_operations": 0,
+  "verified_mirrors": 23,
+  "issue3_body_unchanged": true,
+  "issue3_editable_metadata_unchanged": true,
+  "current": {
+    "3": {
+      "state": "open",
+      "type": "Task",
+      "fields": {
+        "Title": "Qualify .NET 11 RC3 SDK and maintain .NET 12 research track",
+        "Status": "Blocked",
+        "Priority": "P0",
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Not required",
+        "Estimate (h)": 16.0,
+        "Estimate low (h)": 8.0,
+        "Estimate high (h)": 24.0,
+        "Feature": "runtime"
+      }
+    },
+    "9": {
+      "state": "open",
+      "type": "Feature",
+      "fields": {
+        "Title": "Reuse business operations through API and GraphQL adapters",
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Estimate (h)": 60.0,
+        "Estimate low (h)": 40.0,
+        "Estimate high (h)": 80.0,
+        "Feature": "transports"
+      }
+    },
+    "11": {
+      "state": "open",
+      "type": "Task",
+      "fields": {
+        "Title": "Deliver the Small API sample and profile portability proof",
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Estimate (h)": 36.0,
+        "Estimate low (h)": 24.0,
+        "Estimate high (h)": 48.0,
+        "Feature": "samples"
+      }
+    }
+  }
+}

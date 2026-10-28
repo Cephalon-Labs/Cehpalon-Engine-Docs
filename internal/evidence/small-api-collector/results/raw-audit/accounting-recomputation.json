@@ -1,0 +1,3946 @@
+[
+  {
+    "path": "load/graphql/00-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 72995553743368,
+    "requests_completed": 72997553983068,
+    "client_before": {
+      "observedTicks": 72995553709136,
+      "cpuMilliseconds": 1813.956,
+      "allocatedBytesApproximate": 482644304,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4278
+    },
+    "client_after": {
+      "observedTicks": 72997553987374,
+      "cpuMilliseconds": 4335.266,
+      "allocatedBytesApproximate": 491871008,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6922
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.031702
+  },
+  {
+    "path": "load/graphql/00-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 72997678773238,
+    "requests_completed": 73057677944824,
+    "client_before": {
+      "observedTicks": 72997678757036,
+      "cpuMilliseconds": 4431.913,
+      "allocatedBytesApproximate": 503360680,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7010
+    },
+    "client_after": {
+      "observedTicks": 73057677949237,
+      "cpuMilliseconds": 71417.088,
+      "allocatedBytesApproximate": 778802304,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69342
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 64.151289
+  },
+  {
+    "path": "load/graphql/00-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 73057827160370,
+    "requests_completed": 73237826382962,
+    "client_before": {
+      "observedTicks": 73057827150477,
+      "cpuMilliseconds": 71579.271,
+      "allocatedBytesApproximate": 815040792,
+      "gc0": 27,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69788
+    },
+    "client_after": {
+      "observedTicks": 73237826388330,
+      "cpuMilliseconds": 267399.726,
+      "allocatedBytesApproximate": 1647042464,
+      "gc0": 113,
+      "gc1": 31,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 253393
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 175.534884
+  },
+  {
+    "path": "load/graphql/00-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 73240700723582,
+    "requests_completed": 73242700956048,
+    "client_before": {
+      "observedTicks": 73240700680481,
+      "cpuMilliseconds": 1648.051,
+      "allocatedBytesApproximate": 482716136,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4273
+    },
+    "client_after": {
+      "observedTicks": 73242700960222,
+      "cpuMilliseconds": 4219.695,
+      "allocatedBytesApproximate": 492003920,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6908
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.787694
+  },
+  {
+    "path": "load/graphql/00-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 73242822510281,
+    "requests_completed": 73302821814527,
+    "client_before": {
+      "observedTicks": 73242822494662,
+      "cpuMilliseconds": 4309.295,
+      "allocatedBytesApproximate": 503519152,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7014
+    },
+    "client_after": {
+      "observedTicks": 73302821820762,
+      "cpuMilliseconds": 69761.346,
+      "allocatedBytesApproximate": 778922488,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69305
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 63.800576
+  },
+  {
+    "path": "load/graphql/00-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 73302976412828,
+    "requests_completed": 73482975658866,
+    "client_before": {
+      "observedTicks": 73302976403178,
+      "cpuMilliseconds": 69926.92,
+      "allocatedBytesApproximate": 816150888,
+      "gc0": 28,
+      "gc1": 10,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69775
+    },
+    "client_after": {
+      "observedTicks": 73482975665368,
+      "cpuMilliseconds": 267616.274,
+      "allocatedBytesApproximate": 1648329752,
+      "gc0": 108,
+      "gc1": 30,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 253558
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 153.249662
+  },
+  {
+    "path": "load/graphql/01-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 73730791321042,
+    "requests_completed": 73732791223277,
+    "client_before": {
+      "observedTicks": 73730791285736,
+      "cpuMilliseconds": 1653.099,
+      "allocatedBytesApproximate": 482768984,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4281
+    },
+    "client_after": {
+      "observedTicks": 73732791226598,
+      "cpuMilliseconds": 4295.253,
+      "allocatedBytesApproximate": 492068136,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6997
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.55529
+  },
+  {
+    "path": "load/graphql/01-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 73732916615040,
+    "requests_completed": 73792915942769,
+    "client_before": {
+      "observedTicks": 73732916599014,
+      "cpuMilliseconds": 4386.23,
+      "allocatedBytesApproximate": 503468488,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7081
+    },
+    "client_after": {
+      "observedTicks": 73792915947597,
+      "cpuMilliseconds": 69876.78,
+      "allocatedBytesApproximate": 778884064,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68627
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 63.717555
+  },
+  {
+    "path": "load/graphql/01-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 73793066437484,
+    "requests_completed": 73973065692579,
+    "client_before": {
+      "observedTicks": 73793066428126,
+      "cpuMilliseconds": 70040.815,
+      "allocatedBytesApproximate": 816213024,
+      "gc0": 28,
+      "gc1": 10,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69082
+    },
+    "client_after": {
+      "observedTicks": 73973065722773,
+      "cpuMilliseconds": 265491.708,
+      "allocatedBytesApproximate": 1648220616,
+      "gc0": 113,
+      "gc1": 31,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 252958
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 166.132898
+  },
+  {
+    "path": "load/graphql/01-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 73485652522933,
+    "requests_completed": 73487652852507,
+    "client_before": {
+      "observedTicks": 73485652481369,
+      "cpuMilliseconds": 1690.673,
+      "allocatedBytesApproximate": 482684296,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4277
+    },
+    "client_after": {
+      "observedTicks": 73487652857185,
+      "cpuMilliseconds": 4275.609,
+      "allocatedBytesApproximate": 491997656,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6936
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 17.087079
+  },
+  {
+    "path": "load/graphql/01-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 73487783363543,
+    "requests_completed": 73547782556488,
+    "client_before": {
+      "observedTicks": 73487783346146,
+      "cpuMilliseconds": 4376.717,
+      "allocatedBytesApproximate": 503429448,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7023
+    },
+    "client_after": {
+      "observedTicks": 73547782561505,
+      "cpuMilliseconds": 71857.532,
+      "allocatedBytesApproximate": 778939800,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69682
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 64.350072
+  },
+  {
+    "path": "load/graphql/01-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 73547932076322,
+    "requests_completed": 73727931263203,
+    "client_before": {
+      "observedTicks": 73547932066374,
+      "cpuMilliseconds": 72025.27,
+      "allocatedBytesApproximate": 815706048,
+      "gc0": 28,
+      "gc1": 10,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 70140
+    },
+    "client_after": {
+      "observedTicks": 73727931300930,
+      "cpuMilliseconds": 270145.793,
+      "allocatedBytesApproximate": 1648154968,
+      "gc0": 114,
+      "gc1": 32,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254866
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 169.307289
+  },
+  {
+    "path": "load/graphql/02-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 73975774781165,
+    "requests_completed": 73977774751931,
+    "client_before": {
+      "observedTicks": 73975774744363,
+      "cpuMilliseconds": 1803.787,
+      "allocatedBytesApproximate": 482730168,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4279
+    },
+    "client_after": {
+      "observedTicks": 73977774756028,
+      "cpuMilliseconds": 4394.222,
+      "allocatedBytesApproximate": 491989016,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6958
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.774482
+  },
+  {
+    "path": "load/graphql/02-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 73977899026711,
+    "requests_completed": 74037898312446,
+    "client_before": {
+      "observedTicks": 73977899011737,
+      "cpuMilliseconds": 4484.132,
+      "allocatedBytesApproximate": 503393184,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7044
+    },
+    "client_after": {
+      "observedTicks": 74037898317617,
+      "cpuMilliseconds": 69899.929,
+      "allocatedBytesApproximate": 778851920,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69111
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 62.80512
+  },
+  {
+    "path": "load/graphql/02-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 74038047846956,
+    "requests_completed": 74218047022026,
+    "client_before": {
+      "observedTicks": 74038047838142,
+      "cpuMilliseconds": 70061.811,
+      "allocatedBytesApproximate": 814908336,
+      "gc0": 28,
+      "gc1": 10,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69559
+    },
+    "client_after": {
+      "observedTicks": 74218047027039,
+      "cpuMilliseconds": 269771.542,
+      "allocatedBytesApproximate": 1647413016,
+      "gc0": 110,
+      "gc1": 30,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 255347
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 145.412027
+  },
+  {
+    "path": "load/graphql/02-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 74221063495099,
+    "requests_completed": 74223063441358,
+    "client_before": {
+      "observedTicks": 74221063449963,
+      "cpuMilliseconds": 1765.239,
+      "allocatedBytesApproximate": 482693528,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4274
+    },
+    "client_after": {
+      "observedTicks": 74223063444982,
+      "cpuMilliseconds": 4338.44,
+      "allocatedBytesApproximate": 492009792,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6352
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.058018
+  },
+  {
+    "path": "load/graphql/02-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 74223177247312,
+    "requests_completed": 74283176414605,
+    "client_before": {
+      "observedTicks": 74223177232758,
+      "cpuMilliseconds": 4426.309,
+      "allocatedBytesApproximate": 503523928,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6434
+    },
+    "client_after": {
+      "observedTicks": 74283176419106,
+      "cpuMilliseconds": 71600.673,
+      "allocatedBytesApproximate": 778915544,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66620
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 63.796201
+  },
+  {
+    "path": "load/graphql/02-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 74283329244207,
+    "requests_completed": 74463328462810,
+    "client_before": {
+      "observedTicks": 74283329234229,
+      "cpuMilliseconds": 71780.452,
+      "allocatedBytesApproximate": 815160016,
+      "gc0": 18,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 67056
+    },
+    "client_after": {
+      "observedTicks": 74463328467738,
+      "cpuMilliseconds": 268283.384,
+      "allocatedBytesApproximate": 1647139528,
+      "gc0": 85,
+      "gc1": 25,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 247885
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 160.883244
+  },
+  {
+    "path": "load/graphql/03-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 74711398080999,
+    "requests_completed": 74713397987538,
+    "client_before": {
+      "observedTicks": 74711398045047,
+      "cpuMilliseconds": 1839.122,
+      "allocatedBytesApproximate": 482723264,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4282
+    },
+    "client_after": {
+      "observedTicks": 74713397991443,
+      "cpuMilliseconds": 4429.765,
+      "allocatedBytesApproximate": 491937208,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6830
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.219802
+  },
+  {
+    "path": "load/graphql/03-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 74713507704509,
+    "requests_completed": 74773506954192,
+    "client_before": {
+      "observedTicks": 74713507689148,
+      "cpuMilliseconds": 4500.641,
+      "allocatedBytesApproximate": 503322480,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6936
+    },
+    "client_after": {
+      "observedTicks": 74773506982881,
+      "cpuMilliseconds": 70066.254,
+      "allocatedBytesApproximate": 778721240,
+      "gc0": 18,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68972
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 65.18198
+  },
+  {
+    "path": "load/graphql/03-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 74773656795630,
+    "requests_completed": 74953655986536,
+    "client_before": {
+      "observedTicks": 74773656784676,
+      "cpuMilliseconds": 70229.312,
+      "allocatedBytesApproximate": 815974136,
+      "gc0": 18,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69423
+    },
+    "client_after": {
+      "observedTicks": 74953656018391,
+      "cpuMilliseconds": 268681.413,
+      "allocatedBytesApproximate": 1648101848,
+      "gc0": 84,
+      "gc1": 25,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254969
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 169.500385
+  },
+  {
+    "path": "load/graphql/03-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 74466171228356,
+    "requests_completed": 74468171475923,
+    "client_before": {
+      "observedTicks": 74466171201380,
+      "cpuMilliseconds": 1779.917,
+      "allocatedBytesApproximate": 482671528,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4275
+    },
+    "client_after": {
+      "observedTicks": 74468171480000,
+      "cpuMilliseconds": 4383.308,
+      "allocatedBytesApproximate": 491923000,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6851
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.384572
+  },
+  {
+    "path": "load/graphql/03-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 74468287095923,
+    "requests_completed": 74528286252193,
+    "client_before": {
+      "observedTicks": 74468287080318,
+      "cpuMilliseconds": 4472.542,
+      "allocatedBytesApproximate": 503476728,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6964
+    },
+    "client_after": {
+      "observedTicks": 74528286257221,
+      "cpuMilliseconds": 70069.565,
+      "allocatedBytesApproximate": 778891552,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68841
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 64.016347
+  },
+  {
+    "path": "load/graphql/03-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 74528447721645,
+    "requests_completed": 74708446899990,
+    "client_before": {
+      "observedTicks": 74528447711888,
+      "cpuMilliseconds": 70242.693,
+      "allocatedBytesApproximate": 815541480,
+      "gc0": 28,
+      "gc1": 10,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69295
+    },
+    "client_after": {
+      "observedTicks": 74708446904876,
+      "cpuMilliseconds": 267870.353,
+      "allocatedBytesApproximate": 1647786592,
+      "gc0": 111,
+      "gc1": 30,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 253815
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 170.312857
+  },
+  {
+    "path": "load/graphql/04-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 74956502508841,
+    "requests_completed": 74958502683151,
+    "client_before": {
+      "observedTicks": 74956502458418,
+      "cpuMilliseconds": 1710.545,
+      "allocatedBytesApproximate": 482654416,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4279
+    },
+    "client_after": {
+      "observedTicks": 74958502687240,
+      "cpuMilliseconds": 4281.055,
+      "allocatedBytesApproximate": 491923104,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7058
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.630928
+  },
+  {
+    "path": "load/graphql/04-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 74958621873331,
+    "requests_completed": 75018621081628,
+    "client_before": {
+      "observedTicks": 74958621857938,
+      "cpuMilliseconds": 4372.42,
+      "allocatedBytesApproximate": 503319800,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7165
+    },
+    "client_after": {
+      "observedTicks": 75018621086267,
+      "cpuMilliseconds": 72051.992,
+      "allocatedBytesApproximate": 778864288,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69959
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 63.599661
+  },
+  {
+    "path": "load/graphql/04-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 75018765656435,
+    "requests_completed": 75198764964776,
+    "client_before": {
+      "observedTicks": 75018765645780,
+      "cpuMilliseconds": 72227.999,
+      "allocatedBytesApproximate": 815910384,
+      "gc0": 27,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 70421
+    },
+    "client_after": {
+      "observedTicks": 75198764971116,
+      "cpuMilliseconds": 271857.141,
+      "allocatedBytesApproximate": 1647954824,
+      "gc0": 111,
+      "gc1": 31,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 255072
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 162.504964
+  },
+  {
+    "path": "load/graphql/04-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 75201485816508,
+    "requests_completed": 75203485968854,
+    "client_before": {
+      "observedTicks": 75201485781523,
+      "cpuMilliseconds": 1730.077,
+      "allocatedBytesApproximate": 482686160,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4284
+    },
+    "client_after": {
+      "observedTicks": 75203485972717,
+      "cpuMilliseconds": 4340.973,
+      "allocatedBytesApproximate": 492008808,
+      "gc0": 20,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7104
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.411384
+  },
+  {
+    "path": "load/graphql/04-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 75203607707957,
+    "requests_completed": 75263607319379,
+    "client_before": {
+      "observedTicks": 75203607691409,
+      "cpuMilliseconds": 4435.461,
+      "allocatedBytesApproximate": 503434448,
+      "gc0": 21,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7204
+    },
+    "client_after": {
+      "observedTicks": 75263607324970,
+      "cpuMilliseconds": 71200.824,
+      "allocatedBytesApproximate": 778964496,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69323
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 67.213961
+  },
+  {
+    "path": "load/graphql/04-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 75263769006089,
+    "requests_completed": 75443768544276,
+    "client_before": {
+      "observedTicks": 75263768995433,
+      "cpuMilliseconds": 71379.821,
+      "allocatedBytesApproximate": 814471088,
+      "gc0": 27,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69756
+    },
+    "client_after": {
+      "observedTicks": 75443768550945,
+      "cpuMilliseconds": 270486.723,
+      "allocatedBytesApproximate": 1646481720,
+      "gc0": 116,
+      "gc1": 32,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254352
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 195.150191
+  },
+  {
+    "path": "load/http/00-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 70548820286386,
+    "requests_completed": 70550820267055,
+    "client_before": {
+      "observedTicks": 70548820256405,
+      "cpuMilliseconds": 1680.244,
+      "allocatedBytesApproximate": 366183712,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4303
+    },
+    "client_after": {
+      "observedTicks": 70550820270988,
+      "cpuMilliseconds": 4282.631,
+      "allocatedBytesApproximate": 375148384,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6691
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.345783
+  },
+  {
+    "path": "load/http/00-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 70550939441085,
+    "requests_completed": 70610938559638,
+    "client_before": {
+      "observedTicks": 70550939424318,
+      "cpuMilliseconds": 4375.132,
+      "allocatedBytesApproximate": 386814960,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6793
+    },
+    "client_after": {
+      "observedTicks": 70610938564157,
+      "cpuMilliseconds": 71008.665,
+      "allocatedBytesApproximate": 651631856,
+      "gc0": 16,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68785
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 73.950003
+  },
+  {
+    "path": "load/http/00-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 70611111907928,
+    "requests_completed": 70791111180585,
+    "client_before": {
+      "observedTicks": 70611111895856,
+      "cpuMilliseconds": 71200.586,
+      "allocatedBytesApproximate": 687802320,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69224
+    },
+    "client_after": {
+      "observedTicks": 70791111188199,
+      "cpuMilliseconds": 272041.915,
+      "allocatedBytesApproximate": 1489076600,
+      "gc0": 92,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 257443
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 201.509554
+  },
+  {
+    "path": "load/http/00-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 70793503360711,
+    "requests_completed": 70795503249822,
+    "client_before": {
+      "observedTicks": 70793503325398,
+      "cpuMilliseconds": 1612.642,
+      "allocatedBytesApproximate": 366283112,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4311
+    },
+    "client_after": {
+      "observedTicks": 70795503254623,
+      "cpuMilliseconds": 4188.571,
+      "allocatedBytesApproximate": 375185704,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6846
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.241942
+  },
+  {
+    "path": "load/http/00-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 70795618812017,
+    "requests_completed": 70855617969036,
+    "client_before": {
+      "observedTicks": 70795618797622,
+      "cpuMilliseconds": 4280.358,
+      "allocatedBytesApproximate": 386755424,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6930
+    },
+    "client_after": {
+      "observedTicks": 70855617973953,
+      "cpuMilliseconds": 71336.685,
+      "allocatedBytesApproximate": 651705640,
+      "gc0": 16,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69604
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 72.796101
+  },
+  {
+    "path": "load/http/00-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 70855790221604,
+    "requests_completed": 71035789353729,
+    "client_before": {
+      "observedTicks": 70855790209618,
+      "cpuMilliseconds": 71522.078,
+      "allocatedBytesApproximate": 688895216,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 70039
+    },
+    "client_after": {
+      "observedTicks": 71035789358772,
+      "cpuMilliseconds": 269065.001,
+      "allocatedBytesApproximate": 1489489504,
+      "gc0": 93,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254516
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 192.178122
+  },
+  {
+    "path": "load/http/01-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 71282675721561,
+    "requests_completed": 71284675756552,
+    "client_before": {
+      "observedTicks": 71282675692543,
+      "cpuMilliseconds": 1546.554,
+      "allocatedBytesApproximate": 366345760,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4296
+    },
+    "client_after": {
+      "observedTicks": 71284675760980,
+      "cpuMilliseconds": 4132.04,
+      "allocatedBytesApproximate": 375295048,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6825
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.931875
+  },
+  {
+    "path": "load/http/01-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 71284791794365,
+    "requests_completed": 71344790906796,
+    "client_before": {
+      "observedTicks": 71284791780386,
+      "cpuMilliseconds": 4223.302,
+      "allocatedBytesApproximate": 386743416,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6911
+    },
+    "client_after": {
+      "observedTicks": 71344790911455,
+      "cpuMilliseconds": 71339.071,
+      "allocatedBytesApproximate": 651605536,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69229
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 68.477435
+  },
+  {
+    "path": "load/http/01-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 71344944294518,
+    "requests_completed": 71524943407760,
+    "client_before": {
+      "observedTicks": 71344944282304,
+      "cpuMilliseconds": 71506.305,
+      "allocatedBytesApproximate": 686812408,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69675
+    },
+    "client_after": {
+      "observedTicks": 71524943413280,
+      "cpuMilliseconds": 267107.448,
+      "allocatedBytesApproximate": 1487307040,
+      "gc0": 94,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254013
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 227.118182
+  },
+  {
+    "path": "load/http/01-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 71038043159629,
+    "requests_completed": 71040043297080,
+    "client_before": {
+      "observedTicks": 71038043127822,
+      "cpuMilliseconds": 1632.108,
+      "allocatedBytesApproximate": 366348368,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4342
+    },
+    "client_after": {
+      "observedTicks": 71040043301076,
+      "cpuMilliseconds": 4182.385,
+      "allocatedBytesApproximate": 375289688,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6527
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.495373
+  },
+  {
+    "path": "load/http/01-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 71040162848425,
+    "requests_completed": 71100161981014,
+    "client_before": {
+      "observedTicks": 71040162830246,
+      "cpuMilliseconds": 4267.382,
+      "allocatedBytesApproximate": 386678040,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6568
+    },
+    "client_after": {
+      "observedTicks": 71100161986128,
+      "cpuMilliseconds": 70123.216,
+      "allocatedBytesApproximate": 651610872,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66855
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 71.599506
+  },
+  {
+    "path": "load/http/01-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 71100323799819,
+    "requests_completed": 71280322904998,
+    "client_before": {
+      "observedTicks": 71100323788020,
+      "cpuMilliseconds": 70314.385,
+      "allocatedBytesApproximate": 688819656,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 67295
+    },
+    "client_after": {
+      "observedTicks": 71280322910591,
+      "cpuMilliseconds": 266917.601,
+      "allocatedBytesApproximate": 1489088168,
+      "gc0": 97,
+      "gc1": 27,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 247730
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 229.166883
+  },
+  {
+    "path": "load/http/02-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 71527177009612,
+    "requests_completed": 71529177203328,
+    "client_before": {
+      "observedTicks": 71527176974700,
+      "cpuMilliseconds": 1595.514,
+      "allocatedBytesApproximate": 366348312,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4315
+    },
+    "client_after": {
+      "observedTicks": 71529177207786,
+      "cpuMilliseconds": 4180.905,
+      "allocatedBytesApproximate": 375197336,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6713
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.942581
+  },
+  {
+    "path": "load/http/02-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 71529294294175,
+    "requests_completed": 71589293494848,
+    "client_before": {
+      "observedTicks": 71529294280052,
+      "cpuMilliseconds": 4274.222,
+      "allocatedBytesApproximate": 386558432,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6803
+    },
+    "client_after": {
+      "observedTicks": 71589293499856,
+      "cpuMilliseconds": 70988.341,
+      "allocatedBytesApproximate": 651576304,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69011
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 68.671743
+  },
+  {
+    "path": "load/http/02-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 71589447736667,
+    "requests_completed": 71769447063156,
+    "client_before": {
+      "observedTicks": 71589447727675,
+      "cpuMilliseconds": 71152.711,
+      "allocatedBytesApproximate": 688151472,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69455
+    },
+    "client_after": {
+      "observedTicks": 71769447070603,
+      "cpuMilliseconds": 269293.32,
+      "allocatedBytesApproximate": 1488993040,
+      "gc0": 95,
+      "gc1": 27,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254725
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 221.785573
+  },
+  {
+    "path": "load/http/02-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 71771849844891,
+    "requests_completed": 71773851150360,
+    "client_before": {
+      "observedTicks": 71771849811551,
+      "cpuMilliseconds": 1543.275,
+      "allocatedBytesApproximate": 366303848,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4317
+    },
+    "client_after": {
+      "observedTicks": 71773851154175,
+      "cpuMilliseconds": 4113.76,
+      "allocatedBytesApproximate": 375303792,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6681
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.328154
+  },
+  {
+    "path": "load/http/02-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 71773968889785,
+    "requests_completed": 71833968035850,
+    "client_before": {
+      "observedTicks": 71773968873798,
+      "cpuMilliseconds": 4208.515,
+      "allocatedBytesApproximate": 386826256,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6781
+    },
+    "client_after": {
+      "observedTicks": 71833968040192,
+      "cpuMilliseconds": 72212.846,
+      "allocatedBytesApproximate": 651875400,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69777
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 69.326897
+  },
+  {
+    "path": "load/http/02-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 71834120888554,
+    "requests_completed": 72014120048099,
+    "client_before": {
+      "observedTicks": 71834120879510,
+      "cpuMilliseconds": 72377.697,
+      "allocatedBytesApproximate": 688658992,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 70226
+    },
+    "client_after": {
+      "observedTicks": 72014120054002,
+      "cpuMilliseconds": 272588.155,
+      "allocatedBytesApproximate": 1489704096,
+      "gc0": 93,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 256839
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 217.184869
+  },
+  {
+    "path": "load/http/03-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 72261137156096,
+    "requests_completed": 72263137782110,
+    "client_before": {
+      "observedTicks": 72261137110867,
+      "cpuMilliseconds": 1634.428,
+      "allocatedBytesApproximate": 366271496,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4339
+    },
+    "client_after": {
+      "observedTicks": 72263137785689,
+      "cpuMilliseconds": 4199.597,
+      "allocatedBytesApproximate": 375188664,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6365
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 10.822071
+  },
+  {
+    "path": "load/http/03-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 72263259106082,
+    "requests_completed": 72323258235159,
+    "client_before": {
+      "observedTicks": 72263259093056,
+      "cpuMilliseconds": 4285.934,
+      "allocatedBytesApproximate": 386673624,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6416
+    },
+    "client_after": {
+      "observedTicks": 72323258240032,
+      "cpuMilliseconds": 69487.871,
+      "allocatedBytesApproximate": 651586440,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66647
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 67.222752
+  },
+  {
+    "path": "load/http/03-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 72323418495103,
+    "requests_completed": 72503417689144,
+    "client_before": {
+      "observedTicks": 72323418484405,
+      "cpuMilliseconds": 69668.862,
+      "allocatedBytesApproximate": 687808800,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 67089
+    },
+    "client_after": {
+      "observedTicks": 72503417694717,
+      "cpuMilliseconds": 263609.374,
+      "allocatedBytesApproximate": 1488061312,
+      "gc0": 93,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 247476
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 213.678998
+  },
+  {
+    "path": "load/http/03-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 72016421618937,
+    "requests_completed": 72018421877044,
+    "client_before": {
+      "observedTicks": 72016421585051,
+      "cpuMilliseconds": 1669.134,
+      "allocatedBytesApproximate": 366375008,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4341
+    },
+    "client_after": {
+      "observedTicks": 72018421882321,
+      "cpuMilliseconds": 4236.947,
+      "allocatedBytesApproximate": 375341872,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6768
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 10.903429
+  },
+  {
+    "path": "load/http/03-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 72018548176458,
+    "requests_completed": 72078547288182,
+    "client_before": {
+      "observedTicks": 72018548161409,
+      "cpuMilliseconds": 4332.411,
+      "allocatedBytesApproximate": 387068760,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6869
+    },
+    "client_after": {
+      "observedTicks": 72078547292658,
+      "cpuMilliseconds": 69707.791,
+      "allocatedBytesApproximate": 651910952,
+      "gc0": 16,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68903
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 74.983184
+  },
+  {
+    "path": "load/http/03-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 72078714860018,
+    "requests_completed": 72258714151396,
+    "client_before": {
+      "observedTicks": 72078714849971,
+      "cpuMilliseconds": 69888.126,
+      "allocatedBytesApproximate": 688536336,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69340
+    },
+    "client_after": {
+      "observedTicks": 72258714155675,
+      "cpuMilliseconds": 269336.978,
+      "allocatedBytesApproximate": 1489819648,
+      "gc0": 92,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 256535
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 227.138794
+  },
+  {
+    "path": "load/http/04-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 72505827186313,
+    "requests_completed": 72507827123438,
+    "client_before": {
+      "observedTicks": 72505827154405,
+      "cpuMilliseconds": 1609.978,
+      "allocatedBytesApproximate": 366363960,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4282
+    },
+    "client_after": {
+      "observedTicks": 72507827127286,
+      "cpuMilliseconds": 4218.57,
+      "allocatedBytesApproximate": 375215824,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6808
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.230907
+  },
+  {
+    "path": "load/http/04-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 72507951852486,
+    "requests_completed": 72567951020182,
+    "client_before": {
+      "observedTicks": 72507951836146,
+      "cpuMilliseconds": 4312.895,
+      "allocatedBytesApproximate": 386580392,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6911
+    },
+    "client_after": {
+      "observedTicks": 72567951025270,
+      "cpuMilliseconds": 70999.749,
+      "allocatedBytesApproximate": 651672240,
+      "gc0": 17,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69424
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 68.555386
+  },
+  {
+    "path": "load/http/04-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 72568099211735,
+    "requests_completed": 72748098327455,
+    "client_before": {
+      "observedTicks": 72568099201874,
+      "cpuMilliseconds": 71180.32,
+      "allocatedBytesApproximate": 687755440,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 69898
+    },
+    "client_after": {
+      "observedTicks": 72748098332732,
+      "cpuMilliseconds": 268790.807,
+      "allocatedBytesApproximate": 1488282672,
+      "gc0": 95,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 254340
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 224.242546
+  },
+  {
+    "path": "load/http/04-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 72750558561949,
+    "requests_completed": 72752558777745,
+    "client_before": {
+      "observedTicks": 72750558524885,
+      "cpuMilliseconds": 1635.6,
+      "allocatedBytesApproximate": 366428384,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4312
+    },
+    "client_after": {
+      "observedTicks": 72752558781938,
+      "cpuMilliseconds": 4268.372,
+      "allocatedBytesApproximate": 375362528,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6467
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.035417
+  },
+  {
+    "path": "load/http/04-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 72752683373009,
+    "requests_completed": 72812682493616,
+    "client_before": {
+      "observedTicks": 72752683355488,
+      "cpuMilliseconds": 4368.85,
+      "allocatedBytesApproximate": 386992416,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 6551
+    },
+    "client_after": {
+      "observedTicks": 72812682499004,
+      "cpuMilliseconds": 70001.909,
+      "allocatedBytesApproximate": 652010816,
+      "gc0": 16,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68102
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 72.963433
+  },
+  {
+    "path": "load/http/04-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 72812840182877,
+    "requests_completed": 72992839391188,
+    "client_before": {
+      "observedTicks": 72812840173027,
+      "cpuMilliseconds": 70178.793,
+      "allocatedBytesApproximate": 689247336,
+      "gc0": 18,
+      "gc1": 7,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 68540
+    },
+    "client_after": {
+      "observedTicks": 72992839398162,
+      "cpuMilliseconds": 266869.044,
+      "allocatedBytesApproximate": 1489914712,
+      "gc0": 93,
+      "gc1": 26,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 252327
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 195.470033
+  },
+  {
+    "path": "idle/graphql/00-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 68107460812970,
+    "requests_completed": 68109460989920,
+    "client_before": {
+      "observedTicks": 68107460781636,
+      "cpuMilliseconds": 768.842,
+      "allocatedBytesApproximate": 164353744,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2036
+    },
+    "client_after": {
+      "observedTicks": 68109460993675,
+      "cpuMilliseconds": 3354.882,
+      "allocatedBytesApproximate": 173642968,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4202
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 15.210826
+  },
+  {
+    "path": "idle/graphql/00-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 68109586040308,
+    "requests_completed": 68169585264224,
+    "client_before": {
+      "observedTicks": 68109586022048,
+      "cpuMilliseconds": 3446.247,
+      "allocatedBytesApproximate": 185458112,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4284
+    },
+    "client_after": {
+      "observedTicks": 68169585269065,
+      "cpuMilliseconds": 70169.73,
+      "allocatedBytesApproximate": 460905648,
+      "gc0": 24,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64640
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 92.556835
+  },
+  {
+    "path": "idle/graphql/00-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 68351470519459,
+    "requests_completed": 68353470618282,
+    "client_before": {
+      "observedTicks": 68351470490965,
+      "cpuMilliseconds": 716.79,
+      "allocatedBytesApproximate": 164333208,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2115
+    },
+    "client_after": {
+      "observedTicks": 68353470622089,
+      "cpuMilliseconds": 3121.329,
+      "allocatedBytesApproximate": 173562080,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4668
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.017686
+  },
+  {
+    "path": "idle/graphql/00-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 68353583895887,
+    "requests_completed": 68413583098616,
+    "client_before": {
+      "observedTicks": 68353583882961,
+      "cpuMilliseconds": 3200.983,
+      "allocatedBytesApproximate": 184953024,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4770
+    },
+    "client_after": {
+      "observedTicks": 68413583103578,
+      "cpuMilliseconds": 70122.593,
+      "allocatedBytesApproximate": 460519208,
+      "gc0": 24,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 67309
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 152.905465
+  },
+  {
+    "path": "idle/graphql/01-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 68839721160230,
+    "requests_completed": 68841721331529,
+    "client_before": {
+      "observedTicks": 68839721123180,
+      "cpuMilliseconds": 796.988,
+      "allocatedBytesApproximate": 164385456,
+      "gc0": 15,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2038
+    },
+    "client_after": {
+      "observedTicks": 68841721335580,
+      "cpuMilliseconds": 3420.172,
+      "allocatedBytesApproximate": 173711672,
+      "gc0": 15,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4477
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 14.097653
+  },
+  {
+    "path": "idle/graphql/01-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 68841838214267,
+    "requests_completed": 68901837469036,
+    "client_before": {
+      "observedTicks": 68841838195939,
+      "cpuMilliseconds": 3505.932,
+      "allocatedBytesApproximate": 185121800,
+      "gc0": 16,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4570
+    },
+    "client_after": {
+      "observedTicks": 68901837473502,
+      "cpuMilliseconds": 70323.52,
+      "allocatedBytesApproximate": 460666904,
+      "gc0": 26,
+      "gc1": 9,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66859
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 96.956912
+  },
+  {
+    "path": "idle/graphql/01-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 68595527975831,
+    "requests_completed": 68597527942226,
+    "client_before": {
+      "observedTicks": 68595527938948,
+      "cpuMilliseconds": 738.909,
+      "allocatedBytesApproximate": 164388832,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2039
+    },
+    "client_after": {
+      "observedTicks": 68597527946203,
+      "cpuMilliseconds": 3294.946,
+      "allocatedBytesApproximate": 173593800,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4196
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 15.742905
+  },
+  {
+    "path": "idle/graphql/01-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 68597661122002,
+    "requests_completed": 68657660349270,
+    "client_before": {
+      "observedTicks": 68597661104545,
+      "cpuMilliseconds": 3380.251,
+      "allocatedBytesApproximate": 185037688,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4235
+    },
+    "client_after": {
+      "observedTicks": 68657660354842,
+      "cpuMilliseconds": 68902.997,
+      "allocatedBytesApproximate": 460544960,
+      "gc0": 23,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64612
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 85.443445
+  },
+  {
+    "path": "idle/graphql/02-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 69083903294282,
+    "requests_completed": 69085903269175,
+    "client_before": {
+      "observedTicks": 69083903262260,
+      "cpuMilliseconds": 736.058,
+      "allocatedBytesApproximate": 164413944,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2045
+    },
+    "client_after": {
+      "observedTicks": 69085903273637,
+      "cpuMilliseconds": 3340.72,
+      "allocatedBytesApproximate": 173676864,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4835
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 15.802558
+  },
+  {
+    "path": "idle/graphql/02-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 69086026433320,
+    "requests_completed": 69146025631314,
+    "client_before": {
+      "observedTicks": 69086026415487,
+      "cpuMilliseconds": 3429.795,
+      "allocatedBytesApproximate": 185163904,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4935
+    },
+    "client_after": {
+      "observedTicks": 69146025636134,
+      "cpuMilliseconds": 70411.704,
+      "allocatedBytesApproximate": 460659456,
+      "gc0": 24,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 67278
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 83.583436
+  },
+  {
+    "path": "idle/graphql/02-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 69327988759847,
+    "requests_completed": 69329989174443,
+    "client_before": {
+      "observedTicks": 69327988730431,
+      "cpuMilliseconds": 745.259,
+      "allocatedBytesApproximate": 164441336,
+      "gc0": 15,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2042
+    },
+    "client_after": {
+      "observedTicks": 69329989178729,
+      "cpuMilliseconds": 3334.971,
+      "allocatedBytesApproximate": 173746360,
+      "gc0": 15,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4624
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 16.013049
+  },
+  {
+    "path": "idle/graphql/02-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 69330113066972,
+    "requests_completed": 69390112315961,
+    "client_before": {
+      "observedTicks": 69330113039503,
+      "cpuMilliseconds": 3422.302,
+      "allocatedBytesApproximate": 185162424,
+      "gc0": 16,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4736
+    },
+    "client_after": {
+      "observedTicks": 69390112321784,
+      "cpuMilliseconds": 70026.083,
+      "allocatedBytesApproximate": 460764640,
+      "gc0": 24,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 67076
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 87.687806
+  },
+  {
+    "path": "idle/graphql/03-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 69816220238549,
+    "requests_completed": 69818220280687,
+    "client_before": {
+      "observedTicks": 69816220195305,
+      "cpuMilliseconds": 792.061,
+      "allocatedBytesApproximate": 164345080,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2037
+    },
+    "client_after": {
+      "observedTicks": 69818220284398,
+      "cpuMilliseconds": 3396.725,
+      "allocatedBytesApproximate": 173563552,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4239
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 13.377732
+  },
+  {
+    "path": "idle/graphql/03-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 69818349924555,
+    "requests_completed": 69878349093212,
+    "client_before": {
+      "observedTicks": 69818349908034,
+      "cpuMilliseconds": 3482.33,
+      "allocatedBytesApproximate": 185287368,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4279
+    },
+    "client_after": {
+      "observedTicks": 69878349098500,
+      "cpuMilliseconds": 71201.617,
+      "allocatedBytesApproximate": 460744696,
+      "gc0": 23,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64698
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 87.306179
+  },
+  {
+    "path": "idle/graphql/03-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 69572063374479,
+    "requests_completed": 69574063506781,
+    "client_before": {
+      "observedTicks": 69572063342562,
+      "cpuMilliseconds": 744.888,
+      "allocatedBytesApproximate": 164380488,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2044
+    },
+    "client_after": {
+      "observedTicks": 69574063510063,
+      "cpuMilliseconds": 3316.606,
+      "allocatedBytesApproximate": 173670008,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4676
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 16.357129
+  },
+  {
+    "path": "idle/graphql/03-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 69574188060463,
+    "requests_completed": 69634187230403,
+    "client_before": {
+      "observedTicks": 69574188044032,
+      "cpuMilliseconds": 3404.356,
+      "allocatedBytesApproximate": 185127792,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4780
+    },
+    "client_after": {
+      "observedTicks": 69634187235373,
+      "cpuMilliseconds": 70698.402,
+      "allocatedBytesApproximate": 460543464,
+      "gc0": 24,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66879
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 85.952406
+  },
+  {
+    "path": "idle/graphql/04-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 70060487975975,
+    "requests_completed": 70062488108650,
+    "client_before": {
+      "observedTicks": 70060487937257,
+      "cpuMilliseconds": 789.544,
+      "allocatedBytesApproximate": 164468888,
+      "gc0": 15,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2037
+    },
+    "client_after": {
+      "observedTicks": 70062488112772,
+      "cpuMilliseconds": 3354.093,
+      "allocatedBytesApproximate": 173726440,
+      "gc0": 15,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4096
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 14.649646
+  },
+  {
+    "path": "idle/graphql/04-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 70062616345691,
+    "requests_completed": 70122615537444,
+    "client_before": {
+      "observedTicks": 70062616332265,
+      "cpuMilliseconds": 3435.464,
+      "allocatedBytesApproximate": 185240264,
+      "gc0": 16,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4135
+    },
+    "client_after": {
+      "observedTicks": 70122615542969,
+      "cpuMilliseconds": 70202.456,
+      "allocatedBytesApproximate": 460607808,
+      "gc0": 25,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64396
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 92.483989
+  },
+  {
+    "path": "idle/graphql/04-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 70304496088146,
+    "requests_completed": 70306496340671,
+    "client_before": {
+      "observedTicks": 70304495992033,
+      "cpuMilliseconds": 718.436,
+      "allocatedBytesApproximate": 164352200,
+      "gc0": 13,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2043
+    },
+    "client_after": {
+      "observedTicks": 70306496344675,
+      "cpuMilliseconds": 3144.917,
+      "allocatedBytesApproximate": 173636320,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4570
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.442969
+  },
+  {
+    "path": "idle/graphql/04-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 70306616645423,
+    "requests_completed": 70366615857133,
+    "client_before": {
+      "observedTicks": 70306616631465,
+      "cpuMilliseconds": 3230.535,
+      "allocatedBytesApproximate": 185452640,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4649
+    },
+    "client_after": {
+      "observedTicks": 70366615862085,
+      "cpuMilliseconds": 69934.7,
+      "allocatedBytesApproximate": 460849840,
+      "gc0": 24,
+      "gc1": 8,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66685
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 163.285442
+  },
+  {
+    "path": "idle/http/00-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 65670573190775,
+    "requests_completed": 65672573419300,
+    "client_before": {
+      "observedTicks": 65670573155129,
+      "cpuMilliseconds": 707.086,
+      "allocatedBytesApproximate": 125519304,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2064
+    },
+    "client_after": {
+      "observedTicks": 65672573424744,
+      "cpuMilliseconds": 3102.13,
+      "allocatedBytesApproximate": 134422264,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4452
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 13.324899
+  },
+  {
+    "path": "idle/http/00-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 65672698173455,
+    "requests_completed": 65732697335765,
+    "client_before": {
+      "observedTicks": 65672698159267,
+      "cpuMilliseconds": 3189.51,
+      "allocatedBytesApproximate": 146030472,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4549
+    },
+    "client_after": {
+      "observedTicks": 65732697340827,
+      "cpuMilliseconds": 70279.42,
+      "allocatedBytesApproximate": 411045608,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66268
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 185.882869
+  },
+  {
+    "path": "idle/http/00-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 65914243007370,
+    "requests_completed": 65916242998003,
+    "client_before": {
+      "observedTicks": 65914242965598,
+      "cpuMilliseconds": 701.135,
+      "allocatedBytesApproximate": 125518920,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2038
+    },
+    "client_after": {
+      "observedTicks": 65916243002134,
+      "cpuMilliseconds": 3104.916,
+      "allocatedBytesApproximate": 134412976,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4088
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.92036
+  },
+  {
+    "path": "idle/http/00-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 65916360783051,
+    "requests_completed": 65976359921961,
+    "client_before": {
+      "observedTicks": 65916360770193,
+      "cpuMilliseconds": 3193.93,
+      "allocatedBytesApproximate": 145898456,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4174
+    },
+    "client_after": {
+      "observedTicks": 65976359928396,
+      "cpuMilliseconds": 70328.491,
+      "allocatedBytesApproximate": 410715280,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64294
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 162.185057
+  },
+  {
+    "path": "idle/http/01-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 66401575058629,
+    "requests_completed": 66403575303353,
+    "client_before": {
+      "observedTicks": 66401575028032,
+      "cpuMilliseconds": 690.712,
+      "allocatedBytesApproximate": 125466312,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2068
+    },
+    "client_after": {
+      "observedTicks": 66403575307785,
+      "cpuMilliseconds": 3073.899,
+      "allocatedBytesApproximate": 134466648,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4370
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.203778
+  },
+  {
+    "path": "idle/http/01-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 66403698505633,
+    "requests_completed": 66463697626361,
+    "client_before": {
+      "observedTicks": 66403698491223,
+      "cpuMilliseconds": 3160.946,
+      "allocatedBytesApproximate": 146136536,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4459
+    },
+    "client_after": {
+      "observedTicks": 66463697631177,
+      "cpuMilliseconds": 70451.267,
+      "allocatedBytesApproximate": 411079328,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66687
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 158.525862
+  },
+  {
+    "path": "idle/http/01-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 66158017484610,
+    "requests_completed": 66160017702677,
+    "client_before": {
+      "observedTicks": 66158017443478,
+      "cpuMilliseconds": 687.526,
+      "allocatedBytesApproximate": 125506336,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2071
+    },
+    "client_after": {
+      "observedTicks": 66160017707267,
+      "cpuMilliseconds": 3097.483,
+      "allocatedBytesApproximate": 134358160,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4349
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.457775
+  },
+  {
+    "path": "idle/http/01-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 66160138785291,
+    "requests_completed": 66220137915334,
+    "client_before": {
+      "observedTicks": 66160138770794,
+      "cpuMilliseconds": 3183.739,
+      "allocatedBytesApproximate": 146040688,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4443
+    },
+    "client_after": {
+      "observedTicks": 66220137920155,
+      "cpuMilliseconds": 70616.117,
+      "allocatedBytesApproximate": 411119696,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66718
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 155.769206
+  },
+  {
+    "path": "idle/http/02-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 66645141669917,
+    "requests_completed": 66647141829695,
+    "client_before": {
+      "observedTicks": 66645141640072,
+      "cpuMilliseconds": 693.437,
+      "allocatedBytesApproximate": 125547016,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2040
+    },
+    "client_after": {
+      "observedTicks": 66647141834100,
+      "cpuMilliseconds": 3128.657,
+      "allocatedBytesApproximate": 134534600,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4158
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.415251
+  },
+  {
+    "path": "idle/http/02-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 66647264209890,
+    "requests_completed": 66707263339102,
+    "client_before": {
+      "observedTicks": 66647264195919,
+      "cpuMilliseconds": 3213.121,
+      "allocatedBytesApproximate": 146211712,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4195
+    },
+    "client_after": {
+      "observedTicks": 66707263345157,
+      "cpuMilliseconds": 69482.155,
+      "allocatedBytesApproximate": 410975752,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64380
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 150.320768
+  },
+  {
+    "path": "idle/http/02-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 66888721615342,
+    "requests_completed": 66890721711526,
+    "client_before": {
+      "observedTicks": 66888721590228,
+      "cpuMilliseconds": 661.766,
+      "allocatedBytesApproximate": 125521712,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2094
+    },
+    "client_after": {
+      "observedTicks": 66890721715664,
+      "cpuMilliseconds": 3083.733,
+      "allocatedBytesApproximate": 134464968,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4465
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.219867
+  },
+  {
+    "path": "idle/http/02-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 66890839171871,
+    "requests_completed": 66950838393277,
+    "client_before": {
+      "observedTicks": 66890839158063,
+      "cpuMilliseconds": 3170.161,
+      "allocatedBytesApproximate": 146221312,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4558
+    },
+    "client_after": {
+      "observedTicks": 66950838398790,
+      "cpuMilliseconds": 68897.693,
+      "allocatedBytesApproximate": 411110952,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66500
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 176.275745
+  },
+  {
+    "path": "idle/http/03-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 67375939077778,
+    "requests_completed": 67377939093187,
+    "client_before": {
+      "observedTicks": 67375939036875,
+      "cpuMilliseconds": 689.77,
+      "allocatedBytesApproximate": 125554784,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2074
+    },
+    "client_after": {
+      "observedTicks": 67377939097769,
+      "cpuMilliseconds": 3082.535,
+      "allocatedBytesApproximate": 134421224,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4218
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.022889
+  },
+  {
+    "path": "idle/http/03-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 67378055758316,
+    "requests_completed": 67438054996270,
+    "client_before": {
+      "observedTicks": 67378055744365,
+      "cpuMilliseconds": 3159.477,
+      "allocatedBytesApproximate": 145886016,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4258
+    },
+    "client_after": {
+      "observedTicks": 67438055001377,
+      "cpuMilliseconds": 68515.683,
+      "allocatedBytesApproximate": 410832712,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64459
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 182.561525
+  },
+  {
+    "path": "idle/http/03-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 67132358569361,
+    "requests_completed": 67134358718338,
+    "client_before": {
+      "observedTicks": 67132358537669,
+      "cpuMilliseconds": 681.623,
+      "allocatedBytesApproximate": 125523432,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2162
+    },
+    "client_after": {
+      "observedTicks": 67134358722705,
+      "cpuMilliseconds": 3197.872,
+      "allocatedBytesApproximate": 134436400,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4247
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 16.505547
+  },
+  {
+    "path": "idle/http/03-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 67134493688369,
+    "requests_completed": 67194492855698,
+    "client_before": {
+      "observedTicks": 67134493667887,
+      "cpuMilliseconds": 3290.328,
+      "allocatedBytesApproximate": 145960920,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4328
+    },
+    "client_after": {
+      "observedTicks": 67194492861485,
+      "cpuMilliseconds": 69384.903,
+      "allocatedBytesApproximate": 410834976,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64523
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 95.481332
+  },
+  {
+    "path": "idle/http/04-baseline/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 67619760509796,
+    "requests_completed": 67621760943964,
+    "client_before": {
+      "observedTicks": 67619760476929,
+      "cpuMilliseconds": 676.6,
+      "allocatedBytesApproximate": 125485528,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2040
+    },
+    "client_after": {
+      "observedTicks": 67621760948869,
+      "cpuMilliseconds": 3146.625,
+      "allocatedBytesApproximate": 134319312,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4089
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.539637
+  },
+  {
+    "path": "idle/http/04-baseline/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 67621891309757,
+    "requests_completed": 67681890429602,
+    "client_before": {
+      "observedTicks": 67621891293965,
+      "cpuMilliseconds": 3227.435,
+      "allocatedBytesApproximate": 145786400,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4130
+    },
+    "client_after": {
+      "observedTicks": 67681890435097,
+      "cpuMilliseconds": 68202.498,
+      "allocatedBytesApproximate": 410854280,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 64325
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 153.901978
+  },
+  {
+    "path": "idle/http/04-engine/warmup/preflight-requests.jsonl.gz",
+    "phase_start": 67863319775301,
+    "requests_completed": 67865319923172,
+    "client_before": {
+      "observedTicks": 67863319732520,
+      "cpuMilliseconds": 690.822,
+      "allocatedBytesApproximate": 125505960,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2084
+    },
+    "client_after": {
+      "observedTicks": 67865319927401,
+      "cpuMilliseconds": 3068.843,
+      "allocatedBytesApproximate": 134465552,
+      "gc0": 6,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4364
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.73705
+  },
+  {
+    "path": "idle/http/04-engine/warmup/warmup-requests.jsonl.gz",
+    "phase_start": 67865443458836,
+    "requests_completed": 67925442659309,
+    "client_before": {
+      "observedTicks": 67865443446664,
+      "cpuMilliseconds": 3155.622,
+      "allocatedBytesApproximate": 146119568,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4457
+    },
+    "client_after": {
+      "observedTicks": 67925442664812,
+      "cpuMilliseconds": 69738.933,
+      "allocatedBytesApproximate": 411055544,
+      "gc0": 12,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 66428
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 180.905036
+  },
+  {
+    "path": "diagnostics/graphql/0100-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 76911124413796,
+    "requests_completed": 76913117585083,
+    "client_before": {
+      "observedTicks": 76911124381650,
+      "cpuMilliseconds": 472.917,
+      "allocatedBytesApproximate": 53589712,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1265
+    },
+    "client_after": {
+      "observedTicks": 76913117588933,
+      "cpuMilliseconds": 901.342,
+      "allocatedBytesApproximate": 54541872,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1762
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 8.694196
+  },
+  {
+    "path": "diagnostics/graphql/0100-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 76913230444455,
+    "requests_completed": 76973225125075,
+    "client_before": {
+      "observedTicks": 76913230432016,
+      "cpuMilliseconds": 974.552,
+      "allocatedBytesApproximate": 64781824,
+      "gc0": 8,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1853
+    },
+    "client_after": {
+      "observedTicks": 76973225130062,
+      "cpuMilliseconds": 6308.788,
+      "allocatedBytesApproximate": 92934792,
+      "gc0": 9,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14419
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 24.164251
+  },
+  {
+    "path": "diagnostics/graphql/0100-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 76973282314523,
+    "requests_completed": 77153273048483,
+    "client_before": {
+      "observedTicks": 76973282301333,
+      "cpuMilliseconds": 6362.392,
+      "allocatedBytesApproximate": 102490400,
+      "gc0": 10,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14521
+    },
+    "client_after": {
+      "observedTicks": 77153273057085,
+      "cpuMilliseconds": 19905.553,
+      "allocatedBytesApproximate": 186904632,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 52116
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 21.495289
+  },
+  {
+    "path": "diagnostics/graphql/0100-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 77154947955075,
+    "requests_completed": 77156942025326,
+    "client_before": {
+      "observedTicks": 77154947917782,
+      "cpuMilliseconds": 494.443,
+      "allocatedBytesApproximate": 53570872,
+      "gc0": 5,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1289
+    },
+    "client_after": {
+      "observedTicks": 77156942030831,
+      "cpuMilliseconds": 948.435,
+      "allocatedBytesApproximate": 54526280,
+      "gc0": 5,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1718
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 10.288984
+  },
+  {
+    "path": "diagnostics/graphql/0100-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 77157059172793,
+    "requests_completed": 77217049626697,
+    "client_before": {
+      "observedTicks": 77157059157663,
+      "cpuMilliseconds": 1022.461,
+      "allocatedBytesApproximate": 64893888,
+      "gc0": 6,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1750
+    },
+    "client_after": {
+      "observedTicks": 77217049631501,
+      "cpuMilliseconds": 7058.474,
+      "allocatedBytesApproximate": 93065632,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 13992
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 24.157635
+  },
+  {
+    "path": "diagnostics/graphql/0100-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 77217097269663,
+    "requests_completed": 77397089220632,
+    "client_before": {
+      "observedTicks": 77217097255043,
+      "cpuMilliseconds": 7103.478,
+      "allocatedBytesApproximate": 103659424,
+      "gc0": 8,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14054
+    },
+    "client_after": {
+      "observedTicks": 77397089226644,
+      "cpuMilliseconds": 21364.751,
+      "allocatedBytesApproximate": 188067568,
+      "gc0": 11,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51365
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 19.186152
+  },
+  {
+    "path": "diagnostics/graphql/0500-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 77643352249259,
+    "requests_completed": 77645353807462,
+    "client_before": {
+      "observedTicks": 77643352212450,
+      "cpuMilliseconds": 1026.05,
+      "allocatedBytesApproximate": 243468424,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2599
+    },
+    "client_after": {
+      "observedTicks": 77645353811222,
+      "cpuMilliseconds": 2021.251,
+      "allocatedBytesApproximate": 248407736,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 2,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4361
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.480142
+  },
+  {
+    "path": "diagnostics/graphql/0500-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 77645472527365,
+    "requests_completed": 77705472459670,
+    "client_before": {
+      "observedTicks": 77645472510547,
+      "cpuMilliseconds": 2111.477,
+      "allocatedBytesApproximate": 259120360,
+      "gc0": 12,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4463
+    },
+    "client_after": {
+      "observedTicks": 77705472464493,
+      "cpuMilliseconds": 14072.965,
+      "allocatedBytesApproximate": 399686224,
+      "gc0": 14,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51135
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 49.171231
+  },
+  {
+    "path": "diagnostics/graphql/0500-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 77705576552399,
+    "requests_completed": 77885577466517,
+    "client_before": {
+      "observedTicks": 77705576542500,
+      "cpuMilliseconds": 14199.536,
+      "allocatedBytesApproximate": 421974192,
+      "gc0": 15,
+      "gc1": 6,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51402
+    },
+    "client_after": {
+      "observedTicks": 77885577470646,
+      "cpuMilliseconds": 45595.133,
+      "allocatedBytesApproximate": 844933168,
+      "gc0": 38,
+      "gc1": 11,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 191329
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 65.842543
+  },
+  {
+    "path": "diagnostics/graphql/0500-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 77399171294787,
+    "requests_completed": 77401169863832,
+    "client_before": {
+      "observedTicks": 77399171259023,
+      "cpuMilliseconds": 1031.038,
+      "allocatedBytesApproximate": 243480264,
+      "gc0": 16,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2608
+    },
+    "client_after": {
+      "observedTicks": 77401169866623,
+      "cpuMilliseconds": 2003.882,
+      "allocatedBytesApproximate": 248235136,
+      "gc0": 16,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4444
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 10.807531
+  },
+  {
+    "path": "diagnostics/graphql/0500-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 77401283217562,
+    "requests_completed": 77461281421313,
+    "client_before": {
+      "observedTicks": 77401283200971,
+      "cpuMilliseconds": 2085.334,
+      "allocatedBytesApproximate": 259022152,
+      "gc0": 17,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4551
+    },
+    "client_after": {
+      "observedTicks": 77461281426954,
+      "cpuMilliseconds": 19780.934,
+      "allocatedBytesApproximate": 398091608,
+      "gc0": 19,
+      "gc1": 8,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 54436
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 47.069
+  },
+  {
+    "path": "diagnostics/graphql/0500-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 77461378304567,
+    "requests_completed": 77641377329480,
+    "client_before": {
+      "observedTicks": 77461378291987,
+      "cpuMilliseconds": 19912.802,
+      "allocatedBytesApproximate": 419384840,
+      "gc0": 20,
+      "gc1": 9,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 54696
+    },
+    "client_after": {
+      "observedTicks": 77641377333976,
+      "cpuMilliseconds": 71831.273,
+      "allocatedBytesApproximate": 844241144,
+      "gc0": 55,
+      "gc1": 18,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 195314
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 72.236799
+  },
+  {
+    "path": "diagnostics/graphql/2000-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 77889113185768,
+    "requests_completed": 77891113590225,
+    "client_before": {
+      "observedTicks": 77889113159863,
+      "cpuMilliseconds": 2872.044,
+      "allocatedBytesApproximate": 971356216,
+      "gc0": 29,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7632
+    },
+    "client_after": {
+      "observedTicks": 77891113594047,
+      "cpuMilliseconds": 5548.111,
+      "allocatedBytesApproximate": 990013608,
+      "gc0": 30,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12074
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.592446
+  },
+  {
+    "path": "diagnostics/graphql/2000-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 77891227539320,
+    "requests_completed": 77951227263081,
+    "client_before": {
+      "observedTicks": 77891227526334,
+      "cpuMilliseconds": 5626.257,
+      "allocatedBytesApproximate": 1003081856,
+      "gc0": 30,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12184
+    },
+    "client_after": {
+      "observedTicks": 77951227267828,
+      "cpuMilliseconds": 77952.736,
+      "allocatedBytesApproximate": 1556298312,
+      "gc0": 72,
+      "gc1": 20,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 132729
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 138.870913
+  },
+  {
+    "path": "diagnostics/graphql/2000-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 77951532969105,
+    "requests_completed": 78131532653964,
+    "client_before": {
+      "observedTicks": 77951532958870,
+      "cpuMilliseconds": 78308.468,
+      "allocatedBytesApproximate": 1623151592,
+      "gc0": 83,
+      "gc1": 21,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 133519
+    },
+    "client_after": {
+      "observedTicks": 78131532657962,
+      "cpuMilliseconds": 295026.368,
+      "allocatedBytesApproximate": 3297587176,
+      "gc0": 284,
+      "gc1": 67,
+      "gc2": 6,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 494878
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 252.429148
+  },
+  {
+    "path": "diagnostics/graphql/2000-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 78135289342337,
+    "requests_completed": 78137289961776,
+    "client_before": {
+      "observedTicks": 78135289312115,
+      "cpuMilliseconds": 2794.563,
+      "allocatedBytesApproximate": 961650704,
+      "gc0": 28,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7630
+    },
+    "client_after": {
+      "observedTicks": 78137289965325,
+      "cpuMilliseconds": 5482.085,
+      "allocatedBytesApproximate": 980364112,
+      "gc0": 29,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12817
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.635408
+  },
+  {
+    "path": "diagnostics/graphql/2000-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 78137398994447,
+    "requests_completed": 78197398707137,
+    "client_before": {
+      "observedTicks": 78137398978679,
+      "cpuMilliseconds": 5551.897,
+      "allocatedBytesApproximate": 993190384,
+      "gc0": 29,
+      "gc1": 9,
+      "gc2": 4,
+      "threadPoolThreads": 5,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12938
+    },
+    "client_after": {
+      "observedTicks": 78197398711123,
+      "cpuMilliseconds": 78206.52,
+      "allocatedBytesApproximate": 1546465784,
+      "gc0": 65,
+      "gc1": 18,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 136979
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 148.822232
+  },
+  {
+    "path": "diagnostics/graphql/2000-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 78197705873217,
+    "requests_completed": 78377705534133,
+    "client_before": {
+      "observedTicks": 78197705862862,
+      "cpuMilliseconds": 78524.435,
+      "allocatedBytesApproximate": 1613384744,
+      "gc0": 75,
+      "gc1": 20,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 137779
+    },
+    "client_after": {
+      "observedTicks": 78377705538162,
+      "cpuMilliseconds": 298269.282,
+      "allocatedBytesApproximate": 3288696184,
+      "gc0": 274,
+      "gc1": 64,
+      "gc2": 6,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 509947
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 220.012986
+  },
+  {
+    "path": "diagnostics/http/0100-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 75445179882081,
+    "requests_completed": 75447172818096,
+    "client_before": {
+      "observedTicks": 75445179842810,
+      "cpuMilliseconds": 460.952,
+      "allocatedBytesApproximate": 41853400,
+      "gc0": 5,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1354
+    },
+    "client_after": {
+      "observedTicks": 75447172822710,
+      "cpuMilliseconds": 907.676,
+      "allocatedBytesApproximate": 42801896,
+      "gc0": 5,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1819
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 8.998651
+  },
+  {
+    "path": "diagnostics/http/0100-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 75447289293751,
+    "requests_completed": 75507279690898,
+    "client_before": {
+      "observedTicks": 75447289281296,
+      "cpuMilliseconds": 982.64,
+      "allocatedBytesApproximate": 53005744,
+      "gc0": 6,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1897
+    },
+    "client_after": {
+      "observedTicks": 75507279720639,
+      "cpuMilliseconds": 6429.678,
+      "allocatedBytesApproximate": 80095544,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14208
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 22.908202
+  },
+  {
+    "path": "diagnostics/http/0100-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 75507331411606,
+    "requests_completed": 75687325196988,
+    "client_before": {
+      "observedTicks": 75507331399124,
+      "cpuMilliseconds": 6480.105,
+      "allocatedBytesApproximate": 90683064,
+      "gc0": 8,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14315
+    },
+    "client_after": {
+      "observedTicks": 75687325203228,
+      "cpuMilliseconds": 20971.71,
+      "allocatedBytesApproximate": 171935248,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51205
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 27.12921
+  },
+  {
+    "path": "diagnostics/http/0100-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 75688495209626,
+    "requests_completed": 75690487801091,
+    "client_before": {
+      "observedTicks": 75688495185284,
+      "cpuMilliseconds": 447.67,
+      "allocatedBytesApproximate": 41862088,
+      "gc0": 5,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1386
+    },
+    "client_after": {
+      "observedTicks": 75690487807070,
+      "cpuMilliseconds": 868.242,
+      "allocatedBytesApproximate": 42785672,
+      "gc0": 5,
+      "gc1": 2,
+      "gc2": 1,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1871
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 9.407981
+  },
+  {
+    "path": "diagnostics/http/0100-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 75690605195807,
+    "requests_completed": 75750596836883,
+    "client_before": {
+      "observedTicks": 75690605176628,
+      "cpuMilliseconds": 943.056,
+      "allocatedBytesApproximate": 53048720,
+      "gc0": 6,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 1948
+    },
+    "client_after": {
+      "observedTicks": 75750596842184,
+      "cpuMilliseconds": 6285.624,
+      "allocatedBytesApproximate": 80147472,
+      "gc0": 7,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14374
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 22.825419
+  },
+  {
+    "path": "diagnostics/http/0100-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 75750654070380,
+    "requests_completed": 75930644645822,
+    "client_before": {
+      "observedTicks": 75750654058773,
+      "cpuMilliseconds": 6334.312,
+      "allocatedBytesApproximate": 88728936,
+      "gc0": 8,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 14443
+    },
+    "client_after": {
+      "observedTicks": 75930644651744,
+      "cpuMilliseconds": 19878.47,
+      "allocatedBytesApproximate": 169975056,
+      "gc0": 11,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51337
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 26.636074
+  },
+  {
+    "path": "diagnostics/http/0500-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 76175875096493,
+    "requests_completed": 76177873543707,
+    "client_before": {
+      "observedTicks": 76175875052847,
+      "cpuMilliseconds": 910.252,
+      "allocatedBytesApproximate": 185245632,
+      "gc0": 8,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2623
+    },
+    "client_after": {
+      "observedTicks": 76177873547802,
+      "cpuMilliseconds": 1767.668,
+      "allocatedBytesApproximate": 189866472,
+      "gc0": 8,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4422
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 11.229031
+  },
+  {
+    "path": "diagnostics/http/0500-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 76177982020895,
+    "requests_completed": 76237980607663,
+    "client_before": {
+      "observedTicks": 76177982001702,
+      "cpuMilliseconds": 1846.53,
+      "allocatedBytesApproximate": 200564808,
+      "gc0": 9,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4507
+    },
+    "client_after": {
+      "observedTicks": 76237980613984,
+      "cpuMilliseconds": 20020.938,
+      "allocatedBytesApproximate": 336500984,
+      "gc0": 11,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51610
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 66.684243
+  },
+  {
+    "path": "diagnostics/http/0500-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 76238109590321,
+    "requests_completed": 76418109332230,
+    "client_before": {
+      "observedTicks": 76238109578139,
+      "cpuMilliseconds": 20181.903,
+      "allocatedBytesApproximate": 358551192,
+      "gc0": 13,
+      "gc1": 6,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 51835
+    },
+    "client_after": {
+      "observedTicks": 76418109338148,
+      "cpuMilliseconds": 70681.497,
+      "allocatedBytesApproximate": 761107016,
+      "gc0": 31,
+      "gc1": 11,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 193898
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 64.026636
+  },
+  {
+    "path": "diagnostics/http/0500-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 75932053040962,
+    "requests_completed": 75934052788428,
+    "client_before": {
+      "observedTicks": 75932053006766,
+      "cpuMilliseconds": 816.826,
+      "allocatedBytesApproximate": 185358288,
+      "gc0": 8,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 2603
+    },
+    "client_after": {
+      "observedTicks": 75934052792262,
+      "cpuMilliseconds": 1572.125,
+      "allocatedBytesApproximate": 189839272,
+      "gc0": 8,
+      "gc1": 3,
+      "gc2": 2,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4122
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 10.32091
+  },
+  {
+    "path": "diagnostics/http/0500-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 75934175717972,
+    "requests_completed": 75994173925218,
+    "client_before": {
+      "observedTicks": 75934175704427,
+      "cpuMilliseconds": 1656.179,
+      "allocatedBytesApproximate": 200795256,
+      "gc0": 9,
+      "gc1": 4,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 4154
+    },
+    "client_after": {
+      "observedTicks": 75994173930329,
+      "cpuMilliseconds": 19165.225,
+      "allocatedBytesApproximate": 334555656,
+      "gc0": 11,
+      "gc1": 5,
+      "gc2": 3,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 49205
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 61.42608
+  },
+  {
+    "path": "diagnostics/http/0500-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 75994284725321,
+    "requests_completed": 76174285249633,
+    "client_before": {
+      "observedTicks": 75994284712764,
+      "cpuMilliseconds": 19331.682,
+      "allocatedBytesApproximate": 354854704,
+      "gc0": 13,
+      "gc1": 6,
+      "gc2": 4,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 49425
+    },
+    "client_after": {
+      "observedTicks": 76174285255233,
+      "cpuMilliseconds": 52910.687,
+      "allocatedBytesApproximate": 762037120,
+      "gc0": 33,
+      "gc1": 12,
+      "gc2": 5,
+      "threadPoolThreads": 3,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 184758
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 61.788337
+  },
+  {
+    "path": "diagnostics/http/2000-baseline/driver/preflight-requests.jsonl.gz",
+    "phase_start": 76420779849130,
+    "requests_completed": 76422780544911,
+    "client_before": {
+      "observedTicks": 76420779809665,
+      "cpuMilliseconds": 2629.445,
+      "allocatedBytesApproximate": 738340568,
+      "gc0": 28,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7635
+    },
+    "client_after": {
+      "observedTicks": 76422780549634,
+      "cpuMilliseconds": 5397.92,
+      "allocatedBytesApproximate": 756067704,
+      "gc0": 28,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12974
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.355431
+  },
+  {
+    "path": "diagnostics/http/2000-baseline/driver/warmup-requests.jsonl.gz",
+    "phase_start": 76422883544304,
+    "requests_completed": 76482883195488,
+    "client_before": {
+      "observedTicks": 76422883530115,
+      "cpuMilliseconds": 5469.946,
+      "allocatedBytesApproximate": 768933280,
+      "gc0": 28,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 13089
+    },
+    "client_after": {
+      "observedTicks": 76482883201300,
+      "cpuMilliseconds": 74855.54,
+      "allocatedBytesApproximate": 1300727736,
+      "gc0": 68,
+      "gc1": 18,
+      "gc2": 4,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 137209
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 135.276858
+  },
+  {
+    "path": "diagnostics/http/2000-baseline/driver/measured-requests.jsonl.gz",
+    "phase_start": 76483169957900,
+    "requests_completed": 76663169576202,
+    "client_before": {
+      "observedTicks": 76483169947664,
+      "cpuMilliseconds": 75175.94,
+      "allocatedBytesApproximate": 1367382888,
+      "gc0": 76,
+      "gc1": 19,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 138026
+    },
+    "client_after": {
+      "observedTicks": 76663169581634,
+      "cpuMilliseconds": 294054.838,
+      "allocatedBytesApproximate": 2978976512,
+      "gc0": 257,
+      "gc1": 61,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 509122
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 369.375179
+  },
+  {
+    "path": "diagnostics/http/2000-engine/driver/preflight-requests.jsonl.gz",
+    "phase_start": 76666522820484,
+    "requests_completed": 76668523538032,
+    "client_before": {
+      "observedTicks": 76666522780998,
+      "cpuMilliseconds": 2606.727,
+      "allocatedBytesApproximate": 728757712,
+      "gc0": 26,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 7654
+    },
+    "client_after": {
+      "observedTicks": 76668523541924,
+      "cpuMilliseconds": 5356.71,
+      "allocatedBytesApproximate": 746630608,
+      "gc0": 26,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12646
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 12.431557
+  },
+  {
+    "path": "diagnostics/http/2000-engine/driver/warmup-requests.jsonl.gz",
+    "phase_start": 76668632596248,
+    "requests_completed": 76728632412421,
+    "client_before": {
+      "observedTicks": 76668632580870,
+      "cpuMilliseconds": 5436.222,
+      "allocatedBytesApproximate": 759820240,
+      "gc0": 27,
+      "gc1": 7,
+      "gc2": 3,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 12740
+    },
+    "client_after": {
+      "observedTicks": 76728632417936,
+      "cpuMilliseconds": 74457.28,
+      "allocatedBytesApproximate": 1291618288,
+      "gc0": 60,
+      "gc1": 17,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 136639
+    },
+    "server_metric_control_before_persist": false,
+    "persistence_duration_ms": 155.965151
+  },
+  {
+    "path": "diagnostics/http/2000-engine/driver/measured-requests.jsonl.gz",
+    "phase_start": 76728945180941,
+    "requests_completed": 76908944793021,
+    "client_before": {
+      "observedTicks": 76728945170074,
+      "cpuMilliseconds": 74801.868,
+      "allocatedBytesApproximate": 1357993976,
+      "gc0": 69,
+      "gc1": 19,
+      "gc2": 5,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 137466
+    },
+    "client_after": {
+      "observedTicks": 76908944798201,
+      "cpuMilliseconds": 289024.629,
+      "allocatedBytesApproximate": 2971064376,
+      "gc0": 254,
+      "gc1": 62,
+      "gc2": 7,
+      "threadPoolThreads": 4,
+      "threadPoolPendingWorkItems": 0,
+      "threadPoolCompletedWorkItems": 504870
+    },
+    "server_metric_control_before_persist": true,
+    "persistence_duration_ms": 246.477762
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "status": "bounded-report-approved",
+  "report_sha256": "d445d9ceef4e5181cdafbced1caf30b8807dcda408c892ddfc05aee3b04820e7",
+  "review_script_sha256": "433d86207801a11c9868f694a829269877b331192c386911a559f73d03ce9e74",
+  "all_local_links_checked": [
+    {
+      "label": "independent raw audit",
+      "target": "../evidence/small-api-collector/results/raw-audit/audit-final.md",
+      "exists": true
+    },
+    {
+      "label": "ADR0011",
+      "target": "../adr/ADR-0011-small-api-collector-connection-readiness.md",
+      "exists": true
+    },
+    {
+      "label": "independent host/fairness audit",
+      "target": "../evidence/small-api-collector/results/canonical04-host-fairness-review.md",
+      "exists": true
+    },
+    {
+      "label": "Detailed precanonical audit",
+      "target": "../evidence/small-api-collector/preflight/sequential02-precanonical-audit.md",
+      "exists": true
+    },
+    {
+      "label": "Probe summary",
+      "target": "../evidence/small-api-collector/connection-probes/summary.json",
+      "exists": true
+    },
+    {
+      "label": "raw-evidence-link.json",
+      "target": "../evidence/small-api-collector/results/raw-evidence-link.json",
+      "exists": true
+    },
+    {
+      "label": "independent closure audit",
+      "target": "../evidence/small-api-collector/results/closure-audit/closure-audit04.md",
+      "exists": true
+    }
+  ],
+  "all_five_p95_and_old_new_mean_cv_tables_independently_matched": true,
+  "independently_unioned_driver_tls": {
+    "total": 6874,
+    "by_pool": {
+      "control": 84,
+      "load": 6790
+    },
+    "new_load_in_phases": 134,
+    "control_handshakes_inside_measured_completion_metrics": 32
+  },
+  "state_snapshot_count": {
+    "driver": 84,
+    "final_server": 52,
+    "total": 136
+  },
+  "findings": [],
+  "boundary": "Approval covers bounded report consistency with independently audited04/03 records, not external qualification or newly rerun tests. Retention byte proofs/Windows conformance closure remain separate named audits."
+}

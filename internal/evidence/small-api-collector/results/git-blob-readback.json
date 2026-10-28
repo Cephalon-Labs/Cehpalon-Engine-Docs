@@ -1,0 +1,8 @@
+{
+  "retained_samples_revision": "1aba2cf704d3137d1e11886fe87cc4c46b214c85",
+  "entry_files_verified": 2640,
+  "manifest_blob_verified": true,
+  "all_git_blob_bytes_match_retained_hashes": true,
+  "total_blob_bytes_including_manifest": 1335888423,
+  "boundary": "Every retained source/result blob compared against its SHA256 without newline normalization; original native/worktree sources remain. No private fixtures or compiled artifacts included."
+}

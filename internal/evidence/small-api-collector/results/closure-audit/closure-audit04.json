@@ -1,0 +1,1805 @@
+{
+  "observed_at_utc": "2026-10-28T17:46:00.638801+00:00",
+  "activity": "Read-only native WSL file/JSON/Git analysis; no workload, SDK, tests, builds, requests or remote writes.",
+  "reused_sequential02_audit": {
+    "path": "/mnt/d/Cephalon/.worktrees/w2-collector-readiness/.local/precanonical-audit04/sequential02-precanonical-audit.json",
+    "sha256": "2a7af3abae0651837977f217a0f4b6d41b7d19ba77b694320db0b60d414b8de6",
+    "fresh_frozen_git_blob_checks": 30,
+    "builds": {
+      "windows": {
+        "samples_source_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+        "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+        "status": "passed",
+        "committed_input_hashes_verified": 15,
+        "source_sha256": {
+          "small-api-benchmark/BenchmarkHost.cs": "877100b0da7c4012d8e39c176c7d45fb676bcf96d465efb1fab6c748b51f10bc",
+          "small-api-benchmark/Conformance.cs": "9a8e14aa2dd74885a4e8ef103c64c4a4f41ed58c3819c98517d5e2535b494bfe",
+          "small-api-benchmark/Domain.cs": "3c9b446c46af112ffcb761f274e079fd1de2c29148c445841cfd65a8601479f2",
+          "small-api-benchmark/Driver.cs": "8bd7b26c021583e4ba745f7040ece3ac6ff0a068c2eacdd3bfc9eb6e4ef8a9f6",
+          "small-api-benchmark/Program.cs": "43c11feeec4f84d80e074f6fa4dcd954080c080b12327a20acba276a7b5ac4e4",
+          "small-api-benchmark/Wire.cs": "4a3fe032c1b41095003cf700491c8cee5001c98463337e2ec7e6cdf54515e429",
+          "small-api-benchmark/SmallApi.Benchmark.csproj": "49962a9fe88c64f11ad2a70cb5eb91fc80064caf29506d7d145dacc89a89cf1f",
+          "small-api-benchmark/engine-lock.json": "ca41a0061d39d4fdc3c01d8939e3df25721fb519c70d622e69bd1e09f25614dc",
+          "small-api-benchmark/packages.lock.json": "5c25d6dee86fe210da2a928d304efa705ca49ce5632b63b3b2b024edd7ffe01b",
+          "tools/verify_small_api_benchmark.py": "0cd1dff99ae5e2fdb6c4767e3accbbff40a66c825277a9f6e30f011faaf09535",
+          "global.json": "be8663081fd82196ac86e65e9021d58d7c03a13574ce8cd4dc803937fc3ba30e",
+          "NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+          "tools/benchmark_small_api.py": "071cdb2611b76718aaa19830caf2f42b9551e3b966ed9e2fbe25707c6eb8bac0",
+          "tools/small_api_collector_evidence.py": "42f8c94f95ca0d94002cf5ee458642bbd229163f7908dbd511671350391f5a6b",
+          "tools/probe_small_api_collector.py": "1e4274d5ddcf1a375d3c36a15de8e325870746d7ca583ee1d680f4a3884821ce"
+        },
+        "assembly_sha256": "6a33182b156eb3f6eb75981409defa72fe74f8b692bd5516584d85eef9dc8c68",
+        "generated_registry_sha256": "b27f89a3e248ab45b6625f598196d8e6a6685f209b24a6e880a427ea966b2948",
+        "generated_registration_count": 3,
+        "generated_operation_ids": [
+          "catalog.get",
+          "catalog.list",
+          "catalog.set"
+        ],
+        "runtime_libraries": [
+          "Cehpalon.Engine.Composition/1.0.0",
+          "Cehpalon.Engine.Core/1.0.0",
+          "Cehpalon.Engine.Transports.GraphQL/1.0.0",
+          "Cehpalon.Engine.Transports.Http/1.0.0",
+          "ChilliCream.Nitro.App/32.0.2",
+          "GreenDonut.Abstractions/16.7.1",
+          "GreenDonut.Data.Abstractions/16.7.1",
+          "GreenDonut.Data.Primitives/16.7.1",
+          "GreenDonut.Data/16.7.1",
+          "GreenDonut/16.7.1",
+          "HotChocolate.Abstractions/16.7.1",
+          "HotChocolate.AspNetCore.Pipeline/16.7.1",
+          "HotChocolate.AspNetCore/16.7.1",
+          "HotChocolate.Authorization/16.7.1",
+          "HotChocolate.Caching.Memory/16.7.1",
+          "HotChocolate.CostAnalysis.Core/16.7.1",
+          "HotChocolate.CostAnalysis/16.7.1",
+          "HotChocolate.Execution.Abstractions/16.7.1",
+          "HotChocolate.Execution.Configuration.Abstractions/16.7.1",
+          "HotChocolate.Execution.Operation.Abstractions/16.7.1",
+          "HotChocolate.Execution.Pipeline/16.7.1",
+          "HotChocolate.Execution.Projections/16.7.1",
+          "HotChocolate.Features/16.7.1",
+          "HotChocolate.Fusion.Language/16.7.1",
+          "HotChocolate.Fusion.Utilities/16.7.1",
+          "HotChocolate.Language.SyntaxTree/16.7.1",
+          "HotChocolate.Language.Utf8.SyntaxTree/16.7.1",
+          "HotChocolate.Language.Utf8/16.7.1",
+          "HotChocolate.Language.Visitors/16.7.1",
+          "HotChocolate.Language.Web/16.7.1",
+          "HotChocolate.Language/16.7.1",
+          "HotChocolate.PersistedOperations.Abstractions/16.7.1",
+          "HotChocolate.PersistedOperations.Pipeline/16.7.1",
+          "HotChocolate.Primitives/16.7.1",
+          "HotChocolate.Subscriptions.InMemory/16.7.1",
+          "HotChocolate.Subscriptions/16.7.1",
+          "HotChocolate.Text.Json/16.7.1",
+          "HotChocolate.Transport.Formatters/16.7.1",
+          "HotChocolate.Transport.Sockets/16.7.1",
+          "HotChocolate.Types.Abstractions/16.7.1",
+          "HotChocolate.Types.CursorPagination.Extensions/16.7.1",
+          "HotChocolate.Types.CursorPagination/16.7.1",
+          "HotChocolate.Types.Errors/16.7.1",
+          "HotChocolate.Types.Mutations/16.7.1",
+          "HotChocolate.Types.Queries/16.7.1",
+          "HotChocolate.Types.Scalars.Upload/16.7.1",
+          "HotChocolate.Types/16.7.1",
+          "HotChocolate.Utilities.Base36/16.7.1",
+          "HotChocolate.Utilities.Buffers/16.7.1",
+          "HotChocolate.Utilities.DependencyInjection/16.7.1",
+          "HotChocolate.Utilities.Tasks/16.7.1",
+          "HotChocolate.Utilities/16.7.1",
+          "HotChocolate.Validation/16.7.1",
+          "HotChocolate/16.7.1",
+          "SmallApi.Benchmark/1.0.0",
+          "System.IO.Hashing/8.0.0",
+          "Yarp.ReverseProxy/2.3.0"
+        ],
+        "compiler_only_runtime_graph_absent": true,
+        "manifest_sha256": "e9356e4faa84c040195e72dfebdedbfeaec93eb103159685c6c58292104dac0e",
+        "execution_started_at_utc": "2026-10-28T13:43:13.246895+00:00",
+        "execution_completed_at_utc": "2026-10-28T13:48:50.2754292+00:00",
+        "actual_stopwatch_frequency": 10000000
+      },
+      "linux": {
+        "samples_source_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+        "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+        "status": "passed",
+        "committed_input_hashes_verified": 15,
+        "source_sha256": {
+          "small-api-benchmark/BenchmarkHost.cs": "877100b0da7c4012d8e39c176c7d45fb676bcf96d465efb1fab6c748b51f10bc",
+          "small-api-benchmark/Conformance.cs": "9a8e14aa2dd74885a4e8ef103c64c4a4f41ed58c3819c98517d5e2535b494bfe",
+          "small-api-benchmark/Domain.cs": "3c9b446c46af112ffcb761f274e079fd1de2c29148c445841cfd65a8601479f2",
+          "small-api-benchmark/Driver.cs": "8bd7b26c021583e4ba745f7040ece3ac6ff0a068c2eacdd3bfc9eb6e4ef8a9f6",
+          "small-api-benchmark/Program.cs": "43c11feeec4f84d80e074f6fa4dcd954080c080b12327a20acba276a7b5ac4e4",
+          "small-api-benchmark/Wire.cs": "4a3fe032c1b41095003cf700491c8cee5001c98463337e2ec7e6cdf54515e429",
+          "small-api-benchmark/SmallApi.Benchmark.csproj": "49962a9fe88c64f11ad2a70cb5eb91fc80064caf29506d7d145dacc89a89cf1f",
+          "small-api-benchmark/engine-lock.json": "ca41a0061d39d4fdc3c01d8939e3df25721fb519c70d622e69bd1e09f25614dc",
+          "small-api-benchmark/packages.lock.json": "5c25d6dee86fe210da2a928d304efa705ca49ce5632b63b3b2b024edd7ffe01b",
+          "tools/verify_small_api_benchmark.py": "0cd1dff99ae5e2fdb6c4767e3accbbff40a66c825277a9f6e30f011faaf09535",
+          "global.json": "be8663081fd82196ac86e65e9021d58d7c03a13574ce8cd4dc803937fc3ba30e",
+          "NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+          "tools/benchmark_small_api.py": "071cdb2611b76718aaa19830caf2f42b9551e3b966ed9e2fbe25707c6eb8bac0",
+          "tools/small_api_collector_evidence.py": "42f8c94f95ca0d94002cf5ee458642bbd229163f7908dbd511671350391f5a6b",
+          "tools/probe_small_api_collector.py": "1e4274d5ddcf1a375d3c36a15de8e325870746d7ca583ee1d680f4a3884821ce"
+        },
+        "assembly_sha256": "742451b86f81c439938d93aad19a0f568133fe9ff2910bae4458f6633cdcfdd4",
+        "generated_registry_sha256": "b27f89a3e248ab45b6625f598196d8e6a6685f209b24a6e880a427ea966b2948",
+        "generated_registration_count": 3,
+        "generated_operation_ids": [
+          "catalog.get",
+          "catalog.list",
+          "catalog.set"
+        ],
+        "runtime_libraries": [
+          "Cehpalon.Engine.Composition/1.0.0",
+          "Cehpalon.Engine.Core/1.0.0",
+          "Cehpalon.Engine.Transports.GraphQL/1.0.0",
+          "Cehpalon.Engine.Transports.Http/1.0.0",
+          "ChilliCream.Nitro.App/32.0.2",
+          "GreenDonut.Abstractions/16.7.1",
+          "GreenDonut.Data.Abstractions/16.7.1",
+          "GreenDonut.Data.Primitives/16.7.1",
+          "GreenDonut.Data/16.7.1",
+          "GreenDonut/16.7.1",
+          "HotChocolate.Abstractions/16.7.1",
+          "HotChocolate.AspNetCore.Pipeline/16.7.1",
+          "HotChocolate.AspNetCore/16.7.1",
+          "HotChocolate.Authorization/16.7.1",
+          "HotChocolate.Caching.Memory/16.7.1",
+          "HotChocolate.CostAnalysis.Core/16.7.1",
+          "HotChocolate.CostAnalysis/16.7.1",
+          "HotChocolate.Execution.Abstractions/16.7.1",
+          "HotChocolate.Execution.Configuration.Abstractions/16.7.1",
+          "HotChocolate.Execution.Operation.Abstractions/16.7.1",
+          "HotChocolate.Execution.Pipeline/16.7.1",
+          "HotChocolate.Execution.Projections/16.7.1",
+          "HotChocolate.Features/16.7.1",
+          "HotChocolate.Fusion.Language/16.7.1",
+          "HotChocolate.Fusion.Utilities/16.7.1",
+          "HotChocolate.Language.SyntaxTree/16.7.1",
+          "HotChocolate.Language.Utf8.SyntaxTree/16.7.1",
+          "HotChocolate.Language.Utf8/16.7.1",
+          "HotChocolate.Language.Visitors/16.7.1",
+          "HotChocolate.Language.Web/16.7.1",
+          "HotChocolate.Language/16.7.1",
+          "HotChocolate.PersistedOperations.Abstractions/16.7.1",
+          "HotChocolate.PersistedOperations.Pipeline/16.7.1",
+          "HotChocolate.Primitives/16.7.1",
+          "HotChocolate.Subscriptions.InMemory/16.7.1",
+          "HotChocolate.Subscriptions/16.7.1",
+          "HotChocolate.Text.Json/16.7.1",
+          "HotChocolate.Transport.Formatters/16.7.1",
+          "HotChocolate.Transport.Sockets/16.7.1",
+          "HotChocolate.Types.Abstractions/16.7.1",
+          "HotChocolate.Types.CursorPagination.Extensions/16.7.1",
+          "HotChocolate.Types.CursorPagination/16.7.1",
+          "HotChocolate.Types.Errors/16.7.1",
+          "HotChocolate.Types.Mutations/16.7.1",
+          "HotChocolate.Types.Queries/16.7.1",
+          "HotChocolate.Types.Scalars.Upload/16.7.1",
+          "HotChocolate.Types/16.7.1",
+          "HotChocolate.Utilities.Base36/16.7.1",
+          "HotChocolate.Utilities.Buffers/16.7.1",
+          "HotChocolate.Utilities.DependencyInjection/16.7.1",
+          "HotChocolate.Utilities.Tasks/16.7.1",
+          "HotChocolate.Utilities/16.7.1",
+          "HotChocolate.Validation/16.7.1",
+          "HotChocolate/16.7.1",
+          "SmallApi.Benchmark/1.0.0",
+          "System.IO.Hashing/8.0.0",
+          "Yarp.ReverseProxy/2.3.0"
+        ],
+        "compiler_only_runtime_graph_absent": true,
+        "manifest_sha256": "f98ae48cceb091cc7acf332a6dc5d91707de0b32b8c40c6c2871f8eeed299919",
+        "execution_started_at_utc": "2026-10-28T13:50:19.260504+00:00",
+        "execution_completed_at_utc": "2026-10-28T13:51:44.5428768+00:00",
+        "actual_stopwatch_frequency": 1000000000
+      }
+    },
+    "functional": {
+      "observed_at_utc": "2026-10-28T13:54:29.677479+00:00",
+      "status": "passed_with_explicit_boundaries",
+      "scope": "Read-only independent audit of final03functional JSON records and current source checks; no build,rerun,measurement,commit orremote write.",
+      "findings": [],
+      "source_files_audited_sha256": {
+        "Conformance.cs": "9a8e14aa2dd74885a4e8ef103c64c4a4f41ed58c3819c98517d5e2535b494bfe",
+        "Domain.cs": "3c9b446c46af112ffcb761f274e079fd1de2c29148c445841cfd65a8601479f2",
+        "BenchmarkHost.cs": "877100b0da7c4012d8e39c176c7d45fb676bcf96d465efb1fab6c748b51f10bc",
+        "Wire.cs": "4a3fe032c1b41095003cf700491c8cee5001c98463337e2ec7e6cdf54515e429"
+      },
+      "hosts": {
+        "windows": {
+          "evidence_root": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\collector-conformance-win-02\\conformance",
+          "summary_status": "passed",
+          "dataset_sha256": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+          "ordered_corpus_sha256": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+          "independently_replayed_expected_final_sha256": "a285ae0e130dbf825d8944028f5a3b600df27b914949e2c66dbe5f01dd8a9a0b",
+          "raw_corpus_cases": 4000,
+          "raw_cancellation_records_included_in_corpus": 400,
+          "maximum_server_ack_after_abort_ms": 1.2032,
+          "worst_cancel_lane": "baseline-http",
+          "worst_cancel_case_index": 9,
+          "repeat_lifecycle_cycles": 120,
+          "maximum_repeat_shutdown_ms": 6.5286,
+          "maximum_shutdown_lane": "baseline-http",
+          "maximum_shutdown_cycle": 14,
+          "api_only_exercise_requests_from_source_loop_and_completed_checks": 20000,
+          "configuration_pure_preflight_checks": 5,
+          "lanes": [
+            {
+              "lane": "baseline-http",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 1.2032,
+              "minimum_actual_abort_after_start_ms": 50.5019,
+              "maximum_actual_abort_after_start_ms": 65.8271,
+              "actual_declared_stopwatch_frequency_hz": 10000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 6.5286,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 0,
+                "graphQLServices": 0,
+                "forbiddenFactories": 0,
+                "endpointCount": 8,
+                "graphQLDiagnosticConstructors": 0,
+                "graphQLExecutorInitializations": 0,
+                "graphQLSchemasReady": 0
+              },
+              "host_checks": 6
+            },
+            {
+              "lane": "baseline-graphql",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 0.609,
+              "minimum_actual_abort_after_start_ms": 52.7693,
+              "maximum_actual_abort_after_start_ms": 59.4146,
+              "actual_declared_stopwatch_frequency_hz": 10000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 4.8231,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 1,
+                "graphQLServices": 28,
+                "forbiddenFactories": 0,
+                "endpointCount": 9,
+                "graphQLDiagnosticConstructors": 1,
+                "graphQLExecutorInitializations": 1,
+                "graphQLSchemasReady": 1
+              },
+              "host_checks": 5
+            },
+            {
+              "lane": "engine-http",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 0.532,
+              "minimum_actual_abort_after_start_ms": 55.1879,
+              "maximum_actual_abort_after_start_ms": 60.9509,
+              "actual_declared_stopwatch_frequency_hz": 10000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 4.9867,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 0,
+                "graphQLServices": 0,
+                "forbiddenFactories": 0,
+                "endpointCount": 8,
+                "graphQLDiagnosticConstructors": 0,
+                "graphQLExecutorInitializations": 0,
+                "graphQLSchemasReady": 0
+              },
+              "host_checks": 6
+            },
+            {
+              "lane": "engine-graphql",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 0.5547,
+              "minimum_actual_abort_after_start_ms": 53.2229,
+              "maximum_actual_abort_after_start_ms": 60.7034,
+              "actual_declared_stopwatch_frequency_hz": 10000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 4.0535,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 1,
+                "graphQLServices": 28,
+                "forbiddenFactories": 0,
+                "endpointCount": 9,
+                "graphQLDiagnosticConstructors": 1,
+                "graphQLExecutorInitializations": 1,
+                "graphQLSchemasReady": 1
+              },
+              "host_checks": 5
+            }
+          ],
+          "evidence_json_sha256": {
+            "configuration-preflight.json": "b32b0e6ec23fdde2b85c1607d4a527a54164ac8921bde5515232c9cf9c05b788",
+            "dataset.json": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+            "ordered-corpus.json": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+            "predeclared.json": "34c028b38e97cb31b12f1a76be18cdbc3460a6ae78232458dea026890830a7a1",
+            "summary.json": "42c1cd1146502eae21995e1dbaa82577398329191c0ad555dc4c0ef44f4cc335",
+            "baseline-graphql/case-results.json": "e4f1b0ef7ed4844fa8818010bc6e378120f2e872d752ba73668f182eeb2a8c6e",
+            "baseline-graphql/checks.json": "b8a1700ecf28f0e5c2aed19c96a3a933c712e64122fdd46c1a0de044f02b8ce7",
+            "baseline-graphql/lifecycle-cycles.json": "716f79c1a9b455968e5e8acaa7458873231e9112411afabb40519231d018b3bb",
+            "baseline-graphql/main-host-probes.json": "2db23af483cdec1b2efe6ae3b5002bf11d2844c4e03ad43c95bbf177f7afc999",
+            "baseline-http/case-results.json": "decc75bc73e40636b65faa017fefa74cbcbe213268011c364609a737f08fad6c",
+            "baseline-http/checks.json": "2fce5c0f3d8777a1b6a31299bb9f1da30903942693dda8c901ff6a84d686fb80",
+            "baseline-http/lifecycle-cycles.json": "1490df56a5a0889240025a517c50112f1c8ba23186b6bb3bce49e451f50d1254",
+            "baseline-http/main-host-probes.json": "7aeeb2f4aca40e431ad4471be23a17cc84d75c0e53110294c0d6e46f8012d0a3",
+            "engine-graphql/case-results.json": "975c7bde1d9190ac2af372a9ea14e8b2093446bc90ba9afbcc93cf2b9b80d18c",
+            "engine-graphql/checks.json": "b8a1700ecf28f0e5c2aed19c96a3a933c712e64122fdd46c1a0de044f02b8ce7",
+            "engine-graphql/lifecycle-cycles.json": "7ff0705c32087a2b4cfb44df69a66219f80f2b06599dad70587f30e64873b74b",
+            "engine-graphql/main-host-probes.json": "2db23af483cdec1b2efe6ae3b5002bf11d2844c4e03ad43c95bbf177f7afc999",
+            "engine-http/case-results.json": "fda9b82f7e9be5abd691acd5c1ffbe0e4a85a0dc7edcf9b20b28f43b1143e55c",
+            "engine-http/checks.json": "2fce5c0f3d8777a1b6a31299bb9f1da30903942693dda8c901ff6a84d686fb80",
+            "engine-http/lifecycle-cycles.json": "92757b753e7f3f7808fe5ca0033ae456916a2b24e1cec6560d847ae5c7203134",
+            "engine-http/main-host-probes.json": "7aeeb2f4aca40e431ad4471be23a17cc84d75c0e53110294c0d6e46f8012d0a3"
+          },
+          "maximum_server_ack_after_abort_raw_tick_reconstruction_ms": 1.2032
+        },
+        "linux": {
+          "evidence_root": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\collector-conformance-linux-02\\conformance",
+          "summary_status": "passed",
+          "dataset_sha256": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+          "ordered_corpus_sha256": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+          "independently_replayed_expected_final_sha256": "a285ae0e130dbf825d8944028f5a3b600df27b914949e2c66dbe5f01dd8a9a0b",
+          "raw_corpus_cases": 4000,
+          "raw_cancellation_records_included_in_corpus": 400,
+          "maximum_server_ack_after_abort_ms": 1.3307,
+          "worst_cancel_lane": "baseline-http",
+          "worst_cancel_case_index": 9,
+          "repeat_lifecycle_cycles": 120,
+          "maximum_repeat_shutdown_ms": 1.6362,
+          "maximum_shutdown_lane": "engine-graphql",
+          "maximum_shutdown_cycle": 15,
+          "api_only_exercise_requests_from_source_loop_and_completed_checks": 20000,
+          "configuration_pure_preflight_checks": 5,
+          "lanes": [
+            {
+              "lane": "baseline-http",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 1.3307,
+              "minimum_actual_abort_after_start_ms": 50.2751,
+              "maximum_actual_abort_after_start_ms": 55.8466,
+              "actual_declared_stopwatch_frequency_hz": 1000000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 1.1313,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 0,
+                "graphQLServices": 0,
+                "forbiddenFactories": 0,
+                "endpointCount": 8,
+                "graphQLDiagnosticConstructors": 0,
+                "graphQLExecutorInitializations": 0,
+                "graphQLSchemasReady": 0
+              },
+              "host_checks": 6
+            },
+            {
+              "lane": "baseline-graphql",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 0.4503,
+              "minimum_actual_abort_after_start_ms": 50.2964,
+              "maximum_actual_abort_after_start_ms": 55.8294,
+              "actual_declared_stopwatch_frequency_hz": 1000000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 0.6621,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 1,
+                "graphQLServices": 28,
+                "forbiddenFactories": 0,
+                "endpointCount": 9,
+                "graphQLDiagnosticConstructors": 1,
+                "graphQLExecutorInitializations": 1,
+                "graphQLSchemasReady": 1
+              },
+              "host_checks": 5
+            },
+            {
+              "lane": "engine-http",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 0.4194,
+              "minimum_actual_abort_after_start_ms": 50.3457,
+              "maximum_actual_abort_after_start_ms": 54.8631,
+              "actual_declared_stopwatch_frequency_hz": 1000000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 0.6361,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 0,
+                "graphQLServices": 0,
+                "forbiddenFactories": 0,
+                "endpointCount": 8,
+                "graphQLDiagnosticConstructors": 0,
+                "graphQLExecutorInitializations": 0,
+                "graphQLSchemasReady": 0
+              },
+              "host_checks": 6
+            },
+            {
+              "lane": "engine-graphql",
+              "raw_cases": 1000,
+              "cancellation_records": 100,
+              "maximum_ack_ms": 0.4073,
+              "minimum_actual_abort_after_start_ms": 50.3401,
+              "maximum_actual_abort_after_start_ms": 54.9542,
+              "actual_declared_stopwatch_frequency_hz": 1000000000,
+              "lifecycle_cycles": 30,
+              "maximum_shutdown_ms": 1.6362,
+              "probes": {
+                "hostFactories": 1,
+                "apiFactories": 1,
+                "graphQLFactories": 1,
+                "graphQLServices": 28,
+                "forbiddenFactories": 0,
+                "endpointCount": 9,
+                "graphQLDiagnosticConstructors": 1,
+                "graphQLExecutorInitializations": 1,
+                "graphQLSchemasReady": 1
+              },
+              "host_checks": 5
+            }
+          ],
+          "evidence_json_sha256": {
+            "configuration-preflight.json": "4b856e957fea7b3341ef6bc87e7a07b9dcbb725b6d7346460b3c3c6a2f6c170a",
+            "dataset.json": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+            "ordered-corpus.json": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+            "predeclared.json": "c62a307df14ad9b806f6445c6d31e2bcf6907cc003f5ba8701f2c703c6676a46",
+            "summary.json": "db60c3460f310691350b19b661e129d80f39033398c09034fe79cfc6e669e22c",
+            "baseline-graphql/case-results.json": "71cf71143f84085c31fb6bfe45138b23d0a8e6a45de2681d25dfe1760ff3b0fa",
+            "baseline-graphql/checks.json": "9beaa5e0976cc042dbf2ec100656a821735fe16ad9fa1a3de29350f46a75d9d3",
+            "baseline-graphql/lifecycle-cycles.json": "97be0f151a118886db63fe7f4c97f6ec0dece53f6ee289e205c8f698ef1deda0",
+            "baseline-graphql/main-host-probes.json": "e23209086b4eebaca54cd8d68609cd3e7afa6a0dcaa0ffd8f5f6661aa2642525",
+            "baseline-http/case-results.json": "8227ea2a9016f6c06386c65e150926d1ecba0ee46560018b109773ee3f842363",
+            "baseline-http/checks.json": "5622b79c1014c2ae4606788c6d912da46d397d18537e00059ca940faa5a725bd",
+            "baseline-http/lifecycle-cycles.json": "59d300a13b9435a89b423d13a983713f8fe9e7737a5a947fcc661929616f8e94",
+            "baseline-http/main-host-probes.json": "076ef8c14669f108850adcada75e5b47e27a5508cebb4c5f022ad18a39452a04",
+            "engine-graphql/case-results.json": "96d6f5481359defee2d8772960685ffe4f094466750eba2cea224d3ddf0906e4",
+            "engine-graphql/checks.json": "9beaa5e0976cc042dbf2ec100656a821735fe16ad9fa1a3de29350f46a75d9d3",
+            "engine-graphql/lifecycle-cycles.json": "2ab1491e41c9a9922fb7040a8ef98401c9f1c28e485ef0e7692a3d3e46a6404b",
+            "engine-graphql/main-host-probes.json": "e23209086b4eebaca54cd8d68609cd3e7afa6a0dcaa0ffd8f5f6661aa2642525",
+            "engine-http/case-results.json": "e8617b54f40f2273f55210333558ee4c2ef61b87e0f78d189f734308fe8b4566",
+            "engine-http/checks.json": "5622b79c1014c2ae4606788c6d912da46d397d18537e00059ca940faa5a725bd",
+            "engine-http/lifecycle-cycles.json": "d0084c111be1a682d4d8922bca5da3a5bc3bdecebe08048d851123f1852b54cd",
+            "engine-http/main-host-probes.json": "076ef8c14669f108850adcada75e5b47e27a5508cebb4c5f022ad18a39452a04"
+          },
+          "maximum_server_ack_after_abort_raw_tick_reconstruction_ms": 1.330781
+        }
+      },
+      "totals": {
+        "raw_corpus_executions": 8000,
+        "cancellations_included_in_corpus": 800,
+        "same_process_lifecycle_cycles": 240,
+        "api_only_exercise_requests_from_completed_checks": 40000
+      },
+      "proof_boundaries": [
+        "The400cancellationcases per host are INCLUDED in4000corpus executions; do not addthem again as4400cases.",
+        "Actual Stopwatch frequency is now retained in each predeclared header. Raw intervals are checked against the unchanged100ms gate. Only representation comparison allows0.00011ms for100ns TimeSpan quantization.",
+        "Responsebody equality andactualfinalstorestate were checked bytheexecutionharness. Raw case rows retain status/code andassertion outcomes, not allresponse bodies oractual final snapshots; thisaudit independently replays the frozen expected model, not absent response bytes.",
+        "The20000API-only requests per host are supported by deterministic10000request loops andtwo completed high-level checks, not20000separately retained response records.",
+        "The120repeat lifecycle cycles per host are same-process host restarts, separate from benchmark fresh-process startup measurements.",
+        "Invalid/all-off/cycle evidence here is pure Composition compiler preflight. It does not itself execute a public BenchmarkHost with anall-off/invalid configuration; protectedconsumer host tests are separate.",
+        "This is apublic synthetic10000record fixture withfixed server-owned public identity; it doesnotprove JWT/realIdP/tenant/provider/database/production isolation.",
+        "Zero forbidden factory andGraphQL lifecycle probes coverthese explicitfixture paths; unimplemented provider traps are notproviderqualification.",
+        "Windows26H2 remains observational andWSL doesnotclearsupported-Windows#3. No qualification orperformance promotion inferred fromthisfunctional audit."
+      ]
+    },
+    "native_staging": {
+      "observed_at_utc": "2026-10-28T13:54:36.279672+00:00",
+      "status": "passed",
+      "findings": [],
+      "samples_source_revision": "a3bd8b5c5747440c81124774ac10b6451d88ff82",
+      "engine_revision": "6804271d429106864e01e4ec546a41dff771f84b",
+      "app_regular_files": 67,
+      "app_bytes": 23281577,
+      "app_source_and_target_all_hashes_independently_checked": true,
+      "app_assembly_sha256": "742451b86f81c439938d93aad19a0f568133fe9ff2910bae4458f6633cdcfdd4",
+      "sdk_regular_files_independently_hashed": 4178,
+      "sdk_regular_bytes": 549400671,
+      "sdk_symlink_targets_independently_checked": 1668,
+      "sdk_target": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk",
+      "sdk_manifest_sha256": "30ac24e0c416abc09d177b5fbcd621221e747f76f3e62a40cc1e252ac4196344",
+      "sdk_link_manifest_sha256": "3519204e8415afb5fe9e378233ac1d8c931252d79f90218393a2d1e573ae44a7",
+      "link_comparison": "Declared Windows separators normalized to POSIX and normpath; no link-target semantic change",
+      "scope": "Staging bytes and link identity only; no SDK process, test, request or timing. Actual loaded-module identity remains for runtime observation; no dedicated-resource/platform qualification."
+    },
+    "scope": "Prior independently checked raw conformance/staging reused unchanged; no runtime rerun or large SDK rehash in closure audit.",
+    "fresh_raw_json_hashes_verified": 42
+  },
+  "retained01_negative": {
+    "path": "/mnt/d/Cephalon/.worktrees/w2-collector-readiness/.local/precanonical-audit04/conformance01-negative.json",
+    "sha256": "465095b8aa01f6f3e3dd7b05c22538f4312c89296b6f2300b3ec8533987a57bd",
+    "failed_case": {
+      "lane": "baseline-http",
+      "record": {
+        "index": 409,
+        "operation": "set",
+        "passed": false,
+        "expectedCode": "operation.cancelled",
+        "requestStartedTimestamp": 1962826590747,
+        "scheduledAbortTimestamp": 1962827090747,
+        "actualAbortTimestamp": 1962827142176,
+        "handlerEnteredTimestamp": 1962827145558,
+        "serverAcknowledgedTimestamp": 1962827147704,
+        "actualAbortAfterStartMilliseconds": 55.1429,
+        "serverAckAfterAbortMilliseconds": 0.5528,
+        "handlerEnteredBeforeAbort": false,
+        "noMutationAfterAck": true,
+        "ownedHandlerCompleted": true,
+        "failure": "The 5-second delayed handler had not entered before scheduled client abort."
+      },
+      "handler_entry_relative_to_abort_ms": 0.3382
+    },
+    "interpretation": "Windows01 fails in-flight cancellation. Sequential02 is a whole predeclared repeat, not replacement of one case. No cause from concurrency is established."
+  },
+  "probe": {
+    "runs": [
+      {
+        "run": "http/00-baseline",
+        "process_id": 1305,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.664552,
+        "raw_sha256": "ad173d75899d8c31c771f0b0871e6ec9c9fb5139a48ce888f6ce8c38fe10c1e4",
+        "manifest_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+      },
+      {
+        "run": "http/00-engine",
+        "process_id": 1357,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.707294,
+        "raw_sha256": "f74e99abdc2f6865e9aab17d5aed3540f1da11e1a075d634e7bdd33b87fedd98",
+        "manifest_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+      },
+      {
+        "run": "http/01-engine",
+        "process_id": 1412,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.642588,
+        "raw_sha256": "5ace098dc71f3e9c384b55ae0481e304a7d22931f7f38753ad0c53ca52bca7e4",
+        "manifest_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+      },
+      {
+        "run": "http/01-baseline",
+        "process_id": 1461,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 31.594139,
+        "raw_sha256": "4a4da77c584128b4690b7d89d039d0ca47ebff831d9c29bdee57735b3118bb05",
+        "manifest_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+      },
+      {
+        "run": "http/02-baseline",
+        "process_id": 1509,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 31.570055,
+        "raw_sha256": "fc5a785ba31ee77eec1f24429eddd300e3862c88fa357edca8c1db53199f58de",
+        "manifest_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+      },
+      {
+        "run": "http/02-engine",
+        "process_id": 1557,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.564853,
+        "raw_sha256": "8ae4659ecc312a48c38736fd92c24a66a5f5dcf7512a1bdac6ed6e8515d19534",
+        "manifest_sha256": "16418e795e21c5eb098a04841a92a12645b1b36997bc33e1fd39ff1123484748"
+      },
+      {
+        "run": "graphql/00-baseline",
+        "process_id": 1606,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.726373,
+        "raw_sha256": "a9005145c779386c979bd9c45280b78306d7c5b63fcca1514f52c5734f324cc6",
+        "manifest_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+      },
+      {
+        "run": "graphql/00-engine",
+        "process_id": 1656,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.715885,
+        "raw_sha256": "1bd792e673fdbe2d047ce057905b82cd0e7b9a713a0a105e285372b35ef0d1cd",
+        "manifest_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+      },
+      {
+        "run": "graphql/01-engine",
+        "process_id": 1711,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.830287,
+        "raw_sha256": "7511fc5dd4eb3a275eaa7e6806443469525059f6b538f4f19fc661f4f239517f",
+        "manifest_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+      },
+      {
+        "run": "graphql/01-baseline",
+        "process_id": 1765,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.745594,
+        "raw_sha256": "b377a0a088ccd5940aa297905b0066ab655f14fac3baa56e3effa57bc979bddc",
+        "manifest_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+      },
+      {
+        "run": "graphql/02-baseline",
+        "process_id": 1819,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.729513,
+        "raw_sha256": "13278217fd3a53f4e1e79cbac13a613d98b3070ef8c55b53a967e6c4e72f9704",
+        "manifest_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+      },
+      {
+        "run": "graphql/02-engine",
+        "process_id": 1874,
+        "actual": 4000,
+        "planned": 360000,
+        "operations": {
+          "get": 3200,
+          "list": 600,
+          "set": 200
+        },
+        "prepared_readonly": 130,
+        "held_physical_load": 128,
+        "tls_before": 129,
+        "tls_after": 129,
+        "new_tls": 0,
+        "state_hash": "8c849f782701cc524da2ebd0b9dcc78b81efef8ad6a14dfd437e1c2abd2ab9cc",
+        "shutdown_ms": 63.930412,
+        "raw_sha256": "81ad9c4e80e686832bb6c36060cd85c61a76928570ab5a01472395558ff8a686",
+        "manifest_sha256": "6f66b64fbfddd5be88fc7cbd2bd69ca783305094a8d06785fcf86762da353c5c"
+      }
+    ],
+    "actual_offered": 48000,
+    "planned_offered": 4320000,
+    "warmup_measured_runs": 0,
+    "scope": "128 simultaneously held HTTP1.1 bodies plus fresh-load TLS128 prove readiness cohort; IDs corroborate, not per-request socket tracing. No capacity acceptance budget scored."
+  },
+  "proof_closure": {
+    "offline": {
+      "scope": "Offline record conservation and serializer/manifest equivalence; no request traffic or performance measurement",
+      "passed": 10,
+      "failed": 0,
+      "checks": [
+        {
+          "name": "preparation acceptspositive HTTP1.1 withoutconsumingbody",
+          "passed": true
+        },
+        {
+          "name": "preparation rejectszerobody ConnectionClose HTTP2 andunframedunknownbody",
+          "passed": true
+        },
+        {
+          "name": "concurrent unique indices retained once",
+          "passed": true
+        },
+        {
+          "name": "duplicate index rejected without replacing original",
+          "passed": true
+        },
+        {
+          "name": "negative and out-of-range indices rejected",
+          "passed": true
+        },
+        {
+          "name": "missing observation cannot pass coverage",
+          "passed": true
+        },
+        {
+          "name": "misindexed observation cannot pass coverage",
+          "passed": true
+        },
+        {
+          "name": "all128 raw rows retain prior schema and exact field serialization",
+          "passed": true
+        },
+        {
+          "name": "partial managed-failure evidence retains every observed row without invented missing row",
+          "passed": true
+        },
+        {
+          "name": "request builder and manifest remain byte-identical to prior180000-offer GraphQL series",
+          "passed": true
+        }
+      ]
+    },
+    "shared_metadata_tests": {
+      "count": 29,
+      "transcript": "/mnt/d/Cephalon/.worktrees/w2-collector-probe/.local/collector-metadata-tests04.txt",
+      "sha256": "f44965ef343ca696aac62b26c46069dde072506202922937d0dbe68685acb69a"
+    },
+    "classifier": {
+      "scope": "Offline classification/metadata robustness; no workload execution or capacity result",
+      "assertions": 16,
+      "passed": true,
+      "cases": [
+        {
+          "name": "retained actual 37-drop count-consistent report",
+          "expected_classification": true,
+          "passed": true
+        },
+        {
+          "name": "boolean offered count",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "offered schedule mismatch",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "lost count conservation",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "unexplained error total",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "drop/error kind mismatch",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "boolean error-kind count",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "empty error-kind label",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "impossible successful drain count",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "nonboolean state",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "successful report is never a failed preflight",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "count-correct semantic state failure retained",
+          "expected_classification": true,
+          "passed": true
+        },
+        {
+          "name": "incomplete or incompatible report rejected",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "incomplete or incompatible report rejected",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "incomplete or incompatible report rejected",
+          "expected_classification": false,
+          "passed": true
+        },
+        {
+          "name": "incomplete or incompatible report rejected",
+          "expected_classification": false,
+          "passed": true
+        }
+      ]
+    },
+    "peer_actual_tls": {
+      "scope": "Synthetic owned TLS robustness tests; not a capacity or benchmark run",
+      "driverDllSha256": "3abc433c4cc9b3f86d2effca1efb2452a9e84b8a8e30c1ff66c6ed9768c7f8fb",
+      "scriptSha256": "905699c098ebc852e898f5028ddf435feb66db5cb70039e9c9ae6d3401c9b292",
+      "cases": [
+        {
+          "case": "connection-close",
+          "exitCode": 1,
+          "elapsedSeconds": 1.0743250410014298,
+          "passed": true,
+          "checks": {
+            "nonzero_managed_exit": true,
+            "joined_all_started_preparation_rows": true,
+            "retained_tls_and_client": true,
+            "no_later_phase_artifacts": true,
+            "no_later_phase_flags": true,
+            "bounded_exit": true,
+            "fixture_workers_joined": true,
+            "preparation_rejected": true,
+            "no_phase_evidence": true
+          },
+          "detail": {
+            "preparationRows": 130,
+            "preparationSuccessful": 2,
+            "tlsConnections": 129,
+            "status": "preparation-failed"
+          },
+          "fixtureCatalogRequests": 130,
+          "fixturePeakWorkers": 128
+        },
+        {
+          "case": "empty-body",
+          "exitCode": 1,
+          "elapsedSeconds": 0.8725175829968066,
+          "passed": true,
+          "checks": {
+            "nonzero_managed_exit": true,
+            "joined_all_started_preparation_rows": true,
+            "retained_tls_and_client": true,
+            "no_later_phase_artifacts": true,
+            "no_later_phase_flags": true,
+            "bounded_exit": true,
+            "fixture_workers_joined": true,
+            "preparation_rejected": true,
+            "no_phase_evidence": true
+          },
+          "detail": {
+            "preparationRows": 130,
+            "preparationSuccessful": 2,
+            "tlsConnections": 129,
+            "status": "preparation-failed"
+          },
+          "fixtureCatalogRequests": 130,
+          "fixturePeakWorkers": 129
+        },
+        {
+          "case": "invalid-body",
+          "exitCode": 1,
+          "elapsedSeconds": 0.8731593330012402,
+          "passed": true,
+          "checks": {
+            "nonzero_managed_exit": true,
+            "joined_all_started_preparation_rows": true,
+            "retained_tls_and_client": true,
+            "no_later_phase_artifacts": true,
+            "no_later_phase_flags": true,
+            "bounded_exit": true,
+            "fixture_workers_joined": true,
+            "preparation_rejected": true,
+            "no_phase_evidence": true
+          },
+          "detail": {
+            "preparationRows": 130,
+            "preparationSuccessful": 129,
+            "tlsConnections": 129,
+            "status": "preparation-failed"
+          },
+          "fixtureCatalogRequests": 130,
+          "fixturePeakWorkers": 129
+        },
+        {
+          "case": "header-timeout",
+          "exitCode": 1,
+          "elapsedSeconds": 30.351927449002687,
+          "passed": true,
+          "checks": {
+            "nonzero_managed_exit": true,
+            "joined_all_started_preparation_rows": true,
+            "retained_tls_and_client": true,
+            "no_later_phase_artifacts": true,
+            "no_later_phase_flags": true,
+            "bounded_exit": true,
+            "fixture_workers_joined": true,
+            "preparation_rejected": true,
+            "no_phase_evidence": true,
+            "one_shared_30s_deadline": true
+          },
+          "detail": {
+            "preparationSeconds": 30.014947617,
+            "preparationRows": 130,
+            "preparationSuccessful": 2,
+            "tlsConnections": 129,
+            "status": "preparation-failed"
+          },
+          "fixtureCatalogRequests": 130,
+          "fixturePeakWorkers": 129
+        },
+        {
+          "case": "phase-503",
+          "exitCode": 1,
+          "elapsedSeconds": 3.0277790399995865,
+          "passed": true,
+          "checks": {
+            "nonzero_managed_exit": true,
+            "joined_all_started_preparation_rows": true,
+            "retained_tls_and_client": true,
+            "no_later_phase_artifacts": true,
+            "no_later_phase_flags": true,
+            "bounded_exit": true,
+            "fixture_workers_joined": true,
+            "128_distinct_live_preparation_connections": true,
+            "all_4000_raw_rows_retained": true,
+            "failed_preflight_count_conservation": true,
+            "structured_phase_coherence": true,
+            "phase_tls_retained": true
+          },
+          "detail": {
+            "errorKinds": {
+              "http.503": 4000
+            },
+            "phaseTlsBefore": 129,
+            "phaseTlsAfter": 129,
+            "preparationRows": 130,
+            "preparationSuccessful": 130,
+            "tlsConnections": 129,
+            "status": "collector-preflight-failed"
+          },
+          "fixtureCatalogRequests": 4130,
+          "fixturePeakWorkers": 129
+        }
+      ],
+      "passed": true,
+      "files": [
+        {
+          "path": "connection-close/collector-failure.json",
+          "bytes": 26567,
+          "sha256": "f15fa783b999225ee2e3ee5cff0c040e0dd992bbdc4c24a5623569638bd86d35"
+        },
+        {
+          "path": "connection-close/collector-preparation.json",
+          "bytes": 114044,
+          "sha256": "3b975e34c74cd9fc1c4c98b21c267d6cc928030a133326a481e77d098f64bade"
+        },
+        {
+          "path": "connection-close/offered-manifest.jsonl.gz",
+          "bytes": 153427,
+          "sha256": "c5e94dfa40f12db49f649ac0e36f2d2623711fd41ce0a11d5799c85ff30216ad"
+        },
+        {
+          "path": "connection-close/robustness-audit.json",
+          "bytes": 648,
+          "sha256": "9e2d3aea3939f56e52575dd4de806db437d2996c6b846bee36c554a174870ce2"
+        },
+        {
+          "path": "connection-close/stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "connection-close/stdout.txt",
+          "bytes": 271,
+          "sha256": "1065988d827063f14c3d743d3ef55a8a208c3df6a859e9626a964c3f3cb049f8"
+        },
+        {
+          "path": "empty-body/collector-failure.json",
+          "bytes": 26567,
+          "sha256": "ba6fa277363ff8375aaa73728e55b24ce7e74c5566a27674247fd1af40314222"
+        },
+        {
+          "path": "empty-body/collector-preparation.json",
+          "bytes": 114366,
+          "sha256": "2f539b354298e332048e353eff116783ef40efd51dccd578d3578bd30ae7671c"
+        },
+        {
+          "path": "empty-body/offered-manifest.jsonl.gz",
+          "bytes": 153427,
+          "sha256": "c5e94dfa40f12db49f649ac0e36f2d2623711fd41ce0a11d5799c85ff30216ad"
+        },
+        {
+          "path": "empty-body/robustness-audit.json",
+          "bytes": 642,
+          "sha256": "4bb7ba95afeeda6373043b22528c76c705b6946f6a2e39260fb1f3660a2026f9"
+        },
+        {
+          "path": "empty-body/stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "empty-body/stdout.txt",
+          "bytes": 271,
+          "sha256": "1065988d827063f14c3d743d3ef55a8a208c3df6a859e9626a964c3f3cb049f8"
+        },
+        {
+          "path": "header-timeout/collector-failure.json",
+          "bytes": 26486,
+          "sha256": "5f34fe3feb2c75a399fc17999108d74a866b573ef52770915defb2b172d90d32"
+        },
+        {
+          "path": "header-timeout/collector-preparation.json",
+          "bytes": 116997,
+          "sha256": "5576580ea1be334a5e28a4fd6ecf4064ef33deb28f4ff6ff7bd8e438734ea419"
+        },
+        {
+          "path": "header-timeout/offered-manifest.jsonl.gz",
+          "bytes": 153427,
+          "sha256": "c5e94dfa40f12db49f649ac0e36f2d2623711fd41ce0a11d5799c85ff30216ad"
+        },
+        {
+          "path": "header-timeout/robustness-audit.json",
+          "bytes": 723,
+          "sha256": "2a4d7538d35f38ba67ec924088e9135f15f548c5f29173b1f0ea03b1d45d8213"
+        },
+        {
+          "path": "header-timeout/stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "header-timeout/stdout.txt",
+          "bytes": 271,
+          "sha256": "1065988d827063f14c3d743d3ef55a8a208c3df6a859e9626a964c3f3cb049f8"
+        },
+        {
+          "path": "invalid-body/collector-failure.json",
+          "bytes": 26573,
+          "sha256": "d9759380d869e2dbfe8ee8b8676e91aede653336c24b337e4db491359a607451"
+        },
+        {
+          "path": "invalid-body/collector-preparation.json",
+          "bytes": 81542,
+          "sha256": "6fbf9a2d44ba6d5cc44ff68473ff6df08d12bc8b152ab98d55f59df22880ae62"
+        },
+        {
+          "path": "invalid-body/offered-manifest.jsonl.gz",
+          "bytes": 153427,
+          "sha256": "c5e94dfa40f12db49f649ac0e36f2d2623711fd41ce0a11d5799c85ff30216ad"
+        },
+        {
+          "path": "invalid-body/robustness-audit.json",
+          "bytes": 646,
+          "sha256": "8799bd5723969c000f442972eb7d351565971086a6697d7c03a1dbe6cb95e379"
+        },
+        {
+          "path": "invalid-body/stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "invalid-body/stdout.txt",
+          "bytes": 271,
+          "sha256": "1065988d827063f14c3d743d3ef55a8a208c3df6a859e9626a964c3f3cb049f8"
+        },
+        {
+          "path": "phase-503/collector-failure.json",
+          "bytes": 25900,
+          "sha256": "ac0e32790e1b1d8621f82ba132876e3aed01aa8460436a4dc81c087a9aa098be"
+        },
+        {
+          "path": "phase-503/collector-preflight.json",
+          "bytes": 26730,
+          "sha256": "efd8133cd05c4f68248846a5ead3dfce55a04930c52cc20aa42ab7caf2a16fb7"
+        },
+        {
+          "path": "phase-503/collector-preparation.json",
+          "bytes": 79932,
+          "sha256": "7539b83dd3bd883f5ecbabafac3f9641288c6b65c3d7b57f423e7d7900c6fbb1"
+        },
+        {
+          "path": "phase-503/offered-manifest.jsonl.gz",
+          "bytes": 153427,
+          "sha256": "c5e94dfa40f12db49f649ac0e36f2d2623711fd41ce0a11d5799c85ff30216ad"
+        },
+        {
+          "path": "phase-503/preflight-evidence-accounting.json",
+          "bytes": 51040,
+          "sha256": "e85b7475f780e1c5ac02fc18eb48c1be05145ebc4268662be6f225a5fa9d91cb"
+        },
+        {
+          "path": "phase-503/preflight-requests.jsonl.gz",
+          "bytes": 97659,
+          "sha256": "e24240b655e70b6391d2c2486e84eb36144b3db349816f186a412f79be2a8ceb"
+        },
+        {
+          "path": "phase-503/robustness-audit.json",
+          "bytes": 906,
+          "sha256": "19056bb37d41ebed41ac27206548ef8813873713a70f0cd4f2de51e35a63611c"
+        },
+        {
+          "path": "phase-503/stderr.txt",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "path": "phase-503/stdout.txt",
+          "bytes": 271,
+          "sha256": "1065988d827063f14c3d743d3ef55a8a208c3df6a859e9626a964c3f3cb049f8"
+        }
+      ],
+      "privateFixtureExcluded": true
+    },
+    "actual_503_raw_rows": 4000,
+    "scope": "Proof totals are different kinds of evidence, not benchmark/capacity trials. Peer DLL is a separate build of reviewed Driver source, not asserted bit-identical to canonical native binary."
+  },
+  "forensic_comparison": {
+    "canonical04_diagnostics": {
+      "attempted": 12,
+      "timed": 12,
+      "measured_offered": 1872000,
+      "errors": 0,
+      "drops": 0,
+      "runs": [
+        {
+          "variant": "baseline",
+          "transport": "http",
+          "rate": 100,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 18000,
+            "correct": 18000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 18000,
+            "p95Ms": 3.931054,
+            "p99Ms": 4.148639,
+            "sentP95Ms": 0.528774,
+            "maximumQueueMs": 8.002742,
+            "elapsedMs": 179993.784173,
+            "errorKinds": {}
+          },
+          "manifest_hash": "657daf6d97ed50b29711ea37dafceb6a31b7fb444f745ee15ec071f75c84443b",
+          "logical_manifest_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+          "final_state_hash": "e0eb396c974762407651a4419d8ebbb9f8be99347c84abe3c94838b2d285cf19",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 21180.025333333335,
+          "shutdown": {
+            "requested_monotonic_ns": 75687548771457,
+            "elapsed_ms": 31.668254,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "engine",
+          "transport": "http",
+          "rate": 100,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 18000,
+            "correct": 18000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 18000,
+            "p95Ms": 3.14566,
+            "p99Ms": 3.367485,
+            "sentP95Ms": 0.536007,
+            "maximumQueueMs": 3.133335,
+            "elapsedMs": 179990.574231,
+            "errorKinds": {}
+          },
+          "manifest_hash": "657daf6d97ed50b29711ea37dafceb6a31b7fb444f745ee15ec071f75c84443b",
+          "logical_manifest_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+          "final_state_hash": "e0eb396c974762407651a4419d8ebbb9f8be99347c84abe3c94838b2d285cf19",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 21059.632,
+          "shutdown": {
+            "requested_monotonic_ns": 75930875193061,
+            "elapsed_ms": 31.710097,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "engine",
+          "transport": "http",
+          "rate": 500,
+          "pair_order": "EB",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 90000,
+            "correct": 90000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 90000,
+            "p95Ms": 2.668612,
+            "p99Ms": 2.851303,
+            "sentP95Ms": 0.389472,
+            "maximumQueueMs": 4.452662,
+            "elapsedMs": 180000.523464,
+            "errorKinds": {}
+          },
+          "manifest_hash": "56f640c9bde8d4dafd626f3a6107ff26959afee86f35068fd037db265286fd08",
+          "logical_manifest_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+          "final_state_hash": "dd76221749f3c01eae03a8e6136c658c5ab55fc64be575821322c03e9ff03ef7",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 21060.092177777777,
+          "shutdown": {
+            "requested_monotonic_ns": 76174595774503,
+            "elapsed_ms": 31.859406,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "baseline",
+          "transport": "http",
+          "rate": 500,
+          "pair_order": "EB",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 90000,
+            "correct": 90000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 90000,
+            "p95Ms": 1.687883,
+            "p99Ms": 1.885272,
+            "sentP95Ms": 0.372238,
+            "maximumQueueMs": 3.304209,
+            "elapsedMs": 179999.740691,
+            "errorKinds": {}
+          },
+          "manifest_hash": "56f640c9bde8d4dafd626f3a6107ff26959afee86f35068fd037db265286fd08",
+          "logical_manifest_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+          "final_state_hash": "dd76221749f3c01eae03a8e6136c658c5ab55fc64be575821322c03e9ff03ef7",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 21178.558755555554,
+          "shutdown": {
+            "requested_monotonic_ns": 76418396213249,
+            "elapsed_ms": 15.571134,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "baseline",
+          "transport": "http",
+          "rate": 2000,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 360000,
+            "correct": 360000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 360000,
+            "p95Ms": 0.289883,
+            "p99Ms": 0.416364,
+            "sentP95Ms": 0.286115,
+            "maximumQueueMs": 5.478909,
+            "elapsedMs": 179999.615231,
+            "errorKinds": {}
+          },
+          "manifest_hash": "ac61414d674bbd6188d9444bc404e1372c7b6bd1285423fe00fa566c4dd5447a",
+          "logical_manifest_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+          "final_state_hash": "8c692528ac37bbd546f14395d94ddf61bbba8fda9dd717447e70e51a024ea174",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 21191.48873333333,
+          "shutdown": {
+            "requested_monotonic_ns": 76664093125262,
+            "elapsed_ms": 31.746329,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "engine",
+          "transport": "http",
+          "rate": 2000,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 360000,
+            "correct": 360000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 360000,
+            "p95Ms": 0.279239,
+            "p99Ms": 0.414712,
+            "sentP95Ms": 0.275869,
+            "maximumQueueMs": 2.212205,
+            "elapsedMs": 179999.60861,
+            "errorKinds": {}
+          },
+          "manifest_hash": "ac61414d674bbd6188d9444bc404e1372c7b6bd1285423fe00fa566c4dd5447a",
+          "logical_manifest_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+          "final_state_hash": "8c692528ac37bbd546f14395d94ddf61bbba8fda9dd717447e70e51a024ea174",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 21073.678844444443,
+          "shutdown": {
+            "requested_monotonic_ns": 76909830376233,
+            "elapsed_ms": 31.919029,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "baseline",
+          "transport": "graphql",
+          "rate": 100,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 18000,
+            "correct": 18000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 18000,
+            "p95Ms": 3.252152,
+            "p99Ms": 4.721004,
+            "sentP95Ms": 0.702407,
+            "maximumQueueMs": 4.839086,
+            "elapsedMs": 179990.731186,
+            "errorKinds": {}
+          },
+          "manifest_hash": "0780c8a1326adc1fe719aa6ab3da72b3647c486e05ab689604671748cbe543fc",
+          "logical_manifest_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+          "final_state_hash": "e0eb396c974762407651a4419d8ebbb9f8be99347c84abe3c94838b2d285cf19",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 18555.093333333334,
+          "shutdown": {
+            "requested_monotonic_ns": 77153524566058,
+            "elapsed_ms": 31.616778,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "engine",
+          "transport": "graphql",
+          "rate": 100,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 18000,
+            "correct": 18000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 18000,
+            "p95Ms": 4.089722,
+            "p99Ms": 4.327828,
+            "sentP95Ms": 0.690887,
+            "maximumQueueMs": 4.227538,
+            "elapsedMs": 179991.949674,
+            "errorKinds": {}
+          },
+          "manifest_hash": "0780c8a1326adc1fe719aa6ab3da72b3647c486e05ab689604671748cbe543fc",
+          "logical_manifest_hash": "fc8fc0d21b4baf4321fd2fdc5b1d6ffe4f2b6d9547603428d3f6675af91ef443",
+          "final_state_hash": "e0eb396c974762407651a4419d8ebbb9f8be99347c84abe3c94838b2d285cf19",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 18340.28088888889,
+          "shutdown": {
+            "requested_monotonic_ns": 77397320863486,
+            "elapsed_ms": 31.540332,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "engine",
+          "transport": "graphql",
+          "rate": 500,
+          "pair_order": "EB",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 90000,
+            "correct": 90000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 90000,
+            "p95Ms": 3.046788,
+            "p99Ms": 3.317584,
+            "sentP95Ms": 0.507478,
+            "maximumQueueMs": 5.129763,
+            "elapsedMs": 179999.02173,
+            "errorKinds": {}
+          },
+          "manifest_hash": "db14b6aa0d22bca36b750ff4282c423925aef00bafe7cfa8aeda6b1c243d409b",
+          "logical_manifest_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+          "final_state_hash": "dd76221749f3c01eae03a8e6136c658c5ab55fc64be575821322c03e9ff03ef7",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 18336.036622222222,
+          "shutdown": {
+            "requested_monotonic_ns": 77641607263145,
+            "elapsed_ms": 31.57211,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "baseline",
+          "transport": "graphql",
+          "rate": 500,
+          "pair_order": "EB",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 90000,
+            "correct": 90000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 90000,
+            "p95Ms": 2.797778,
+            "p99Ms": 3.036599,
+            "sentP95Ms": 0.518341,
+            "maximumQueueMs": 5.496513,
+            "elapsedMs": 180000.91304,
+            "errorKinds": {}
+          },
+          "manifest_hash": "db14b6aa0d22bca36b750ff4282c423925aef00bafe7cfa8aeda6b1c243d409b",
+          "logical_manifest_hash": "d77209b3694137fd81314009b444f6cbc7a67d7b1b421aef34b8a5a827575510",
+          "final_state_hash": "dd76221749f3c01eae03a8e6136c658c5ab55fc64be575821322c03e9ff03ef7",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 18549.175822222223,
+          "shutdown": {
+            "requested_monotonic_ns": 77886029092894,
+            "elapsed_ms": 31.693859,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "baseline",
+          "transport": "graphql",
+          "rate": 2000,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 360000,
+            "correct": 360000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 360000,
+            "p95Ms": 0.320494,
+            "p99Ms": 0.501047,
+            "sentP95Ms": 0.3172,
+            "maximumQueueMs": 1.337176,
+            "elapsedMs": 179999.681438,
+            "errorKinds": {}
+          },
+          "manifest_hash": "fd67da77b2fd94e6ba4ed3addfa5049b68aafdf185a7fd0a624dc8ce42214b3c",
+          "logical_manifest_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+          "final_state_hash": "8c692528ac37bbd546f14395d94ddf61bbba8fda9dd717447e70e51a024ea174",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 18547.954,
+          "shutdown": {
+            "requested_monotonic_ns": 78132212834098,
+            "elapsed_ms": 31.626245,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        },
+        {
+          "variant": "engine",
+          "transport": "graphql",
+          "rate": 2000,
+          "pair_order": "BE",
+          "diagnostic_status": "completed",
+          "timed_measurement_executed": true,
+          "contract_and_offered_work_observation_valid": true,
+          "measured": {
+            "offered": 360000,
+            "correct": 360000,
+            "errors": 0,
+            "dropped": 0,
+            "successfulWithinDrain": 360000,
+            "p95Ms": 0.34878,
+            "p99Ms": 0.487655,
+            "sentP95Ms": 0.34513,
+            "maximumQueueMs": 7.660749,
+            "elapsedMs": 179999.657585,
+            "errorKinds": {}
+          },
+          "manifest_hash": "fd67da77b2fd94e6ba4ed3addfa5049b68aafdf185a7fd0a624dc8ce42214b3c",
+          "logical_manifest_hash": "9a16318886fca119c026d104e3dd3d510624db00fb08fbfafd057a90260d9299",
+          "final_state_hash": "8c692528ac37bbd546f14395d94ddf61bbba8fda9dd717447e70e51a024ea174",
+          "driver_exit_code": 0,
+          "allocations_bytes_per_offered_request": 17669.68382222222,
+          "shutdown": {
+            "requested_monotonic_ns": 78378405129732,
+            "elapsed_ms": 31.632155,
+            "graceful": true,
+            "exit_code": 0,
+            "listener_closed": true,
+            "owned_handlers_balanced": true,
+            "disabled_probes_zero": true,
+            "passed": true,
+            "error": null
+          },
+          "acceptance_budget_gate": "Not applicable; diagnostic rates have no latency/allocation pass gate and never replace 1000req/s."
+        }
+      ]
+    },
+    "canonical03_http_engine2000": {
+      "actual_preflight": 4000,
+      "correct": 3963,
+      "dropped": 37,
+      "drop_indices": [
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        178,
+        179,
+        180,
+        181
+      ],
+      "warmup_measured_entered": false,
+      "old_preparation_tls_events": 4,
+      "failed_phase_accounting_exists": true,
+      "failed_phase_client_gc_accounting_exists": true,
+      "failed_phase_tls_before_after_present": false,
+      "failed_raw_sha256": "5ac1729d757ee2ed79a75806de1feb66f5b31e15530653f18b8cdce52d9bef57"
+    },
+    "canonical04_http_engine2000_preflight": {
+      "held_physical_load": 128,
+      "tls_at_barrier": 128,
+      "phase_tls_before": 129,
+      "phase_tls_after": 129,
+      "new_phase_tls_ids": []
+    },
+    "interpretation": "Canonical04 measured HTTP Engine2000 completed after explicit128physical readiness and failure telemetry correction. This association does not identify a single cause or capacity ceiling; old03 has incomplete failed-phase connection telemetry. Diagnostic rate results have no acceptance latency/allocation gate; new evidence never repairs old failed37 drops.",
+    "variation_note": "Main04 CV all under10%; Engine GraphQL04 4.76935% exceeds03 3.2616%, so no all-metric improvement claim."
+  },
+  "limits": [
+    "Public fixed-identity synthetic fixture; no real tenant, IdP/provider or production qualification.",
+    "Shared WSL/Windows observational evidence, no reserved reference2CPU/2GiB or supported-Windows qualification; Engine unchanged and #3 Blocked.",
+    "Probe planned4.32M manifest offers are not executed4.32M requests: actual48k, prep1560 read-only calls outside schedules.",
+    "Conformance400 cancellation cases are included in4000 per host;120 cycles are same-process, not fresh startup.",
+    "Retained Windows01 negative remains; sequential02 pass does not establish cause of01 failure.",
+    "No runtime reruns or new benchmarks were performed by this audit."
+  ],
+  "audit_script_correction": {
+    "retained_attempt": "audit-script-label-defect-attempt01.json",
+    "cause": "Audit model incorrectly upper-cased Item; frozen Domain.cs line52 declares lower-case item-{id:D5}. Corrected only audit expected initialization; retained initial audit script/output. No workload rerun or evidence change."
+  },
+  "findings": [],
+  "status": "passed_with_limits"
+}
