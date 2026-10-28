@@ -1,0 +1,21 @@
+# ADR0010: Investigate startup and GraphQL variance before the complete rerun
+
+2026-10-28. User authorized analysis/improvements with agents, a complete benchmark rerun under the original criteria, and GitHub/Docs synchronization while keeping #3 Blocked. This supplements ADR0009; no original acceptance budget changes. Prior complete attempt02, failed preparations, raw files and CV outlier remain immutable evidence.
+
+## Diagnostic plan frozen before trials
+
+First inspect all five GraphQL baseline/Engine raw series, both scheduled-to-completed and sent-to-completed latency, per-operation/time-window distributions, allocation/CPU/GC and connection observations. Correlation is not a demonstrated cause. Raw client evidence includes parsing/validation and is not a server-only trace. Do not drop a run, smooth samples, impose a latency floor, weaken correctness/TLS, lower a rate, or change CV calculation.
+
+Add opt-in startup stage tracing for diagnostic trials only: managed entry, store creation, root/PFX load, configuration, host builder/services/build/routes/start, readiness hashing/write and first business request. Buffer stage marks in memory and serialize on shutdown. Canonical acceptance runs disable this tracing; the external startup clock still spans before process creation through a fully verified first response, including all existing work.
+
+Run a fixed 2×2 layout diagnostic: SDK/shared runtime on Windows-mounted DrvFs versus an exact native-Linux copy; application dependency tree on DrvFs versus an exact native-Linux copy. The app-layout factor includes server working/content root at the application directory; the controller's ready/state/trace files remain on one fixed filesystem in all cells. Same runtime/package/source/binary bytes, environment, CPU affinity, pre-created private TLS fixture and first request apply. Verify every staged file hash, actual invocation and resolved runtime path.
+
+Four repetitions per baseline/Engine × HTTP/GraphQL lane and layout, **64 fresh processes total**, layout orders ABCD/BCDA/CDAB/DABC. A=DrvFs SDK+app, B=native SDK+DrvFs app, C=DrvFs SDK+native app, D=native SDK+app. Lane order baselineHTTP, EngineHTTP, baselineGraphQL, EngineGraphQL. Retain all trials. No parallel builds/analysis/collectors during trials. These are descriptive diagnostics, not sufficient acceptance samples, significance claims or replacements for the original30 fresh starts/variant/transport. This four-repeat counterbalance is selected before any layout timings.
+
+Microsoft recommends keeping files in the Linux filesystem when working from Linux: [WSL filesystem guidance](https://learn.microsoft.com/en-us/windows/wsl/interop). This motivates a hypothesis, not a measured cause. [Runtime compilation guidance](https://learn.microsoft.com/en-us/dotnet/core/runtime-config/compilation) and [ReadyToRun](https://learn.microsoft.com/en-us/dotnet/core/deploying/ready-to-run) describe startup/steady-state tradeoffs; no runtime knob or new deployment compilation mode is selected without explicit input/evidence review.
+
+## Selection and full rerun
+
+Select the uniform deployment target and any source/collector changes before canonical timing. Native Linux deployment is the intended Linux target for both variants; its effect must be attributed to deployment/harness changes rather than claimed as an Engine code speedup. Shared WSL remains nonqualifying: native storage does not reserve2CPU or impose2GiB. #3 and reference preflight remain Blocked even if numerical observations improve.
+
+Review all changes, preserve diagnostic failures, run full affected conformance/cancellation/lifecycle/disabled matrices on Windows and Linux, freeze clean source and artifact/package hashes, then execute **all** original startup/idle/load/diagnostic phases. Preserve120fresh starts,20idle runs/1200samples,20main1000req/s runs,12diagnostic100/500/2000runs; unchanged durations,128cap,1sdeadline, workload, pair order,100%correct/no errors/drops, latency/overhead/alloc/RSS/startup budgets and10%populationCV rule. No concurrent workload during the full run. Exit0 means collection completed, not acceptance passed. Unexpected source/protocol/environment failures stop and retain the whole affected attempt; numerical failures remain results, not hidden retries.
