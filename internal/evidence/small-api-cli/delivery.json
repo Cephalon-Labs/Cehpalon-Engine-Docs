@@ -1,0 +1,668 @@
+{
+  "observed_at_utc": "2026-10-29T06:53:29.575240+00:00",
+  "engine_revision": "535e6be86428a135da1b4abd8399ab9bd299a8bf",
+  "status": "bounded local correctness passed",
+  "scope": "Experimental fixture-backed Small API CLI/scaffold with unchanged Core/Composition/codegen/tenant/transport library source; not full task qualification",
+  "hosts": {
+    "windows": {
+      "component_passed": 496,
+      "component_failed": 0,
+      "tooling_contracts_passed": 149,
+      "small_api_harness_checks": 133,
+      "actual_https_selftest_cases": 39,
+      "portable_regression_checks": 70,
+      "generated_registry_sha256": "5de79901e3c7a2ffe681c0d8b15289b3748b75363d3aef808455327b1c6f2171",
+      "consumer_lock_sha256": "479eb3536165ec6725ab1a689f345486017e921784fab9414b3b0912966dfbf9",
+      "runtime_libraries": [
+        "Cehpalon.Engine.Composition/1.0.0",
+        "Cehpalon.Engine.Core/1.0.0",
+        "Cehpalon.Engine.Identity.Contracts/1.0.0",
+        "Cehpalon.Engine.Tenancy/1.0.0",
+        "Cehpalon.Engine.Transports.GraphQL/1.0.0",
+        "Cehpalon.Engine.Transports.Http/1.0.0",
+        "ChilliCream.Nitro.App/32.0.2",
+        "GreenDonut.Abstractions/16.7.1",
+        "GreenDonut.Data.Abstractions/16.7.1",
+        "GreenDonut.Data.Primitives/16.7.1",
+        "GreenDonut.Data/16.7.1",
+        "GreenDonut/16.7.1",
+        "HotChocolate.Abstractions/16.7.1",
+        "HotChocolate.AspNetCore.Pipeline/16.7.1",
+        "HotChocolate.AspNetCore/16.7.1",
+        "HotChocolate.Authorization/16.7.1",
+        "HotChocolate.Caching.Memory/16.7.1",
+        "HotChocolate.CostAnalysis.Core/16.7.1",
+        "HotChocolate.CostAnalysis/16.7.1",
+        "HotChocolate.Execution.Abstractions/16.7.1",
+        "HotChocolate.Execution.Configuration.Abstractions/16.7.1",
+        "HotChocolate.Execution.Operation.Abstractions/16.7.1",
+        "HotChocolate.Execution.Pipeline/16.7.1",
+        "HotChocolate.Execution.Projections/16.7.1",
+        "HotChocolate.Features/16.7.1",
+        "HotChocolate.Fusion.Language/16.7.1",
+        "HotChocolate.Fusion.Utilities/16.7.1",
+        "HotChocolate.Language.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8/16.7.1",
+        "HotChocolate.Language.Visitors/16.7.1",
+        "HotChocolate.Language.Web/16.7.1",
+        "HotChocolate.Language/16.7.1",
+        "HotChocolate.PersistedOperations.Abstractions/16.7.1",
+        "HotChocolate.PersistedOperations.Pipeline/16.7.1",
+        "HotChocolate.Primitives/16.7.1",
+        "HotChocolate.Subscriptions.InMemory/16.7.1",
+        "HotChocolate.Subscriptions/16.7.1",
+        "HotChocolate.Text.Json/16.7.1",
+        "HotChocolate.Transport.Formatters/16.7.1",
+        "HotChocolate.Transport.Sockets/16.7.1",
+        "HotChocolate.Types.Abstractions/16.7.1",
+        "HotChocolate.Types.CursorPagination.Extensions/16.7.1",
+        "HotChocolate.Types.CursorPagination/16.7.1",
+        "HotChocolate.Types.Errors/16.7.1",
+        "HotChocolate.Types.Mutations/16.7.1",
+        "HotChocolate.Types.Queries/16.7.1",
+        "HotChocolate.Types.Scalars.Upload/16.7.1",
+        "HotChocolate.Types/16.7.1",
+        "HotChocolate.Utilities.Base36/16.7.1",
+        "HotChocolate.Utilities.Buffers/16.7.1",
+        "HotChocolate.Utilities.DependencyInjection/16.7.1",
+        "HotChocolate.Utilities.Tasks/16.7.1",
+        "HotChocolate.Utilities/16.7.1",
+        "HotChocolate.Validation/16.7.1",
+        "HotChocolate/16.7.1",
+        "Microsoft.AspNetCore.Authentication.JwtBearer/11.0.0-rc.3.26522.148",
+        "Microsoft.Bcl.Cryptography/10.0.2",
+        "Microsoft.IdentityModel.Abstractions/8.19.2",
+        "Microsoft.IdentityModel.JsonWebTokens/8.19.2",
+        "Microsoft.IdentityModel.Logging/8.19.2",
+        "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.19.2",
+        "Microsoft.IdentityModel.Protocols/8.19.2",
+        "Microsoft.IdentityModel.Tokens/8.19.2",
+        "PortableConsumer.SmallApiProof/1.0.0",
+        "System.IO.Hashing/8.0.0",
+        "System.IdentityModel.Tokens.Jwt/8.19.2",
+        "Yarp.ReverseProxy/2.3.0"
+      ],
+      "late_ready_failure": {
+        "status": "failed",
+        "code": "consumer.failure",
+        "message": "Small API input, trust, configuration or fixture operation was rejected; no secrets are included.",
+        "counters": {
+          "HostFactories": 1,
+          "HostDisposals": 1,
+          "ApiFactories": 1,
+          "GraphQLFactories": 0,
+          "ForbiddenFactories": 0,
+          "GraphQLServices": 0,
+          "Endpoints": 4
+        }
+      },
+      "external_serve": {
+        "observations": [
+          {
+            "subject": "alice",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 200,
+            "body": {
+              "tenant": "tenant-a",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "subject": "bob",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-b",
+            "path": "/api/catalog/get",
+            "status": 200,
+            "body": {
+              "tenant": "tenant-b",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "subject": "alice",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-b",
+            "path": "/api/catalog/get",
+            "status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "subject": "bob",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "subject": "anonymous",
+            "credential_kind": "anonymous",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 401,
+            "body": null
+          },
+          {
+            "subject": "anonymous",
+            "credential_kind": "untrusted-signing-key",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 401,
+            "body": null
+          },
+          {
+            "subject": "alice",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-a",
+            "path": "/graphql",
+            "status": 404,
+            "body": null
+          }
+        ],
+        "stopped": {
+          "status": "stopped",
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 1,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 4
+          },
+          "store": {
+            "Factories": 2,
+            "Constructors": 2,
+            "Reads": 2,
+            "Writes": 0,
+            "Disposals": 2
+          }
+        },
+        "credentials_retained_in_raw": false,
+        "material_scope": "Ephemeral synthetic generated-serve proof material only; no production credentials"
+      },
+      "self_test_profiles": [
+        {
+          "name": "api-only",
+          "crossTenantDeniedRequests": 6,
+          "startupMilliseconds": 352.1247,
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 1,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 4
+          },
+          "store": {
+            "Count": 20000,
+            "Factories": 10,
+            "Reads": 7,
+            "Writes": 1,
+            "Disposals": 10
+          }
+        },
+        {
+          "name": "api-graphql",
+          "crossTenantDeniedRequests": 12,
+          "startupMilliseconds": 1842.7119,
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 1,
+            "GraphQLFactories": 1,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 28,
+            "Endpoints": 5
+          },
+          "store": {
+            "Count": 20000,
+            "Factories": 20,
+            "Reads": 14,
+            "Writes": 2,
+            "Disposals": 20
+          }
+        }
+      ],
+      "scenarios": {
+        "invalid": {
+          "counters": {
+            "HostFactories": 0,
+            "HostDisposals": 0,
+            "ApiFactories": 0,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 0
+          },
+          "hasApplication": false
+        },
+        "worker": {
+          "counters": {
+            "HostFactories": 0,
+            "HostDisposals": 0,
+            "ApiFactories": 0,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 0
+          },
+          "hasApplication": false
+        },
+        "off": {
+          "counters": {
+            "HostFactories": 0,
+            "HostDisposals": 0,
+            "ApiFactories": 0,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 0
+          },
+          "hasApplication": false
+        },
+        "graphqlOnly": {
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 0,
+            "GraphQLFactories": 1,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 28,
+            "Endpoints": 2
+          },
+          "hasApplication": true,
+          "store": {
+            "Factories": 1,
+            "Disposals": 1
+          }
+        }
+      },
+      "private_fixture_permissions": {
+        "status": "created",
+        "permissionsVerified": true,
+        "permissions": "current-user-only protected DACL",
+        "scope": "Ephemeral private fixture; keys, password and tokens not printed"
+      },
+      "engine_manifest_sha256": "586fb445c1d3802281004537dab582157c3030c63541921841b1080486cd4990",
+      "small_api_manifest_sha256": "c60c020622096e885cee96210175154ba366110bb442786dd7b966881c7e11ca"
+    },
+    "linux": {
+      "component_passed": 493,
+      "component_failed": 0,
+      "tooling_contracts_passed": 146,
+      "small_api_harness_checks": 133,
+      "actual_https_selftest_cases": 39,
+      "portable_regression_checks": 70,
+      "generated_registry_sha256": "5de79901e3c7a2ffe681c0d8b15289b3748b75363d3aef808455327b1c6f2171",
+      "consumer_lock_sha256": "b4196a00d92c96fb74de4eae1b2004519d6f4054090df0de9aa3e0dad8575b69",
+      "runtime_libraries": [
+        "Cehpalon.Engine.Composition/1.0.0",
+        "Cehpalon.Engine.Core/1.0.0",
+        "Cehpalon.Engine.Identity.Contracts/1.0.0",
+        "Cehpalon.Engine.Tenancy/1.0.0",
+        "Cehpalon.Engine.Transports.GraphQL/1.0.0",
+        "Cehpalon.Engine.Transports.Http/1.0.0",
+        "ChilliCream.Nitro.App/32.0.2",
+        "GreenDonut.Abstractions/16.7.1",
+        "GreenDonut.Data.Abstractions/16.7.1",
+        "GreenDonut.Data.Primitives/16.7.1",
+        "GreenDonut.Data/16.7.1",
+        "GreenDonut/16.7.1",
+        "HotChocolate.Abstractions/16.7.1",
+        "HotChocolate.AspNetCore.Pipeline/16.7.1",
+        "HotChocolate.AspNetCore/16.7.1",
+        "HotChocolate.Authorization/16.7.1",
+        "HotChocolate.Caching.Memory/16.7.1",
+        "HotChocolate.CostAnalysis.Core/16.7.1",
+        "HotChocolate.CostAnalysis/16.7.1",
+        "HotChocolate.Execution.Abstractions/16.7.1",
+        "HotChocolate.Execution.Configuration.Abstractions/16.7.1",
+        "HotChocolate.Execution.Operation.Abstractions/16.7.1",
+        "HotChocolate.Execution.Pipeline/16.7.1",
+        "HotChocolate.Execution.Projections/16.7.1",
+        "HotChocolate.Features/16.7.1",
+        "HotChocolate.Fusion.Language/16.7.1",
+        "HotChocolate.Fusion.Utilities/16.7.1",
+        "HotChocolate.Language.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8/16.7.1",
+        "HotChocolate.Language.Visitors/16.7.1",
+        "HotChocolate.Language.Web/16.7.1",
+        "HotChocolate.Language/16.7.1",
+        "HotChocolate.PersistedOperations.Abstractions/16.7.1",
+        "HotChocolate.PersistedOperations.Pipeline/16.7.1",
+        "HotChocolate.Primitives/16.7.1",
+        "HotChocolate.Subscriptions.InMemory/16.7.1",
+        "HotChocolate.Subscriptions/16.7.1",
+        "HotChocolate.Text.Json/16.7.1",
+        "HotChocolate.Transport.Formatters/16.7.1",
+        "HotChocolate.Transport.Sockets/16.7.1",
+        "HotChocolate.Types.Abstractions/16.7.1",
+        "HotChocolate.Types.CursorPagination.Extensions/16.7.1",
+        "HotChocolate.Types.CursorPagination/16.7.1",
+        "HotChocolate.Types.Errors/16.7.1",
+        "HotChocolate.Types.Mutations/16.7.1",
+        "HotChocolate.Types.Queries/16.7.1",
+        "HotChocolate.Types.Scalars.Upload/16.7.1",
+        "HotChocolate.Types/16.7.1",
+        "HotChocolate.Utilities.Base36/16.7.1",
+        "HotChocolate.Utilities.Buffers/16.7.1",
+        "HotChocolate.Utilities.DependencyInjection/16.7.1",
+        "HotChocolate.Utilities.Tasks/16.7.1",
+        "HotChocolate.Utilities/16.7.1",
+        "HotChocolate.Validation/16.7.1",
+        "HotChocolate/16.7.1",
+        "Microsoft.AspNetCore.Authentication.JwtBearer/11.0.0-rc.3.26522.148",
+        "Microsoft.Bcl.Cryptography/10.0.2",
+        "Microsoft.IdentityModel.Abstractions/8.19.2",
+        "Microsoft.IdentityModel.JsonWebTokens/8.19.2",
+        "Microsoft.IdentityModel.Logging/8.19.2",
+        "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.19.2",
+        "Microsoft.IdentityModel.Protocols/8.19.2",
+        "Microsoft.IdentityModel.Tokens/8.19.2",
+        "PortableConsumer.SmallApiProof/1.0.0",
+        "System.IO.Hashing/8.0.0",
+        "System.IdentityModel.Tokens.Jwt/8.19.2",
+        "Yarp.ReverseProxy/2.3.0"
+      ],
+      "late_ready_failure": {
+        "status": "failed",
+        "code": "consumer.failure",
+        "message": "Small API input, trust, configuration or fixture operation was rejected; no secrets are included.",
+        "counters": {
+          "HostFactories": 1,
+          "HostDisposals": 1,
+          "ApiFactories": 1,
+          "GraphQLFactories": 0,
+          "ForbiddenFactories": 0,
+          "GraphQLServices": 0,
+          "Endpoints": 4
+        }
+      },
+      "external_serve": {
+        "observations": [
+          {
+            "subject": "alice",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 200,
+            "body": {
+              "tenant": "tenant-a",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "subject": "bob",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-b",
+            "path": "/api/catalog/get",
+            "status": 200,
+            "body": {
+              "tenant": "tenant-b",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "subject": "alice",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-b",
+            "path": "/api/catalog/get",
+            "status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "subject": "bob",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "subject": "anonymous",
+            "credential_kind": "anonymous",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 401,
+            "body": null
+          },
+          {
+            "subject": "anonymous",
+            "credential_kind": "untrusted-signing-key",
+            "tenant": "tenant-a",
+            "path": "/api/catalog/get",
+            "status": 401,
+            "body": null
+          },
+          {
+            "subject": "alice",
+            "credential_kind": "owner-fixture-token",
+            "tenant": "tenant-a",
+            "path": "/graphql",
+            "status": 404,
+            "body": null
+          }
+        ],
+        "stopped": {
+          "status": "stopped",
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 1,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 4
+          },
+          "store": {
+            "Factories": 2,
+            "Constructors": 2,
+            "Reads": 2,
+            "Writes": 0,
+            "Disposals": 2
+          }
+        },
+        "credentials_retained_in_raw": false,
+        "material_scope": "Ephemeral synthetic generated-serve proof material only; no production credentials"
+      },
+      "self_test_profiles": [
+        {
+          "name": "api-only",
+          "crossTenantDeniedRequests": 6,
+          "startupMilliseconds": 309.2616,
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 1,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 4
+          },
+          "store": {
+            "Count": 20000,
+            "Factories": 10,
+            "Reads": 7,
+            "Writes": 1,
+            "Disposals": 10
+          }
+        },
+        {
+          "name": "api-graphql",
+          "crossTenantDeniedRequests": 12,
+          "startupMilliseconds": 465.0721,
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 1,
+            "GraphQLFactories": 1,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 28,
+            "Endpoints": 5
+          },
+          "store": {
+            "Count": 20000,
+            "Factories": 20,
+            "Reads": 14,
+            "Writes": 2,
+            "Disposals": 20
+          }
+        }
+      ],
+      "scenarios": {
+        "invalid": {
+          "counters": {
+            "HostFactories": 0,
+            "HostDisposals": 0,
+            "ApiFactories": 0,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 0
+          },
+          "hasApplication": false
+        },
+        "worker": {
+          "counters": {
+            "HostFactories": 0,
+            "HostDisposals": 0,
+            "ApiFactories": 0,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 0
+          },
+          "hasApplication": false
+        },
+        "off": {
+          "counters": {
+            "HostFactories": 0,
+            "HostDisposals": 0,
+            "ApiFactories": 0,
+            "GraphQLFactories": 0,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 0,
+            "Endpoints": 0
+          },
+          "hasApplication": false
+        },
+        "graphqlOnly": {
+          "counters": {
+            "HostFactories": 1,
+            "HostDisposals": 1,
+            "ApiFactories": 0,
+            "GraphQLFactories": 1,
+            "ForbiddenFactories": 0,
+            "GraphQLServices": 28,
+            "Endpoints": 2
+          },
+          "hasApplication": true,
+          "store": {
+            "Factories": 1,
+            "Disposals": 1
+          }
+        }
+      },
+      "private_fixture_permissions": {
+        "status": "created",
+        "permissionsVerified": true,
+        "permissions": "Unix0700 directory and0600 files",
+        "scope": "Ephemeral private fixture; keys, password and tokens not printed"
+      },
+      "engine_manifest_sha256": "8f3c54f43088acef45b1da1c0dac7cf5f8a1f027412681dcb5a0a052a500526f",
+      "small_api_manifest_sha256": "bd6d0bfcf102cef9aa97595304d0a01d382e5638992347eb3828ca11faa0b1ca"
+    }
+  },
+  "retention": {
+    "engine_raw": {
+      "count": 58,
+      "bytes": 313791,
+      "manifest_sha256": "b1689c016d9dd96c35623f219b6e17e73a7458e681c10bdac6c7c90a013b9554",
+      "staged_blob_verification": "all entries match staged Git blobs size/bytes/SHA256"
+    },
+    "ci": {
+      "count": 6,
+      "bytes": 5540,
+      "manifest_sha256": "258b86bd2168e3b0a1071ceb7a9396c662c987f5a3829fe1b36fce81fdac4554",
+      "staged_blob_verification": "all entries match staged Git blobs size/bytes/SHA256"
+    },
+    "samples_raw": {
+      "count": 561,
+      "bytes": 1503452,
+      "manifest_sha256": "b32676103c7988f58379a53f2e89943a09a2153e5ec21eba8a4c217820d7a6ff",
+      "committed_blob_verification": "all561entries match committed size/bytes/SHA256"
+    }
+  },
+  "ci": {
+    "component_run": 40830867592,
+    "platform_run": 40830867493,
+    "jobs": 4,
+    "steps": 0,
+    "status": "Blocked before execution",
+    "reason": "Recent account payments have failed or spending limit needs to be increased; explicit annotations retained",
+    "no_rerun_or_billing_change": true,
+    "historical_39ae_pass_not_current_proof": true
+  },
+  "benchmark": "Not required for bounded correctness/no timing claim. Full #20 tooling benchmark remains Planned. No old Small API benchmark rerun.",
+  "tracking": {
+    "issue": 20,
+    "status": "In Progress",
+    "priority": "P2",
+    "maturity": "M0",
+    "full_test_gate": "Planned",
+    "full_benchmark_gate": "Planned",
+    "dependencies": [
+      2,
+      11
+    ],
+    "actual_hours": null,
+    "issue3": "Blocked; body/editable metadata preserved"
+  },
+  "limits": [
+    "Synthetic identity/membership/in-memory fixture, no real IdP/provider/RLS/production qualification",
+    "Source hashes observe selected editable checkout inputs, not immutable full-build attestation; trusted parents/inherited build policy required",
+    "GraphQL packages can be present while disabled service/factory/endpoint work is zero",
+    "No arbitrary schema/tooling performance/package/global-tool/AOT/trimming or all-lane acceptance"
+  ],
+  "retained_failure": "Initial private fixture helper SetOwner privilege failure before key writes; corrected DACL-only helper. Expected late-readiness rejection is successful fault coverage, not a failed workload.",
+  "samples_revision": "5b75950fef3beca8adeb3e2c4f517ffba35a4fed",
+  "tracking_readback": "tracking-readback.json; onebody operation20; all23mirrors verified; issue3 body/editable metadata identicalBlocked"
+}

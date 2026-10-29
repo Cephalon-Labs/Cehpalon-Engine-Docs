@@ -1,0 +1,5 @@
+{
+  "status": "dry-run",
+  "operations": 1,
+  "plan_sha256": "e70b3264a1798e2b26169066bd6f7bbcb0306c24e6d2cd360d3b9b3df0665f48"
+}

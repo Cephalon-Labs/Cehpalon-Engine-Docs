@@ -1,0 +1,297 @@
+{
+  "scope": "Plain public logs/results/generated sources only. Private keys/PFX/passwords/tokens, .private-fixtures/native private directories, binaries/artifacts and clone objects excluded.",
+  "count": 58,
+  "bytes": 313791,
+  "files": [
+    {
+      "path": "agent-cli-builds/attempt01.txt",
+      "bytes": 1049,
+      "sha256": "e7616f586fcf62ce7b7a7d44a706fec78a14a91b3f2d9c6fd60ec03f3a462660"
+    },
+    {
+      "path": "agent-cli-builds/attempt02.txt",
+      "bytes": 753,
+      "sha256": "5b320c0835f36c3b4c117fcb2d85b2509b460d0965500f4d94dcc097dc3b6b25"
+    },
+    {
+      "path": "agent-cli-builds/attempt03.txt",
+      "bytes": 753,
+      "sha256": "394514d4cf8cca02fd5927215aa07c825bc58fb696a26cc9eff1da842dbbd25b"
+    },
+    {
+      "path": "agent-cli-trials/build01.txt",
+      "bytes": 5086,
+      "sha256": "477a32f527b3ad0715825521724c9ad2872bc28c0d8406940c4dcb5e467d4de6"
+    },
+    {
+      "path": "agent-cli-trials/build02.txt",
+      "bytes": 5083,
+      "sha256": "17724b11c02fe6fa69bc0711f2eca8c95b7929685190b15cd176184f8b9f3c5c"
+    },
+    {
+      "path": "agent-cli-trials/new01.json",
+      "bytes": 423,
+      "sha256": "ccf0e623735b08d9a13636697250c7eed2f456c7bd22352be0aa1181ef22ec3f"
+    },
+    {
+      "path": "agent-cli-trials/new02.json",
+      "bytes": 424,
+      "sha256": "73c6c3cf428629594ec0c4653d0824bf624ebf64dd304c53d0694951345ee762"
+    },
+    {
+      "path": "agent-cli-trials/selftest01.json",
+      "bytes": 7135,
+      "sha256": "6337cc507add8509c0e1133e68f088962c76220256baa12a26eb68cccdebd187"
+    },
+    {
+      "path": "agent-cli-trials/selftest01.txt",
+      "bytes": 37,
+      "sha256": "515ffd22219de442f75e6aa1cbd9883cc2931eafbc1fe84206476bac8dc9c2c0"
+    },
+    {
+      "path": "agent-cli-trials/validate02.json",
+      "bytes": 810,
+      "sha256": "c2993074b5e4fd0328ab4f4856be053708447e6b2fbf0d3ba7f9518c8a7e7fc9"
+    },
+    {
+      "path": "linux-final-01/build.txt",
+      "bytes": 10711,
+      "sha256": "8b8ba7371d38d2047a6f8854c8629e35763a939413374794ab0c976c80d216c3"
+    },
+    {
+      "path": "linux-final-01/CodeGeneration.ContractTests.json",
+      "bytes": 5307,
+      "sha256": "97b373aff4d37eda4c32dcb33fba6cc8744fc6d28be123014d26524b9ad67762"
+    },
+    {
+      "path": "linux-final-01/CodeGeneration.ContractTests.txt",
+      "bytes": 5307,
+      "sha256": "97b373aff4d37eda4c32dcb33fba6cc8744fc6d28be123014d26524b9ad67762"
+    },
+    {
+      "path": "linux-final-01/compiler-fixture-generated.g.cs.txt",
+      "bytes": 656,
+      "sha256": "514df2f008e0a7a2d6ef6f9088e79407f1d1f97e91e048cfd860f6904bfecd3f"
+    },
+    {
+      "path": "linux-final-01/compiler-fixture.json",
+      "bytes": 218,
+      "sha256": "b8497f4517ca3e61d0c0fb3ddfcd01161e36edca90baadfb4b1560ab0c0b3c2a"
+    },
+    {
+      "path": "linux-final-01/Composition.ContractTests.json",
+      "bytes": 7930,
+      "sha256": "77a316b4b2273c229677b27689f6a3aa73f3f5e101fdde2754d69bbc27a14b9d"
+    },
+    {
+      "path": "linux-final-01/Composition.ContractTests.txt",
+      "bytes": 7930,
+      "sha256": "77a316b4b2273c229677b27689f6a3aa73f3f5e101fdde2754d69bbc27a14b9d"
+    },
+    {
+      "path": "linux-final-01/Core.ContractTests.json",
+      "bytes": 3545,
+      "sha256": "315f362ba9a0b9ce94798eae5a177ce5450ad4462047ad3eb51ea80d175b8d0a"
+    },
+    {
+      "path": "linux-final-01/Core.ContractTests.txt",
+      "bytes": 3545,
+      "sha256": "315f362ba9a0b9ce94798eae5a177ce5450ad4462047ad3eb51ea80d175b8d0a"
+    },
+    {
+      "path": "linux-final-01/GraphQL.ContractTests.json",
+      "bytes": 4554,
+      "sha256": "9bcc196a55e89c6b7f59a2ba5247abfca769451cf03d1f3709209042ec98261d"
+    },
+    {
+      "path": "linux-final-01/GraphQL.ContractTests.txt",
+      "bytes": 4554,
+      "sha256": "9bcc196a55e89c6b7f59a2ba5247abfca769451cf03d1f3709209042ec98261d"
+    },
+    {
+      "path": "linux-final-01/Http.ContractTests.json",
+      "bytes": 4161,
+      "sha256": "e07475a3cb56c806e7a793eff8369488cdb1300cbd844423cc90be236c6f68c5"
+    },
+    {
+      "path": "linux-final-01/Http.ContractTests.txt",
+      "bytes": 4162,
+      "sha256": "fb4e3dc35bfe9309229f2507db563728f4fe0b41cabc050190a5dd1ef04ffbd0"
+    },
+    {
+      "path": "linux-final-01/Identity.ContractTests.json",
+      "bytes": 4729,
+      "sha256": "5711528c2561b85b255de394f47488529cf4b87596dd683c252b2a3df6e384ee"
+    },
+    {
+      "path": "linux-final-01/Identity.ContractTests.txt",
+      "bytes": 26,
+      "sha256": "98661b81c56bbff500d01f0b293f56dfbe74d5dae041d3fe5e55d277ee4e61a0"
+    },
+    {
+      "path": "linux-final-01/manifest.json",
+      "bytes": 12624,
+      "sha256": "8f3c54f43088acef45b1da1c0dac7cf5f8a1f027412681dcb5a0a052a500526f"
+    },
+    {
+      "path": "linux-final-01/restore.txt",
+      "bytes": 2301,
+      "sha256": "cd134642a281a278f7e845f51c4458ee4cb61b5cc483f79d8cdd8a805e371b92"
+    },
+    {
+      "path": "linux-final-01/sdk-info.txt",
+      "bytes": 1489,
+      "sha256": "370fd2e9f86f0f41c793af78a9a41f3c0931282313870a924a81eedcf2816786"
+    },
+    {
+      "path": "linux-final-01/sdk-version.txt",
+      "bytes": 24,
+      "sha256": "8f311fda85131eb472c3f117c2c4e441c86aaeb72740d76f44d89ff1e75ae7ae"
+    },
+    {
+      "path": "linux-final-01/Tenancy.ContractTests.json",
+      "bytes": 7063,
+      "sha256": "c37741511fc8afbc0cec7237b37500d9c3c7ce0a11dd1707056384d7bc70a9cc"
+    },
+    {
+      "path": "linux-final-01/Tenancy.ContractTests.txt",
+      "bytes": 7063,
+      "sha256": "c37741511fc8afbc0cec7237b37500d9c3c7ce0a11dd1707056384d7bc70a9cc"
+    },
+    {
+      "path": "linux-final-01/Tooling.ContractTests.json",
+      "bytes": 14771,
+      "sha256": "122f9a38fafac59aceefd57957468344bd87d02227d5bdd3eba8bec74bc4eaec"
+    },
+    {
+      "path": "linux-final-01/Tooling.ContractTests.txt",
+      "bytes": 14771,
+      "sha256": "122f9a38fafac59aceefd57957468344bd87d02227d5bdd3eba8bec74bc4eaec"
+    },
+    {
+      "path": "unit-integration-01.json",
+      "bytes": 15753,
+      "sha256": "3385e34e4ef8c6c297d0debfbae08d694fa8b2043814e7d078608a34b67993fe"
+    },
+    {
+      "path": "unit-integration-01.txt",
+      "bytes": 15754,
+      "sha256": "e83c1164e8314304ea532804af15b332f096d77dc393dd7f15051f048980451a"
+    },
+    {
+      "path": "windows-final-01/build.txt",
+      "bytes": 9938,
+      "sha256": "87af6a524b6c0fb4935275e5e8ebb38d46dbc479111de9c6d9610dff90951ee6"
+    },
+    {
+      "path": "windows-final-01/CodeGeneration.ContractTests.json",
+      "bytes": 5526,
+      "sha256": "24fec6cffc8338df4ae8ce411f13762ece3e2f0130f0d7137e38d970b5d564eb"
+    },
+    {
+      "path": "windows-final-01/CodeGeneration.ContractTests.txt",
+      "bytes": 5527,
+      "sha256": "89efbd0ba28bc70274398ad2528a4451b046336e23a3f8260e03f3de41eb7feb"
+    },
+    {
+      "path": "windows-final-01/compiler-fixture-generated.g.cs.txt",
+      "bytes": 656,
+      "sha256": "514df2f008e0a7a2d6ef6f9088e79407f1d1f97e91e048cfd860f6904bfecd3f"
+    },
+    {
+      "path": "windows-final-01/compiler-fixture.json",
+      "bytes": 219,
+      "sha256": "4b21f410bdc7f997dd367cea4fe75debc8e179b18a349fa142f34f84fde69d5b"
+    },
+    {
+      "path": "windows-final-01/Composition.ContractTests.json",
+      "bytes": 8271,
+      "sha256": "e63e9d74a25f199c9107b38f499089c8f4fc01f2fdfbd67a674ccf743d091741"
+    },
+    {
+      "path": "windows-final-01/Composition.ContractTests.txt",
+      "bytes": 8271,
+      "sha256": "e63e9d74a25f199c9107b38f499089c8f4fc01f2fdfbd67a674ccf743d091741"
+    },
+    {
+      "path": "windows-final-01/Core.ContractTests.json",
+      "bytes": 3693,
+      "sha256": "ee2de1d3e85ac378a1c540716687897574e68c9f8529667a2caff345eb081960"
+    },
+    {
+      "path": "windows-final-01/Core.ContractTests.txt",
+      "bytes": 3694,
+      "sha256": "ca66208eee2f377238d8932ed93dfe068d1b7f65dee3672f92efe3a16d37b0da"
+    },
+    {
+      "path": "windows-final-01/GraphQL.ContractTests.json",
+      "bytes": 4740,
+      "sha256": "924046ff63844b98d982d1e61fd6b44ddafbd929e7c940c3e36dc9f0b9eee2f4"
+    },
+    {
+      "path": "windows-final-01/GraphQL.ContractTests.txt",
+      "bytes": 4741,
+      "sha256": "861074c17e321b964e0acee3d26e51882b3482fa696d97c8b7ff86015cb40eef"
+    },
+    {
+      "path": "windows-final-01/Http.ContractTests.json",
+      "bytes": 4344,
+      "sha256": "a67a6f40cc10047bca2c45e164b07ee02e2206c6f6f6c4b215eda3b0de49976c"
+    },
+    {
+      "path": "windows-final-01/Http.ContractTests.txt",
+      "bytes": 4346,
+      "sha256": "298420cd874bd60df5dbdb17c7bc07a94d79d6fab356dcf265231a73cc190999"
+    },
+    {
+      "path": "windows-final-01/Identity.ContractTests.json",
+      "bytes": 4919,
+      "sha256": "9fc729370511dd3cf490d263ee1e4a4ac8e5e52d2f0c8acbe479dc561400a5c6"
+    },
+    {
+      "path": "windows-final-01/Identity.ContractTests.txt",
+      "bytes": 27,
+      "sha256": "12318a10c5cfaa619aa370bd13e03cf183deb098c1b99f24b6045ec573530e51"
+    },
+    {
+      "path": "windows-final-01/manifest.json",
+      "bytes": 12624,
+      "sha256": "586fb445c1d3802281004537dab582157c3030c63541921841b1080486cd4990"
+    },
+    {
+      "path": "windows-final-01/restore.txt",
+      "bytes": 2210,
+      "sha256": "91d2c2a1a551785bc81fcd603fba4a3d45a6755d0679e59e195d05141507bba5"
+    },
+    {
+      "path": "windows-final-01/sdk-info.txt",
+      "bytes": 3287,
+      "sha256": "bbabd45319058fd45485332aaa89b9011eec12b10cf1abfc83d7f62b9826be0a"
+    },
+    {
+      "path": "windows-final-01/sdk-version.txt",
+      "bytes": 25,
+      "sha256": "2a1983f9624c51ebc4e357db46400d4a0c586be897ce82123c46926dddf13fcf"
+    },
+    {
+      "path": "windows-final-01/Tenancy.ContractTests.json",
+      "bytes": 7362,
+      "sha256": "ac397583ce2626973407206803e2305d6c43a08d544b612aa28914da40b25c71"
+    },
+    {
+      "path": "windows-final-01/Tenancy.ContractTests.txt",
+      "bytes": 7363,
+      "sha256": "46df8acd91dd6b46b6308feb5c666adf9fac16890773df00cf47672475b32ecb"
+    },
+    {
+      "path": "windows-final-01/Tooling.ContractTests.json",
+      "bytes": 15753,
+      "sha256": "7883f477dfac72fcc2371479ce5302042601f97edce78f6d1d8da4f06b311a82"
+    },
+    {
+      "path": "windows-final-01/Tooling.ContractTests.txt",
+      "bytes": 15754,
+      "sha256": "cbd7cbb4ad6b0b7aa42b2c945a9f62438768863bc080702a02449ce7c2b4779a"
+    }
+  ]
+}

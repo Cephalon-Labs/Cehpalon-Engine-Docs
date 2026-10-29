@@ -1,6 +1,6 @@
 # Experimental portable CLI
 
-The source-checkout CLI supports one console profile, `portable-request-reply`. It creates a public in-process operation using existing Core, Composition and generated typed registrations. Configuration is checked before activation; disabled modules do no module-owned work. Tenant authority and transport/provider integration require separate explicit wiring.
+The source-checkout CLI defaults to the console profile `portable-request-reply`. It creates a public in-process operation using existing Core, Composition and generated typed registrations. Configuration is checked before activation; disabled modules do no module-owned work. Tenant authority and transport/provider integration require separate explicit wiring. The separate [Small API profile](experimental-small-api-cli.md) adds a fixture-backed protected HTTPS consumer with optional GraphQL.
 
 Build `src/Cehpalon.Engine.Tooling/Cehpalon.Engine.Tooling.csproj` in the Engine checkout with the SDK pinned by `global.json`. Invoke the resulting `cehpalon.dll` with that SDK:
 

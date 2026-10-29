@@ -1,0 +1,37 @@
+{
+  "scope": "Plain public logs/results/generated sources only. Private keys/PFX/passwords/tokens, .private-fixtures/native private directories, binaries/artifacts and clone objects excluded.",
+  "count": 6,
+  "bytes": 5540,
+  "files": [
+    {
+      "path": "ci-123304531590-annotations.json",
+      "bytes": 448,
+      "sha256": "434a8938fff5f3c5ff55b36433caf6b3e02e230cea27eb088bbc5f04499f02d2"
+    },
+    {
+      "path": "ci-123304531920-annotations.json",
+      "bytes": 448,
+      "sha256": "434a8938fff5f3c5ff55b36433caf6b3e02e230cea27eb088bbc5f04499f02d2"
+    },
+    {
+      "path": "ci-123304532221-annotations.json",
+      "bytes": 448,
+      "sha256": "434a8938fff5f3c5ff55b36433caf6b3e02e230cea27eb088bbc5f04499f02d2"
+    },
+    {
+      "path": "ci-123304532474-annotations.json",
+      "bytes": 448,
+      "sha256": "434a8938fff5f3c5ff55b36433caf6b3e02e230cea27eb088bbc5f04499f02d2"
+    },
+    {
+      "path": "ci-40830867493-jobs.json",
+      "bytes": 1858,
+      "sha256": "bf41882b21bc19b42e1ad68f01e0d66ca91fb58d38f8c3417e2f41d9df0ca29d"
+    },
+    {
+      "path": "ci-40830867592-jobs.json",
+      "bytes": 1890,
+      "sha256": "790b33ed7e08291e17d2c832b971998eee45db8e68d460061a7f658ee864d700"
+    }
+  ]
+}

@@ -56,6 +56,8 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - A scaffold must build and run as an actual generated consumer. Registration text checks and recorder labels alone do not establish transport/provider profiles. Keep the experimental portable-request-reply console proof separate from the three sample lanes and full #20 qualification.
 - Keep user-selected names independent of generated namespace and framework assembly identities. Prove compiler/framework/Engine collision names with actual SDK builds and runs; a successful compile alone missed the System facade runtime collision.
 - Recognize discovered program checkout boundaries using observed Git markers, not directory names alone: hosted runners can have same-named wrapper directories. Treat source/output parents and inherited SDK/MSBuild policy as trusted; observed hashes and path checks are not immutable attestation or a filesystem/build sandbox.
+- Web profiles must validate capability plans before host/credential access. Keep ephemeral self-test identity separate from normal serving with caller-provided trust. Post-activation failures must report actual activation/cleanup counters; do not replace them with a new zero-valued recorder.
+- Include embedded source-template bytes in source inventories and pin their line endings explicitly. `.cs.txt` resources are runtime-bearing generator inputs even when a verifier only recognizes `.cs` files by default. Prove Windows TLS key loading through actual external serving, not only a self-test with a different loader.
 
 ## Measurement lessons from Small API
 
