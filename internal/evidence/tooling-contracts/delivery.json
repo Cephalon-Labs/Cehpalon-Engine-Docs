@@ -1,0 +1,1720 @@
+{
+  "observed_at_utc": "2026-10-29T08:04:02.038715+00:00",
+  "engine_revision": "972522eb455d0b1b6415cf4e88398c14baa82fbe",
+  "status": "bounded local correctness passed",
+  "scope": "Selected offline Small API OpenAPI/JSON shapes and actual GraphQL SDL, supporting pure HTTP schema helper. Structural schemas are not validators/authority or arbitrary schema qualification.",
+  "hosts": {
+    "windows": {
+      "component_passed": 505,
+      "component_failed": 0,
+      "http_contracts": 51,
+      "tooling_contracts": 151,
+      "export_harness_checks": 160,
+      "runtime_differential_checks": 25,
+      "small_api_harness_checks": 133,
+      "small_api_https_cases": 39,
+      "portable_regression_checks": 70,
+      "exports": {
+        "api": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [
+            "host",
+            "api"
+          ],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "artifacts": [
+            {
+              "name": "openapi.json",
+              "bytes": 50326,
+              "sha256": "ca8c9531835840aeb69a6be28c1668fe46224252160604f28b9e0c1144dbe3eb"
+            }
+          ],
+          "counters": {
+            "HttpSchemaOperations": 3,
+            "GraphQLRegistrations": 0,
+            "GraphQLServices": 0,
+            "GraphQLSchemaBuilds": 0,
+            "GraphQLProvidersCreated": 0,
+            "GraphQLProvidersDisposed": 0,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        },
+        "both": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [
+            "host",
+            "api",
+            "graphql"
+          ],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "artifacts": [
+            {
+              "name": "openapi.json",
+              "bytes": 50326,
+              "sha256": "ca8c9531835840aeb69a6be28c1668fe46224252160604f28b9e0c1144dbe3eb"
+            },
+            {
+              "name": "schema.graphql",
+              "bytes": 1261,
+              "sha256": "b378ab66b40bab1c5f465390c88a41ed10602c5f03be29c83b65c7642a86ad21"
+            }
+          ],
+          "counters": {
+            "HttpSchemaOperations": 3,
+            "GraphQLRegistrations": 1,
+            "GraphQLServices": 28,
+            "GraphQLSchemaBuilds": 1,
+            "GraphQLProvidersCreated": 1,
+            "GraphQLProvidersDisposed": 1,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        },
+        "graphql": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [
+            "host",
+            "graphql"
+          ],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [],
+          "artifacts": [
+            {
+              "name": "schema.graphql",
+              "bytes": 1261,
+              "sha256": "b378ab66b40bab1c5f465390c88a41ed10602c5f03be29c83b65c7642a86ad21"
+            }
+          ],
+          "counters": {
+            "HttpSchemaOperations": 0,
+            "GraphQLRegistrations": 1,
+            "GraphQLServices": 28,
+            "GraphQLSchemaBuilds": 1,
+            "GraphQLProvidersCreated": 1,
+            "GraphQLProvidersDisposed": 1,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        },
+        "off": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [],
+          "artifacts": [],
+          "counters": {
+            "HttpSchemaOperations": 0,
+            "GraphQLRegistrations": 0,
+            "GraphQLServices": 0,
+            "GraphQLSchemaBuilds": 0,
+            "GraphQLProvidersCreated": 0,
+            "GraphQLProvidersDisposed": 0,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        }
+      },
+      "wire_differential": {
+        "passed": 25,
+        "failed": 0,
+        "scope": "Actual generated runtime HTTPS routes/SDL AST/JSON-shape differential fixture; independent bounded keyword interpreter is not an arbitrary JSON Schema validator or tenant authority.",
+        "checks": [
+          {
+            "name": "api: OpenAPI routes equal actual mapped POST endpoints",
+            "passed": true
+          },
+          {
+            "name": "api: actual authenticated get/list/set requests and successful responses satisfy exported shape",
+            "passed": true
+          },
+          {
+            "name": "api: exported request shapes reject missing/null/unmapped properties and array root, matching actual adapter",
+            "passed": true
+          },
+          {
+            "name": "api: shape-valid id0 still fails custom validation before business",
+            "passed": true
+          },
+          {
+            "name": "api: schema-valid cross-tenant requests deny both directions before business",
+            "passed": true
+          },
+          {
+            "name": "api: OpenAPI documents unauthenticated response without invented body schema",
+            "passed": true
+          },
+          {
+            "name": "api: API-only GraphQL remains absent with no vendor registration",
+            "passed": true
+          },
+          {
+            "name": "api: actual enabled host closes listener and balances handler disposal",
+            "passed": true
+          },
+          {
+            "name": "both: OpenAPI routes equal actual mapped POST endpoints",
+            "passed": true
+          },
+          {
+            "name": "both: actual authenticated get/list/set requests and successful responses satisfy exported shape",
+            "passed": true
+          },
+          {
+            "name": "both: exported request shapes reject missing/null/unmapped properties and array root, matching actual adapter",
+            "passed": true
+          },
+          {
+            "name": "both: shape-valid id0 still fails custom validation before business",
+            "passed": true
+          },
+          {
+            "name": "both: schema-valid cross-tenant requests deny both directions before business",
+            "passed": true
+          },
+          {
+            "name": "both: OpenAPI documents unauthenticated response without invented body schema",
+            "passed": true
+          },
+          {
+            "name": "both: API-only GraphQL remains absent with no vendor registration",
+            "passed": true
+          },
+          {
+            "name": "both: exported SDL AST equals complete actual enabled runtime schema AST",
+            "passed": true
+          },
+          {
+            "name": "both: actual GraphQL query and cross-tenant error preserve typed schema and authority",
+            "passed": true
+          },
+          {
+            "name": "both: offline schema file does not enable public introspection or schema download",
+            "passed": true
+          },
+          {
+            "name": "both: actual enabled host closes listener and balances handler disposal",
+            "passed": true
+          },
+          {
+            "name": "graphql: exported SDL AST equals complete actual enabled runtime schema AST",
+            "passed": true
+          },
+          {
+            "name": "graphql: actual GraphQL query and cross-tenant error preserve typed schema and authority",
+            "passed": true
+          },
+          {
+            "name": "graphql: offline schema file does not enable public introspection or schema download",
+            "passed": true
+          },
+          {
+            "name": "graphql: GraphQL-only still has no API mapping or handler work on API route",
+            "passed": true
+          },
+          {
+            "name": "graphql: actual enabled host closes listener and balances handler disposal",
+            "passed": true
+          },
+          {
+            "name": "late publication write denial preserves real GraphQL schema/provider cleanup counters",
+            "passed": true
+          }
+        ],
+        "observations": [
+          {
+            "profile": "api",
+            "operation": "get",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "list",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "items": [
+                {
+                  "tenant": "tenant-a",
+                  "id": 1,
+                  "label": "item-00001",
+                  "revision": 0,
+                  "amountMinorUnits": 17
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 2,
+                  "label": "item-00002",
+                  "revision": 0,
+                  "amountMinorUnits": 34
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 3,
+                  "label": "item-00003",
+                  "revision": 0,
+                  "amountMinorUnits": 51
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 4,
+                  "label": "item-00004",
+                  "revision": 0,
+                  "amountMinorUnits": 68
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 5,
+                  "label": "item-00005",
+                  "revision": 0,
+                  "amountMinorUnits": 85
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 6,
+                  "label": "item-00006",
+                  "revision": 0,
+                  "amountMinorUnits": 102
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 7,
+                  "label": "item-00007",
+                  "revision": 0,
+                  "amountMinorUnits": 119
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 8,
+                  "label": "item-00008",
+                  "revision": 0,
+                  "amountMinorUnits": 136
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 9,
+                  "label": "item-00009",
+                  "revision": 0,
+                  "amountMinorUnits": 153
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 10,
+                  "label": "item-00010",
+                  "revision": 0,
+                  "amountMinorUnits": 170
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 11,
+                  "label": "item-00011",
+                  "revision": 0,
+                  "amountMinorUnits": 187
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 12,
+                  "label": "item-00012",
+                  "revision": 0,
+                  "amountMinorUnits": 204
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 13,
+                  "label": "item-00013",
+                  "revision": 0,
+                  "amountMinorUnits": 221
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 14,
+                  "label": "item-00014",
+                  "revision": 0,
+                  "amountMinorUnits": 238
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 15,
+                  "label": "item-00015",
+                  "revision": 0,
+                  "amountMinorUnits": 255
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 16,
+                  "label": "item-00016",
+                  "revision": 0,
+                  "amountMinorUnits": 272
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 17,
+                  "label": "item-00017",
+                  "revision": 0,
+                  "amountMinorUnits": 289
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 18,
+                  "label": "item-00018",
+                  "revision": 0,
+                  "amountMinorUnits": 306
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 19,
+                  "label": "item-00019",
+                  "revision": 0,
+                  "amountMinorUnits": 323
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 20,
+                  "label": "item-00020",
+                  "revision": 0,
+                  "amountMinorUnits": 340
+                }
+              ]
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "set",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 2,
+              "label": "schema-proof",
+              "revision": 1,
+              "amountMinorUnits": 34
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "schema-valid-custom-invalid",
+            "Status": 400,
+            "body": {
+              "type": "about:blank",
+              "title": "Request validation failed.",
+              "status": 400,
+              "code": "validation.failed"
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "cross-tenant",
+            "tenant": "tenant-b",
+            "subject": "alice",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "cross-tenant",
+            "tenant": "tenant-a",
+            "subject": "bob",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "get",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "list",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "items": [
+                {
+                  "tenant": "tenant-a",
+                  "id": 1,
+                  "label": "item-00001",
+                  "revision": 0,
+                  "amountMinorUnits": 17
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 2,
+                  "label": "item-00002",
+                  "revision": 0,
+                  "amountMinorUnits": 34
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 3,
+                  "label": "item-00003",
+                  "revision": 0,
+                  "amountMinorUnits": 51
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 4,
+                  "label": "item-00004",
+                  "revision": 0,
+                  "amountMinorUnits": 68
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 5,
+                  "label": "item-00005",
+                  "revision": 0,
+                  "amountMinorUnits": 85
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 6,
+                  "label": "item-00006",
+                  "revision": 0,
+                  "amountMinorUnits": 102
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 7,
+                  "label": "item-00007",
+                  "revision": 0,
+                  "amountMinorUnits": 119
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 8,
+                  "label": "item-00008",
+                  "revision": 0,
+                  "amountMinorUnits": 136
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 9,
+                  "label": "item-00009",
+                  "revision": 0,
+                  "amountMinorUnits": 153
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 10,
+                  "label": "item-00010",
+                  "revision": 0,
+                  "amountMinorUnits": 170
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 11,
+                  "label": "item-00011",
+                  "revision": 0,
+                  "amountMinorUnits": 187
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 12,
+                  "label": "item-00012",
+                  "revision": 0,
+                  "amountMinorUnits": 204
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 13,
+                  "label": "item-00013",
+                  "revision": 0,
+                  "amountMinorUnits": 221
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 14,
+                  "label": "item-00014",
+                  "revision": 0,
+                  "amountMinorUnits": 238
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 15,
+                  "label": "item-00015",
+                  "revision": 0,
+                  "amountMinorUnits": 255
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 16,
+                  "label": "item-00016",
+                  "revision": 0,
+                  "amountMinorUnits": 272
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 17,
+                  "label": "item-00017",
+                  "revision": 0,
+                  "amountMinorUnits": 289
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 18,
+                  "label": "item-00018",
+                  "revision": 0,
+                  "amountMinorUnits": 306
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 19,
+                  "label": "item-00019",
+                  "revision": 0,
+                  "amountMinorUnits": 323
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 20,
+                  "label": "item-00020",
+                  "revision": 0,
+                  "amountMinorUnits": 340
+                }
+              ]
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "set",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 2,
+              "label": "schema-proof",
+              "revision": 1,
+              "amountMinorUnits": 34
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "schema-valid-custom-invalid",
+            "Status": 400,
+            "body": {
+              "type": "about:blank",
+              "title": "Request validation failed.",
+              "status": 400,
+              "code": "validation.failed"
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "cross-tenant",
+            "tenant": "tenant-b",
+            "subject": "alice",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "cross-tenant",
+            "tenant": "tenant-a",
+            "subject": "bob",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "both",
+            "actualSchema": "schema {\r\n  query: Query\r\n  mutation: Mutation\r\n}\r\n\r\ntype Query {\r\n  catalogItem(input: GetItemInput!): Item @cost(weight: \"10\")\r\n  catalogPage(input: ListItemsInput!): ItemPage @cost(weight: \"10\")\r\n}\r\n\r\ntype Mutation {\r\n  setLabel(input: SetLabelInput!): Item @cost(weight: \"10\")\r\n}\r\n\r\ntype Item {\r\n  tenant: String!\r\n  id: Int!\r\n  label: String!\r\n  revision: Int!\r\n  amountMinorUnits: Long!\r\n}\r\n\r\ntype ItemPage {\r\n  items: [Item!]!\r\n}\r\n\r\ninput GetItemInput {\r\n  tenant: String!\r\n  id: Int!\r\n}\r\n\r\ninput ListItemsInput {\r\n  tenant: String!\r\n  page: Int!\r\n}\r\n\r\ninput SetLabelInput {\r\n  tenant: String!\r\n  id: Int!\r\n  expectedRevision: Int!\r\n  label: String!\r\n}\r\n\r\n\"The `Long` scalar type represents a signed 64-bit integer.\"\r\nscalar Long\r\n  @specifiedBy(url: \"https://scalars.graphql.org/chillicream/long.html\")\r\n\r\n\"The purpose of the `cost` directive is to define a `weight` for GraphQL types, fields, and arguments. Static analysis can use these weights when calculating the overall cost of a query or response.\"\r\ndirective @cost(\r\n  \"The `weight` argument defines what value to add to the overall cost for every appearance, or possible appearance, of a type, field, argument, etc.\"\r\n  weight: String!\r\n) on\r\n  | SCALAR\r\n  | OBJECT\r\n  | FIELD_DEFINITION\r\n  | ARGUMENT_DEFINITION\r\n  | ENUM\r\n  | INPUT_FIELD_DEFINITION",
+            "astIdentical": true
+          },
+          {
+            "profile": "graphql",
+            "actualSchema": "schema {\r\n  query: Query\r\n  mutation: Mutation\r\n}\r\n\r\ntype Query {\r\n  catalogItem(input: GetItemInput!): Item @cost(weight: \"10\")\r\n  catalogPage(input: ListItemsInput!): ItemPage @cost(weight: \"10\")\r\n}\r\n\r\ntype Mutation {\r\n  setLabel(input: SetLabelInput!): Item @cost(weight: \"10\")\r\n}\r\n\r\ntype Item {\r\n  tenant: String!\r\n  id: Int!\r\n  label: String!\r\n  revision: Int!\r\n  amountMinorUnits: Long!\r\n}\r\n\r\ntype ItemPage {\r\n  items: [Item!]!\r\n}\r\n\r\ninput GetItemInput {\r\n  tenant: String!\r\n  id: Int!\r\n}\r\n\r\ninput ListItemsInput {\r\n  tenant: String!\r\n  page: Int!\r\n}\r\n\r\ninput SetLabelInput {\r\n  tenant: String!\r\n  id: Int!\r\n  expectedRevision: Int!\r\n  label: String!\r\n}\r\n\r\n\"The `Long` scalar type represents a signed 64-bit integer.\"\r\nscalar Long\r\n  @specifiedBy(url: \"https://scalars.graphql.org/chillicream/long.html\")\r\n\r\n\"The purpose of the `cost` directive is to define a `weight` for GraphQL types, fields, and arguments. Static analysis can use these weights when calculating the overall cost of a query or response.\"\r\ndirective @cost(\r\n  \"The `weight` argument defines what value to add to the overall cost for every appearance, or possible appearance, of a type, field, argument, etc.\"\r\n  weight: String!\r\n) on\r\n  | SCALAR\r\n  | OBJECT\r\n  | FIELD_DEFINITION\r\n  | ARGUMENT_DEFINITION\r\n  | ENUM\r\n  | INPUT_FIELD_DEFINITION",
+            "astIdentical": true
+          },
+          {
+            "phase": "late-publication-denied",
+            "expectedExit": 3,
+            "stdout": "",
+            "stderr": {
+              "status": "failed",
+              "code": "export.failure",
+              "message": "Contract export rejected; no input, path, credential or vendor exception details are included.",
+              "counters": {
+                "HttpSchemaOperations": 3,
+                "GraphQLRegistrations": 1,
+                "GraphQLServices": 28,
+                "GraphQLSchemaBuilds": 1,
+                "GraphQLProvidersCreated": 1,
+                "GraphQLProvidersDisposed": 1,
+                "HandlerFactoryCalls": 0,
+                "DispatchCalls": 0,
+                "HostFactories": 0,
+                "TlsReads": 0,
+                "AuthorityCalls": 0
+              }
+            },
+            "permissionPolicy": "current-user-only protected read/execute DACL",
+            "outputAbsent": true,
+            "secrets": false
+          }
+        ],
+        "schemaKeywords": [
+          "$id",
+          "additionalProperties",
+          "allOf",
+          "items",
+          "properties",
+          "required",
+          "type"
+        ]
+      },
+      "registry_sha256": "5de79901e3c7a2ffe681c0d8b15289b3748b75363d3aef808455327b1c6f2171",
+      "consumer_lock_sha256": "479eb3536165ec6725ab1a689f345486017e921784fab9414b3b0912966dfbf9",
+      "runtime_libraries": [
+        "Cehpalon.Engine.Composition/1.0.0",
+        "Cehpalon.Engine.Core/1.0.0",
+        "Cehpalon.Engine.Identity.Contracts/1.0.0",
+        "Cehpalon.Engine.Tenancy/1.0.0",
+        "Cehpalon.Engine.Transports.GraphQL/1.0.0",
+        "Cehpalon.Engine.Transports.Http/1.0.0",
+        "ChilliCream.Nitro.App/32.0.2",
+        "GreenDonut.Abstractions/16.7.1",
+        "GreenDonut.Data.Abstractions/16.7.1",
+        "GreenDonut.Data.Primitives/16.7.1",
+        "GreenDonut.Data/16.7.1",
+        "GreenDonut/16.7.1",
+        "HotChocolate.Abstractions/16.7.1",
+        "HotChocolate.AspNetCore.Pipeline/16.7.1",
+        "HotChocolate.AspNetCore/16.7.1",
+        "HotChocolate.Authorization/16.7.1",
+        "HotChocolate.Caching.Memory/16.7.1",
+        "HotChocolate.CostAnalysis.Core/16.7.1",
+        "HotChocolate.CostAnalysis/16.7.1",
+        "HotChocolate.Execution.Abstractions/16.7.1",
+        "HotChocolate.Execution.Configuration.Abstractions/16.7.1",
+        "HotChocolate.Execution.Operation.Abstractions/16.7.1",
+        "HotChocolate.Execution.Pipeline/16.7.1",
+        "HotChocolate.Execution.Projections/16.7.1",
+        "HotChocolate.Features/16.7.1",
+        "HotChocolate.Fusion.Language/16.7.1",
+        "HotChocolate.Fusion.Utilities/16.7.1",
+        "HotChocolate.Language.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8/16.7.1",
+        "HotChocolate.Language.Visitors/16.7.1",
+        "HotChocolate.Language.Web/16.7.1",
+        "HotChocolate.Language/16.7.1",
+        "HotChocolate.PersistedOperations.Abstractions/16.7.1",
+        "HotChocolate.PersistedOperations.Pipeline/16.7.1",
+        "HotChocolate.Primitives/16.7.1",
+        "HotChocolate.Subscriptions.InMemory/16.7.1",
+        "HotChocolate.Subscriptions/16.7.1",
+        "HotChocolate.Text.Json/16.7.1",
+        "HotChocolate.Transport.Formatters/16.7.1",
+        "HotChocolate.Transport.Sockets/16.7.1",
+        "HotChocolate.Types.Abstractions/16.7.1",
+        "HotChocolate.Types.CursorPagination.Extensions/16.7.1",
+        "HotChocolate.Types.CursorPagination/16.7.1",
+        "HotChocolate.Types.Errors/16.7.1",
+        "HotChocolate.Types.Mutations/16.7.1",
+        "HotChocolate.Types.Queries/16.7.1",
+        "HotChocolate.Types.Scalars.Upload/16.7.1",
+        "HotChocolate.Types/16.7.1",
+        "HotChocolate.Utilities.Base36/16.7.1",
+        "HotChocolate.Utilities.Buffers/16.7.1",
+        "HotChocolate.Utilities.DependencyInjection/16.7.1",
+        "HotChocolate.Utilities.Tasks/16.7.1",
+        "HotChocolate.Utilities/16.7.1",
+        "HotChocolate.Validation/16.7.1",
+        "HotChocolate/16.7.1",
+        "Microsoft.AspNetCore.Authentication.JwtBearer/11.0.0-rc.3.26522.148",
+        "Microsoft.Bcl.Cryptography/10.0.2",
+        "Microsoft.IdentityModel.Abstractions/8.19.2",
+        "Microsoft.IdentityModel.JsonWebTokens/8.19.2",
+        "Microsoft.IdentityModel.Logging/8.19.2",
+        "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.19.2",
+        "Microsoft.IdentityModel.Protocols/8.19.2",
+        "Microsoft.IdentityModel.Tokens/8.19.2",
+        "PortableConsumer.System/1.0.0",
+        "System.IO.Hashing/8.0.0",
+        "System.IdentityModel.Tokens.Jwt/8.19.2",
+        "Yarp.ReverseProxy/2.3.0"
+      ],
+      "engine_manifest_sha256": "29222754216a20bc9e36b2b6c11f12d707355bafeeba0d53da88dee1460f1d5c",
+      "contract_manifest_sha256": "75fc6a18ef1c12d588ffb90096fc18cda8c7741f5a5b1c2b17023583b5ae308e"
+    },
+    "linux": {
+      "component_passed": 502,
+      "component_failed": 0,
+      "http_contracts": 51,
+      "tooling_contracts": 148,
+      "export_harness_checks": 160,
+      "runtime_differential_checks": 25,
+      "small_api_harness_checks": 133,
+      "small_api_https_cases": 39,
+      "portable_regression_checks": 70,
+      "exports": {
+        "api": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [
+            "host",
+            "api"
+          ],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "artifacts": [
+            {
+              "name": "openapi.json",
+              "bytes": 48813,
+              "sha256": "e507daa77f9a39b73390c356d1420ba53dabbbaa148424d2d0fbc5dd2ba10414"
+            }
+          ],
+          "counters": {
+            "HttpSchemaOperations": 3,
+            "GraphQLRegistrations": 0,
+            "GraphQLServices": 0,
+            "GraphQLSchemaBuilds": 0,
+            "GraphQLProvidersCreated": 0,
+            "GraphQLProvidersDisposed": 0,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        },
+        "both": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [
+            "host",
+            "api",
+            "graphql"
+          ],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "artifacts": [
+            {
+              "name": "openapi.json",
+              "bytes": 48813,
+              "sha256": "e507daa77f9a39b73390c356d1420ba53dabbbaa148424d2d0fbc5dd2ba10414"
+            },
+            {
+              "name": "schema.graphql",
+              "bytes": 1261,
+              "sha256": "b378ab66b40bab1c5f465390c88a41ed10602c5f03be29c83b65c7642a86ad21"
+            }
+          ],
+          "counters": {
+            "HttpSchemaOperations": 3,
+            "GraphQLRegistrations": 1,
+            "GraphQLServices": 28,
+            "GraphQLSchemaBuilds": 1,
+            "GraphQLProvidersCreated": 1,
+            "GraphQLProvidersDisposed": 1,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        },
+        "graphql": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [
+            "host",
+            "graphql"
+          ],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [],
+          "artifacts": [
+            {
+              "name": "schema.graphql",
+              "bytes": 1261,
+              "sha256": "b378ab66b40bab1c5f465390c88a41ed10602c5f03be29c83b65c7642a86ad21"
+            }
+          ],
+          "counters": {
+            "HttpSchemaOperations": 0,
+            "GraphQLRegistrations": 1,
+            "GraphQLServices": 28,
+            "GraphQLSchemaBuilds": 1,
+            "GraphQLProvidersCreated": 1,
+            "GraphQLProvidersDisposed": 1,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        },
+        "off": {
+          "schemaVersion": 1,
+          "profile": "small-api",
+          "activationOrder": [],
+          "generatedOperationIds": [
+            "catalog.get",
+            "catalog.list",
+            "catalog.set"
+          ],
+          "httpOperationIds": [],
+          "artifacts": [],
+          "counters": {
+            "HttpSchemaOperations": 0,
+            "GraphQLRegistrations": 0,
+            "GraphQLServices": 0,
+            "GraphQLSchemaBuilds": 0,
+            "GraphQLProvidersCreated": 0,
+            "GraphQLProvidersDisposed": 0,
+            "HandlerFactoryCalls": 0,
+            "DispatchCalls": 0,
+            "HostFactories": 0,
+            "TlsReads": 0,
+            "AuthorityCalls": 0
+          },
+          "limits": [
+            "OpenAPI describes the three business POST routes only; anonymous health and the GraphQL HTTP envelope are outside that document. SDL describes selected GraphQL fields.",
+            "Structural wire shapes only; custom validators, CLR numeric bounds, duplicate-name/Unicode/byte checks, tenant policy and fixture data constraints are not fully expressed by JSON Schema.",
+            "GraphQL construction is explicit offline artifact work for the enabled module. No WebApplication, TLS/key read, handler or authority call is performed.",
+            "Artifacts do not enable network introspection/schema endpoints or grant tenant authority. Source/build parents are trusted; path observations do not defend hostile races."
+          ]
+        }
+      },
+      "wire_differential": {
+        "passed": 25,
+        "failed": 0,
+        "scope": "Actual generated runtime HTTPS routes/SDL AST/JSON-shape differential fixture; independent bounded keyword interpreter is not an arbitrary JSON Schema validator or tenant authority.",
+        "checks": [
+          {
+            "name": "api: OpenAPI routes equal actual mapped POST endpoints",
+            "passed": true
+          },
+          {
+            "name": "api: actual authenticated get/list/set requests and successful responses satisfy exported shape",
+            "passed": true
+          },
+          {
+            "name": "api: exported request shapes reject missing/null/unmapped properties and array root, matching actual adapter",
+            "passed": true
+          },
+          {
+            "name": "api: shape-valid id0 still fails custom validation before business",
+            "passed": true
+          },
+          {
+            "name": "api: schema-valid cross-tenant requests deny both directions before business",
+            "passed": true
+          },
+          {
+            "name": "api: OpenAPI documents unauthenticated response without invented body schema",
+            "passed": true
+          },
+          {
+            "name": "api: API-only GraphQL remains absent with no vendor registration",
+            "passed": true
+          },
+          {
+            "name": "api: actual enabled host closes listener and balances handler disposal",
+            "passed": true
+          },
+          {
+            "name": "both: OpenAPI routes equal actual mapped POST endpoints",
+            "passed": true
+          },
+          {
+            "name": "both: actual authenticated get/list/set requests and successful responses satisfy exported shape",
+            "passed": true
+          },
+          {
+            "name": "both: exported request shapes reject missing/null/unmapped properties and array root, matching actual adapter",
+            "passed": true
+          },
+          {
+            "name": "both: shape-valid id0 still fails custom validation before business",
+            "passed": true
+          },
+          {
+            "name": "both: schema-valid cross-tenant requests deny both directions before business",
+            "passed": true
+          },
+          {
+            "name": "both: OpenAPI documents unauthenticated response without invented body schema",
+            "passed": true
+          },
+          {
+            "name": "both: API-only GraphQL remains absent with no vendor registration",
+            "passed": true
+          },
+          {
+            "name": "both: exported SDL AST equals complete actual enabled runtime schema AST",
+            "passed": true
+          },
+          {
+            "name": "both: actual GraphQL query and cross-tenant error preserve typed schema and authority",
+            "passed": true
+          },
+          {
+            "name": "both: offline schema file does not enable public introspection or schema download",
+            "passed": true
+          },
+          {
+            "name": "both: actual enabled host closes listener and balances handler disposal",
+            "passed": true
+          },
+          {
+            "name": "graphql: exported SDL AST equals complete actual enabled runtime schema AST",
+            "passed": true
+          },
+          {
+            "name": "graphql: actual GraphQL query and cross-tenant error preserve typed schema and authority",
+            "passed": true
+          },
+          {
+            "name": "graphql: offline schema file does not enable public introspection or schema download",
+            "passed": true
+          },
+          {
+            "name": "graphql: GraphQL-only still has no API mapping or handler work on API route",
+            "passed": true
+          },
+          {
+            "name": "graphql: actual enabled host closes listener and balances handler disposal",
+            "passed": true
+          },
+          {
+            "name": "late publication write denial preserves real GraphQL schema/provider cleanup counters",
+            "passed": true
+          }
+        ],
+        "observations": [
+          {
+            "profile": "api",
+            "operation": "get",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "list",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "items": [
+                {
+                  "tenant": "tenant-a",
+                  "id": 1,
+                  "label": "item-00001",
+                  "revision": 0,
+                  "amountMinorUnits": 17
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 2,
+                  "label": "item-00002",
+                  "revision": 0,
+                  "amountMinorUnits": 34
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 3,
+                  "label": "item-00003",
+                  "revision": 0,
+                  "amountMinorUnits": 51
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 4,
+                  "label": "item-00004",
+                  "revision": 0,
+                  "amountMinorUnits": 68
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 5,
+                  "label": "item-00005",
+                  "revision": 0,
+                  "amountMinorUnits": 85
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 6,
+                  "label": "item-00006",
+                  "revision": 0,
+                  "amountMinorUnits": 102
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 7,
+                  "label": "item-00007",
+                  "revision": 0,
+                  "amountMinorUnits": 119
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 8,
+                  "label": "item-00008",
+                  "revision": 0,
+                  "amountMinorUnits": 136
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 9,
+                  "label": "item-00009",
+                  "revision": 0,
+                  "amountMinorUnits": 153
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 10,
+                  "label": "item-00010",
+                  "revision": 0,
+                  "amountMinorUnits": 170
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 11,
+                  "label": "item-00011",
+                  "revision": 0,
+                  "amountMinorUnits": 187
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 12,
+                  "label": "item-00012",
+                  "revision": 0,
+                  "amountMinorUnits": 204
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 13,
+                  "label": "item-00013",
+                  "revision": 0,
+                  "amountMinorUnits": 221
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 14,
+                  "label": "item-00014",
+                  "revision": 0,
+                  "amountMinorUnits": 238
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 15,
+                  "label": "item-00015",
+                  "revision": 0,
+                  "amountMinorUnits": 255
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 16,
+                  "label": "item-00016",
+                  "revision": 0,
+                  "amountMinorUnits": 272
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 17,
+                  "label": "item-00017",
+                  "revision": 0,
+                  "amountMinorUnits": 289
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 18,
+                  "label": "item-00018",
+                  "revision": 0,
+                  "amountMinorUnits": 306
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 19,
+                  "label": "item-00019",
+                  "revision": 0,
+                  "amountMinorUnits": 323
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 20,
+                  "label": "item-00020",
+                  "revision": 0,
+                  "amountMinorUnits": 340
+                }
+              ]
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "set",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 2,
+              "label": "schema-proof",
+              "revision": 1,
+              "amountMinorUnits": 34
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "schema-valid-custom-invalid",
+            "Status": 400,
+            "body": {
+              "type": "about:blank",
+              "title": "Request validation failed.",
+              "status": 400,
+              "code": "validation.failed"
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "cross-tenant",
+            "tenant": "tenant-b",
+            "subject": "alice",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "api",
+            "operation": "cross-tenant",
+            "tenant": "tenant-a",
+            "subject": "bob",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "get",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 1,
+              "label": "item-00001",
+              "revision": 0,
+              "amountMinorUnits": 17
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "list",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "items": [
+                {
+                  "tenant": "tenant-a",
+                  "id": 1,
+                  "label": "item-00001",
+                  "revision": 0,
+                  "amountMinorUnits": 17
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 2,
+                  "label": "item-00002",
+                  "revision": 0,
+                  "amountMinorUnits": 34
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 3,
+                  "label": "item-00003",
+                  "revision": 0,
+                  "amountMinorUnits": 51
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 4,
+                  "label": "item-00004",
+                  "revision": 0,
+                  "amountMinorUnits": 68
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 5,
+                  "label": "item-00005",
+                  "revision": 0,
+                  "amountMinorUnits": 85
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 6,
+                  "label": "item-00006",
+                  "revision": 0,
+                  "amountMinorUnits": 102
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 7,
+                  "label": "item-00007",
+                  "revision": 0,
+                  "amountMinorUnits": 119
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 8,
+                  "label": "item-00008",
+                  "revision": 0,
+                  "amountMinorUnits": 136
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 9,
+                  "label": "item-00009",
+                  "revision": 0,
+                  "amountMinorUnits": 153
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 10,
+                  "label": "item-00010",
+                  "revision": 0,
+                  "amountMinorUnits": 170
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 11,
+                  "label": "item-00011",
+                  "revision": 0,
+                  "amountMinorUnits": 187
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 12,
+                  "label": "item-00012",
+                  "revision": 0,
+                  "amountMinorUnits": 204
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 13,
+                  "label": "item-00013",
+                  "revision": 0,
+                  "amountMinorUnits": 221
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 14,
+                  "label": "item-00014",
+                  "revision": 0,
+                  "amountMinorUnits": 238
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 15,
+                  "label": "item-00015",
+                  "revision": 0,
+                  "amountMinorUnits": 255
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 16,
+                  "label": "item-00016",
+                  "revision": 0,
+                  "amountMinorUnits": 272
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 17,
+                  "label": "item-00017",
+                  "revision": 0,
+                  "amountMinorUnits": 289
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 18,
+                  "label": "item-00018",
+                  "revision": 0,
+                  "amountMinorUnits": 306
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 19,
+                  "label": "item-00019",
+                  "revision": 0,
+                  "amountMinorUnits": 323
+                },
+                {
+                  "tenant": "tenant-a",
+                  "id": 20,
+                  "label": "item-00020",
+                  "revision": 0,
+                  "amountMinorUnits": 340
+                }
+              ]
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "set",
+            "Status": 200,
+            "ContentType": "application/json",
+            "body": {
+              "tenant": "tenant-a",
+              "id": 2,
+              "label": "schema-proof",
+              "revision": 1,
+              "amountMinorUnits": 34
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "schema-valid-custom-invalid",
+            "Status": 400,
+            "body": {
+              "type": "about:blank",
+              "title": "Request validation failed.",
+              "status": 400,
+              "code": "validation.failed"
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "cross-tenant",
+            "tenant": "tenant-b",
+            "subject": "alice",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "both",
+            "operation": "cross-tenant",
+            "tenant": "tenant-a",
+            "subject": "bob",
+            "Status": 403,
+            "body": {
+              "type": "about:blank",
+              "title": "Access denied.",
+              "status": 403,
+              "code": "access.denied"
+            }
+          },
+          {
+            "profile": "both",
+            "actualSchema": "schema {\n  query: Query\n  mutation: Mutation\n}\n\ntype Query {\n  catalogItem(input: GetItemInput!): Item @cost(weight: \"10\")\n  catalogPage(input: ListItemsInput!): ItemPage @cost(weight: \"10\")\n}\n\ntype Mutation {\n  setLabel(input: SetLabelInput!): Item @cost(weight: \"10\")\n}\n\ntype Item {\n  tenant: String!\n  id: Int!\n  label: String!\n  revision: Int!\n  amountMinorUnits: Long!\n}\n\ntype ItemPage {\n  items: [Item!]!\n}\n\ninput GetItemInput {\n  tenant: String!\n  id: Int!\n}\n\ninput ListItemsInput {\n  tenant: String!\n  page: Int!\n}\n\ninput SetLabelInput {\n  tenant: String!\n  id: Int!\n  expectedRevision: Int!\n  label: String!\n}\n\n\"The `Long` scalar type represents a signed 64-bit integer.\"\nscalar Long\n  @specifiedBy(url: \"https://scalars.graphql.org/chillicream/long.html\")\n\n\"The purpose of the `cost` directive is to define a `weight` for GraphQL types, fields, and arguments. Static analysis can use these weights when calculating the overall cost of a query or response.\"\ndirective @cost(\n  \"The `weight` argument defines what value to add to the overall cost for every appearance, or possible appearance, of a type, field, argument, etc.\"\n  weight: String!\n) on\n  | SCALAR\n  | OBJECT\n  | FIELD_DEFINITION\n  | ARGUMENT_DEFINITION\n  | ENUM\n  | INPUT_FIELD_DEFINITION",
+            "astIdentical": true
+          },
+          {
+            "profile": "graphql",
+            "actualSchema": "schema {\n  query: Query\n  mutation: Mutation\n}\n\ntype Query {\n  catalogItem(input: GetItemInput!): Item @cost(weight: \"10\")\n  catalogPage(input: ListItemsInput!): ItemPage @cost(weight: \"10\")\n}\n\ntype Mutation {\n  setLabel(input: SetLabelInput!): Item @cost(weight: \"10\")\n}\n\ntype Item {\n  tenant: String!\n  id: Int!\n  label: String!\n  revision: Int!\n  amountMinorUnits: Long!\n}\n\ntype ItemPage {\n  items: [Item!]!\n}\n\ninput GetItemInput {\n  tenant: String!\n  id: Int!\n}\n\ninput ListItemsInput {\n  tenant: String!\n  page: Int!\n}\n\ninput SetLabelInput {\n  tenant: String!\n  id: Int!\n  expectedRevision: Int!\n  label: String!\n}\n\n\"The `Long` scalar type represents a signed 64-bit integer.\"\nscalar Long\n  @specifiedBy(url: \"https://scalars.graphql.org/chillicream/long.html\")\n\n\"The purpose of the `cost` directive is to define a `weight` for GraphQL types, fields, and arguments. Static analysis can use these weights when calculating the overall cost of a query or response.\"\ndirective @cost(\n  \"The `weight` argument defines what value to add to the overall cost for every appearance, or possible appearance, of a type, field, argument, etc.\"\n  weight: String!\n) on\n  | SCALAR\n  | OBJECT\n  | FIELD_DEFINITION\n  | ARGUMENT_DEFINITION\n  | ENUM\n  | INPUT_FIELD_DEFINITION",
+            "astIdentical": true
+          },
+          {
+            "phase": "late-publication-denied",
+            "expectedExit": 3,
+            "stdout": "",
+            "stderr": {
+              "status": "failed",
+              "code": "export.failure",
+              "message": "Contract export rejected; no input, path, credential or vendor exception details are included.",
+              "counters": {
+                "HttpSchemaOperations": 3,
+                "GraphQLRegistrations": 1,
+                "GraphQLServices": 28,
+                "GraphQLSchemaBuilds": 1,
+                "GraphQLProvidersCreated": 1,
+                "GraphQLProvidersDisposed": 1,
+                "HandlerFactoryCalls": 0,
+                "DispatchCalls": 0,
+                "HostFactories": 0,
+                "TlsReads": 0,
+                "AuthorityCalls": 0
+              }
+            },
+            "permissionPolicy": "native Unix0500 parent",
+            "outputAbsent": true,
+            "secrets": false
+          }
+        ],
+        "schemaKeywords": [
+          "$id",
+          "additionalProperties",
+          "allOf",
+          "items",
+          "properties",
+          "required",
+          "type"
+        ]
+      },
+      "registry_sha256": "5de79901e3c7a2ffe681c0d8b15289b3748b75363d3aef808455327b1c6f2171",
+      "consumer_lock_sha256": "b4196a00d92c96fb74de4eae1b2004519d6f4054090df0de9aa3e0dad8575b69",
+      "runtime_libraries": [
+        "Cehpalon.Engine.Composition/1.0.0",
+        "Cehpalon.Engine.Core/1.0.0",
+        "Cehpalon.Engine.Identity.Contracts/1.0.0",
+        "Cehpalon.Engine.Tenancy/1.0.0",
+        "Cehpalon.Engine.Transports.GraphQL/1.0.0",
+        "Cehpalon.Engine.Transports.Http/1.0.0",
+        "ChilliCream.Nitro.App/32.0.2",
+        "GreenDonut.Abstractions/16.7.1",
+        "GreenDonut.Data.Abstractions/16.7.1",
+        "GreenDonut.Data.Primitives/16.7.1",
+        "GreenDonut.Data/16.7.1",
+        "GreenDonut/16.7.1",
+        "HotChocolate.Abstractions/16.7.1",
+        "HotChocolate.AspNetCore.Pipeline/16.7.1",
+        "HotChocolate.AspNetCore/16.7.1",
+        "HotChocolate.Authorization/16.7.1",
+        "HotChocolate.Caching.Memory/16.7.1",
+        "HotChocolate.CostAnalysis.Core/16.7.1",
+        "HotChocolate.CostAnalysis/16.7.1",
+        "HotChocolate.Execution.Abstractions/16.7.1",
+        "HotChocolate.Execution.Configuration.Abstractions/16.7.1",
+        "HotChocolate.Execution.Operation.Abstractions/16.7.1",
+        "HotChocolate.Execution.Pipeline/16.7.1",
+        "HotChocolate.Execution.Projections/16.7.1",
+        "HotChocolate.Features/16.7.1",
+        "HotChocolate.Fusion.Language/16.7.1",
+        "HotChocolate.Fusion.Utilities/16.7.1",
+        "HotChocolate.Language.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8.SyntaxTree/16.7.1",
+        "HotChocolate.Language.Utf8/16.7.1",
+        "HotChocolate.Language.Visitors/16.7.1",
+        "HotChocolate.Language.Web/16.7.1",
+        "HotChocolate.Language/16.7.1",
+        "HotChocolate.PersistedOperations.Abstractions/16.7.1",
+        "HotChocolate.PersistedOperations.Pipeline/16.7.1",
+        "HotChocolate.Primitives/16.7.1",
+        "HotChocolate.Subscriptions.InMemory/16.7.1",
+        "HotChocolate.Subscriptions/16.7.1",
+        "HotChocolate.Text.Json/16.7.1",
+        "HotChocolate.Transport.Formatters/16.7.1",
+        "HotChocolate.Transport.Sockets/16.7.1",
+        "HotChocolate.Types.Abstractions/16.7.1",
+        "HotChocolate.Types.CursorPagination.Extensions/16.7.1",
+        "HotChocolate.Types.CursorPagination/16.7.1",
+        "HotChocolate.Types.Errors/16.7.1",
+        "HotChocolate.Types.Mutations/16.7.1",
+        "HotChocolate.Types.Queries/16.7.1",
+        "HotChocolate.Types.Scalars.Upload/16.7.1",
+        "HotChocolate.Types/16.7.1",
+        "HotChocolate.Utilities.Base36/16.7.1",
+        "HotChocolate.Utilities.Buffers/16.7.1",
+        "HotChocolate.Utilities.DependencyInjection/16.7.1",
+        "HotChocolate.Utilities.Tasks/16.7.1",
+        "HotChocolate.Utilities/16.7.1",
+        "HotChocolate.Validation/16.7.1",
+        "HotChocolate/16.7.1",
+        "Microsoft.AspNetCore.Authentication.JwtBearer/11.0.0-rc.3.26522.148",
+        "Microsoft.Bcl.Cryptography/10.0.2",
+        "Microsoft.IdentityModel.Abstractions/8.19.2",
+        "Microsoft.IdentityModel.JsonWebTokens/8.19.2",
+        "Microsoft.IdentityModel.Logging/8.19.2",
+        "Microsoft.IdentityModel.Protocols.OpenIdConnect/8.19.2",
+        "Microsoft.IdentityModel.Protocols/8.19.2",
+        "Microsoft.IdentityModel.Tokens/8.19.2",
+        "PortableConsumer.System/1.0.0",
+        "System.IO.Hashing/8.0.0",
+        "System.IdentityModel.Tokens.Jwt/8.19.2",
+        "Yarp.ReverseProxy/2.3.0"
+      ],
+      "engine_manifest_sha256": "101671746ace97e68e6bcd79e775f97a3d77ff879e9973f5a8846ad68d8ad68e",
+      "contract_manifest_sha256": "a3625b8c128476310c182da68b7b51db1793744d6cd5cbbc71a6c8ae813fc796"
+    }
+  },
+  "retention": {
+    "engine_raw": {
+      "count": 76,
+      "bytes": 493995,
+      "manifest_sha256": "35e4d5e3fb1c064bfea3f13f28b2d4b445e8a89e336a0fceb28c3c9cf76f70b7",
+      "staged_blob_verification": "all entries match staged Git blob bytes/size/SHA256"
+    },
+    "ci": {
+      "count": 6,
+      "bytes": 5528,
+      "manifest_sha256": "fdb8f92a5cd5022dc688fbb9b51c7b996533edd918be1099779f1749c057fb15",
+      "staged_blob_verification": "all entries match staged Git blob bytes/size/SHA256"
+    },
+    "samples_raw": {
+      "count": 645,
+      "bytes": 2508174,
+      "manifest_sha256": "9b0350f691d64f75e56222670e7b532a56ade782506b1a862ee8959272aa1011",
+      "committed_blob_verification": "all645entries match exact committed bytes/size/SHA256"
+    }
+  },
+  "ci": {
+    "component_run": 40838078446,
+    "platform_run": 40838078343,
+    "jobs": 4,
+    "steps": 0,
+    "status": "Blocked before execution",
+    "reason": "Explicit recent-payments/spending-limit annotations",
+    "no_unchanged_rerun_or_billing_change": true
+  },
+  "benchmark": "Not required for bounded artifact correctness/no timing claim; full #20 tooling benchmark remains Planned. No old Small API workload rerun.",
+  "tracking": {
+    "issues": [
+      9,
+      20
+    ],
+    "issue3": "Body/editable metadata unchanged Blocked",
+    "issue9": "Blocked/M0/full Test and Benchmark Blocked",
+    "issue20": "In Progress/P2/M0/full gates Planned; original W5/#2/#11 dependencies/estimates/null hours preserved"
+  },
+  "retained_failure": "Initial root recursive-record test fixture failed CS8910 (copy-constructor conflict); corrected two-field fixture. Expected readonly-parent publication failure is successful fault coverage, not a failed workload.",
+  "limits": [
+    "No full OpenAPI/JSON Schema validator certification; proof interpreter supports emitted fixture keywords only",
+    "No custom-validator/numeric-parser-bound/duplicate/Unicode/body-limit/tenant policy equivalence",
+    "No network introspection, WebApplication, TLS/key reads, tenant/business dispatch in export; enabled GraphQL offline schema construction is disclosed and disposed",
+    "Trusted parents/race limits, observed source bytes not immutable attestation; no full provider/platform/distribution/AOT/production acceptance"
+  ],
+  "samples_revision": "c9f9cdd337dd7981f9ebb51a9737e3afe8de11f0",
+  "tracking_readback": "tracking-readback.json;2bodyonly9/20;23mirrors;issue3identicalBlocked"
+}

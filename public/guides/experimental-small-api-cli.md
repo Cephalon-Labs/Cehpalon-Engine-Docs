@@ -7,7 +7,7 @@ dotnet cehpalon.dll new --profile small-api --name MyApi --output <new-directory
 dotnet cehpalon.dll validate --profile small-api --config <generated-directory>/appsettings.json
 ```
 
-The CLI writes thirteen fixed files, performs no restore/build/install/network operation and preserves the no-overwrite/path safeguards of the [portable CLI](experimental-portable-cli.md). Its selected32source-input hashes are observations of an editable checkout, not immutable attestations. Use trusted source/output parents and inherited SDK/MSBuild policy. The default profile remains `portable-request-reply` when `--profile` is omitted.
+The CLI writes fourteen fixed files, including the [offline contract exporter](experimental-contract-export.md), performs no restore/build/install/network operation and preserves the no-overwrite/path safeguards of the [portable CLI](experimental-portable-cli.md). Its selected32source-input hashes are observations of an editable checkout, not immutable attestations. Use trusted source/output parents and inherited SDK/MSBuild policy. The default profile remains `portable-request-reply` when `--profile` is omitted.
 
 The emitted Web project has API-only configuration by default. `appsettings.graphql.json` enables API+GraphQL, `appsettings.graphql-only.json` enables only GraphQL and `appsettings.off.json` disables all entrypoints. Configuration compiles before activation. Unsupported Worker/database/cache/broker/AI/retrieval selections reject before host work. Disabled GraphQL skips vendor service registration and endpoint mapping; its packages may still exist on disk. All-off creates no host/store/listener and reads no credential files.
 

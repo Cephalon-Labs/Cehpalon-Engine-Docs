@@ -1,0 +1,51 @@
+{
+  "observed_at_utc": "2026-10-29T08:10:20.965200+00:00",
+  "mirrors_verified": 23,
+  "operations": 2,
+  "scope": "issue9 and20 bodies only",
+  "plan_sha256": "023d1e2922beb37a996932a0343bea72f498b5012c02ff0db8bc76903bb049c6",
+  "dry_run": "passed",
+  "exact_hash_apply": "applied",
+  "issue3": {
+    "status": "Blocked",
+    "body_identical": true,
+    "editable_metadata_identical": true,
+    "body_sha256": "567ad5509f9bb700a6fa6a81a3073cb667f36621849c0f8dde1359568010e183"
+  },
+  "issues": {
+    "9": {
+      "metadata_unchanged": true,
+      "project": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "transports"
+      },
+      "engine_journal_commit": "972522eb455d0b1b6415cf4e88398c14baa82fbe"
+    },
+    "20": {
+      "metadata_unchanged": true,
+      "project": {
+        "Status": "In Progress",
+        "Priority": "P2",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "tooling"
+      },
+      "engine_journal_commit": "972522eb455d0b1b6415cf4e88398c14baa82fbe"
+    }
+  }
+}

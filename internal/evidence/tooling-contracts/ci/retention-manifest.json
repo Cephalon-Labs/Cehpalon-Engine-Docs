@@ -1,0 +1,37 @@
+{
+  "scope": "Public logs, schemas, result metadata and generated/helper source only. Private TLS/JWT material, credential directories, binaries/artifacts and clone object databases excluded.",
+  "count": 6,
+  "bytes": 5528,
+  "files": [
+    {
+      "path": "ci-123327514373-annotations.json",
+      "bytes": 446,
+      "sha256": "110d126edc903baee2475789108ff678234327c3d3dbd6c1a60ed7148d51ef93"
+    },
+    {
+      "path": "ci-123327514686-annotations.json",
+      "bytes": 446,
+      "sha256": "110d126edc903baee2475789108ff678234327c3d3dbd6c1a60ed7148d51ef93"
+    },
+    {
+      "path": "ci-123327514821-annotations.json",
+      "bytes": 446,
+      "sha256": "110d126edc903baee2475789108ff678234327c3d3dbd6c1a60ed7148d51ef93"
+    },
+    {
+      "path": "ci-123327514864-annotations.json",
+      "bytes": 446,
+      "sha256": "110d126edc903baee2475789108ff678234327c3d3dbd6c1a60ed7148d51ef93"
+    },
+    {
+      "path": "ci-40838078343-jobs.json",
+      "bytes": 1856,
+      "sha256": "4787e0b82edc7cf01dfba9b4be68ae04406356f470a5ebe5f42498742b4edc0b"
+    },
+    {
+      "path": "ci-40838078446-jobs.json",
+      "bytes": 1888,
+      "sha256": "5721b0753f6862173c077b25082617061942c2934e4f77b1771c7c63366905c5"
+    }
+  ]
+}

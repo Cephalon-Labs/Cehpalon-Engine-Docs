@@ -10,6 +10,7 @@ The [protected HTTP/GraphQL guide](protected-http-graphql.md) describes the boun
 - [Experimental tenant/identity boundary](guides/experimental-tenant-identity.md): fresh authority checks, checked context lifetime and cross-tenant fixture proof; no real IdP/provider qualification.
 - [Experimental portable CLI](guides/experimental-portable-cli.md): one source-checkout console scaffold using Core/Composition/codegen, with explicit filesystem, profile and distribution limits.
 - [Experimental Small API CLI profile](guides/experimental-small-api-cli.md): generated protected HTTPS consumer, profile-specific validation, optional GraphQL and fresh tenant fixtures; real IdP/provider/production qualification remains separate.
+- [Experimental offline contract export](guides/experimental-contract-export.md): serializer-derived OpenAPI and actual GraphQL SDL for selected Small API operations, with explicit structural/authority limits.
 
 Publish guides with tested versions, supported profiles, runnable Samples and limitations when evidence exists. Keep research, internal planning, task mirrors, operational evidence and AI handoffs under internal folders.
 

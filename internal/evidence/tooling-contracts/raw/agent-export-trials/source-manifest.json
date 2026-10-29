@@ -1,0 +1,16 @@
+{
+  "src/Cehpalon.Engine.Tooling/Cehpalon.Engine.Tooling.csproj": "13f69019239130e19687496413422b3172d49cbaeff7cccedf1b8d21c864e6ba",
+  "src/Cehpalon.Engine.Tooling/CliApplication.cs": "5896c924aefafb5a78fd44333696d6062ce1f8c238cd6777c95285c1639d9c59",
+  "src/Cehpalon.Engine.Tooling/FileSystem.cs": "d10d2ad39a2a30699b07922594e5a005330eb60a6385e34fd7e46b1119abe5ad",
+  "src/Cehpalon.Engine.Tooling/packages.lock.json": "d7b5ee33907d69d24acd9e4d6ad66eb225ea95977b85567732ca5519aad338b4",
+  "src/Cehpalon.Engine.Tooling/Program.cs": "959ddd47daa0cb91e700fe6c6476c65c460fb9c101c11ddfdaf340b62ed5b4a8",
+  "src/Cehpalon.Engine.Tooling/README.md": "e3141a12008ab8fab34be9a5ff105620df38e4bd8af3d004f96056eedbb9d00e",
+  "src/Cehpalon.Engine.Tooling/SmallApiTemplateFiles.cs": "ee7fe0ff5da313bc0a83c707de33ef93fc9dfdc2b7924ff63a61d043b656dddf",
+  "src/Cehpalon.Engine.Tooling/TemplateFiles.cs": "6b5109c13e970c7b046835e298c5ad375d779583390ada60c6337cb5ddc7db8b",
+  "src/Cehpalon.Engine.Tooling/Templates/SmallApi/Catalog.cs.txt": "e6afb54efa4fd43872a864550c7453efe68acd0f159857b22d43fa391d6aeb9f",
+  "src/Cehpalon.Engine.Tooling/Templates/SmallApi/ContractExport.cs.txt": "c944fbb9a24ee51c0e335b800284b710debb74aaadd5ab35388b2d755b1f25ac",
+  "src/Cehpalon.Engine.Tooling/Templates/SmallApi/FixtureHost.cs.txt": "26fa82b78600ea180c849b96a2b27974dd15d44f431301c9450d285838fbf534",
+  "src/Cehpalon.Engine.Tooling/Templates/SmallApi/Program.cs.txt": "33b04bbb6077d1a4ecee6b9d5531890f43d5a1a85d609191d3ad811b326dbee6",
+  "src/Cehpalon.Engine.Tooling/Templates/SmallApi/SelfTest.cs.txt": "a58e3a10eb3078023c034edbc27c72d1e9a1592066da1853838821b31f5cac13",
+  "src/Cehpalon.Engine.Transports.Http/OperationHttpAdapter.cs": "f101e81cd9fd0c3431a4338e15552b50975e00b56b01d308c882f325121b4693"
+}

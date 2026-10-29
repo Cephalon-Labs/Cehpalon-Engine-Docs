@@ -1,0 +1,1 @@
+D:\Cephalon\Cehpalon-Engine\Tests\Http.ContractTests\Program.cs(378,22): error CS8910: The primary constructor conflicts with the synthesized copy constructor. [D:\Cephalon\Cehpalon-Engine\Tests\Http.ContractTests\Http.ContractTests.csproj]
