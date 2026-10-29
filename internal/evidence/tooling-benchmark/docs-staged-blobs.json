@@ -1,0 +1,8 @@
+{
+  "method": "git cat-file --batch staged bytes versus working raw delivery/CI/contract/retention/tracking evidence and task20 mirror; no EOL normalization",
+  "checked": 64,
+  "bytes": 533842,
+  "mismatches": [],
+  "status": "passed",
+  "self_excluded": "This audit is added after checking existing entries; no recursive self-hash claim."
+}

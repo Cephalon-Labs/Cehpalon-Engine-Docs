@@ -1,0 +1,9 @@
+{
+  "method": "git cat-file --batch committed HEAD blobs versus measured byte hashes and raw retention",
+  "samples_revision": "0f9f8ad8f681546f4e272e09db5787fb2aa6c77a",
+  "remote_main_identical": true,
+  "checked": 1998,
+  "raw_files": 1995,
+  "mismatches": [],
+  "status": "passed"
+}

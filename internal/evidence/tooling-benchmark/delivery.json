@@ -1,0 +1,1202 @@
+{
+  "observed_date_bangkok": "2026-10-30",
+  "engine_revision": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "status": "completed",
+  "correctness_status": "passed",
+  "performance_status": "observed",
+  "qualification_status": "not_qualified",
+  "protocol_commit_technical_provenance": "f215f2e00a7403a886ad4014a9ac56cd319140b5",
+  "protocol": "../../validation/tooling-benchmark-protocol.md",
+  "scope": "Bounded existing #20 actual generator/compilation and source-only CLI observations, no runtime library change. Full Test/Benchmark Planned, M0, actual hours null; #3 body/editable metadata unchanged Blocked.",
+  "hosts": {
+    "windows": {
+      "component_passed": 505,
+      "component_failed": 0,
+      "component_manifest_sha256": "a3626a8bbab9c8a6f4fa7660cd93e003548c04caf8d5d197f2f0e21eba290823",
+      "canonical": true,
+      "status": "completed",
+      "correctness_status": "passed",
+      "performance_status": "observed",
+      "qualification_status": "not_qualified",
+      "generator": {
+        "measured": 270,
+        "primers": 36,
+        "seeds": 12,
+        "preflight": 3,
+        "postflight": 18,
+        "unstable_groups": [
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "cv_percent": 20.029874977230474
+          },
+          {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "cv_percent": 22.23685273294791
+          },
+          {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "cv_percent": 21.27215605904252
+          },
+          {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "cv_percent": 15.6763173801423
+          }
+        ],
+        "zero_cpu_measured_rows": 2,
+        "summaries": [
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              21518333.333333332,
+              15452666.666666666,
+              17161466.666666668,
+              18511433.333333332,
+              17034200
+            ],
+            "meanNanoseconds": 17935620,
+            "sampleStandardDeviationNanoseconds": 2277296.888808698,
+            "cvPercent": 12.697062542631356,
+            "minNanoseconds": 15318400,
+            "maxNanoseconds": 32708900,
+            "p50Nanoseconds": 17159300,
+            "p95Nanoseconds": 32708900
+          },
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14705733.333333334,
+              14694200,
+              22690266.666666668,
+              16049533.333333334,
+              15751366.666666666
+            ],
+            "meanNanoseconds": 16778220,
+            "sampleStandardDeviationNanoseconds": 3360656.489404679,
+            "cvPercent": 20.029874977230474,
+            "minNanoseconds": 14225900,
+            "maxNanoseconds": 32719200,
+            "p50Nanoseconds": 15829400,
+            "p95Nanoseconds": 32719200
+          },
+          {
+            "size": 1,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              13688266.666666666,
+              14150133.333333334,
+              13297400,
+              12827566.666666666,
+              14287433.333333334
+            ],
+            "meanNanoseconds": 13650160,
+            "sampleStandardDeviationNanoseconds": 603871.2948781209,
+            "cvPercent": 4.423913674844258,
+            "minNanoseconds": 12542100,
+            "maxNanoseconds": 16476900,
+            "p50Nanoseconds": 13037400,
+            "p95Nanoseconds": 16476900
+          },
+          {
+            "size": 1,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              28972466.666666668,
+              28579800,
+              29796033.333333332,
+              31487100,
+              36857700
+            ],
+            "meanNanoseconds": 31138620,
+            "sampleStandardDeviationNanoseconds": 3386430.0291834697,
+            "cvPercent": 10.875337536420915,
+            "minNanoseconds": 27656500,
+            "maxNanoseconds": 37847300,
+            "p50Nanoseconds": 29812300,
+            "p95Nanoseconds": 37847300
+          },
+          {
+            "size": 1,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              40287933.333333336,
+              38280000,
+              39337966.666666664,
+              39404566.666666664,
+              41807833.333333336
+            ],
+            "meanNanoseconds": 39823660,
+            "sampleStandardDeviationNanoseconds": 1317850.2358428726,
+            "cvPercent": 3.309214260675369,
+            "minNanoseconds": 36766400,
+            "maxNanoseconds": 43992600,
+            "p50Nanoseconds": 39026200,
+            "p95Nanoseconds": 43992600
+          },
+          {
+            "size": 1,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              39314633.333333336,
+              35504766.666666664,
+              34636966.666666664,
+              35475033.333333336,
+              36422600
+            ],
+            "meanNanoseconds": 36270800,
+            "sampleStandardDeviationNanoseconds": 1815036.3369487813,
+            "cvPercent": 5.004125458905735,
+            "minNanoseconds": 34326400,
+            "maxNanoseconds": 42984700,
+            "p50Nanoseconds": 35209200,
+            "p95Nanoseconds": 42984700
+          },
+          {
+            "size": 3,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              39995366.666666664,
+              39279200,
+              40178900,
+              38465566.666666664,
+              38595233.333333336
+            ],
+            "meanNanoseconds": 39302853.33333333,
+            "sampleStandardDeviationNanoseconds": 782522.6811054385,
+            "cvPercent": 1.9910073054206714,
+            "minNanoseconds": 37504000,
+            "maxNanoseconds": 41113000,
+            "p50Nanoseconds": 39318100,
+            "p95Nanoseconds": 41113000
+          },
+          {
+            "size": 3,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              44568666.666666664,
+              46511766.666666664,
+              45781833.333333336,
+              44883566.666666664,
+              43780166.666666664
+            ],
+            "meanNanoseconds": 45105199.99999999,
+            "sampleStandardDeviationNanoseconds": 1064068.2710970934,
+            "cvPercent": 2.359081150503919,
+            "minNanoseconds": 41431600,
+            "maxNanoseconds": 54449300,
+            "p50Nanoseconds": 43595500,
+            "p95Nanoseconds": 54449300
+          },
+          {
+            "size": 3,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              42136300,
+              36703666.666666664,
+              38846933.333333336,
+              36676233.333333336,
+              37559600
+            ],
+            "meanNanoseconds": 38384546.66666667,
+            "sampleStandardDeviationNanoseconds": 2275614.3964750366,
+            "cvPercent": 5.928464952931674,
+            "minNanoseconds": 35699000,
+            "maxNanoseconds": 49662700,
+            "p50Nanoseconds": 37162100,
+            "p95Nanoseconds": 49662700
+          },
+          {
+            "size": 3,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              16894166.666666668,
+              17127566.666666668,
+              17947933.333333332,
+              17036100,
+              18986366.666666668
+            ],
+            "meanNanoseconds": 17598426.666666668,
+            "sampleStandardDeviationNanoseconds": 877843.2264489043,
+            "cvPercent": 4.988191518913647,
+            "minNanoseconds": 16038700,
+            "maxNanoseconds": 22120900,
+            "p50Nanoseconds": 16921100,
+            "p95Nanoseconds": 22120900
+          },
+          {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              36134066.666666664,
+              37464100,
+              31055233.333333332,
+              23323566.666666668,
+              23456733.333333332
+            ],
+            "meanNanoseconds": 30286740,
+            "sampleStandardDeviationNanoseconds": 6734817.7714108275,
+            "cvPercent": 22.23685273294791,
+            "minNanoseconds": 21410600,
+            "maxNanoseconds": 44390200,
+            "p50Nanoseconds": 30724400,
+            "p95Nanoseconds": 44390200
+          },
+          {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              40788766.666666664,
+              37724033.333333336,
+              34646133.333333336,
+              27375733.333333332,
+              24113366.666666668
+            ],
+            "meanNanoseconds": 32929606.666666668,
+            "sampleStandardDeviationNanoseconds": 7004837.319762203,
+            "cvPercent": 21.27215605904252,
+            "minNanoseconds": 23777800,
+            "maxNanoseconds": 42188000,
+            "p50Nanoseconds": 34496000,
+            "p95Nanoseconds": 42188000
+          },
+          {
+            "size": 32,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              65946666.666666664,
+              54236733.333333336,
+              62071200,
+              51009900,
+              54594166.666666664
+            ],
+            "meanNanoseconds": 57571733.333333336,
+            "sampleStandardDeviationNanoseconds": 6193353.162284367,
+            "cvPercent": 10.757628446629539,
+            "minNanoseconds": 43909300,
+            "maxNanoseconds": 74953700,
+            "p50Nanoseconds": 56196400,
+            "p95Nanoseconds": 74953700
+          },
+          {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              43915900,
+              47098133.333333336,
+              35353500,
+              43495733.333333336,
+              32143333.333333332
+            ],
+            "meanNanoseconds": 40401320.00000001,
+            "sampleStandardDeviationNanoseconds": 6333439.148966908,
+            "cvPercent": 15.6763173801423,
+            "minNanoseconds": 26453300,
+            "maxNanoseconds": 61704800,
+            "p50Nanoseconds": 37731800,
+            "p95Nanoseconds": 61704800
+          },
+          {
+            "size": 32,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              24591300,
+              18343466.666666668,
+              19424033.333333332,
+              17531000,
+              21461700
+            ],
+            "meanNanoseconds": 20270300,
+            "sampleStandardDeviationNanoseconds": 2829447.5351009583,
+            "cvPercent": 13.95858736723659,
+            "minNanoseconds": 16269500,
+            "maxNanoseconds": 36807900,
+            "p50Nanoseconds": 17796600,
+            "p95Nanoseconds": 36807900
+          },
+          {
+            "size": 32,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              27366566.666666668,
+              25438400,
+              31328333.333333332,
+              25404500,
+              25689166.666666668
+            ],
+            "meanNanoseconds": 27045393.333333332,
+            "sampleStandardDeviationNanoseconds": 2527896.1919834525,
+            "cvPercent": 9.346864217603487,
+            "minNanoseconds": 22410300,
+            "maxNanoseconds": 37291300,
+            "p50Nanoseconds": 25028800,
+            "p95Nanoseconds": 37291300
+          },
+          {
+            "size": 32,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              45941266.666666664,
+              39004933.333333336,
+              37036666.666666664,
+              36268966.666666664,
+              31664033.333333332
+            ],
+            "meanNanoseconds": 37983173.33333333,
+            "sampleStandardDeviationNanoseconds": 5199546.920293473,
+            "cvPercent": 13.689079831911904,
+            "minNanoseconds": 29264200,
+            "maxNanoseconds": 55295300,
+            "p50Nanoseconds": 35824200,
+            "p95Nanoseconds": 55295300
+          },
+          {
+            "size": 32,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              26910000,
+              26407500,
+              27260166.666666668,
+              22489166.666666668,
+              24360200
+            ],
+            "meanNanoseconds": 25485406.666666668,
+            "sampleStandardDeviationNanoseconds": 2016992.7812629042,
+            "cvPercent": 7.914304871191267,
+            "minNanoseconds": 19738300,
+            "maxNanoseconds": 40073800,
+            "p50Nanoseconds": 22669800,
+            "p95Nanoseconds": 40073800
+          }
+        ]
+      },
+      "cli": {
+        "launches": 144,
+        "measured": 120,
+        "primers": 24,
+        "unstable_groups": [
+          {
+            "scenario": "export-off",
+            "cv_percent": 15.22095792235105
+          }
+        ],
+        "summaries": {
+          "new-portable": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 99.4104,
+            "maximum": 121.7119,
+            "median": 105.1533,
+            "p50": 105.1533,
+            "p95": 121.7119,
+            "mean": 105.72943333333333,
+            "sample_standard_deviation": 5.363302659831197,
+            "cv_percent": 5.072667554097547,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "new-small-api": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 106.8325,
+            "maximum": 120.7145,
+            "median": 109.7314,
+            "p50": 109.7314,
+            "p95": 120.7145,
+            "mean": 110.79389333333333,
+            "sample_standard_deviation": 3.7861733422823534,
+            "cv_percent": 3.4173122979723374,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "validate-portable": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 93.0623,
+            "maximum": 102.6029,
+            "median": 95.4976,
+            "p50": 95.4976,
+            "p95": 102.6029,
+            "mean": 96.67797333333333,
+            "sample_standard_deviation": 3.101790635024197,
+            "cv_percent": 3.2083736636985742,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "validate-small-api": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 93.8203,
+            "maximum": 107.6454,
+            "median": 97.7114,
+            "p50": 97.7114,
+            "p95": 107.6454,
+            "mean": 98.42521333333333,
+            "sample_standard_deviation": 4.134257726237249,
+            "cv_percent": 4.200405146429197,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-api": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 254.799,
+            "maximum": 377.2125,
+            "median": 335.6604,
+            "p50": 335.6604,
+            "p95": 377.2125,
+            "mean": 321.41985999999997,
+            "sample_standard_deviation": 40.7290335207629,
+            "cv_percent": 12.671598301599316,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-both": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 558.2606,
+            "maximum": 750.2466,
+            "median": 710.0722,
+            "p50": 710.0722,
+            "p95": 750.2466,
+            "mean": 695.6594466666667,
+            "sample_standard_deviation": 53.259848072055,
+            "cv_percent": 7.656023119826198,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-graphql": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 604.321,
+            "maximum": 758.3681,
+            "median": 657.9714,
+            "p50": 657.9714,
+            "p95": 758.3681,
+            "mean": 672.7492,
+            "sample_standard_deviation": 48.29539327149713,
+            "cv_percent": 7.178810955330326,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-off": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 239.4697,
+            "maximum": 400.7848,
+            "median": 318.5217,
+            "p50": 318.5217,
+            "p95": 400.7848,
+            "mean": 320.04260666666664,
+            "sample_standard_deviation": 48.71355049432883,
+            "cv_percent": 15.220957922351058,
+            "unstable_observation": true,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          }
+        }
+      },
+      "outer_manifest_unstable_observation_scope": "CLI-only; generator has separate raw measurementStatus and group CV",
+      "any_unstable_observation": true,
+      "filesystems": {
+        "sdk": {
+          "path": "D:\\Cephalon\\.tools\\dotnet11\\win-x64\\dotnet.exe",
+          "device": 2358821359,
+          "filesystem": "NTFS",
+          "mount": "D:\\"
+        },
+        "source": {
+          "path": "D:\\Cephalon\\Cehpalon-Engine",
+          "device": 2358821359,
+          "filesystem": "NTFS",
+          "mount": "D:\\"
+        },
+        "output": {
+          "path": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\tooling-benchmark-win01",
+          "device": 2358821359,
+          "filesystem": "NTFS",
+          "mount": "D:\\"
+        }
+      },
+      "started_utc": "2026-10-29T17:50:32.159657+00:00",
+      "finished_utc": "2026-10-29T17:52:06.961571+00:00",
+      "manifest_sha256": "fe265bf79687d83a309454d6cfa50c3ecd8c15f944e44b95dadd2d7e76e6dc0b",
+      "generator_sha256": "dcf9e02ef99fce775cc328263bd23b179c376e382feb98ac867817d5cbb2fc33"
+    },
+    "linux": {
+      "component_passed": 502,
+      "component_failed": 0,
+      "component_manifest_sha256": "6ded9e7fda43192824312faaf8693eab34778535f36bb7d77c13cd7cfc904720",
+      "canonical": true,
+      "status": "completed",
+      "correctness_status": "passed",
+      "performance_status": "observed",
+      "qualification_status": "not_qualified",
+      "generator": {
+        "measured": 270,
+        "primers": 36,
+        "seeds": 12,
+        "preflight": 3,
+        "postflight": 18,
+        "unstable_groups": [
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "cv_percent": 24.39472345426709
+          },
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "cv_percent": 17.447692319807103
+          },
+          {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "cv_percent": 17.96057746104777
+          }
+        ],
+        "zero_cpu_measured_rows": 0,
+        "summaries": [
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17481834.666666668,
+              15306085.333333334,
+              28140731.666666668,
+              24903060.666666668,
+              23718591.666666668
+            ],
+            "meanNanoseconds": 21910060.800000004,
+            "sampleStandardDeviationNanoseconds": 5344898.740821781,
+            "cvPercent": 24.39472345426709,
+            "minNanoseconds": 14662573,
+            "maxNanoseconds": 42782887,
+            "p50Nanoseconds": 22262633,
+            "p95Nanoseconds": 42782887
+          },
+          {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17020936,
+              14554409.666666666,
+              17087542,
+              22508674.333333332,
+              20837157.666666668
+            ],
+            "meanNanoseconds": 18401743.933333334,
+            "sampleStandardDeviationNanoseconds": 3210679.6629667697,
+            "cvPercent": 17.447692319807103,
+            "minNanoseconds": 13718762,
+            "maxNanoseconds": 24033987,
+            "p50Nanoseconds": 20593727,
+            "p95Nanoseconds": 24033987
+          },
+          {
+            "size": 1,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              7128596.333333333,
+              8299587,
+              7564105,
+              8077675,
+              10222788.666666666
+            ],
+            "meanNanoseconds": 8258550.4,
+            "sampleStandardDeviationNanoseconds": 1188663.3761772176,
+            "cvPercent": 14.393123715479383,
+            "minNanoseconds": 6903117,
+            "maxNanoseconds": 13250793,
+            "p50Nanoseconds": 7863247,
+            "p95Nanoseconds": 13250793
+          },
+          {
+            "size": 1,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              20043250,
+              20029666,
+              21169653.666666668,
+              20470787.666666668,
+              16338842
+            ],
+            "meanNanoseconds": 19610439.866666667,
+            "sampleStandardDeviationNanoseconds": 1886648.7335112758,
+            "cvPercent": 9.62063444950133,
+            "minNanoseconds": 15507545,
+            "maxNanoseconds": 22352133,
+            "p50Nanoseconds": 20096940,
+            "p95Nanoseconds": 22352133
+          },
+          {
+            "size": 1,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14873514.666666666,
+              15767670.666666666,
+              14236589.666666666,
+              14250418.666666666,
+              14639929.333333334
+            ],
+            "meanNanoseconds": 14753624.6,
+            "sampleStandardDeviationNanoseconds": 627720.2802002567,
+            "cvPercent": 4.254685185634022,
+            "minNanoseconds": 13589349,
+            "maxNanoseconds": 16554961,
+            "p50Nanoseconds": 14692706,
+            "p95Nanoseconds": 16554961
+          },
+          {
+            "size": 1,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14783677.333333334,
+              14677362.666666666,
+              13962590,
+              13822603,
+              12470749.333333334
+            ],
+            "meanNanoseconds": 13943396.466666665,
+            "sampleStandardDeviationNanoseconds": 925800.6467721029,
+            "cvPercent": 6.639706824555542,
+            "minNanoseconds": 12214803,
+            "maxNanoseconds": 17139576,
+            "p50Nanoseconds": 13451680,
+            "p95Nanoseconds": 17139576
+          },
+          {
+            "size": 3,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17106007.333333332,
+              15514568.666666666,
+              16857298.666666668,
+              18501247,
+              15177195.333333334
+            ],
+            "meanNanoseconds": 16631263.4,
+            "sampleStandardDeviationNanoseconds": 1335536.7346348974,
+            "cvPercent": 8.030278292837917,
+            "minNanoseconds": 14012906,
+            "maxNanoseconds": 24672149,
+            "p50Nanoseconds": 15602020,
+            "p95Nanoseconds": 24672149
+          },
+          {
+            "size": 3,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17424524,
+              16566186.666666666,
+              16905534.333333332,
+              17555799.666666668,
+              17446069.333333332
+            ],
+            "meanNanoseconds": 17179622.8,
+            "sampleStandardDeviationNanoseconds": 425413.8470773429,
+            "cvPercent": 2.4762700091258285,
+            "minNanoseconds": 16348498,
+            "maxNanoseconds": 19294933,
+            "p50Nanoseconds": 16839167,
+            "p95Nanoseconds": 19294933
+          },
+          {
+            "size": 3,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              13699538.333333334,
+              13883572.333333334,
+              16107968.666666666,
+              13774978.333333334,
+              15661289.666666666
+            ],
+            "meanNanoseconds": 14625469.466666669,
+            "sampleStandardDeviationNanoseconds": 1162091.0412626306,
+            "cvPercent": 7.9456665914977025,
+            "minNanoseconds": 13348794,
+            "maxNanoseconds": 20173407,
+            "p50Nanoseconds": 13748000,
+            "p95Nanoseconds": 20173407
+          },
+          {
+            "size": 3,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              9540192,
+              8005726.666666667,
+              8205921.666666667,
+              8166675.666666667,
+              8663561.666666666
+            ],
+            "meanNanoseconds": 8516415.533333333,
+            "sampleStandardDeviationNanoseconds": 622353.9532224317,
+            "cvPercent": 7.307698300846551,
+            "minNanoseconds": 7745654,
+            "maxNanoseconds": 12506611,
+            "p50Nanoseconds": 8138213,
+            "p95Nanoseconds": 12506611
+          },
+          {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14862948.333333334,
+              13538086.333333334,
+              13547141.666666666,
+              13010548.666666666,
+              13322573
+            ],
+            "meanNanoseconds": 13656259.6,
+            "sampleStandardDeviationNanoseconds": 708917.9606853286,
+            "cvPercent": 5.1911576189231825,
+            "minNanoseconds": 12516397,
+            "maxNanoseconds": 17408834,
+            "p50Nanoseconds": 13356794,
+            "p95Nanoseconds": 17408834
+          },
+          {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              16090821,
+              16713446,
+              14908654,
+              16468635.666666666,
+              15321441.333333334
+            ],
+            "meanNanoseconds": 15900599.6,
+            "sampleStandardDeviationNanoseconds": 764681.1092299774,
+            "cvPercent": 4.8091337966272505,
+            "minNanoseconds": 14452283,
+            "maxNanoseconds": 20200966,
+            "p50Nanoseconds": 15547994,
+            "p95Nanoseconds": 20200966
+          },
+          {
+            "size": 32,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              38919886.666666664,
+              36840382.333333336,
+              35775975.333333336,
+              32846683.666666668,
+              30778868.666666668
+            ],
+            "meanNanoseconds": 35032359.33333333,
+            "sampleStandardDeviationNanoseconds": 3232806.120952739,
+            "cvPercent": 9.22805709484922,
+            "minNanoseconds": 29030411,
+            "maxNanoseconds": 48663162,
+            "p50Nanoseconds": 31480346,
+            "p95Nanoseconds": 48663162
+          },
+          {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              29016877.666666668,
+              31054618.666666668,
+              22295421.333333332,
+              21995100.666666668,
+              21439892.333333332
+            ],
+            "meanNanoseconds": 25160382.133333333,
+            "sampleStandardDeviationNanoseconds": 4518949.922552957,
+            "cvPercent": 17.96057746104777,
+            "minNanoseconds": 20412953,
+            "maxNanoseconds": 46341209,
+            "p50Nanoseconds": 22953044,
+            "p95Nanoseconds": 46341209
+          },
+          {
+            "size": 32,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              15087377,
+              14139185.333333334,
+              15821187,
+              13041798,
+              12316507.333333334
+            ],
+            "meanNanoseconds": 14081210.933333334,
+            "sampleStandardDeviationNanoseconds": 1435078.912392381,
+            "cvPercent": 10.191445318067302,
+            "minNanoseconds": 10146191,
+            "maxNanoseconds": 23608615,
+            "p50Nanoseconds": 12369687,
+            "p95Nanoseconds": 23608615
+          },
+          {
+            "size": 32,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17681346.333333332,
+              17439524.666666668,
+              19509631.333333332,
+              19429803,
+              18538899.666666668
+            ],
+            "meanNanoseconds": 18519841,
+            "sampleStandardDeviationNanoseconds": 958936.3462027134,
+            "cvPercent": 5.177886495908433,
+            "minNanoseconds": 14111527,
+            "maxNanoseconds": 27696528,
+            "p50Nanoseconds": 16521432,
+            "p95Nanoseconds": 27696528
+          },
+          {
+            "size": 32,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              27072235.666666668,
+              23652191.666666668,
+              22465607.333333332,
+              21150225,
+              25562785.666666668
+            ],
+            "meanNanoseconds": 23980609.06666667,
+            "sampleStandardDeviationNanoseconds": 2370421.9051089534,
+            "cvPercent": 9.884744372084644,
+            "minNanoseconds": 17248404,
+            "maxNanoseconds": 32834486,
+            "p50Nanoseconds": 23841903,
+            "p95Nanoseconds": 32834486
+          },
+          {
+            "size": 32,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14766959.333333334,
+              16305911.333333334,
+              15338458,
+              11346042.666666666,
+              15000738.333333334
+            ],
+            "meanNanoseconds": 14551621.933333334,
+            "sampleStandardDeviationNanoseconds": 1885501.0253398672,
+            "cvPercent": 12.957325540603543,
+            "minNanoseconds": 10758034,
+            "maxNanoseconds": 25495656,
+            "p50Nanoseconds": 12165127,
+            "p95Nanoseconds": 25495656
+          }
+        ]
+      },
+      "cli": {
+        "launches": 144,
+        "measured": 120,
+        "primers": 24,
+        "unstable_groups": [],
+        "summaries": {
+          "new-portable": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 416.949816,
+            "maximum": 502.235573,
+            "median": 439.226857,
+            "p50": 439.226857,
+            "p95": 502.235573,
+            "mean": 443.978103,
+            "sample_standard_deviation": 21.773861294327414,
+            "cv_percent": 4.904264680442453,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "new-small-api": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 610.254901,
+            "maximum": 738.988319,
+            "median": 640.238677,
+            "p50": 640.238677,
+            "p95": 738.988319,
+            "mean": 653.3847736,
+            "sample_standard_deviation": 41.84200344814117,
+            "cv_percent": 6.403884072412852,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "validate-portable": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 172.529228,
+            "maximum": 222.701003,
+            "median": 190.064365,
+            "p50": 190.064365,
+            "p95": 222.701003,
+            "mean": 194.8282218,
+            "sample_standard_deviation": 15.314602856446138,
+            "cv_percent": 7.8605669727701315,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "validate-small-api": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 177.13257,
+            "maximum": 213.516529,
+            "median": 190.732975,
+            "p50": 190.732975,
+            "p95": 213.516529,
+            "mean": 192.42324933333333,
+            "sample_standard_deviation": 11.273843871988658,
+            "cv_percent": 5.858878233814181,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-api": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 282.061918,
+            "maximum": 357.812297,
+            "median": 321.341927,
+            "p50": 321.341927,
+            "p95": 357.812297,
+            "mean": 319.7873105333333,
+            "sample_standard_deviation": 22.606429337574784,
+            "cv_percent": 7.069207749323243,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-both": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 766.562715,
+            "maximum": 913.841173,
+            "median": 802.729779,
+            "p50": 802.729779,
+            "p95": 913.841173,
+            "mean": 814.6421329333333,
+            "sample_standard_deviation": 45.33782049232934,
+            "cv_percent": 5.565366516101812,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-graphql": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 736.848389,
+            "maximum": 913.404403,
+            "median": 777.195558,
+            "p50": 777.195558,
+            "p95": 913.404403,
+            "mean": 788.7771846,
+            "sample_standard_deviation": 41.03360483835198,
+            "cv_percent": 5.202179479767875,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "export-off": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 264.572782,
+            "maximum": 321.465553,
+            "median": 290.568757,
+            "p50": 290.568757,
+            "p95": 321.465553,
+            "mean": 289.65481946666665,
+            "sample_standard_deviation": 16.496267109396364,
+            "cv_percent": 5.695146774968385,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          }
+        }
+      },
+      "outer_manifest_unstable_observation_scope": "CLI-only; generator has separate raw measurementStatus and group CV",
+      "any_unstable_observation": true,
+      "filesystems": {
+        "sdk": {
+          "path": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/dotnet",
+          "device": 2096,
+          "filesystem": "ext4",
+          "mount": "/"
+        },
+        "source": {
+          "path": "/mnt/d/Cephalon/Cehpalon-Engine",
+          "device": 72,
+          "filesystem": "9p",
+          "mount": "/mnt/d"
+        },
+        "output": {
+          "path": "/mnt/d/Cephalon/Cehpalon-Engine-Samples/.local/tooling-benchmark-linux01",
+          "device": 72,
+          "filesystem": "9p",
+          "mount": "/mnt/d"
+        }
+      },
+      "started_utc": "2026-10-29T17:53:17.570293+00:00",
+      "finished_utc": "2026-10-29T17:55:49.728017+00:00",
+      "manifest_sha256": "9ab3778da7a455945aef21b65473831ad3dae3fbac4ad85c595a21698c52f8bc",
+      "generator_sha256": "9a4fcd581f2d16da7009482c851072b2e2d17f0d5fd39af1dbd74d254b16cf20"
+    }
+  },
+  "independent_review": {
+    "checks": 10811,
+    "failures": 0,
+    "sha256": "6b4fed2838820fb4da749b1eca32ac4fa83710a7e6181b0a7d9fdaba0ae0714f"
+  },
+  "engine_source_blobs": {
+    "checked": 223,
+    "matched": 223,
+    "mismatches": 0
+  },
+  "samples_retention": {
+    "generator-smoke01": {
+      "count": 3,
+      "bytes": 634831,
+      "manifest_sha256": "b12b371b3f8dfc60ba922c88dcac92b3f258097d6eb38f405205afa17f5f9c1f"
+    },
+    "linux": {
+      "count": 930,
+      "bytes": 5380340,
+      "manifest_sha256": "a52abd813819dac6922b91ec1f4448de52a18f64217bec995452150685da10f0"
+    },
+    "preparation01-failed": {
+      "count": 57,
+      "bytes": 243522,
+      "manifest_sha256": "efb5c9b48422fb83d2548af4a79fe5ed4ac7cb59ef3d73986b910c60708bd932"
+    },
+    "preparation02": {
+      "count": 75,
+      "bytes": 373388,
+      "manifest_sha256": "b73b1a22d3bd338a7c7d304346b274c8c32353d649398368f17804ce099ba52e"
+    },
+    "windows": {
+      "count": 930,
+      "bytes": 5453766,
+      "manifest_sha256": "e7fd59be58e592b7d225fb0d0a0b8c6f43380ffe7ea99b5ff8b42a16a0ee9c6a"
+    }
+  },
+  "ci": {
+    "component_run": 40925539477,
+    "platform_run": 40925539491,
+    "jobs": 4,
+    "steps": 0,
+    "status": "Blocked before execution",
+    "reason": "Explicit payments/spending-limit annotations",
+    "no_forced_rerun_or_billing_change": true
+  },
+  "failed_preparation": "Preparation01 falsely rejected the valid own PortableConsumer.ToolingBenchmark library via overly broad tooling substring. Exact compiler/analyzer/CLI family checks and BenchmarkSample fixture corrected it. Preparation02 rebuilt and checked actual outputs without timing. Both retained; original preparation scripts were not snapshotted, so their recorded hashes do not establish recoverable exact script versions. Final canonical attempts do snapshot script/lock/README.",
+  "other_attempts": "Preliminary generator smoke01 source/result/journal retained, not canonical; final changes preceded both full canonical attempts. Agent preparatory build --locked-mode misuse rejected before runtime; corrected restore then build, not a measured attempt.",
+  "limits": [
+    "CLI outer unstable_observation is CLI-only; separate generator flags and any_unstable_observation prevent promotion. Both hosts have unstable generator groups.",
+    "Per-row compiler PE bytes are not retained; hashes are provenance, runtime behavior checked before/after by reviewed driver.",
+    "Manual registration authoring/parsing, common references/trees and edits outside timing; no full SDK-build/IDE/developer productivity comparison.",
+    "No fake CLI/framework competitive baseline, filtered outliers, timing floors, retries or favorable pairs. CV15% is descriptive, not numerical acceptance.",
+    "Windows NTFS and native WSL SDK/ext4 with9p source/output are different storage environments on a shared host, not OS speedup/reference proof.",
+    "No provider, supported-Windows, production, distribution/global-tool, AOT/trimming or release qualification. Existing runtime source unchanged; old Small API/TLS load benchmark not rerun."
+  ],
+  "samples_revision": "0f9f8ad8f681546f4e272e09db5787fb2aa6c77a",
+  "samples_staged_blob_verification": {
+    "checked": 1998,
+    "raw_files": 1995,
+    "mismatches": 0,
+    "includes": "all retained raw and exact measured harness/README/Engine lock"
+  },
+  "tracking_readback": "tracking-readback.json; one issue20 BODY operation; all23 metadata unchanged; issue3 body/editable metadata identical Blocked",
+  "samples_committed_blob_verification": {
+    "checked": 1998,
+    "raw_files": 1995,
+    "mismatches": 0,
+    "remote_main_identical": true
+  }
+}

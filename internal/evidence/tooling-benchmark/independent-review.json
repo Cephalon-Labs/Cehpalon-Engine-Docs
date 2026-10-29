@@ -1,0 +1,184 @@
+{
+  "audit": "independent read-only final replay",
+  "status": "passed",
+  "engine_revision": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "checks": {
+    "statuses": 2,
+    "revision": 2,
+    "sdk": 2,
+    "harness": 2,
+    "attempt_copy": 6,
+    "file_hash": 1568,
+    "driver_source": 2,
+    "configs": 10,
+    "consumer_lock": 2,
+    "actual_registry": 2,
+    "generator_hash": 2,
+    "journal_hash": 2,
+    "journal_rows": 2,
+    "generator_schedule": 2,
+    "generator_counts": 2,
+    "generator_status": 2,
+    "generator_versions": 612,
+    "generator_repetition": 612,
+    "generator_emit": 612,
+    "generator_metrics": 612,
+    "wall_conversion": 612,
+    "row_provenance": 612,
+    "paired_source": 306,
+    "generator_summary_count": 36,
+    "repetition_means": 36,
+    "generator_summary_math": 36,
+    "generator_instability": 2,
+    "semantic_matrix": 4,
+    "runtime_semantics": 60,
+    "cache_preflight": 6,
+    "cli_schedule": 2,
+    "process_result": 332,
+    "process_log": 664,
+    "cli_launch": 288,
+    "artifact_sets": 216,
+    "scaffold_frozen": 72,
+    "cli_sequential": 286,
+    "validation_frozen": 72,
+    "export_frozen": 144,
+    "export_counters": 144,
+    "cli_math": 16,
+    "cli_instability": 16,
+    "overall_cli_instability": 2,
+    "resource_limits": 2,
+    "loaded_assembly": 8,
+    "filesystem_limits": 2,
+    "runtime_dependency_separation": 2,
+    "host_sequential": 1,
+    "independent_artifact_stdout_source_appendix": 2774
+  },
+  "total_checks": 10811,
+  "failures": [],
+  "hosts": {
+    "win01": {
+      "manifest_sha256": "fe265bf79687d83a309454d6cfa50c3ecd8c15f944e44b95dadd2d7e76e6dc0b",
+      "generator_sha256": "dcf9e02ef99fce775cc328263bd23b179c376e382feb98ac867817d5cbb2fc33",
+      "generator_rows": 306,
+      "cli_launches": 144,
+      "generator_unstable": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 20.029874977230474
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "cv_percent": 22.23685273294791
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "cv_percent": 21.27215605904252
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 15.6763173801423
+        }
+      ],
+      "cli_unstable": [
+        {
+          "scenario": "export-off",
+          "cv_percent": 15.22095792235105
+        }
+      ],
+      "zero_cpu_measured_rows": 2,
+      "environment": {
+        "reference": false,
+        "reserved_resources": false,
+        "filesystems": {
+          "sdk": {
+            "path": "D:\\Cephalon\\.tools\\dotnet11\\win-x64\\dotnet.exe",
+            "device": 2358821359,
+            "filesystem": "NTFS",
+            "mount": "D:\\"
+          },
+          "source": {
+            "path": "D:\\Cephalon\\Cehpalon-Engine",
+            "device": 2358821359,
+            "filesystem": "NTFS",
+            "mount": "D:\\"
+          },
+          "output": {
+            "path": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\tooling-benchmark-win01",
+            "device": 2358821359,
+            "filesystem": "NTFS",
+            "mount": "D:\\"
+          }
+        }
+      },
+      "preparation_count": 22
+    },
+    "linux01": {
+      "manifest_sha256": "9ab3778da7a455945aef21b65473831ad3dae3fbac4ad85c595a21698c52f8bc",
+      "generator_sha256": "9a4fcd581f2d16da7009482c851072b2e2d17f0d5fd39af1dbd74d254b16cf20",
+      "generator_rows": 306,
+      "cli_launches": 144,
+      "generator_unstable": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "cv_percent": 24.39472345426709
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 17.447692319807103
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 17.96057746104777
+        }
+      ],
+      "cli_unstable": [],
+      "zero_cpu_measured_rows": 0,
+      "environment": {
+        "reference": false,
+        "reserved_resources": false,
+        "filesystems": {
+          "sdk": {
+            "path": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/dotnet",
+            "device": 2096,
+            "filesystem": "ext4",
+            "mount": "/"
+          },
+          "source": {
+            "path": "/mnt/d/Cephalon/Cehpalon-Engine",
+            "device": 72,
+            "filesystem": "9p",
+            "mount": "/mnt/d"
+          },
+          "output": {
+            "path": "/mnt/d/Cephalon/Cehpalon-Engine-Samples/.local/tooling-benchmark-linux01",
+            "device": 72,
+            "filesystem": "9p",
+            "mount": "/mnt/d"
+          }
+        }
+      },
+      "preparation_count": 22
+    }
+  },
+  "limitations": [
+    "No build or benchmark rerun by reviewer.",
+    "Per-row fixture PE bytes are not retained; emitted source/PE hashes are reported provenance, while pre/post emitted runtime semantics are present in the raw report and verified by reviewed source.",
+    "Shared-host cache-primed Windows NTFS vs WSL native SDK/ext4 plus mounted source/output9p observations do not prove OS speedup, resource reservation or production/provider qualification.",
+    "No numeric performance PASS; CV above15 percent is descriptive instability.",
+    "Schema content checks are bounded structural checks, not full external OpenAPI/GraphQL parser-validator conformance or tenant/provider authority proof."
+  ]
+}

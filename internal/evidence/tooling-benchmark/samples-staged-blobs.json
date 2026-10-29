@@ -1,0 +1,14 @@
+{
+  "method": "git cat-file --batch staged index bytes/size/SHA256 vs raw retention and exact measured harness/lock/README",
+  "checked": 1998,
+  "raw_files": 1995,
+  "attempts": {
+    "generator-smoke01": 3,
+    "linux": 930,
+    "preparation01-failed": 57,
+    "preparation02": 75,
+    "windows": 930
+  },
+  "mismatches": [],
+  "status": "passed"
+}

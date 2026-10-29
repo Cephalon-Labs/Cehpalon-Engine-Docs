@@ -1,0 +1,14 @@
+{
+  "observed_at_utc": "2026-10-29T18:08:30.732732+00:00",
+  "repositories": [
+    "Cephalon-Labs/Cehpalon-Engine",
+    "Cephalon-Labs/Cehpalon-Engine-Samples",
+    "Cephalon-Labs/Cehpalon-Engine-Docs"
+  ],
+  "all_private": true,
+  "all_license": "MIT",
+  "local_identity": "Cephalon-Neza <272007299+Cephalon-Neza@users.noreply.github.com>",
+  "engine_revision": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "samples_revision": "0f9f8ad8f681546f4e272e09db5787fb2aa6c77a",
+  "docs_delivery_revision": "omitted to avoid self-hash loop; inspect live Git after delivery"
+}

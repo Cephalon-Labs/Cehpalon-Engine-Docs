@@ -9,6 +9,7 @@ This is a new baseline. Historical project notes are context only; they do not e
 - [Experimental portable CLI/scaffolding continuation](internal/planning/portable-cli-scaffolding.md)
 - [Experimental Small API CLI profile continuation](internal/planning/small-api-cli-profile.md)
 - [Offline Small API transport contract export](internal/planning/tooling-contract-export.md)
+- [Bounded tooling observations and fixed protocol](internal/planning/tooling-benchmark.md)
 - [Current Small API collector readiness and complete canonical04](internal/planning/w2-small-api-collector-readiness.md)
 - [Prior Small API startup/variance tuning and canonical03](internal/planning/w2-small-api-tuning.md)
 - [Prior Small API conformance and benchmark observations](internal/planning/w2-small-api-conformance-benchmark.md)

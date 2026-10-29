@@ -67,6 +67,12 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Freeze codec buffering, connection preparation, actual TLS telemetry, clock continuity and real private-file permissions before the complete attempt. A collector preflight failure is retained evidence, never a hidden retry. Affinity is not dedicated resources.
 - Check all offered records/manifests, state, lifecycle and all five CV values. Startup absolute failure, invalid CV and nonqualifying reference environment remain separate negative outcomes even when every request is correct and individual pairs pass. Preserve raw failure/audit attempts, representation-rounding corrections and their proof limits.
 
+## Tooling measurement continuation rules
+
+- Compare generated compilation with an independently authored typed registry and symmetric compiler state. Declare parsing, authoring, reference and edit preparation exclusions; DriverRun+Emit versus prepared Emit does not measure human productivity or full SDK builds. Verify actual emitted runtime semantics and keep cache tracking outside timed drivers.
+- Freeze exact primers, pairs, order, versions, repetition means and percentile estimator before timing. Keep CPU quantization zeros and process-wide allocation noise. Scope variability flags by workload; a CLI-only flag cannot summarize generator groups. Correctness completion, descriptive timing and qualification are separate results.
+- Snapshot the actual harness/lock/protocol from the first preparation attempt; a hash alone does not recover an older script. Exclude compiler/analyzer/CLI runtime dependencies by their actual families, since a valid generated consumer name can contain tooling words. Preserve failures and fix preparation before a complete fixed attempt.
+
 ## Startup/variance continuation rules
 
 - Declare SDK/shared-runtime, app, working/content root and raw-output filesystems separately on WSL. Verify staged bytes/links and actual loaded runtime paths. Native storage may improve observations without proving reserved resources/native deployment or an Engine-code speedup. Never move key load, full readiness verification or first-request initialization outside the existing startup clock to claim a pass.

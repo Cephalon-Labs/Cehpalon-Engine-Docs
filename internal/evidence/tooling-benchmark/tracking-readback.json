@@ -1,0 +1,40 @@
+{
+  "observed_at_utc": "2026-10-29T18:06:56.506544+00:00",
+  "mirrors_verified": 23,
+  "operations": 1,
+  "scope": "issue20 body only; all23 editable metadata unchanged",
+  "plan_sha256": "b27c55665c637fa1600754cb990e062f3ea77d456e306d01d6a787ee047c4f84",
+  "dry_run": "passed",
+  "exact_hash_apply": "applied",
+  "changes": [
+    [
+      "20",
+      "issue",
+      "body"
+    ]
+  ],
+  "issue3": {
+    "status": "Blocked",
+    "body_identical": true,
+    "editable_metadata_identical": true,
+    "body_sha256": "567ad5509f9bb700a6fa6a81a3073cb667f36621849c0f8dde1359568010e183"
+  },
+  "issue20": {
+    "metadata_unchanged": true,
+    "project": {
+      "Status": "In Progress",
+      "Priority": "P2",
+      "Estimate low (h)": 40.0,
+      "Estimate (h)": 60.0,
+      "Estimate high (h)": 80.0,
+      "Actual (h)": null,
+      "Remaining (h)": null,
+      "Maturity": "M0",
+      "Test gate": "Planned",
+      "Benchmark gate": "Planned",
+      "Feature": "tooling"
+    },
+    "milestone_number": 6,
+    "engine_journal_commit": "29df762cf28d12bd0d587b3c9d99925bcb99b14f"
+  }
+}
