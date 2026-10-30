@@ -1,0 +1,8 @@
+{
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "engine_clean": true,
+  "harness_sha256": "32183755ca2db53030698a7e202b851afb0b759fb39142a155d53731469549d9",
+  "diagnostic_port_alias_keys_present": [],
+  "product_patch": false,
+  "purpose": "One predeclared complete unchanged-source Windows then Linux series; no favorable retry/implementation-speedup claim"
+}

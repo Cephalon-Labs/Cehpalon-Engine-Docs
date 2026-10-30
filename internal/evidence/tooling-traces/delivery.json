@@ -1,0 +1,123 @@
+{
+  "date_bangkok": "2026-10-30",
+  "scope": "Bounded #20 process-scoped diagnostics and one predeclared final unchanged-source original benchmark",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "engine_product_patch": false,
+  "diagnostic_tooling_samples_revision": "a9c5b3c22ecd657213a5cc0c1ca0726651d61152",
+  "raw_evidence_samples_revision": "449723b59faeec144ea6b86e152de21b1de2d40f",
+  "qualification_status": "not_qualified",
+  "performance_status": "observed",
+  "variance_goal_status": "unresolved; no safe causal Engine optimization isolated",
+  "capture_status": "complete fixed75targets; paired-event/OS/clock limits retained",
+  "runtime_audits": {
+    "windows_targets": 25,
+    "linux_targets": 25,
+    "windows_events": 675007,
+    "linux_events": 913546,
+    "status": "passed integrity+semantics; not complete attribution",
+    "ee_pairing_errors": [
+      39,
+      135
+    ],
+    "jit_pairing_errors": [
+      1,
+      0
+    ],
+    "incomplete_correlation_targets_per_host": 7,
+    "reported_eventpipe_and_etlx_loss": 0
+  },
+  "native": {
+    "targets": 25,
+    "events": 64254,
+    "samples": 10672,
+    "sampled_pid_birth_mismatches": 0,
+    "per_thread_read_races": 48,
+    "kernel_event_loss_count": null,
+    "scope": "sampled partial lifetime; ptrace perturbed; not physical disk latency"
+  },
+  "collector_tests": {
+    "native_fixture_checks": 15,
+    "child_environment_missing_binary_checks": 5,
+    "positive_synthetic_runtime_hosts": [
+      "Windows04",
+      "Linux01"
+    ],
+    "synthetic_only_forced_gc": true
+  },
+  "final_untraced_benchmark": {
+    "engine_source_unchanged": true,
+    "hosts_in_order": [
+      "Windows",
+      "Linux"
+    ],
+    "each_host_generator_measured": 270,
+    "each_host_generator_primers": 36,
+    "each_host_cli_launches": 144,
+    "each_host_cli_measured": 120,
+    "each_host_cli_primers": 24,
+    "correctness_status": "passed",
+    "primary_replay_checks": 30009,
+    "independent_replay_checks": 32801,
+    "replay_failures": 0,
+    "generator_unstable_by_series": {
+      "windows": [
+        4,
+        6,
+        7,
+        9
+      ],
+      "linux": [
+        3,
+        5,
+        4,
+        3
+      ]
+    },
+    "cli_unstable_by_series": {
+      "windows": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "linux": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "fresh_build_binary_identity": "not assumed; differences explicitly retained by independent replay"
+  },
+  "retention": {
+    "files": 4357,
+    "original_bytes": 2397090665,
+    "stored_bytes": 211528291
+  },
+  "staged_exact_blob_verification": {
+    "files": 4388,
+    "status": "passed"
+  },
+  "ci": {
+    "engine_unchanged": true,
+    "component_run": 40993252408,
+    "platform_run": 40993252420,
+    "status": "payments/spending blocked before steps; no forced rerun or billing action"
+  },
+  "tracking": {
+    "target_issue": 20,
+    "body_only_plan_sha256": "f517289870c46783d477dc725d47d11755784441e941bf193bb8f82179520152",
+    "precheck_mirrors": 23,
+    "final_readback": "passed23 mirrors; all23nonbody metadata and22otherissue rows unchanged; #3 full row identical Blocked",
+    "issue3": "must remain byte-identical Blocked",
+    "metadata": "all23nonbody fields unchanged; #20 In Progress/P2/M0/full gates Planned/dependencies/estimates/null hours retained"
+  },
+  "boundaries": [
+    "No Engine product performance fix established",
+    "No selected/favorable extra timing rerun, filtered rows, threshold/primers/flags or forced-workload-GC changes",
+    "Shared-host observations, not reserved/reference/production/provider/supported-Windows/IDE/distribution/AOT qualification",
+    "Separate EventPipe/native executions cannot be fused as causal overlap",
+    "All failed preparations retained; snapshots do not attest immutable executing bytes",
+    "Older component/tenant/HTTPS regressions are not relabeled as new executions"
+  ]
+}

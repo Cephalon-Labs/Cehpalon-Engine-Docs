@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib,statistics
+samples=Path('D:/Cephalon/Cehpalon-Engine-Samples');docs=samples.parent/'Cehpalon-Engine-Docs'
+read=lambda p:json.loads(p.read_text(encoding='utf-8'))
+result={'scope':'All four untraced full series retained; final55 unchanged-source observation is not an implementation speedup','engine_final':'55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7','hosts':{}}
+for host,tag in [('windows','win01'),('linux','linux01')]:
+ series=[]
+ for label,folder in [('baseline29df',samples/'tooling-benchmark/evidence/2026-10-30'/host),('candidate01-1b9',samples/f'.local/tooling-variance-{tag}-benchmark'),('candidate02-55',samples/f'.local/tooling-variance-{tag}-benchmark02'),('final-unchanged55',samples/f'.local/tooling-trace-final-{tag}')]:
+  m,g=read(folder/'manifest.json'),read(folder/'generator-observations.json')
+  assert m['status']=='completed' and m['canonical'] and m['correctness_status']=='passed' and len(m['launches'])==144 and len(g['measurements'])==270 and len(g['primers'])==36
+  if series:
+   bm,bg=read(Path(series[0]['source'])/'manifest.json'),read(Path(series[0]['source'])/'generator-observations.json')
+   assert m['schedule']==bm['schedule'] and g['parameters']==bg['parameters']
+   for phase in ('measurements','primers'):
+    for before,after in zip(bg[phase],g[phase]):
+     for key in ('size','state','variant','caseIndex','pairSequence','repetition','iteration','pairOrder','orderInPair','version','actualIds','sourceHash','registryHash','emitSuccess','diagnostics'):assert before[key]==after[key],(host,label,key)
+   assert all(m['frozen_exports'][k]==bm['frozen_exports'][k] for k in ('api','both','graphql','off'))
+  series.append({'label':label,'source':str(folder),'engine_revision':m['engine_revision'],'manifest_sha256':hashlib.sha256((folder/'manifest.json').read_bytes()).hexdigest(),'generator_summaries':g['summaries'],'cli_summaries':m['summaries'],'generator_unstable':sum(x['cvPercent']>15 for x in g['summaries']),'cli_unstable':sum(x['cv_percent']>15 for x in m['summaries'].values()),'all306_fixture_registry_and4export_outputs_equal_baseline':True})
+ result['hosts'][host]=series
+out=docs/'internal/evidence/tooling-traces/final-comparison.json';out.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
+for host,series in result['hosts'].items():
+ print(host,'generator',[s['generator_unstable'] for s in series],'CLI',[s['cli_unstable'] for s in series])
+ print('exportoff',[(s['label'],round(s['cli_summaries']['export-off']['mean'],3),round(s['cli_summaries']['export-off']['cv_percent'],3)) for s in series])

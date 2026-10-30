@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "mirrors": 23,
+  "remote_changes": [
+    {
+      "issue": 20,
+      "field": "body"
+    }
+  ],
+  "issue3_full_row_and_body_editable_unchanged": true,
+  "all23_nonbody_metadata_unchanged": true,
+  "all22_other_issue_rows_unchanged": true,
+  "issue20_project": {
+    "Status": "In Progress",
+    "Priority": "P2",
+    "Estimate low (h)": 40.0,
+    "Estimate (h)": 60.0,
+    "Estimate high (h)": 80.0,
+    "Actual (h)": null,
+    "Remaining (h)": null,
+    "Maturity": "M0",
+    "Test gate": "Planned",
+    "Benchmark gate": "Planned",
+    "Feature": "tooling"
+  },
+  "snapshot_sha256": "b3ed18aef4ee29559264291055fdee7fdefd86a9f2ea4fb9ac8dde6d0062490e",
+  "plan_sha256": "f517289870c46783d477dc725d47d11755784441e941bf193bb8f82179520152"
+}

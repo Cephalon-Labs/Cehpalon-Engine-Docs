@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "plan_sha256": "f517289870c46783d477dc725d47d11755784441e941bf193bb8f82179520152",
+  "operations": 1,
+  "issue": 20,
+  "changes": [
+    "body"
+  ],
+  "all23_nonbody_metadata_unchanged": true,
+  "issue3_desired_equals_remote_expected": true,
+  "prior_review_assertion": "Initial comparator used outer remote guard object rather than its editable values; no execute occurred; corrected structural comparison passes."
+}

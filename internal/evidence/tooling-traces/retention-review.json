@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "files": 4357,
+  "original_bytes": 2397090665,
+  "stored_bytes": 211528291,
+  "attempts": [
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\analyzer-linux02\\retention.json",
+      "files": 8,
+      "original_bytes": 3241,
+      "stored_bytes": 3241
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\analyzer-win02\\retention.json",
+      "files": 7,
+      "original_bytes": 2119,
+      "stored_bytes": 2119
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\analyzer-win03\\retention.json",
+      "files": 7,
+      "original_bytes": 2116,
+      "stored_bytes": 2116
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\audit-agent\\retention.json",
+      "files": 9,
+      "original_bytes": 329788,
+      "stored_bytes": 329788
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\build-linux01\\retention.json",
+      "files": 24,
+      "original_bytes": 12718,
+      "stored_bytes": 12718
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\build-win01\\retention.json",
+      "files": 19,
+      "original_bytes": 9008,
+      "stored_bytes": 9008
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-app-linux01\\retention.json",
+      "files": 7,
+      "original_bytes": 6828,
+      "stored_bytes": 6828
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-app-win01\\retention.json",
+      "files": 7,
+      "original_bytes": 6833,
+      "stored_bytes": 6833
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-linux01\\retention.json",
+      "files": 27,
+      "original_bytes": 2853963,
+      "stored_bytes": 792134
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-win01\\retention.json",
+      "files": 10,
+      "original_bytes": 386432,
+      "stored_bytes": 68828
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-win02\\retention.json",
+      "files": 15,
+      "original_bytes": 68452743,
+      "stored_bytes": 1797313
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-win03\\retention.json",
+      "files": 26,
+      "original_bytes": 2670409,
+      "stored_bytes": 529720
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\conformance-win04\\retention.json",
+      "files": 27,
+      "original_bytes": 3354419,
+      "stored_bytes": 690064
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\driver-linux01\\retention.json",
+      "files": 9,
+      "original_bytes": 57925,
+      "stored_bytes": 57925
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\driver-win01\\retention.json",
+      "files": 9,
+      "original_bytes": 57952,
+      "stored_bytes": 57952
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\final-linux01\\retention.json",
+      "files": 930,
+      "original_bytes": 5392476,
+      "stored_bytes": 4277343
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\final-win01\\retention.json",
+      "files": 930,
+      "original_bytes": 5467043,
+      "stored_bytes": 4338362
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\fixture-linux01\\retention.json",
+      "files": 80,
+      "original_bytes": 408399,
+      "stored_bytes": 408399
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\fixture-win01\\retention.json",
+      "files": 80,
+      "original_bytes": 415355,
+      "stored_bytes": 415355
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\native-conformance-linux01\\retention.json",
+      "files": 18,
+      "original_bytes": 1898436,
+      "stored_bytes": 330620
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\native-gates-agent\\retention.json",
+      "files": 210,
+      "original_bytes": 20046316,
+      "stored_bytes": 4662032
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\native-linux01\\retention.json",
+      "files": 398,
+      "original_bytes": 164454584,
+      "stored_bytes": 12183965
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\negative01\\retention.json",
+      "files": 8,
+      "original_bytes": 99752,
+      "stored_bytes": 99752
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\negative02\\retention.json",
+      "files": 9,
+      "original_bytes": 103507,
+      "stored_bytes": 103507
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\preparation-linux01\\retention.json",
+      "files": 8,
+      "original_bytes": 7109,
+      "stored_bytes": 7109
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\preparation01\\retention.json",
+      "files": 10,
+      "original_bytes": 6773,
+      "stored_bytes": 6773
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\runtime-agent\\retention.json",
+      "files": 71,
+      "original_bytes": 45393978,
+      "stored_bytes": 4311193
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\runtime-linux01\\retention.json",
+      "files": 624,
+      "original_bytes": 960743626,
+      "stored_bytes": 74435580
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\runtime-win01\\retention.json",
+      "files": 146,
+      "original_bytes": 423999932,
+      "stored_bytes": 37347005
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30\\runtime-win02\\retention.json",
+      "files": 624,
+      "original_bytes": 690446885,
+      "stored_bytes": 64234709
+    }
+  ],
+  "compression": "Original SHA256/size verified after full streaming decompression of every retained file; no filtering",
+  "excluded": "DerivedETLX/build/private/clone/toolpackage material; all raw process traces retained"
+}
