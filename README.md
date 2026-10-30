@@ -10,6 +10,7 @@ This is a new baseline. Historical project notes are context only; they do not e
 - [Experimental Small API CLI profile continuation](internal/planning/small-api-cli-profile.md)
 - [Offline Small API transport contract export](internal/planning/tooling-contract-export.md)
 - [Bounded tooling observations and fixed protocol](internal/planning/tooling-benchmark.md)
+- [Same-process tooling wait diagnosis and frozen-source audit](internal/planning/tooling-waits.md)
 - [Tooling JIT/GC/scheduler/IO trace investigation](internal/planning/tooling-traces.md)
 - [Tooling variance investigation and retained negative outcomes](internal/planning/tooling-variance.md)
 - [Current Small API collector readiness and complete canonical04](internal/planning/w2-small-api-collector-readiness.md)

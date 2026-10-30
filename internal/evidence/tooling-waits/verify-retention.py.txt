@@ -1,0 +1,17 @@
+from pathlib import Path
+import gzip,hashlib,json,subprocess
+samples=Path('D:/Cephalon/Cehpalon-Engine-Samples');docs=samples.parent/'Cehpalon-Engine-Docs';prefix=samples/'tooling-traces/evidence/2026-10-30-waits'
+entries=[];original=stored=0;attempts=[]
+for manifest in sorted(prefix.glob('*/retention.json')):
+ r=json.loads(manifest.read_text(encoding='utf-8'));assert len(r['files'])==r['count'];attempts.append({'path':str(manifest.relative_to(samples)),'files':r['count'],'original_bytes':r['original_bytes'],'stored_bytes':r['stored_bytes']})
+ for row in r['files']:
+  p=manifest.parent/row['path'];assert p.is_file() and p.stat().st_size==row['stored_bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()==row['stored_sha256'];digest=hashlib.sha256();size=0
+  with (gzip.open(p,'rb') if row['compression']!='none' else p.open('rb')) as stream:
+   while True:
+    block=stream.read(1048576)
+    if not block:break
+    digest.update(block);size+=len(block)
+  assert size==row['original_bytes'] and digest.hexdigest()==row['original_sha256'],str(p)
+  original+=size;stored+=p.stat().st_size;entries.append((p,row['stored_sha256']))
+r={'status':'passed','files':len(entries),'original_bytes':original,'stored_bytes':stored,'attempts':attempts,'compression':'Original SHA256/size verified after full streaming decompression of every retained file; no filtering','excluded':'DerivedETLX/build/private/clone/toolpackage material; all raw process traces retained'}
+(docs/'internal/evidence/tooling-waits/retention-review.json').write_text(json.dumps(r,indent=2)+'\n',encoding='utf-8',newline='\n');print({k:v for k,v in r.items() if k!='attempts'})

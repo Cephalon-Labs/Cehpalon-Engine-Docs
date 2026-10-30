@@ -1,0 +1,13 @@
+from pathlib import Path
+import subprocess,json,hashlib
+root=Path('D:/Cephalon/Cehpalon-Engine-Samples');prefix=root/'tooling-traces/evidence/2026-10-30-waits';expected={};payload=0
+for m in sorted(prefix.glob('*/retention.json')):
+ r=json.loads(m.read_text(encoding='utf-8'));expected[m.relative_to(root).as_posix()]=hashlib.sha256(m.read_bytes()).hexdigest()
+ for row in r['files']:
+  expected[(m.parent/row['path']).relative_to(root).as_posix()]=row['stored_sha256'];payload+=1
+p=root/'tooling-traces/README.md';expected[p.relative_to(root).as_posix()]=hashlib.sha256(p.read_bytes().replace(b'\r\n',b'\n')).hexdigest()
+files=[x for x in subprocess.check_output(['git','diff','--cached','--name-only','-z'],cwd=root).decode().split('\0') if x];assert set(files)==set(expected)
+data=subprocess.check_output(['git','cat-file','--batch'],input=''.join(':'+n+'\n' for n in files).encode(),cwd=root);pos=0
+for name in files:
+ end=data.index(b'\n',pos);size=int(data[pos:end].split()[-1]);blob=data[end+1:end+1+size];pos=end+size+2;assert hashlib.sha256(blob).hexdigest()==expected[name],name
+r={'status':'passed','staged_files':len(files),'payload_files':payload,'all_staged_blob_bytes_exact_sha256':True};(root.parent/'Cehpalon-Engine-Docs/internal/evidence/tooling-waits/staged-blob-review.json').write_text(json.dumps(r,indent=2)+'\n',encoding='utf-8',newline='\n');print(r)

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "files": 1401,
+  "original_bytes": 3121490257,
+  "stored_bytes": 194892176,
+  "attempts": [
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\agent-evidence01\\retention.json",
+      "files": 92,
+      "original_bytes": 32833861,
+      "stored_bytes": 2232143
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\build-linux01\\retention.json",
+      "files": 20,
+      "original_bytes": 9457,
+      "stored_bytes": 9457
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\combined-linux01\\retention.json",
+      "files": 339,
+      "original_bytes": 1279793300,
+      "stored_bytes": 80474217
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\combined-linux02\\retention.json",
+      "files": 850,
+      "original_bytes": 1788916086,
+      "stored_bytes": 109509313
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\conformance-analysis-primary01\\retention.json",
+      "files": 5,
+      "original_bytes": 804796,
+      "stored_bytes": 52818
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\conformance-analysis-primary02\\retention.json",
+      "files": 5,
+      "original_bytes": 804796,
+      "stored_bytes": 52818
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\conformance-analysis-primary03\\retention.json",
+      "files": 5,
+      "original_bytes": 793834,
+      "stored_bytes": 52601
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\conformance-linux01\\retention.json",
+      "files": 29,
+      "original_bytes": 8623566,
+      "stored_bytes": 1110755
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\conformance-linux02\\retention.json",
+      "files": 29,
+      "original_bytes": 8631283,
+      "stored_bytes": 1118776
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\controllers01\\retention.json",
+      "files": 4,
+      "original_bytes": 3270,
+      "stored_bytes": 3270
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\driver-linux01\\retention.json",
+      "files": 11,
+      "original_bytes": 63995,
+      "stored_bytes": 63995
+    },
+    {
+      "path": "tooling-traces\\evidence\\2026-10-30-waits\\negative-launch01\\retention.json",
+      "files": 12,
+      "original_bytes": 212013,
+      "stored_bytes": 212013
+    }
+  ],
+  "compression": "Original SHA256/size verified after full streaming decompression of every retained file; no filtering",
+  "excluded": "DerivedETLX/build/private/clone/toolpackage material; all raw process traces retained"
+}

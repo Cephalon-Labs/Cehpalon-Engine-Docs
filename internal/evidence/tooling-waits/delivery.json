@@ -1,0 +1,127 @@
+{
+  "date_bangkok": "2026-10-30",
+  "scope": "ADR0019 bounded same-process tooling wait diagnosis; no Engine product change",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_source_revision": "6af8aee2398d0cf322d06c221b281cfd7d2956c5",
+  "samples_evidence_revision": "6436ab1546bfe525a4cb13b3bdc6c23a2c611faf",
+  "collector_sha256": "3350325def09143eddc04f95fa7d8235085878bb4c985a205429dc92525def26",
+  "analyzer_sha256": "2ba6d3918de520b19e22d85c5ca09b4dec2db05b6b2ba54dd0b235e5b2c2af94",
+  "status": "complete diagnostic delivery; causal variance objective unresolved",
+  "qualification_status": "not_qualified",
+  "performance_status": "diagnostic_only_not_acceptance",
+  "product_patch": false,
+  "capture": {
+    "final": "combined-linux02",
+    "targets": 25,
+    "generator_measurements": 270,
+    "generator_primers": 36,
+    "generator_state_seeds": 12,
+    "generator_preflight": 3,
+    "generator_postflight": 18,
+    "markers": 2956,
+    "cli_launches": 24,
+    "scenarios": 8,
+    "rounds": 3,
+    "failed_attempt": "combined01 retained after12completedcases before nexttargetlease; no partialstitch",
+    "synthetic_successes": [
+      "linux01",
+      "correctedlinux02"
+    ],
+    "all306_clock_models": "supported_conditional_constant_offset; no hidden excursion proof",
+    "cli_clock_scope": "lifetime observations only; no precise EventPipe/native temporal join"
+  },
+  "validation": {
+    "independent_integrity_checks": 852454,
+    "audit_failures": 0,
+    "eventpipe_events": 976930,
+    "reported_eventpipe_and_etlx_loss": 0,
+    "approved_source_modules": 6,
+    "compiled_function_fingerprints": 71,
+    "corrected_collector_mock_checks_each_python_platform": 41,
+    "analyzer_fixtures": 41,
+    "semantic_parity": "All306identities/source/registry/order/IDs equal bothpriorLinuxcorpora;24CLIoutputs/artifactbytes/counters equal frozenfixture",
+    "prior_separate_native_pid_exec_matches": 25,
+    "staged_blob_files_verified": 1414
+  },
+  "observed_measured_generator": {
+    "wall_ms": 93019.972,
+    "caller_managed_wait_overlap_ms": 19400.635,
+    "caller_managed_wait_overlap_percent": 20.856,
+    "caller_managed_wait_positive_rows": 76,
+    "caller_native_elapsed_overlap_ms": [
+      30984.475,
+      30999.991
+    ],
+    "caller_native_elapsed_overlap_percent": [
+      33.309,
+      33.326
+    ],
+    "paired_gc_envelope_overlap_ms": 321.309,
+    "paired_gc_positive_rows": 13,
+    "all_observed_caller_managed_waits_inside": "PE Emit",
+    "run_generators_measured_spans": 135,
+    "paired_caller_wait_overlap_in_run_generators_ms": 0,
+    "run_generators_observed_zero_limit": "not proof of no native/GC/other wait",
+    "caller_residency_observations": 288,
+    "observations_with_MethodCompiler_WaitForWorkers": 283,
+    "processwide_matched_tid_overlap_percent": 88.36,
+    "processwide_limit": "not caller-only, not exclusive blocked/CPU time, not a particular managed lock/futex owner"
+  },
+  "partial_dimensions": {
+    "ee_pairing_errors": 1669,
+    "generator_ee_pairing_errors": 1637,
+    "jit_pairing_errors": 1,
+    "unfinished_background_waits": 7,
+    "proc_samples": 36448,
+    "proc_thread_races": 6,
+    "observer_normal_exits": 21,
+    "observer_terminal_unavailable": 4,
+    "native_incomplete_records": 0,
+    "native_unparsed_records": 0,
+    "native_utf8_replacements": 0,
+    "native_kernel_event_loss_count": null
+  },
+  "product_decision": "No safe avoidable Engine work isolated; keep concurrency/tiering/GC/schema/authority/module/publication semantics unchanged",
+  "original_benchmark": {
+    "unchanged_driver_and_harness_sha_verified": true,
+    "new_series_run": false,
+    "reason": "No Engine patch; do not rerun unchangedsource until favorable",
+    "last_full_series_generator_unstable": {
+      "windows": 9,
+      "linux": 3
+    },
+    "last_full_series_cli_unstable": {
+      "windows": 0,
+      "linux": 0
+    }
+  },
+  "retention": {
+    "files": 1401,
+    "original_bytes": 3121490257,
+    "stored_bytes": 194892176
+  },
+  "tracking": {
+    "changes": "issue20bodyonly",
+    "readback": "passed23mirrors;all23nonbodymetadata/22otherrowsunchanged;#3fullrowidenticalBlocked",
+    "must_preserve": "all23nonbodymetadata/22otherrows;#3fullrowidenticalBlocked;#20InProgressP2M0/fullgatesPlanned/dependencies/estimates/nullhours",
+    "body_only_plan_sha256": "474a9a7e21036f96d153965bedbf51e6936e752b7fe1c7d8dc28756cd4a780ce"
+  },
+  "ci": {
+    "engine_unchanged": true,
+    "component_run": 40993252408,
+    "platform_run": 40993252420,
+    "status": "existingpayment/spendingrejectionbeforesteps;noCIrerun/billingaction",
+    "jobs_each_run": 2,
+    "jobs_total": 4,
+    "steps_total": 0,
+    "annotation_reason_live_verified": true
+  },
+  "limits": [
+    "Perturbed same-process diagnostics; not reserved/reference/production/provider/supportedWindows/IDE/distribution/AOT qualification",
+    "Do not add/subtract overlapping dimensions into exclusive time",
+    "Same managed IL records are not complete binary/resolvedsemantic equality or timing cause",
+    "Per-TID EE candidate study does not replace conservative analyzer without pinned runtime proof",
+    "Frozen function/source checks exclude globals/defaults/importedbinding/immutable execution attestation",
+    "Older component/tenant/HTTPS regressions not relabelednew"
+  ]
+}

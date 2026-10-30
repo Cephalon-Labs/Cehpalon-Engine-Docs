@@ -1,0 +1,31 @@
+from pathlib import Path
+import os,json,hashlib,gzip,shutil
+base=Path('D:/Cephalon');samples=base/'Cehpalon-Engine-Samples';prefix=samples/'tooling-traces/evidence/2026-10-30-waits'
+allowed={'.json','.jsonl','.txt','.md','.cs','.csproj','.py','.graphql','.config','.props','.ps1','.nettrace','.log','.bin'}
+exclude={'.git','bin','obj','__pycache__','private','.private-fixtures','private-fixtures','clones','tools','.store'}
+code={'.cs','.csproj','.py','.props','.ps1'}
+def retain(source,target):
+ target.mkdir(parents=True,exist_ok=False);entries=[]
+ for parent,dirs,files in os.walk(source,followlinks=False):
+  dirs[:]=sorted(n for n in dirs if n not in exclude and not n.endswith('artifacts'))
+  for name in sorted(files):
+   p=Path(parent)/name
+   if p.is_symlink() or not p.is_file() or p.suffix.lower() not in allowed or p.name.endswith('.deps.json') or p.name.endswith('.runtimeconfig.json'):continue
+   relative=p.relative_to(source).as_posix();compressed=p.stat().st_size>262144 or p.suffix=='.nettrace'
+   stored=relative+('.txt' if p.suffix.lower() in code else '')+('.gz' if compressed else '')
+   dest=target/stored;dest.parent.mkdir(parents=True,exist_ok=True);original=hashlib.sha256();size=0
+   with p.open('rb') as inp,dest.open('wb') as raw:
+    stream=gzip.GzipFile(filename='',mode='wb',fileobj=raw,mtime=0,compresslevel=6) if compressed else raw
+    while True:
+     block=inp.read(1048576)
+     if not block:break
+     original.update(block);size+=len(block);stream.write(block)
+    if compressed:stream.close()
+   digest=hashlib.sha256(dest.read_bytes()).hexdigest()
+   if dest.stat().st_size>=99000000:raise ValueError('Needlosslesschunking beforegit '+str(dest))
+   entries.append({'source_relative':relative,'path':stored,'original_bytes':size,'original_sha256':original.hexdigest(),'compression':'gzip-mtime0-no-name' if compressed else 'none','stored_bytes':dest.stat().st_size,'stored_sha256':digest})
+ r={'source_attempt':str(source),'role':'exact-byte-retention; deterministic compression only; no event filtering','excluded':'build binaries/intermediates, ETLX derived conversion, tool packages, private/clone material. Synthetic known.bin is permitted. Code suffixes add .txt.','count':len(entries),'original_bytes':sum(x['original_bytes'] for x in entries),'stored_bytes':sum(x['stored_bytes'] for x in entries),'files':entries}
+ (target/'retention.json').write_text(json.dumps(r,indent=2)+'\n',encoding='utf-8',newline='\n');print(source.name,r['count'],r['original_bytes'],r['stored_bytes'],flush=True)
+
+for folder in sorted((samples/'.local').glob('tooling-wait-*')):
+ if folder.is_dir():retain(folder,prefix/folder.name.removeprefix('tooling-wait-'))

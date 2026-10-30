@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "plan_sha256": "474a9a7e21036f96d153965bedbf51e6936e752b7fe1c7d8dc28756cd4a780ce",
+  "operations": [
+    {
+      "number": 20,
+      "kind": "issue",
+      "changes": [
+        "body"
+      ]
+    }
+  ],
+  "all23_nonbody_metadata_unchanged": true,
+  "issue3_desired_matches_start_editable": true
+}
