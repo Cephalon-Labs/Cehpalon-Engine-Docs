@@ -1,0 +1,21 @@
+  Determining projects to restore...
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/CodeGeneration.ContractTests/CompilerFixture/CompilerFixture.csproj (in 368 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Identity.Contracts/Cehpalon.Engine.Identity.Contracts.csproj (in 386 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Composition.ContractTests/Composition.ContractTests.csproj (in 374 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Benchmarks/W1.Components/W1.Components.csproj (in 375 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Core.ContractTests/Core.ContractTests.csproj (in 374 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Identity.ContractTests/Identity.ContractTests.csproj (in 374 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj (in 374 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Tooling/Cehpalon.Engine.Tooling.csproj (in 374 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj (in 391 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Transports.Http/Cehpalon.Engine.Transports.Http.csproj (in 368 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Tenancy/Cehpalon.Engine.Tenancy.csproj (in 393 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Tooling.ContractTests/Tooling.ContractTests.csproj (in 371 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Benchmarks/Tenancy.Components/Tenancy.Components.csproj (in 394 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Http.ContractTests/Http.ContractTests.csproj (in 370 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/Tenancy.ContractTests/Tenancy.ContractTests.csproj (in 369 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.CodeGeneration/Cehpalon.Engine.CodeGeneration.csproj (in 919 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/CodeGeneration.ContractTests/CodeGeneration.ContractTests.csproj (in 892 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Benchmarks/Tooling.Components/Tooling.Components.csproj (in 892 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/src/Cehpalon.Engine.Transports.GraphQL/Cehpalon.Engine.Transports.GraphQL.csproj (in 950 ms).
+  Restored /mnt/d/Cephalon/Cehpalon-Engine/Tests/GraphQL.ContractTests/GraphQL.ContractTests.csproj (in 641 ms).

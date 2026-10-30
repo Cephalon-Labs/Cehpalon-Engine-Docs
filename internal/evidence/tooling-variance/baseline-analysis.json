@@ -1,0 +1,1462 @@
+{
+  "baseline_engine": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "scope": "Read-only descriptive baseline decomposition; correlations do not isolate cause",
+  "hosts": {
+    "windows": {
+      "generator": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            21518333.333333332,
+            15452666.666666666,
+            17161466.666666668,
+            18511433.333333332,
+            17034200
+          ],
+          "meanNanoseconds": 17935620,
+          "sampleStandardDeviationNanoseconds": 2277296.888808698,
+          "cvPercent": 12.697062542631356,
+          "minNanoseconds": 15318400,
+          "maxNanoseconds": 32708900,
+          "p50Nanoseconds": 17159300,
+          "p95Nanoseconds": 32708900,
+          "mean_allocated_bytes": 1191932.2666666666,
+          "mean_cpu_ticks": 239583.33333333334,
+          "gc_events": [
+            3,
+            2,
+            1
+          ]
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            14705733.333333334,
+            14694200,
+            22690266.666666668,
+            16049533.333333334,
+            15751366.666666666
+          ],
+          "meanNanoseconds": 16778220,
+          "sampleStandardDeviationNanoseconds": 3360656.489404679,
+          "cvPercent": 20.029874977230474,
+          "minNanoseconds": 14225900,
+          "maxNanoseconds": 32719200,
+          "p50Nanoseconds": 15829400,
+          "p95Nanoseconds": 32719200,
+          "mean_allocated_bytes": 1092244.2666666666,
+          "mean_cpu_ticks": 218750,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            13688266.666666666,
+            14150133.333333334,
+            13297400,
+            12827566.666666666,
+            14287433.333333334
+          ],
+          "meanNanoseconds": 13650160,
+          "sampleStandardDeviationNanoseconds": 603871.2948781209,
+          "cvPercent": 4.423913674844258,
+          "minNanoseconds": 12542100,
+          "maxNanoseconds": 16476900,
+          "p50Nanoseconds": 13037400,
+          "p95Nanoseconds": 16476900,
+          "mean_allocated_bytes": 572379.7333333333,
+          "mean_cpu_ticks": 229166.66666666666,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            28972466.666666668,
+            28579800,
+            29796033.333333332,
+            31487100,
+            36857700
+          ],
+          "meanNanoseconds": 31138620,
+          "sampleStandardDeviationNanoseconds": 3386430.0291834697,
+          "cvPercent": 10.875337536420915,
+          "minNanoseconds": 27656500,
+          "maxNanoseconds": 37847300,
+          "p50Nanoseconds": 29812300,
+          "p95Nanoseconds": 37847300,
+          "mean_allocated_bytes": 943562.1333333333,
+          "mean_cpu_ticks": 458333.3333333333,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            40287933.333333336,
+            38280000,
+            39337966.666666664,
+            39404566.666666664,
+            41807833.333333336
+          ],
+          "meanNanoseconds": 39823660,
+          "sampleStandardDeviationNanoseconds": 1317850.2358428726,
+          "cvPercent": 3.309214260675369,
+          "minNanoseconds": 36766400,
+          "maxNanoseconds": 43992600,
+          "p50Nanoseconds": 39026200,
+          "p95Nanoseconds": 43992600,
+          "mean_allocated_bytes": 1024471.4666666667,
+          "mean_cpu_ticks": 802083.3333333334,
+          "gc_events": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            39314633.333333336,
+            35504766.666666664,
+            34636966.666666664,
+            35475033.333333336,
+            36422600
+          ],
+          "meanNanoseconds": 36270800,
+          "sampleStandardDeviationNanoseconds": 1815036.3369487813,
+          "cvPercent": 5.004125458905735,
+          "minNanoseconds": 34326400,
+          "maxNanoseconds": 42984700,
+          "p50Nanoseconds": 35209200,
+          "p95Nanoseconds": 42984700,
+          "mean_allocated_bytes": 949822.4,
+          "mean_cpu_ticks": 614583.3333333334,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            39995366.666666664,
+            39279200,
+            40178900,
+            38465566.666666664,
+            38595233.333333336
+          ],
+          "meanNanoseconds": 39302853.33333333,
+          "sampleStandardDeviationNanoseconds": 782522.6811054385,
+          "cvPercent": 1.9910073054206714,
+          "minNanoseconds": 37504000,
+          "maxNanoseconds": 41113000,
+          "p50Nanoseconds": 39318100,
+          "p95Nanoseconds": 41113000,
+          "mean_allocated_bytes": 1329246.9333333333,
+          "mean_cpu_ticks": 656250,
+          "gc_events": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            44568666.666666664,
+            46511766.666666664,
+            45781833.333333336,
+            44883566.666666664,
+            43780166.666666664
+          ],
+          "meanNanoseconds": 45105199.99999999,
+          "sampleStandardDeviationNanoseconds": 1064068.2710970934,
+          "cvPercent": 2.359081150503919,
+          "minNanoseconds": 41431600,
+          "maxNanoseconds": 54449300,
+          "p50Nanoseconds": 43595500,
+          "p95Nanoseconds": 54449300,
+          "mean_allocated_bytes": 1450422.9333333333,
+          "mean_cpu_ticks": 947916.6666666666,
+          "gc_events": [
+            3,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            42136300,
+            36703666.666666664,
+            38846933.333333336,
+            36676233.333333336,
+            37559600
+          ],
+          "meanNanoseconds": 38384546.66666667,
+          "sampleStandardDeviationNanoseconds": 2275614.3964750366,
+          "cvPercent": 5.928464952931674,
+          "minNanoseconds": 35699000,
+          "maxNanoseconds": 49662700,
+          "p50Nanoseconds": 37162100,
+          "p95Nanoseconds": 49662700,
+          "mean_allocated_bytes": 1183088.5333333334,
+          "mean_cpu_ticks": 802083.3333333334,
+          "gc_events": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            16894166.666666668,
+            17127566.666666668,
+            17947933.333333332,
+            17036100,
+            18986366.666666668
+          ],
+          "meanNanoseconds": 17598426.666666668,
+          "sampleStandardDeviationNanoseconds": 877843.2264489043,
+          "cvPercent": 4.988191518913647,
+          "minNanoseconds": 16038700,
+          "maxNanoseconds": 22120900,
+          "p50Nanoseconds": 16921100,
+          "p95Nanoseconds": 22120900,
+          "mean_allocated_bytes": 742581.3333333334,
+          "mean_cpu_ticks": 479166.6666666667,
+          "gc_events": [
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            36134066.666666664,
+            37464100,
+            31055233.333333332,
+            23323566.666666668,
+            23456733.333333332
+          ],
+          "meanNanoseconds": 30286740,
+          "sampleStandardDeviationNanoseconds": 6734817.7714108275,
+          "cvPercent": 22.23685273294791,
+          "minNanoseconds": 21410600,
+          "maxNanoseconds": 44390200,
+          "p50Nanoseconds": 30724400,
+          "p95Nanoseconds": 44390200,
+          "mean_allocated_bytes": 1155204.2666666666,
+          "mean_cpu_ticks": 666666.6666666666,
+          "gc_events": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            40788766.666666664,
+            37724033.333333336,
+            34646133.333333336,
+            27375733.333333332,
+            24113366.666666668
+          ],
+          "meanNanoseconds": 32929606.666666668,
+          "sampleStandardDeviationNanoseconds": 7004837.319762203,
+          "cvPercent": 21.27215605904252,
+          "minNanoseconds": 23777800,
+          "maxNanoseconds": 42188000,
+          "p50Nanoseconds": 34496000,
+          "p95Nanoseconds": 42188000,
+          "mean_allocated_bytes": 1275125.3333333333,
+          "mean_cpu_ticks": 718750,
+          "gc_events": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            65946666.666666664,
+            54236733.333333336,
+            62071200,
+            51009900,
+            54594166.666666664
+          ],
+          "meanNanoseconds": 57571733.333333336,
+          "sampleStandardDeviationNanoseconds": 6193353.162284367,
+          "cvPercent": 10.757628446629539,
+          "minNanoseconds": 43909300,
+          "maxNanoseconds": 74953700,
+          "p50Nanoseconds": 56196400,
+          "p95Nanoseconds": 74953700,
+          "mean_allocated_bytes": 5101583.466666667,
+          "mean_cpu_ticks": 1635416.6666666667,
+          "gc_events": [
+            8,
+            3,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            43915900,
+            47098133.333333336,
+            35353500,
+            43495733.333333336,
+            32143333.333333332
+          ],
+          "meanNanoseconds": 40401320.00000001,
+          "sampleStandardDeviationNanoseconds": 6333439.148966908,
+          "cvPercent": 15.6763173801423,
+          "minNanoseconds": 26453300,
+          "maxNanoseconds": 61704800,
+          "p50Nanoseconds": 37731800,
+          "p95Nanoseconds": 61704800,
+          "mean_allocated_bytes": 4547017.6,
+          "mean_cpu_ticks": 1270833.3333333333,
+          "gc_events": [
+            8,
+            3,
+            1
+          ]
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            24591300,
+            18343466.666666668,
+            19424033.333333332,
+            17531000,
+            21461700
+          ],
+          "meanNanoseconds": 20270300,
+          "sampleStandardDeviationNanoseconds": 2829447.5351009583,
+          "cvPercent": 13.95858736723659,
+          "minNanoseconds": 16269500,
+          "maxNanoseconds": 36807900,
+          "p50Nanoseconds": 17796600,
+          "p95Nanoseconds": 36807900,
+          "mean_allocated_bytes": 3197929.6,
+          "mean_cpu_ticks": 760416.6666666666,
+          "gc_events": [
+            4,
+            3,
+            1
+          ]
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            27366566.666666668,
+            25438400,
+            31328333.333333332,
+            25404500,
+            25689166.666666668
+          ],
+          "meanNanoseconds": 27045393.333333332,
+          "sampleStandardDeviationNanoseconds": 2527896.1919834525,
+          "cvPercent": 9.346864217603487,
+          "minNanoseconds": 22410300,
+          "maxNanoseconds": 37291300,
+          "p50Nanoseconds": 25028800,
+          "p95Nanoseconds": 37291300,
+          "mean_allocated_bytes": 4318663.466666667,
+          "mean_cpu_ticks": 895833.3333333334,
+          "gc_events": [
+            6,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            45941266.666666664,
+            39004933.333333336,
+            37036666.666666664,
+            36268966.666666664,
+            31664033.333333332
+          ],
+          "meanNanoseconds": 37983173.33333333,
+          "sampleStandardDeviationNanoseconds": 5199546.920293473,
+          "cvPercent": 13.689079831911904,
+          "minNanoseconds": 29264200,
+          "maxNanoseconds": 55295300,
+          "p50Nanoseconds": 35824200,
+          "p95Nanoseconds": 55295300,
+          "mean_allocated_bytes": 4832459.2,
+          "mean_cpu_ticks": 1135416.6666666667,
+          "gc_events": [
+            6,
+            2,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            26910000,
+            26407500,
+            27260166.666666668,
+            22489166.666666668,
+            24360200
+          ],
+          "meanNanoseconds": 25485406.666666668,
+          "sampleStandardDeviationNanoseconds": 2016992.7812629042,
+          "cvPercent": 7.914304871191267,
+          "minNanoseconds": 19738300,
+          "maxNanoseconds": 40073800,
+          "p50Nanoseconds": 22669800,
+          "p95Nanoseconds": 40073800,
+          "mean_allocated_bytes": 4259127.466666667,
+          "mean_cpu_ticks": 885416.6666666666,
+          "gc_events": [
+            5,
+            2,
+            0
+          ]
+        }
+      ],
+      "cli": {
+        "new-portable": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 99.4104,
+          "maximum": 121.7119,
+          "median": 105.1533,
+          "p50": 105.1533,
+          "p95": 121.7119,
+          "mean": 105.72943333333333,
+          "sample_standard_deviation": 5.363302659831197,
+          "cv_percent": 5.072667554097547,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "new-small-api": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 106.8325,
+          "maximum": 120.7145,
+          "median": 109.7314,
+          "p50": 109.7314,
+          "p95": 120.7145,
+          "mean": 110.79389333333333,
+          "sample_standard_deviation": 3.7861733422823534,
+          "cv_percent": 3.4173122979723374,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "validate-portable": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 93.0623,
+          "maximum": 102.6029,
+          "median": 95.4976,
+          "p50": 95.4976,
+          "p95": 102.6029,
+          "mean": 96.67797333333333,
+          "sample_standard_deviation": 3.101790635024197,
+          "cv_percent": 3.2083736636985742,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "validate-small-api": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 93.8203,
+          "maximum": 107.6454,
+          "median": 97.7114,
+          "p50": 97.7114,
+          "p95": 107.6454,
+          "mean": 98.42521333333333,
+          "sample_standard_deviation": 4.134257726237249,
+          "cv_percent": 4.200405146429197,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-api": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 254.799,
+          "maximum": 377.2125,
+          "median": 335.6604,
+          "p50": 335.6604,
+          "p95": 377.2125,
+          "mean": 321.41985999999997,
+          "sample_standard_deviation": 40.7290335207629,
+          "cv_percent": 12.671598301599316,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-both": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 558.2606,
+          "maximum": 750.2466,
+          "median": 710.0722,
+          "p50": 710.0722,
+          "p95": 750.2466,
+          "mean": 695.6594466666667,
+          "sample_standard_deviation": 53.259848072055,
+          "cv_percent": 7.656023119826198,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-graphql": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 604.321,
+          "maximum": 758.3681,
+          "median": 657.9714,
+          "p50": 657.9714,
+          "p95": 758.3681,
+          "mean": 672.7492,
+          "sample_standard_deviation": 48.29539327149713,
+          "cv_percent": 7.178810955330326,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-off": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 239.4697,
+          "maximum": 400.7848,
+          "median": 318.5217,
+          "p50": 318.5217,
+          "p95": 400.7848,
+          "mean": 320.04260666666664,
+          "sample_standard_deviation": 48.71355049432883,
+          "cv_percent": 15.220957922351058,
+          "unstable_observation": true,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        }
+      },
+      "noop_candidates": [
+        {
+          "size": 1,
+          "passed": true,
+          "noopReasons": [
+            "Cached"
+          ],
+          "editReasons": [
+            "Modified"
+          ],
+          "initialPeHash": "25ec528a2c4d6e2db4f0225ea71dac3fc10f54e757503a4cde8ce04209139ae2",
+          "manualPeHash": "25ec528a2c4d6e2db4f0225ea71dac3fc10f54e757503a4cde8ce04209139ae2",
+          "noopPeHash": "25ec528a2c4d6e2db4f0225ea71dac3fc10f54e757503a4cde8ce04209139ae2",
+          "editPeHash": "c21c9e3e97851300f2cde130fe6da854c76405074bd6523a5bdb9a681556da23",
+          "trackingTimed": false,
+          "compilerDependencySeparationPassed": true
+        },
+        {
+          "size": 3,
+          "passed": true,
+          "noopReasons": [
+            "Cached",
+            "Cached",
+            "Cached"
+          ],
+          "editReasons": [
+            "Modified",
+            "Modified",
+            "Modified"
+          ],
+          "initialPeHash": "1eef8cf17a54737aabc2f5cce12ff0e72fe9291b37cf5dddbb6c0f406795a1cd",
+          "manualPeHash": "1eef8cf17a54737aabc2f5cce12ff0e72fe9291b37cf5dddbb6c0f406795a1cd",
+          "noopPeHash": "1eef8cf17a54737aabc2f5cce12ff0e72fe9291b37cf5dddbb6c0f406795a1cd",
+          "editPeHash": "186bc869b254f81d0d89abb0bbcd7f210e8577986f0b36d74bf5450c75d5578d",
+          "trackingTimed": false,
+          "compilerDependencySeparationPassed": true
+        },
+        {
+          "size": 32,
+          "passed": true,
+          "noopReasons": [
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached"
+          ],
+          "editReasons": [
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified"
+          ],
+          "initialPeHash": "a851ea91c2dc3722b851a14901de3103e2b199ff77525718af8a843f7568e8be",
+          "manualPeHash": "a851ea91c2dc3722b851a14901de3103e2b199ff77525718af8a843f7568e8be",
+          "noopPeHash": "a851ea91c2dc3722b851a14901de3103e2b199ff77525718af8a843f7568e8be",
+          "editPeHash": "0f6474f692c5334f649226a586718b65da7d7f93fa6e95f9c67cd53c124e1a29",
+          "trackingTimed": false,
+          "compilerDependencySeparationPassed": true
+        }
+      ]
+    },
+    "linux": {
+      "generator": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            17481834.666666668,
+            15306085.333333334,
+            28140731.666666668,
+            24903060.666666668,
+            23718591.666666668
+          ],
+          "meanNanoseconds": 21910060.800000004,
+          "sampleStandardDeviationNanoseconds": 5344898.740821781,
+          "cvPercent": 24.39472345426709,
+          "minNanoseconds": 14662573,
+          "maxNanoseconds": 42782887,
+          "p50Nanoseconds": 22262633,
+          "p95Nanoseconds": 42782887,
+          "mean_allocated_bytes": 1181929.0666666667,
+          "mean_cpu_ticks": 336204,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            17020936,
+            14554409.666666666,
+            17087542,
+            22508674.333333332,
+            20837157.666666668
+          ],
+          "meanNanoseconds": 18401743.933333334,
+          "sampleStandardDeviationNanoseconds": 3210679.6629667697,
+          "cvPercent": 17.447692319807103,
+          "minNanoseconds": 13718762,
+          "maxNanoseconds": 24033987,
+          "p50Nanoseconds": 20593727,
+          "p95Nanoseconds": 24033987,
+          "mean_allocated_bytes": 1088626.6666666667,
+          "mean_cpu_ticks": 253053.33333333334,
+          "gc_events": [
+            2,
+            2,
+            1
+          ]
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            7128596.333333333,
+            8299587,
+            7564105,
+            8077675,
+            10222788.666666666
+          ],
+          "meanNanoseconds": 8258550.4,
+          "sampleStandardDeviationNanoseconds": 1188663.3761772176,
+          "cvPercent": 14.393123715479383,
+          "minNanoseconds": 6903117,
+          "maxNanoseconds": 13250793,
+          "p50Nanoseconds": 7863247,
+          "p95Nanoseconds": 13250793,
+          "mean_allocated_bytes": 578006.9333333333,
+          "mean_cpu_ticks": 160920.66666666666,
+          "gc_events": [
+            1,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            20043250,
+            20029666,
+            21169653.666666668,
+            20470787.666666668,
+            16338842
+          ],
+          "meanNanoseconds": 19610439.866666667,
+          "sampleStandardDeviationNanoseconds": 1886648.7335112758,
+          "cvPercent": 9.62063444950133,
+          "minNanoseconds": 15507545,
+          "maxNanoseconds": 22352133,
+          "p50Nanoseconds": 20096940,
+          "p95Nanoseconds": 22352133,
+          "mean_allocated_bytes": 943238.4,
+          "mean_cpu_ticks": 321026.6666666667,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            14873514.666666666,
+            15767670.666666666,
+            14236589.666666666,
+            14250418.666666666,
+            14639929.333333334
+          ],
+          "meanNanoseconds": 14753624.6,
+          "sampleStandardDeviationNanoseconds": 627720.2802002567,
+          "cvPercent": 4.254685185634022,
+          "minNanoseconds": 13589349,
+          "maxNanoseconds": 16554961,
+          "p50Nanoseconds": 14692706,
+          "p95Nanoseconds": 16554961,
+          "mean_allocated_bytes": 1022973.3333333334,
+          "mean_cpu_ticks": 254427.33333333334,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            14783677.333333334,
+            14677362.666666666,
+            13962590,
+            13822603,
+            12470749.333333334
+          ],
+          "meanNanoseconds": 13943396.466666665,
+          "sampleStandardDeviationNanoseconds": 925800.6467721029,
+          "cvPercent": 6.639706824555542,
+          "minNanoseconds": 12214803,
+          "maxNanoseconds": 17139576,
+          "p50Nanoseconds": 13451680,
+          "p95Nanoseconds": 17139576,
+          "mean_allocated_bytes": 930173.8666666667,
+          "mean_cpu_ticks": 253995.33333333334,
+          "gc_events": [
+            2,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            17106007.333333332,
+            15514568.666666666,
+            16857298.666666668,
+            18501247,
+            15177195.333333334
+          ],
+          "meanNanoseconds": 16631263.4,
+          "sampleStandardDeviationNanoseconds": 1335536.7346348974,
+          "cvPercent": 8.030278292837917,
+          "minNanoseconds": 14012906,
+          "maxNanoseconds": 24672149,
+          "p50Nanoseconds": 15602020,
+          "p95Nanoseconds": 24672149,
+          "mean_allocated_bytes": 1316576,
+          "mean_cpu_ticks": 343625.3333333333,
+          "gc_events": [
+            4,
+            2,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            17424524,
+            16566186.666666666,
+            16905534.333333332,
+            17555799.666666668,
+            17446069.333333332
+          ],
+          "meanNanoseconds": 17179622.8,
+          "sampleStandardDeviationNanoseconds": 425413.8470773429,
+          "cvPercent": 2.4762700091258285,
+          "minNanoseconds": 16348498,
+          "maxNanoseconds": 19294933,
+          "p50Nanoseconds": 16839167,
+          "p95Nanoseconds": 19294933,
+          "mean_allocated_bytes": 1427176,
+          "mean_cpu_ticks": 334814,
+          "gc_events": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            13699538.333333334,
+            13883572.333333334,
+            16107968.666666666,
+            13774978.333333334,
+            15661289.666666666
+          ],
+          "meanNanoseconds": 14625469.466666669,
+          "sampleStandardDeviationNanoseconds": 1162091.0412626306,
+          "cvPercent": 7.9456665914977025,
+          "minNanoseconds": 13348794,
+          "maxNanoseconds": 20173407,
+          "p50Nanoseconds": 13748000,
+          "p95Nanoseconds": 20173407,
+          "mean_allocated_bytes": 1164215.4666666666,
+          "mean_cpu_ticks": 323450,
+          "gc_events": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            9540192,
+            8005726.666666667,
+            8205921.666666667,
+            8166675.666666667,
+            8663561.666666666
+          ],
+          "meanNanoseconds": 8516415.533333333,
+          "sampleStandardDeviationNanoseconds": 622353.9532224317,
+          "cvPercent": 7.307698300846551,
+          "minNanoseconds": 7745654,
+          "maxNanoseconds": 12506611,
+          "p50Nanoseconds": 8138213,
+          "p95Nanoseconds": 12506611,
+          "mean_allocated_bytes": 737748.8,
+          "mean_cpu_ticks": 211391.33333333334,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            14862948.333333334,
+            13538086.333333334,
+            13547141.666666666,
+            13010548.666666666,
+            13322573
+          ],
+          "meanNanoseconds": 13656259.6,
+          "sampleStandardDeviationNanoseconds": 708917.9606853286,
+          "cvPercent": 5.1911576189231825,
+          "minNanoseconds": 12516397,
+          "maxNanoseconds": 17408834,
+          "p50Nanoseconds": 13356794,
+          "p95Nanoseconds": 17408834,
+          "mean_allocated_bytes": 1144396.8,
+          "mean_cpu_ticks": 306634.6666666667,
+          "gc_events": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            16090821,
+            16713446,
+            14908654,
+            16468635.666666666,
+            15321441.333333334
+          ],
+          "meanNanoseconds": 15900599.6,
+          "sampleStandardDeviationNanoseconds": 764681.1092299774,
+          "cvPercent": 4.8091337966272505,
+          "minNanoseconds": 14452283,
+          "maxNanoseconds": 20200966,
+          "p50Nanoseconds": 15547994,
+          "p95Nanoseconds": 20200966,
+          "mean_allocated_bytes": 1262235.2,
+          "mean_cpu_ticks": 334813.3333333333,
+          "gc_events": [
+            2,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            38919886.666666664,
+            36840382.333333336,
+            35775975.333333336,
+            32846683.666666668,
+            30778868.666666668
+          ],
+          "meanNanoseconds": 35032359.33333333,
+          "sampleStandardDeviationNanoseconds": 3232806.120952739,
+          "cvPercent": 9.22805709484922,
+          "minNanoseconds": 29030411,
+          "maxNanoseconds": 48663162,
+          "p50Nanoseconds": 31480346,
+          "p95Nanoseconds": 48663162,
+          "mean_allocated_bytes": 5132084.266666667,
+          "mean_cpu_ticks": 1257991.3333333333,
+          "gc_events": [
+            5,
+            2,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            29016877.666666668,
+            31054618.666666668,
+            22295421.333333332,
+            21995100.666666668,
+            21439892.333333332
+          ],
+          "meanNanoseconds": 25160382.133333333,
+          "sampleStandardDeviationNanoseconds": 4518949.922552957,
+          "cvPercent": 17.96057746104777,
+          "minNanoseconds": 20412953,
+          "maxNanoseconds": 46341209,
+          "p50Nanoseconds": 22953044,
+          "p95Nanoseconds": 46341209,
+          "mean_allocated_bytes": 4601496,
+          "mean_cpu_ticks": 1098840,
+          "gc_events": [
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            15087377,
+            14139185.333333334,
+            15821187,
+            13041798,
+            12316507.333333334
+          ],
+          "meanNanoseconds": 14081210.933333334,
+          "sampleStandardDeviationNanoseconds": 1435078.912392381,
+          "cvPercent": 10.191445318067302,
+          "minNanoseconds": 10146191,
+          "maxNanoseconds": 23608615,
+          "p50Nanoseconds": 12369687,
+          "p95Nanoseconds": 23608615,
+          "mean_allocated_bytes": 3210495.466666667,
+          "mean_cpu_ticks": 604718,
+          "gc_events": [
+            5,
+            1,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            17681346.333333332,
+            17439524.666666668,
+            19509631.333333332,
+            19429803,
+            18538899.666666668
+          ],
+          "meanNanoseconds": 18519841,
+          "sampleStandardDeviationNanoseconds": 958936.3462027134,
+          "cvPercent": 5.177886495908433,
+          "minNanoseconds": 14111527,
+          "maxNanoseconds": 27696528,
+          "p50Nanoseconds": 16521432,
+          "p95Nanoseconds": 27696528,
+          "mean_allocated_bytes": 4308386.133333334,
+          "mean_cpu_ticks": 847830.6666666666,
+          "gc_events": [
+            6,
+            2,
+            1
+          ]
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "generator",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            27072235.666666668,
+            23652191.666666668,
+            22465607.333333332,
+            21150225,
+            25562785.666666668
+          ],
+          "meanNanoseconds": 23980609.06666667,
+          "sampleStandardDeviationNanoseconds": 2370421.9051089534,
+          "cvPercent": 9.884744372084644,
+          "minNanoseconds": 17248404,
+          "maxNanoseconds": 32834486,
+          "p50Nanoseconds": 23841903,
+          "p95Nanoseconds": 32834486,
+          "mean_allocated_bytes": 4794543.466666667,
+          "mean_cpu_ticks": 946083.3333333334,
+          "gc_events": [
+            8,
+            2,
+            0
+          ]
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "manual",
+          "count": 15,
+          "repetitionMeansNanoseconds": [
+            14766959.333333334,
+            16305911.333333334,
+            15338458,
+            11346042.666666666,
+            15000738.333333334
+          ],
+          "meanNanoseconds": 14551621.933333334,
+          "sampleStandardDeviationNanoseconds": 1885501.0253398672,
+          "cvPercent": 12.957325540603543,
+          "minNanoseconds": 10758034,
+          "maxNanoseconds": 25495656,
+          "p50Nanoseconds": 12165127,
+          "p95Nanoseconds": 25495656,
+          "mean_allocated_bytes": 4249646.933333334,
+          "mean_cpu_ticks": 780612.6666666666,
+          "gc_events": [
+            5,
+            1,
+            0
+          ]
+        }
+      ],
+      "cli": {
+        "new-portable": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 416.949816,
+          "maximum": 502.235573,
+          "median": 439.226857,
+          "p50": 439.226857,
+          "p95": 502.235573,
+          "mean": 443.978103,
+          "sample_standard_deviation": 21.773861294327414,
+          "cv_percent": 4.904264680442453,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "new-small-api": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 610.254901,
+          "maximum": 738.988319,
+          "median": 640.238677,
+          "p50": 640.238677,
+          "p95": 738.988319,
+          "mean": 653.3847736,
+          "sample_standard_deviation": 41.84200344814117,
+          "cv_percent": 6.403884072412852,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "validate-portable": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 172.529228,
+          "maximum": 222.701003,
+          "median": 190.064365,
+          "p50": 190.064365,
+          "p95": 222.701003,
+          "mean": 194.8282218,
+          "sample_standard_deviation": 15.314602856446138,
+          "cv_percent": 7.8605669727701315,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "validate-small-api": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 177.13257,
+          "maximum": 213.516529,
+          "median": 190.732975,
+          "p50": 190.732975,
+          "p95": 213.516529,
+          "mean": 192.42324933333333,
+          "sample_standard_deviation": 11.273843871988658,
+          "cv_percent": 5.858878233814181,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-api": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 282.061918,
+          "maximum": 357.812297,
+          "median": 321.341927,
+          "p50": 321.341927,
+          "p95": 357.812297,
+          "mean": 319.7873105333333,
+          "sample_standard_deviation": 22.606429337574784,
+          "cv_percent": 7.069207749323243,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-both": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 766.562715,
+          "maximum": 913.841173,
+          "median": 802.729779,
+          "p50": 802.729779,
+          "p95": 913.841173,
+          "mean": 814.6421329333333,
+          "sample_standard_deviation": 45.33782049232934,
+          "cv_percent": 5.565366516101812,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-graphql": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 736.848389,
+          "maximum": 913.404403,
+          "median": 777.195558,
+          "p50": 777.195558,
+          "p95": 913.404403,
+          "mean": 788.7771846,
+          "sample_standard_deviation": 41.03360483835198,
+          "cv_percent": 5.202179479767875,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        },
+        "export-off": {
+          "unit": "milliseconds",
+          "count": 15,
+          "minimum": 264.572782,
+          "maximum": 321.465553,
+          "median": 290.568757,
+          "p50": 290.568757,
+          "p95": 321.465553,
+          "mean": 289.65481946666665,
+          "sample_standard_deviation": 16.496267109396364,
+          "cv_percent": 5.695146774968385,
+          "unstable_observation": false,
+          "percentile_method": "nearest rank ceil(p*n)",
+          "filtering": "none"
+        }
+      },
+      "noop_candidates": [
+        {
+          "size": 1,
+          "passed": true,
+          "noopReasons": [
+            "Cached"
+          ],
+          "editReasons": [
+            "Modified"
+          ],
+          "initialPeHash": "25ec528a2c4d6e2db4f0225ea71dac3fc10f54e757503a4cde8ce04209139ae2",
+          "manualPeHash": "25ec528a2c4d6e2db4f0225ea71dac3fc10f54e757503a4cde8ce04209139ae2",
+          "noopPeHash": "25ec528a2c4d6e2db4f0225ea71dac3fc10f54e757503a4cde8ce04209139ae2",
+          "editPeHash": "c21c9e3e97851300f2cde130fe6da854c76405074bd6523a5bdb9a681556da23",
+          "trackingTimed": false,
+          "compilerDependencySeparationPassed": true
+        },
+        {
+          "size": 3,
+          "passed": true,
+          "noopReasons": [
+            "Cached",
+            "Cached",
+            "Cached"
+          ],
+          "editReasons": [
+            "Modified",
+            "Modified",
+            "Modified"
+          ],
+          "initialPeHash": "1eef8cf17a54737aabc2f5cce12ff0e72fe9291b37cf5dddbb6c0f406795a1cd",
+          "manualPeHash": "1eef8cf17a54737aabc2f5cce12ff0e72fe9291b37cf5dddbb6c0f406795a1cd",
+          "noopPeHash": "1eef8cf17a54737aabc2f5cce12ff0e72fe9291b37cf5dddbb6c0f406795a1cd",
+          "editPeHash": "186bc869b254f81d0d89abb0bbcd7f210e8577986f0b36d74bf5450c75d5578d",
+          "trackingTimed": false,
+          "compilerDependencySeparationPassed": true
+        },
+        {
+          "size": 32,
+          "passed": true,
+          "noopReasons": [
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached",
+            "Cached"
+          ],
+          "editReasons": [
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified",
+            "Modified"
+          ],
+          "initialPeHash": "a851ea91c2dc3722b851a14901de3103e2b199ff77525718af8a843f7568e8be",
+          "manualPeHash": "a851ea91c2dc3722b851a14901de3103e2b199ff77525718af8a843f7568e8be",
+          "noopPeHash": "a851ea91c2dc3722b851a14901de3103e2b199ff77525718af8a843f7568e8be",
+          "editPeHash": "0f6474f692c5334f649226a586718b65da7d7f93fa6e95f9c67cd53c124e1a29",
+          "trackingTimed": false,
+          "compilerDependencySeparationPassed": true
+        }
+      ]
+    }
+  }
+}

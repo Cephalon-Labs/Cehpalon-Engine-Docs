@@ -1,0 +1,9 @@
+{
+  "observed_utc": "2026-10-30T03:03:59.319339+00:00",
+  "all_three_private": true,
+  "all_three_license": "MIT",
+  "local_identity": "Cephalon-Neza <272007299+Cephalon-Neza@users.noreply.github.com>",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "9d5bd3a19a5438ff908fa18e277522116b05c513",
+  "docs_revision": "omitted to avoid self-hash loop; inspect liveGit"
+}

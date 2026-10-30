@@ -1,0 +1,32 @@
+from pathlib import Path
+import json,statistics,hashlib
+root=Path(__file__).resolve().parents[2]
+samples=root.parent/'Cehpalon-Engine-Samples'
+read=lambda p:json.loads(p.read_text(encoding='utf-8'))
+result={'baseline_engine':'29df762cf28d12bd0d587b3c9d99925bcb99b14f','candidate_engine':'1b9d538b4311cf574912596a0f547ae5ae788070','scope':'All fixed samples retained; descriptive historical comparison, no causal/qualification claim','hosts':{}}
+for host,tag in [('windows','win01'),('linux','linux01')]:
+ before=samples/'tooling-benchmark/evidence/2026-10-30'/host
+ after=samples/('.local/tooling-variance-'+tag+'-benchmark')
+ bm,am=read(before/'manifest.json'),read(after/'manifest.json')
+ bg,ag=read(before/'generator-observations.json'),read(after/'generator-observations.json')
+ assert am['status']=='completed' and am['canonical'] and am['engine_revision']==result['candidate_engine']
+ assert bg['parameters']==ag['parameters'] and bm['schedule']==am['schedule']
+ for phase in ('primers','measurements'):
+  assert len(bg[phase])==len(ag[phase])
+  for old,new in zip(bg[phase],ag[phase]):
+   for key in ('size','state','variant','caseIndex','pairSequence','repetition','iteration','pairOrder','orderInPair','version','actualIds','sourceHash','registryHash','emitSuccess','diagnostics'):assert old[key]==new[key],(host,phase,key)
+ for kind in ('api','both','graphql','off'):
+  assert bm['frozen_exports'][kind]==am['frozen_exports'][kind],(host,kind,'artifact/hash/counter parity')
+ groups=[]
+ for old in bg['summaries']:
+  new=next(s for s in ag['summaries'] if (s['size'],s['state'],s['variant'])==(old['size'],old['state'],old['variant']))
+  def metrics(g):
+   rows=[r for r in g['measurements'] if (r['size'],r['state'],r['variant'])==(old['size'],old['state'],old['variant'])]
+   return {'mean_allocated_bytes':statistics.mean(r['allocatedBytes'] for r in rows),'mean_cpu_ticks':statistics.mean(r['cpuTicks'] for r in rows),'gc_events':[sum(r[k] for r in rows) for k in ('gc0','gc1','gc2')]}
+  groups.append({'size':old['size'],'state':old['state'],'variant':old['variant'],'before':old,'after':new,'mean_delta_percent':(new['meanNanoseconds']/old['meanNanoseconds']-1)*100,'cv_delta_percentage_points':new['cvPercent']-old['cvPercent'],'before_counters':metrics(bg),'after_counters':metrics(ag)})
+ cli={name:{'before':old,'after':am['summaries'][name],'mean_delta_percent':(am['summaries'][name]['mean']/old['mean']-1)*100,'cv_delta_percentage_points':am['summaries'][name]['cv_percent']-old['cv_percent']} for name,old in bm['summaries'].items()}
+ result['hosts'][host]={'generator':groups,'cli':cli,'generator_unstable_before':sum(s['cvPercent']>15 for s in bg['summaries']),'generator_unstable_after':sum(s['cvPercent']>15 for s in ag['summaries']),'cli_unstable_before':sum(s['cv_percent']>15 for s in bm['summaries'].values()),'cli_unstable_after':sum(s['cv_percent']>15 for s in am['summaries'].values()),'zero_cpu_measured_after':sum(r['cpuTicks']==0 for r in ag['measurements']),'all_306_fixture_and_registry_hashes_identical':True,'all_4_export_artifact_bytes_and_counters_identical':True}
+p=root/'internal/evidence/tooling-variance/comparison.json';p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
+for host,r in result['hosts'].items():
+ print(host,'generator unstable',r['generator_unstable_before'],'->',r['generator_unstable_after'],'CLI unstable',r['cli_unstable_before'],'->',r['cli_unstable_after'])
+ for name,s in r['cli'].items():print(name,round(s['before']['mean'],3),'->',round(s['after']['mean'],3),'CV',round(s['before']['cv_percent'],3),'->',round(s['after']['cv_percent'],3))

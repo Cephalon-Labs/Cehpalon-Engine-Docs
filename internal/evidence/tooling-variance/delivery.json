@@ -1,0 +1,344 @@
+{
+  "date_bangkok": "2026-10-30",
+  "correctness_status": "passed",
+  "performance_status": "observed",
+  "qualification_status": "not_qualified",
+  "variance_goal_status": "not achieved; residual and regressed instability retained",
+  "baseline_engine": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "phases": {
+    "candidate01": {
+      "engine_revision": "1b9d538b4311cf574912596a0f547ae5ae788070",
+      "scope": "Generator allocation/work reductions plus Small API cold source split",
+      "components": {
+        "windows": 509,
+        "linux": 506
+      },
+      "full_generated_regressions": {
+        "windows": {
+          "small_api_harness": 133,
+          "https_cases": 39,
+          "export_harness": 160,
+          "differential_cases": 25,
+          "portable": 70
+        },
+        "linux": {
+          "small_api_harness": 133,
+          "https_cases": 39,
+          "export_harness": 160,
+          "differential_cases": 25,
+          "portable": 70
+        }
+      },
+      "hosts": {
+        "windows": {
+          "status": "completed",
+          "canonical": true,
+          "correctness_status": "passed",
+          "performance_status": "observed",
+          "qualification_status": "not_qualified",
+          "generator_measured": 270,
+          "generator_primers": 36,
+          "state_seeds": 12,
+          "cache_preflights": 3,
+          "runtime_postflights": 18,
+          "cli_launches": 144,
+          "cli_measured": 120,
+          "cli_primers": 24,
+          "unstable_generator_groups": 6,
+          "unstable_cli_groups": 0,
+          "zero_cpu_measured_rows": 4,
+          "manifest_sha256": "df018628e587d6806619da1a5f4c534282b7d10bf66df8eeff09a5bf2b6b0f5a",
+          "generator_sha256": "5a00bcbed62d50afc26a16e16ef1ff89f51107771e04e3ad268bbbf94edfaa1b",
+          "started_utc": "2026-10-30T02:25:04.167012+00:00",
+          "finished_utc": "2026-10-30T02:26:37.528727+00:00",
+          "filesystems": {
+            "sdk": {
+              "path": "D:\\Cephalon\\.tools\\dotnet11\\win-x64\\dotnet.exe",
+              "device": 2358821359,
+              "filesystem": "NTFS",
+              "mount": "D:\\"
+            },
+            "source": {
+              "path": "D:\\Cephalon\\Cehpalon-Engine",
+              "device": 2358821359,
+              "filesystem": "NTFS",
+              "mount": "D:\\"
+            },
+            "output": {
+              "path": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\tooling-variance-win01-benchmark",
+              "device": 2358821359,
+              "filesystem": "NTFS",
+              "mount": "D:\\"
+            }
+          }
+        },
+        "linux": {
+          "status": "completed",
+          "canonical": true,
+          "correctness_status": "passed",
+          "performance_status": "observed",
+          "qualification_status": "not_qualified",
+          "generator_measured": 270,
+          "generator_primers": 36,
+          "state_seeds": 12,
+          "cache_preflights": 3,
+          "runtime_postflights": 18,
+          "cli_launches": 144,
+          "cli_measured": 120,
+          "cli_primers": 24,
+          "unstable_generator_groups": 5,
+          "unstable_cli_groups": 0,
+          "zero_cpu_measured_rows": 0,
+          "manifest_sha256": "dbae22bd15e2b90522ea9382c3ae6de042715a00937a7e534f544ed4e964d08e",
+          "generator_sha256": "594ec0394dd1eaa0bf2761ca640922b2c44c6d06052442942cc3e999ceb57038",
+          "started_utc": "2026-10-30T02:27:08.538307+00:00",
+          "finished_utc": "2026-10-30T02:29:31.784343+00:00",
+          "filesystems": {
+            "sdk": {
+              "path": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/dotnet",
+              "device": 2096,
+              "filesystem": "ext4",
+              "mount": "/"
+            },
+            "source": {
+              "path": "/mnt/d/Cephalon/Cehpalon-Engine",
+              "device": 72,
+              "filesystem": "9p",
+              "mount": "/mnt/d"
+            },
+            "output": {
+              "path": "/mnt/d/Cephalon/Cehpalon-Engine-Samples/.local/tooling-variance-linux01-benchmark",
+              "device": 72,
+              "filesystem": "9p",
+              "mount": "/mnt/d"
+            }
+          }
+        }
+      }
+    },
+    "candidate02": {
+      "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "scope": "Only compact journal JSON options reuse since Candidate01; no runtime/template/generator source change",
+      "components": {
+        "windows": 509,
+        "linux": 506
+      },
+      "full_generated_regressions": "Use Candidate01 exact revision; not relabeled. Candidate02 did repeat actual compiler fixture and all benchmark generated consumer/artifact checks.",
+      "hosts": {
+        "windows": {
+          "status": "completed",
+          "canonical": true,
+          "correctness_status": "passed",
+          "performance_status": "observed",
+          "qualification_status": "not_qualified",
+          "generator_measured": 270,
+          "generator_primers": 36,
+          "state_seeds": 12,
+          "cache_preflights": 3,
+          "runtime_postflights": 18,
+          "cli_launches": 144,
+          "cli_measured": 120,
+          "cli_primers": 24,
+          "unstable_generator_groups": 7,
+          "unstable_cli_groups": 1,
+          "zero_cpu_measured_rows": 7,
+          "manifest_sha256": "4301fd4863c9dfd637289ae5df47bae1ed5d202621fedff2c807fcfa2712a099",
+          "generator_sha256": "4f23913838d26d8fd8fff3f9d4cbf3e4d101eb3c01b16c1088e1b0c2385336e6",
+          "started_utc": "2026-10-30T02:42:31.903707+00:00",
+          "finished_utc": "2026-10-30T02:44:04.422351+00:00",
+          "filesystems": {
+            "sdk": {
+              "path": "D:\\Cephalon\\.tools\\dotnet11\\win-x64\\dotnet.exe",
+              "device": 2358821359,
+              "filesystem": "NTFS",
+              "mount": "D:\\"
+            },
+            "source": {
+              "path": "D:\\Cephalon\\Cehpalon-Engine",
+              "device": 2358821359,
+              "filesystem": "NTFS",
+              "mount": "D:\\"
+            },
+            "output": {
+              "path": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\tooling-variance-win01-benchmark02",
+              "device": 2358821359,
+              "filesystem": "NTFS",
+              "mount": "D:\\"
+            }
+          }
+        },
+        "linux": {
+          "status": "completed",
+          "canonical": true,
+          "correctness_status": "passed",
+          "performance_status": "observed",
+          "qualification_status": "not_qualified",
+          "generator_measured": 270,
+          "generator_primers": 36,
+          "state_seeds": 12,
+          "cache_preflights": 3,
+          "runtime_postflights": 18,
+          "cli_launches": 144,
+          "cli_measured": 120,
+          "cli_primers": 24,
+          "unstable_generator_groups": 4,
+          "unstable_cli_groups": 0,
+          "zero_cpu_measured_rows": 0,
+          "manifest_sha256": "198803d079dcac5183e9f7d03b48d326f62f657065d2f97e923608118d6209d3",
+          "generator_sha256": "360af3ab14459707099c1be2c4c1030b4f2be01570a0d01a98bfcfc091b74868",
+          "started_utc": "2026-10-30T02:46:18.956538+00:00",
+          "finished_utc": "2026-10-30T02:48:46.693504+00:00",
+          "filesystems": {
+            "sdk": {
+              "path": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/dotnet",
+              "device": 2096,
+              "filesystem": "ext4",
+              "mount": "/"
+            },
+            "source": {
+              "path": "/mnt/d/Cephalon/Cehpalon-Engine",
+              "device": 72,
+              "filesystem": "9p",
+              "mount": "/mnt/d"
+            },
+            "output": {
+              "path": "/mnt/d/Cephalon/Cehpalon-Engine-Samples/.local/tooling-variance-linux01-benchmark02",
+              "device": 72,
+              "filesystem": "9p",
+              "mount": "/mnt/d"
+            }
+          }
+        }
+      }
+    }
+  },
+  "independent_reviews": {
+    "candidate01": {
+      "checks": 28758,
+      "failures": 0,
+      "sha256": "e2b191702c9637929c9f51c382340b85c2fcaa60922bebbf971c24efe2b920dd",
+      "committed_engine_blobs": 223
+    },
+    "candidate02": {
+      "checks": 30009,
+      "failures": 0,
+      "sha256": "f20077569a411b5dcf9524c8f54b9d64e8552fae392be1e704446165ad57d007",
+      "committed_engine_blobs": 223
+    }
+  },
+  "recorder_diagnostic": {
+    "iterations_per_path": 100,
+    "primers_per_path": 1,
+    "fresh_allocated_bytes": 274816,
+    "reused_allocated_bytes": 251200,
+    "saved_bytes": 23616,
+    "all_200_serializations_identical": true,
+    "gc_counts": [
+      0,
+      0,
+      0
+    ],
+    "interpretation": "Modest options/cache-association allocation saving; no timing or GC/root-cause proof. Runtime can share equivalent-options metadata."
+  },
+  "retention": {
+    "candidate01/linux": {
+      "count": 930,
+      "bytes": 5396985,
+      "manifest_sha256": "8dc70497ca05fe96234e0506c7fff19e9a199b9223c64a152da7144b5da629f3"
+    },
+    "candidate01/windows": {
+      "count": 930,
+      "bytes": 5471502,
+      "manifest_sha256": "5d746fe0fb1466958d5cc2a712fd2c868529519de533000a772e65d3eeaa642e"
+    },
+    "candidate02/linux": {
+      "count": 930,
+      "bytes": 5398529,
+      "manifest_sha256": "04adb1ad0c5d5ce5b75678c4d49069099827ff3cdee9cbcfd2cceb62f41a739a"
+    },
+    "candidate02/windows": {
+      "count": 930,
+      "bytes": 5472903,
+      "manifest_sha256": "3c3e15d46f1089c2a99fb1a3ab28a0fdffb396fdc6cebfde3256fb3a56c0feb2"
+    },
+    "generator-contracts": {
+      "count": 21,
+      "bytes": 63781,
+      "manifest_sha256": "691ca2318bfdb29f0f7e1945709d76129ac9e69f769d3c6bf65480284a8fff9a"
+    },
+    "recorder-diagnostic": {
+      "count": 25,
+      "bytes": 432353,
+      "manifest_sha256": "afd2056b7023c3e283f31d0b6f2577ea3bd4acf569099024926767815d737ddc"
+    },
+    "regression-controller": {
+      "count": 26,
+      "bytes": 136565,
+      "manifest_sha256": "1030ec22f4b69a3900a698fa0b68c376409c953d28fc5880817a25e63d463c4a"
+    },
+    "regressions/linux-contracts": {
+      "count": 74,
+      "bytes": 481829,
+      "manifest_sha256": "8925b8d98b02dbd4247f1c31ac343b754f3fbaeb7d825f0b9696c69e2e9149a7"
+    },
+    "regressions/linux-portable": {
+      "count": 145,
+      "bytes": 222821,
+      "manifest_sha256": "8d0026029bcfff577466a4197c98f3a2fd87080e53e962d19f51f315ade7acec"
+    },
+    "regressions/linux-small-api": {
+      "count": 70,
+      "bytes": 300872,
+      "manifest_sha256": "02071c57578e52e12ff36ae141d9bec555822bbe032e023c2d4be8861eb6e2d4"
+    },
+    "regressions/windows-contracts": {
+      "count": 74,
+      "bytes": 488927,
+      "manifest_sha256": "ac7689e62b1576464d52cf48d6b447320b03f0f60db22aa4c5477f6d8a49e2b1"
+    },
+    "regressions/windows-portable": {
+      "count": 145,
+      "bytes": 220928,
+      "manifest_sha256": "39ad205356e179d4dd98e95a650924b6bdd7ef23b7cde0592eba09d80b284135"
+    },
+    "regressions/windows-small-api": {
+      "count": 70,
+      "bytes": 301178,
+      "manifest_sha256": "6586d211546064ac0a637496998d3fc1d5b1ce054ebe18d783cf1b405691e6aa"
+    }
+  },
+  "retained_raw_files": 4370,
+  "retained_raw_bytes": 24389173,
+  "ci": {
+    "candidate01": {
+      "component_run": 40991556310,
+      "platform_run": 40991556319,
+      "jobs": 4,
+      "steps": 0,
+      "status": "Blocked before execution: explicit payments/spending annotations"
+    },
+    "candidate02": {
+      "component_run": 40993252408,
+      "platform_run": 40993252420,
+      "jobs": 4,
+      "steps": 0,
+      "status": "Blocked before execution: explicit payments/spending annotations"
+    }
+  },
+  "tracking": "Existing20 only, body update with both full Engine SHAs; preserve23metadata,3body/editableBlocked,20InProgress/P2/M0/fullgatesPlanned, W5/#2/#11 dependencies, estimates/null hours. Readback added after apply.",
+  "limits": [
+    "No isolated JIT/GC/scheduling/OS/Engine-code cause established. Structural source split does not prove reduced JITted methods or unloaded assemblies.",
+    "Same original workload/count/order/primers/clocks/CV15%/nearest-rank retained; only excluded compact recorder options changed in02 per predeclaredADR0017.",
+    "All complete01/02series retained; final02 is not selected for favorable timing. Historical shared-host comparisons are not controlled causal experiments.",
+    "No timing floors/forcedGC/filtering/extra warmup/runtime flags/unchangedCIrerun/billing/publication.",
+    "Per-row compiler PE bytes are not retained; hashes do not reconstruct them. Structural schemas do not replace full validator/authority/provider proof.",
+    "Full20Test/BenchmarkPlanned,M0;3Blocked; no reference/supported-Windows/provider/production/IDE/distribution/AOT qualification."
+  ],
+  "samples_revision": "9d5bd3a19a5438ff908fa18e277522116b05c513",
+  "samples_committed_blob_verification": {
+    "checked": 4376,
+    "mismatches": 0,
+    "remote_main_identical": true
+  },
+  "tracking_readback": "tracking-readback.json: one20BODY,all23metadataunchanged,3body/editableidenticalBlocked"
+}

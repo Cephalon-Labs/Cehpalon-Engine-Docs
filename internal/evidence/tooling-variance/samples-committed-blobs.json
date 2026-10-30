@@ -1,0 +1,9 @@
+{
+  "method": "git cat-file --batch committed blob bytes/size/SHA256 vs all4370raw and6actualsource/lock files",
+  "samples_revision": "9d5bd3a19a5438ff908fa18e277522116b05c513",
+  "remote_main_identical": true,
+  "checked": 4376,
+  "raw_files": 4370,
+  "mismatches": [],
+  "status": "passed"
+}

@@ -1,0 +1,1500 @@
+{
+  "audit": "independent read-only source/raw/stat/output/provenance replay",
+  "observed_utc": "2026-10-30T02:34:06.564532+00:00",
+  "engine_revision": "1b9d538b4311cf574912596a0f547ae5ae788070",
+  "baseline_revision": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "status": "passed",
+  "checks": 28758,
+  "failures": [],
+  "hosts": {
+    "windows": {
+      "manifest_sha256": "df018628e587d6806619da1a5f4c534282b7d10bf66df8eeff09a5bf2b6b0f5a",
+      "generator_sha256": "5a00bcbed62d50afc26a16e16ef1ff89f51107771e04e3ad268bbbf94edfaa1b",
+      "generator_rows": 306,
+      "cli_launches": 144,
+      "generator_comparison": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 17.93562,
+            "cv_percent": 12.697062542631356,
+            "mean_allocated_bytes": 1191932.2666666666,
+            "mean_cpu_ms": 23.958333333333336,
+            "gc_totals": [
+              3,
+              2,
+              1
+            ]
+          },
+          "after": {
+            "mean_ms": 16.453026666666666,
+            "cv_percent": 6.540700030663826,
+            "mean_allocated_bytes": 1187429.8666666667,
+            "mean_cpu_ms": 17.708333333333336,
+            "gc_totals": [
+              3,
+              2,
+              1
+            ]
+          },
+          "mean_delta_percent": -8.266195053939217,
+          "allocation_delta_percent": -0.3777395852023746,
+          "cv_delta_percentage_points": -6.156362511967529,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 16.77822,
+            "cv_percent": 20.029874977230474,
+            "mean_allocated_bytes": 1092244.2666666666,
+            "mean_cpu_ms": 21.875,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 15.461253333333332,
+            "cv_percent": 19.5650502846943,
+            "mean_allocated_bytes": 1085914.6666666667,
+            "mean_cpu_ms": 25.0,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -7.849263310808119,
+          "allocation_delta_percent": -0.5795040718608369,
+          "cv_delta_percentage_points": -0.46482469253617253,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 13.65016,
+            "cv_percent": 4.423913674844258,
+            "mean_allocated_bytes": 572379.7333333333,
+            "mean_cpu_ms": 22.916666666666664,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 11.054946666666666,
+            "cv_percent": 28.474779259365576,
+            "mean_allocated_bytes": 569828.2666666667,
+            "mean_cpu_ms": 14.583333333333334,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -19.01232903741299,
+          "allocation_delta_percent": -0.44576467650377927,
+          "cv_delta_percentage_points": 24.05086558452132,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 31.13862,
+            "cv_percent": 10.875337536420915,
+            "mean_allocated_bytes": 943562.1333333333,
+            "mean_cpu_ms": 45.83333333333333,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 24.92998,
+            "cv_percent": 24.231827729209463,
+            "mean_allocated_bytes": 941536,
+            "mean_cpu_ms": 48.95833333333333,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -19.938712762479515,
+          "allocation_delta_percent": -0.21473237021238933,
+          "cv_delta_percentage_points": 13.356490192788549,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 39.82366,
+            "cv_percent": 3.309214260675369,
+            "mean_allocated_bytes": 1024471.4666666667,
+            "mean_cpu_ms": 80.20833333333334,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 34.66410666666666,
+            "cv_percent": 13.100828712312843,
+            "mean_allocated_bytes": 1017790.4,
+            "mean_cpu_ms": 67.70833333333334,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": -12.955999858710465,
+          "allocation_delta_percent": -0.6521476570162443,
+          "cv_delta_percentage_points": 9.791614451637475,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 36.2708,
+            "cv_percent": 5.004125458905735,
+            "mean_allocated_bytes": 949822.4,
+            "mean_cpu_ms": 61.458333333333336,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 31.50266,
+            "cv_percent": 9.427608506788028,
+            "mean_allocated_bytes": 931681.0666666667,
+            "mean_cpu_ms": 52.08333333333333,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -13.145946601674085,
+          "allocation_delta_percent": -1.9099710991584695,
+          "cv_delta_percentage_points": 4.423483047882293,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 39.30285333333334,
+            "cv_percent": 1.9910073054206712,
+            "mean_allocated_bytes": 1329246.9333333333,
+            "mean_cpu_ms": 65.625,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 38.6673,
+            "cv_percent": 2.2688377117295846,
+            "mean_allocated_bytes": 1326674.6666666667,
+            "mean_cpu_ms": 72.91666666666666,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -1.617066648935428,
+          "allocation_delta_percent": -0.19351307888415548,
+          "cv_delta_percentage_points": 0.2778304063089134,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 45.1052,
+            "cv_percent": 2.3590811505039184,
+            "mean_allocated_bytes": 1450422.9333333333,
+            "mean_cpu_ms": 94.79166666666666,
+            "gc_totals": [
+              3,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 43.761113333333334,
+            "cv_percent": 4.670299084631809,
+            "mean_allocated_bytes": 1435617.0666666667,
+            "mean_cpu_ms": 77.08333333333334,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": -2.97989293178319,
+          "allocation_delta_percent": -1.0207965088251947,
+          "cv_delta_percentage_points": 2.3112179341278907,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 38.384546666666665,
+            "cv_percent": 5.928464952931675,
+            "mean_allocated_bytes": 1183088.5333333334,
+            "mean_cpu_ms": 80.20833333333334,
+            "gc_totals": [
+              1,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 37.72684,
+            "cv_percent": 5.010429436273357,
+            "mean_allocated_bytes": 1176513.0666666667,
+            "mean_cpu_ms": 78.125,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": -1.713467329387064,
+          "allocation_delta_percent": -0.5557882171455475,
+          "cv_delta_percentage_points": -0.9180355166583176,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 17.59842666666667,
+            "cv_percent": 4.988191518913647,
+            "mean_allocated_bytes": 742581.3333333334,
+            "mean_cpu_ms": 47.91666666666667,
+            "gc_totals": [
+              2,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 16.487173333333335,
+            "cv_percent": 3.563748424804576,
+            "mean_allocated_bytes": 740171.7333333333,
+            "mean_cpu_ms": 36.45833333333333,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -6.314503872315857,
+          "allocation_delta_percent": -0.32448970797364085,
+          "cv_delta_percentage_points": -1.4244430941090709,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 30.28674,
+            "cv_percent": 22.23685273294791,
+            "mean_allocated_bytes": 1155204.2666666666,
+            "mean_cpu_ms": 66.66666666666666,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 36.14385333333333,
+            "cv_percent": 3.5589282891462806,
+            "mean_allocated_bytes": 1152816.5333333334,
+            "mean_cpu_ms": 73.95833333333334,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": 19.338870189836644,
+          "allocation_delta_percent": -0.20669360408639426,
+          "cv_delta_percentage_points": -18.67792444380163,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 32.929606666666665,
+            "cv_percent": 21.272156059042523,
+            "mean_allocated_bytes": 1275125.3333333333,
+            "mean_cpu_ms": 71.875,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 39.980846666666665,
+            "cv_percent": 1.8378045799843432,
+            "mean_allocated_bytes": 1272648,
+            "mean_cpu_ms": 92.70833333333334,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 21.41307083129447,
+          "allocation_delta_percent": -0.19428155559086946,
+          "cv_delta_percentage_points": -19.43435147905818,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 57.571733333333334,
+            "cv_percent": 10.757628446629539,
+            "mean_allocated_bytes": 5101583.466666667,
+            "mean_cpu_ms": 163.54166666666669,
+            "gc_totals": [
+              8,
+              3,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 59.70358,
+            "cv_percent": 26.888435671738982,
+            "mean_allocated_bytes": 5080563.733333333,
+            "mean_cpu_ms": 167.70833333333331,
+            "gc_totals": [
+              7,
+              3,
+              1
+            ]
+          },
+          "mean_delta_percent": 3.7029398686392323,
+          "allocation_delta_percent": -0.41202370735821114,
+          "cv_delta_percentage_points": 16.130807225109443,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 40.40132,
+            "cv_percent": 15.676317380142306,
+            "mean_allocated_bytes": 4547017.6,
+            "mean_cpu_ms": 127.08333333333333,
+            "gc_totals": [
+              8,
+              3,
+              1
+            ]
+          },
+          "after": {
+            "mean_ms": 41.23534,
+            "cv_percent": 29.53783849235784,
+            "mean_allocated_bytes": 4562827.2,
+            "mean_cpu_ms": 139.58333333333331,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": 2.0643384919106555,
+          "allocation_delta_percent": 0.3476916385808604,
+          "cv_delta_percentage_points": 13.861521112215533,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 20.2703,
+            "cv_percent": 13.95858736723659,
+            "mean_allocated_bytes": 3197929.6,
+            "mean_cpu_ms": 76.04166666666666,
+            "gc_totals": [
+              4,
+              3,
+              1
+            ]
+          },
+          "after": {
+            "mean_ms": 19.86942,
+            "cv_percent": 17.380194198152804,
+            "mean_allocated_bytes": 3210246.4,
+            "mean_cpu_ms": 73.95833333333334,
+            "gc_totals": [
+              5,
+              1,
+              1
+            ]
+          },
+          "mean_delta_percent": -1.9776717660814014,
+          "allocation_delta_percent": 0.3851491915269012,
+          "cv_delta_percentage_points": 3.4216068309162146,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 27.045393333333333,
+            "cv_percent": 9.346864217603487,
+            "mean_allocated_bytes": 4318663.466666667,
+            "mean_cpu_ms": 89.58333333333334,
+            "gc_totals": [
+              6,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 26.419353333333337,
+            "cv_percent": 6.4733268686633645,
+            "mean_allocated_bytes": 4287281.6,
+            "mean_cpu_ms": 101.04166666666666,
+            "gc_totals": [
+              4,
+              2,
+              0
+            ]
+          },
+          "mean_delta_percent": -2.3147749869416923,
+          "allocation_delta_percent": -0.7266569138550838,
+          "cv_delta_percentage_points": -2.873537348940123,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 37.983173333333326,
+            "cv_percent": 13.689079831911904,
+            "mean_allocated_bytes": 4832459.2,
+            "mean_cpu_ms": 113.54166666666667,
+            "gc_totals": [
+              6,
+              2,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 33.818286666666665,
+            "cv_percent": 7.53097258330131,
+            "mean_allocated_bytes": 4759122.666666667,
+            "mean_cpu_ms": 103.125,
+            "gc_totals": [
+              7,
+              2,
+              0
+            ]
+          },
+          "mean_delta_percent": -10.965083486091022,
+          "allocation_delta_percent": -1.517582048769972,
+          "cv_delta_percentage_points": -6.1581072486105946,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 25.48540666666667,
+            "cv_percent": 7.914304871191267,
+            "mean_allocated_bytes": 4259127.466666667,
+            "mean_cpu_ms": 88.54166666666666,
+            "gc_totals": [
+              5,
+              2,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 22.693786666666668,
+            "cv_percent": 3.234834673343587,
+            "mean_allocated_bytes": 4243683.733333333,
+            "mean_cpu_ms": 87.5,
+            "gc_totals": [
+              5,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -10.953798134409476,
+          "allocation_delta_percent": -0.3626032198895457,
+          "cv_delta_percentage_points": -4.67947019784768,
+          "mean_regressed": false,
+          "cv_regressed": false
+        }
+      ],
+      "cli_comparison": [
+        {
+          "scenario": "new-portable",
+          "before_mean_ms": 105.72943333333333,
+          "after_mean_ms": 115.88878,
+          "mean_delta_percent": 9.608815962001117,
+          "before_cv_percent": 5.072667554097547,
+          "after_cv_percent": 4.9688741646790495,
+          "cv_delta_percentage_points": -0.10379338941849792,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "scenario": "new-small-api",
+          "before_mean_ms": 110.79389333333333,
+          "after_mean_ms": 124.10464,
+          "mean_delta_percent": 12.013971407810441,
+          "before_cv_percent": 3.4173122979723374,
+          "after_cv_percent": 8.093921467018562,
+          "cv_delta_percentage_points": 4.676609169046225,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "validate-portable",
+          "before_mean_ms": 96.67797333333333,
+          "after_mean_ms": 104.87481333333334,
+          "mean_delta_percent": 8.478497963272712,
+          "before_cv_percent": 3.2083736636985742,
+          "after_cv_percent": 3.823753980107505,
+          "cv_delta_percentage_points": 0.6153803164089306,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "validate-small-api",
+          "before_mean_ms": 98.42521333333333,
+          "after_mean_ms": 104.64205333333334,
+          "mean_delta_percent": 6.316308382228897,
+          "before_cv_percent": 4.200405146429197,
+          "after_cv_percent": 3.1258795463373676,
+          "cv_delta_percentage_points": -1.074525600091829,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "scenario": "export-api",
+          "before_mean_ms": 321.41985999999997,
+          "after_mean_ms": 334.73959333333335,
+          "mean_delta_percent": 4.1440293494413805,
+          "before_cv_percent": 12.671598301599316,
+          "after_cv_percent": 13.411920369021479,
+          "cv_delta_percentage_points": 0.7403220674221629,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "export-both",
+          "before_mean_ms": 695.6594466666667,
+          "after_mean_ms": 663.2735066666667,
+          "mean_delta_percent": -4.655430204416977,
+          "before_cv_percent": 7.656023119826198,
+          "after_cv_percent": 8.789648757932172,
+          "cv_delta_percentage_points": 1.1336256381059737,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "export-graphql",
+          "before_mean_ms": 672.7492,
+          "after_mean_ms": 655.46524,
+          "mean_delta_percent": -2.5691535567786583,
+          "before_cv_percent": 7.178810955330326,
+          "after_cv_percent": 7.260938438178242,
+          "cv_delta_percentage_points": 0.08212748284791527,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "export-off",
+          "before_mean_ms": 320.04260666666664,
+          "after_mean_ms": 332.68549333333334,
+          "mean_delta_percent": 3.9503761072145593,
+          "before_cv_percent": 15.220957922351058,
+          "after_cv_percent": 10.336722777592339,
+          "cv_delta_percentage_points": -4.884235144758719,
+          "mean_regressed": true,
+          "cv_regressed": false
+        }
+      ],
+      "generator_unstable": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 19.565050284694298
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "cv_percent": 28.474779259365572
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "cv_percent": 24.231827729209463
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "cv_percent": 26.888435671738982
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 29.53783849235784
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "cv_percent": 17.3801941981528
+        }
+      ],
+      "cli_unstable": [],
+      "any_unstable_observation": true,
+      "zero_cpu_measured_rows": 4,
+      "generator_source_and_registry_parity_rows": 306,
+      "all_four_export_artifact_sets_bytes_and_counters_equal_baseline": true,
+      "environment": {
+        "reference": false,
+        "reserved_resources": false,
+        "filesystems": {
+          "sdk": {
+            "path": "D:\\Cephalon\\.tools\\dotnet11\\win-x64\\dotnet.exe",
+            "device": 2358821359,
+            "filesystem": "NTFS",
+            "mount": "D:\\"
+          },
+          "source": {
+            "path": "D:\\Cephalon\\Cehpalon-Engine",
+            "device": 2358821359,
+            "filesystem": "NTFS",
+            "mount": "D:\\"
+          },
+          "output": {
+            "path": "D:\\Cephalon\\Cehpalon-Engine-Samples\\.local\\tooling-variance-win01-benchmark",
+            "device": 2358821359,
+            "filesystem": "NTFS",
+            "mount": "D:\\"
+          }
+        }
+      },
+      "started_utc": "2026-10-30T02:25:04.167012+00:00",
+      "finished_utc": "2026-10-30T02:26:37.528727+00:00"
+    },
+    "linux": {
+      "manifest_sha256": "dbae22bd15e2b90522ea9382c3ae6de042715a00937a7e534f544ed4e964d08e",
+      "generator_sha256": "594ec0394dd1eaa0bf2761ca640922b2c44c6d06052442942cc3e999ceb57038",
+      "generator_rows": 306,
+      "cli_launches": 144,
+      "generator_comparison": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 21.9100608,
+            "cv_percent": 24.394723454267094,
+            "mean_allocated_bytes": 1181929.0666666667,
+            "mean_cpu_ms": 33.6204,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 16.9842878,
+            "cv_percent": 15.0452489689887,
+            "mean_allocated_bytes": 1182321.6,
+            "mean_cpu_ms": 23.9266,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -22.481786084317935,
+          "allocation_delta_percent": 0.03321124290820432,
+          "cv_delta_percentage_points": -9.349474485278394,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 18.401743933333332,
+            "cv_percent": 17.447692319807103,
+            "mean_allocated_bytes": 1088626.6666666667,
+            "mean_cpu_ms": 25.305333333333333,
+            "gc_totals": [
+              2,
+              2,
+              1
+            ]
+          },
+          "after": {
+            "mean_ms": 17.025787266666665,
+            "cv_percent": 16.012611489531817,
+            "mean_allocated_bytes": 1089320,
+            "mean_cpu_ms": 26.99373333333333,
+            "gc_totals": [
+              3,
+              2,
+              1
+            ]
+          },
+          "mean_delta_percent": -7.477316669830558,
+          "allocation_delta_percent": 0.06368880669220811,
+          "cv_delta_percentage_points": -1.435080830275286,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 8.258550399999999,
+            "cv_percent": 14.393123715479389,
+            "mean_allocated_bytes": 578006.9333333333,
+            "mean_cpu_ms": 16.092066666666664,
+            "gc_totals": [
+              1,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 8.092630133333333,
+            "cv_percent": 14.359813009672765,
+            "mean_allocated_bytes": 579817.0666666667,
+            "mean_cpu_ms": 14.212933333333334,
+            "gc_totals": [
+              1,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": -2.0090725203622317,
+          "allocation_delta_percent": 0.3131681004057141,
+          "cv_delta_percentage_points": -0.033310705806623986,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 19.610439866666667,
+            "cv_percent": 9.62063444950133,
+            "mean_allocated_bytes": 943238.4,
+            "mean_cpu_ms": 32.10266666666667,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 14.717353533333334,
+            "cv_percent": 7.086194777316699,
+            "mean_allocated_bytes": 945649.6,
+            "mean_cpu_ms": 26.573866666666667,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -24.951435901498964,
+          "allocation_delta_percent": 0.2556299658707628,
+          "cv_delta_percentage_points": -2.5344396721846305,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 14.7536246,
+            "cv_percent": 4.254685185634022,
+            "mean_allocated_bytes": 1022973.3333333334,
+            "mean_cpu_ms": 25.442733333333333,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 17.729211466666666,
+            "cv_percent": 1.718421240394657,
+            "mean_allocated_bytes": 1025260.2666666667,
+            "mean_cpu_ms": 34.55893333333333,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 20.168514160694208,
+          "allocation_delta_percent": 0.22355747298723472,
+          "cv_delta_percentage_points": -2.536263945239365,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 13.943396466666666,
+            "cv_percent": 6.6397068245555415,
+            "mean_allocated_bytes": 930173.8666666667,
+            "mean_cpu_ms": 25.399533333333334,
+            "gc_totals": [
+              2,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 16.184183400000002,
+            "cv_percent": 4.15455662876101,
+            "mean_allocated_bytes": 929363.7333333333,
+            "mean_cpu_ms": 30.372933333333332,
+            "gc_totals": [
+              2,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 16.07059613265822,
+          "allocation_delta_percent": -0.08709482843638483,
+          "cv_delta_percentage_points": -2.4851501957945317,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 16.6312634,
+            "cv_percent": 8.030278292837917,
+            "mean_allocated_bytes": 1316576,
+            "mean_cpu_ms": 34.36253333333333,
+            "gc_totals": [
+              4,
+              2,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 19.131144199999998,
+            "cv_percent": 11.108251492301424,
+            "mean_allocated_bytes": 1317166.9333333333,
+            "mean_cpu_ms": 41.50186666666667,
+            "gc_totals": [
+              3,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": 15.031214044748964,
+          "allocation_delta_percent": 0.04488410341167981,
+          "cv_delta_percentage_points": 3.077973199463507,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 17.1796228,
+            "cv_percent": 2.476270009125828,
+            "mean_allocated_bytes": 1427176,
+            "mean_cpu_ms": 33.4814,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 20.831588333333332,
+            "cv_percent": 8.202389298172832,
+            "mean_allocated_bytes": 1435256,
+            "mean_cpu_ms": 42.497,
+            "gc_totals": [
+              0,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 21.257542006878815,
+          "allocation_delta_percent": 0.5661530182682339,
+          "cv_delta_percentage_points": 5.726119289047004,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 14.625469466666667,
+            "cv_percent": 7.945666591497703,
+            "mean_allocated_bytes": 1164215.4666666666,
+            "mean_cpu_ms": 32.345,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 15.837175533333333,
+            "cv_percent": 5.972107557980267,
+            "mean_allocated_bytes": 1161377.0666666667,
+            "mean_cpu_ms": 34.6516,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": 8.2849037388393,
+          "allocation_delta_percent": -0.24380366704169765,
+          "cv_delta_percentage_points": -1.9735590335174367,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 8.516415533333333,
+            "cv_percent": 7.307698300846551,
+            "mean_allocated_bytes": 737748.8,
+            "mean_cpu_ms": 21.139133333333334,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 9.919721733333335,
+            "cv_percent": 7.0869918592402525,
+            "mean_allocated_bytes": 745334.9333333333,
+            "mean_cpu_ms": 23.071666666666665,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 16.477662398076355,
+          "allocation_delta_percent": 1.0282813517735745,
+          "cv_delta_percentage_points": -0.22070644160629804,
+          "mean_regressed": true,
+          "cv_regressed": false
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 13.6562596,
+            "cv_percent": 5.1911576189231825,
+            "mean_allocated_bytes": 1144396.8,
+            "mean_cpu_ms": 30.663466666666668,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 13.978984466666667,
+            "cv_percent": 16.748532940190888,
+            "mean_allocated_bytes": 1147368,
+            "mean_cpu_ms": 36.67326666666667,
+            "gc_totals": [
+              1,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 2.363201023702466,
+          "allocation_delta_percent": 0.2596302261593131,
+          "cv_delta_percentage_points": 11.557375321267706,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 15.9005996,
+            "cv_percent": 4.8091337966272505,
+            "mean_allocated_bytes": 1262235.2,
+            "mean_cpu_ms": 33.48133333333333,
+            "gc_totals": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 16.1837618,
+            "cv_percent": 7.628958389119992,
+            "mean_allocated_bytes": 1264161.6,
+            "mean_cpu_ms": 39.06693333333333,
+            "gc_totals": [
+              2,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": 1.7808271833975375,
+          "allocation_delta_percent": 0.15261814913734018,
+          "cv_delta_percentage_points": 2.8198245924927416,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 35.03235933333334,
+            "cv_percent": 9.228057094849218,
+            "mean_allocated_bytes": 5132084.266666667,
+            "mean_cpu_ms": 125.79913333333333,
+            "gc_totals": [
+              5,
+              2,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 35.04497646666667,
+            "cv_percent": 13.093044882705373,
+            "mean_allocated_bytes": 5119304.533333333,
+            "mean_cpu_ms": 130.13513333333333,
+            "gc_totals": [
+              6,
+              3,
+              1
+            ]
+          },
+          "mean_delta_percent": 0.03601565402227003,
+          "allocation_delta_percent": -0.24901643599928303,
+          "cv_delta_percentage_points": 3.8649877878561547,
+          "mean_regressed": true,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 25.160382133333332,
+            "cv_percent": 17.96057746104777,
+            "mean_allocated_bytes": 4601496,
+            "mean_cpu_ms": 109.884,
+            "gc_totals": [
+              4,
+              2,
+              1
+            ]
+          },
+          "after": {
+            "mean_ms": 21.899200133333334,
+            "cv_percent": 21.583351857489504,
+            "mean_allocated_bytes": 4606659.2,
+            "mean_cpu_ms": 100.8618,
+            "gc_totals": [
+              2,
+              0,
+              0
+            ]
+          },
+          "mean_delta_percent": -12.96157579291879,
+          "allocation_delta_percent": 0.11220698659739625,
+          "cv_delta_percentage_points": 3.6227743964417343,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 14.081210933333333,
+            "cv_percent": 10.191445318067302,
+            "mean_allocated_bytes": 3210495.466666667,
+            "mean_cpu_ms": 60.4718,
+            "gc_totals": [
+              5,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 12.088832466666666,
+            "cv_percent": 18.241367976891777,
+            "mean_allocated_bytes": 3217822.933333333,
+            "mean_cpu_ms": 54.271,
+            "gc_totals": [
+              6,
+              2,
+              1
+            ]
+          },
+          "mean_delta_percent": -14.14919836155758,
+          "allocation_delta_percent": 0.22823476135520604,
+          "cv_delta_percentage_points": 8.049922658824475,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 18.519841,
+            "cv_percent": 5.177886495908433,
+            "mean_allocated_bytes": 4308386.133333334,
+            "mean_cpu_ms": 84.78306666666666,
+            "gc_totals": [
+              6,
+              2,
+              1
+            ]
+          },
+          "after": {
+            "mean_ms": 16.34403813333333,
+            "cv_percent": 7.364235574421335,
+            "mean_allocated_bytes": 4292520.533333333,
+            "mean_cpu_ms": 81.10073333333334,
+            "gc_totals": [
+              5,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": -11.748496472872894,
+          "allocation_delta_percent": -0.36824925874797687,
+          "cv_delta_percentage_points": 2.186349078512902,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "mean_ms": 23.980609066666666,
+            "cv_percent": 9.884744372084645,
+            "mean_allocated_bytes": 4794543.466666667,
+            "mean_cpu_ms": 94.60833333333333,
+            "gc_totals": [
+              8,
+              2,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 21.139843533333334,
+            "cv_percent": 9.836540504477393,
+            "mean_allocated_bytes": 4825269.866666666,
+            "mean_cpu_ms": 88.74053333333333,
+            "gc_totals": [
+              7,
+              1,
+              0
+            ]
+          },
+          "mean_delta_percent": -11.846094173154388,
+          "allocation_delta_percent": 0.6408618508439767,
+          "cv_delta_percentage_points": -0.048203867607252704,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "mean_ms": 14.551621933333333,
+            "cv_percent": 12.957325540603543,
+            "mean_allocated_bytes": 4249646.933333334,
+            "mean_cpu_ms": 78.06126666666667,
+            "gc_totals": [
+              5,
+              1,
+              0
+            ]
+          },
+          "after": {
+            "mean_ms": 15.0488788,
+            "cv_percent": 11.402613200977648,
+            "mean_allocated_bytes": 4282944,
+            "mean_cpu_ms": 83.30406666666666,
+            "gc_totals": [
+              6,
+              2,
+              1
+            ]
+          },
+          "mean_delta_percent": 3.417192041854822,
+          "allocation_delta_percent": 0.7835254831522809,
+          "cv_delta_percentage_points": -1.5547123396258957,
+          "mean_regressed": true,
+          "cv_regressed": false
+        }
+      ],
+      "cli_comparison": [
+        {
+          "scenario": "new-portable",
+          "before_mean_ms": 443.978103,
+          "after_mean_ms": 416.45267086666667,
+          "mean_delta_percent": -6.199727407126954,
+          "before_cv_percent": 4.904264680442453,
+          "after_cv_percent": 5.663673168450592,
+          "cv_delta_percentage_points": 0.7594084880081393,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "new-small-api",
+          "before_mean_ms": 653.3847736,
+          "after_mean_ms": 601.2939201333334,
+          "mean_delta_percent": -7.972462103709277,
+          "before_cv_percent": 6.403884072412852,
+          "after_cv_percent": 4.15428399733699,
+          "cv_delta_percentage_points": -2.249600075075862,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "scenario": "validate-portable",
+          "before_mean_ms": 194.8282218,
+          "after_mean_ms": 178.24166866666667,
+          "mean_delta_percent": -8.513424277084546,
+          "before_cv_percent": 7.8605669727701315,
+          "after_cv_percent": 5.726398333895984,
+          "cv_delta_percentage_points": -2.134168638874147,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "scenario": "validate-small-api",
+          "before_mean_ms": 192.42324933333333,
+          "after_mean_ms": 177.74937293333332,
+          "mean_delta_percent": -7.625833391151482,
+          "before_cv_percent": 5.858878233814181,
+          "after_cv_percent": 6.0062068453714215,
+          "cv_delta_percentage_points": 0.1473286115572403,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "export-api",
+          "before_mean_ms": 319.7873105333333,
+          "after_mean_ms": 236.66224413333333,
+          "mean_delta_percent": -25.993860188312677,
+          "before_cv_percent": 7.069207749323243,
+          "after_cv_percent": 8.033107880171988,
+          "cv_delta_percentage_points": 0.9639001308487449,
+          "mean_regressed": false,
+          "cv_regressed": true
+        },
+        {
+          "scenario": "export-both",
+          "before_mean_ms": 814.6421329333333,
+          "after_mean_ms": 745.5821568,
+          "mean_delta_percent": -8.477339108973492,
+          "before_cv_percent": 5.565366516101812,
+          "after_cv_percent": 4.177173424803303,
+          "cv_delta_percentage_points": -1.3881930912985094,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "scenario": "export-graphql",
+          "before_mean_ms": 788.7771846,
+          "after_mean_ms": 717.0029376,
+          "mean_delta_percent": -9.099432438122278,
+          "before_cv_percent": 5.202179479767875,
+          "after_cv_percent": 3.2419044817012512,
+          "cv_delta_percentage_points": -1.960274998066624,
+          "mean_regressed": false,
+          "cv_regressed": false
+        },
+        {
+          "scenario": "export-off",
+          "before_mean_ms": 289.65481946666665,
+          "after_mean_ms": 214.41976526666667,
+          "mean_delta_percent": -25.974038456714855,
+          "before_cv_percent": 5.695146774968385,
+          "after_cv_percent": 4.2492664175772346,
+          "cv_delta_percentage_points": -1.4458803573911503,
+          "mean_regressed": false,
+          "cv_regressed": false
+        }
+      ],
+      "generator_unstable": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "cv_percent": 15.0452489689887
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 16.01261148953182
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "cv_percent": 16.74853294019089
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "cv_percent": 21.583351857489504
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "cv_percent": 18.24136797689178
+        }
+      ],
+      "cli_unstable": [],
+      "any_unstable_observation": true,
+      "zero_cpu_measured_rows": 0,
+      "generator_source_and_registry_parity_rows": 306,
+      "all_four_export_artifact_sets_bytes_and_counters_equal_baseline": true,
+      "environment": {
+        "reference": false,
+        "reserved_resources": false,
+        "filesystems": {
+          "sdk": {
+            "path": "/home/tom/.local/share/cehpalon-benchmark-deployment/tuning-20261028/sdk/dotnet",
+            "device": 2096,
+            "filesystem": "ext4",
+            "mount": "/"
+          },
+          "source": {
+            "path": "/mnt/d/Cephalon/Cehpalon-Engine",
+            "device": 72,
+            "filesystem": "9p",
+            "mount": "/mnt/d"
+          },
+          "output": {
+            "path": "/mnt/d/Cephalon/Cehpalon-Engine-Samples/.local/tooling-variance-linux01-benchmark",
+            "device": 72,
+            "filesystem": "9p",
+            "mount": "/mnt/d"
+          }
+        }
+      },
+      "started_utc": "2026-10-30T02:27:08.538307+00:00",
+      "finished_utc": "2026-10-30T02:29:31.784343+00:00"
+    }
+  },
+  "limits": [
+    "No builds, benchmarks or timing reruns performed by reviewer.",
+    "CV >15% is descriptive instability, not performance acceptance. Qualification remains not_qualified.",
+    "Before/after shared-host observations do not isolate an Engine-code/JIT/OS cause.",
+    "Per-row PE bytes are not retained; hashes do not reconstruct PE independently. Runtime semantics rely on reviewed driver and recorded pre/post proofs.",
+    "Export content checks are bounded artifact checks, not universal parser/validator/provider qualification."
+  ],
+  "committed_engine_blobs_checked": 223,
+  "audit_source_sha256": "31b9ce20c45bbcba2b69d060e5a93bf20e48f640f848037bbeccaa4198fc37e7"
+}

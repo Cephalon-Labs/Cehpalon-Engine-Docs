@@ -1,0 +1,146 @@
+{
+  "source_attempt": "D:\\Cephalon\\Cehpalon-Engine\\.local\\tooling-variance-win01-contracts",
+  "retention": "Exact bytes; code/project suffixes add .txt. Binary/build/private material/clone checkouts excluded; no credential state retained.",
+  "count": 23,
+  "bytes": 137835,
+  "files": [
+    {
+      "source_relative": "CodeGeneration.ContractTests.json",
+      "path": "CodeGeneration.ContractTests.json",
+      "bytes": 6126,
+      "sha256": "f687a8aa2c1ecbeee5247ad6642b6693aedb93bacd818ec397053c98cfd54dba"
+    },
+    {
+      "source_relative": "CodeGeneration.ContractTests.txt",
+      "path": "CodeGeneration.ContractTests.txt",
+      "bytes": 6127,
+      "sha256": "f9ad125a09458d99aac09a9ae94f678d233501283344ccaeedce227e10406318"
+    },
+    {
+      "source_relative": "Composition.ContractTests.json",
+      "path": "Composition.ContractTests.json",
+      "bytes": 8271,
+      "sha256": "06df48cee7f751f667924785028a5041516ce6c88b37a0c105fe162354ec4439"
+    },
+    {
+      "source_relative": "Composition.ContractTests.txt",
+      "path": "Composition.ContractTests.txt",
+      "bytes": 8271,
+      "sha256": "06df48cee7f751f667924785028a5041516ce6c88b37a0c105fe162354ec4439"
+    },
+    {
+      "source_relative": "Core.ContractTests.json",
+      "path": "Core.ContractTests.json",
+      "bytes": 3693,
+      "sha256": "cd440732ebfa5571ca40e40128f343c70bccabcafe73588cc1c0850628d78523"
+    },
+    {
+      "source_relative": "Core.ContractTests.txt",
+      "path": "Core.ContractTests.txt",
+      "bytes": 3694,
+      "sha256": "8dccf8f69a876c7989e76cf9e3d5a935fbcb4a7084e2fa8474c79be2f52b03b7"
+    },
+    {
+      "source_relative": "GraphQL.ContractTests.json",
+      "path": "GraphQL.ContractTests.json",
+      "bytes": 4740,
+      "sha256": "924046ff63844b98d982d1e61fd6b44ddafbd929e7c940c3e36dc9f0b9eee2f4"
+    },
+    {
+      "source_relative": "GraphQL.ContractTests.txt",
+      "path": "GraphQL.ContractTests.txt",
+      "bytes": 4741,
+      "sha256": "861074c17e321b964e0acee3d26e51882b3482fa696d97c8b7ff86015cb40eef"
+    },
+    {
+      "source_relative": "Http.ContractTests.json",
+      "path": "Http.ContractTests.json",
+      "bytes": 5205,
+      "sha256": "2c983c9c87eda24ccb18bed8f18a12b6198f1517f2da0dc47836dfe9ad6d73f8"
+    },
+    {
+      "source_relative": "Http.ContractTests.txt",
+      "path": "Http.ContractTests.txt",
+      "bytes": 5207,
+      "sha256": "9ee8c3d85044a34f626f447525de14a14039bbe6a45e177e473a58b197aae4c3"
+    },
+    {
+      "source_relative": "Identity.ContractTests.json",
+      "path": "Identity.ContractTests.json",
+      "bytes": 4919,
+      "sha256": "5f6eb90d077b3a37cf1175c32ab04588a7001dd9abe8ac51af32b9252485ef43"
+    },
+    {
+      "source_relative": "Identity.ContractTests.txt",
+      "path": "Identity.ContractTests.txt",
+      "bytes": 27,
+      "sha256": "12318a10c5cfaa619aa370bd13e03cf183deb098c1b99f24b6045ec573530e51"
+    },
+    {
+      "source_relative": "Tenancy.ContractTests.json",
+      "path": "Tenancy.ContractTests.json",
+      "bytes": 7362,
+      "sha256": "f6d178c289e72c3b0be31ff49e5fa3835fbcea019c543afeb621fcade12e1020"
+    },
+    {
+      "source_relative": "Tenancy.ContractTests.txt",
+      "path": "Tenancy.ContractTests.txt",
+      "bytes": 7363,
+      "sha256": "f89cab3f1fa89b71a67e50c78b7d47d8dc10c505b78f40dc919de57412f49bce"
+    },
+    {
+      "source_relative": "Tooling.ContractTests.json",
+      "path": "Tooling.ContractTests.json",
+      "bytes": 15966,
+      "sha256": "c9c415be3090208d860adadbacdbafe27b8182e136454cace7e5ce6ada20a026"
+    },
+    {
+      "source_relative": "Tooling.ContractTests.txt",
+      "path": "Tooling.ContractTests.txt",
+      "bytes": 15967,
+      "sha256": "653c34fb644652053d3fc073e2f4d4d5a809026d6a95d369d792cb79e4c63885"
+    },
+    {
+      "source_relative": "build.txt",
+      "path": "build.txt",
+      "bytes": 10475,
+      "sha256": "18f1b229b040b97b354003207099ce57a22897d74b7dcc0e749dfe6a2bac5cfc"
+    },
+    {
+      "source_relative": "compiler-fixture-generated.g.cs.txt",
+      "path": "compiler-fixture-generated.g.cs.txt",
+      "bytes": 656,
+      "sha256": "514df2f008e0a7a2d6ef6f9088e79407f1d1f97e91e048cfd860f6904bfecd3f"
+    },
+    {
+      "source_relative": "compiler-fixture.json",
+      "path": "compiler-fixture.json",
+      "bytes": 219,
+      "sha256": "4b21f410bdc7f997dd367cea4fe75debc8e179b18a349fa142f34f84fde69d5b"
+    },
+    {
+      "source_relative": "manifest.json",
+      "path": "manifest.json",
+      "bytes": 13139,
+      "sha256": "0368f0bd75d3c97b9aa79921240466cfea033f46e08fde8bcf7b224766560b00"
+    },
+    {
+      "source_relative": "restore.txt",
+      "path": "restore.txt",
+      "bytes": 2355,
+      "sha256": "bda903126bc275ae549c2718584aa4078896232e5f6273966b8e4838a00f537c"
+    },
+    {
+      "source_relative": "sdk-info.txt",
+      "path": "sdk-info.txt",
+      "bytes": 3287,
+      "sha256": "bbabd45319058fd45485332aaa89b9011eec12b10cf1abfc83d7f62b9826be0a"
+    },
+    {
+      "source_relative": "sdk-version.txt",
+      "path": "sdk-version.txt",
+      "bytes": 25,
+      "sha256": "2a1983f9624c51ebc4e357db46400d4a0c586be897ce82123c46926dddf13fcf"
+    }
+  ]
+}

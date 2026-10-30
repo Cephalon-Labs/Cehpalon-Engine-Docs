@@ -1,0 +1,8 @@
+{
+  "method": "git cat-file --batch staged index bytes vs exact working raw/tracking/taskmirror bytes, no newline normalization",
+  "checked": 126,
+  "bytes": 1318686,
+  "mismatches": [],
+  "status": "passed",
+  "self_excluded": "Audit added after check; no recursive self-hash claim."
+}

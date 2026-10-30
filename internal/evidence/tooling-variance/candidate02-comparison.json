@@ -1,0 +1,2917 @@
+{
+  "baseline_engine": "29df762cf28d12bd0d587b3c9d99925bcb99b14f",
+  "candidate_engine": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "scope": "All fixed samples retained; descriptive historical comparison, no causal/qualification claim",
+  "hosts": {
+    "windows": {
+      "generator": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              21518333.333333332,
+              15452666.666666666,
+              17161466.666666668,
+              18511433.333333332,
+              17034200
+            ],
+            "meanNanoseconds": 17935620,
+            "sampleStandardDeviationNanoseconds": 2277296.888808698,
+            "cvPercent": 12.697062542631356,
+            "minNanoseconds": 15318400,
+            "maxNanoseconds": 32708900,
+            "p50Nanoseconds": 17159300,
+            "p95Nanoseconds": 32708900
+          },
+          "after": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              19064866.666666668,
+              15718633.333333334,
+              14908366.666666666,
+              15990633.333333334,
+              17334166.666666668
+            ],
+            "meanNanoseconds": 16603333.333333334,
+            "sampleStandardDeviationNanoseconds": 1629744.6957524775,
+            "cvPercent": 9.81576809326929,
+            "minNanoseconds": 14524900,
+            "maxNanoseconds": 25420000,
+            "p50Nanoseconds": 15632700,
+            "p95Nanoseconds": 25420000
+          },
+          "mean_delta_percent": -7.428160647173987,
+          "cv_delta_percentage_points": -2.8812944493620662,
+          "before_counters": {
+            "mean_allocated_bytes": 1191932.2666666666,
+            "mean_cpu_ticks": 239583.33333333334,
+            "gc_events": [
+              3,
+              2,
+              1
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1187753.0666666667,
+            "mean_cpu_ticks": 177083.33333333334,
+            "gc_events": [
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14705733.333333334,
+              14694200,
+              22690266.666666668,
+              16049533.333333334,
+              15751366.666666666
+            ],
+            "meanNanoseconds": 16778220,
+            "sampleStandardDeviationNanoseconds": 3360656.489404679,
+            "cvPercent": 20.029874977230474,
+            "minNanoseconds": 14225900,
+            "maxNanoseconds": 32719200,
+            "p50Nanoseconds": 15829400,
+            "p95Nanoseconds": 32719200
+          },
+          "after": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14594600,
+              14462766.666666666,
+              14749133.333333334,
+              13956666.666666666,
+              17189600
+            ],
+            "meanNanoseconds": 14990553.333333332,
+            "sampleStandardDeviationNanoseconds": 1264747.93000204,
+            "cvPercent": 8.436966280555621,
+            "minNanoseconds": 13198600,
+            "maxNanoseconds": 22390600,
+            "p50Nanoseconds": 14297100,
+            "p95Nanoseconds": 22390600
+          },
+          "mean_delta_percent": -10.654686055294704,
+          "cv_delta_percentage_points": -11.592908696674852,
+          "before_counters": {
+            "mean_allocated_bytes": 1092244.2666666666,
+            "mean_cpu_ticks": 218750,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1088148.2666666666,
+            "mean_cpu_ticks": 229166.66666666666,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "size": 1,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              13688266.666666666,
+              14150133.333333334,
+              13297400,
+              12827566.666666666,
+              14287433.333333334
+            ],
+            "meanNanoseconds": 13650160,
+            "sampleStandardDeviationNanoseconds": 603871.2948781209,
+            "cvPercent": 4.423913674844258,
+            "minNanoseconds": 12542100,
+            "maxNanoseconds": 16476900,
+            "p50Nanoseconds": 13037400,
+            "p95Nanoseconds": 16476900
+          },
+          "after": {
+            "size": 1,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              5305133.333333333,
+              8915733.333333334,
+              12525166.666666666,
+              12537466.666666666,
+              12492733.333333334
+            ],
+            "meanNanoseconds": 10355246.666666668,
+            "sampleStandardDeviationNanoseconds": 3225497.229162247,
+            "cvPercent": 31.14843453748966,
+            "minNanoseconds": 5118400,
+            "maxNanoseconds": 16184700,
+            "p50Nanoseconds": 12431500,
+            "p95Nanoseconds": 16184700
+          },
+          "mean_delta_percent": -24.138276279057035,
+          "cv_delta_percentage_points": 26.724520862645402,
+          "before_counters": {
+            "mean_allocated_bytes": 572379.7333333333,
+            "mean_cpu_ticks": 229166.66666666666,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 568624,
+            "mean_cpu_ticks": 93750,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "size": 1,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              28972466.666666668,
+              28579800,
+              29796033.333333332,
+              31487100,
+              36857700
+            ],
+            "meanNanoseconds": 31138620,
+            "sampleStandardDeviationNanoseconds": 3386430.0291834697,
+            "cvPercent": 10.875337536420915,
+            "minNanoseconds": 27656500,
+            "maxNanoseconds": 37847300,
+            "p50Nanoseconds": 29812300,
+            "p95Nanoseconds": 37847300
+          },
+          "after": {
+            "size": 1,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14572200,
+              20913400,
+              28351866.666666668,
+              27915666.666666668,
+              29303000
+            ],
+            "meanNanoseconds": 24211226.666666668,
+            "sampleStandardDeviationNanoseconds": 6336016.627292998,
+            "cvPercent": 26.169746434269875,
+            "minNanoseconds": 14006600,
+            "maxNanoseconds": 32281900,
+            "p50Nanoseconds": 27754500,
+            "p95Nanoseconds": 32281900
+          },
+          "mean_delta_percent": -22.246950357251972,
+          "cv_delta_percentage_points": 15.29440889784896,
+          "before_counters": {
+            "mean_allocated_bytes": 943562.1333333333,
+            "mean_cpu_ticks": 458333.3333333333,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 942880.5333333333,
+            "mean_cpu_ticks": 302083.3333333333,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "size": 1,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              40287933.333333336,
+              38280000,
+              39337966.666666664,
+              39404566.666666664,
+              41807833.333333336
+            ],
+            "meanNanoseconds": 39823660,
+            "sampleStandardDeviationNanoseconds": 1317850.2358428726,
+            "cvPercent": 3.309214260675369,
+            "minNanoseconds": 36766400,
+            "maxNanoseconds": 43992600,
+            "p50Nanoseconds": 39026200,
+            "p95Nanoseconds": 43992600
+          },
+          "after": {
+            "size": 1,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              32605866.666666668,
+              33804933.333333336,
+              36677300,
+              36998933.333333336,
+              37090133.333333336
+            ],
+            "meanNanoseconds": 35435433.333333336,
+            "sampleStandardDeviationNanoseconds": 2085052.453110526,
+            "cvPercent": 5.884089051478208,
+            "minNanoseconds": 29615300,
+            "maxNanoseconds": 42255000,
+            "p50Nanoseconds": 35034500,
+            "p95Nanoseconds": 42255000
+          },
+          "mean_delta_percent": -11.019144565483597,
+          "cv_delta_percentage_points": 2.5748747908028387,
+          "before_counters": {
+            "mean_allocated_bytes": 1024471.4666666667,
+            "mean_cpu_ticks": 802083.3333333334,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1021451.7333333333,
+            "mean_cpu_ticks": 666666.6666666666,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "size": 1,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              39314633.333333336,
+              35504766.666666664,
+              34636966.666666664,
+              35475033.333333336,
+              36422600
+            ],
+            "meanNanoseconds": 36270800,
+            "sampleStandardDeviationNanoseconds": 1815036.3369487813,
+            "cvPercent": 5.004125458905735,
+            "minNanoseconds": 34326400,
+            "maxNanoseconds": 42984700,
+            "p50Nanoseconds": 35209200,
+            "p95Nanoseconds": 42984700
+          },
+          "after": {
+            "size": 1,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              30342333.333333332,
+              31408300,
+              31815166.666666668,
+              34005266.666666664,
+              35820066.666666664
+            ],
+            "meanNanoseconds": 32678226.666666664,
+            "sampleStandardDeviationNanoseconds": 2204891.024190436,
+            "cvPercent": 6.7472786901240545,
+            "minNanoseconds": 28655100,
+            "maxNanoseconds": 37428800,
+            "p50Nanoseconds": 32429700,
+            "p95Nanoseconds": 37428800
+          },
+          "mean_delta_percent": -9.904863783906992,
+          "cv_delta_percentage_points": 1.7431532312183196,
+          "before_counters": {
+            "mean_allocated_bytes": 949822.4,
+            "mean_cpu_ticks": 614583.3333333334,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 932454.4,
+            "mean_cpu_ticks": 520833.3333333333,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              39995366.666666664,
+              39279200,
+              40178900,
+              38465566.666666664,
+              38595233.333333336
+            ],
+            "meanNanoseconds": 39302853.33333333,
+            "sampleStandardDeviationNanoseconds": 782522.6811054385,
+            "cvPercent": 1.9910073054206714,
+            "minNanoseconds": 37504000,
+            "maxNanoseconds": 41113000,
+            "p50Nanoseconds": 39318100,
+            "p95Nanoseconds": 41113000
+          },
+          "after": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              37854100,
+              37691733.333333336,
+              38447133.333333336,
+              37592833.333333336,
+              38456766.666666664
+            ],
+            "meanNanoseconds": 38008513.333333336,
+            "sampleStandardDeviationNanoseconds": 415421.9131062876,
+            "cvPercent": 1.0929706970200384,
+            "minNanoseconds": 37110100,
+            "maxNanoseconds": 39026100,
+            "p50Nanoseconds": 37922800,
+            "p95Nanoseconds": 39026100
+          },
+          "mean_delta_percent": -3.293246902514946,
+          "cv_delta_percentage_points": -0.898036608400633,
+          "before_counters": {
+            "mean_allocated_bytes": 1329246.9333333333,
+            "mean_cpu_ticks": 656250,
+            "gc_events": [
+              0,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1329103.4666666666,
+            "mean_cpu_ticks": 791666.6666666666,
+            "gc_events": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              44568666.666666664,
+              46511766.666666664,
+              45781833.333333336,
+              44883566.666666664,
+              43780166.666666664
+            ],
+            "meanNanoseconds": 45105199.99999999,
+            "sampleStandardDeviationNanoseconds": 1064068.2710970934,
+            "cvPercent": 2.359081150503919,
+            "minNanoseconds": 41431600,
+            "maxNanoseconds": 54449300,
+            "p50Nanoseconds": 43595500,
+            "p95Nanoseconds": 54449300
+          },
+          "after": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              41868266.666666664,
+              45438000,
+              46257100,
+              44075700,
+              42537900
+            ],
+            "meanNanoseconds": 44035393.33333333,
+            "sampleStandardDeviationNanoseconds": 1860365.2110689336,
+            "cvPercent": 4.224704425793556,
+            "minNanoseconds": 41178600,
+            "maxNanoseconds": 52320500,
+            "p50Nanoseconds": 42943400,
+            "p95Nanoseconds": 52320500
+          },
+          "mean_delta_percent": -2.37180339886901,
+          "cv_delta_percentage_points": 1.8656232752896371,
+          "before_counters": {
+            "mean_allocated_bytes": 1450422.9333333333,
+            "mean_cpu_ticks": 947916.6666666666,
+            "gc_events": [
+              3,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1443683.2,
+            "mean_cpu_ticks": 1020833.3333333334,
+            "gc_events": [
+              3,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "size": 3,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              42136300,
+              36703666.666666664,
+              38846933.333333336,
+              36676233.333333336,
+              37559600
+            ],
+            "meanNanoseconds": 38384546.66666667,
+            "sampleStandardDeviationNanoseconds": 2275614.3964750366,
+            "cvPercent": 5.928464952931674,
+            "minNanoseconds": 35699000,
+            "maxNanoseconds": 49662700,
+            "p50Nanoseconds": 37162100,
+            "p95Nanoseconds": 49662700
+          },
+          "after": {
+            "size": 3,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              40424200,
+              37442600,
+              41421566.666666664,
+              37506600,
+              37124366.666666664
+            ],
+            "meanNanoseconds": 38783866.666666664,
+            "sampleStandardDeviationNanoseconds": 1989503.794500863,
+            "cvPercent": 5.129720075617859,
+            "minNanoseconds": 36073500,
+            "maxNanoseconds": 49429000,
+            "p50Nanoseconds": 37222500,
+            "p95Nanoseconds": 49429000
+          },
+          "mean_delta_percent": 1.0403144876705461,
+          "cv_delta_percentage_points": -0.7987448773138146,
+          "before_counters": {
+            "mean_allocated_bytes": 1183088.5333333334,
+            "mean_cpu_ticks": 802083.3333333334,
+            "gc_events": [
+              1,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1174939.7333333334,
+            "mean_cpu_ticks": 906250,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "size": 3,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              16894166.666666668,
+              17127566.666666668,
+              17947933.333333332,
+              17036100,
+              18986366.666666668
+            ],
+            "meanNanoseconds": 17598426.666666668,
+            "sampleStandardDeviationNanoseconds": 877843.2264489043,
+            "cvPercent": 4.988191518913647,
+            "minNanoseconds": 16038700,
+            "maxNanoseconds": 22120900,
+            "p50Nanoseconds": 16921100,
+            "p95Nanoseconds": 22120900
+          },
+          "after": {
+            "size": 3,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17903366.666666668,
+              16940100,
+              17202733.333333332,
+              16421366.666666666,
+              17621966.666666668
+            ],
+            "meanNanoseconds": 17217906.666666668,
+            "sampleStandardDeviationNanoseconds": 579871.244520905,
+            "cvPercent": 3.367838238103112,
+            "minNanoseconds": 16192000,
+            "maxNanoseconds": 20248400,
+            "p50Nanoseconds": 16972000,
+            "p95Nanoseconds": 20248400
+          },
+          "mean_delta_percent": -2.1622387455848324,
+          "cv_delta_percentage_points": -1.620353280810535,
+          "before_counters": {
+            "mean_allocated_bytes": 742581.3333333334,
+            "mean_cpu_ticks": 479166.6666666667,
+            "gc_events": [
+              2,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 743515.2,
+            "mean_cpu_ticks": 427083.3333333333,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              36134066.666666664,
+              37464100,
+              31055233.333333332,
+              23323566.666666668,
+              23456733.333333332
+            ],
+            "meanNanoseconds": 30286740,
+            "sampleStandardDeviationNanoseconds": 6734817.7714108275,
+            "cvPercent": 22.23685273294791,
+            "minNanoseconds": 21410600,
+            "maxNanoseconds": 44390200,
+            "p50Nanoseconds": 30724400,
+            "p95Nanoseconds": 44390200
+          },
+          "after": {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              35442133.333333336,
+              35483566.666666664,
+              26666066.666666668,
+              23732000,
+              24294600
+            ],
+            "meanNanoseconds": 29123673.333333336,
+            "sampleStandardDeviationNanoseconds": 5890693.955365342,
+            "cvPercent": 20.226479977109143,
+            "minNanoseconds": 23331700,
+            "maxNanoseconds": 41211900,
+            "p50Nanoseconds": 25330400,
+            "p95Nanoseconds": 41211900
+          },
+          "mean_delta_percent": -3.840184406333147,
+          "cv_delta_percentage_points": -2.010372755838766,
+          "before_counters": {
+            "mean_allocated_bytes": 1155204.2666666666,
+            "mean_cpu_ticks": 666666.6666666666,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1154648.5333333334,
+            "mean_cpu_ticks": 729166.6666666666,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              40788766.666666664,
+              37724033.333333336,
+              34646133.333333336,
+              27375733.333333332,
+              24113366.666666668
+            ],
+            "meanNanoseconds": 32929606.666666668,
+            "sampleStandardDeviationNanoseconds": 7004837.319762203,
+            "cvPercent": 21.27215605904252,
+            "minNanoseconds": 23777800,
+            "maxNanoseconds": 42188000,
+            "p50Nanoseconds": 34496000,
+            "p95Nanoseconds": 42188000
+          },
+          "after": {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              39171066.666666664,
+              37367466.666666664,
+              26045833.333333332,
+              26372133.333333332,
+              29176166.666666668
+            ],
+            "meanNanoseconds": 31626533.333333332,
+            "sampleStandardDeviationNanoseconds": 6217626.705718722,
+            "cvPercent": 19.659526512713132,
+            "minNanoseconds": 25806700,
+            "maxNanoseconds": 39718800,
+            "p50Nanoseconds": 28735000,
+            "p95Nanoseconds": 39718800
+          },
+          "mean_delta_percent": -3.9571481874163594,
+          "cv_delta_percentage_points": -1.6126295463293872,
+          "before_counters": {
+            "mean_allocated_bytes": 1275125.3333333333,
+            "mean_cpu_ticks": 718750,
+            "gc_events": [
+              0,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1277105.0666666667,
+            "mean_cpu_ticks": 635416.6666666666,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              65946666.666666664,
+              54236733.333333336,
+              62071200,
+              51009900,
+              54594166.666666664
+            ],
+            "meanNanoseconds": 57571733.333333336,
+            "sampleStandardDeviationNanoseconds": 6193353.162284367,
+            "cvPercent": 10.757628446629539,
+            "minNanoseconds": 43909300,
+            "maxNanoseconds": 74953700,
+            "p50Nanoseconds": 56196400,
+            "p95Nanoseconds": 74953700
+          },
+          "after": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              72813666.66666667,
+              52766533.333333336,
+              63923100,
+              48958600,
+              41555933.333333336
+            ],
+            "meanNanoseconds": 56003566.666666664,
+            "sampleStandardDeviationNanoseconds": 12390949.512625916,
+            "cvPercent": 22.12528638823465,
+            "minNanoseconds": 39033500,
+            "maxNanoseconds": 89073800,
+            "p50Nanoseconds": 49133800,
+            "p95Nanoseconds": 89073800
+          },
+          "mean_delta_percent": -2.723848277395402,
+          "cv_delta_percentage_points": 11.36765794160511,
+          "before_counters": {
+            "mean_allocated_bytes": 5101583.466666667,
+            "mean_cpu_ticks": 1635416.6666666667,
+            "gc_events": [
+              8,
+              3,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 5072595.2,
+            "mean_cpu_ticks": 1697916.6666666667,
+            "gc_events": [
+              7,
+              3,
+              1
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              43915900,
+              47098133.333333336,
+              35353500,
+              43495733.333333336,
+              32143333.333333332
+            ],
+            "meanNanoseconds": 40401320.00000001,
+            "sampleStandardDeviationNanoseconds": 6333439.148966908,
+            "cvPercent": 15.6763173801423,
+            "minNanoseconds": 26453300,
+            "maxNanoseconds": 61704800,
+            "p50Nanoseconds": 37731800,
+            "p95Nanoseconds": 61704800
+          },
+          "after": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              46218933.333333336,
+              48975166.666666664,
+              39241833.333333336,
+              33079200,
+              37631900
+            ],
+            "meanNanoseconds": 41029406.66666667,
+            "sampleStandardDeviationNanoseconds": 6480944.086636691,
+            "cvPercent": 15.795851349471192,
+            "minNanoseconds": 31017500,
+            "maxNanoseconds": 60678200,
+            "p50Nanoseconds": 38510100,
+            "p95Nanoseconds": 60678200
+          },
+          "mean_delta_percent": 1.5546191725088754,
+          "cv_delta_percentage_points": 0.11953396932889149,
+          "before_counters": {
+            "mean_allocated_bytes": 4547017.6,
+            "mean_cpu_ticks": 1270833.3333333333,
+            "gc_events": [
+              8,
+              3,
+              1
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4549760,
+            "mean_cpu_ticks": 1479166.6666666667,
+            "gc_events": [
+              3,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "size": 32,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              24591300,
+              18343466.666666668,
+              19424033.333333332,
+              17531000,
+              21461700
+            ],
+            "meanNanoseconds": 20270300,
+            "sampleStandardDeviationNanoseconds": 2829447.5351009583,
+            "cvPercent": 13.95858736723659,
+            "minNanoseconds": 16269500,
+            "maxNanoseconds": 36807900,
+            "p50Nanoseconds": 17796600,
+            "p95Nanoseconds": 36807900
+          },
+          "after": {
+            "size": 32,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              21714033.333333332,
+              28756933.333333332,
+              20560766.666666668,
+              22516600,
+              19396066.666666668
+            ],
+            "meanNanoseconds": 22588880,
+            "sampleStandardDeviationNanoseconds": 3644268.228526056,
+            "cvPercent": 16.133018673462587,
+            "minNanoseconds": 16784200,
+            "maxNanoseconds": 45932600,
+            "p50Nanoseconds": 19880100,
+            "p95Nanoseconds": 45932600
+          },
+          "mean_delta_percent": 11.438311223810205,
+          "cv_delta_percentage_points": 2.1744313062259977,
+          "before_counters": {
+            "mean_allocated_bytes": 3197929.6,
+            "mean_cpu_ticks": 760416.6666666666,
+            "gc_events": [
+              4,
+              3,
+              1
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 3162146.6666666665,
+            "mean_cpu_ticks": 645833.3333333334,
+            "gc_events": [
+              6,
+              2,
+              1
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "size": 32,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              27366566.666666668,
+              25438400,
+              31328333.333333332,
+              25404500,
+              25689166.666666668
+            ],
+            "meanNanoseconds": 27045393.333333332,
+            "sampleStandardDeviationNanoseconds": 2527896.1919834525,
+            "cvPercent": 9.346864217603487,
+            "minNanoseconds": 22410300,
+            "maxNanoseconds": 37291300,
+            "p50Nanoseconds": 25028800,
+            "p95Nanoseconds": 37291300
+          },
+          "after": {
+            "size": 32,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              28071200,
+              27930000,
+              28926700,
+              25492566.666666668,
+              25946933.333333332
+            ],
+            "meanNanoseconds": 27273480,
+            "sampleStandardDeviationNanoseconds": 1477488.6155981785,
+            "cvPercent": 5.417308739472111,
+            "minNanoseconds": 23428400,
+            "maxNanoseconds": 33330400,
+            "p50Nanoseconds": 26676000,
+            "p95Nanoseconds": 33330400
+          },
+          "mean_delta_percent": 0.8433475670163393,
+          "cv_delta_percentage_points": -3.929555478131376,
+          "before_counters": {
+            "mean_allocated_bytes": 4318663.466666667,
+            "mean_cpu_ticks": 895833.3333333334,
+            "gc_events": [
+              6,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4266264,
+            "mean_cpu_ticks": 875000,
+            "gc_events": [
+              4,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "size": 32,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              45941266.666666664,
+              39004933.333333336,
+              37036666.666666664,
+              36268966.666666664,
+              31664033.333333332
+            ],
+            "meanNanoseconds": 37983173.33333333,
+            "sampleStandardDeviationNanoseconds": 5199546.920293473,
+            "cvPercent": 13.689079831911904,
+            "minNanoseconds": 29264200,
+            "maxNanoseconds": 55295300,
+            "p50Nanoseconds": 35824200,
+            "p95Nanoseconds": 55295300
+          },
+          "after": {
+            "size": 32,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              32599966.666666668,
+              35492700,
+              30755166.666666668,
+              29893133.333333332,
+              30339666.666666668
+            ],
+            "meanNanoseconds": 31816126.666666668,
+            "sampleStandardDeviationNanoseconds": 2298644.7221255302,
+            "cvPercent": 7.224778635715547,
+            "minNanoseconds": 26160100,
+            "maxNanoseconds": 41171900,
+            "p50Nanoseconds": 29266100,
+            "p95Nanoseconds": 41171900
+          },
+          "mean_delta_percent": -16.236259705174692,
+          "cv_delta_percentage_points": -6.464301196196358,
+          "before_counters": {
+            "mean_allocated_bytes": 4832459.2,
+            "mean_cpu_ticks": 1135416.6666666667,
+            "gc_events": [
+              6,
+              2,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4745139.2,
+            "mean_cpu_ticks": 1135416.6666666667,
+            "gc_events": [
+              5,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "size": 32,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              26910000,
+              26407500,
+              27260166.666666668,
+              22489166.666666668,
+              24360200
+            ],
+            "meanNanoseconds": 25485406.666666668,
+            "sampleStandardDeviationNanoseconds": 2016992.7812629042,
+            "cvPercent": 7.914304871191267,
+            "minNanoseconds": 19738300,
+            "maxNanoseconds": 40073800,
+            "p50Nanoseconds": 22669800,
+            "p95Nanoseconds": 40073800
+          },
+          "after": {
+            "size": 32,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              23558933.333333332,
+              23752700,
+              27768366.666666668,
+              27111166.666666668,
+              19168800
+            ],
+            "meanNanoseconds": 24271993.333333336,
+            "sampleStandardDeviationNanoseconds": 3431699.0700590936,
+            "cvPercent": 14.138513565535039,
+            "minNanoseconds": 18615600,
+            "maxNanoseconds": 39979100,
+            "p50Nanoseconds": 21206100,
+            "p95Nanoseconds": 39979100
+          },
+          "mean_delta_percent": -4.761208440595144,
+          "cv_delta_percentage_points": 6.224208694343772,
+          "before_counters": {
+            "mean_allocated_bytes": 4259127.466666667,
+            "mean_cpu_ticks": 885416.6666666666,
+            "gc_events": [
+              5,
+              2,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4235758.933333334,
+            "mean_cpu_ticks": 864583.3333333334,
+            "gc_events": [
+              6,
+              3,
+              1
+            ]
+          }
+        }
+      ],
+      "cli": {
+        "new-portable": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 99.4104,
+            "maximum": 121.7119,
+            "median": 105.1533,
+            "p50": 105.1533,
+            "p95": 121.7119,
+            "mean": 105.72943333333333,
+            "sample_standard_deviation": 5.363302659831197,
+            "cv_percent": 5.072667554097547,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 109.0719,
+            "maximum": 125.5454,
+            "median": 111.231,
+            "p50": 111.231,
+            "p95": 125.5454,
+            "mean": 112.90914666666667,
+            "sample_standard_deviation": 4.255763463295842,
+            "cv_percent": 3.769192832410485,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": 6.790647700435359,
+          "cv_delta_percentage_points": -1.3034747216870626
+        },
+        "new-small-api": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 106.8325,
+            "maximum": 120.7145,
+            "median": 109.7314,
+            "p50": 109.7314,
+            "p95": 120.7145,
+            "mean": 110.79389333333333,
+            "sample_standard_deviation": 3.7861733422823534,
+            "cv_percent": 3.4173122979723374,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 115.362,
+            "maximum": 130.4337,
+            "median": 118.3161,
+            "p50": 118.3161,
+            "p95": 130.4337,
+            "mean": 119.81286666666666,
+            "sample_standard_deviation": 4.295638564315913,
+            "cv_percent": 3.5852898639566653,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": 8.140316277359204,
+          "cv_delta_percentage_points": 0.1679775659843279
+        },
+        "validate-portable": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 93.0623,
+            "maximum": 102.6029,
+            "median": 95.4976,
+            "p50": 95.4976,
+            "p95": 102.6029,
+            "mean": 96.67797333333333,
+            "sample_standard_deviation": 3.101790635024197,
+            "cv_percent": 3.2083736636985742,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 101.3389,
+            "maximum": 112.8307,
+            "median": 104.0687,
+            "p50": 104.0687,
+            "p95": 112.8307,
+            "mean": 105.2513,
+            "sample_standard_deviation": 3.7069496113959484,
+            "cv_percent": 3.5219988840004337,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": 8.867921379678624,
+          "cv_delta_percentage_points": 0.31362522030185946
+        },
+        "validate-small-api": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 93.8203,
+            "maximum": 107.6454,
+            "median": 97.7114,
+            "p50": 97.7114,
+            "p95": 107.6454,
+            "mean": 98.42521333333333,
+            "sample_standard_deviation": 4.134257726237249,
+            "cv_percent": 4.200405146429197,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 100.8972,
+            "maximum": 113.7777,
+            "median": 103.6907,
+            "p50": 103.6907,
+            "p95": 113.7777,
+            "mean": 104.51392,
+            "sample_standard_deviation": 3.145131927780272,
+            "cv_percent": 3.0092947693285943,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": 6.186124937363613,
+          "cv_delta_percentage_points": -1.1911103771006024
+        },
+        "export-api": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 254.799,
+            "maximum": 377.2125,
+            "median": 335.6604,
+            "p50": 335.6604,
+            "p95": 377.2125,
+            "mean": 321.41985999999997,
+            "sample_standard_deviation": 40.7290335207629,
+            "cv_percent": 12.671598301599316,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 235.5874,
+            "maximum": 378.1254,
+            "median": 315.5043,
+            "p50": 315.5043,
+            "p95": 378.1254,
+            "mean": 314.97006666666664,
+            "sample_standard_deviation": 32.875345475917854,
+            "cv_percent": 10.437609460428469,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -2.006656755227676,
+          "cv_delta_percentage_points": -2.233988841170847
+        },
+        "export-both": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 558.2606,
+            "maximum": 750.2466,
+            "median": 710.0722,
+            "p50": 710.0722,
+            "p95": 750.2466,
+            "mean": 695.6594466666667,
+            "sample_standard_deviation": 53.259848072055,
+            "cv_percent": 7.656023119826198,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 586.8623,
+            "maximum": 705.3288,
+            "median": 663.4897,
+            "p50": 663.4897,
+            "p95": 705.3288,
+            "mean": 662.2203,
+            "sample_standard_deviation": 33.28568680906898,
+            "cv_percent": 5.026376692026653,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -4.8068270799590636,
+          "cv_delta_percentage_points": -2.6296464277995453
+        },
+        "export-graphql": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 604.321,
+            "maximum": 758.3681,
+            "median": 657.9714,
+            "p50": 657.9714,
+            "p95": 758.3681,
+            "mean": 672.7492,
+            "sample_standard_deviation": 48.29539327149713,
+            "cv_percent": 7.178810955330326,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 600.336,
+            "maximum": 731.9441,
+            "median": 682.0002,
+            "p50": 682.0002,
+            "p95": 731.9441,
+            "mean": 681.76648,
+            "sample_standard_deviation": 35.06993521974953,
+            "cv_percent": 5.143980563513409,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": 1.3403627979044819,
+          "cv_delta_percentage_points": -2.034830391816917
+        },
+        "export-off": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 239.4697,
+            "maximum": 400.7848,
+            "median": 318.5217,
+            "p50": 318.5217,
+            "p95": 400.7848,
+            "mean": 320.04260666666664,
+            "sample_standard_deviation": 48.71355049432883,
+            "cv_percent": 15.220957922351058,
+            "unstable_observation": true,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 265.7756,
+            "maximum": 523.7617,
+            "median": 334.7526,
+            "p50": 334.7526,
+            "p95": 523.7617,
+            "mean": 346.83578666666665,
+            "sample_standard_deviation": 57.70943534858635,
+            "cv_percent": 16.63883531258818,
+            "unstable_observation": true,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": 8.371754085825778,
+          "cv_delta_percentage_points": 1.4178773902371233
+        }
+      },
+      "generator_unstable_before": 4,
+      "generator_unstable_after": 7,
+      "cli_unstable_before": 1,
+      "cli_unstable_after": 1,
+      "zero_cpu_measured_after": 7,
+      "all_306_fixture_and_registry_hashes_identical": true,
+      "all_4_export_artifact_bytes_and_counters_identical": true
+    },
+    "linux": {
+      "generator": [
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17481834.666666668,
+              15306085.333333334,
+              28140731.666666668,
+              24903060.666666668,
+              23718591.666666668
+            ],
+            "meanNanoseconds": 21910060.800000004,
+            "sampleStandardDeviationNanoseconds": 5344898.740821781,
+            "cvPercent": 24.39472345426709,
+            "minNanoseconds": 14662573,
+            "maxNanoseconds": 42782887,
+            "p50Nanoseconds": 22262633,
+            "p95Nanoseconds": 42782887
+          },
+          "after": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              19680135,
+              16439406.666666666,
+              24506570.333333332,
+              14984345.333333334,
+              14839953.333333334
+            ],
+            "meanNanoseconds": 18090082.133333333,
+            "sampleStandardDeviationNanoseconds": 4081459.8100205828,
+            "cvPercent": 22.56186445112906,
+            "minNanoseconds": 14467339,
+            "maxNanoseconds": 39755929,
+            "p50Nanoseconds": 16342656,
+            "p95Nanoseconds": 39755929
+          },
+          "mean_delta_percent": -17.434815455494636,
+          "cv_delta_percentage_points": -1.8328590031380294,
+          "before_counters": {
+            "mean_allocated_bytes": 1181929.0666666667,
+            "mean_cpu_ticks": 336204,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1176040,
+            "mean_cpu_ticks": 283610,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17020936,
+              14554409.666666666,
+              17087542,
+              22508674.333333332,
+              20837157.666666668
+            ],
+            "meanNanoseconds": 18401743.933333334,
+            "sampleStandardDeviationNanoseconds": 3210679.6629667697,
+            "cvPercent": 17.447692319807103,
+            "minNanoseconds": 13718762,
+            "maxNanoseconds": 24033987,
+            "p50Nanoseconds": 20593727,
+            "p95Nanoseconds": 24033987
+          },
+          "after": {
+            "size": 1,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              18175229.333333332,
+              14650043.333333334,
+              14866128.666666666,
+              13799082,
+              14561585
+            ],
+            "meanNanoseconds": 15210413.666666666,
+            "sampleStandardDeviationNanoseconds": 1705543.514619443,
+            "cvPercent": 11.212998883502488,
+            "minNanoseconds": 12915921,
+            "maxNanoseconds": 24970750,
+            "p50Nanoseconds": 14682616,
+            "p95Nanoseconds": 24970750
+          },
+          "mean_delta_percent": -17.34254252329759,
+          "cv_delta_percentage_points": -6.234693436304616,
+          "before_counters": {
+            "mean_allocated_bytes": 1088626.6666666667,
+            "mean_cpu_ticks": 253053.33333333334,
+            "gc_events": [
+              2,
+              2,
+              1
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1080270.4,
+            "mean_cpu_ticks": 229968,
+            "gc_events": [
+              3,
+              2,
+              1
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "size": 1,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              7128596.333333333,
+              8299587,
+              7564105,
+              8077675,
+              10222788.666666666
+            ],
+            "meanNanoseconds": 8258550.4,
+            "sampleStandardDeviationNanoseconds": 1188663.3761772176,
+            "cvPercent": 14.393123715479383,
+            "minNanoseconds": 6903117,
+            "maxNanoseconds": 13250793,
+            "p50Nanoseconds": 7863247,
+            "p95Nanoseconds": 13250793
+          },
+          "after": {
+            "size": 1,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              8366103,
+              6831092.666666667,
+              7531580,
+              8684308.666666666,
+              10120620.333333334
+            ],
+            "meanNanoseconds": 8306740.9333333345,
+            "sampleStandardDeviationNanoseconds": 1246460.1884376726,
+            "cvPercent": 15.005405831736853,
+            "minNanoseconds": 6629103,
+            "maxNanoseconds": 13447559,
+            "p50Nanoseconds": 8143314,
+            "p95Nanoseconds": 13447559
+          },
+          "mean_delta_percent": 0.5835229065543235,
+          "cv_delta_percentage_points": 0.6122821162574699,
+          "before_counters": {
+            "mean_allocated_bytes": 578006.9333333333,
+            "mean_cpu_ticks": 160920.66666666666,
+            "gc_events": [
+              1,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 588292.2666666667,
+            "mean_cpu_ticks": 152364.66666666666,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "size": 1,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              20043250,
+              20029666,
+              21169653.666666668,
+              20470787.666666668,
+              16338842
+            ],
+            "meanNanoseconds": 19610439.866666667,
+            "sampleStandardDeviationNanoseconds": 1886648.7335112758,
+            "cvPercent": 9.62063444950133,
+            "minNanoseconds": 15507545,
+            "maxNanoseconds": 22352133,
+            "p50Nanoseconds": 20096940,
+            "p95Nanoseconds": 22352133
+          },
+          "after": {
+            "size": 1,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14133133,
+              13169185,
+              14471259,
+              16045314.333333334,
+              16056097.333333334
+            ],
+            "meanNanoseconds": 14774997.733333334,
+            "sampleStandardDeviationNanoseconds": 1258749.631371863,
+            "cvPercent": 8.519457356883674,
+            "minNanoseconds": 12752630,
+            "maxNanoseconds": 16882840,
+            "p50Nanoseconds": 15321634,
+            "p95Nanoseconds": 16882840
+          },
+          "mean_delta_percent": -24.657489409773493,
+          "cv_delta_percentage_points": -1.1011770926176556,
+          "before_counters": {
+            "mean_allocated_bytes": 943238.4,
+            "mean_cpu_ticks": 321026.6666666667,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 937470.4,
+            "mean_cpu_ticks": 272944,
+            "gc_events": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "size": 1,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14873514.666666666,
+              15767670.666666666,
+              14236589.666666666,
+              14250418.666666666,
+              14639929.333333334
+            ],
+            "meanNanoseconds": 14753624.6,
+            "sampleStandardDeviationNanoseconds": 627720.2802002567,
+            "cvPercent": 4.254685185634022,
+            "minNanoseconds": 13589349,
+            "maxNanoseconds": 16554961,
+            "p50Nanoseconds": 14692706,
+            "p95Nanoseconds": 16554961
+          },
+          "after": {
+            "size": 1,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              19480380.666666668,
+              17144718.333333332,
+              15670453,
+              16086605.333333334,
+              15756363.333333334
+            ],
+            "meanNanoseconds": 16827704.133333333,
+            "sampleStandardDeviationNanoseconds": 1594789.9172153021,
+            "cvPercent": 9.477168748505898,
+            "minNanoseconds": 15497789,
+            "maxNanoseconds": 23431296,
+            "p50Nanoseconds": 15845454,
+            "p95Nanoseconds": 23431296
+          },
+          "mean_delta_percent": 14.058101582260218,
+          "cv_delta_percentage_points": 5.222483562871876,
+          "before_counters": {
+            "mean_allocated_bytes": 1022973.3333333334,
+            "mean_cpu_ticks": 254427.33333333334,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1021180.2666666667,
+            "mean_cpu_ticks": 327125.3333333333,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 1,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "size": 1,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14783677.333333334,
+              14677362.666666666,
+              13962590,
+              13822603,
+              12470749.333333334
+            ],
+            "meanNanoseconds": 13943396.466666665,
+            "sampleStandardDeviationNanoseconds": 925800.6467721029,
+            "cvPercent": 6.639706824555542,
+            "minNanoseconds": 12214803,
+            "maxNanoseconds": 17139576,
+            "p50Nanoseconds": 13451680,
+            "p95Nanoseconds": 17139576
+          },
+          "after": {
+            "size": 1,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              16377967.666666666,
+              15231010,
+              14878966.666666666,
+              14120908.333333334,
+              15105310.333333334
+            ],
+            "meanNanoseconds": 15142832.6,
+            "sampleStandardDeviationNanoseconds": 813740.7825671987,
+            "cvPercent": 5.373768594438525,
+            "minNanoseconds": 13761937,
+            "maxNanoseconds": 16857321,
+            "p50Nanoseconds": 14786898,
+            "p95Nanoseconds": 16857321
+          },
+          "mean_delta_percent": 8.602180510327795,
+          "cv_delta_percentage_points": -1.2659382301170172,
+          "before_counters": {
+            "mean_allocated_bytes": 930173.8666666667,
+            "mean_cpu_ticks": 253995.33333333334,
+            "gc_events": [
+              2,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 921200,
+            "mean_cpu_ticks": 315312.6666666667,
+            "gc_events": [
+              2,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17106007.333333332,
+              15514568.666666666,
+              16857298.666666668,
+              18501247,
+              15177195.333333334
+            ],
+            "meanNanoseconds": 16631263.4,
+            "sampleStandardDeviationNanoseconds": 1335536.7346348974,
+            "cvPercent": 8.030278292837917,
+            "minNanoseconds": 14012906,
+            "maxNanoseconds": 24672149,
+            "p50Nanoseconds": 15602020,
+            "p95Nanoseconds": 24672149
+          },
+          "after": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17743564.333333332,
+              17707000.333333332,
+              17446978.666666668,
+              16181322.666666666,
+              17980891.333333332
+            ],
+            "meanNanoseconds": 17411951.466666665,
+            "sampleStandardDeviationNanoseconds": 713510.2744656401,
+            "cvPercent": 4.0978191090848135,
+            "minNanoseconds": 15645054,
+            "maxNanoseconds": 21587677,
+            "p50Nanoseconds": 16195718,
+            "p95Nanoseconds": 21587677
+          },
+          "mean_delta_percent": 4.694099587567502,
+          "cv_delta_percentage_points": -3.932459183753103,
+          "before_counters": {
+            "mean_allocated_bytes": 1316576,
+            "mean_cpu_ticks": 343625.3333333333,
+            "gc_events": [
+              4,
+              2,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1309104,
+            "mean_cpu_ticks": 357568,
+            "gc_events": [
+              4,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17424524,
+              16566186.666666666,
+              16905534.333333332,
+              17555799.666666668,
+              17446069.333333332
+            ],
+            "meanNanoseconds": 17179622.8,
+            "sampleStandardDeviationNanoseconds": 425413.8470773429,
+            "cvPercent": 2.4762700091258285,
+            "minNanoseconds": 16348498,
+            "maxNanoseconds": 19294933,
+            "p50Nanoseconds": 16839167,
+            "p95Nanoseconds": 19294933
+          },
+          "after": {
+            "size": 3,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              19127945.333333332,
+              18690449.333333332,
+              20463437.666666668,
+              18447905.333333332,
+              18590760.333333332
+            ],
+            "meanNanoseconds": 19064099.599999998,
+            "sampleStandardDeviationNanoseconds": 822432.863507527,
+            "cvPercent": 4.314039900985028,
+            "minNanoseconds": 17892643,
+            "maxNanoseconds": 23790609,
+            "p50Nanoseconds": 18690967,
+            "p95Nanoseconds": 23790609
+          },
+          "mean_delta_percent": 10.969255972255665,
+          "cv_delta_percentage_points": 1.8377698918591996,
+          "before_counters": {
+            "mean_allocated_bytes": 1427176,
+            "mean_cpu_ticks": 334814,
+            "gc_events": [
+              0,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1424659.2,
+            "mean_cpu_ticks": 392364,
+            "gc_events": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "size": 3,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              13699538.333333334,
+              13883572.333333334,
+              16107968.666666666,
+              13774978.333333334,
+              15661289.666666666
+            ],
+            "meanNanoseconds": 14625469.466666669,
+            "sampleStandardDeviationNanoseconds": 1162091.0412626306,
+            "cvPercent": 7.9456665914977025,
+            "minNanoseconds": 13348794,
+            "maxNanoseconds": 20173407,
+            "p50Nanoseconds": 13748000,
+            "p95Nanoseconds": 20173407
+          },
+          "after": {
+            "size": 3,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              16435312.666666666,
+              16085609.333333334,
+              15207386,
+              15850618.333333334,
+              16838664.333333332
+            ],
+            "meanNanoseconds": 16083518.133333335,
+            "sampleStandardDeviationNanoseconds": 615601.206560374,
+            "cvPercent": 3.827528289874161,
+            "minNanoseconds": 14828937,
+            "maxNanoseconds": 18650473,
+            "p50Nanoseconds": 15690601,
+            "p95Nanoseconds": 18650473
+          },
+          "mean_delta_percent": 9.969243517206383,
+          "cv_delta_percentage_points": -4.118138301623541,
+          "before_counters": {
+            "mean_allocated_bytes": 1164215.4666666666,
+            "mean_cpu_ticks": 323450,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1154166.4,
+            "mean_cpu_ticks": 378266.6666666667,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "size": 3,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              9540192,
+              8005726.666666667,
+              8205921.666666667,
+              8166675.666666667,
+              8663561.666666666
+            ],
+            "meanNanoseconds": 8516415.533333333,
+            "sampleStandardDeviationNanoseconds": 622353.9532224317,
+            "cvPercent": 7.307698300846551,
+            "minNanoseconds": 7745654,
+            "maxNanoseconds": 12506611,
+            "p50Nanoseconds": 8138213,
+            "p95Nanoseconds": 12506611
+          },
+          "after": {
+            "size": 3,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              10978465.333333334,
+              9836573,
+              10946338,
+              9661812.666666666,
+              10160419.333333334
+            ],
+            "meanNanoseconds": 10316721.666666668,
+            "sampleStandardDeviationNanoseconds": 616076.3685132264,
+            "cvPercent": 5.971629248308301,
+            "minNanoseconds": 9302038,
+            "maxNanoseconds": 13333884,
+            "p50Nanoseconds": 10029236,
+            "p95Nanoseconds": 13333884
+          },
+          "mean_delta_percent": 21.139247213653654,
+          "cv_delta_percentage_points": -1.3360690525382495,
+          "before_counters": {
+            "mean_allocated_bytes": 737748.8,
+            "mean_cpu_ticks": 211391.33333333334,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 731375.4666666667,
+            "mean_cpu_ticks": 252640.66666666666,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14862948.333333334,
+              13538086.333333334,
+              13547141.666666666,
+              13010548.666666666,
+              13322573
+            ],
+            "meanNanoseconds": 13656259.6,
+            "sampleStandardDeviationNanoseconds": 708917.9606853286,
+            "cvPercent": 5.1911576189231825,
+            "minNanoseconds": 12516397,
+            "maxNanoseconds": 17408834,
+            "p50Nanoseconds": 13356794,
+            "p95Nanoseconds": 17408834
+          },
+          "after": {
+            "size": 3,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              15056142,
+              13109950.666666666,
+              13209600.333333334,
+              14002720.666666666,
+              13099219.666666666
+            ],
+            "meanNanoseconds": 13695526.666666666,
+            "sampleStandardDeviationNanoseconds": 848564.6602336142,
+            "cvPercent": 6.195925727331996,
+            "minNanoseconds": 12486291,
+            "maxNanoseconds": 18161839,
+            "p50Nanoseconds": 13362276,
+            "p95Nanoseconds": 18161839
+          },
+          "mean_delta_percent": 0.2875389588131938,
+          "cv_delta_percentage_points": 1.0047681084088138,
+          "before_counters": {
+            "mean_allocated_bytes": 1144396.8,
+            "mean_cpu_ticks": 306634.6666666667,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1138746.6666666667,
+            "mean_cpu_ticks": 328175.3333333333,
+            "gc_events": [
+              1,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "size": 3,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              16090821,
+              16713446,
+              14908654,
+              16468635.666666666,
+              15321441.333333334
+            ],
+            "meanNanoseconds": 15900599.6,
+            "sampleStandardDeviationNanoseconds": 764681.1092299774,
+            "cvPercent": 4.8091337966272505,
+            "minNanoseconds": 14452283,
+            "maxNanoseconds": 20200966,
+            "p50Nanoseconds": 15547994,
+            "p95Nanoseconds": 20200966
+          },
+          "after": {
+            "size": 3,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              18050721,
+              16555789,
+              14899891.666666666,
+              15319433.666666666,
+              15350740.333333334
+            ],
+            "meanNanoseconds": 16035315.133333331,
+            "sampleStandardDeviationNanoseconds": 1284821.8974868248,
+            "cvPercent": 8.012451809044949,
+            "minNanoseconds": 14623947,
+            "maxNanoseconds": 23409023,
+            "p50Nanoseconds": 15354501,
+            "p95Nanoseconds": 23409023
+          },
+          "mean_delta_percent": 0.8472355554021371,
+          "cv_delta_percentage_points": 3.2033180124176983,
+          "before_counters": {
+            "mean_allocated_bytes": 1262235.2,
+            "mean_cpu_ticks": 334813.3333333333,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 1260374.9333333333,
+            "mean_cpu_ticks": 371816.6666666667,
+            "gc_events": [
+              2,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "generator",
+          "before": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              38919886.666666664,
+              36840382.333333336,
+              35775975.333333336,
+              32846683.666666668,
+              30778868.666666668
+            ],
+            "meanNanoseconds": 35032359.33333333,
+            "sampleStandardDeviationNanoseconds": 3232806.120952739,
+            "cvPercent": 9.22805709484922,
+            "minNanoseconds": 29030411,
+            "maxNanoseconds": 48663162,
+            "p50Nanoseconds": 31480346,
+            "p95Nanoseconds": 48663162
+          },
+          "after": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              50372988,
+              44557307,
+              38405674.666666664,
+              35737975.666666664,
+              33716603
+            ],
+            "meanNanoseconds": 40558109.666666664,
+            "sampleStandardDeviationNanoseconds": 6837366.044141231,
+            "cvPercent": 16.85819704205946,
+            "minNanoseconds": 25521478,
+            "maxNanoseconds": 62670776,
+            "p50Nanoseconds": 39846433,
+            "p95Nanoseconds": 62670776
+          },
+          "mean_delta_percent": 15.773274876395726,
+          "cv_delta_percentage_points": 7.630139947210239,
+          "before_counters": {
+            "mean_allocated_bytes": 5132084.266666667,
+            "mean_cpu_ticks": 1257991.3333333333,
+            "gc_events": [
+              5,
+              2,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 5145534.933333334,
+            "mean_cpu_ticks": 1424046.6666666667,
+            "gc_events": [
+              9,
+              5,
+              2
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "fresh",
+          "variant": "manual",
+          "before": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              29016877.666666668,
+              31054618.666666668,
+              22295421.333333332,
+              21995100.666666668,
+              21439892.333333332
+            ],
+            "meanNanoseconds": 25160382.133333333,
+            "sampleStandardDeviationNanoseconds": 4518949.922552957,
+            "cvPercent": 17.96057746104777,
+            "minNanoseconds": 20412953,
+            "maxNanoseconds": 46341209,
+            "p50Nanoseconds": 22953044,
+            "p95Nanoseconds": 46341209
+          },
+          "after": {
+            "size": 32,
+            "state": "fresh",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              35202397.666666664,
+              34393739.333333336,
+              28600744,
+              26323705,
+              23159135
+            ],
+            "meanNanoseconds": 29535944.2,
+            "sampleStandardDeviationNanoseconds": 5185644.707088913,
+            "cvPercent": 17.55706427387181,
+            "minNanoseconds": 18225532,
+            "maxNanoseconds": 42345751,
+            "p50Nanoseconds": 29111063,
+            "p95Nanoseconds": 42345751
+          },
+          "mean_delta_percent": 17.39068207898866,
+          "cv_delta_percentage_points": -0.4035131871759603,
+          "before_counters": {
+            "mean_allocated_bytes": 4601496,
+            "mean_cpu_ticks": 1098840,
+            "gc_events": [
+              4,
+              2,
+              1
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4618482.666666667,
+            "mean_cpu_ticks": 1257728.6666666667,
+            "gc_events": [
+              8,
+              2,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "manual",
+          "before": {
+            "size": 32,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              15087377,
+              14139185.333333334,
+              15821187,
+              13041798,
+              12316507.333333334
+            ],
+            "meanNanoseconds": 14081210.933333334,
+            "sampleStandardDeviationNanoseconds": 1435078.912392381,
+            "cvPercent": 10.191445318067302,
+            "minNanoseconds": 10146191,
+            "maxNanoseconds": 23608615,
+            "p50Nanoseconds": 12369687,
+            "p95Nanoseconds": 23608615
+          },
+          "after": {
+            "size": 32,
+            "state": "noop",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              12590927.333333334,
+              12482431,
+              11376723,
+              10353960.666666666,
+              9333565.333333334
+            ],
+            "meanNanoseconds": 11227521.466666667,
+            "sampleStandardDeviationNanoseconds": 1396971.0893526552,
+            "cvPercent": 12.442381815969942,
+            "minNanoseconds": 8050517,
+            "maxNanoseconds": 17520679,
+            "p50Nanoseconds": 9874674,
+            "p95Nanoseconds": 17520679
+          },
+          "mean_delta_percent": -20.26593792378576,
+          "cv_delta_percentage_points": 2.2509364979026394,
+          "before_counters": {
+            "mean_allocated_bytes": 3210495.466666667,
+            "mean_cpu_ticks": 604718,
+            "gc_events": [
+              5,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 3213580.2666666666,
+            "mean_cpu_ticks": 545731.3333333334,
+            "gc_events": [
+              3,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "noop",
+          "variant": "generator",
+          "before": {
+            "size": 32,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17681346.333333332,
+              17439524.666666668,
+              19509631.333333332,
+              19429803,
+              18538899.666666668
+            ],
+            "meanNanoseconds": 18519841,
+            "sampleStandardDeviationNanoseconds": 958936.3462027134,
+            "cvPercent": 5.177886495908433,
+            "minNanoseconds": 14111527,
+            "maxNanoseconds": 27696528,
+            "p50Nanoseconds": 16521432,
+            "p95Nanoseconds": 27696528
+          },
+          "after": {
+            "size": 32,
+            "state": "noop",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              17329322,
+              17111636.666666668,
+              14659969,
+              14779219.333333334,
+              16702657.333333334
+            ],
+            "meanNanoseconds": 16116560.866666669,
+            "sampleStandardDeviationNanoseconds": 1295628.8748448163,
+            "cvPercent": 8.039115078977682,
+            "minNanoseconds": 12600113,
+            "maxNanoseconds": 24232948,
+            "p50Nanoseconds": 15869147,
+            "p95Nanoseconds": 24232948
+          },
+          "mean_delta_percent": -12.976785995804885,
+          "cv_delta_percentage_points": 2.8612285830692485,
+          "before_counters": {
+            "mean_allocated_bytes": 4308386.133333334,
+            "mean_cpu_ticks": 847830.6666666666,
+            "gc_events": [
+              6,
+              2,
+              1
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4305541.866666666,
+            "mean_cpu_ticks": 800143.3333333334,
+            "gc_events": [
+              4,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "generator",
+          "before": {
+            "size": 32,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              27072235.666666668,
+              23652191.666666668,
+              22465607.333333332,
+              21150225,
+              25562785.666666668
+            ],
+            "meanNanoseconds": 23980609.06666667,
+            "sampleStandardDeviationNanoseconds": 2370421.9051089534,
+            "cvPercent": 9.884744372084644,
+            "minNanoseconds": 17248404,
+            "maxNanoseconds": 32834486,
+            "p50Nanoseconds": 23841903,
+            "p95Nanoseconds": 32834486
+          },
+          "after": {
+            "size": 32,
+            "state": "edit",
+            "variant": "generator",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              23659754.333333332,
+              18695382.333333332,
+              17737741.666666668,
+              16467311,
+              20785062.333333332
+            ],
+            "meanNanoseconds": 19469050.333333332,
+            "sampleStandardDeviationNanoseconds": 2824018.3470783057,
+            "cvPercent": 14.505167425877213,
+            "minNanoseconds": 15047114,
+            "maxNanoseconds": 27822567,
+            "p50Nanoseconds": 17313185,
+            "p95Nanoseconds": 27822567
+          },
+          "mean_delta_percent": -18.81336174903271,
+          "cv_delta_percentage_points": 4.620423053792569,
+          "before_counters": {
+            "mean_allocated_bytes": 4794543.466666667,
+            "mean_cpu_ticks": 946083.3333333334,
+            "gc_events": [
+              8,
+              2,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4772757.866666666,
+            "mean_cpu_ticks": 844694.6666666666,
+            "gc_events": [
+              6,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "size": 32,
+          "state": "edit",
+          "variant": "manual",
+          "before": {
+            "size": 32,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14766959.333333334,
+              16305911.333333334,
+              15338458,
+              11346042.666666666,
+              15000738.333333334
+            ],
+            "meanNanoseconds": 14551621.933333334,
+            "sampleStandardDeviationNanoseconds": 1885501.0253398672,
+            "cvPercent": 12.957325540603543,
+            "minNanoseconds": 10758034,
+            "maxNanoseconds": 25495656,
+            "p50Nanoseconds": 12165127,
+            "p95Nanoseconds": 25495656
+          },
+          "after": {
+            "size": 32,
+            "state": "edit",
+            "variant": "manual",
+            "count": 15,
+            "repetitionMeansNanoseconds": [
+              14004783.333333334,
+              14974889.666666666,
+              19713248.666666668,
+              14939539.333333334,
+              15878510.666666666
+            ],
+            "meanNanoseconds": 15902194.333333334,
+            "sampleStandardDeviationNanoseconds": 2231113.1271437886,
+            "cvPercent": 14.030221744096336,
+            "minNanoseconds": 10504035,
+            "maxNanoseconds": 24909545,
+            "p50Nanoseconds": 12467369,
+            "p95Nanoseconds": 24909545
+          },
+          "mean_delta_percent": 9.28124992655459,
+          "cv_delta_percentage_points": 1.0728962034927925,
+          "before_counters": {
+            "mean_allocated_bytes": 4249646.933333334,
+            "mean_cpu_ticks": 780612.6666666666,
+            "gc_events": [
+              5,
+              1,
+              0
+            ]
+          },
+          "after_counters": {
+            "mean_allocated_bytes": 4239873.6,
+            "mean_cpu_ticks": 770250.6666666666,
+            "gc_events": [
+              7,
+              4,
+              1
+            ]
+          }
+        }
+      ],
+      "cli": {
+        "new-portable": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 416.949816,
+            "maximum": 502.235573,
+            "median": 439.226857,
+            "p50": 439.226857,
+            "p95": 502.235573,
+            "mean": 443.978103,
+            "sample_standard_deviation": 21.773861294327414,
+            "cv_percent": 4.904264680442453,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 401.637101,
+            "maximum": 507.375321,
+            "median": 422.766941,
+            "p50": 422.766941,
+            "p95": 507.375321,
+            "mean": 429.6632902,
+            "sample_standard_deviation": 30.785032982816606,
+            "cv_percent": 7.164920458642572,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -3.224215947424769,
+          "cv_delta_percentage_points": 2.2606557782001193
+        },
+        "new-small-api": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 610.254901,
+            "maximum": 738.988319,
+            "median": 640.238677,
+            "p50": 640.238677,
+            "p95": 738.988319,
+            "mean": 653.3847736,
+            "sample_standard_deviation": 41.84200344814117,
+            "cv_percent": 6.403884072412852,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 573.174906,
+            "maximum": 753.042513,
+            "median": 608.443502,
+            "p50": 608.443502,
+            "p95": 753.042513,
+            "mean": 624.9802094666667,
+            "sample_standard_deviation": 49.2334833087944,
+            "cv_percent": 7.877606772670178,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -4.347295082625003,
+          "cv_delta_percentage_points": 1.4737227002573254
+        },
+        "validate-portable": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 172.529228,
+            "maximum": 222.701003,
+            "median": 190.064365,
+            "p50": 190.064365,
+            "p95": 222.701003,
+            "mean": 194.8282218,
+            "sample_standard_deviation": 15.314602856446138,
+            "cv_percent": 7.8605669727701315,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 168.355609,
+            "maximum": 211.814391,
+            "median": 179.16072,
+            "p50": 179.16072,
+            "p95": 211.814391,
+            "mean": 181.7834056,
+            "sample_standard_deviation": 12.190702048232762,
+            "cv_percent": 6.706168810071386,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -6.695547533863488,
+          "cv_delta_percentage_points": -1.1543981626987456
+        },
+        "validate-small-api": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 177.13257,
+            "maximum": 213.516529,
+            "median": 190.732975,
+            "p50": 190.732975,
+            "p95": 213.516529,
+            "mean": 192.42324933333333,
+            "sample_standard_deviation": 11.273843871988658,
+            "cv_percent": 5.858878233814181,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 164.645625,
+            "maximum": 194.955477,
+            "median": 176.997964,
+            "p50": 176.997964,
+            "p95": 194.955477,
+            "mean": 178.22546453333334,
+            "sample_standard_deviation": 8.004237378886227,
+            "cv_percent": 4.491073932585656,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -7.378414432346103,
+          "cv_delta_percentage_points": -1.3678043012285253
+        },
+        "export-api": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 282.061918,
+            "maximum": 357.812297,
+            "median": 321.341927,
+            "p50": 321.341927,
+            "p95": 357.812297,
+            "mean": 319.7873105333333,
+            "sample_standard_deviation": 22.606429337574784,
+            "cv_percent": 7.069207749323243,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 221.494261,
+            "maximum": 286.406801,
+            "median": 241.564418,
+            "p50": 241.564418,
+            "p95": 286.406801,
+            "mean": 243.16175446666668,
+            "sample_standard_deviation": 16.684185506391596,
+            "cv_percent": 6.861352659255761,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -23.96141233336383,
+          "cv_delta_percentage_points": -0.20785509006748182
+        },
+        "export-both": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 766.562715,
+            "maximum": 913.841173,
+            "median": 802.729779,
+            "p50": 802.729779,
+            "p95": 913.841173,
+            "mean": 814.6421329333333,
+            "sample_standard_deviation": 45.33782049232934,
+            "cv_percent": 5.565366516101812,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 711.74616,
+            "maximum": 1021.959934,
+            "median": 761.123481,
+            "p50": 761.123481,
+            "p95": 1021.959934,
+            "mean": 782.3680484,
+            "sample_standard_deviation": 78.73628675597881,
+            "cv_percent": 10.063842320375977,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -3.961749979358664,
+          "cv_delta_percentage_points": 4.4984758042741655
+        },
+        "export-graphql": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 736.848389,
+            "maximum": 913.404403,
+            "median": 777.195558,
+            "p50": 777.195558,
+            "p95": 913.404403,
+            "mean": 788.7771846,
+            "sample_standard_deviation": 41.03360483835198,
+            "cv_percent": 5.202179479767875,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 681.217505,
+            "maximum": 878.920608,
+            "median": 718.396896,
+            "p50": 718.396896,
+            "p95": 878.920608,
+            "mean": 750.1113789999999,
+            "sample_standard_deviation": 62.69194025969092,
+            "cv_percent": 8.357684207279693,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -4.9019934089001405,
+          "cv_delta_percentage_points": 3.1555047275118175
+        },
+        "export-off": {
+          "before": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 264.572782,
+            "maximum": 321.465553,
+            "median": 290.568757,
+            "p50": 290.568757,
+            "p95": 321.465553,
+            "mean": 289.65481946666665,
+            "sample_standard_deviation": 16.496267109396364,
+            "cv_percent": 5.695146774968385,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "after": {
+            "unit": "milliseconds",
+            "count": 15,
+            "minimum": 211.84283,
+            "maximum": 296.654848,
+            "median": 218.380322,
+            "p50": 218.380322,
+            "p95": 296.654848,
+            "mean": 232.53365406666666,
+            "sample_standard_deviation": 24.94839542866034,
+            "cv_percent": 10.72893965770121,
+            "unstable_observation": false,
+            "percentile_method": "nearest rank ceil(p*n)",
+            "filtering": "none"
+          },
+          "mean_delta_percent": -19.720426369972234,
+          "cv_delta_percentage_points": 5.033792882732825
+        }
+      },
+      "generator_unstable_before": 3,
+      "generator_unstable_after": 4,
+      "cli_unstable_before": 0,
+      "cli_unstable_after": 0,
+      "zero_cpu_measured_after": 0,
+      "all_306_fixture_and_registry_hashes_identical": true,
+      "all_4_export_artifact_bytes_and_counters_identical": true
+    }
+  }
+}

@@ -1,0 +1,31 @@
+from pathlib import Path
+import os,json,hashlib,sys
+base=Path('D:/Cephalon');samples=base/'Cehpalon-Engine-Samples';docs=base/'Cehpalon-Engine-Docs'
+allowed={'.json','.jsonl','.txt','.md','.cs','.csproj','.py','.graphql','.config','.props','.ps1'}
+exclude={'.git','bin','obj','__pycache__','private','.private-fixtures','private-fixtures','clones'}
+def retain(source,target):
+ target.mkdir(parents=True,exist_ok=False);entries=[]
+ for parent,dirs,files in os.walk(source,followlinks=False):
+  dirs[:]=sorted(n for n in dirs if n not in exclude and not n.endswith('artifacts') and not n.startswith('engine source'))
+  for name in sorted(files):
+   p=Path(parent)/name
+   if p.suffix.lower() not in allowed:continue
+   if p.is_symlink() or not p.is_file():continue
+   relative=p.relative_to(source).as_posix();stored=relative+('.txt' if p.suffix.lower() in {'.cs','.csproj','.py','.props','.ps1'} else '')
+   data=p.read_bytes();out=target/stored;out.parent.mkdir(parents=True,exist_ok=True);out.write_bytes(data);entries.append({'source_relative':relative,'path':stored,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest()})
+ r={'source_attempt':str(source),'retention':'Exact bytes; code/project suffixes add .txt. Binary/build/private material/clone checkouts excluded; no credential state retained.','count':len(entries),'bytes':sum(x['bytes'] for x in entries),'files':entries}
+ (target/'retention.json').write_text(json.dumps(r,indent=2)+'\n',encoding='utf-8',newline='\n');print(str(target.relative_to(base)),r['count'],r['bytes'])
+phase=sys.argv[1];prefix=samples/'tooling-benchmark/evidence/2026-10-30-variance'
+if phase=='01':
+ for host,tag in [('windows','win01'),('linux','linux01')]:
+  retain(samples/f'.local/tooling-variance-{tag}-benchmark',prefix/f'candidate01/{host}')
+  retain(base/f'Cehpalon-Engine/.local/tooling-variance-{tag}-contracts',docs/f'internal/evidence/tooling-variance/components/candidate01/{host}')
+  for kind in ('small-api','contracts','portable'):retain(samples/f'.local/tooling-variance-{tag}-{kind}',prefix/f'regressions/{host}-{kind}')
+ retain(samples/'.local/tooling-variance-regressions01',prefix/'regression-controller')
+ retain(base/'.worktrees/tooling-variance-generator/.local/generator-variance-validation01',prefix/'generator-contracts')
+elif phase=='02':
+ for host,tag in [('windows','win01'),('linux','linux01')]:
+  retain(samples/f'.local/tooling-variance-{tag}-benchmark02',prefix/f'candidate02/{host}')
+  retain(base/f'Cehpalon-Engine/.local/tooling-variance-{tag}-contracts02',docs/f'internal/evidence/tooling-variance/components/candidate02/{host}')
+ retain(base/'.worktrees/tooling-variance-recorder/.local/recorder-options-diagnostic01',prefix/'recorder-diagnostic')
+else:raise ValueError('unknown phase')

@@ -1,0 +1,22 @@
+{
+  "method": "git cat-file --batch index bytes/size/SHA256 vs every retained raw entry and six actual source/lock files",
+  "checked": 4376,
+  "raw_files": 4370,
+  "attempts": {
+    "candidate01/linux": 930,
+    "candidate01/windows": 930,
+    "candidate02/linux": 930,
+    "candidate02/windows": 930,
+    "generator-contracts": 21,
+    "recorder-diagnostic": 25,
+    "regression-controller": 26,
+    "regressions/linux-contracts": 74,
+    "regressions/linux-portable": 145,
+    "regressions/linux-small-api": 70,
+    "regressions/windows-contracts": 74,
+    "regressions/windows-portable": 145,
+    "regressions/windows-small-api": 70
+  },
+  "mismatches": [],
+  "status": "passed"
+}
