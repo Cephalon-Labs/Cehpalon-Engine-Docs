@@ -65,3 +65,7 @@ Original #20 In Progress/P2/M0, W5/#2/#11 dependencies, fullTest+BenchmarkPlanne
 See [delivery metadata](../evidence/tooling-waits/delivery.json) and [lossless raw evidence](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/main/tooling-traces/evidence/2026-10-30-waits). Raw traces, failed01, corrected02, synthetic/negative setup, source snapshots, analysis/audit scripts and every original output are retained with original/stored hashes. DerivedETLX/build/private/clone material excluded. Next stronger performance work requires a controlled reference environment or a newly scoped causal worker/GC study, with a predeclared protocol; repeated unchanged runs until CV drops remain unjustified.
 
 Final live CI readback clarifies job counts:2 jobs per Engine run,4 total across the component/platform pair, all0 steps with payment/spending annotations. Read the earlier compact4jobs wording as the component/platform pair total, not4 per run; historical raw records remain retained. No job was rerun.
+
+## 2026-10-31 qualification of legacy GC observations
+
+[ADR0020 follow-up](tooling-emit-workers.md) found two disputed cross-initiator ends among the legacy 23 GC envelopes. Preserve original results, but treat 321.309097 ms as legacy-model overlap rather than certified pause time. Neither pairing model supports total GC or an exclusive GC/scheduler split.

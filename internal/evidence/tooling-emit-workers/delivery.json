@@ -1,0 +1,69 @@
+{
+  "date_bangkok": "2026-10-31",
+  "scope": "ADR0020 offline Emit worker GC/scheduler diagnosis; no Engine change",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "c8993d5603bdf647ea46a17bcab07453caf68755",
+  "raw_input_revision": "6436ab1546bfe525a4cb13b3bdc6c23a2c611faf",
+  "context_source_sha256": "4738c34d631b637af6f31bcb1eba4c0b73f7ce9bced8d38d0bc25f1c074506cc",
+  "scheduler_source_sha256": "e466a056c63e656a23e6bbe6ffd514accae3a2f2822ee21422f59721e2b6e41c",
+  "declaration_sha256": "39fdf03a67b1b270ce06994d7fd6f73a34baaa8b8777de6996d3bf392e79a04b",
+  "tests": {
+    "classifier_each_windows_wsl": 20,
+    "scheduler_each_windows_wsl": 30,
+    "independent_credit": 19,
+    "independent_point_checks": 294835,
+    "independent_endpoint_checks": 1078247,
+    "root_final_replay_output_hashes_equal_agent": true,
+    "retained_staged_blobs_verified": 139
+  },
+  "retention": {
+    "count": 139,
+    "original_bytes": 240891448,
+    "stored_bytes": 13575750
+  },
+  "product_patch": false,
+  "new_target_build_capture_benchmark": false,
+  "verdict": "No exclusive GC/scheduler share, starvation diagnosis or avoidable Engine work isolated",
+  "gc": {
+    "legacy_envelopes": 23,
+    "legacy_errors": 1637,
+    "disputed_legacy_ends": 2,
+    "fourphase_agreement": 21,
+    "supplementary_gc_label_hypotheses": 83,
+    "neither_model_certified": true
+  },
+  "scheduler_scope": "Stored endpoint-accrued counters only; in-query CPU/runqueue durations and lower bounds remain null",
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_only_plan_sha256": "56ef4f8552e0ea2b27ac426e4bb907c6607b8ce5c90d11f50c7e0d0050839fff",
+    "preparation_failures_retained": [
+      "plan stdout cp1252 encoding after plan saved; reviewed exact saved plan",
+      "first readback correctly rejected active apply lock; repeated after apply completed"
+    ]
+  },
+  "ci": {
+    "component_run": 40993252408,
+    "platform_run": 40993252420,
+    "steps": 0,
+    "status": "unchanged payment/spending rejection before execution; no rerun/billing action"
+  },
+  "original_benchmark": {
+    "new_series": false,
+    "generator_unstable_windows": 9,
+    "generator_unstable_linux": 3,
+    "cli_unstable_windows": 0,
+    "cli_unstable_linux": 0,
+    "status": "Observed, not qualified; unchanged original gates"
+  },
+  "limits": [
+    "No task lineage",
+    "Exact installed runtime source unavailable",
+    "Matching-name kernel tag is not binary attestation",
+    "Conditional clocks and point sampling leave unknown gaps",
+    "No supported-Windows/provider/production/reference/release qualification"
+  ]
+}
