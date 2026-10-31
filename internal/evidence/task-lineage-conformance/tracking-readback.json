@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "mirrors": 23,
+  "issue3_entire_row_identical": true,
+  "other22_rows_identical": true,
+  "issue20_nonbody_metadata_identical": true,
+  "plan_sha256": "9dd3281f64c9cddded72b50f00faf9ff02b3f02dfbfde260969184a31a583214"
+}
