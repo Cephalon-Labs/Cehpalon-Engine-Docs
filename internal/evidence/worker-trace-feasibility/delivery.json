@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-31",
+  "scope": "ADR0021 passive inventory and exact source review",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "33939a056f89b4eb02c871c9fb39bfafb8456140",
+  "probe_source_sha256": "83f2fc5ad8b149d1b94312d0340df1b761985c284fb823e0cda737cfbb4901b3",
+  "tests": {
+    "windows_guards": 12,
+    "wsl_guards": 12,
+    "independent_review": "passed"
+  },
+  "scheduler_transition_readiness": "not established; event format access denied",
+  "source_lookup_correction": "dotnet/runtime URL404; exact dotnet/dotnet VMR sources200; preserve original lookup",
+  "source_manifest_sha256": "9a0a28b3c2468b2b0aed3749aba3c71361c9ffca4395236a154ae7d266560a7c",
+  "tpl_candidate": "System.Threading.Tasks.TplEventSource:0x43:5; untested",
+  "gc_pairing_certified": false,
+  "engine_patch": false,
+  "new_target_build_capture_benchmark": false,
+  "host_permission_configuration_change": false,
+  "retention": {
+    "count": 22,
+    "original_bytes": 935691,
+    "stored_bytes": 604271
+  },
+  "staged_payloads_byte_verified": 22,
+  "ci": "unchanged Engine payment/spending pre-step rejection; no rerun",
+  "original_benchmark": "unchanged, observed/unqualified",
+  "tracking": {
+    "mirrors": 23,
+    "issue3_entire_row_identical": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "plan_sha256": "d473347a46c766ccc93bc5c9bb86b6a7052f99515e1f8efaa6b82e204651aa6a",
+    "status": "passed"
+  }
+}

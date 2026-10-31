@@ -29,3 +29,7 @@ Original full benchmark remains Observed/unqualified (generator unstable cases W
 A separately declared experiment would need a version-specific runtime suspension contract and same-execution task lineage plus scheduler transition accounting to bound actual worker progress. Decide feasibility and perturbation before any new capture. Retain the original full benchmark protocol; only a justified product change would warrant the full unchanged comparison.
 
 [ADR0020](../adr/ADR-0020-emit-worker-gc-scheduler-analysis.md) and [machine evidence](../evidence/tooling-emit-workers/delivery.json).
+
+## Subsequent source lookup correction (ADR0021)
+
+The exact runtime revision was located in dotnet/dotnet VMR under src/runtime. Earlier dotnet/runtime HTTP404 was URL-specific, not proof source is unavailable. [Feasibility follow-up](../planning/worker-trace-feasibility.md) records the exact sources; GC pairing remains uncertified pending caller-path/retry review. Original raw outputs are preserved.

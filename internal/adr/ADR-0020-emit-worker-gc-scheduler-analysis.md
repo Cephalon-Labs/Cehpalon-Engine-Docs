@@ -29,3 +29,7 @@ Publish a reproducible bounded report and machine-readable evidence, including n
 ## Execution outcome
 
 Offline replay and focused/independent checks completed. Two legacy GC boundaries disagree; stored scheduler credits cannot establish phase durations. Neither GC model is certified. No Engine patch or unchanged-source benchmark is justified. See [report](../planning/tooling-emit-workers.md). Original pre-replay declaration is retained byte-for-byte with SHA256 in Samples evidence.
+
+## Subsequent source lookup correction (ADR0021)
+
+The exact runtime revision was located in dotnet/dotnet VMR under src/runtime. Earlier dotnet/runtime HTTP404 was URL-specific, not proof source is unavailable. [Feasibility follow-up](../planning/worker-trace-feasibility.md) records the exact sources; GC pairing remains uncertified pending caller-path/retry review. Original raw outputs are preserved.
