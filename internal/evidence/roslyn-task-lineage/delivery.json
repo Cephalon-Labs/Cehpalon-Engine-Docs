@@ -1,0 +1,149 @@
+{
+  "date_bangkok": "2026-11-01",
+  "scope": "ADR0023 one complete unchanged Roslyn generator TPL diagnostic lane",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "fd42c354f7424a449c6a690bd794441a16ce2535",
+  "protocol_sha256": "d1a78ab1c6ef91f419a38b4a972b84e8c605f0a0d066f43296dfdc83ac227757",
+  "sources_sha256": {
+    "tools/capture_roslyn_task_lineage.py": "7458258da434d868ff82a986fb882aa64aab1b46a72d58b58c1d65e155142144",
+    "tools/analyze_roslyn_task_lineage.py": "f7599be4aa4629625b6cfd9773746e785108cc9f441c373d28734f8217f7ac79",
+    "tools/test_roslyn_task_lineage.py": "702e4048a0f38490abd26613076c71c52c0f9f8cba7af716fc69e16fc3f7dcbd"
+  },
+  "assembler_sha256": "7fe853f20ad5f257c726283b1a5d72329057508b3c50731e19e3984cd452773b",
+  "raw_events": 641481,
+  "stack_samples": 212495,
+  "raw_sample_etlx_multiset_parity": true,
+  "spans": 2956,
+  "rows": 306,
+  "tpl_execution_event_lifetimes": 19527,
+  "tpl_paired_waits": 2372,
+  "tpl_errors": 0,
+  "tpl_unfinished_waits": 0,
+  "eventpipe_loss": 0,
+  "etlx_loss": 0,
+  "payload_errors": 0,
+  "groups": {
+    "primer": {
+      "rows": 36,
+      "caller_wait_row_associations": 264,
+      "distinct_caller_waits": 264,
+      "waits_with_caller_waitforworkers_point": 68,
+      "rows_with_caller_waitforworkers_point": 36,
+      "waits_with_both_caller_and_compiler_method_context": 64,
+      "rows_with_both_contexts": 36,
+      "compiler_point_associations": 374,
+      "distinct_compiler_points": 374,
+      "compiler_point_ambiguous_execution_scopes": 0,
+      "compiler_point_proc_birth_not_single_observed": 0,
+      "native_lifetimes_proven": 0,
+      "nested_caller_point_scope_associations": 0,
+      "row_scope_counts": {
+        "entire_wait_inside_guaranteed_emit_core": 264
+      }
+    },
+    "measurement": {
+      "rows": 270,
+      "caller_wait_row_associations": 1913,
+      "distinct_caller_waits": 1913,
+      "waits_with_caller_waitforworkers_point": 527,
+      "rows_with_caller_waitforworkers_point": 270,
+      "waits_with_both_caller_and_compiler_method_context": 486,
+      "rows_with_both_contexts": 270,
+      "compiler_point_associations": 2573,
+      "distinct_compiler_points": 2573,
+      "compiler_point_ambiguous_execution_scopes": 0,
+      "compiler_point_proc_birth_not_single_observed": 0,
+      "native_lifetimes_proven": 0,
+      "nested_caller_point_scope_associations": 0,
+      "row_scope_counts": {
+        "entire_wait_inside_guaranteed_emit_core": 1913
+      }
+    }
+  },
+  "tests": {
+    "runner_guards_each_windows_wsl": 10,
+    "lineage_fixtures_each_windows_wsl": 69,
+    "independent_final_replay_checks": 1262459
+  },
+  "retention": {
+    "count": 89,
+    "original_bytes": 769297581,
+    "stored_bytes": 50274294
+  },
+  "staged_payloads_exact_bytes_verified": 89,
+  "staged_source_files_exact_bytes_verified": 3,
+  "source_and_binary_freezes": {
+    "binary_files_before_after": 211,
+    "loaded_python_modules": 7,
+    "source_and_code_observations": true,
+    "immutable_attestation": false
+  },
+  "new_capture_targets": 1,
+  "rebuilds": 0,
+  "repeated_targets": 0,
+  "engine_patch": false,
+  "original_benchmark_rerun": false,
+  "cli_capture": false,
+  "native_scheduler_capture_or_permission_change": false,
+  "original_benchmark": "Observed/unqualified unchanged original gates; generatorunstableWindows9/Linux3,CLI0/0",
+  "gc_model_scope": "Legacy78related/70errors unaccepted; prior23/21/83remainseparate",
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "plan_sha256": "efe6c95d45de9c85b8abfc2b535979c605529c72e31274628c905d98420d34ce"
+  },
+  "ci": [
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    },
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    }
+  ],
+  "limits": [
+    "Explicit TPL awaitedTaskID links execution headers, not proven direct WaitForWorkers callsite ownership.",
+    "All containing/nested scope candidates retained; method frames are point co-observations only.",
+    "Proc births are sampled partial context; native lifetime/task authority not established.",
+    "Conditional marker clock core excludes uncertain boundaries; missing samples never imply zero activity.",
+    "No CPU, blocked time, scheduler delay, GC cause, timing comparison or qualification."
+  ],
+  "repositories": {
+    "Cehpalon-Engine": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Docs": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Samples": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    }
+  }
+}
