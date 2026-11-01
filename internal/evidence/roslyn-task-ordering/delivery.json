@@ -1,0 +1,331 @@
+{
+  "date_bangkok": "2026-11-01",
+  "scope": "ADR0024 full offline literal task event ordering, no new target/build/capture/benchmark",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "e3850356b5de80000ad0e0a7442f4775d51f632d",
+  "raw_input_revision": "fd42c354f7424a449c6a690bd794441a16ce2535",
+  "protocol_sha256": "4b6ce040d4cb7b23f84e9921a67bfd367ddc4be41c6f7baaec2eaeaf4f6ac7d3",
+  "header_crosstab_declaration_sha256": "c2668dbf0c818b2ce5d28ac3c97ec34cd64dbe3a5b12a4ddb1b2df8c9607a518",
+  "sources_sha256": {
+    "tools/analyze_roslyn_task_ordering.py": "3bd44fb5e863ddeae02a418bd8e94d53088abf37bbc7224f18fe77ad038b3dd4",
+    "tools/test_roslyn_task_ordering.py": "91965dd0edc692ccbccdbe556c3cba570119f56d99ea52f405905af7654ca05f"
+  },
+  "raw_records": 641481,
+  "strict_raw_reference_bindings": 63325,
+  "all_waits": {
+    "associations": 2372,
+    "distinct_waits": 2372,
+    "relations": {
+      "schedule_vs_wait_begin": {
+        "before": 2372
+      },
+      "execution_start_vs_wait_begin": {
+        "before": 1223,
+        "after": 1149
+      },
+      "execution_completion_vs_wait_begin": {
+        "after": 2316,
+        "before": 56
+      },
+      "execution_completion_vs_wait_end": {
+        "before": 2235,
+        "after": 137
+      }
+    },
+    "start_vs_wait_begin_by_header_relation": {
+      "different_recorded_native_tid/before": 1223,
+      "different_recorded_native_tid/after": 1144,
+      "same_recorded_native_tid/after": 5
+    },
+    "unknown_execution_contexts": 0
+  },
+  "main_waits": {
+    "associations": 2345,
+    "distinct_waits": 2345,
+    "relations": {
+      "schedule_vs_wait_begin": {
+        "before": 2345
+      },
+      "execution_start_vs_wait_begin": {
+        "before": 1205,
+        "after": 1140
+      },
+      "execution_completion_vs_wait_begin": {
+        "after": 2289,
+        "before": 56
+      },
+      "execution_completion_vs_wait_end": {
+        "before": 2211,
+        "after": 134
+      }
+    },
+    "start_vs_wait_begin_by_header_relation": {
+      "different_recorded_native_tid/before": 1205,
+      "different_recorded_native_tid/after": 1140
+    },
+    "unknown_execution_contexts": 0
+  },
+  "nonmain_waits": {
+    "associations": 27,
+    "distinct_waits": 27,
+    "relations": {
+      "schedule_vs_wait_begin": {
+        "before": 27
+      },
+      "execution_start_vs_wait_begin": {
+        "after": 9,
+        "before": 18
+      },
+      "execution_completion_vs_wait_begin": {
+        "after": 27
+      },
+      "execution_completion_vs_wait_end": {
+        "before": 24,
+        "after": 3
+      }
+    },
+    "start_vs_wait_begin_by_header_relation": {
+      "different_recorded_native_tid/after": 4,
+      "different_recorded_native_tid/before": 18,
+      "same_recorded_native_tid/after": 5
+    },
+    "unknown_execution_contexts": 0
+  },
+  "groups": {
+    "primer": {
+      "rows": 36,
+      "all_observed_caller_waits": {
+        "associations": 264,
+        "distinct_waits": 264,
+        "relations": {
+          "schedule_vs_wait_begin": {
+            "before": 264
+          },
+          "execution_start_vs_wait_begin": {
+            "after": 126,
+            "before": 138
+          },
+          "execution_completion_vs_wait_begin": {
+            "after": 252,
+            "before": 12
+          },
+          "execution_completion_vs_wait_end": {
+            "before": 251,
+            "after": 13
+          }
+        },
+        "start_vs_wait_begin_by_header_relation": {
+          "different_recorded_native_tid/after": 126,
+          "different_recorded_native_tid/before": 138
+        },
+        "unknown_execution_contexts": 0
+      },
+      "caller_waitforworkers_point_subset": {
+        "associations": 68,
+        "distinct_waits": 68,
+        "relations": {
+          "schedule_vs_wait_begin": {
+            "before": 68
+          },
+          "execution_start_vs_wait_begin": {
+            "after": 10,
+            "before": 58
+          },
+          "execution_completion_vs_wait_begin": {
+            "after": 68
+          },
+          "execution_completion_vs_wait_end": {
+            "before": 68
+          }
+        },
+        "start_vs_wait_begin_by_header_relation": {
+          "different_recorded_native_tid/after": 10,
+          "different_recorded_native_tid/before": 58
+        },
+        "unknown_execution_contexts": 0
+      },
+      "caller_and_compiler_point_subset": {
+        "associations": 64,
+        "distinct_waits": 64,
+        "relations": {
+          "schedule_vs_wait_begin": {
+            "before": 64
+          },
+          "execution_start_vs_wait_begin": {
+            "before": 57,
+            "after": 7
+          },
+          "execution_completion_vs_wait_begin": {
+            "after": 64
+          },
+          "execution_completion_vs_wait_end": {
+            "before": 64
+          }
+        },
+        "start_vs_wait_begin_by_header_relation": {
+          "different_recorded_native_tid/before": 57,
+          "different_recorded_native_tid/after": 7
+        },
+        "unknown_execution_contexts": 0
+      }
+    },
+    "measurement": {
+      "rows": 270,
+      "all_observed_caller_waits": {
+        "associations": 1913,
+        "distinct_waits": 1913,
+        "relations": {
+          "schedule_vs_wait_begin": {
+            "before": 1913
+          },
+          "execution_start_vs_wait_begin": {
+            "after": 925,
+            "before": 988
+          },
+          "execution_completion_vs_wait_begin": {
+            "after": 1871,
+            "before": 42
+          },
+          "execution_completion_vs_wait_end": {
+            "before": 1799,
+            "after": 114
+          }
+        },
+        "start_vs_wait_begin_by_header_relation": {
+          "different_recorded_native_tid/after": 925,
+          "different_recorded_native_tid/before": 988
+        },
+        "unknown_execution_contexts": 0
+      },
+      "caller_waitforworkers_point_subset": {
+        "associations": 527,
+        "distinct_waits": 527,
+        "relations": {
+          "schedule_vs_wait_begin": {
+            "before": 527
+          },
+          "execution_start_vs_wait_begin": {
+            "before": 444,
+            "after": 83
+          },
+          "execution_completion_vs_wait_begin": {
+            "after": 527
+          },
+          "execution_completion_vs_wait_end": {
+            "before": 523,
+            "after": 4
+          }
+        },
+        "start_vs_wait_begin_by_header_relation": {
+          "different_recorded_native_tid/before": 444,
+          "different_recorded_native_tid/after": 83
+        },
+        "unknown_execution_contexts": 0
+      },
+      "caller_and_compiler_point_subset": {
+        "associations": 486,
+        "distinct_waits": 486,
+        "relations": {
+          "schedule_vs_wait_begin": {
+            "before": 486
+          },
+          "execution_start_vs_wait_begin": {
+            "before": 444,
+            "after": 42
+          },
+          "execution_completion_vs_wait_begin": {
+            "after": 486
+          },
+          "execution_completion_vs_wait_end": {
+            "before": 483,
+            "after": 3
+          }
+        },
+        "start_vs_wait_begin_by_header_relation": {
+          "different_recorded_native_tid/before": 444,
+          "different_recorded_native_tid/after": 42
+        },
+        "unknown_execution_contexts": 0
+      }
+    }
+  },
+  "all_rows": 306,
+  "row_wait_associations": 2177,
+  "tests": {
+    "fixtures_each_windows_wsl": 92,
+    "independent_raw_and_comparison_checks": 547776
+  },
+  "retention": {
+    "count": 83,
+    "original_bytes": 17642336,
+    "stored_bytes": 1533138
+  },
+  "staged_payloads_byte_verified": 83,
+  "staged_sources_byte_verified": 2,
+  "workload_targets": 0,
+  "builds": 0,
+  "captures": 0,
+  "benchmark_runs": 0,
+  "engine_patch": false,
+  "host_permission_or_configuration_change": false,
+  "ci": [
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    },
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    }
+  ],
+  "original_benchmark": "Observed/unqualified unchanged; generatorunstableWindows9/Linux3,CLI0/0",
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "plan_sha256": "fc1f63ce4717ac53ffb9221444d28878896320989a682565a6fa81d22d64f98a"
+  },
+  "limits": [
+    "Literal event timestamps only; equal values remain order-unresolved despite record index.",
+    "No queue/runqueue/blocked/CPU/GC duration or exact direct WaitForWorkers/inline callpath/native-lifetime proof.",
+    "Task execution-complete event is not unconditional logical completion; cross-event races/timeouts are preserved.",
+    "Observed waits do not include every already-completed GetResult fast path.",
+    "All method contexts and scopes are inherited unchanged; no favorable subset or new workload."
+  ],
+  "repositories": {
+    "Cehpalon-Engine": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Docs": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Samples": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    }
+  }
+}
