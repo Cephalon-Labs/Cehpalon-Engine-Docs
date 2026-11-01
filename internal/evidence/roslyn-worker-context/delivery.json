@@ -1,0 +1,182 @@
+{
+  "date_bangkok": "2026-11-01",
+  "scope": "ADR0025 offline awaited-execution managed stack contexts; no progress/CPU/cause claim",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "602090d1814d7bf64f5e445b6ad9544cc95fec68",
+  "protocol_sha256": "5c4eca196f8ce394c67519ec1a0626db9fabf1352b7acd572ae2fd5606b409e0",
+  "strict_boundary_declaration_sha256": "10618c4352d2675066d1da6ac979df4967a069dfd6722ba362fcf770070c065c",
+  "dictionary_sha256": "3f6c28aca5000bd67e10d4b356f9d23e41f95d8981a15ad0050592f3dcdf8b76",
+  "sources_sha256": {
+    "tools/analyze_roslyn_worker_context.py": "25510c6b40ef4eef87ba42421596fcd237277d7dc06bec9da509e89570c72431",
+    "tools/test_roslyn_worker_context.py": "3b9c60666e5af4708752857c6096302f9cea44e624c6a1270244527b12dd03e5"
+  },
+  "raw_records": 641481,
+  "strict_raw_reference_bindings": 63325,
+  "raw_etlx_stack_records": 212495,
+  "global_queries": {
+    "queries": 2372,
+    "queries_with_strict_points": 681,
+    "queries_without_strict_points_unknown": 1691,
+    "point_query_associations": 3658,
+    "distinct_point_indices": 3658,
+    "repeated_point_query_associations": 0,
+    "label_point_associations": {
+      "other_frame_context": 71,
+      "other_codeanalysis_frame": 3580,
+      "roslyn_method_compiler_frame": 3518,
+      "managed_wait_entry_frame": 1
+    },
+    "distinct_points_by_label": {
+      "other_frame_context": 71,
+      "other_codeanalysis_frame": 3580,
+      "roslyn_method_compiler_frame": 3518,
+      "managed_wait_entry_frame": 1
+    },
+    "nonexclusive_labels": true
+  },
+  "row_associations": {
+    "queries": 2177,
+    "queries_with_strict_points": 624,
+    "queries_without_strict_points_unknown": 1553,
+    "point_query_associations": 3100,
+    "distinct_point_indices": 3100,
+    "repeated_point_query_associations": 0,
+    "label_point_associations": {
+      "other_frame_context": 64,
+      "other_codeanalysis_frame": 3034,
+      "roslyn_method_compiler_frame": 2982
+    },
+    "distinct_points_by_label": {
+      "other_frame_context": 64,
+      "other_codeanalysis_frame": 3034,
+      "roslyn_method_compiler_frame": 2982
+    },
+    "nonexclusive_labels": true
+  },
+  "groups": {
+    "primer": {
+      "queries": 264,
+      "queries_with_strict_points": 77,
+      "queries_without_strict_points_unknown": 187,
+      "point_query_associations": 394,
+      "distinct_point_indices": 394,
+      "repeated_point_query_associations": 0,
+      "label_point_associations": {
+        "other_frame_context": 11,
+        "other_codeanalysis_frame": 383,
+        "roslyn_method_compiler_frame": 378
+      },
+      "distinct_points_by_label": {
+        "other_frame_context": 11,
+        "other_codeanalysis_frame": 383,
+        "roslyn_method_compiler_frame": 378
+      },
+      "nonexclusive_labels": true
+    },
+    "measurement": {
+      "queries": 1913,
+      "queries_with_strict_points": 547,
+      "queries_without_strict_points_unknown": 1366,
+      "point_query_associations": 2706,
+      "distinct_point_indices": 2706,
+      "repeated_point_query_associations": 0,
+      "label_point_associations": {
+        "other_frame_context": 53,
+        "other_codeanalysis_frame": 2651,
+        "roslyn_method_compiler_frame": 2604
+      },
+      "distinct_points_by_label": {
+        "other_frame_context": 53,
+        "other_codeanalysis_frame": 2651,
+        "roslyn_method_compiler_frame": 2604
+      },
+      "nonexclusive_labels": true
+    }
+  },
+  "nonmain_waits": 27,
+  "nonmain_header_intersections": {
+    "all": 6,
+    "self": 5,
+    "different_wait": 1,
+    "reported_origin_matches_awaited_task": 0,
+    "dependency_proof": false
+  },
+  "tests": {
+    "fixtures_each_windows_wsl": 103,
+    "independent_raw_checks": 539519,
+    "root_replay_matches_agent_output_hashes": 7
+  },
+  "retention": {
+    "count": 59,
+    "original_bytes": 141291697,
+    "stored_bytes": 6277329
+  },
+  "staged_payloads_byte_verified": 59,
+  "staged_source_files_byte_verified": 2,
+  "new_targets": 0,
+  "builds": 0,
+  "captures": 0,
+  "benchmark_runs": 0,
+  "engine_patch": false,
+  "host_change": false,
+  "ci": [
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    },
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    }
+  ],
+  "original_benchmark": "Observed/unqualified unchanged; generatorunstableWindows9/Linux3,CLI0/0",
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "plan_sha256": "71811c3b23def797b05ba48c3972fe1c7d5cb8d3b64b48f3a2e51a0114641347"
+  },
+  "limits": [
+    "ANY-frame multi-label point contexts, not CPU/onCPU/nativeleaf/usefulwork/runnable/blocking/GCpause.",
+    "Strict boundaries excluded; no points is unknown, never zeroactivity.",
+    "Global wait/execution and per-row Emitcore are different denominators; labels/associations overlap.",
+    "All containing execution candidates retained, not innermost ownership.",
+    "No directcallsite/native-lifetime/GC/scheduler causality or qualification."
+  ],
+  "repositories": {
+    "Cehpalon-Engine": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Docs": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Samples": {
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    }
+  }
+}
