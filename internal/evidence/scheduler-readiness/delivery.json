@@ -1,0 +1,99 @@
+{
+  "date_bangkok": "2026-11-02",
+  "scope": "ADR0026 read-only inventory and offline scheduler FD/filter planning; no active collection",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "6e641f9722aade7988e46cdc80e0f08bab4cd693",
+  "protocol_sha256": "7f1651c0f0638ad00d8f9b8e2ae527012d3491c95d32a819c5a8a8997bf8e21a",
+  "sources_sha256": {
+    "tools/plan_scheduler_conformance.py": "afb6155303bc9bba21124ef3a63e6012e86952def167cf038c566e1c45e81a50",
+    "tools/test_plan_scheduler_conformance.py": "90bb2779dd000fac7631edaa3bbf3941cfce2b11b1756036b0623318a710f181"
+  },
+  "read_only_host_commands": 40,
+  "ordinary_user_format_access": "denied",
+  "existing_one_shot_root_format_access": "readable8events",
+  "event_format_bundle_sha256": "57be98e3e34887d2b0cfcea16b82850425869a2f455afabb79a8108f640ddb4e",
+  "active_capture_ready": false,
+  "all_active_gates": "untested",
+  "tests": {
+    "fixtures_each_windows_wsl": 80,
+    "independent_host_checks": 47,
+    "independent_actual_plan_checks": 503
+  },
+  "retention": {
+    "count": 627,
+    "original_bytes": 960301,
+    "stored_bytes": 960301
+  },
+  "staged_payloads_exact_bytes_verified": 627,
+  "staged_sources_exact_bytes_verified": 2,
+  "workloads": 0,
+  "perf_recordings": 0,
+  "builds": 0,
+  "engine_patch": false,
+  "host_configuration_change": false,
+  "plan_declared_example_tids": [
+    4001,
+    4002,
+    4003
+  ],
+  "plan_ids_are_live_leases": false,
+  "plan_opens_disabled_before_filters": true,
+  "plan_data_scope": "Switch/fork raw counterparts and waking common-header emitters may be unowned. Filters do not erase counterpart metadata.",
+  "next_protocol": "internal/planning/scheduler-conformance-protocol.md; proposed notexecuted; includes armedexit/free andNSpid/staticdynamic boundaries",
+  "original_benchmark": "Observed/unqualified unchanged; generatorunstableWindows9/Linux3 CLI0/0",
+  "ci": [
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    },
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    }
+  ],
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "plan_sha256": "57973723c076685f8d9d062a25324dcedf190220910d01d011fb89e4bbf56404"
+  },
+  "repositories": {
+    "account": "Cephalon-Neza",
+    "repos": {
+      "Cehpalon-Engine": {
+        "private": true,
+        "license": "MIT",
+        "identity": [
+          "Cephalon-Neza",
+          "272007299+Cephalon-Neza@users.noreply.github.com"
+        ]
+      },
+      "Cehpalon-Engine-Docs": {
+        "private": true,
+        "license": "MIT",
+        "identity": [
+          "Cephalon-Neza",
+          "272007299+Cephalon-Neza@users.noreply.github.com"
+        ]
+      },
+      "Cehpalon-Engine-Samples": {
+        "private": true,
+        "license": "MIT",
+        "identity": [
+          "Cephalon-Neza",
+          "272007299+Cephalon-Neza@users.noreply.github.com"
+        ]
+      }
+    }
+  }
+}
