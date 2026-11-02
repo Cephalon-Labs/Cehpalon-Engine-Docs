@@ -1,0 +1,295 @@
+{
+  "date_bangkok": "2026-11-03",
+  "scope": "ADR0029 one frozen negative/positive static scheduler matrix; no dynamicRoslyn or GC/Engine qualification",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "9f46c86883eb7760659ab1fb7872e11e28f55c6c",
+  "sources_sha256": {
+    "collect_scheduler_static.py": "6e0a4b1c1c6c365875ae708295d68f5074b817814327b838ae6b5196d90b1873",
+    "scheduler_static_core.py": "d658d5d682873293273ddad55f35a546baf16fe4602aa7ef4025756e825cd106",
+    "scheduler_static_actor.py": "66baeff0fe7100f7cedc51d5d2bd740d4554588a0890fa3f7f6547967674a3bf",
+    "scheduler_static_analysis.py": "7731dbabba292263a51cdd0dd713ea62db29d72ca0316d105ada74ee1442b898"
+  },
+  "freeze_sha256": "54dafcb0e7c7c75e7d76056c6578d49d9a9baab4150df6bdd3ee4974766d3272",
+  "actual_manifest_sha256": "b8ec181ce932a470f450133714fa1e16d001f5788b97d5820545e025ba06ce0d",
+  "invocation_sha256": "67084187d96a91714a335f0cdfefdb8b0c60913224cca044213674128384e263",
+  "status": "bounded_static_cases_completed_newwake_unexercised",
+  "cases": [
+    {
+      "case": "negative",
+      "status": "bounded_static_observations_completed",
+      "channels": 160,
+      "mapped_threads": 5,
+      "totals": {
+        "samples": 177,
+        "count": 103790,
+        "terminal_lost": 103613,
+        "emitted_lost_records_total": 0,
+        "throttles": 0
+      },
+      "mapped_local_global": [
+        [
+          742,
+          1064
+        ],
+        [
+          743,
+          1065
+        ],
+        [
+          744,
+          1066
+        ],
+        [
+          745,
+          1067
+        ],
+        [
+          746,
+          1068
+        ]
+      ],
+      "handoff_chains": {},
+      "unknown_edges": {},
+      "analysis_passed": null,
+      "cleanup": {
+        "child_joined": true
+      },
+      "all_scheduler_fds_closed": true,
+      "all_scheduler_rings_unmapped": true,
+      "collector_usage_before": {
+        "user_seconds": 0.035737,
+        "system_seconds": 0.049138999999999995,
+        "maxrss_kib_linux": 24940,
+        "scope": "Collector process cumulative observations, not target CPU or performance qualification"
+      },
+      "collector_usage_after": {
+        "user_seconds": 0.24593399999999999,
+        "system_seconds": 0.415853,
+        "maxrss_kib_linux": 26500,
+        "scope": "Collector process cumulative observations, not target CPU or performance qualification"
+      },
+      "poll_cadence_ns": {
+        "requested": 1000000,
+        "observed_count": 1,
+        "minimum": 71839312,
+        "maximum": 71839312,
+        "total": 71839312
+      }
+    },
+    {
+      "case": "positive",
+      "status": "bounded_static_observations_completed",
+      "channels": 160,
+      "mapped_threads": 5,
+      "totals": {
+        "samples": 3211,
+        "count": 3211,
+        "terminal_lost": 0,
+        "emitted_lost_records_total": 0,
+        "throttles": 0
+      },
+      "mapped_local_global": [
+        [
+          788,
+          1110
+        ],
+        [
+          789,
+          1111
+        ],
+        [
+          790,
+          1112
+        ],
+        [
+          791,
+          1113
+        ],
+        [
+          792,
+          1114
+        ]
+      ],
+      "handoff_chains": {
+        "A": 119,
+        "B": 157
+      },
+      "unknown_edges": {
+        "A": 0,
+        "B": 0
+      },
+      "analysis_passed": true,
+      "cleanup": {
+        "child_joined": true
+      },
+      "all_scheduler_fds_closed": true,
+      "all_scheduler_rings_unmapped": true,
+      "collector_usage_before": {
+        "user_seconds": 0.27221999999999996,
+        "system_seconds": 0.415853,
+        "maxrss_kib_linux": 26552,
+        "scope": "Collector process cumulative observations, not target CPU or performance qualification"
+      },
+      "collector_usage_after": {
+        "user_seconds": 0.8994939999999999,
+        "system_seconds": 0.8116369999999999,
+        "maxrss_kib_linux": 38392,
+        "scope": "Collector process cumulative observations, not target CPU or performance qualification"
+      },
+      "poll_cadence_ns": {
+        "requested": 1000000,
+        "observed_count": 1585,
+        "minimum": 1192681,
+        "maximum": 74092125,
+        "total": 2272504181
+      }
+    }
+  ],
+  "active_scheduler_ready": false,
+  "all_eight_positive_delivery_proven": false,
+  "wakeup_new_owned": "unexercised_unknown",
+  "actual_Rplus_LOST_throttle_record_delivery": "not observed; source/offline support only",
+  "preparation": {
+    "status": "prepared_no_actors_or_perf",
+    "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+    "resources": {
+      "operations": [
+        {
+          "field": "nofile",
+          "before_monotonic_ns": 84443280104,
+          "value": [
+            10240,
+            1048576
+          ],
+          "after_monotonic_ns": 84443283853
+        },
+        {
+          "field": "memlock",
+          "before_monotonic_ns": 84443284259,
+          "value": [
+            67108864,
+            67108864
+          ],
+          "after_monotonic_ns": 84443286992
+        },
+        {
+          "field": "open_fd_names",
+          "before_monotonic_ns": 84443287336,
+          "value": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "after_monotonic_ns": 84443313753
+        },
+        {
+          "field": "perf_event_mlock_kb",
+          "before_monotonic_ns": 84443314182,
+          "value": "516\n",
+          "after_monotonic_ns": 84443385155
+        }
+      ],
+      "errors": [],
+      "nofile": [
+        10240,
+        1048576
+      ],
+      "memlock": [
+        67108864,
+        67108864
+      ],
+      "open_fd_names": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "perf_event_mlock_kb": "516\n",
+      "online_cpu_count": 20,
+      "negative_mapping_bytes": 1310720,
+      "positive_mapping_bytes": 42598400,
+      "required_fd_capacity": 180,
+      "scope": "Fresh conservative capacity observation; no limits changed, no resource reservation or actual perf mmap proof"
+    },
+    "atomic_selftest": "passed_lockfree8_acquire2_release3",
+    "source_prepared_review_sha256": "1ae3a4bbeb36b320a518602933242cf80f917de0a685cdb58c565c78373b6720"
+  },
+  "tests": {
+    "core_each_windows_wsl": 158,
+    "root_model_each_windows_wsl": 56,
+    "independent_edges_each_windows_wsl": 18,
+    "root_completed_peer_mock_control_each_windows_wsl": 16,
+    "root_capacity_guards_each_windows_wsl": 14,
+    "independent_actual_raw_checks": 79568,
+    "metadata_adjunct_checks": 44
+  },
+  "independent_actual_audit": {
+    "status": "bounded_independent_actual_raw_audit_passed",
+    "summary_sha256": "f344c6e3b126fa6325f40ee715d7e0740a65bb57e6780c849ccba022fbaa47de",
+    "main_report_sha256": "9df95da52ac6bb94aa5f527549be528af9e277dea7694797192fbf1eebc809c6",
+    "hash_covered_native_files": 2303,
+    "native_bytes": 49238964,
+    "scope": "Independent retained-byte oracle, no production parser imports, active rerun or independent live OS attestations"
+  },
+  "retention": {
+    "count": 2484,
+    "original_bytes": 54055089,
+    "stored_bytes": 4535688
+  },
+  "index_verification": {
+    "status": "passed",
+    "staged_payloads_exact_bytes": 2484,
+    "staged_manifest_exact_bytes": true,
+    "staged_sources_exact_bytes": 7,
+    "unique_indexed_blobs_verified_sha256": 1222,
+    "original_bytes": 54055089,
+    "stored_bytes": 4535688,
+    "method": "Actual indexed blob bytes read once using cat-file batch; SHA256 checked for every path, including duplicate content"
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "2ad09fc2ac3c5d801b2a24f1e782080d9c3d920f18fbed80b9e9abdaeb3e8bf1",
+    "actual_remaining_hours": null
+  },
+  "ci": [
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    },
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    }
+  ],
+  "ci_boundary": "Existing Engine payment/spending rejected pre-step jobs; no billing change/rerun",
+  "original_benchmark": "Observed/unqualified unchanged; workloads/thresholds/primers/GC/concurrency and Planned gates preserved",
+  "engine_patch": false,
+  "new_roslyn_captures": 0,
+  "original_benchmark_runs": 0,
+  "host_configuration_changes": false,
+  "package_installation": false,
+  "review_boundary": "Two agents usage-limited; root completed collector/preparation and control/resource mocks. Remaining source reviewer inspected frozen sources/preparation and independently audited raw data. Failure/helper corrections retained; no native rerun.",
+  "limits": [
+    "No independentliveOSprobes: ACKs/lease/cleanup snapshotsare sourceobservations, not immutablefullnative lifetime/hostilehostattestation",
+    "No privatefilterreadbackAPI; auditedACKmetadataandactualretainednumericpredicate matches, not adversarialproof allomittedhosteventsfiltered",
+    "TerminalLOST0/count equality/ACTIVE equality arefrozenobservedgates, notuniversallycompleteupstreamdelivery/nohost-vCPUdescheduling",
+    "No actualLOST/throttle/R+recorddeliveryorownednewwake exercise inthiscapture; source/fixture support remainsseparate",
+    "Statecountsincludeunownedprevious-taskcounterparties; ownershipnotinferredfromanyheader/comm",
+    "No Engine/GC/taskprogress/CPUduration/runnable-delay/rootcause/performance/provider/productionqualification"
+  ],
+  "next": "Separately scope/freeze dynamic-thread admission/birth/remote-wakeup mapping and complete same-execution CLR/task/GC/scheduler lane before Emit wait attribution or product change; never reuse exited IDs."
+}

@@ -2,6 +2,8 @@
 
 2026-11-02. Status: proposed next experiment, NOT executed or capture-qualified by ADR0026. It requires a separately frozen declaration before any workload/perf FD open. Engine, original benchmark, GC/compiler flags and #3 Blocked stay unchanged.
 
+Follow-up2026-11-03: [ADR0029 static conformance](static-scheduler-conformance.md) executed its separately frozen negative/positive matrix. Owned-newwake/all-eight positive delivery and dynamic Roslyn coverage remain unqualified; this original proposal is not a blanket readiness claim.
+
 ## Identity and data scope
 
 Run the synthetic workload as the ordinary WSL user. Only a bounded collector may use the existing one-shot root path. No installation, mount, ACL/capability/sysctl/global tracefs filter/clock changes. Freeze collector/fixture source and binary hashes. Select an output directory with no overwrite; ownership and cleanup are scoped to the launched process/FDs.

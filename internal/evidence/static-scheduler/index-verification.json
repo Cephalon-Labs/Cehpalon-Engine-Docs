@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "staged_payloads_exact_bytes": 2484,
+  "staged_manifest_exact_bytes": true,
+  "staged_sources_exact_bytes": 7,
+  "unique_indexed_blobs_verified_sha256": 1222,
+  "original_bytes": 54055089,
+  "stored_bytes": 4535688,
+  "method": "Actual indexed blob bytes read once using cat-file batch; SHA256 checked for every path, including duplicate content"
+}
