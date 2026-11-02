@@ -1,0 +1,130 @@
+{
+  "date_bangkok": "2026-11-02",
+  "scope": "ADR0028 one task-attached syscall mapping; not full scheduler/Roslyn/benchmark",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "3c1b5ceebfa7fceeac646b4f6aa517729dd7fadf",
+  "sources_sha256": {
+    "tools/collect_scheduler_mapping.py": "8609eb6f1430fdb20fe818bc523d5886f0e90db7d1f6aec0af401067bc37ebdc",
+    "tools/scheduler_mapping_actor.py": "1ade911f86188e65cb891b6b23d94a945c3427884f8abc61e37a8b437df5cb2f",
+    "tools/test_scheduler_mapping.py": "b79e311371bfa57be001bc7c302f5be33f1fc793bdd756092c050ea7f5dfd413"
+  },
+  "declaration_sha256": "a6a608544404d1e1da1e2d708b5aee9fb9b7cce0801f9d82ddce17a427ad40b6",
+  "protocol_sha256": "92f1674f0fc87289d6ac0dd59f1ea5a2fafc3ca84a15814b4cbf00cb2b157aef",
+  "actual_manifest_sha256": "ec3e1fd687ffbac96516364912260cc3aa697441c44833dea82f0274973c0479",
+  "actual": {
+    "status": "one_owned_actor_mapping_observed",
+    "mapping": {
+      "local_pid": 738,
+      "local_tid": 738,
+      "observed_global_tid": 1056,
+      "scope": "One same-execution actor only; no cross-invocation/dynamic/static scheduler membership authority"
+    },
+    "actor_launches": 1,
+    "perf_opens": 1,
+    "enables": 1,
+    "records": 1,
+    "read_values": {
+      "value": 1,
+      "time_enabled": 87703,
+      "time_running": 87703,
+      "perf_event_id": 3,
+      "lost": 0
+    },
+    "ring_terminal": {
+      "head_before": 56,
+      "tail_before": 0,
+      "head_after": 56,
+      "tail_after": 56
+    },
+    "cleanup": {
+      "child_joined": true,
+      "perf_fd_closed": true,
+      "ring_unmapped": true
+    },
+    "active_scheduler_ready": false
+  },
+  "tests": {
+    "implementation_fixtures_each_windows_wsl": 97,
+    "independent_fixtures_each_windows_wsl": 65,
+    "ordinary_uid1000_atomic_scratch_checks": 16,
+    "independent_actual_artifact_checks": 70,
+    "source_review_byte_checks": 23,
+    "source_review_mock_ring_checks": 7,
+    "independent_dependency_checks": 17,
+    "dependency_adjunct_checks": 4,
+    "final_source_diff": "passed"
+  },
+  "independent_actual_audit": {
+    "status": "passed_independent_owned_mapping_audit",
+    "failures": [],
+    "report_sha256": "8c05b6bf0cffed04187e3ac208e89098b8858a188746bfa8ed04bc009be76308",
+    "final_review_sha256": "bae8ae2baafd18d89c2990cfdf41ec2f832da8e8b5ba985f67274547cf97a026"
+  },
+  "private_dependency": {
+    "package_version": "12.3.0-1ubuntu1~22.04.3",
+    "package_sha256": "56573c81b5dd84817882400cfea49fe671f5e6cfdd0f88b5d3a894c08b150462",
+    "library_sha256": "d4a3c900a38ad280bb34003fbf8326fff53229d4bc4fc368bd48783b74680a36",
+    "library_bytes": 30960,
+    "signed_index_sha256": "759dae046fad315078b955b817b17e0713d60879c66a63df57a12b0f31a2de13",
+    "release_sha256": "89acda4d6f952f0c3ac78134750be5cdb67f3c6f88949ebb2bfc6addc8b1db25",
+    "host_installation": false,
+    "scope": "Signature bound to retained host archive keyring; copyright separateHTTPS notsignedpackage binding"
+  },
+  "retention": {
+    "count": 122,
+    "original_bytes": 7193863,
+    "stored_bytes": 5800533
+  },
+  "index_verification": {
+    "status": "passed",
+    "staged_payloads_exact_bytes": 122,
+    "staged_manifest_exact_bytes": true,
+    "staged_source_hashes": 3,
+    "original_bytes": 7193863,
+    "stored_bytes": 5800533
+  },
+  "raw_upstream_whitespace": "Preserved byte-for-byte; ordinary source/README whitespace check excludes raw evidence capsule; staged payload hashes verify its exact bytes",
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "4297420a40077f63d937fa41b35436167b60a3f7db7128c7518d1c1982274541",
+    "actual_remaining_hours": null
+  },
+  "ci": [
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    },
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": 2,
+      "steps": 0
+    }
+  ],
+  "ci_boundary": "Same original Engine runs payment/spending rejected before steps; no billing/rerun",
+  "engine_patch": false,
+  "builds": 0,
+  "full_scheduler_captures": 0,
+  "roslyn_captures": 0,
+  "original_benchmark_runs": 0,
+  "host_configuration_change": false,
+  "limits": [
+    "One same-execution owned task mapping; actor exited and its1056 is not future membership.",
+    "Postlease/environment equality enforced by pinned source; individual postread snapshots notserialized; no immutable/hostile attestation.",
+    "One sample/count parity is not overflow/loss/allCPU/lifecycle/clock/dynamicThreadPool conformance.",
+    "No GC/scheduler duration/cause, Engine optimization or supported-Windows/provider/reference/production/release qualification."
+  ],
+  "next": "Predeclare full static scheduler collector; map every same-execution live actor, ACK allCPU/eight-event payloadfilters before enable/release, fixed overflow-negative then positive lifecycle/migration/clock/loss/drain/lease/cleanup/overhead gates; dynamicRoslyn separate.",
+  "original_benchmark": "Observed/unqualified unchanged; original workload/thresholds/primers/flags/GC/concurrency and Planned gates preserved"
+}

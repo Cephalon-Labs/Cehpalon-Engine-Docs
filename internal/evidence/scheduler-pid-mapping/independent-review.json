@@ -1,0 +1,55 @@
+{
+  "status": "passed_bounded_owned_mapping_independent_review",
+  "collector_source_sha256": "8609eb6f1430fdb20fe818bc523d5886f0e90db7d1f6aec0af401067bc37ebdc",
+  "actor_source_sha256": "1ade911f86188e65cb891b6b23d94a945c3427884f8abc61e37a8b437df5cb2f",
+  "actual_artifact_checks": 70,
+  "portable_independent_fixtures_each_windows_wsl": 65,
+  "fixture_driver": "test_scheduler_mapping_independent.py",
+  "fixture_driver_sha256": "9ead34ea9e6f6dd57d6e7bb49b5dfa4d8268d6dc552cd881bfc3ccce50268856",
+  "actual_audit": "actual-audit01.json",
+  "fixture_reports": [
+    "fixtures01-windows.json",
+    "fixtures02-wsl.json"
+  ],
+  "failures": 0,
+  "remaining_blockers_for_this_one_observed_mapping": [],
+  "observed_mapping": {
+    "local_actor_pid_tid": 738,
+    "global_common_pid": 1056,
+    "scope": "same execution only; actor exited, no future membership authority"
+  },
+  "actual_raw": {
+    "records": 1,
+    "sample_bytes": 56,
+    "RAW_bytes": 20,
+    "counter_bytes": 40,
+    "terminal_reads": 2,
+    "count": 1,
+    "lost": 0,
+    "padding_12_to_19_zero": true
+  },
+  "active_scheduler_ready": false,
+  "reviewer_perf_opens_or_actors": 0,
+  "reviewer_loaded_private_atomic_library": false,
+  "independently_retained_byte_proof": [
+    "Frozen command/source/actor/ABI/dependency hash links and exact raw stdout/manifest parity",
+    "Full requested128B attribute byte layout",
+    "Single56Bsample,20BRAW,padding,local/globalID/syscall/CPU/monotonicmarker decode",
+    "Two equal40Bterminalcounter tuples,ownedperfID/count1/lost0",
+    "Whole4096data page sample pluszero remainder and head/tail56",
+    "Ready/proc lease UID1000 andzeroeff/permitted/ambient/inheritablecapabilities",
+    "Signed-index/package/library chain hashes and retained gpgv success status"
+  ],
+  "frozen_code_enforced_but_post_snapshots_not_separately_serialized": [
+    "Post-lease and post-environment/image/source/library/format rechecks",
+    "Ringdata_offset/data_size/freshness and lock-free sharedaddress checks",
+    "ClosedFD/unmap and finalchild acknowledgment/join control flow"
+  ],
+  "unproven_gates": [
+    "No allCPU scheduler switch/wakeup/filter/migration/lifecycle conformance",
+    "No intentional overflow-negative or general loss validation",
+    "No dynamic Roslyn ThreadPool membership or cross-execution ID reuse",
+    "No GC/scheduler/CPU/blocking duration cause,performance orqualification"
+  ],
+  "retention": "All independent scripts/reports and parent source-stage artifacts remain; no collector/actor edits or new active attempt by reviewer."
+}
