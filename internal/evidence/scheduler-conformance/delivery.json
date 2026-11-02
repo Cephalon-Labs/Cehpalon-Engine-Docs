@@ -1,0 +1,216 @@
+{
+  "date_bangkok": "2026-11-02",
+  "scope": "ADR0027 B1: one disabled tracepoint FD open/read/close; no capture or actor",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_evidence_revision": "9f96efe5035b12e28b43642afeeb2d5877992941",
+  "sources_sha256": {
+    "tools/preflight_scheduler_perf.py": "19b0490e23d8e626a7bb773852c1474017171c867383ffd97c78cf7c4efa01f5",
+    "tools/test_preflight_scheduler_perf.py": "55869f00b7a55f024814d5fcddba3fb9bff8a54c270268106df86a7aad1c0da2"
+  },
+  "execution_declaration_sha256": "c876a5730dfa4723bae5512988ffa1c0718d4a682692f7495a31fc090d3ef7d7",
+  "preflight_protocol_sha256": "74f7700812183a6cbcc9ab3d0a9820a36197562d01157a6979ef2ad3eab7dfee",
+  "b1": {
+    "status": "disabled_open_read_observed_only",
+    "opens_attempted": 1,
+    "opens_succeeded": 1,
+    "reads_attempted": 1,
+    "tracepoint_config": 268,
+    "cpu_argument": 0,
+    "sample_type": 1158,
+    "read_format": 23,
+    "flags_word": 33816577,
+    "read_bytes": 40,
+    "read_values": {
+      "value": 0,
+      "time_enabled": 0,
+      "time_running": 0,
+      "perf_event_id": 3,
+      "lost": 0
+    },
+    "close_on_exec_observed": true,
+    "close_acknowledged": true,
+    "closed_fd_check": true,
+    "cleanup": "owned_fd_closed",
+    "source_topology_format_freeze": "passed",
+    "actors_launched": 0,
+    "maps": 0,
+    "filters": 0,
+    "enables": 0,
+    "records_collected": 0,
+    "active_capture_ready": false
+  },
+  "all_active_filter_delivery_loss_clock_state_gates": "untested; disabled-zero loss is not overflow proof",
+  "b2_collector_actor_implementation": "not begun; gated on separately reviewed initial-PID-namespace actor mapping before filters",
+  "source_review": {
+    "official_matching_tag_sources": 19,
+    "read_only_commands": 28,
+    "namespace_parent": "EPERM from own active namespace; not a global mapping",
+    "own_namespace_self_translation": "702->702; not global mapping"
+  },
+  "tests": {
+    "implementation_fixtures_each_windows_wsl": 98,
+    "independent_mock_fixtures_each_windows_wsl": 72,
+    "agent_authored_artifact_audit_root_completed_checks": 179,
+    "artifact_audit_status": "passed_independent_B1_disabled_only_audit",
+    "independent_final_agent_signoff": false
+  },
+  "review_boundary": "Agent inspected final source before execution and authored audit, then usage-limited. Root completed audit after retaining whitespace-parser exception and binding frozen pre-execution ADR bytes; no source/raw/preflight rerun.",
+  "retention": {
+    "count": 98,
+    "original_bytes": 2559268,
+    "stored_bytes": 1396698
+  },
+  "index_verification": {
+    "status": "passed",
+    "staged_payloads_exact_bytes": 98,
+    "staged_manifest_exact_bytes": true,
+    "staged_source_hashes": 2,
+    "original_bytes": 2559268,
+    "stored_bytes": 1396698
+  },
+  "builds": 0,
+  "workloads": 0,
+  "recordings": 0,
+  "original_benchmark_runs": 0,
+  "engine_patch": false,
+  "host_configuration_change": false,
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "fc4eadfdad23c81e5717469f6625ef875ed2063d702e05182bc4d7901ea3876c",
+    "actual_remaining_hours": null
+  },
+  "repositories_before": {
+    "Cehpalon-Engine": {
+      "head": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "remote": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "",
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Docs": {
+      "head": "8452da934c1f48f7351396ad80a5589af23ca43a",
+      "remote": "8452da934c1f48f7351396ad80a5589af23ca43a",
+      "status": "?? internal/adr/ADR-0027-owned-scheduler-conformance.md",
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    },
+    "Cehpalon-Engine-Samples": {
+      "head": "6e641f9722aade7988e46cdc80e0f08bab4cd693",
+      "remote": "6e641f9722aade7988e46cdc80e0f08bab4cd693",
+      "status": "",
+      "private": true,
+      "license": "MIT",
+      "identity": [
+        "Cephalon-Neza",
+        "272007299+Cephalon-Neza@users.noreply.github.com"
+      ]
+    }
+  },
+  "account": "Cephalon-Neza",
+  "ci": [
+    {
+      "id": 40993252408,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": [
+        {
+          "id": 123860380109,
+          "conclusion": "failure",
+          "steps": 0
+        },
+        {
+          "id": 123860380540,
+          "conclusion": "failure",
+          "steps": 0
+        }
+      ],
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        }
+      ]
+    },
+    {
+      "id": 40993252420,
+      "head_sha": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+      "status": "completed",
+      "conclusion": "failure",
+      "jobs": [
+        {
+          "id": 123860381187,
+          "conclusion": "failure",
+          "steps": 0
+        },
+        {
+          "id": 123860381464,
+          "conclusion": "failure",
+          "steps": 0
+        }
+      ],
+      "annotations": [
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        },
+        {
+          "path": ".github",
+          "blob_href": "https://github.com/Cephalon-Labs/Cehpalon-Engine/blob/55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7/.github",
+          "start_line": 1,
+          "start_column": null,
+          "end_line": 1,
+          "end_column": null,
+          "annotation_level": "failure",
+          "title": "",
+          "message": "The job was not started because recent account payments have failed or your spending limit needs to be increased. Please check the 'Billing & plans' section in your settings",
+          "raw_details": ""
+        }
+      ]
+    }
+  ],
+  "original_benchmark": "Observed/unqualified unchanged; generator unstable Windows9/Linux3 CLI0/0; original gates preserved",
+  "next": "Review task-attached owned syscall bootstrap feasibility, without actors/perf opens until a new frozen declaration. Full scheduler static/dynamic qualification remains separate.",
+  "qualification": "No supported-Windows/provider/reference/production/release/GC-scheduler-causality claim"
+}
