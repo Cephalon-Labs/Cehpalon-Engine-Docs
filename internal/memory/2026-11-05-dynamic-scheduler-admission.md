@@ -1,0 +1,9 @@
+# Dynamic scheduler admission handoff
+
+Continue #20 from [ADR0030](../adr/ADR-0030-dynamic-scheduler-admission.md), [observations and native gates](../planning/dynamic-scheduler-admission.md) and [delivery](../evidence/dynamic-scheduler/delivery.json). Refresh all three private repository heads, Project 4 and CI.
+
+On 2026-11-05 the layout extractor and projected-lifecycle replay passed 36 tests each on Windows and WSL. Both hosts produced identical layout bytes from the same raw BTF. One frozen WSL root load accepted the unattached nine-instruction current-task/PID-read program and closed its FD. No hook, ring, task-storage map, target, trace, Roslyn or benchmark ran. The source audit distinguishes a raw hook's target from the emitter and confirms a pre-mutation `sched_prepare_exec` candidate. At delayed free, use cached generation data and avoid detached PID or leader reads.
+
+Next prove pidfd task-storage seeding and typed-current helper acceptance, then separately prove scalar remote-target argument reads and exact target CPU layout. Predeclare a controlled synthetic positive and loss-negative run with held owner, kernel birth admission, nonmember controls, first wake, remote wake, switch, exit/free, bounded RCU tail and independent counter/recursion/cleanup checks. Capture readiness remains false until actual positive and negative evidence. Prepare Roslyn only after conformance, with same-execution CLR/TPL, GC and scheduler correlation plus exact runtime provenance.
+
+#3 stays Blocked. Preserve #20 In Progress, P2, M0, original dependencies, estimates, Planned gates and null actual/remaining hours. Preserve original benchmark protocol and observed, unqualified result. Engine revision and GC/compiler settings stay as recorded. Prior hosted payment failures do not count as validation.

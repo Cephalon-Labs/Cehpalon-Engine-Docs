@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-05",
+  "scope": "ADR0030 dynamic scheduler admission preflight for Engine #20",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "7977349a3128a62f8ab12c0487438d67be374563",
+  "samples_capsule": "tooling-traces/evidence/2026-11-05-dynamic-scheduler",
+  "samples_manifest_sha256": "51900ad3b616a34420ce03c85538a8996f62afcda6f229cc87dc44c7e7dd4b2a",
+  "kernel": {
+    "release": "6.18.54.1-microsoft-standard-WSL2",
+    "btf_sha256": "1c1326be5d6ca0e60ad8790971b6765bba91cc8a3ab897a94794177484c8c9b9",
+    "microsoft_source_revision": "d504d40ab83839cb61942a812a99d183c42227b9"
+  },
+  "offline": {
+    "layout_tests_per_host": 20,
+    "replay_tests_per_host": 16,
+    "windows_passed": true,
+    "wsl_passed": true,
+    "layout_sha256": "fd3b12609210221618d81350999775ee3112f11c233583f04cfd990edac32092"
+  },
+  "unattached_verifier": {
+    "attempts": 1,
+    "load_accepted": true,
+    "instructions": 9,
+    "fd_closed": true,
+    "program_sha256": "ebf7b03056380df79f0c68cea0524e58fa556247b0532e5e73a11d643f382539",
+    "source_sha256": "0b5e6a3d08243476a73f8b1536678d1dd6b6d1e6bf5591e53500eedf95fff63a",
+    "map_created": false,
+    "attached": false
+  },
+  "integrity": {
+    "retained_payloads": 89,
+    "sources": 5,
+    "exact_index_blob_hashes": 95,
+    "raw_bytes": 10077893,
+    "stored_bytes": 4415706
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "6b54f28f6a511546ce30d0ed40b9a8db0a9fadaee70b3a52fa4eed9b7aa10486",
+    "actual_remaining_hours": null
+  },
+  "engine_hosted_ci": {
+    "run_ids": [
+      40993252408,
+      40993252420
+    ],
+    "jobs": 4,
+    "executed_steps": 0,
+    "observed": "payment or spending limit rejection"
+  },
+  "capture_ready": false,
+  "native_dynamic_fixture_executed": false,
+  "roslyn_executed": false,
+  "gc_scheduler_cause_established": false,
+  "original_benchmark": {
+    "executed_this_delivery": false,
+    "qualification": "observed, unqualified"
+  }
+}
