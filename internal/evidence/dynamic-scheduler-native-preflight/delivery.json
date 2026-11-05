@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-05",
+  "scope": "ADR0030 bounded native preflight for #20",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "14f3feaf39bf7fc6198ae12b88c2ca376487bbe2",
+  "samples_capsule": "tooling-traces/evidence/2026-11-05-dynamic-scheduler-native-preflight",
+  "samples_manifest_sha256": "0e1547be92fb462efd9b7e08b7348a571e0a33811971901039a37e928e1f8416",
+  "protocol_sha256": "e9cc814a1384af7db91251136c6e659e559383b2385f08b2d5981e6224d81029",
+  "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+  "btf_sha256": "1c1326be5d6ca0e60ad8790971b6765bba91cc8a3ab897a94794177484c8c9b9",
+  "offline_tests_per_host": {
+    "windows": 15,
+    "wsl": 15
+  },
+  "independent_audit_checks": 64,
+  "typed_current_storage_verifier": {
+    "accepted": true,
+    "instructions": 11,
+    "attached": false,
+    "closed": [
+      "program",
+      "map",
+      "btf"
+    ]
+  },
+  "held_owner_userspace_pidfd": {
+    "passed": true,
+    "receipts": 9,
+    "actor_uid_gid": 1000,
+    "actor_exit_code": 0,
+    "closed_fds": 5,
+    "stable_live_lease": true
+  },
+  "scalar_target_verifier": {
+    "accepted": true,
+    "instructions": 8,
+    "source_reviewed_raw_slot": 0,
+    "target_cpu_byte_offset": 20,
+    "attached": false,
+    "fd_closed": true
+  },
+  "integrity": {
+    "indexed_hashes_verified": 47,
+    "payloads": 40,
+    "redaction_verified": true
+  },
+  "retained_raw_log_redaction": {
+    "raw_file_local": "task_storage-attempt01.stdout.json",
+    "raw_sha256": "ad3c1be04ce8266f552da8bcf2b1a6fe1eef92b8feb598a528dc1f954d35a6f4",
+    "decoded_log_sha256": "8725ddd0e0b05682fd25b2860fd81819993d111ada7cc16f7922d64b30720a84",
+    "occurrences": 2,
+    "reason": "Kernel map pointer in verifier rendering",
+    "replacement": "[KERNEL-ADDR-0000]",
+    "shared_file": "task_storage-attempt01.stdout.redacted.json"
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "346e0eb124fbedd8d83410e30b5228d37a788a83af7c88df5bf3d3103ec21cad",
+    "actual_remaining_hours": null
+  },
+  "capture_ready": false,
+  "dynamic_lifecycle_verified": false,
+  "roslyn_executed": false,
+  "gc_scheduler_cause_established": false,
+  "original_benchmark": {
+    "executed_this_delivery": false,
+    "qualification": "observed, unqualified"
+  }
+}

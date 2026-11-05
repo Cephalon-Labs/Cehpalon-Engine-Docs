@@ -1,0 +1,7 @@
+# Dynamic scheduler native preflight handoff
+
+Continue #20 from [ADR0030](../adr/ADR-0030-dynamic-scheduler-admission.md), [native preflight](../validation/dynamic-scheduler-native-preflight.md) and [delivery](../evidence/dynamic-scheduler-native-preflight/delivery.json). Refresh all three private repository heads, Project 4 and CI.
+
+On 2026-11-05 one fixed attempt per probe passed on the pinned Ubuntu WSL kernel. The typed-current task-storage program loaded unattached. A fresh map bound one controlled ordinary UID/GID 1000 actor through two independently opened pidfds. All nine receipts passed, including alias lookup, duplicate refusal, nonmember absence, delete and post-reap lookup absence. Actor and descriptor cleanup passed. A separate unattached raw target program passed verifier loading at the source and BTF checked CPU offset 20. Offline tests passed 15 per host. The verifier log contained two kernel address literals, so the exact raw result stays local and the shared copy carries a redaction record and the original SHA-256.
+
+Next run a separately frozen active synthetic seed acknowledgement with a held actor, closed admission gate, positive and nonmember controls, then prove birth, first wake, remote target, switch, exit/free and loss/cleanup. Capture readiness remains false pending actual native lifecycle evidence. Roslyn and any GC/scheduler change require same-execution evidence and runtime provenance. Keep #3 Blocked, #20 In Progress/P2/M0, its existing planned gates and null hours, and the original benchmark protocol.
