@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-06",
+  "scope": "ADR0030 active one-child synthetic fixture for #20",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "0d9f53d42087c486db9d6bad920b8bf660511236",
+  "samples_capsule": "tooling-traces/evidence/2026-11-06-dynamic-scheduler-active-fixture",
+  "samples_manifest_sha256": "3fb96c5f6438d85ef2a4e630e71f382f5f3f20c9cf5592eb565f118f1f027534",
+  "protocol_sha256": "3b8939233926117fe4b1d242a68ff72e5ef2d59f5cbbb27fb57b2ad9a717d463",
+  "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+  "kernel_btf_sha256": "1c1326be5d6ca0e60ad8790971b6765bba91cc8a3ab897a94794177484c8c9b9",
+  "same_execution_namespace_inode": 4026532214,
+  "attempt": "03",
+  "previous_attempts": {
+    "01": "namespace guard rejected before actor or BPF",
+    "02": "seed passed, exec verifier rejected unreachable instructions before lifecycle attachment"
+  },
+  "seed": {
+    "passed": true,
+    "hook": "sys_enter",
+    "closed_fds": 7
+  },
+  "loss_negative": {
+    "attempted": 20,
+    "retained": 1,
+    "lost": 19,
+    "faults": 0,
+    "free_completed": 1,
+    "closed_fds": 26
+  },
+  "positive": {
+    "attempted": 16,
+    "retained": 16,
+    "lost": 0,
+    "faults": 0,
+    "free_completed": 1,
+    "closed_fds": 26,
+    "local_tid": 757,
+    "global_tid": 2035,
+    "chain_slots": {
+      "birth": 0,
+      "wake_new": 1,
+      "first_switch": 2,
+      "park_switch": 9,
+      "waking": 10,
+      "wakeup": 11,
+      "resumed": 12,
+      "exit": 13,
+      "terminal_switch": 14,
+      "free": 15
+    },
+    "cross_cpu": {
+      "emitter": 0,
+      "target": 1,
+      "wakeup_emitter": 1
+    },
+    "free_after_join_ns": 40872565,
+    "ledger_sha256": "e8753f339cd01f2655fe0d7c6fd52b50b04c5efbb58489616fdd1d1f90249c2e"
+  },
+  "offline_tests_per_host": {
+    "windows": 56,
+    "wsl": 56
+  },
+  "independent_audit_checks": 2935,
+  "readback_scope": "Binary replay checks reported close, attach, recursion and terminal snapshots. It does not rerun syscalls or separately observe the collector's second terminal read.",
+  "integrity": {
+    "indexed_hashes_verified": 76,
+    "payloads": 67,
+    "redacted_copies": 5,
+    "masked_address_literals": 167
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "0baa14a347b2f33ffd04618c636d0b53631365942ca9f826fda233787e547b90",
+    "actual_remaining_hours": null
+  },
+  "synthetic_one_worker_passed": true,
+  "capture_ready": false,
+  "roslyn_executed": false,
+  "gc_scheduler_cause_established": false,
+  "original_benchmark": {
+    "executed_this_delivery": false,
+    "qualification": "observed, unqualified"
+  }
+}

@@ -32,6 +32,14 @@ Source review and the offline layout work ran separately from the native operato
 4. Freeze record, memory, CPU, time, output and generation limits. Demonstrate rejection of deliberate loss, then independently run the fixed positive case. Require full publication/counter reconciliation, complete drain, no helper or recursion misses, and measured perturbation and cleanup. Preserve every attempt.
 5. Define the Roslyn lane separately after the synthetic result. It needs clock binding, exact runtime branch/build/binary correspondence and a complete enough same-execution CLR/TPL, GC and scheduler join to distinguish evidence gaps from attributable waits.
 
-The first active synthetic check should prove that a named, reviewed hook can recognize the same held ordinary owner from a typed current task. Use a closed gate, a fixed seed cookie, an explicit owner marker and a nonmember control. Preserve only a bounded acknowledgement for the owned task. Then bind the validated seed to the kernel birth and target-side scheduler hooks and test the complete lifecycle in a separately frozen run.
+## Active fixture result on 2026-11-06
+
+The active `sys_enter` hook acknowledged the controlled actor's seeded gettid. Its unseeded call and the controller's call left the map unchanged. The controller detached the syscall hook before opening scheduler hooks. Fresh loss and positive cases each forked one nonmember process without creating ledger records.
+
+The one-slot negative counted 20 publication attempts, one retained birth and 19 capacity losses. The 512-slot positive retained all 16 attempted rows. Both cases reported zero faults, one completed free and zero recursion misses on the owned programs. The positive trace mapped local TID 757 to global TID 2035 at birth. It recorded first wake, first switch, interruptible sleep during an empty pipe read, `sched_waking` on CPU 0 for target CPU 1, `sched_wakeup` and resumption on CPU 1, exit, terminal switch-out and free. Free arrived within the declared two-second tail. These observations establish the named, controlled synthetic lifecycle. The fixture has a single-generation limit and the run provides no overhead measurement for Roslyn.
+
+The initial namespace preparation rejection and exec-guard verifier rejection are retained. A same-execution namespace binding and a fault-only exec program corrected those failures before the complete ordered run. [Frozen protocol](../validation/dynamic-scheduler-active-fixture.md) · [Delivery](../evidence/dynamic-scheduler-active-fixture/delivery.json)
+
+The independent audit passed 2,935 checks, including the frozen instructions after declared relocations and a separate decode of the binary ledger. The collector checked equality across its two detached reads and retained one ledger snapshot. Both hosts passed the 56 offline tests.
 
 No Engine revision or original benchmark configuration changes in this lane. The original benchmarks remain Observed and unqualified. #20 stays In Progress with its existing test and benchmark gates. #3 stays Blocked.

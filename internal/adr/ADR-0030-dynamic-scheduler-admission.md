@@ -30,3 +30,5 @@ Run once as root on Ubuntu WSL x86_64, kernel release `6.18.54.1-microsoft-stand
 The single load was accepted and the FD closed. The verifier processed nine instructions. See the [delivery record](../evidence/dynamic-scheduler/delivery.json).
 
 The follow-on [native preflight](../validation/dynamic-scheduler-native-preflight.md) accepted the task-storage and scalar target verifier programs and confirmed actual held-owner userspace seeding through pidfds. A named hook and synthetic lifecycle remain separate acceptance gates.
+
+On 2026-11-06 the [active synthetic fixture](../validation/dynamic-scheduler-active-fixture.md) passed the named owner acknowledgement, fixed publication-loss negative and one-child positive lifecycle. The scope is one held owner and one post-arm worker on pinned WSL. Roslyn capture and attribution require a separate protocol.
