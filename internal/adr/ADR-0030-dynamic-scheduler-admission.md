@@ -34,3 +34,5 @@ The follow-on [native preflight](../validation/dynamic-scheduler-native-prefligh
 On 2026-11-06 the [active synthetic fixture](../validation/dynamic-scheduler-active-fixture.md) passed the named owner acknowledgement, fixed publication-loss negative and one-child positive lifecycle. The scope is one held owner and one post-arm worker on pinned WSL. Roslyn capture and attribution require a separate protocol.
 
 A follow-on [multiworker fixture](../validation/dynamic-scheduler-multiworker.md) passed nested admission, overlapping worker lifetimes, retirement and readmission with one held owner and three workers. It adds generation identity and retained detached ledger checks. CLR ThreadPool coverage and overhead remain separate gates.
+
+The [CLR ThreadPool fixture](../validation/clr-threadpool-scheduler-fixture.md) subsequently bound a real managed callback to one post-arm kernel generation and verified its controlled wake and process-teardown lifecycle. The paired overhead series reports the effect for that specific workload. Roslyn still requires a separately frozen diagnostic protocol.

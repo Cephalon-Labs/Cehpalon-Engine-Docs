@@ -1,0 +1,359 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-06",
+  "scope": "ADR0030 controlled CLR ThreadPool worker and descriptive WSL observer overhead",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "d5a945abf4cbdb1c9c009d55db56a0edd52d203b",
+  "samples_capsule": "tooling-traces/evidence/2026-11-06-clr-threadpool-scheduler-fixture",
+  "samples_manifest_sha256": "df0c4e6624e20d3b83b7092fd6d9ffe6e0186362656be039c3e72d983a5f3322",
+  "protocol_sha256": "0aeba9ced130d0348eea2901cf765d0bcf36f9db104fdf5aaf9d129b88252bab",
+  "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+  "dotnet_sdk": "11.0.100-rc.3.26522.148",
+  "dotnet_runtime": "11.0.0-rc.3.26522.148",
+  "dotnet_vmr_revision": "5254d8bcf59917edc1e1abc33bdf2442b77b1c70",
+  "fixture_sha256": "ede834d3100537937be1dbf6a039bbc19d1a60d8bc888446915cadcd552e1661",
+  "libcoreclr_sha256": "835319c93044fb485cf77e524a79afe1d35a2bf3c2e970ef0b2231b8c3399b78",
+  "previous_preparation_rejected": "Artifact in /tmp unavailable to supervisor, before actor or BPF",
+  "bound_prearm_threads_per_case": 7,
+  "instrumented_total_records": 1852,
+  "instrumented_cases": {
+    "conformance02": {
+      "records": 320,
+      "admitted": 3,
+      "freed": 3,
+      "callback": {
+        "generation": 1,
+        "local_tid": 761,
+        "global_tid": 5186,
+        "parent_generation": 0,
+        "birth_slot": 0,
+        "waking_slot": 42,
+        "wakeup_slot": 43,
+        "resumed_slot": 44,
+        "exit_slot": 309,
+        "free_slot": 318
+      },
+      "ledger_sha256": "5d72a45b15fd987389f3313aba4fd606774229b58a4b33887f520a418bd2ce87"
+    },
+    "overhead02-02-on": {
+      "records": 316,
+      "admitted": 3,
+      "freed": 3,
+      "callback": {
+        "generation": 1,
+        "local_tid": 788,
+        "global_tid": 5213,
+        "parent_generation": 0,
+        "birth_slot": 0,
+        "waking_slot": 42,
+        "wakeup_slot": 43,
+        "resumed_slot": 44,
+        "exit_slot": 305,
+        "free_slot": 313
+      },
+      "ledger_sha256": "d863cdab20734bc4f19ca02c5cc26a49e0ebf38dcc24ea1feb27001b97eaa903"
+    },
+    "overhead02-04-on": {
+      "records": 312,
+      "admitted": 3,
+      "freed": 3,
+      "callback": {
+        "generation": 1,
+        "local_tid": 813,
+        "global_tid": 5238,
+        "parent_generation": 0,
+        "birth_slot": 0,
+        "waking_slot": 38,
+        "wakeup_slot": 39,
+        "resumed_slot": 40,
+        "exit_slot": 301,
+        "free_slot": 309
+      },
+      "ledger_sha256": "8fd253225818855f0c565a3b110e1acb8a1cdce6abaca05044d0e85f382016b1"
+    },
+    "overhead02-05-on": {
+      "records": 312,
+      "admitted": 3,
+      "freed": 3,
+      "callback": {
+        "generation": 1,
+        "local_tid": 826,
+        "global_tid": 5251,
+        "parent_generation": 0,
+        "birth_slot": 0,
+        "waking_slot": 38,
+        "wakeup_slot": 39,
+        "resumed_slot": 40,
+        "exit_slot": 301,
+        "free_slot": 310
+      },
+      "ledger_sha256": "2c9e68641e4a6f6e4ef207ac11922d84351c0f18f5f6a5e76b9527631bbb6e30"
+    },
+    "overhead02-08-on": {
+      "records": 280,
+      "admitted": 3,
+      "freed": 3,
+      "callback": {
+        "generation": 1,
+        "local_tid": 863,
+        "global_tid": 5288,
+        "parent_generation": 0,
+        "birth_slot": 0,
+        "waking_slot": 38,
+        "wakeup_slot": 39,
+        "resumed_slot": 40,
+        "exit_slot": 269,
+        "free_slot": 279
+      },
+      "ledger_sha256": "8d95bdf1456d44625b210e1421c2025ed4c2ec39de8cfd8986cdbb300c505bd3"
+    },
+    "overhead02-09-on": {
+      "records": 312,
+      "admitted": 3,
+      "freed": 3,
+      "callback": {
+        "generation": 1,
+        "local_tid": 876,
+        "global_tid": 5301,
+        "parent_generation": 0,
+        "birth_slot": 0,
+        "waking_slot": 34,
+        "wakeup_slot": 35,
+        "resumed_slot": 36,
+        "exit_slot": 301,
+        "free_slot": 309
+      },
+      "ledger_sha256": "7f8f91e20f0fddbd23520f7a32ad30d59a646b9d3d06867761e0185bc183802e"
+    }
+  },
+  "measured_overhead": {
+    "primary": "64 pipe round trips",
+    "pairs": [
+      {
+        "pair": 1,
+        "order": [
+          "off",
+          "on"
+        ],
+        "off_slot": 3,
+        "on_slot": 4,
+        "ping_ns": {
+          "off_ns": 2089532,
+          "on_ns": 2122986,
+          "on_minus_off_ns": 33454,
+          "on_minus_off_percent_of_off": {
+            "numerator": 836350,
+            "denominator": 522383
+          }
+        },
+        "work_ns": {
+          "off_ns": 4823175,
+          "on_ns": 5024760,
+          "on_minus_off_ns": 201585,
+          "on_minus_off_percent_of_off": {
+            "numerator": 268780,
+            "denominator": 64309
+          }
+        }
+      },
+      {
+        "pair": 2,
+        "order": [
+          "on",
+          "off"
+        ],
+        "off_slot": 6,
+        "on_slot": 5,
+        "ping_ns": {
+          "off_ns": 2083261,
+          "on_ns": 2614043,
+          "on_minus_off_ns": 530782,
+          "on_minus_off_percent_of_off": {
+            "numerator": 53078200,
+            "denominator": 2083261
+          }
+        },
+        "work_ns": {
+          "off_ns": 4487247,
+          "on_ns": 5479892,
+          "on_minus_off_ns": 992645,
+          "on_minus_off_percent_of_off": {
+            "numerator": 99264500,
+            "denominator": 4487247
+          }
+        }
+      },
+      {
+        "pair": 3,
+        "order": [
+          "off",
+          "on"
+        ],
+        "off_slot": 7,
+        "on_slot": 8,
+        "ping_ns": {
+          "off_ns": 2118163,
+          "on_ns": 2340723,
+          "on_minus_off_ns": 222560,
+          "on_minus_off_percent_of_off": {
+            "numerator": 22256000,
+            "denominator": 2118163
+          }
+        },
+        "work_ns": {
+          "off_ns": 5062156,
+          "on_ns": 5053625,
+          "on_minus_off_ns": -8531,
+          "on_minus_off_percent_of_off": {
+            "numerator": -213275,
+            "denominator": 1265539
+          }
+        }
+      },
+      {
+        "pair": 4,
+        "order": [
+          "on",
+          "off"
+        ],
+        "off_slot": 10,
+        "on_slot": 9,
+        "ping_ns": {
+          "off_ns": 2156027,
+          "on_ns": 2304270,
+          "on_minus_off_ns": 148243,
+          "on_minus_off_percent_of_off": {
+            "numerator": 14824300,
+            "denominator": 2156027
+          }
+        },
+        "work_ns": {
+          "off_ns": 4567460,
+          "on_ns": 4958254,
+          "on_minus_off_ns": 390794,
+          "on_minus_off_percent_of_off": {
+            "numerator": 1953970,
+            "denominator": 228373
+          }
+        }
+      }
+    ],
+    "metrics": {
+      "ping_ns": {
+        "on_minus_off_ns": {
+          "median": {
+            "numerator": 370803,
+            "denominator": 2
+          },
+          "min": 33454,
+          "max": 530782
+        },
+        "on_minus_off_percent_of_off": {
+          "median": {
+            "numerator": 39692410336450,
+            "denominator": 4566816618401
+          },
+          "min": {
+            "numerator": 836350,
+            "denominator": 522383
+          },
+          "max": {
+            "numerator": 53078200,
+            "denominator": 2083261
+          }
+        }
+      },
+      "work_ns": {
+        "on_minus_off_ns": {
+          "median": {
+            "numerator": 592379,
+            "denominator": 2
+          },
+          "min": -8531,
+          "max": 992645
+        },
+        "on_minus_off_percent_of_off": {
+          "median": {
+            "numerator": 93519975835,
+            "denominator": 14686439257
+          },
+          "min": {
+            "numerator": -213275,
+            "denominator": 1265539
+          },
+          "max": {
+            "numerator": 99264500,
+            "denominator": 4487247
+          }
+        }
+      }
+    },
+    "primers": [
+      {
+        "slot": 1,
+        "phase": "primer",
+        "pair": 0,
+        "mode": "off",
+        "pid": 767,
+        "worker_tid": 774,
+        "ping_ns": 2445512,
+        "work_ns": 5126346,
+        "ping_ticks": 2446108,
+        "work_ticks": 5127544,
+        "ping_process_cpu_ns": 2138388,
+        "preparation_ns": 43345948,
+        "controller_command_ns": 6649607,
+        "cleanup_ns": 1887592
+      },
+      {
+        "slot": 2,
+        "phase": "primer",
+        "pair": 0,
+        "mode": "on",
+        "pid": 781,
+        "worker_tid": 788,
+        "ping_ns": 2270013,
+        "work_ns": 5044178,
+        "ping_ticks": 2270616,
+        "work_ticks": 5045058,
+        "ping_process_cpu_ns": 1969551,
+        "preparation_ns": 103700361,
+        "controller_command_ns": 6630054,
+        "cleanup_ns": 90425034
+      }
+    ],
+    "independent_primer_delta_ns": -175499
+  },
+  "offline_tests_per_host": {
+    "windows": 80,
+    "wsl": 80
+  },
+  "independent_audits": {
+    "lifecycle_checks": 20424,
+    "overhead_checks": 228
+  },
+  "integrity": {
+    "indexed_hashes_verified": 107,
+    "payloads": 97,
+    "redacted_copies": 6,
+    "masked_address_literals": 624
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "dbbf5e8a1877e76b97000ba8b62e5535cb437b225a62c4c750df819028f85055",
+    "actual_remaining_hours": null
+  },
+  "bounded_clr_threadpool_fixture_passed": true,
+  "capture_ready": false,
+  "roslyn_executed": false,
+  "gc_scheduler_cause_established": false,
+  "original_benchmark": {
+    "executed_this_delivery": false,
+    "qualification": "observed, unqualified"
+  }
+}

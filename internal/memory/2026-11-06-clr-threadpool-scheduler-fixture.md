@@ -1,0 +1,7 @@
+# CLR ThreadPool scheduler fixture handoff
+
+Start with [ADR0030](../adr/ADR-0030-dynamic-scheduler-admission.md), [fixed CLR fixture protocol](../validation/clr-threadpool-scheduler-fixture.md) and [delivery](../evidence/clr-threadpool-scheduler-fixture/delivery.json). Refresh all three private repository heads, Project 4 and CI.
+
+Pinned .NET 11 RC3 on WSL. First build worked but root supervisor could not reopen the `/tmp` artifact, so attempt 01 ended before any actor or BPF. Same locked sources built on a persistent guest path and were refrozen. Complete attempt 02 ran one instrumented conformance case, an OFF/ON primer and four fixed alternating pairs. Seven pre-arm threads were held and bound. The real callback matched local/global 761/5186 in generation 1 in conformance. Kernel records verify its birth, park, CPU 0 to CPU 1 wake, exit and free at process teardown. Each of six instrumented cases admitted and freed three generations with zero reported loss, faults and recursion misses. Only the callback role is positively identified.
+
+Measured ping deltas were +0.033454, +0.530782, +0.222560 and +0.148243 ms. Median +0.185402 ms, median paired relative +8.69%, range +1.60% to +25.48%. Primer −0.175499 ms remains separate. These are synthetic shared-WSL observations. Next freeze Roslyn's same-execution CLR/TPL, GC and scheduler scope with exact loaded runtime evidence. Retain original benchmark, #3 Blocked and #20 In Progress/P2/M0, existing planned gates and null hours.

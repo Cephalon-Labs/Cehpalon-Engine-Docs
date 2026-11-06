@@ -52,4 +52,14 @@ The independent audit passed 3,452 checks against the retained raw ledgers, froz
 
 Next qualify a bounded CLR ThreadPool target and characterize collection overhead before the separate Roslyn correlation protocol. [Multiworker protocol](../validation/dynamic-scheduler-multiworker.md) · [Delivery](../evidence/dynamic-scheduler-multiworker/delivery.json)
 
+## CLR ThreadPool fixture and overhead on 2026-11-06
+
+On pinned .NET 11 RC3, the ordinary actor held seven pre-arm threads, including the leader. The named gettid hook acknowledged the leader and live thread pidfds seeded its six siblings. In the conformance case, the managed callback's native TID 761 matched kernel global TID 5186 and generation 1. The collector observed birth and first switch before the callback, a verified pipe park, waking from CPU 0 to CPU 1, resumption on CPU 1, and terminal switch and free at process teardown. Two further generations were admitted and freed. Their runtime roles remain unidentified. Conformance retained 320 of 320 records. All six instrumented executions reconciled three admissions and frees each, with zero reported loss, faults and recursion misses. The retained observations cover the selected callback and admitted generations.
+
+The first supervisor stopped before any actor or collection because it could not reopen the build in `/tmp`. The same locked source was built on a persistent guest path and refrozen before the complete second execution. The conformance case and all ten overhead cases completed. The primary interval covers 64 pipe round trips. The four measured ON minus OFF differences were +0.033454, +0.530782, +0.222560 and +0.148243 ms. The median difference was +0.185402 ms. The median paired relative difference was +8.69%, with a range of +1.60% to +25.48%. The separate primer showed −0.175499 ms. The full work interval includes park control and is reported separately. This series measures a bounded WSL fixture under its recorded conditions.
+
+The six instrumented executions retained 1,852 rows in total. Independent lifecycle and overhead audits passed 20,424 and 228 checks respectively. Windows and WSL each passed 80 offline tests. The 18 previous multiworker bytecode templates remain byte-identical for their original capacities.
+
+The next gate is a separate Roslyn diagnostic protocol with same-execution CLR/TPL, GC and scheduler correlation, explicit missing-coverage handling and loaded runtime provenance. No original benchmark or Roslyn workload ran in the CLR fixture series. [CLR protocol](../validation/clr-threadpool-scheduler-fixture.md) · [Delivery](../evidence/clr-threadpool-scheduler-fixture/delivery.json)
+
 No Engine revision or original benchmark configuration changes in this lane. The original benchmarks remain Observed and unqualified. #20 stays In Progress with its existing test and benchmark gates. #3 stays Blocked.
