@@ -42,4 +42,14 @@ The initial namespace preparation rejection and exec-guard verifier rejection ar
 
 The independent audit passed 2,935 checks, including the frozen instructions after declared relocations and a separate decode of the binary ledger. The collector checked equality across its two detached reads and retained one ledger snapshot. Both hosts passed the 56 offline tests.
 
+## Multiworker result on 2026-11-06
+
+One fixed negative-then-positive matrix passed on the first attempt. The one-slot loss control attempted 72 publications, retained the first birth, counted 71 capacity losses, and completed three admissions and frees. The positive retained all 58 rows with zero publication loss or faults. Each case reported zero recursion misses, closed 28 descriptors and reaped its actor. Both detached reads produced matching counts and ledger hashes.
+
+The positive ledger binds generations 1, 2 and 3 to local/global TIDs 766/2049, 767/2050 and 768/2051. A created B while both were active. B remained blocked after A was freed. The leader created C after B was freed. Each owned worker has a distinct controlled pipe wake from CPU 0 to CPU 1, a switch-in on CPU 1, exit, terminal switch and free. All three frees fell within their declared deadlines. The native run used distinct numeric IDs. Reuse of an old numeric ID and rejection of stale records were exercised offline. Pointer identity stays private.
+
+The independent audit passed 3,452 checks against the retained raw ledgers, frozen instructions and terminal receipts. Windows and WSL each passed 72 offline tests.
+
+Next qualify a bounded CLR ThreadPool target and characterize collection overhead before the separate Roslyn correlation protocol. [Multiworker protocol](../validation/dynamic-scheduler-multiworker.md) · [Delivery](../evidence/dynamic-scheduler-multiworker/delivery.json)
+
 No Engine revision or original benchmark configuration changes in this lane. The original benchmarks remain Observed and unqualified. #20 stays In Progress with its existing test and benchmark gates. #3 stays Blocked.

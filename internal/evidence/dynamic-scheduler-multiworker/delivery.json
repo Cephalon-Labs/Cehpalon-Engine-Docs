@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-06",
+  "scope": "ADR0030 ordered multiworker synthetic matrix for #20",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "165b694880101914b56f4919974f81a83bc2b039",
+  "samples_capsule": "tooling-traces/evidence/2026-11-06-dynamic-scheduler-multiworker",
+  "samples_manifest_sha256": "a960e3f4877b42abd3d660783befaee2e7561795db04ab03c0a9aa713702726d",
+  "protocol_sha256": "7f914cc802b788149f483d96c145d8551daf029ceeedcf722354b110f3a1c73f",
+  "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+  "kernel_btf_sha256": "1c1326be5d6ca0e60ad8790971b6765bba91cc8a3ab897a94794177484c8c9b9",
+  "same_execution_namespace_inode": 4026532214,
+  "attempts": 1,
+  "cases": {
+    "negative": {
+      "attempted": 72,
+      "published": 1,
+      "lost": 71,
+      "faults": 0,
+      "free_completed": 3,
+      "admitted": 3,
+      "ledger_sha256": "22f0a2215536cda34ae98aff8be830c8980e2de1abc437c98e601072abccf891",
+      "raw_report_sha256": "98728f4887d6116ecc84785d6f293d124c1e5572fd25a24afa41b2b6cb7f1cd4",
+      "programs_checked": 10,
+      "reported_closed_fds": 28
+    },
+    "positive": {
+      "attempted": 58,
+      "published": 58,
+      "lost": 0,
+      "faults": 0,
+      "free_completed": 3,
+      "admitted": 3,
+      "ledger_sha256": "e45e2ce157e7576589d2c0f461eb22c61052bd56c59d9c78d862f4162b0b7a7c",
+      "workers": {
+        "A": {
+          "slots": {
+            "birth": 0,
+            "wake_new": 1,
+            "first_switch": 2,
+            "park_switch": 21,
+            "waking": 22,
+            "wakeup": 23,
+            "resumed": 24,
+            "exit": 29,
+            "terminal_switch": 30,
+            "free": 31
+          },
+          "rows": 24,
+          "wakeup_emitter_cpu": 1,
+          "free_after_join_ns": 30203498,
+          "local_tid": 766,
+          "global_tid": 2049,
+          "parent_generation": 0
+        },
+        "B": {
+          "slots": {
+            "birth": 9,
+            "wake_new": 10,
+            "first_switch": 11,
+            "park_switch": 20,
+            "waking": 32,
+            "wakeup": 33,
+            "resumed": 34,
+            "exit": 35,
+            "terminal_switch": 36,
+            "free": 37
+          },
+          "rows": 14,
+          "wakeup_emitter_cpu": 1,
+          "free_after_join_ns": 18468217,
+          "local_tid": 767,
+          "global_tid": 2050,
+          "parent_generation": 1
+        },
+        "C": {
+          "slots": {
+            "birth": 38,
+            "wake_new": 39,
+            "first_switch": 40,
+            "park_switch": 51,
+            "waking": 52,
+            "wakeup": 53,
+            "resumed": 54,
+            "exit": 55,
+            "terminal_switch": 56,
+            "free": 57
+          },
+          "rows": 20,
+          "wakeup_emitter_cpu": 1,
+          "free_after_join_ns": 24699752,
+          "local_tid": 768,
+          "global_tid": 2051,
+          "parent_generation": 0
+        }
+      },
+      "observed_numeric_identity_reuse": false,
+      "raw_report_sha256": "208312ea5c22ef4bff0bcad864c9aa19fe1b814c7a019bb6edd777d29bf5f7e2",
+      "programs_checked": 10,
+      "reported_closed_fds": 28
+    }
+  },
+  "offline_tests_per_host": {
+    "windows": 72,
+    "wsl": 72
+  },
+  "independent_audit_checks": 3452,
+  "audit_scope": "Audits reported links, misses, close receipts, second-read digest and raw ledger bytes. No native calls are repeated and private task addresses are excluded.",
+  "integrity": {
+    "indexed_hashes_verified": 52,
+    "payloads": 43,
+    "redacted_copies": 2,
+    "masked_address_literals": 208
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "0bd9f520b8bedd20e962ca7641a39b6635bb718b44bba8cca8726e9272ec0c1e",
+    "actual_remaining_hours": null
+  },
+  "synthetic_multiworker_passed": true,
+  "observed_private_address_reuse": false,
+  "capture_ready": false,
+  "clr_threadpool_fixture_executed": false,
+  "roslyn_executed": false,
+  "gc_scheduler_cause_established": false,
+  "original_benchmark": {
+    "executed_this_delivery": false,
+    "qualification": "observed, unqualified"
+  }
+}
