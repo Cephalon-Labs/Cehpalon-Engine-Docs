@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-07",
+  "scope": "ADR0031 bounded same-execution Roslyn CLR/TPL/GC/scheduler observations",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "98b494e9048c4fd5f9f03d6e3a5ec2555808b106",
+  "samples_capsule": "tooling-traces/evidence/2026-11-07-roslyn-scheduler",
+  "samples_manifest_sha256": "388ff60b9f727207c459f9b6d18a8f2b386730afc3e6115c76a8515b311b974e",
+  "retained_payloads": 265,
+  "stored_bytes": 80541928,
+  "shared_verifier_redaction_files": 3,
+  "shared_verifier_redaction_occurrences": 369,
+  "original_verifier_raw": "Retained locally; original and shared SHA-256 hashes in retention manifest",
+  "protocol_frozen_sha256": "4b65d4f884d57234079c8eecfef7d1c1dc00e7971d5c386de2a5f71148872438",
+  "final_readable_protocol_sha256": "4b65d4f884d57234079c8eecfef7d1c1dc00e7971d5c386de2a5f71148872438",
+  "driver_sha256": "21d061db61ac77608f470f168b431cb5a631a099bfb1b07ed64cd5be04d53b5c",
+  "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+  "dotnet_sdk": "11.0.100-rc.3.26522.148",
+  "dotnet_runtime": "11.0.0-rc.3.26522.148",
+  "dotnet_vmr_revision": "5254d8bcf59917edc1e1abc33bdf2442b77b1c70",
+  "capture_attempts": {
+    "conformance01": "completed; 564 records",
+    "capture01": "rejected before BPF or EventPipe collector: CLR not yet mapped",
+    "conformance02": "completed; 564 records",
+    "capture02": "completed; 243270 native rows; all 39 admitted generations retired"
+  },
+  "managed_events": 667188,
+  "managed_stacks": 233835,
+  "tpl_records": 65562,
+  "complete_tpl_execution_histories": 19466,
+  "emit_rows": 306,
+  "primers": 36,
+  "measured_emit_rows": 270,
+  "stage_markers": 2956,
+  "scheduler_terminal_counts": [
+    243270,
+    0,
+    0,
+    39,
+    39,
+    2
+  ],
+  "scheduler_recursion_misses": 0,
+  "closed_capture_descriptors": 29,
+  "global_timestamp_reversals": 740,
+  "global_timestamp_ties": 50,
+  "analysis": {
+    "status": "completed_bounded_same_execution_observations",
+    "target_pid": 818,
+    "clock_offset_ms": [
+      "-8739636681/500000",
+      "-17479271691/1000000"
+    ],
+    "kernel_records": 243270,
+    "generations": 39,
+    "initial_enrollments": 2,
+    "measured_emit_rows": 270,
+    "distinct_selected_waits": 1909,
+    "wait_identity_statuses": {
+      "bound": 1909
+    },
+    "whole_point_corpus_identity_statuses": {
+      "caller_wait_for_workers/active": 4886,
+      "compiler_pool_point/active": 10973,
+      "compiler_frame_without_pool/active": 71
+    },
+    "literal_gc_boundary_count": 48056,
+    "waits_with_contained_gc_boundary": 677,
+    "within_generation_timestamp_reversals": 13,
+    "within_generation_timestamp_ties": 0,
+    "caller_wait_core_union_conditional_recorded_state_ns": {
+      "3": {
+        "runnable_observed": "18967858",
+        "running_observed": "97069588",
+        "unknown": "5188342231"
+      }
+    },
+    "gc_pause_total_ns": null,
+    "exclusive_gc_scheduler_share": null,
+    "limits": [
+      "Identity links require the same execution and strict lifecycle containment.",
+      "Initial records begin at enrollment and leave earlier lifetime unknown.",
+      "Conditional state intervals use recorded BPF callback points, not exact scheduler transition time.",
+      "Publication and timestamp ordering ambiguity remains explicit and masked as unknown.",
+      "TPL waits and compiler frames do not establish a direct compiler callsite or useful work.",
+      "GC boundaries remain unpaired literal events, with no certified pause total or exclusive cause."
+    ]
+  },
+  "audits": {
+    "native_checks": 1222250,
+    "preparation_checks": 132,
+    "independent_wait_accounting_checks": 5727,
+    "focused_tests_windows": 112,
+    "focused_tests_wsl": 112,
+    "legacy_capture_helper_selftest": 10,
+    "index_source_parity_files": 16,
+    "index_evidence_parts": 265,
+    "capture_audits_as_at_run": true,
+    "postcapture_source_delta": "Only tools/scheduler_trace_model.py among the 30 capture-frozen sources changed; offline recorded-order masks added, original retained"
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22_rows_identical": true,
+    "issue20_nonbody_metadata_identical": true,
+    "body_preserves_prior_exact_prefix": true,
+    "plan_sha256": "27aebb58b939836c8fd9ac78f3e2726170dad9ac8ca5f3b24b0a24421a36434f",
+    "actual_remaining_hours": null
+  },
+  "readiness": {
+    "general_capture_ready": false,
+    "roslyn_causal_attribution": false,
+    "gc_pause_total_certified": false,
+    "original_benchmark_qualification": false,
+    "engine_optimization": false
+  },
+  "ci": "Engine current revision payment/spending blocked before steps; no rerun",
+  "next_scope": "Validate exact kernel switch-state masks and callback timestamp/order semantics on bounded fixtures, then refine retained analysis without choosing favorable reruns."
+}

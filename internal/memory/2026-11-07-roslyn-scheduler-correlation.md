@@ -1,0 +1,11 @@
+# Same-execution Roslyn scheduler handoff
+
+Read [ADR0031](../adr/ADR-0031-roslyn-same-execution-scheduler.md), [protocol](../validation/roslyn-scheduler-correlation.md), [report](../planning/roslyn-scheduler-correlation.md) and [delivery](../evidence/roslyn-scheduler-correlation/delivery.json). Refresh all three heads, Project 4, CI and tracking before continuing.
+
+Pinned .NET 11 RC3/WSL reuses the unchanged driver and full 306-row corpus. Same execution retained 667,188 managed events, 233,835 stack records, 243,270 native records and 39 completed admitted lifetimes (two initial left-censored enrollments plus 37 births), with zero reported native loss/fault/misses. All 1,909 selected waits inside 270 measured Emit rows bind to main generation 3. Literal GC boundaries occur within 677 waits; no pause total or exclusive cause is certified.
+
+Native publication order contains 740 timestamp reversals and 50 ties globally, 13 reversals within generations. Offline masks preserve visible ordering ambiguity through the next definite reset. The conditional wait-core partition is mostly unknown (5,188,342,231 of 5,304,379,677 ns), including unfamiliar switch-state masks. Raw main switch-out values 8193 and 258 dominate counts. Next independently validate exact kernel state-mask and callback timing/order semantics on bounded fixtures before refining the existing capture. GC pairing/source asymmetries remain open. No Engine patch or speedup is justified.
+
+Final tests: 112 each Windows/WSL; native audit 1,222,250; preparation audit 132; exact offline accounting 5,727. Preserve the first Git-owner guard, failed pre-map runtime readiness capture, both partial offline analyses, discovery/audit failures and all sources/raw. Captured and final offline decoder differ explicitly; runtime capture sources are unchanged. Shared verifier copies redact actual kernel addresses, with local raw SHA-256 provenance. Evidence hashes are observations, not immutable execution attestation.
+
+Keep #3's entire row Blocked. #20 stays In Progress/P2/M0, W5, dependencies #2/#11, estimates 40/60/80, both gates Planned, actual/remaining null. Original benchmark unchanged and unqualified. CI payment/spending blocks remain separate from local passes. Root remains sole remote writer.
