@@ -1,0 +1,241 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-10",
+  "scope": "ADR0031 fixed native owned callback clock-bracket controls and later switch-hook source feasibility",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "807d6dede6f7c14b31f6978189b7c129869b88b0",
+  "samples_capsule": "tooling-traces/evidence/2026-11-10-scheduler-clock-brackets",
+  "samples_manifest_sha256": "2e66f35e67269dbb2523f99e4524f6153f68ad0ae02ce2212d8bf03b7cf298b1",
+  "retained_payloads": 178,
+  "stored_bytes": 2299164,
+  "redacted_files": 2,
+  "redacted_kernel_address_occurrences": 12,
+  "exact_raw_verifier_logs": "Local originals remain with original SHA256 in manifest",
+  "source_freeze_sha256": "a988c4b0ef242e11ffcc77b2b11d719e0077bdfee85208fe01832a38ec407153",
+  "protocol_sha256": "bb47e1602f9c3b5013b1a175dd418de687381d685c363aed80a356f3bb9bda49",
+  "execution": {
+    "exit": 0,
+    "command": [
+      "/usr/bin/timeout",
+      "--kill-after=2s",
+      "120s",
+      "/usr/bin/python3",
+      "-B",
+      "/mnt/d/Cephalon/Cehpalon-Engine-Samples/tools/collect_scheduler_clock.py",
+      "--output",
+      "/mnt/d/Cephalon/Cehpalon-Engine-Docs/.local/scheduler-clock01/native01"
+    ],
+    "sources_unchanged": true,
+    "binaries_unchanged": true
+  },
+  "frozen_tool_sources": 99,
+  "frozen_binary_btf_artifacts": 3,
+  "whole_local_artifacts_bytes": 3695658,
+  "artifact_budget_bytes": 16777216,
+  "kernel_release": "6.18.54.1-microsoft-standard-WSL2",
+  "kernel_source_commit": "d504d40ab83839cb61942a812a99d183c42227b9",
+  "cases": {
+    "negative01": {
+      "status": "completed",
+      "actor_pid": 754,
+      "capacity": 1,
+      "terminal_counts": [
+        2,
+        1,
+        0,
+        0
+      ],
+      "ledger_sha256": "331b4b953c5da4decd8b5205eac91406f5128c4d5bdafeabd815e33ecb55eada",
+      "second_read_sha256": "331b4b953c5da4decd8b5205eac91406f5128c4d5bdafeabd815e33ecb55eada",
+      "closed_fds": 9,
+      "cleanup_errors": [],
+      "forced_cleanup": false,
+      "recursion_misses": 0,
+      "retained": 1,
+      "outside_reference_brackets": 0,
+      "recorded_callback_backwards": 0
+    },
+    "positive01": {
+      "status": "completed",
+      "actor_pid": 755,
+      "capacity": 128,
+      "terminal_counts": [
+        64,
+        0,
+        0,
+        0
+      ],
+      "ledger_sha256": "49dfbf14b058aaa207fd083bd464e8281b54ab4f092bee0a3c50996a8c637cc3",
+      "second_read_sha256": "49dfbf14b058aaa207fd083bd464e8281b54ab4f092bee0a3c50996a8c637cc3",
+      "closed_fds": 9,
+      "cleanup_errors": [],
+      "forced_cleanup": false,
+      "recursion_misses": 0,
+      "retained": 64,
+      "outside_reference_brackets": 0,
+      "recorded_callback_backwards": 0
+    }
+  },
+  "positive_reference_bracket_width_ns": {
+    "min": 1009,
+    "median": 1100.5,
+    "max": 4613
+  },
+  "conditional_discrepancy_interval_hull_ns": [
+    -1496,
+    3334
+  ],
+  "qualification": {
+    "transferable_error_bound": null,
+    "physical_scheduler_duration": false,
+    "historical_roslyn": false,
+    "gc_cause": false,
+    "engine_speedup": false,
+    "general_capture_ready": false
+  },
+  "source_review_checks": 37,
+  "immutable_primary_source_files": 17,
+  "focused_tests_windows": 124,
+  "focused_tests_wsl": 124,
+  "independent_native_audit": {
+    "status": "passed_bounded_independent_clock_fixture_audit",
+    "checks_passed": 629,
+    "checks_by_kind": {
+      "ordered execution completed unchanged": 1,
+      "frozen ordered cases": 1,
+      "frozen protocol bytes": 1,
+      "frozen supervisor bytes": 1,
+      "current source equals freeze": 99,
+      "captured source equals freeze": 99,
+      "declared source and binary bounds": 1,
+      "readiness checksum observations already include isolation delta": 1,
+      "isolation correction chronology explicit": 1,
+      "case completed at fixed capacity": 2,
+      "reported clean owned cleanup": 2,
+      "ordinary actor isolation argv": 2,
+      "still-live identity lease unchanged": 2,
+      "positive execution identity": 2,
+      "ordinary actor credentials": 2,
+      "independent alias bindings": 2,
+      "zero shared monotonic namespace offset": 2,
+      "exact seed alias nonmember and postreap receipts": 2,
+      "one named raw hook": 2,
+      "unseeded nonmember wrongsyscall counters zero": 2,
+      "two unseeded gettid controls": 2,
+      "one wrongsyscall control": 2,
+      "control identity and reference receipt": 4,
+      "exact frozen batch sequence": 2,
+      "positive batch syscall and affinity": 9,
+      "terminal counters reconcile": 2,
+      "full ledger and second read hash": 2,
+      "all unused slots zero": 2,
+      "reported hook misses zero": 2,
+      "fixed loaded instruction length": 2,
+      "fixed loaded instruction": 100,
+      "only declared live mapFD relocation": 6,
+      "distinct storage counts and record map roles": 2,
+      "unique contiguous ordinal and exact CPU": 65,
+      "raw positive reference identity and times": 65,
+      "independent raw observation and exact discrepancy arithmetic": 65,
+      "analysis fixed completeness counts": 2,
+      "all reported timing anomalies independently reproduced": 2,
+      "timing and historical qualification remain false": 2,
+      "reference brackets sequential": 63,
+      "fresh ordinary actor identities distinct observed": 1
+    },
+    "cases": [
+      {
+        "case": "negative01",
+        "actor_pid": 754,
+        "attempted": 2,
+        "lost": 1,
+        "retained": 1,
+        "ledger_sha256": "331b4b953c5da4decd8b5205eac91406f5128c4d5bdafeabd815e33ecb55eada",
+        "outside_reference_brackets": 0,
+        "recorded_body_backwards": 0,
+        "cpu_counts": {
+          "0": 1
+        },
+        "reference_bracket_width_range_ns": [
+          3248,
+          3248
+        ],
+        "conditional_recorded_body_span_range_ns": [
+          342,
+          342
+        ],
+        "conditional_discrepancy_interval_hull_ns": [
+          -1366,
+          2224
+        ],
+        "closed_fds": 9
+      },
+      {
+        "case": "positive01",
+        "actor_pid": 755,
+        "attempted": 64,
+        "lost": 0,
+        "retained": 64,
+        "ledger_sha256": "49dfbf14b058aaa207fd083bd464e8281b54ab4f092bee0a3c50996a8c637cc3",
+        "outside_reference_brackets": 0,
+        "recorded_body_backwards": 0,
+        "cpu_counts": {
+          "0": 32,
+          "1": 32
+        },
+        "reference_bracket_width_range_ns": [
+          1009,
+          4613
+        ],
+        "conditional_recorded_body_span_range_ns": [
+          25,
+          295
+        ],
+        "conditional_discrepancy_interval_hull_ns": [
+          -1496,
+          3334
+        ],
+        "closed_fds": 9
+      }
+    ],
+    "production_analysis_imported": false,
+    "production_program_builder_imported": false,
+    "readiness_hash_observation": "Visual initial review preceded isolation change; readiness checksum file was sampled after that change and matches all frozen files. It is not a pre-delta source attestation.",
+    "caveats": [
+      "Native closure and binary before/after parity are recorded receipts bound to frozen executing source; this audit does not attest running JIT or kernel image.",
+      "Root nonmember gettid is source-invoked and storage absence/counters recorded, with no separate root syscall numeric-return receipt.",
+      "Finite callback-body and raw-reference brackets do not certify a transferable fast-clock error bound or historical Roslyn physical scheduler durations."
+    ]
+  },
+  "index_source_parity": 99,
+  "index_evidence_payload_parity": 178,
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22rows_identical": true,
+    "issue20_metadata_identical": true,
+    "prior_body_exact_prefix": true,
+    "plan_sha256": "f40b87b5ca8cd29dd412cd35bd3116432d036c34f42a401e6fb225abdfd445db"
+  },
+  "limits": [
+    "Fast and raw-reference accessors share timekeeper and clocksource.",
+    "Snapshots are inner post-ownership callback-body points, not full hook/syscall/physical switch boundaries.",
+    "Root nonmember syscall source invocation and storage/counter receipts retained; numeric return not separately recorded.",
+    "Readiness visual inspection predates actor isolation edit; readiness hashes sampled after correction.",
+    "Source/BTF/version/hash correspondence is observational, without immutable executing-image or JIT attestation."
+  ],
+  "switch_hooks": {
+    "named": [
+      "sched_entry_tp",
+      "sched_exit_tp"
+    ],
+    "source_and_btf_feasible": true,
+    "attachment_attempted": false,
+    "cpu_only_pairing_valid": false,
+    "newborn_and_noswitch_controls_required": true
+  },
+  "no_roslyn_build_engine_benchmark_or_global_config_change": true,
+  "ci": "Engine unchanged revision remains payment/spending blocked before steps; no rerun",
+  "next_scope": "Freeze scoped current-task sched_entry_tp/sched_exit_tp attachment and invocation/lifecycle/raw-bool controls, preserving newborn/no-switch and migration ambiguity."
+}

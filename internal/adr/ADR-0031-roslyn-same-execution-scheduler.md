@@ -27,3 +27,7 @@ Validate the enlarged profile on a separate controlled CLR actor, run one full g
 ## 2026-11-10 offline state-contract continuation
 
 Accept the [bounded offline protocol](../validation/roslyn-scheduler-state-contract.md) and [source/clock review](../planning/roslyn-scheduler-state-contract.md). A separately selected profile adds only exact raw8193 and258 conditional sleep-state labels; legacy remains default and recorded-order masks remain unchanged. Physical scheduler duration and causality remain uncertified. The helper5 fast-clock and pre-context-switch callback contracts supply additional timing limitations; publication placement alone does not explain the observed reversals. Require a separately frozen error-envelope/boundary protocol before physical-duration claims, with no unchanged Roslyn rerun merely to improve labels.
+
+## 2026-11-10 owned callback clock controls
+
+Accept the separately frozen [clock-bracket protocol](../validation/scheduler-clock-brackets.md) and [bounded observations](../planning/scheduler-clock-brackets.md). One negative/fresh positive sys_enter-only owned actor pair compares inner callback-body fast points with containing raw non-fast monotonic reference reads. The accessors share a clocksource; finite brackets do not establish universal or historical errors or physical switch timing. The source/BTF-feasible sched_entry_tp/sched_exit_tp hooks require a later explicit attachment/current-invocation/lifecycle gate; CPU-only pairing is invalid and newborn/no-switch paths need controls.
