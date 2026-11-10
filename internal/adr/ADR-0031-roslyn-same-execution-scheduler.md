@@ -23,3 +23,7 @@ The actual ledger contains recorded timestamps that reverse physical ticket orde
 ## Actions
 
 Validate the enlarged profile on a separate controlled CLR actor, run one full generator lane, audit the original corpus and raw channels, then classify only bounded observations. Keep #3 Blocked and #20's metadata, planned gates, null hours and original benchmark. Product changes require evidence of safe avoidable Engine work.
+
+## 2026-11-10 offline state-contract continuation
+
+Accept the [bounded offline protocol](../validation/roslyn-scheduler-state-contract.md) and [source/clock review](../planning/roslyn-scheduler-state-contract.md). A separately selected profile adds only exact raw8193 and258 conditional sleep-state labels; legacy remains default and recorded-order masks remain unchanged. Physical scheduler duration and causality remain uncertified. The helper5 fast-clock and pre-context-switch callback contracts supply additional timing limitations; publication placement alone does not explain the observed reversals. Require a separately frozen error-envelope/boundary protocol before physical-duration claims, with no unchanged Roslyn rerun merely to improve labels.

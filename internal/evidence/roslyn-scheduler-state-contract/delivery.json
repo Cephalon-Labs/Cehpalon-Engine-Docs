@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-10",
+  "scope": "ADR0031 offline explicit raw-state contract and recorded-clock review",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "933d199eaf359899346f47b41f9abb2d044234b1",
+  "samples_capsule": "tooling-traces/evidence/2026-11-10-scheduler-state-contract",
+  "samples_manifest_sha256": "62a48159020a101e31a3d236782b37f97ff4f48f5824a193b71645e212df752a",
+  "retained_payloads": 85,
+  "stored_bytes": 4589032,
+  "new_redactions": 0,
+  "input_capsule": "tooling-traces/evidence/2026-11-07-roslyn-scheduler",
+  "input_manifest_sha256": "388ff60b9f727207c459f9b6d18a8f2b386730afc3e6115c76a8515b311b974e",
+  "original_capture_payload_hashes_verified": 42,
+  "original_capture_bytes_verified": 1043798972,
+  "input_freeze_sha256": "c6d1073bd47662cafd2ee3e84976dc663db706e7874f85ae294910127b586a83",
+  "analysis_source_freeze_sha256": "f1f0b3b6f2b259fadae5e705f6d12e7df1be29d08023a431e7f85c96da5b2ecf",
+  "protocol_sha256": "28da4ac51564654d9849fe3f4ae973eb71ffb8420e05974bef1c7425ff73e311",
+  "kernel_source_commit": "d504d40ab83839cb61942a812a99d183c42227b9",
+  "kernel_tag": "linux-msft-wsl-6.18.54.1",
+  "explicit_added_raw_states": [
+    258,
+    8193
+  ],
+  "profile_default": "legacy",
+  "explicit_profile": "wsl618-observed-sleep-v1",
+  "source_contract_checks": 21,
+  "focused_tests_windows": 118,
+  "focused_tests_wsl": 118,
+  "independent_raw_audit": {
+    "status": "passed_bounded_offline_raw_replay",
+    "checks": 95601,
+    "checks_by_kind": {
+      "frozen input unchanged": 5,
+      "unchanged identity GC point and mask artifact": 4,
+      "legacy wait bytes equal original03": 1,
+      "legacy profile explicit": 1,
+      "legacy summary equal original03 modulo metadata": 1,
+      "source profile does not certify physical duration": 1,
+      "all nonpartition summary observations unchanged": 1,
+      "native ledger exact hash": 1,
+      "native fixed complete scope": 1,
+      "native fixed ledger padding": 1,
+      "all 39 raw generations present": 1,
+      "one native lifecycle per generation": 39,
+      "native lifecycle endpoint order": 39,
+      "changed raw segment has only declared source": 59773,
+      "raw segments span enrolled lifetime": 39,
+      "raw segments are contiguous": 39,
+      "all selected 1909 waits present": 1,
+      "query identity GC context and raw refs unchanged": 1909,
+      "selected wait bound identity unchanged": 1909,
+      "window occupancy closes": 7460,
+      "query core fully inside native segments": 11276,
+      "legacy caller raw budget matches": 1909,
+      "new caller raw budget matches": 1909,
+      "caller budget conserved": 1909,
+      "caller only unknown to declared sleep": 1909,
+      "legacy worker raw budget matches": 1820,
+      "new worker raw budget matches": 1820,
+      "worker overlap budget conserved": 1820,
+      "caller union raw budget matches": 2,
+      "caller union conserved": 1
+    },
+    "raw_rows": 243270,
+    "generations": 39,
+    "caller_queries": 1909,
+    "caller_queries_with_changed_labels": 1455,
+    "overlapping_worker_queries": 1820,
+    "worker_queries_with_changed_labels": 569,
+    "caller_union_conditional_recorded_state_ns": {
+      "3": [
+        {
+          "running_observed": "97069588",
+          "unknown": "5188342231",
+          "runnable_observed": "18967858"
+        },
+        {
+          "running_observed": "97069588",
+          "off_cpu_sleep_state": "5122566326",
+          "unknown": "65775905",
+          "runnable_observed": "18967858"
+        }
+      ]
+    },
+    "production_decoder_imported": false,
+    "limits": [
+      "Independent raw replay verifies source-based conditional labels only.",
+      "No exact physical CPU/blocked/runqueue duration or GC causal share is certified.",
+      "Original identity, literal GC, point and recorded-order evidence remains unchanged."
+    ]
+  },
+  "unknown_literal_reasons": {
+    "status": "passed_literal_unknown_reason_accounting",
+    "unknown_union_ns": "65775905",
+    "preceding_recorded_reasons_ns": {
+      "preceding_recorded_waking": "65775905"
+    },
+    "reason_pieces": {
+      "preceding_recorded_waking": 1653
+    },
+    "limits": [
+      "Reasons identify preceding recorded points only.",
+      "They do not measure physical waking latency, blocked time or GC/scheduler cause."
+    ]
+  },
+  "explicit_analysis": {
+    "status": "completed_bounded_same_execution_observations",
+    "state_contract": {
+      "profile": "wsl618-observed-sleep-v1",
+      "added_raw_values": [
+        258,
+        8193
+      ],
+      "certifies_physical_scheduler_duration": false,
+      "source_commit": "d504d40ab83839cb61942a812a99d183c42227b9",
+      "source_tag": "linux-msft-wsl-6.18.54.1",
+      "source_url": "https://github.com/microsoft/WSL2-Linux-Kernel/blob/d504d40ab83839cb61942a812a99d183c42227b9/include/linux/sched.h",
+      "raw_argument": "unsigned prev_state, raw sched_switch argument 3",
+      "source_binary_correspondence": "tag, retained host/BTF and program checks; no binary attestation",
+      "interpretation": "conditional recorded raw sleep-state label; proxy execution and callback timing remain unresolved",
+      "order_masks": "unchanged legacy masks, including their conservative reset policy"
+    },
+    "target_pid": 818,
+    "clock_offset_ms": [
+      "-8739636681/500000",
+      "-17479271691/1000000"
+    ],
+    "kernel_records": 243270,
+    "generations": 39,
+    "initial_enrollments": 2,
+    "measured_emit_rows": 270,
+    "distinct_selected_waits": 1909,
+    "wait_identity_statuses": {
+      "bound": 1909
+    },
+    "whole_point_corpus_identity_statuses": {
+      "caller_wait_for_workers/active": 4886,
+      "compiler_pool_point/active": 10973,
+      "compiler_frame_without_pool/active": 71
+    },
+    "literal_gc_boundary_count": 48056,
+    "waits_with_contained_gc_boundary": 677,
+    "within_generation_timestamp_reversals": 13,
+    "within_generation_timestamp_ties": 0,
+    "caller_wait_core_union_conditional_recorded_state_ns": {
+      "3": {
+        "off_cpu_sleep_state": "5122566326",
+        "runnable_observed": "18967858",
+        "running_observed": "97069588",
+        "unknown": "65775905"
+      }
+    },
+    "gc_pause_total_ns": null,
+    "exclusive_gc_scheduler_share": null,
+    "limits": [
+      "Identity links require the same execution and strict lifecycle containment.",
+      "Initial records begin at enrollment and leave earlier lifetime unknown.",
+      "Conditional state intervals use recorded BPF callback points, not exact scheduler transition time.",
+      "Publication and timestamp ordering ambiguity remains explicit and masked as unknown.",
+      "TPL waits and compiler frames do not establish a direct compiler callsite or useful work.",
+      "GC boundaries remain unpaired literal events, with no certified pause total or exclusive cause."
+    ]
+  },
+  "timing": {
+    "global_reversals": 740,
+    "global_ties": 50,
+    "within_generation_reversals": 13,
+    "reversal_same_emitter_cpu": 0,
+    "per_cpu_reversals": 0,
+    "per_cpu_ties": 0,
+    "main_mask_wait_core_intersection_ns": 0,
+    "clock_source": "ktime_get_mono_fast_ns; source allows backwards observations",
+    "switch_source": "trace callback before context_switch",
+    "reversal_cause_isolated": false,
+    "all_three_time_source_files_match_immutable_commit": true
+  },
+  "tracking": {
+    "status": "passed",
+    "mirrors": 23,
+    "issue3_entire_row_identical_blocked": true,
+    "other22rows_identical": true,
+    "issue20_metadata_identical": true,
+    "prior_body_exact_prefix": true,
+    "plan_sha256": "8aa11a185f1a4ac67fc0159f9a3ad3c3958729a0db986cfc2263e7aa13df667d"
+  },
+  "runtime_work_performed": {
+    "target_launch": false,
+    "native_trace": false,
+    "build": false,
+    "benchmark": false,
+    "engine_edit": false,
+    "host_configuration_change": false
+  },
+  "qualification": {
+    "physical_scheduler_duration": false,
+    "gc_pause_total": false,
+    "exclusive_gc_scheduler_share": false,
+    "engine_speedup": false,
+    "general_capture_ready": false
+  },
+  "ci": "Engine unchanged revision remains payment/spending blocked before steps; no rerun",
+  "next_scope": "Separately predeclare a justified clock-error and switch-boundary envelope before physical scheduler-duration claims; retain current traces and unresolved GC pairing."
+}
