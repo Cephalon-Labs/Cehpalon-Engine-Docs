@@ -39,3 +39,7 @@ Accept the [fixed boundary fixture](../validation/scheduler-boundary-fixture.md)
 ## 2026-11-15 CLR ThreadPool boundary fixture
 
 The [CLR fixture](../planning/clr-threadpool-boundary.md) binds the named managed callback to worker-only scheduler boundary records and measures incremental observer overhead. The new WSL profile is pinned to this fixture. The resulting callback observations provide the basis for a separately frozen Roslyn lane with its own timing and GC gates.
+
+## 2026-11-15 Roslyn boundary correlation
+
+The [full diagnostic lane](../planning/roslyn-emit-boundaries.md) adds scheduler entry and return to the authenticated lifecycle ledger. It matches pairs to strict EventPipe wait and task cores. Retain GC overlap as literal co-occurrence and require an independently verified CLR suspend/restart pairing contract for timing or attribution.

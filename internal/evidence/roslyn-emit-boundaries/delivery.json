@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-15",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "5fc4bbf724fa27829e2762f911217fa382f09966",
+  "samples_capsule": "tooling-traces/evidence/2026-11-15-roslyn-emit-boundaries",
+  "manifest_sha256": "1500bd3faedb5709cbaff5d77cf453f0df7e34c2e3e1254e2346283fadb2c741",
+  "protocol_sha256": "870267ebb09245f4acff93b308fb3c8d36f79d4e449407a4e0e6795f9f78bcc2",
+  "freeze_sha256": "b43133f2beea96a3f37884f45c2cde7cacec26b84c69410ae97d5f6450e88e87",
+  "kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "btf_sha256": "b7699f9e49a1a780b790e54ef454e69b8e97e7e1c8950881880e90c2f5ad9a11",
+  "windows_tests": 24,
+  "wsl_tests": 24,
+  "audit": {
+    "pass": true,
+    "lifecycle_rows": 226844,
+    "boundary_rows_checked": 175352,
+    "generation_count": 35,
+    "pair_rows_checked": 87642,
+    "prefixes": 33,
+    "tails": 35
+  },
+  "wait_counts": {
+    "selected_waits": 1964,
+    "bound_waits": 1964,
+    "caller_pair": 1654,
+    "worker_pair": 592,
+    "gc_boundary": 663,
+    "caller_pair_and_gc_boundary": 663,
+    "worker_pair_and_gc_boundary": 592
+  },
+  "excluded_pairs": {
+    "retired_endpoint": 19
+  },
+  "managed_errors_and_loss": {
+    "payloadReadErrors": 0,
+    "eventsLost": 0,
+    "etlxEventsLost": 0
+  },
+  "gc_literal_event_count": 45272,
+  "gc_pause_total_ns": null,
+  "exclusive_gc_scheduler_share": null,
+  "physical_scheduler_duration_certified": false,
+  "original_benchmark_qualified": false,
+  "tracking": {
+    "verified_mirrors": 23,
+    "other_22_rows_identical": true,
+    "body_bytes": 65434,
+    "plan_sha256": "5aa5dc9736aea5093196f02384041f85ec7189ebf8b6a3edee3f875c5457fb33"
+  }
+}
