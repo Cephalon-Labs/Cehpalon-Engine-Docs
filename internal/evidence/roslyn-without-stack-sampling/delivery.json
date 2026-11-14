@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-15",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "72d5e6c28b2f02e9b43430b40ed11418aec91df9",
+  "samples_capsule": "tooling-traces/evidence/2026-11-15-roslyn-without-stack-sampling",
+  "manifest_sha256": "867b04ebfd47804f8f5e9b560d1426c2638a42a7f126c6cd20f6d8229848756e",
+  "protocol_sha256": "3c3e526b990128ba411e65e49754a4d596de2c6ec2dd38eff9f6b39624b94215",
+  "freeze_sha256": "19fd693c4c742fa09d85a58ae124a8a84823299cc3a92bdf5684d6500abd852a",
+  "audit_sha256": "0a48cacdc304796c16b16bfd94880bf045e12d8c63085f65ed9eb0c0d13e1725",
+  "gc_summary_sha256": "30b90aca280328683a7b8e3766bf8eaabe9ba8b7db55fd8b96402ee89ea8a2c1",
+  "sampler_off_attempts": 1,
+  "binary_inventory_entries": 211,
+  "stored_payloads": 199,
+  "stored_bytes": 63399504,
+  "redacted_verifier_logs": {
+    "files": 1,
+    "matches_of_kernel_address_pattern": 143,
+    "original_location_and_sha256": "recorded in retention.json"
+  },
+  "validation": {
+    "windows_sampler_profile_gate_cases": 8,
+    "windows_capture_helper_checks": 10,
+    "windows_analyzer_unit_tests": 11,
+    "windows_capture_hook_unit_tests": 2,
+    "windows_typed_lineage_fixture_checks": 69,
+    "windows_literal_ordering_fixture_checks": 92,
+    "windows_worker_context_fixture_checks": 103,
+    "managed_event_loss_reported": 0,
+    "etlx_event_loss_reported": 0,
+    "tpl_errors": 0,
+    "sample_profiler_events": 0,
+    "staged_payload_hashes_verified": true
+  },
+  "tracking": {
+    "issue20_details": "Existing issue link leads to the updated Emit report",
+    "issue20_status": "In Progress",
+    "issue3_status": "Blocked",
+    "mirrors_verified": 23
+  },
+  "physical_scheduler_duration_certified": false,
+  "gc_pause_total_ns": null,
+  "exclusive_gc_scheduler_share": null,
+  "original_benchmark_qualified": false
+}
