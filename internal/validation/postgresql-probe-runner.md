@@ -1,6 +1,6 @@
 # PostgreSQL probe execution
 
-Engine #12, ADR-0003. From the Samples review branch and its root, run:
+Engine #12, ADR-0003. From the root of Samples main, run:
 
 ```powershell
 pwsh -File multitenant-business/qualification/run-postgres-probes.ps1
@@ -14,4 +14,4 @@ A Windows PowerShell harness substituting Docker and dotnet commands passed four
 
 ## Hosted attempt on 2026-11-14
 
-[GitHub Actions run 43540842877](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/43540842877) ran against Samples workflow revision `4263ee896e69067af6520880c3d2f49ae89fbbdd`. GitHub marked the job failed with zero recorded steps and no available log blob. The underlying startup reason is unverified. This attempt establishes no PostgreSQL result. The local Docker Desktop Linux engine pipe also remained unavailable. Keep the live RLS and pool verification pending.
+[GitHub Actions run 43540842877](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/43540842877) was queued against Samples workflow revision `4263ee896e69067af6520880c3d2f49ae89fbbdd`. GitHub marked the job failed with zero recorded steps and no available log blob. The GitHub check annotation attributes the startup failure to the account payment or spending limit. This attempt establishes no PostgreSQL result. The local Docker Desktop Linux engine pipe also remained unavailable. Keep the live RLS and pool verification pending.

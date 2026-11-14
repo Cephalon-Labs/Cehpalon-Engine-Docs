@@ -94,12 +94,12 @@
   "historical_roslyn_qualified": false,
   "benchmark_repeated": false,
   "tracking": {
-    "status": "pending_private_visibility",
+    "status": "verified",
     "plan_sha256": "0112e5597347f42bad67a1ced5085a4ecbe01a864f14e2508db9b7737692d618",
     "read_only_live_rows_verified": 23,
     "issue3": "Blocked",
     "issue20": "In Progress",
-    "applied": false,
+    "applied": true,
     "visibility_check": {
       "date_bangkok": "2026-11-15",
       "repositories": {
@@ -121,8 +121,12 @@
       },
       "tracking_dry_run": "rejected repository privacy check",
       "remote_mutation_performed": false
-    }
+    },
+    "restored_private_verified_rows": 23,
+    "applied_plan_sha256": "86d738b03e78c5a70b6e7be7a6077cc741da117c7fd6952ae24bf056b100f56d",
+    "other_22_issue_rows_identical": true
   },
-  "publication_status": "local_commits_only",
-  "next_scope": "Real CLR ThreadPool boundary fixture and fresh observer overhead measurements."
+  "publication_status": "samples_main_verified_docs_prepared",
+  "next_scope": "Real CLR ThreadPool boundary fixture and fresh observer overhead measurements.",
+  "samples_main_with_evidence": "2233b3d99ca2352393819552ad4a95df2eca9433"
 }
