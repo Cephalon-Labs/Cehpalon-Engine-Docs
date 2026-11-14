@@ -31,3 +31,7 @@ Accept the [bounded offline protocol](../validation/roslyn-scheduler-state-contr
 ## 2026-11-10 owned callback clock controls
 
 Accept the separately frozen [clock-bracket protocol](../validation/scheduler-clock-brackets.md) and [bounded observations](../planning/scheduler-clock-brackets.md). One negative/fresh positive sys_enter-only owned actor pair compares inner callback-body fast points with containing raw non-fast monotonic reference reads. The accessors share a clocksource; finite brackets do not establish universal or historical errors or physical switch timing. The source/BTF-feasible sched_entry_tp/sched_exit_tp hooks require a later explicit attachment/current-invocation/lifecycle gate; CPU-only pairing is invalid and newborn/no-switch paths need controls.
+
+## 2026-11-10 scoped scheduler entry/exit fixture
+
+Accept the [fixed boundary fixture](../validation/scheduler-boundary-fixture.md) and [observed result](../planning/scheduler-boundary-fixture.md). Two current-task hooks use a separate ABI with owned leader/private generation identities; classify per-generation invocation order, including seeded/newborn prefixes and returned-retired/unreturned tails. Native false coverage is observed or unobserved from fixed yield opportunities, with no favorable repeat. Physical duration and GC attribution remain uncertified. A CLR ThreadPool boundary fixture and fresh overhead controls must be separately scoped before a Roslyn lane.

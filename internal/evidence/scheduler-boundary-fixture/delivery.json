@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "fixture_date_bangkok": "2026-11-10",
+  "delivery_date_bangkok": "2026-11-15",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_local_revision": "d87cd7d3f3374991b4459a2577ad05b4633534e4",
+  "samples_capsule": "tooling-traces/evidence/2026-11-10-scheduler-boundary-fixture",
+  "manifest_sha256": "42cceaac99e1dbd25c262e3f87cb0ca091d3e7b8ccb45c96a798af99523bbf1e",
+  "retained_payloads": 182,
+  "stored_bytes": 2203871,
+  "shared_verifier_redaction_files": 2,
+  "shared_verifier_redaction_occurrences": 264,
+  "protocol_sha256": "a59c2b8229aebdaf67515d573cbe26281f6d32409507237cf5bada744e3ad822",
+  "source_freeze_sha256": "c7231db5e6971e29f7af3e2c1227727190ff12cfdbdcbc3fc868973e69becd14",
+  "execution": {
+    "exit": 0,
+    "command": [
+      "/usr/bin/timeout",
+      "--kill-after=2s",
+      "120s",
+      "/usr/bin/python3",
+      "-B",
+      "/mnt/d/Cephalon/Cehpalon-Engine-Samples/tools/collect_scheduler_boundary.py",
+      "--output",
+      "/mnt/d/Cephalon/Cehpalon-Engine-Docs/.local/scheduler-boundary01/native01"
+    ],
+    "sources_unchanged": true,
+    "binaries_unchanged": true,
+    "artifact_bytes": 3321620
+  },
+  "cases": [
+    {
+      "case": "negative01",
+      "actor_pid": 755,
+      "worker_tid": 756,
+      "boundary_attempted": 184,
+      "boundary_retained": 1,
+      "boundary_lost": 183,
+      "lifecycle_rows": 24,
+      "closed_fds": 32,
+      "pair_counts": {
+        "all": 0,
+        "switch": 0,
+        "noswitch": 0,
+        "CPU_changed": 0
+      },
+      "prefixes": 0,
+      "open_tails": 0,
+      "boundary_sha256": "f04c347911cc9dbdb63c5a5145bdf9cc28805b36e889c4cadeb57bdfeb71985f",
+      "lifecycle_sha256": "f0cd86013af8c0b9af28ee62425414aebe85bc1af9848ba69a35950d20f7a236"
+    },
+    {
+      "case": "positive01",
+      "actor_pid": 757,
+      "worker_tid": 758,
+      "boundary_attempted": 182,
+      "boundary_retained": 182,
+      "boundary_lost": 0,
+      "lifecycle_rows": 20,
+      "closed_fds": 32,
+      "pair_counts": {
+        "all": 89,
+        "switch": 25,
+        "noswitch": 64,
+        "CPU_changed": 9
+      },
+      "prefixes": 2,
+      "open_tails": 2,
+      "boundary_sha256": "eebe7acf6bf82ba4aa94c03e55089ae38c05d71d3eca5d9f5b461216ee4f015b",
+      "lifecycle_sha256": "f4cda0887fff407a7973b4d52b6d468c7e30946d6a28770504440fed3d6137e0"
+    }
+  ],
+  "positive_coverage": {
+    "complete_switch_pairs": 25,
+    "complete_no_switch_pairs": 64,
+    "entry_exit_cpu_changed_pairs": 9,
+    "leader_left_censored_exits": 1,
+    "owned_newborn_exit_prefixes": 1,
+    "unknown_worker_exit_prefixes": 0,
+    "unreturned_retired_lifetime_entries": 1,
+    "leader_open_at_detach": 1,
+    "recorded_body_backwards": 0,
+    "recorded_cpu_changed_within_body": 0,
+    "per_generation_adjacent_fast_reversals": 0
+  },
+  "windows_tests": 144,
+  "wsl_tests": 144,
+  "source_audit_checks": 26,
+  "interpretation_audit_checks": 553,
+  "independent_native_audit_checks": 3473,
+  "native_preempt_entry_true_observed": false,
+  "physical_switch_duration_certified": false,
+  "gc_cause_certified": false,
+  "historical_roslyn_qualified": false,
+  "benchmark_repeated": false,
+  "tracking": {
+    "status": "pending_private_visibility",
+    "plan_sha256": "0112e5597347f42bad67a1ced5085a4ecbe01a864f14e2508db9b7737692d618",
+    "read_only_live_rows_verified": 23,
+    "issue3": "Blocked",
+    "issue20": "In Progress",
+    "applied": false,
+    "visibility_check": {
+      "date_bangkok": "2026-11-15",
+      "repositories": {
+        "Cehpalon-Engine": {
+          "full_name": "Cephalon-Labs/Cehpalon-Engine",
+          "private": false,
+          "visibility": "public"
+        },
+        "Cehpalon-Engine-Docs": {
+          "full_name": "Cephalon-Labs/Cehpalon-Engine-Docs",
+          "private": false,
+          "visibility": "public"
+        },
+        "Cehpalon-Engine-Samples": {
+          "full_name": "Cephalon-Labs/Cehpalon-Engine-Samples",
+          "private": false,
+          "visibility": "public"
+        }
+      },
+      "tracking_dry_run": "rejected repository privacy check",
+      "remote_mutation_performed": false
+    }
+  },
+  "publication_status": "local_commits_only",
+  "next_scope": "Real CLR ThreadPool boundary fixture and fresh observer overhead measurements."
+}
