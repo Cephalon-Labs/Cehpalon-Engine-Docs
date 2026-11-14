@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-15",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "runtime_vmr": "5254d8bcf59917edc1e1abc33bdf2442b77b1c70",
+  "samples_revision": "68434bc8ef22f00bf2d8a814ba4dfa188ab03695",
+  "capsule": "tooling-traces/evidence/2026-11-15-roslyn-gc-episodes",
+  "manifest_sha256": "736badfcf9f283bbeec0e37d92af4c2e95c5081ef39941a8e48eea765cd15a8b",
+  "source_capture_capsule": "tooling-traces/evidence/2026-11-15-roslyn-emit-boundaries",
+  "source_capture_manifest_sha256": "1500bd3faedb5709cbaff5d77cf453f0df7e34c2e3e1254e2346283fadb2c741",
+  "protocol_sha256": "3fb362d293c77d8b1eb7e19c51bdd93d72219250f74db170850668d9c402fe80",
+  "freeze_sha256": "2fd859573c5b9515f04736a2bd6a1131741a42d48d164efb5b9f613c4f8a7aa4",
+  "observation": {
+    "runtime_phase_rows": 45272,
+    "block_classes": {
+      "other_without_samples": 682,
+      "other_with_samples": 10509,
+      "gc_collection_link_unresolved": 11,
+      "gc_preparation_unresolved": 12,
+      "blocking_gc_linked": 64,
+      "appdomain_shutdown": 40
+    },
+    "unresolved_phase_rows": 0,
+    "collection_events": 160,
+    "sample_records": 209518,
+    "waits": {
+      "selected_waits": 1964,
+      "caller_pair": 1654,
+      "task_pair": 592,
+      "literal_boundary": 663,
+      "linked_gc_inner_overlap": 27,
+      "linked_gc_outer_overlap": 27,
+      "task_pair_with_linked_gc_inner_overlap": 26,
+      "caller_pair_with_linked_gc_inner_overlap": 27
+    },
+    "physical_pause_total_ns": null,
+    "exclusive_gc_scheduler_share": null
+  },
+  "audit": {
+    "phase_rows_accounted_once": 45272,
+    "input_hashes_verified": true,
+    "literal_boundary_waits_by_class": {
+      "other_with_samples": 662,
+      "blocking_gc_linked": 27,
+      "appdomain_shutdown": 3,
+      "gc_collection_link_unresolved": 6,
+      "gc_preparation_unresolved": 4
+    },
+    "task_pair_literal_boundary_waits_by_class": {
+      "other_with_samples": 592,
+      "blocking_gc_linked": 26,
+      "appdomain_shutdown": 3,
+      "gc_collection_link_unresolved": 6,
+      "gc_preparation_unresolved": 4
+    },
+    "reason0_samples_corroborating": 209518,
+    "linked_inner_cores_disjoint": true
+  },
+  "windows_tests": 23,
+  "wsl_tests": 23,
+  "verified_tracking_mirrors": 23,
+  "issue20_details": "Existing issue link leads to updated report",
+  "original_benchmark_qualified": false
+}

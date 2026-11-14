@@ -43,3 +43,7 @@ The [CLR fixture](../planning/clr-threadpool-boundary.md) binds the named manage
 ## 2026-11-15 Roslyn boundary correlation
 
 The [full diagnostic lane](../planning/roslyn-emit-boundaries.md) adds scheduler entry and return to the authenticated lifecycle ledger. It matches pairs to strict EventPipe wait and task cores. Retain GC overlap as literal co-occurrence and require an independently verified CLR suspend/restart pairing contract for timing or attribution.
+
+## 2026-11-15 reason-aware GC replay
+
+The [retained replay](../planning/roslyn-gc-episodes.md) separates sample-corroborated reason-0 suspension from strict, count-linked nonconcurrent GC observations. The strict inner overlap applies to 27 caller waits. Per-thread physical pause and causal attribution remain open.
