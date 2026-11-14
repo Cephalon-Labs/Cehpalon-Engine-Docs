@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-15",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "ff1147b63053ddd738972201bd1a833dd8feae3b",
+  "samples_capsule": "tooling-traces/evidence/2026-11-15-clr-threadpool-boundary",
+  "capsule_manifest_sha256": "ad5e0311875e8b9a6cecca19dcddfe0299700dcec8023e664a219664ee3f22f0",
+  "capsule_payloads": 175,
+  "original_verifier_logs": "Local originals, redaction provenance recorded in Samples manifest",
+  "protocol_sha256": "6830cd10fbc0fab99691ab9128ae4765af16be06473a1971102ca2569bfb3790",
+  "attempt01": "Rejected by original kernel pin before actor launch or attachment",
+  "attempt02_kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "attempt02_btf": "b7699f9e49a1a780b790e54ef454e69b8e97e7e1c8950881880e90c2f5ad9a11",
+  "windows_tests_passed": 29,
+  "wsl_tests_passed": 29,
+  "managed_boundary_cases": 6,
+  "raw_replay": {
+    "status": "passed",
+    "raw_boundary_rows_checked": 942,
+    "totals": {
+      "native_cases": 11,
+      "boundary_rows": 942,
+      "pairs": 453,
+      "switch_pairs": 453,
+      "no_switch_pairs": 0,
+      "preempt_entries": 0,
+      "cpu_endpoint_changes": 6,
+      "prefixes": 18,
+      "tails": 18
+    },
+    "deltas_ns": [
+      16984,
+      196096,
+      204360,
+      190668
+    ],
+    "median_delta_ns": 193382.0
+  },
+  "overhead_summary_sha256": "f985f1f405ab2524105a51aa025305f40127a01d7520f7c6a6bc404a4f1e7e1b",
+  "original_benchmark_qualified": false,
+  "physical_scheduler_duration_certified": false,
+  "gc_cause_certified": false,
+  "tracking": {
+    "verified_mirrors": 23,
+    "other_22_rows_identical": true,
+    "applied_plan_sha256": "246dbaf8b70dc2d25e1b6fa241e1f43eef830f356e27959fd26758e22a74e04c",
+    "body_bytes": 65214
+  }
+}

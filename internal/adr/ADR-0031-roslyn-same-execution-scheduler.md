@@ -35,3 +35,7 @@ Accept the separately frozen [clock-bracket protocol](../validation/scheduler-cl
 ## 2026-11-10 scoped scheduler entry/exit fixture
 
 Accept the [fixed boundary fixture](../validation/scheduler-boundary-fixture.md) and [observed result](../planning/scheduler-boundary-fixture.md). Two current-task hooks use a separate ABI with owned leader/private generation identities; classify per-generation invocation order, including seeded/newborn prefixes and returned-retired/unreturned tails. Native false coverage is observed or unobserved from fixed yield opportunities, with no favorable repeat. Physical duration and GC attribution remain uncertified. A CLR ThreadPool boundary fixture and fresh overhead controls must be separately scoped before a Roslyn lane.
+
+## 2026-11-15 CLR ThreadPool boundary fixture
+
+The [CLR fixture](../planning/clr-threadpool-boundary.md) binds the named managed callback to worker-only scheduler boundary records and measures incremental observer overhead. The new WSL profile is pinned to this fixture. The resulting callback observations provide the basis for a separately frozen Roslyn lane with its own timing and GC gates.
