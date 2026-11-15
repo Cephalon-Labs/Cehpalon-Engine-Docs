@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "32f5e88002067d352c7f7c6cb6c7d09606676905",
+  "capsule": "tooling-traces/evidence/2026-11-15-roslyn-allocation-probes",
+  "manifest_sha256": "99f076430d4399c3657a0013b61ef7837df303e81139352d91b85aa941b6443f",
+  "windows_wsl_byte_identical": true,
+  "separate_agent_replay": true,
+  "new_captures": 0,
+  "original_benchmark_qualified": false,
+  "tracking_mirrors_verified": 23
+}

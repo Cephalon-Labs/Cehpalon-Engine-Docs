@@ -1,0 +1,5 @@
+# Roslyn precise allocation read replay handoff
+
+Read the [report](../planning/roslyn-allocation-probes.md) and [delivery](../evidence/roslyn-allocation-probes/delivery.json). The pinned trace driver calls precise process allocation twice around each of 330 `Execute` invocations. The pinned CoreCLR QCall suspends with reason 0. Both retained runs match 660 caller-thread quartets one-to-one with the two read windows. Preserve uncertainty at the post-read clock edge. None supplied a contained phase to the selected Emit wait join. The sampler-on trace additionally has 10,509 sampled and 22 uncorroborated reason-0 quartets on its other emitter. Original collection evidence remains separate.
+
+Source and positional evidence resolve the reason-0 population seen with sampling disabled. Per-event native callsite and physical pause duration are unavailable. #20 remains In Progress with its original benchmark and gates. #3 remains Blocked. A future diagnostic that changes how allocation is observed needs a separately declared comparison.
