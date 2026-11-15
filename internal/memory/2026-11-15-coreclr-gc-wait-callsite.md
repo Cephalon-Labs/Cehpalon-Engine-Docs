@@ -1,0 +1,5 @@
+# CoreCLR GC wait callsite fixture handoff
+
+Read the [report](../planning/coreclr-gc-wait-callsite.md), [protocol](../validation/coreclr-gc-wait-callsite.md) and [delivery](../evidence/coreclr-gc-wait-callsite/delivery.json). The pinned CoreCLR ELF and matching Microsoft debug file identify callsite offsets `0x14056e` and `0x140574` in `Thread::RareDisablePreemptiveGC`. Verified DWARF line table, relative vtable relocations, executable bytes and loaded inode. A single held worker fixture on WSL 6.18.58.1 yielded zero negative-control hits, two positive ordered pairs during explicit GC and zero perf loss. Four perf ring tests passed.
+
+Keep the scope to the named worker fixture. Callsite traversal alone gives no physical blocking claim, and this does not attribute the earlier Roslyn observations. Future use requires separately bounded same-execution enrollment for new workers and join to GC, task and lifecycle observations. #20 remains In Progress and #3 remains Blocked with the original benchmark gates.

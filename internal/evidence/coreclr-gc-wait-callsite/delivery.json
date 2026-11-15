@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "7f258cd79e89032b48977ff3b8b430b39ba4fb13",
+  "capsule": "tooling-traces/evidence/2026-11-15-coreclr-gc-wait-callsite",
+  "manifest_sha256": "8be3d88808112aa8715b21d1b6528527bd5d61570f0c3f08e3a478f9df7a3448",
+  "protocol_sha256": "9ec0796605303e7b7ef48b69159845960da5f9513b1a511954c01b1eb8c49f4c",
+  "fixture_attempts": 1,
+  "negative_callsite_samples": 0,
+  "positive_ordered_call_return_pairs": 2,
+  "reported_perf_loss": 0,
+  "perf_ring_tests": 4,
+  "roslyn_capture_ready": false,
+  "original_benchmark_qualified": false,
+  "tracking_mirrors_verified": 23
+}
