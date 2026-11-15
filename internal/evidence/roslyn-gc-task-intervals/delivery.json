@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "7b3d7fce92c1eb762dcf704104d027b010d37ad5",
+  "capsule": "tooling-traces/evidence/2026-11-15-roslyn-gc-task-intervals",
+  "manifest_sha256": "8fc00fb9bcd29ac0e295af0dc83e5b1e42e5538a3a6103497671c3d5ba320f34",
+  "protocol_sha256": "beac6e9652f5c6d0c7fc7473f3cc92e7541ead2a1f83b5bd5afc6408e806b3b1",
+  "new_captures": 0,
+  "tests_per_host": 15,
+  "windows_wsl_byte_identical": true,
+  "separate_agent_replay": true,
+  "tracking_mirrors_verified": 23,
+  "original_benchmark_qualified": false
+}

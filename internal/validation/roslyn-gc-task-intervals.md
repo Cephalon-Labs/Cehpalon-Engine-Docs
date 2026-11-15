@@ -1,0 +1,7 @@
+# Offline overlap of blocking GC, awaited tasks and scheduler callbacks
+
+Engine #20 and ADR0031. Replay the retained Roslyn execution with stack sampling and precise allocation reads omitted. The frozen input is the existing Samples evidence capsule. Keep its selected waits, known identities, clock bounds, paired native records and strictly linked blocking-GC episodes. Check the raw boundary ledger against both detached reads and reconcile earlier caller results.
+
+Evaluate positive interval overlap in the guaranteed caller wait and then in its intersection with the guaranteed awaited-task TPL start-to-completion interval on its bound thread. Also evaluate overlap of the possible outer envelopes and retain those cases separately. For awaited-task scheduler pairs already strictly in the guaranteed intersection, distinguish overlap of the full entry-to-return envelope from containment of each individual entry or return receipt bracket. Preserve endpoint uncertainty, switch and no-switch outcomes, and unbound wait or task cases. Count distinct waits separately from pair-by-episode observations.
+
+A full callback-pair envelope can include a switch away, return to the task, and unrelated work on that CPU. A receipt bracket bounds an instrumented callback publication within the recorded clock model. Neither is an exclusive scheduler or GC duration. No new workload or timing claim is part of this replay. The benchmark and issue acceptance gates remain in force.

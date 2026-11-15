@@ -1,0 +1,5 @@
+# Roslyn GC and worker interval replay handoff
+
+Read the [report](../planning/roslyn-gc-task-intervals.md), [protocol](../validation/roslyn-gc-task-intervals.md) and [delivery](../evidence/roslyn-gc-task-intervals/delivery.json). The low-perturbation run has 30 earlier caller GC overlaps and 27 in the guaranteed caller/task intersection. Eighteen of the 27 have worker scheduler pairs. In 15 waits the strict GC inner interval lay wholly between worker entry and return callback brackets. All 15 switch-outs report raw 8193 and the intervening sequence is out, waking, wakeup, in. Waking is after mapped RestartEEStart. Another 61 worker pairs report 8193 without a strict GC overlap. No individual receipt overlaps the GC inner interval.
+
+Use the saved per-wait and per-worker receipt rows for continuation. The observed order and raw state do not prove a specific managed wait callsite or measure exclusive GC or scheduler delay. A follow-up that seeks cause would need a separately bounded same-worker runtime callsite or wait-object discriminator. Keep original benchmark gates, #20 In Progress and #3 Blocked.
