@@ -1,0 +1,5 @@
+# Roslyn recorded wake-order replay handoff
+
+Read the [report](../planning/roslyn-gc-wake-order.md), [protocol](../validation/roslyn-gc-wake-order.md) and [delivery](../evidence/roslyn-gc-wake-order/delivery.json). The replay reconciled all 44 callsite/switch associations. In each of the six strict cases, recorded switch-out to waking is the longest of three consecutive native gaps. Waking and switch-in are after restart begins and before it ends, while callsite return is after the restart-end bracket. Waking and wakeup publish on different CPUs in each case. The CoreCLR source sets WaitForGCEvent during restart. The exact setter/work identity and physical time decomposition remain unavailable.
+
+The 20 description-matched associations outside linked GC all intersect a preparation, unresolved reason-1 or shutdown envelope. No selected callsite is disjoint from every mapped episode. Do not subtract these as a GC-free control or infer an Engine optimization. A later investigation needs a separately bounded wait-object setter/waker receipt or an intervention with a valid control. #20 remains In Progress, #3 stays Blocked and original benchmark gates apply.

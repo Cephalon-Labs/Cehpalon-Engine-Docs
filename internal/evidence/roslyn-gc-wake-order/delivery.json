@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "e319f519c9f87fb63f953ac2495ce2b67a36f822",
+  "capsule": "tooling-traces/evidence/2026-11-15-roslyn-gc-wake-order",
+  "manifest_sha256": "a87c903d45dbad93d800cfbe359badfecef1a2b7df6ac04ad4d79a9297d2d3a9",
+  "protocol_sha256": "65e6cb62cdf4fe135cb0ac48f30825df5a39dbd160a9ebda37c2162f01f9156c",
+  "new_captures": 0,
+  "windows_wsl_byte_identical": true,
+  "tests_per_host": 22,
+  "distinct_nested_switch_links": 44,
+  "distinct_callsite_intervals": 30,
+  "strict_gc_links": 6,
+  "comparison_without_any_captured_episode_outer_overlap": 0,
+  "tracking_mirrors_verified": 23,
+  "original_benchmark_qualified": false
+}
