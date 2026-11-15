@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "3e16661344ccb5e19615c5c4b81bbdbade8849a3",
+  "capsule": "tooling-traces/evidence/2026-11-15-coreclr-gc-wait-newborn",
+  "manifest_sha256": "46f8235042fb12e36cae25dfb629f7b6129333d1e7b35dda337597d03fc1c617",
+  "protocol_sha256": "62fb67ce3dabe3e20ab45ce653b955db72ce7b1b99b8bcfa7e3f9f293cb29393",
+  "attempts": 1,
+  "initial_audit": "Rejected additional owned prearm callsites",
+  "offline_replay": "Passed with all records reconciled",
+  "callsite_rows": 32,
+  "newborn_pairs": [2, 6],
+  "owned_prearm_pairs": 8,
+  "peer_reference_pairs": 2,
+  "peer_leaks_into_target": 0,
+  "native_loss_fault_and_recursion_miss_counts": 0,
+  "linux_tests": 6,
+  "redacted_kernel_address_pattern_matches": 123,
+  "tracking_mirrors_verified": 23,
+  "roslyn_capture_ready": false,
+  "original_benchmark_qualified": false
+}
