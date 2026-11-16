@@ -1,0 +1,5 @@
+# CoreCLR GC wait event-object fixture handoff
+
+Read the [report](../planning/coreclr-gc-event-object.md), [protocol](../validation/coreclr-gc-event-object.md) and [delivery](../evidence/coreclr-gc-event-object/delivery.json). A single TGID-scoped five-site link records WKS wait, set and reset wrapper operands plus exact caller entry and return. All 108 object-bearing receipts map to one execution-local GCEvent token, and both named newborns have a strict same-object reset, wait, switch-out, set, waking, wakeup, switch-in and return chain. The setter is the owned process leader. Same-image peer control, both no-GC arms, terminal loss and independent raw audit all passed.
+
+The set-site receipt precedes the signaled-state write and broadcasts. Keep the raw operand ledger local and publish equality tokens only. This fixture does not identify an exact kernel waker, certify physical timing, or extend the six historical Roslyn cases. A later same-execution Roslyn lane needs its own frozen object-token ledger, capacity, TPL and restart-event join. Preserve #20 In Progress, #3 Blocked and benchmark gates.

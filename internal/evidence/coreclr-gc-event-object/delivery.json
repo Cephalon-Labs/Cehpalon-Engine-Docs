@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "date_bangkok": "2026-11-16",
+  "engine_revision": "55c630fc5d4c47258a1a2b0da4a16ce8bc42b9f7",
+  "samples_revision": "69860d56d19d3f6af4690a020a10836965e65365",
+  "capsule": "tooling-traces/evidence/2026-11-16-coreclr-gc-event-object",
+  "manifest_sha256": "12d71a56b13ea8c14aad1a0c0241e91e8deeb2dbce937e1d7233668093a08a07",
+  "protocol_sha256": "1553b06efce0199767a3304e6aae1eaef675532b221867c9bbf91bbe90a366c8",
+  "fixture_attempts": 1,
+  "site_receipts": 164,
+  "object_operand_receipts": 108,
+  "distinct_wrapper_objects": 1,
+  "strict_chains": 2,
+  "peer_reference_pairs": 7,
+  "peer_leaks": 0,
+  "loss_fault_and_recursion_counts": 0,
+  "linux_tests": 9,
+  "tracking_mirrors_verified": 23,
+  "roslyn_capture_ready": false,
+  "original_benchmark_qualified": false
+}
