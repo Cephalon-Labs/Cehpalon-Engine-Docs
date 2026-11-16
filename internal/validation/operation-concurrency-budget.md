@@ -1,0 +1,7 @@
+# Operation concurrency budget component validation
+
+Engine #18. Validate the existing handler lifecycle and authorization on the pinned SDK on Windows and WSL. Test saturation with a held owned operation, no factory invocation for rejected requests, permit recovery after success and faults, caller cancellation and the protected route's fresh denial behavior under saturation. Verify the generated registry through the real source-generator analyzer.
+
+For descriptive dispatch cost, prebuild an identical typed registry, context and stateless synchronous handler. Compare normal and budgeted serial dispatch with limit two. Warm each path with 10,000 calls. Run five consecutive pairs of 100,000 calls in Release using a fixed alternating path order, no forced collection or timing filter. Record total monotonic ticks and caller-thread allocated bytes for every lane, plus saturation correctness separately. Inspect medians and all repetitions. The results describe that component and environment and carry no throughput, provider, acceptance-threshold or qualification claim. The original benchmark gates remain pending.
+
+For the second source revision, return the completed dispatch result directly and release its permit on the calling path. Pending dispatch still holds the permit until the handler and cleanup finish. Repeat the same protocol on each host and retain both source revisions' observations.

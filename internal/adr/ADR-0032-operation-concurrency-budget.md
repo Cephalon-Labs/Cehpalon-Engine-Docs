@@ -1,0 +1,10 @@
+# ADR-0032 Bound in-process operation concurrency
+
+- Status. Accepted for the #18 portable source and component slice
+- Date. 2026-11-16
+
+Hosts can share one opt-in concurrency budget across dispatcher instances or allocate separate budgets for independent resources. An admitted operation keeps its permit through owned handler cleanup. Saturation returns a stable, generic operation error immediately, without queuing requests or invoking a factory. A nonpositive limit is invalid. The standard dispatcher remains available with its existing behavior.
+
+Apply the budget to protected business work only after fresh identity, membership, resource and policy checks. A saturated budget cannot turn a tenant denial into a different result. A permit gives no authority. Retain cancellation, result and exception semantics, including cleanup faults. Disabled modules and application profiles need no registration for the budget.
+
+A bounded queue could preserve more requests during brief bursts and would retain user data, allocate scheduling state and need an admission deadline. Immediate rejection keeps the component independent of hosts, traffic policy and quotas. The limit covers business handler construction, execution and cleanup. Authentication call limits, fairness between tenants, distributed budgets and transport-specific overload status mapping remain separate work. #3 stays Blocked. [Test and observation protocol](../validation/operation-concurrency-budget.md)

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "observed_at_utc": "2026-11-14T23:31:05.185793+00:00",
+  "observed_at_utc": "2026-11-16T01:57:13.310745+00:00",
   "project_id": "PVT_kwDOEDryKs4Bo6sb",
   "scope": "Live two-way tracking readback only; no runtime proof",
   "milestones": [
@@ -255,9 +255,9 @@
       "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Jw4",
       "title": "Provide observability, resilience and resource-budget integration",
       "url": "https://github.com/Cephalon-Labs/Cehpalon-Engine/issues/18",
-      "body": "<!-- cehpalon-task: observability -->\n## Outcome\nProvide observability, resilience and resource-budget integration\n\n## Scope and acceptance criteria\n- [ ] Define trace/log/metric contracts, propagation and sensitive-data policy\n- [ ] Integrate cancellation/deadlines/rate/resource budgets on supported paths\n- [ ] Measure telemetry overhead and prove shutdown/recovery visibility\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:observability\n- Priority: P1 (Project field)\n- Milestone: W4 - AI and Operations\n- Owner: Cephalon-Neza\n- Dependencies: #5, #6\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: observability\n- Estimated person-hours: 32–64 (low confidence; planning midpoint 48)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Not run for this planned task.\n- Benchmark: Required; predeclare protocol before measurement. Not run.\n- Evidence: add immutable Engine revision, locked dependencies, commands, results and proof limits when run.\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/18.md)\n\n## Engine commit journal\nNo Engine commit linked yet. Record each related full Engine SHA here and in the task mirror; Docs/Samples SHAs are excluded.\n\n## Change history\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
+      "body": "<!-- cehpalon-task: observability -->\n## Outcome\nProvide observability, resilience and resource-budget integration\n\n## Scope and acceptance criteria\n- [ ] Define trace/log/metric contracts, propagation and sensitive-data policy\n- [ ] Integrate cancellation/deadlines/rate/resource budgets on supported paths\n- [ ] Measure telemetry overhead and prove shutdown/recovery visibility\n\n## Tracking\n- Type: Feature (native issue type)\n- Labels: area:observability\n- Priority: P1 (Project field)\n- Milestone: W4 - AI and Operations\n- Owner: Cephalon-Neza\n- Dependencies: #5, #6\n- Parent: None; acceptance checklist defines the initial work breakdown.\n- Feature/function: observability\n- Estimated person-hours: 32–64 (low confidence; planning midpoint 48)\n- Estimate assumptions: first bounded capability slice, including relevant implementation, tests and docs; refine after architecture/provider choices. Not universal provider coverage or a delivery-date promise.\n- Actual person-hours: null (not measured; do not infer from AI or CI duration)\n- Remaining estimate: null (not yet refined)\n- Maturity before / observed: M0; runtime/provider/version/host proof not established\n- Maturity target: define per supported capability/profile before implementation\n\n## Validation\n- Test required: Yes; task-appropriate review/metadata/link checks for documents, contract/E2E/failure checks for runtime.\n- Test result: Portable slice passed 512 Windows and 509 WSL checks on the pinned SDK. The generated Small API passed 39 Windows self-tests. Supported-runtime qualification remains planned.\n- Benchmark: The predeclared serial dispatch component observation completed on Windows and WSL. The canonical benchmark remains planned.\n- Evidence: [Operation concurrency budget report](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/operation-concurrency-budget.md).\n\n## References\n- [Program plan](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/planning/2026-10-27-program-plan.md)\n- [Delivery and maturity](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/internal/standards/delivery-and-maturity.md)\n- [Task mirror](https://github.com/Cephalon-Labs/Cehpalon-Engine-Docs/blob/main/tasks/18.md)\n\n## Engine commit journal\n- 2bd9cfcaf4b9328a76b36102c094de6f7fd97e17 — Opt-in Core and tenant operation concurrency budget, generated fixture, contract tests and component observation.\n\n## Change history\n- 2026-11-16: Delivered the portable in-process concurrency slice. Saturation bypasses handler creation and fresh tenant authorization precedes admission. Hosted Actions stopped before job steps.\n- 2026-10-27: Created from the user-authorized new baseline and all three selected sample lanes. Historical task IDs and test results were not imported.\n",
       "state": "open",
-      "updated_at": "2026-10-27T07:07:35Z",
+      "updated_at": "2026-11-16T01:56:57Z",
       "type": "Feature",
       "labels": [
         "area:observability"
@@ -269,7 +269,7 @@
       "milestone_number": 5,
       "fields": {
         "Title": "Provide observability, resilience and resource-budget integration",
-        "Status": "Backlog",
+        "Status": "In Progress",
         "Priority": "P1",
         "Maturity": "M0",
         "Test gate": "Planned",
@@ -279,8 +279,8 @@
         "Estimate high (h)": 64.0,
         "Feature": "observability"
       },
-      "mirror_sha256": "e3c6d2ffa56207b31b4c0a13471935627fa9a694e5a62b2fcdcb1e8a18b8a99d",
-      "remote_sha256": "c9cc303f10655541ebe32653032b885c052050d6bbe53116ae55b10048770f06"
+      "mirror_sha256": "bce6e1bf532c0293891d264d4b1eb895e50b50f59868899d22fc5908b988a8d3",
+      "remote_sha256": "a5bc69e4a2b0d2f9443d4bf1266494e2c2657cc8962eddbcbbe01cf3a172f91d"
     },
     "17": {
       "number": 17,
