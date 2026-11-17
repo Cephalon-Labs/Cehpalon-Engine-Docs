@@ -1,0 +1,13 @@
+# Opt-in concurrency for generated Small API
+
+The generated Small API accepts `--max-concurrent-operations <positive-int>` on `--serve`. It takes a positive Int32 in decimal digits. Omitting the option uses the original profile defaults. All-off serving with a supplied limit still skips host startup and TLS/JWT input reads.
+
+The active host owns one Core budget. Both enabled entrypoints use that instance via the generated typed gateways and the existing tenant dispatcher. Identity, membership, resource and policy checks run before admission. Admitted operations hold the slot through disposal of their handler. HTTP capacity rejection is 503 and an executed GraphQL operation returns the stable code in its error extensions with HTTP 200. This is a cap on concurrent business work within one host. Tenants share that cap.
+
+The separately invoked `--self-test-capacity --output <new-report.json>` runs a deterministic localhost HTTPS fixture. A held HTTP write occupies the only slot while both adapters reject an authorized request and preserve both directions of cross-tenant denial. Only the held write reaches a handler before release. A fresh GraphQL read succeeds after release. The original 39-case self-test is a separate run. [Validation protocol](../validation/small-api-capacity.md)
+
+## Results
+
+The [exact Engine revision](https://github.com/Cephalon-Labs/Cehpalon-Engine/commit/688efec571627ad5f9235934beccb578400ca782) passed 515 Windows and 512 WSL component checks. On each host the actual CLI-generated consumer passed all 144 harness checks, including the original 39-case suite and the separate capacity fixture. The active external serve command used the flag with a value of one. The all-off profile with a supplied limit produced no host, and offline export emitted only its zero-work manifest. The first harness attempt on both hosts read the structured rejection on stdout instead of stderr and stopped. The corrected verifier used the same Engine revision and retained that observation. [Samples evidence and hashes](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/fc399418e231287ed1b7de05f3f0fe983c86ee66/tooling-small-api/evidence/2026-11-17-shared-host-capacity)
+
+Portable contracts passed on both hosted runners. Hosted platform smoke passed 12 checks per runner and skipped two real-provider checks because PostgreSQL and RabbitMQ fixture connections were absent. #3 remains Blocked. #18 stays In Progress at M0 and the canonical benchmark gates remain as recorded. [Portable CI](https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/44106955028) · [Platform CI](https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/44106954495)

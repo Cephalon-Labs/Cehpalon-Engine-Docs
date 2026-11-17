@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-17 public repositories and operation overload](2026-11-17-public-repositories-operation-capacity.md).
+Latest handoff: [2026-11-17 generated Small API capacity](2026-11-17-small-api-capacity.md).
+
+Prior delivery: [2026-11-17 public repositories and operation overload](2026-11-17-public-repositories-operation-capacity.md).
 
 Latest product slice: [2026-11-16 operation concurrency budget](2026-11-16-operation-concurrency-budget.md), with portable admission and tenant contracts plus local Windows/WSL evidence.
 
