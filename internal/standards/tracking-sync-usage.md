@@ -36,7 +36,7 @@ Native Issue Type, Labels, assignees, title, body, state and milestone use issue
 
 ## Workflow
 
-Run from the Docs checkout with the authenticated `Cephalon-Neza` account:
+Run from the Docs checkout with the authenticated `Cephalon-Neza` account. The writer verifies the public Engine repository. Its visibility is part of the reviewed plan catalog digest, so plans created before the visibility change require a new review. Project 4 continues to require its existing private identity.
 
 ```powershell
 python tools/sync_tracking.py pull

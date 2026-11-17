@@ -35,7 +35,7 @@ This is the canonical project skill for all participating AI tools. A tool must 
 - Preserve task-body and raw-evidence bytes, including LF/CRLF. Do not format them through Markdown/EOL normalizers. Keep plans/checkpoints/private fixture state under ignored `.local`; hashes do not authorize replacing later edits or skipping operations.
 - Every Engine commit must be linked by full Engine SHA to its relevant Engine issue(s) and task mirror(s). Do not journal Docs or Samples SHAs in task/card commit references and do not create a Docs self-hash loop.
 - Git author and committer: `Cephalon-Neza <272007299+Cephalon-Neza@users.noreply.github.com>`. Set repository-local identity; do not silently change global identity.
-- Keep these three repositories private and MIT unless the user changes that decision. Package preparation does not itself authorize public release or NuGet publication.
+- Keep Engine, Docs and Samples public and MIT per the 2026-11-17 user decision. Project 4 remains private. Publish only evidence suitable for the public repositories. Keep credentials, private fixture state and private raw machine data in local storage. Package release and NuGet publication are separate decisions.
 
 ## Evidence and handoff
 

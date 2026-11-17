@@ -509,6 +509,19 @@ class TwoWayTests(unittest.TestCase):
 
 
 class FixedTransportPayloadTests(unittest.TestCase):
+    def test_catalog_rejects_visibility_or_identity_drift_before_fetching_schema(self):
+        accepted = {'full_name': pull.REPO, 'visibility': 'public', 'private': False}
+        for changed in ({'visibility': 'private', 'private': True},
+                        {'visibility': 'internal', 'private': True},
+                        {'private': True}, {'full_name': 'another/Engine'}):
+            with self.subTest(changed=changed):
+                response = {'login': 'Cephalon-Neza'}, accepted | changed
+                transport = sync.GitHubTransport()
+                with patch('pull_tracking.gh', side_effect=response) as call:
+                    with self.assertRaisesRegex(ValueError, 'repository identity or visibility'):
+                        transport.catalog()
+                self.assertEqual(call.call_count, 2)
+
     def test_native_patch_uses_fixed_engine_endpoint_and_native_type_and_milestone(self):
         transport = sync.GitHubTransport()
         with patch('pull_tracking.gh', return_value={}) as call:

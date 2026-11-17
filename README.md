@@ -1,6 +1,6 @@
 # Cehpalon Engine Docs
 
-Private MIT-licensed planning and documentation repository. Started on 2026-10-27 (Asia/Bangkok).
+MIT-licensed planning and documentation repository. Started on 2026-10-27 (Asia/Bangkok).
 
 This is a new baseline. Historical project notes are context only; they do not establish current implementation, CI results, maturity, or remote task IDs.
 

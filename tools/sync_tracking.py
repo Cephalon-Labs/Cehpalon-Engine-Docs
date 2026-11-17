@@ -15,6 +15,7 @@ from pathlib import Path
 
 import pull_tracking as pull
 
+EXPECTED_ENGINE_VISIBILITY = "public"
 MAX_ISSUES = 1000
 MAX_OPERATIONS = 12000
 ISSUE_FIELDS = ('title', 'type', 'labels', 'assignees', 'state', 'milestone_number', 'body')
@@ -457,8 +458,10 @@ class GitHubTransport:
         if actor != 'Cephalon-Neza':
             raise ValueError('Tracking writer identity must be Cephalon-Neza')
         repository = pull.gh('api', 'repos/' + pull.REPO)
-        if repository['full_name'] != pull.REPO or not repository['private']:
-            raise ValueError('Unexpected Engine repository identity/privacy')
+        if (repository.get('full_name') != pull.REPO
+                or repository.get('visibility') != EXPECTED_ENGINE_VISIBILITY
+                or repository.get('private') is not False):
+            raise ValueError('Unexpected Engine repository identity or visibility')
         fields, cursor = {}, None
         while True:
             after = ',after:' + json.dumps(cursor) if cursor else ''
@@ -474,7 +477,8 @@ class GitHubTransport:
                 break
             cursor = page['pageInfo']['endCursor']
         milestones = paged(f'repos/{pull.REPO}/milestones?state=all&per_page=100')
-        self._catalog = {'actor': actor, 'types': sorted(x['name'] for x in paged('orgs/Cephalon-Labs/issue-types?per_page=100') if x['is_enabled']),
+        self._catalog = {'actor': actor, 'repository_visibility': repository['visibility'],
+                         'types': sorted(x['name'] for x in paged('orgs/Cephalon-Labs/issue-types?per_page=100') if x['is_enabled']),
                          'labels': sorted(x['name'] for x in paged(f'repos/{pull.REPO}/labels?per_page=100')),
                          'assignees': sorted(x['login'] for x in paged(f'repos/{pull.REPO}/assignees?per_page=100')),
                          'milestones': {str(x['number']): {'title': x['title'], 'state': x['state']} for x in milestones}, 'fields': fields}
