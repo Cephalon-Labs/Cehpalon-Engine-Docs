@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-18 tenant concurrency budget](2026-11-18-tenant-concurrency-budget.md).
+Latest handoff: [2026-11-18 operation budget drain](2026-11-18-operation-budget-drain.md).
+
+Prior delivery: [2026-11-18 tenant concurrency budget](2026-11-18-tenant-concurrency-budget.md).
 
 Prior delivery: [2026-11-17 generated Small API capacity](2026-11-17-small-api-capacity.md).
 
