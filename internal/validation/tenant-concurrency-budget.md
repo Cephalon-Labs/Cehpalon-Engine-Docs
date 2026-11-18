@@ -1,0 +1,5 @@
+# Tenant concurrency limits
+
+Use one shared, opt-in budget that counts admitted protected business operations both globally and per authorized tenant. The key comes from the verified resource scope after fresh tenant authorization. The budget holds through factory, handler and cleanup. Admission and release update both counts atomically. There is no queue. When a tenant's last operation releases, remove its identity from the map.
+
+Prove per-tenant and combined saturation across dispatcher instances, zero business work on denial, capacity recovery after successful cleanup, cancellation and faults. Exercise the generated Small API with a host limit of two and per-tenant limit of one. Hold one authenticated Alice write, verify HTTP and GraphQL capacity errors for Alice, verify both cross-tenant denial directions and allow Bob's own tenant work before releasing Alice. Preserve the shared-host and default self-tests as independent checks. This is a correctness and ownership protocol. The original canonical benchmarks and gates remain as recorded.
