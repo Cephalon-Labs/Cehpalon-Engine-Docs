@@ -1,0 +1,5 @@
+# Budget snapshot validation
+
+A Core snapshot reads the admission-closed flag and active count from one atomic state read. A tenant snapshot reads total count, closed state and active tenant count under the same admission lock. Snapshots are detached value types and include configured limits plus aggregate counts. Tenant identifiers, request data and identity data are excluded. The snapshot records observations and grants no admission or tenant authority.
+
+Verify initial, held-cleanup, partial-release, closed-with-work and fully-drained states. Keep earlier snapshots and check their values after later work. Add independently scheduled admissions racing permanent drain and aggregate reads, checking bounds and closed-state monotonicity. Run the generated Small API's original cases, host and tenant cap cases and held-write shutdown cases on Windows and WSL. Capture ready and stopped snapshots for a real serve process and inspect disabled output. Existing benchmarks remain as recorded because snapshot reads are explicitly requested by observers and add no dispatch instrumentation.
