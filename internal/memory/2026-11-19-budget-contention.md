@@ -1,0 +1,7 @@
+# Concurrent budget observation and publication handoff
+
+The continuation delivered the fixed concurrent harness in `026cdaef0cd85796caddd25b0a32b42b0777a80c` and tenant aggregate publication in `9f9ce74f7ce2b38e992b580443648ba0fe7098af`. Snapshot readers now use a single atomic aggregate published under the existing admission gate. Admission, release and closure update that aggregate before returning or signaling drain completion.
+
+Both hosts retained complete baseline and candidate series. Four tenant producers each offer 25,000 operations per lane with a waiting or continuous observer. Every series reconciled one million successful operations and owned cleanups. Candidate observed medians were lower and control medians higher. The candidate observer made far more reads because the mode is unthrottled. All candidate observer loops recorded zero current-thread allocation. Preserve all samples and the control/observer tradeoff. The [report](../planning/budget-contention-observation.md) and [protocol](../validation/budget-contention-observation.md) state the proof limits.
+
+Candidate component checks passed 520 Windows and 517 WSL. Actual generated consumer checks passed 159 per host. #18/#20 remain In Progress and #3 remains Blocked for remaining qualification. Canonical benchmark criteria remain as recorded. If GitHub hits usage or billing, record the exact pending step and continue local work. Preserve the primary Engine telemetry changes and untracked Samples files.
