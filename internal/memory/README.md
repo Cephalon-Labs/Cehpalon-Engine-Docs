@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-20 controlled timer publication probes](2026-11-20-timer-publication.md).
+Latest handoff: [2026-11-20 optional authentication, RBAC/ABAC and audit/history](2026-11-20-optional-access-audit.md).
+
+Prior delivery: [2026-11-20 controlled timer publication probes](2026-11-20-timer-publication.md).
 
 Prior delivery: [2026-11-20 Windows warmup drop tracing](2026-11-20-windows-warmup-drops.md).
 

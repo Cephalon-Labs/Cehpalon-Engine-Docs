@@ -1,0 +1,13 @@
+{
+  "verified_mirrors": 23,
+  "changed_issue_bodies": [
+    7,
+    8,
+    18
+  ],
+  "other_20_complete_rows_and_numeric_task_bytes_unchanged": true,
+  "milestones_and_all_issue_metadata_unchanged": true,
+  "issue3": "Blocked",
+  "issue20": "unchanged",
+  "plan_sha256": "368e2762d55a15db51bb5f48c4ccd5d5d72f0b43f75aeeb10aeb46b84b83b597"
+}

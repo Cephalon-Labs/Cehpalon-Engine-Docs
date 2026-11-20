@@ -29,6 +29,8 @@ The separate Samples consumer uses generated Core gateway registration and a ten
 
 ## Protocol adapters and sources
 
+2026-11-20 continuation: [ADR0033](ADR-0033-optional-access-and-audit.md) adds opt-in leased RBAC/ABAC facts, an established-host JWT ticket bridge, required operation audit and a checked tenant-history facade. Fact expiry bounds the operation lease; the original trust, binding, ownership and lifecycle requirements remain. This does not retroactively extend the original fixture evidence into real IdP/provider qualification.
+
 Use established protocol implementations before emitting identity snapshots; do not add a JWT parser or signature algorithm here. An OIDC/JWT adapter must validate the intended issuer/audience, key/signature, token type and lifetime under its own qualified profile. OIDC issuer/subject comparisons are exact; an issuer path is part of the identity. The generic portable issuer field also permits non-OIDC service/fixture authorities and does not pretend to validate OIDC issuer syntax itself.
 
 Primary references reviewed: [OpenID Connect Core](https://openid.net/specs/openid-connect-core-1_0.html#IDToken), [issuer identity](https://openid.net/specs/openid-connect-core-1_0.html#IssuerIdentifier), [JWT BCP issuer/subject](https://www.rfc-editor.org/rfc/rfc8725.html#section-3.8), [audience validation](https://www.rfc-editor.org/rfc/rfc8725.html#section-3.9). The source facts justify adapter obligations; they do not establish that those adapters have been implemented or tested in this slice.
