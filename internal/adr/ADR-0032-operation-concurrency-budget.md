@@ -12,3 +12,5 @@ A bounded queue could preserve more requests during brief bursts and would retai
 The generated Small API can return the configured budget meter to an owning observer. Its protected HTTPS proof now observes controlled multi-operation admission and drain through HTTP and GraphQL while preserving empty metric tags and fresh tenant checks. [Live metrics report](../planning/live-budget-metrics.md). This adds consumer evidence within the accepted resource-budget slice.
 
 A separate-process HTTPS comparison now records listener/no-listener process and request costs under a declared mixed-transport workload. WSL completed its paired series; Windows attempts remain incomplete. The observed timing spread does not establish a universal overhead bound. [Comparison report](../planning/https-metrics-overhead.md). Admission behavior and the accepted decision are unchanged.
+
+The Windows listener diagnostic now preserves numeric request/producer receipts and process-specific CLR suspension evidence. Overlap and uncovered time are not exclusive GC/scheduler shares; admission semantics and acceptance gates remain unchanged. [Investigation](../planning/windows-warmup-drops.md).
