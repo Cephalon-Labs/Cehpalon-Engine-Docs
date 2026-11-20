@@ -1,0 +1,13 @@
+{
+  "verified_mirrors": 23,
+  "changed_bodies": [
+    7,
+    8,
+    18
+  ],
+  "other_20_rows_and_numeric_task_bytes_unchanged": true,
+  "all_metadata_and_milestones_unchanged": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row unchanged",
+  "plan_sha256": "ee0014d1d31033c2d21f102c720b958eb410b41a88c02af9d41fec8b93a44b3a"
+}

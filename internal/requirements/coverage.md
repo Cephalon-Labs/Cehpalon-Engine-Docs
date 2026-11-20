@@ -4,6 +4,8 @@ Source: [preserved user request](2026-10-27-user-request.md) and [2026-10-27 cla
 
 The [2026-11-20 user refinement](2026-11-20-optional-access-audit.md) adds optional authentication, RBAC/ABAC and operation audit/history under existing REQ-05/#7/#8 and REQ-10/#18. [ADR0033](../adr/ADR-0033-optional-access-and-audit.md) defines the bounded portable/local consumer slice and remaining provider/lifecycle gates.
 
+The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenant-readsets.md) adds consumer-configured algorithm/key profiles, established ticket mapping, checked destination selection and explicitly granted tenant read sets under the same issues. [ADR0034](../adr/ADR-0034-authentication-profiles-tenant-readsets.md) preserves per-tenant boundaries and documents aggregate read/snapshot limits.
+
 W0 refinement has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md) and [bounded SDK/artifact qualification](../planning/w0-qualification-and-sync.md). REQ-03/04/13 now have an experimental [W1 Core/Composition/code-generation slice](../planning/w1-core-composition-codegen.md). This is partial implementation coverage, not full requirement acceptance: full transport/provider and identity lifecycle acceptance, all three original lane workloads and #3 supported-Windows proof remain outstanding.
 
 | Requirement | Initial Engine issues | First proof / boundary |

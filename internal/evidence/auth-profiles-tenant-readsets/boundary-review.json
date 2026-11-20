@@ -1,0 +1,30 @@
+{
+  "scope": "Bounded source review and executable regression evidence; not a complete security audit or production certification",
+  "engine_revision": "e37689759f0987a1e381790ade0c031e52823ab1",
+  "reviewer_execution_boundary": "Read-only reviewer inspected source and installed IdentityModel 8.19.2 behavior; did not independently run full build suites",
+  "findings_resolved": [
+    {
+      "finding": "Provided JsonWebKey cloning used diagnostic ToString instead of JSON",
+      "resolution": "Explicit public-field snapshot, rejecting incompatible declared algorithm/use/key_ops",
+      "regression": "provided public JWK snapshots and validates without diagnostic ToString parsing"
+    },
+    {
+      "finding": "Metadata RSA KeySize can be inflated by leading-zero padding on a weak modulus",
+      "resolution": "Bounded canonical modulus/exponent parsing and actual bit-length validation, also bounded EC curve/coordinate checks",
+      "regression": "metadata padded weak RSA modulus is rejected despite inflated KeySize"
+    },
+    {
+      "finding": "Default metadata issuer validation can supplement configured ValidIssuer",
+      "resolution": "Pinned exact ordinal IssuerValidatorUsingConfiguration",
+      "regression": "metadata cannot expand the exact configured token issuer"
+    },
+    {
+      "finding": "Sample constructing ambient HttpContextAccessor and setting HttpContext can clear shared AsyncLocal state under parallel resolvers",
+      "resolution": "Request-owned fixed accessor with actual gated A/B HTTP and GraphQL sibling coverage",
+      "regression": "parallel GraphQL sibling fields keep A and B request contexts isolated"
+    }
+  ],
+  "root_execution": "Exact committed Engine passed 55 AuthProfile and 37 TenantReadSet checks on both Windows and WSL, plus every existing component suite",
+  "no_open_source_blocker": true,
+  "limits": "No blanket vulnerability absence claim, no real IdP lifecycle/durable provider/snapshot consistency proof; cross-profile key separation and host cookie/CSRF/session policy remain application responsibilities"
+}
