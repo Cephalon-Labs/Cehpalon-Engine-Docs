@@ -62,3 +62,5 @@ REQ-10/13 [process-scoped trace continuation](../planning/tooling-traces.md): fi
 REQ-10/13 [same-process wait continuation](../planning/tooling-waits.md): corrected full25targetLinuxlane and852454checkindependentintegrityaudit preserveall306generatorrows/24CLIoutputs andsource/ownership/clocklimits. Observed caller managed waits lieinEmit; noavoidableEngineoperation orspeedup isolated. Lastoriginalbenchmarkunchanged, full#20gates/M0/#3Blocked preserved.
 
 - [Optional session-status continuation](2026-11-20-session-status.md) - ADR0037; #8 with #7/#18 regressions; original gates unchanged.
+
+- [Preserved observation lifetime and configurable audit trails](2026-11-20-observation-audit-trails.md) - ADR0038/0039; #8/#7/#18; original gates unchanged.

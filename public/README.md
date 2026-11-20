@@ -16,3 +16,5 @@ The [protected HTTP/GraphQL guide](protected-http-graphql.md) describes the boun
 Publish guides with tested versions, supported profiles, runnable Samples and limitations when evidence exists. Keep research, internal planning, task mirrors, operational evidence and AI handoffs under internal folders.
 
 - [Experimental public Small API measurements and limits](small-api-measurements.md)
+
+- [Experimental configurable audit history and trails](guides/experimental-audit-trails.md): project-selected metadata/diff/snapshot modes, field redaction and checked tenant history with explicit provider/commit limits.
