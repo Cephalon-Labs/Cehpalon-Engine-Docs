@@ -1,0 +1,7 @@
+# Optional awaited audit execution
+
+The user continued configurable audit history/trails work, with project-selected modes and field policies. Root selects this bounded #18/#7/#8 continuation: make it easier for a trusted application to await both its mutation and required trail completion before returning its typed result. This is an opt-in integration helper, not automatic instrumentation of arbitrary writes.
+
+Preserve Disabled/MetadataOnly/ChangedFields/BeforeAfterSnapshots, lazy field projection, redaction, separate history permission and fresh tenant authority. Preflight failures invoke no mutation. Once the mutation callback begins, any failure must conservatively expose possible committed effects, including cancellation or a callback that changes data then throws without producing a receipt. Never invent a receipt or report rollback. A returned receipt triggers checked required persistence before returning the result, using the private write deadline and live context; caller cancellation is reported afterward. Existing Prepare/Complete/Record APIs retain their behavior.
+
+No provider, transaction/outbox, exactly-once, durability, production, release, performance or full benchmark qualification is inferred. Preserve #3 Blocked, #20 entire row, M0, unknown hours, all metadata and original benchmark criteria. Use isolated Engine/consumer agents and read-only review; root is the sole remote writer.

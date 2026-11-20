@@ -1,0 +1,35 @@
+# Awaited audit execution delivery
+
+Date2026-11-21. Root selected this bounded #18/#7/#8 continuation of the user's configurable audit history/trail requirements. [Requirement](../requirements/2026-11-21-audit-execution.md), [ADR0041](../adr/ADR-0041-audit-execution.md), [predeclared protocol](../validation/audit-execution.md), [consumer guide](../../public/guides/experimental-audit-trails.md). #3 Blocked, #20 entire row and original benchmarks remain unchanged.
+
+## Behavior and limits
+
+Optional ExecuteAsync<TResult> performs existing checked preparation, invokes and awaits one trusted mutation callback, then awaits its explicit receipt's required trail completion before returning the typed result. A sealed envelope holds read-only receipt/result and an internal lazy state factory; arbitrary result object graphs remain application-owned. The existing metadata/changed-fields/snapshot modes, redaction, actual-registry origin and fresh tenant checks remain. Metadata-only and empty fields skip projection; Disabled runs ordinary application behavior without recorder/envelope/value work. Runtime types stay in Audit.cs; embedded scaffold inventories17/32 stay fixed.
+
+Null callback and observed pre-invocation cancellation/failed preparation are ordinary pre-effect failures. After invocation begins, all faults conservatively report MayHaveCommitted, preserving an existing wrapper. A callback can change data then fail/cancel without returning a receipt: data1/trail0, no fabricated audit. An abandoned manual preparation still demonstrates the omission risk. The helper itself must be awaited inside the active checked handler; it cannot instrument arbitrary writes or force callers to await.
+
+Once a receipt returns, completion uses CancellationToken.None with the existing private cooperative write deadline and live context/registry/receipt checks. After completion the original caller token is checked before releasing the result. Pending caller cancellation alone therefore does not suppress required persistence after a returned receipt, and can withhold a result after append1. Invalid receipt, expired context, projection/persistence failure or private timeout can still prevent/fail recording. The mutation receives the original token. Existing direct CompleteAsync(callerToken) behavior is unchanged. A provider ignoring cancellation can remain pending; no hard completion deadline.
+
+One callback/value/append attempt per helper call does not provide cross-call idempotency or backend exactly-once. New calls can perform another mutation; no automatic retry, rollback, transaction/outbox, provider commit verification, durable retention/tamper-evidence, performance or production qualification. Applications/providers need explicit reconciliation and transaction semantics for stronger guarantees.
+
+## Exact validation
+
+Engine implementation `f3ee8f3a614614a4965877431cecaffedd3a0cf9`; complete verification/CI integration `2ab079a54eabd55927f374a7bf57b066da931d27`. Both full Engine SHAs are journaled in #7/#8/#18. Samples source `8e3c473933136cb81f6b43d44ffc1ef95eda4c4c` and delivery `1c94bbff12110d25d7cc922597864036128d6848` are technical provenance only. SDK11.0.100-rc.3.26522.148/package graph unchanged.
+
+| Locked Release/warnings-as-errors | Windows | WSL |
+| --- | ---: | ---: |
+| Complete component contracts | 1050 | 1047 |
+| New AuditExecution subset | 48 | 48 |
+| Generated HTTPS consumers | 651 | 651 |
+
+The component increase is48 over1002/999; consumer increase95 over556. All executing sources are exact clean committed source. All135 component and85 consumer source hashes match between hosts, as do execution-profile counters. Registry remains `0534d97c0deba2f33744091b828da6a8a4e375d46c44ef2ca938f2088f148489`, with no new gateway. Existing signed/RSA JWE/dir/cookie, Core/Composition/CodeGeneration, HTTP/GraphQL, cross-tenant, separate field-history permission and disabled-module proofs remain. Held callbacks/sinks use explicit coordination, not favorable latency assertions. Independently scheduled16-call control and a single-consumption ValueTask source cover separate call behavior and one consumption.
+
+Engine focused01 passes48 first attempt; consumer development01 passes651 first attempt. No failed SDK attempt. Independent read-only review recomputes all27 focused current/frozen hashes and inspects committed blobs/build/results; reviewer ran no SDK/probe. All later exact full executions run serially. No original benchmark rerun or changed flags/thresholds/GC/concurrency. Optional helper overhead remains unmeasured.
+
+Actual WebSDK evaluation after archival reports19Compile/0Content/1None with evidence excluded; the two additional consumer source files are separate from fixed embedded scaffold inventories17/32. Emitted consumer dependencies contain no compiler/analyzer runtime leak. Portable CI[44786787762](https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/44786787762) and platform smoke CI[44786787815](https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/44786787815) both succeed on actual Windows/Linux jobs at exact Engine2ab079a. Local fixtures and smoke CI do not resolve #3 or qualify a production/provider profile. No GitHub usage/billing step was skipped or unchanged rejected job rerun.
+
+## Evidence and synchronization
+
+[Public400-file source/raw archive](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/1c94bbff12110d25d7cc922597864036128d6848/security-api/evidence/2026-11-21-audit-execution) retains final components/consumers, focused/development/frozen sources, compact path map, CI and read-only review. SHA256SUMS covers all399 other files; every400 staged blob matches raw bytes. The direct focused runner matches its pre-frozen manifest despite generic nested.local pruning. Original local worktrees/raw remain. Source Fixtures.cs contains inherited blank EOF lines; retain those evidence bytes rather than normalizing source. CR-aware diff checks pass with only this inherited blank-EOF diagnostic excluded. Broad compact-token scan finds three ordinary C# identifiers, explicitly reviewed; no unreviewed credential/private-key/token material. An initial archive date label inherited20Nov was corrected to21Nov before staging, with bytes preserved and no SDK rerun.
+
+Offline tracking tests pass60 (41sync+19pull). Reviewed plan `cec0e74954dde44f5de1c970c4742686f25914bdc2cfa2fe77a2929b095d81f7` changes bodies7/8/18 only; dry run, exact-hash apply and independent23 readback pass. [Strict final guard](../evidence/audit-execution/final-tracking-guard.json) confirms other20 entire rows/numeric task bytes, all issue metadata/milestones, #3 Blocked and #20 entire row remain unchanged. All three repositories remain public MIT; Project4 private. Engine/Samples main pushed; owned merged branches removed, raw/detached worktrees and four primary user edits/two untracked user directories preserved. Docs records this delivery without its own commit hash loop. Feature maturity remains M0 and actual hours unknown.

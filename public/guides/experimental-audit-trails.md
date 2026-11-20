@@ -58,6 +58,31 @@ Build immutable TenantChangeState values from actual before/after entity snapsho
 
 Stable receipt IDs support application/provider idempotency. They are not a fabricated link to the automatic operation InvocationId or caller correlation. ReportedAtUtc is provider supplied; RecordedAtUtc is observed by the recorder.
 
+### Await mutation and recording together
+
+For a new integration, `ExecuteAsync<TResult>` keeps the mutation callback and required trail completion in one awaited flow. Use it **inside the active checked handler**, with the same validated recorder/registry. Disabled auditing must still run ordinary business behavior:
+
+```csharp
+if (recorder is null)
+{
+    var change = await applicationMutation(cancellationToken);
+    return change.Result;
+}
+return await recorder.ExecuteAsync(context, async token =>
+{
+    var change = await applicationMutation(token);
+    return new TenantChangeAuditMutation<MyResponse>(
+        change.Receipt, change.Result,
+        () => new TenantChangeStates(change.Before, change.After));
+}, cancellationToken);
+```
+
+Here `applicationMutation`, its returned change and `MyResponse` belong to the consuming application. It must report the actual chosen provider operation; constructing a receipt is not proof of a commit. The envelope is immutable, while arbitrary response object graphs remain application-owned. Metadata-only and empty-field policies skip its lazy state factory. The disabled branch constructs neither the envelope nor audit state; application-owned snapshot work should also be selected explicitly.
+
+Null callback, failed preparation and pre-invocation cancellation occur before the callback. Once invocation starts, all failures conservatively report `MayHaveCommitted`, including a callback that changes data then throws or cancels without returning a receipt. That case has no fabricated trail and needs application reconciliation. The helper invokes its callback once and does not automatically retry either the mutation or append. Separate calls can each change data; there is no cross-call idempotency.
+
+After a receipt returns, the helper awaits checked completion using the private write deadline and then checks caller cancellation before returning the result. Thus caller cancellation alone does not suppress required persistence after a returned receipt; it can withhold a result after the append succeeded. Invalid/expired scope, invalid receipt, provider failure or private timeout can still prevent/fail recording. Direct `CompleteAsync(receipt, values, callerToken)` retains its earlier caller-token checks. Timeouts are cooperative: a provider or mutation that ignores cancellation can remain pending. The helper cannot force a consumer to await it or make database changes and trails atomic. No transaction/outbox, hard deadline or guaranteed delivery is implied. See [ADR0041](../../internal/adr/ADR-0041-audit-execution.md).
+
 ## Read history and handle failure
 
 TenantChangeAuditHistoryReader requires the distinct audit-trail/tenant/read checked scope. Ordinary operation-metadata history permission does not grant field history. The facade validates page size/tenant ownership, rechecks active context after asynchronous reads/projection and applies current project redaction. Implement retention, storage encryption, integrity verification and pagination in the selected provider.
