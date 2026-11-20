@@ -60,3 +60,5 @@ REQ-10/13 [variance investigation](../planning/tooling-variance.md): both full f
 REQ-10/13 [process-scoped trace continuation](../planning/tooling-traces.md): fixed75diagnostic targets, positive synthetic collector conformance and independent50target runtime integrity/semantic replay retain all loss/pairing/clock/observer limits. Some slow manual/generated compiler rows overlap GC; no safe Engine optimization is isolated. Selected GraphQL work agrees with module guards. Final unchanged-source original benchmark is observational only; full #20 gates/M0 and #3 Blocked remain unchanged.
 
 REQ-10/13 [same-process wait continuation](../planning/tooling-waits.md): corrected full25targetLinuxlane and852454checkindependentintegrityaudit preserveall306generatorrows/24CLIoutputs andsource/ownership/clocklimits. Observed caller managed waits lieinEmit; noavoidableEngineoperation orspeedup isolated. Lastoriginalbenchmarkunchanged, full#20gates/M0/#3Blocked preserved.
+
+- [Optional session-status continuation](2026-11-20-session-status.md) - ADR0037; #8 with #7/#18 regressions; original gates unchanged.
