@@ -14,3 +14,5 @@ The generated Small API can return the configured budget meter to an owning obse
 A separate-process HTTPS comparison now records listener/no-listener process and request costs under a declared mixed-transport workload. WSL completed its paired series; Windows attempts remain incomplete. The observed timing spread does not establish a universal overhead bound. [Comparison report](../planning/https-metrics-overhead.md). Admission behavior and the accepted decision are unchanged.
 
 The Windows listener diagnostic now preserves numeric request/producer receipts and process-specific CLR suspension evidence. Overlap and uncovered time are not exclusive GC/scheduler shares; admission semantics and acceptance gates remain unchanged. [Investigation](../planning/windows-warmup-drops.md).
+
+Synthetic timer/completion probes now bound publication-to-observed-resume separately from the pre-callback leg, with inline/race controls. This adds diagnostic evidence only and does not justify changing the Engine continuation policy. [Probe report](../planning/windows-timer-publication.md).
