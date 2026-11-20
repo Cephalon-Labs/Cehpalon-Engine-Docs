@@ -1,0 +1,32 @@
+{
+  "scope": "Bounded source review and executable crypto/envelope regressions, not a full security certification",
+  "engine_revision": "7311f5bd02fb94cdf4e0711ce168a3eb646237fd",
+  "reviewer_boundary": "Read-only source/primary-source review and ephemeral in-memory probes; no independent full-suite execution",
+  "resolved_findings": [
+    {
+      "finding": "Stock direct JWE accepts a nonempty unused encrypted-key segment while ciphertext/tag still validate",
+      "resolution": "Explicit dir-empty/RSA-nonempty segment gate",
+      "impact_boundary": "Strict-format/wire malleability, not evidence of changed authenticated claims"
+    },
+    {
+      "finding": "Raw RSA encoding comparison can miss identical key material represented with padded exponent bytes and different key IDs",
+      "resolution": "Bounded unsigned-integer modulus/exponent comparison for signing/decryption key separation",
+      "coverage": "Local public/JWK/raw-RSA and metadata callback regressions"
+    },
+    {
+      "finding": "Normal metadata JWK conversion can produce a padded RsaSecurityKey whose KeySize overstates actual modulus bits",
+      "resolution": "Validate actual bounded RSA public material on converted/raw RSA paths, with named-curve checks for raw EC",
+      "coverage": "Real JsonWebKeySet.GetSigningKeys conversion plus Signed and EncryptedSigned validator paths"
+    }
+  ],
+  "verified_boundaries": [
+    "EncryptedSigned rejects plaintext downgrade and Signed rejects encrypted credentials",
+    "Outer key-management gate is separate from content enc/derived CEK and inner-signature validation roles",
+    "Exactly one encrypted layer followed by a signed unencrypted JWT on successful validation",
+    "Pinned base string overload dispatches through the derived SecurityToken overload; actual runtime probe observed one override call",
+    "Duplicate/unknown/critical/compression/remote-reference header controls are enforced before standard crypto"
+  ],
+  "root_execution": "Exact committed full suites passed 723 Windows / 720 WSL; Jwe.ContractTests55/55 per host",
+  "limitations": "Outer duplicate-header execution case has an invalid MAC, so successful-MAC outer duplicate rejection is source-inspection evidence; the inner duplicate case is signed and re-encrypted. Initial .NET10 reviewer probes corroborate library behavior but do not replace pinned SDK11 final runs. No timing-oracle, real KMS/HSM/IdP lifecycle or production claim.",
+  "no_open_source_blocker": true
+}

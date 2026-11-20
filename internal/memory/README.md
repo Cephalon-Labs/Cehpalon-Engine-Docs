@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-20 authentication profiles, switching and tenant read sets](2026-11-20-auth-profiles-tenant-readsets.md).
+Latest handoff: [2026-11-20 nested signed JWE](2026-11-20-jwe.md).
+
+Prior delivery: [2026-11-20 authentication profiles, switching and tenant read sets](2026-11-20-auth-profiles-tenant-readsets.md).
 
 Prior delivery: [2026-11-20 optional authentication, RBAC/ABAC and audit/history](2026-11-20-optional-access-audit.md).
 

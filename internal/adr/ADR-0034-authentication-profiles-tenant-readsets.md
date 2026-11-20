@@ -22,6 +22,8 @@ When audit is enabled, require a control-plane grant record before read handlers
 
 ## Alternatives and consequences
 
+2026-11-20 continuation: the user's subsequent JWE request is implemented in the separately bounded [ADR0035](ADR-0035-nested-signed-jwe.md) scope. The original signed profile remains the default; nested signed encryption adds its own algorithm/key/provider validation rather than changing the original signed evidence.
+
 - Reissue a universal all-tenant token or use tenant='*': easy to wire but violates resource-bound tenant checks; rejected.
 - Keep a singleton current tenant: simple UI state but races across tabs/requests; rejected.
 - Let a token select algorithms/keys: flexible but introduces confusion and attacker-controlled key lookup; rejected.

@@ -6,6 +6,8 @@ The [2026-11-20 user refinement](2026-11-20-optional-access-audit.md) adds optio
 
 The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenant-readsets.md) adds consumer-configured algorithm/key profiles, established ticket mapping, checked destination selection and explicitly granted tenant read sets under the same issues. [ADR0034](../adr/ADR-0034-authentication-profiles-tenant-readsets.md) preserves per-tenant boundaries and documents aggregate read/snapshot limits.
 
+The [JWE refinement](2026-11-20-jwe.md) extends REQ-05/#8 with separately selected nested signed encryption, trusted decryption keys and explicit inner/outer validation under [ADR0035](../adr/ADR-0035-nested-signed-jwe.md). #7/#18 retain tenant/audit regression scope; original gates remain intact.
+
 W0 refinement has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md) and [bounded SDK/artifact qualification](../planning/w0-qualification-and-sync.md). REQ-03/04/13 now have an experimental [W1 Core/Composition/code-generation slice](../planning/w1-core-composition-codegen.md). This is partial implementation coverage, not full requirement acceptance: full transport/provider and identity lifecycle acceptance, all three original lane workloads and #3 supported-Windows proof remain outstanding.
 
 | Requirement | Initial Engine issues | First proof / boundary |
