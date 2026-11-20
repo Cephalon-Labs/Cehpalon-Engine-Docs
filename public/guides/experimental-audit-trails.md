@@ -29,6 +29,29 @@ Leave the module unselected or select Disabled to skip provider factories and co
 
 ## Integrate with actual changes
 
+### Validate and prepare before mutation
+
+For declared audited operations, prefer validation against the actual frozen tenant registry before loading the sink:
+
+```csharp
+var recorder = TenantChangeAuditRecorder.ActivateValidated(
+    policy, tenantRegistry, ["document.update"], () => trustedStore);
+// Inside the checked handler, before application data effects:
+var prepared = recorder?.Prepare(context, cancellationToken);
+var change = await applicationMutation(cancellationToken); // application/provider code
+if (prepared is not null)
+    await prepared.CompleteAsync(change.Receipt,
+        () => new TenantChangeStates(change.Before, change.After), cancellationToken);
+```
+
+`DescribeOperations()` exposes immutable operation/action/resource-kind metadata without invoking handlers, request freezers or target selectors. Enabled validated activation checks every configured rule and every explicitly required operation before invoking the sink factory. Disabled skips catalog/required-enumeration/provider work. Required audited operations are declared by the host; action names do not imply auditing.
+
+Use the **same registry instance** for activation and dispatch. Identical rebuilt registries, including two snapshots from the same builder, do not share the private binding. Keep request identity/security services fresh. Preparation performs live-context/origin/rule/cancellation checks without storage or payload work. Before-effect denial/cancellation does not assert a commit happened. It can run inside an already-created handler; the guarantee is no application mutation when that check fails.
+
+Completion captures the original context and recorder and consumes the preparation before receipt validation, callbacks or I/O. Null/misbound receipts, cancellation, failed first attempts, concurrent losers and replay all consume/fail with possible-commit semantics; at most one facade append attempt occurs per preparation. This is not backend exactly-once or an automatic retry. New configurations do not retarget or instantly revoke old preparations bound to their immutable owner.
+
+Callers **must await completion after effects**. Preparation neither reserves storage nor forces/automates completion: abandoning it can leave changed data without a trail and requires application reconciliation. Context must remain active. The original direct `Activate`/`RecordAsync` API remains available and can still discover a rule error after effects; upgrading the library alone does not migrate application flow. Atomic transaction/outbox behavior remains provider/application responsibility.
+
 The application/provider reports an explicit TenantChangeReceipt after its chosen mutation/commit handling; the framework does not infer committed database state from request or response DTOs. Receipt principal/issuer, scheme, tenant, operation/action, entity kind/ID and authorization-resource version must match an active TenantOperationContext. BeforeEntityVersion and AfterEntityVersion are separate domain versions: the authorization-resource version might represent an ACL rather than a data row. Create uses a correctly authorized reserved entity scope. A receipt constructor does not prove a commit.
 
 Build immutable TenantChangeState values from actual before/after entity snapshots. Supported scalar representations distinguish Missing from Null and include Text, Boolean and Decimal. Text/fields/states/records have finite limits; complex application types need explicit bounded scalar projection. No reflection/object-graph capture or automatic JSON serialization is installed. Exclude credentials/session identifiers from capture rules or explicitly redact sensitive fields. Text preserves well-formed source characters, including controls; providers and UIs must use structured escaped encoding.

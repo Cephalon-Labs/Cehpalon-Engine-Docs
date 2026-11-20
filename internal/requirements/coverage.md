@@ -64,3 +64,4 @@ REQ-10/13 [same-process wait continuation](../planning/tooling-waits.md): correc
 - [Optional session-status continuation](2026-11-20-session-status.md) - ADR0037; #8 with #7/#18 regressions; original gates unchanged.
 
 - [Preserved observation lifetime and configurable audit trails](2026-11-20-observation-audit-trails.md) - ADR0038/0039; #8/#7/#18; original gates unchanged.
+- [Audit catalog validation and preparation before effects](2026-11-20-audit-preparation.md) - ADR0040; #18/#7/#8; original gates unchanged.
