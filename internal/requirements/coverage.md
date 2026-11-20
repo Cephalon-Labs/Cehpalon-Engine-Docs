@@ -8,6 +8,8 @@ The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenan
 
 The [JWE refinement](2026-11-20-jwe.md) extends REQ-05/#8 with separately selected nested signed encryption, trusted decryption keys and explicit inner/outer validation under [ADR0035](../adr/ADR-0035-nested-signed-jwe.md). #7/#18 retain tenant/audit regression scope; original gates remain intact.
 
+The [local key-ring continuation](2026-11-20-local-keyring.md) addresses the remaining bounded key-lifecycle portion of REQ-05/#8 under [ADR0036](../adr/ADR-0036-local-keyring-lifecycle.md): explicit atomic overlap/retirement/withdrawal with per-validation version/freshness and unchanged tenant/audit boundaries. Real IdP/KMS/session lifecycle remains separate.
+
 W0 refinement has a [decision package with four ADRs and three workload protocols](../planning/w0-decisions.md) and [bounded SDK/artifact qualification](../planning/w0-qualification-and-sync.md). REQ-03/04/13 now have an experimental [W1 Core/Composition/code-generation slice](../planning/w1-core-composition-codegen.md). This is partial implementation coverage, not full requirement acceptance: full transport/provider and identity lifecycle acceptance, all three original lane workloads and #3 supported-Windows proof remain outstanding.
 
 | Requirement | Initial Engine issues | First proof / boundary |

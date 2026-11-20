@@ -1,0 +1,6 @@
+{
+  "command": "python -B -m unittest discover -s tools -p test_*tracking.py",
+  "passed": 60,
+  "failed": 0,
+  "scope": "Offline tracking conflict/recovery tests; live independent readback separately verified23."
+}
