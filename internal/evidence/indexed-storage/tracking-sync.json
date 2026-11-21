@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "plan_sha256": "cad11f413933597ec09a507e47ebc04c2c3197326ee9312c057a46fc56b74109",
+  "operations": [
+    {
+      "number": 7,
+      "kind": "issue",
+      "changed_fields": [
+        "body"
+      ]
+    },
+    {
+      "number": 8,
+      "kind": "issue",
+      "changed_fields": [
+        "body"
+      ]
+    },
+    {
+      "number": 18,
+      "kind": "issue",
+      "changed_fields": [
+        "body"
+      ]
+    }
+  ],
+  "reviewed_exact_plan": true,
+  "dry_run_and_exact_apply_passed": true,
+  "readback_mirrors": 23,
+  "direct_project_fields_equal_before_after": 253,
+  "new_engine_commit_or_journal_entry": false,
+  "raw_local_receipt_sha256": {
+    "plan": "64485bf89360f5bb7a5b2ee34e15d986b230f44140829f79a018b012739f78f0",
+    "dry": "e593c756e182860bc31411db90d8a12a2c486c0b8d45f246854a25518fa5bdec",
+    "execute": "aa7d7a440f19c02b231c5aad60f6805179483231d2babadb7ea97a8181c9ffbb",
+    "check": "c7598c1c73ccf189c01a36ce331bc503cffff94227aeb3a4bc254e0bd5496e4c"
+  }
+}

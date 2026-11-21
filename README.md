@@ -11,6 +11,7 @@ This is a new baseline. Historical project notes are context only; they do not e
 - [Optional total cooperative drain budget](internal/adr/ADR-0047-total-outbox-drain-budget.md)
 - [Optional exact audit receipt lookup](internal/adr/ADR-0048-exact-audit-receipt-lookup.md)
 - [Optional exact resource history and typed continuation](internal/adr/ADR-0049-exact-resource-history-query.md)
+- [Optional PostgreSQL indexed audit storage profile](internal/adr/ADR-0050-optional-indexed-audit-storage.md)
 - [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
 - [Experimental portable CLI/scaffolding continuation](internal/planning/portable-cli-scaffolding.md)
 - [Experimental Small API CLI profile continuation](internal/planning/small-api-cli-profile.md)

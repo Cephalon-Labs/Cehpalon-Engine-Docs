@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "owned_merged_refs_deleted": [
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/indexed-audit-storage",
+      "revision": "6ef15f48738f0713609864b26c4d004530d6b7ca",
+      "raw_worktree_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/indexed-audit-consumer",
+      "revision": "58641dac065a3204f662d7bbd57c2dc59159bdc1",
+      "raw_worktree_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\is-wsl-consumer",
+      "deleted_merged_ref": "features/indexed-storage-source",
+      "revision": "58641dac065a3204f662d7bbd57c2dc59159bdc1",
+      "raw_worktree_retained": true,
+      "git_host": "WSL"
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\is-engine\\.local\\is-wsl-source01",
+      "deleted_merged_ref": "main",
+      "revision": "d0d49c7eb47ae8fedc23743dfe76b359b677d796",
+      "raw_worktree_retained": true,
+      "git_host": "WSL"
+    }
+  ],
+  "primary_repositories_main_only": true,
+  "source_and_raw_objects_retained": true,
+  "retained_preparation_correction": {
+    "first_attempt": "Windows Git cannot resolve Linux alternate path for WSL-only clone",
+    "exit": 128,
+    "correction": "Used WSL Git against original unchanged Linux alternate paths to verify ancestry and delete remaining owned refs",
+    "sdk_or_runtime_rerun": false
+  }
+}

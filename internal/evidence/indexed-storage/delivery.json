@@ -1,0 +1,55 @@
+{
+  "engine_main": "d0d49c7eb47ae8fedc23743dfe76b359b677d796",
+  "engine_changed": false,
+  "new_engine_journal_entry": false,
+  "consumer_source": "58641dac065a3204f662d7bbd57c2dc59159bdc1",
+  "samples_main": "d3397bef35af335ecc74d174d9746be88b9a4982",
+  "docs_baseline": "defd1dfa340797e39d0080f3d391046762e49703",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "final_counts": [
+    651,
+    651,
+    220,
+    220
+  ],
+  "source_counts": [
+    85,
+    85,
+    105,
+    105
+  ],
+  "reused_engine_component_baseline": [
+    1475,
+    1472
+  ],
+  "new_profile_hosted_execution": false,
+  "archive": {
+    "archive": "security-api/evidence/2026-11-21-indexed-storage",
+    "files_including_sha256sums": 668,
+    "sha256sum_entries": 667,
+    "sha256sums_sha256": "7ba639309058c08214351e07e16d75d520467392e221b488d89f6a8f93459ecb",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "Optional indexed storage evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 666,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "plan_sha256": "cad11f413933597ec09a507e47ebc04c2c3197326ee9312c057a46fc56b74109",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row and original benchmark unchanged",
+  "original_benchmark_not_run": true,
+  "billing_usage_skip": false,
+  "limitations": "Optional separate indexed history; point-in-time catalog check, no continuous integrity/snapshot/chronology/tamper/performance/production qualification"
+}

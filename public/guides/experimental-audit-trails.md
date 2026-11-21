@@ -198,6 +198,14 @@ The PostgreSQL example calculates all counts and oldest pending database enqueue
 
 ## Read history and handle failure
 
+Projects can select the experimental PostgreSQL indexed storage sample through its optional Composition Support module. It implements the existing sink, receipt-lookup and resource-history ports; no Engine API change is required. A validated immutable plan precedes module factory, credential access and initialization. Disabled selection has no module-owned factory/connection/DDL/query work. Existing mutation/read gateways retain fresh tenant grants and current-policy projection.
+
+This profile stores resource metadata and the established escaped TEXT payload atomically in a new versioned table, with an exact tenant/resource/receipt index. Conditional append accepts only identical metadata and payload for a repeated key; conflicting replay faults without overwriting the visible record. Duplicate UPSERTs can still create MVCC/index/vacuum work. Resource reads filter in SQL, validate selected physical metadata against decoded receipt and keep typed receipt-key continuation semantics. NUL-bearing field values remain supported without SQL JSON conversion. Selective reads do not continuously inspect unrelated rows or prove tamper-free storage, chronological snapshots or speedup.
+
+CreateNew and OpenExisting are explicit, separate initialization modes. Opening verifies the expected version/table/columns/collations/PK/index and rejects unsupported schema behavior; it never repairs or migrates. This is point-in-time validation under trusted database administration. The module lease owns provider lifetime and rejects retained new work after disposal. Existing and indexed histories are distinct: there is no automatic backfill, dualwrite, cutover or replay of previously acknowledged receipts. Outbox Delivered does not identify which history store received the record. Plan migration before changing a real deployment's sink.
+
+See [ADR0050](../../internal/adr/ADR-0050-optional-indexed-audit-storage.md) and [profile evidence](../../internal/planning/indexed-audit-storage.md). The initial evidence covers correctness and actual index/query plans; index existence and a diagnostic plan do not establish production performance. Legacy streaming storage remains available.
+
 Projects can independently select bounded history for one exact resource kind/id:
 
 ```csharp

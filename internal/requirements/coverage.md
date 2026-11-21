@@ -14,6 +14,8 @@ The [optional exact receipt lookup](2026-11-21-audit-receipt-lookup.md), [ADR004
 
 The [exact resource history query](2026-11-21-resource-history-query.md), [ADR0049](../adr/ADR-0049-exact-resource-history-query.md), adds kind/id selection and typed tenant/filter-bound receipt-key continuation. Page count bounds output; the compatible TEXT provider's scan cost is unmeasured. Chronological/snapshot order and cryptographic cursor authenticity are separate profiles.
 
+The [optional indexed storage profile](2026-11-21-indexed-audit-storage.md), [ADR0050](../adr/ADR-0050-optional-indexed-audit-storage.md), reuses those unchanged Engine ports with atomic metadata+TEXT and exact SQL selection. Actual Composition owns its selected provider. Storage version checks, migration/cutover boundaries and query-plan evidence are explicit; Engine code and original benchmarks remain unchanged.
+
 The [2026-11-20 user refinement](2026-11-20-optional-access-audit.md) adds optional authentication, RBAC/ABAC and operation audit/history under existing REQ-05/#7/#8 and REQ-10/#18. [ADR0033](../adr/ADR-0033-optional-access-and-audit.md) defines the bounded portable/local consumer slice and remaining provider/lifecycle gates.
 
 The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenant-readsets.md) adds consumer-configured algorithm/key profiles, established ticket mapping, checked destination selection and explicitly granted tenant read sets under the same issues. [ADR0034](../adr/ADR-0034-authentication-profiles-tenant-readsets.md) preserves per-tenant boundaries and documents aggregate read/snapshot limits.
