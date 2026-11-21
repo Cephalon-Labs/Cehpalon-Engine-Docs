@@ -129,6 +129,25 @@ The sink must deduplicate `(tenant, receiptId)`: identical payload replay succee
 
 The owned PostgreSQL/Npgsql consumer demonstrates the tested same-database transaction/fence/dedup behavior. Portable interfaces alone do not prove a provider's atomicity, durability or isolation, and the fixture is not a production or native Windows database qualification. See [ADR0042](../../internal/adr/ADR-0042-audit-transaction-outbox.md) and the [conformance protocol](../../internal/validation/audit-outbox.md).
 
+### Select a cooperative relay budget
+
+The original `Activate` entrypoint retains its signature and behavior. A project can instead select a nullable work budget through the distinct `ActivateWithBudget` entrypoint:
+
+```csharp
+var relay = TenantChangeAuditOutboxRelay.ActivateWithBudget(
+    projectRelayEnabled,
+    relayTimeout: projectRelayTimeout, // TimeSpan?; null keeps legacy behavior
+    sourceFactory: () => projectOutboxSource,
+    sinkFactory: () => projectIdempotentHistorySink,
+    leaseDuration: TimeSpan.FromSeconds(15));
+```
+
+Configured budgets must be positive and at most one minute. Disabled selection skips validation and provider factories. The system timer starts before claim and remains active through final success validation; the optional `timeProvider` still controls lease UTC/monotonic checks. Claim, sink and acknowledgement receive linked caller/private cancellation. Release keeps its own five-second cleanup token, including after caller cancellation or work-budget expiry. The facade awaits uncooperative I/O and cleanup, so elapsed wall time can exceed the selected budget.
+
+With a configured budget, observed caller cancellation retains the original caller token and takes precedence over a simultaneously observed private expiry. Private expiry reports a generic `TimeoutException`; unrelated provider failures remain distinct. Inner diagnostics are for trusted host code and must not be serialized to public responses. Null budget keeps the original token/error behavior.
+
+A late known claim is released before failure is returned; a late null claim also fails rather than reporting zero. Pre-lease claim failure provides no handle for Engine cleanup: the trusted source owns partial-acquisition recovery/expiry. Once a sink call is attempted, delivery may have happened even if acknowledgement count is zero. A budget expiring during cleanup can withhold success after every acknowledgement. Inspect `TenantChangeAuditOutboxRelayException` counts and separate primary/release failures, then reconcile or explicitly retry with fresh authority and the same idempotent receipt payload. Timeout is not rollback, a renewed lease or automatic retry. See [ADR0045](../../internal/adr/ADR-0045-cooperative-outbox-relay-budget.md).
+
 ### Inspect outbox status without reading payloads
 
 Projects may independently select `TenantChangeAuditOutboxStatusReader`. Disabled activation skips its provider factory; the Engine installs no polling loop, metrics listener or endpoint:

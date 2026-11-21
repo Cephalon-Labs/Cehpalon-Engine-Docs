@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-21 .NET11 GA correction and current build evidence](2026-11-21-dotnet11-ga.md).
+Latest handoff: [2026-11-21 optional cooperative outbox relay budget](2026-11-21-relay-budget.md).
+
+Prior delivery: [2026-11-21 .NET11 GA correction and current build evidence](2026-11-21-dotnet11-ga.md).
 
 Prior delivery: [2026-11-21 protected outbox status and Project4 readback](2026-11-21-outbox-status.md).
 

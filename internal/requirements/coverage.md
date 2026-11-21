@@ -4,6 +4,8 @@ Source: [preserved user request](2026-10-27-user-request.md) and [2026-10-27 cla
 
 The [2026-11-21 GA correction](2026-11-21-dotnet11-ga.md) updates REQ-02/#3 current builds and scaffolds to SDK 11.0.100/runtime 11.0.0 under [ADR0044](../adr/ADR-0044-dotnet11-ga-baseline.md). Historical RC evidence retains its original versions; GA availability does not close the supported-host/provider gate or requalify #20 benchmarks.
 
+The [optional relay budget continuation](2026-11-21-relay-budget.md) extends REQ-10/#18 cancellation/deadline handling, with REQ-05/#7/#8 tenant/identity regressions under [ADR0045](../adr/ADR-0045-cooperative-outbox-relay-budget.md). It preserves original activation/provider contracts and introduces explicit cooperative work cancellation; full host/provider/benchmark acceptance remains separate.
+
 The [2026-11-20 user refinement](2026-11-20-optional-access-audit.md) adds optional authentication, RBAC/ABAC and operation audit/history under existing REQ-05/#7/#8 and REQ-10/#18. [ADR0033](../adr/ADR-0033-optional-access-and-audit.md) defines the bounded portable/local consumer slice and remaining provider/lifecycle gates.
 
 The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenant-readsets.md) adds consumer-configured algorithm/key profiles, established ticket mapping, checked destination selection and explicitly granted tenant read sets under the same issues. [ADR0034](../adr/ADR-0034-authentication-profiles-tenant-readsets.md) preserves per-tenant boundaries and documents aggregate read/snapshot limits.

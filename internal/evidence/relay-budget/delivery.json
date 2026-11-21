@@ -1,0 +1,56 @@
+{
+  "engine_main": "3eb2b0eb957304bae24a1ef749160b8dd159772f",
+  "samples_source": "e95d1c281662701daacd7dea11257db4f450cd25",
+  "samples_main": "20a354cc846e2666f4771943a618ed0d69e5728a",
+  "docs_baseline": "1f44b99026bc466947b9478a6179df56ca69f63f",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "runtime_api": "Original Activate retained; distinct optional ActivateWithBudget",
+  "final_tests": {
+    "components_windows": 1231,
+    "components_wsl": 1228,
+    "security_each": 651,
+    "postgres_each": 84,
+    "component_outbox_each": 120,
+    "component_status_each": 56
+  },
+  "source_inventory_counts": {
+    "components": 142,
+    "security": 85,
+    "postgres": 93,
+    "development_freeze": 94
+  },
+  "archive_files": 1615,
+  "sha256sums_sha256": "9bc67f8d24ee9ba865fa15f14c13d258eb3f2a910fa124b2373086d913af7b09",
+  "changed_issue_bodies": [
+    7,
+    8,
+    18
+  ],
+  "all_metadata_milestones_unknown_hours_and_other20_rows_unchanged": true,
+  "issue3": "Blocked/M0 complete row/task bytes retained",
+  "issue20": "complete row/task bytes and original benchmark protocol retained",
+  "project4": "private; direct before/after23cards253field equalities",
+  "owned_primary_branches_deleted": [
+    "features/relay-budget-engine",
+    "features/relay-budget-integration",
+    "features/relay-budget-consumer"
+  ],
+  "retained_worktrees": [
+    "rb-engine",
+    "rb-integration",
+    "rb-consumer",
+    "rb-wsl-consumer"
+  ],
+  "borrowed_object_store": "Retain primary Samples.git/objects; WSL source is not an independent archive clone",
+  "fixture": "Exact owned container/helpers/listener stopped; data/image/volume/raw retained",
+  "ci_runs": [
+    44871739876,
+    44871740016
+  ],
+  "ci_metadata_only": true,
+  "billing_usage_skip": false,
+  "original_benchmark_not_run": true,
+  "proof_boundary": "Functional cooperative cancellation/tenant/provider fixture evidence only; no hard deadline, rollback, forced abandonment, nativeWindowsDB, production or maturity promotion"
+}
