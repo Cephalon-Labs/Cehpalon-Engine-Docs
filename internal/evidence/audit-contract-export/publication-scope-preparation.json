@@ -1,0 +1,10 @@
+{
+  "status": "retained_wrong_scope_prepublication_check",
+  "reason": "Copied checker retained literal prior archive basename2026-11-22-audit-admission despite new Docs evidence prefix. Detected its716 count/SHA in output; corrected archive and final-audit paths before commit/push.",
+  "correct_archive": "security-api/evidence/2026-11-22-contracts",
+  "prior_archive_worktree_and_index_unchanged": true,
+  "new_archive_committed_before_correction": false,
+  "source_snapshot": "audit-contract-publication-scope-attempt01.py.txt",
+  "prior_scope_receipt_sha256": "af6fa25e1c11ecf65b428684de16af7c59f22fa8239f2607c4895d7fa51025fb",
+  "sdk_rerun": false
+}

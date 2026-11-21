@@ -295,3 +295,19 @@ Established JWT identity and fresh membership/resource/RBAC-ABAC checks run befo
 Capacity covers protected dispatch and owned-handler completion. Authentication, DTO mapping, serialization and wire delivery are outside that interval. Caller abort or cooperative timeout cannot release a slot while the handler is still completing. Shutdown closes both admissions, stops the app and fully joins work before disposing the source, even when stop fails. Optional `ConcurrencySnapshot` contains aggregate counts only; no tenant-tagged metric or listener is created.
 
 [Decision and limitations](../../internal/adr/ADR-0054-audit-read-concurrency-admission.md) · [Validation](../../internal/planning/audit-read-admission.md). Local indexed PostgreSQL/token fixtures remain M0 and do not establish throughput, native Windows DB, external IdP or production capacity.
+
+## Offline audit-read contracts
+
+Export the experimental receipt/resource read contracts without a database connection, TLS keys or authentication secrets:
+
+```text
+dotnet run --project audit-outbox/PostgresAuditOutbox.Consumer.csproj -- --export-audit-contracts=./new-audit-contracts --http=true --graphql=true --receipt=true --resource=true
+```
+
+The destination must be new and its trusted plain parent must exist. Existing output is never overwritten; failed partial staging remains for inspection. Defaults match the host: HTTP/GraphQL/receipt enabled, resource history disabled. Both transports or both reads disabled emit only manifest.json. Selected GraphQL export explicitly creates/disposes one offline provider; disabled GraphQL performs no vendor registration/schema work.
+
+openapi.json describes selected business POST routes, actual serializer-derived DTO shapes, request object-only envelopes, nullable successful roots, generic bearer security and adapter errors including503. schema.graphql is the actual selected vendor SDL. manifest.json records generated/selected operation IDs and exact UTF8/LF artifact hashes/lengths. Each schema resource has its own $id. Runtime and export share one immutable typed catalog; returned artifacts are detached. Export does not enable schema/introspection endpoints.
+
+The document does not choose JWT algorithms/trust/grants or grant tenant authority. Semantic/cursor/Unicode/duplicate/body/depth rules, current policy and fresh membership/resource/RBAC-ABAC remain runtime checks. Offline validation checks pure selection/read settings, not trusted factories or deployment readiness. File publication assumes trusted parents rather than hostile filesystem races. These Samples remain M0; no external IdP/native Windows DB/performance/production qualification.
+
+[Decision](../../internal/adr/ADR-0055-offline-audit-read-contract-export.md) · [Targeted proof and retained failures](../../internal/planning/audit-contract-export.md).

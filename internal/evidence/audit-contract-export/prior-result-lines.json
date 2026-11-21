@@ -1,0 +1,25 @@
+{
+  "status": "preserved_exact_previous_results",
+  "records": [
+    {
+      "number": 7,
+      "previous_result_line_utf8": "- Test result: Unchanged GA Engine5184517; optional host-shared total/per-tenant audit-read budget reuses existing TenantOperationConcurrencyBudget after fresh identity/membership/resource/RBAC-ABAC, shared across receipt/resource and HTTPS HTTP/GraphQL. Windows/WSL security651each/provider332each pass (old308+24new) with frozen/committed/cross-host maps and unchanged registries. Actual tenant isolation, saturation before handler/source, cancellation/server slot ownership and joined Stopfault shutdown pass. Engine1523/1520+fourCIjobs reused baseline only. #3 Blocked/#20/allmetadata/M0/gates/nullhours/original benchmark unchanged; no timed benchmark, fairness/rate/distributed capacity/hard wire deadline/externalIdP/nativeWindowsDB/production qualification.\n",
+      "sha256": "572717ca2a13cda555d3bf2823ac3873700145cb135a930fa5a7cfef23f4e5ff",
+      "prior_report": "internal/planning/audit-read-admission.md"
+    },
+    {
+      "number": 8,
+      "previous_result_line_utf8": "- Test result: Unchanged GA Engine5184517; optional host-shared total/per-tenant audit-read budget reuses existing TenantOperationConcurrencyBudget after fresh identity/membership/resource/RBAC-ABAC, shared across receipt/resource and HTTPS HTTP/GraphQL. Windows/WSL security651each/provider332each pass (old308+24new) with frozen/committed/cross-host maps and unchanged registries. Actual tenant isolation, saturation before handler/source, cancellation/server slot ownership and joined Stopfault shutdown pass. Engine1523/1520+fourCIjobs reused baseline only. #3 Blocked/#20/allmetadata/M0/gates/nullhours/original benchmark unchanged; no timed benchmark, fairness/rate/distributed capacity/hard wire deadline/externalIdP/nativeWindowsDB/production qualification.\n",
+      "sha256": "572717ca2a13cda555d3bf2823ac3873700145cb135a930fa5a7cfef23f4e5ff",
+      "prior_report": "internal/planning/audit-read-admission.md"
+    },
+    {
+      "number": 18,
+      "previous_result_line_utf8": "- Test result: Unchanged GA Engine5184517; optional host-shared total/per-tenant audit-read budget reuses existing TenantOperationConcurrencyBudget after fresh identity/membership/resource/RBAC-ABAC, shared across receipt/resource and HTTPS HTTP/GraphQL. Windows/WSL security651each/provider332each pass (old308+24new) with frozen/committed/cross-host maps and unchanged registries. Actual tenant isolation, saturation before handler/source, cancellation/server slot ownership and joined Stopfault shutdown pass. Engine1523/1520+fourCIjobs reused baseline only. #3 Blocked/#20/allmetadata/M0/gates/nullhours/original benchmark unchanged; no timed benchmark, fairness/rate/distributed capacity/hard wire deadline/externalIdP/nativeWindowsDB/production qualification.\n",
+      "sha256": "572717ca2a13cda555d3bf2823ac3873700145cb135a930fa5a7cfef23f4e5ff",
+      "prior_report": "internal/planning/audit-read-admission.md"
+    }
+  ],
+  "older_19_line_archive": "../audit-read-admission/prior-result-lines.json",
+  "long_prior_result_chains_not_reintroduced": true
+}

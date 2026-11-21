@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-22 optional shared audit-read admission](2026-11-22-audit-read-admission.md).
+Latest handoff: [2026-11-22 offline audit-read contracts](2026-11-22-audit-contract-export.md).
+
+Prior delivery: [2026-11-22 optional shared audit-read admission](2026-11-22-audit-read-admission.md).
 
 Prior delivery: [2026-11-22 protected audit resource history transports](2026-11-22-audit-resource-history-transports.md).
 

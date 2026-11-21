@@ -1,0 +1,52 @@
+{
+  "engine_main": "5184517a92a087abe4e0091d256142b6c35a2b39",
+  "engine_changed": false,
+  "new_engine_journal_entry": false,
+  "consumer_source": "fd7bb17ffcdcfb9f75753f509f0b3e1da883adbf",
+  "samples_main": "0cc81db44b6a98c22c9830439f4b3021d7c6968c",
+  "docs_baseline": "5cf042564e178a9a78e415812a6e6e5bce361e4c",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "new_targeted_phase_counts": [
+    8,
+    8,
+    8,
+    8
+  ],
+  "new_targeted_checks_per_host": 16,
+  "new_targeted_checks_total": 32,
+  "source_inputs": 116,
+  "final_builds": 2,
+  "historical_builds_retained": 3,
+  "wire_rebuilds": 0,
+  "prior_provider332_security651_reused_not_rerun": true,
+  "new_full_or_hosted_suite": false,
+  "archive": {
+    "archive": "security-api/evidence/2026-11-22-contracts",
+    "files_including_sha256sums": 1832,
+    "sha256sum_entries": 1831,
+    "sha256sums_sha256": "931f222050a8b9176aa1854d7a08b5d6de80995d083f4b27dcfab012e5861aef",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "Offline audit-read transport contract export evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 1830,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "plan_sha256": "90bd55569385ab200e72bc8a57a5477b771505b84684abf46c7c73f4e83f5e27",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row/original benchmark unchanged",
+  "original_benchmark_not_run": true,
+  "maturity": "M0",
+  "billing_usage_skip": false
+}

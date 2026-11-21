@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Only three owned merged refs; all worktrees/raw/objects retained",
+  "deleted_refs": [
+    {
+      "branch": "features/audit-contract-export-host",
+      "revision": "e0e7e56a705374f5126e5b2f8caa8abb63f8b9e6",
+      "verified_main_ancestor": true,
+      "worktree_retained": "D:\\Cephalon\\.worktrees\\ahx-export"
+    },
+    {
+      "branch": "features/audit-contract-export-consumer",
+      "revision": "fd7bb17ffcdcfb9f75753f509f0b3e1da883adbf",
+      "verified_main_ancestor": true,
+      "worktree_retained": "D:\\Cephalon\\.worktrees\\ahx-consumer"
+    },
+    {
+      "branch": "features/audit-contract-export-source",
+      "revision": "fd7bb17ffcdcfb9f75753f509f0b3e1da883adbf",
+      "verified_main_ancestor": true,
+      "worktree_retained": "D:\\Cephalon\\.worktrees\\ahx-wsl-consumer"
+    }
+  ],
+  "primary_samples_branches": [
+    "main"
+  ],
+  "new_remote_feature_branches": 0
+}
