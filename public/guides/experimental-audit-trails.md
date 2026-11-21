@@ -198,6 +198,24 @@ The PostgreSQL example calculates all counts and oldest pending database enqueue
 
 ## Read history and handle failure
 
+Projects can independently select bounded history for one exact resource kind/id:
+
+```csharp
+var resourceHistory = TenantChangeAuditResourceHistoryReader.Activate(
+    currentProjectReadPolicy, () => projectResourceHistorySource);
+var query = new TenantChangeAuditResourceQuery("document", "shared", limit: 50);
+// Inside an operation freshly checked for audit-trail/tenant/read:
+var page = resourceHistory is null ? null : await resourceHistory.ReadAsync(
+    historyContext, query, cancellationToken);
+// A later fresh request can reuse page.NextCursor with the same filters.
+```
+
+Implement `ITenantChangeAuditResourceHistorySource`. Limit1..200; kind/id equality is ordinal. The immutable typed continuation binds tenant, filters and last receipt. The reader validates input binding before provider work, every returned identity and strictly advancing canonical Guid-N receipt order before projection, and continuation consistency with the last returned row. Page size can change. Empty pages still receive completion guards; nonempty underfilled pages may have continuation. Disabled activation skips the source factory. Captured immutable read policy and current-policy selection work like exact receipt lookup.
+
+Receipt-key order defines pagination; chronological order and stable snapshots need a separate provider contract. New keys before a bookmark can be missed, later keys can appear, and deletion/retention can remove rows or the bookmark. Public cursors are selection data with binding checks, without cryptographic authenticity. They do not grant tenant, resource read/write or field-history authority, and no new endpoint is installed. The legacy pagination and exact receipt APIs remain.
+
+The sample's compatible PostgreSQL profile streams existing tenant/receipt-ordered TEXT and decodes with its established codec before exact managed resource filtering. This preserves valid escaped-NUL field values that JSON/JSONB processing cannot generally handle. It retains at most limit+1 matching records plus the current decoded row; page size does not bound total scan/decoding/elapsed time or all driver buffering. Caller cancellation is cooperative and reader disposal may drain remaining data. Malformed scanned payloads fail closed, including unrelated resources. Storage indexing and scan performance need separate evidence. See [ADR0049](../../internal/adr/ADR-0049-exact-resource-history-query.md).
+
 Projects can independently select exact history lookup by a known receipt:
 
 ```csharp

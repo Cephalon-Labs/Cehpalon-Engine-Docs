@@ -1,0 +1,52 @@
+{
+  "engine_main": "d0d49c7eb47ae8fedc23743dfe76b359b677d796",
+  "consumer_source": "6bfc43d407d94dac1d3c2dec7a2920f7e376d6e6",
+  "samples_main": "531ad6f7d1e0b58fa33e61ee865d898a0038cd37",
+  "docs_baseline": "ceac9b4b973a2509ec78402be5447c65c1232da3",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "final_counts": [
+    1475,
+    1472,
+    651,
+    651,
+    188,
+    188
+  ],
+  "source_counts": [
+    146,
+    146,
+    85,
+    85,
+    102,
+    102
+  ],
+  "archive": {
+    "archive": "security-api/evidence/2026-11-21-resource-history",
+    "files_including_sha256sums": 1068,
+    "sha256sum_entries": 1067,
+    "sha256sums_sha256": "2234cea8a4c6194c99d4f1a9d085bcf48bd6af573c43edc907616b9ea220641f",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "Exact resource history evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 1066,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "plan_sha256": "ded39ee70a5af88854177f84591c490671264af707a02e378f2fb06b1342d87f",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row and original benchmark unchanged",
+  "original_benchmark_not_run": true,
+  "billing_usage_skip": false,
+  "limitations": "Exact resource selection/receipt-key continuation; page count not scan bound, no chronology/snapshot/authenticity/performance/production qualification"
+}

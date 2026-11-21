@@ -1,0 +1,9 @@
+{
+  "scope": "Read-only plan presentation encoding",
+  "plan_created": true,
+  "plan_sha256": "ded39ee70a5af88854177f84591c490671264af707a02e378f2fb06b1342d87f",
+  "presentation_failure": "cp1252 stdout could not encode U+2264 after valid plan file was written",
+  "correction": "Force PYTHONIOENCODING=utf-8 for subsequent guarded dry/apply/check commands; retain original plan and error log",
+  "remote_mutations_before_failure": 0,
+  "body_bytes_unchanged": true
+}
