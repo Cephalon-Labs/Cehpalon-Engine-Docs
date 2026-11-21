@@ -1,0 +1,20 @@
+{
+  "archive": "security-api/evidence/2026-11-21-bounded-drain",
+  "files_including_sha256sums": 1198,
+  "sha256sum_entries": 1197,
+  "sha256sums_sha256": "a184617f723e89825436de7c436dbd337316c09470baf8eca608504accd30f74",
+  "all_git_index_blobs_equal_working_bytes": true,
+  "staged_scope": [
+    "bounded drain evidence archive"
+  ],
+  "raw_evidence_attribute": "security-api/evidence/** -text",
+  "publication_review": {
+    "scanned_files": 1196,
+    "private_fixture_secret_comparisons": "passed without publishing values",
+    "compact_jwt_material_matches": 0,
+    "private_pem_material_matches": 0,
+    "blocked_binary_key_archive_extensions": 0,
+    "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+    "limitations": "This bounded content/allowlist review is not a universal secret detector"
+  }
+}

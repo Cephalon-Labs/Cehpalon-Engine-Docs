@@ -6,6 +6,8 @@ The [2026-11-21 GA correction](2026-11-21-dotnet11-ga.md) updates REQ-02/#3 curr
 
 The [optional relay budget continuation](2026-11-21-relay-budget.md) extends REQ-10/#18 cancellation/deadline handling, with REQ-05/#7/#8 tenant/identity regressions under [ADR0045](../adr/ADR-0045-cooperative-outbox-relay-budget.md). It preserves original activation/provider contracts and introduces explicit cooperative work cancellation; full host/provider/benchmark acceptance remains separate.
 
+The [bounded multi-batch continuation](2026-11-21-bounded-drain.md) adds finite sequential delivery and invocation-owned progress under REQ-10/#18 with REQ-05/#7/#8 regressions and [ADR0046](../adr/ADR-0046-bounded-outbox-drain.md). It does not add durable scheduling/poison recovery or change provider/status/schema semantics.
+
 The [2026-11-20 user refinement](2026-11-20-optional-access-audit.md) adds optional authentication, RBAC/ABAC and operation audit/history under existing REQ-05/#7/#8 and REQ-10/#18. [ADR0033](../adr/ADR-0033-optional-access-and-audit.md) defines the bounded portable/local consumer slice and remaining provider/lifecycle gates.
 
 The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenant-readsets.md) adds consumer-configured algorithm/key profiles, established ticket mapping, checked destination selection and explicitly granted tenant read sets under the same issues. [ADR0034](../adr/ADR-0034-authentication-profiles-tenant-readsets.md) preserves per-tenant boundaries and documents aggregate read/snapshot limits.

@@ -148,6 +148,22 @@ With a configured budget, observed caller cancellation retains the original call
 
 A late known claim is released before failure is returned; a late null claim also fails rather than reporting zero. Pre-lease claim failure provides no handle for Engine cleanup: the trusted source owns partial-acquisition recovery/expiry. Once a sink call is attempted, delivery may have happened even if acknowledgement count is zero. A budget expiring during cleanup can withhold success after every acknowledgement. Inspect `TenantChangeAuditOutboxRelayException` counts and separate primary/release failures, then reconcile or explicitly retry with fresh authority and the same idempotent receipt payload. Timeout is not rollback, a renewed lease or automatic retry. See [ADR0045](../../internal/adr/ADR-0045-cooperative-outbox-relay-budget.md).
 
+### Deliver several batches with explicit work limits
+
+`DrainAsync` is a manual sequential helper on the same optional relay. Call it inside one newly authorized `audit-outbox/tenant/relay` operation:
+
+```csharp
+var progress = relay is null ? null : await relay.DrainAsync(
+    relayContext, maximumBatches: 8, maximumRecords: 500,
+    maximumPerBatch: 64, cancellationToken: cancellationToken);
+```
+
+Defaults are16batches,2048acknowledgements and128perbatch; those are also the experimental upper caps. Each batch requests at most the remaining record allowance. A positive short batch continues, while zero acknowledgements returns `NoProgress`; reaching a record or batch cap returns `RecordLimit` or `BatchLimit`. `CompletedBatches` counts successful relay invocations, including a final zero-progress one. Counts describe acknowledgements, not unique business effects. NoProgress does not establish an empty backlog: other workers can hold claims or locks, and concurrent writers may add records. No status/history query or permission is added.
+
+Existing `ActivateWithBudget` timeouts remain **per batch**. The helper adds no overall timer, elapsed-time guarantee, parallel workers, failed-batch retry, delay, quarantine or background loop. Each batch owns its existing fenced release. The original checked scope is revalidated between batches and at completion; this does not resolve identity/membership sources anew for each batch. Use a fresh dispatcher operation for a later manual call.
+
+The first failure stops subsequent calls. `TenantChangeAuditOutboxDrainException` retains the exact child `PrimaryFailure`/inner reference, started/completed batch counts, acknowledgements from completed and interrupted batches, aggregate acknowledgements and possible delivery. A provider rethrowing an older RelayException cannot contribute another invocation's partial totals: current partial observations require a private owned terminal marker. Earlier delivery/acknowledgement can remain committed, including when cancellation/scope failure withholds a final result. Do not interpret failure or zero known acknowledgements as rollback/no delivery. Raw inner diagnostics remain trusted-host-only. See [ADR0046](../../internal/adr/ADR-0046-bounded-outbox-drain.md).
+
 ### Inspect outbox status without reading payloads
 
 Projects may independently select `TenantChangeAuditOutboxStatusReader`. Disabled activation skips its provider factory; the Engine installs no polling loop, metrics listener or endpoint:

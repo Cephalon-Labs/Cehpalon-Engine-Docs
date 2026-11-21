@@ -1,0 +1,57 @@
+{
+  "engine_main": "d3630bd3448df1d59561d233dde9bfb094213076",
+  "samples_source": "87a21e6b97ce419d7a508aff618b66d29a59adcd",
+  "samples_main": "90751e377b2949d1925807f4cae47179fa577892",
+  "docs_baseline": "a05c415257e3a91813fc4c4c44d13493948591a8",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "api": "Bounded DrainAsync; original APIs and per-batch timeout retained",
+  "final_checks": {
+    "components_windows": 1275,
+    "components_wsl": 1272,
+    "security_each": 651,
+    "postgres_each": 108,
+    "outbox_each": 164,
+    "status_each": 56
+  },
+  "source_inputs": {
+    "components": 143,
+    "security": 85,
+    "postgres": 95,
+    "consumer_freeze": 96,
+    "focused": 201
+  },
+  "archive_files": 1198,
+  "sha256sums_sha256": "a184617f723e89825436de7c436dbd337316c09470baf8eca608504accd30f74",
+  "changed_issue_bodies": [
+    7,
+    8,
+    18
+  ],
+  "all_metadata_and_other20_rows_tasks_unchanged": true,
+  "issue3": "Blocked/M0 entire row preserved",
+  "issue20": "Entire row/original benchmark unchanged",
+  "project4": "Private;23cards253fields before/after equal",
+  "owned_primary_branches_deleted": [
+    "features/bounded-drain-engine",
+    "features/bounded-drain-integration",
+    "features/bounded-drain-consumer"
+  ],
+  "retained_worktrees": [
+    "bd-engine",
+    "bd-integration",
+    "bd-consumer",
+    "bd-wsl-consumer"
+  ],
+  "borrowed_git_objects": "Retain primary store; not independent archive clone",
+  "fixture": "Exact owned container/helpers/listener55053 stopped, image/data/volume/raw retained",
+  "ci_runs": [
+    44876270089,
+    44876270126
+  ],
+  "ci_proof": "Metadata only/noartifactdownload",
+  "billing_usage_skip": false,
+  "original_benchmark_not_run": true,
+  "limits": "Finite manual progress, no global-empty/total-deadline/retry/scheduling/poison-recovery/provider-production qualification"
+}
