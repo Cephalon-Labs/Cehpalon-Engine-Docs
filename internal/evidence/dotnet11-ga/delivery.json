@@ -1,0 +1,31 @@
+{
+  "engine_main": "b68d8e8705a48ea9a815b72126b05deedf2351b9",
+  "samples_source": "66db9282a2273c941d50c608bb0d1334167ae6eb",
+  "samples_main": "22c390bf438300025c7db09c3dce34f457676227",
+  "docs_baseline": "2c498b1ef57292b1f437f4b23e2b93d2a928dc5c",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "issue3": "Blocked/M0; native title/body corrected to GA",
+  "issue20": "Entire row/task bytes and original performance protocol unchanged",
+  "archive_files": 2245,
+  "owned_primary_branches_deleted": [
+    "features/dotnet-ga-engine",
+    "features/dotnet-ga-integration",
+    "features/dotnet-ga-consumer"
+  ],
+  "retained_worktrees": [
+    "ga-engine",
+    "ga-integration",
+    "ga-consumer",
+    "ga-wsl-consumer",
+    "ga-scaffold"
+  ],
+  "fixture": "Stopped by exact identity, listener/helpers closed, image/data/volume retained",
+  "ci_runs": [
+    44867631140,
+    44867631103
+  ],
+  "ci_billing_usage_skipped": false,
+  "proof_boundary": "Functional GA regression, metadata-only hosted job readback; original benchmark/provider/production qualification remains separate"
+}

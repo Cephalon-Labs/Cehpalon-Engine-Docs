@@ -4,6 +4,8 @@ This folder is reserved for developer-facing Markdown suitable for a future Astr
 
 Current status: experimental component guides are available; no stable runtime API, database provider, transport adapter or deployment target is certified by these documents.
 
+Current source builds and generated consumers select .NET SDK **11.0.100** and .NET/ASP.NET Core **11.0.0**, with prerelease selection disabled. See the [GA build and historical replay guide](guides/dotnet11-ga-builds.md). Dated RC results keep their original versions and do not certify GA performance or supported-host/provider coverage.
+
 The [protected HTTP/GraphQL guide](protected-http-graphql.md) describes the bounded experimental adapter and Small API integration, with explicit host authentication/tenant wiring and proof limits.
 
 - [Experimental Core, Composition and operation code generation](guides/experimental-core-composition-codegen.md): tested bounded contracts and an executable in-process consumer, with explicit platform/profile/ownership limits.

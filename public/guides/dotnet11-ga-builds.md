@@ -1,0 +1,11 @@
+# Current .NET 11 GA source builds
+
+Microsoft released [.NET 11 GA](https://dotnet.microsoft.com/en-us/download/dotnet/11.0) on 2026-11-10: SDK **11.0.100**, .NET and ASP.NET Core **11.0.0**. Current Engine and Samples root `global.json` select that exact SDK, disable roll-forward and disallow prerelease SDKs. JwtBearer and generated Small API projects select **11.0.0**. Use the repository NuGet configuration and locked restore; other provider/package versions have their own compatibility boundaries.
+
+The source-checkout CLI validates the Engine SDK policy before scaffolding. It rejects RC pins, prerelease opt-in or missing prerelease policy, and altered roll-forward policy. Actual generated applications still use Core/Composition and operation code generation; disabled modules and tenant checks follow the experimental profile guides. No NuGet distribution or stable API guarantee follows from the SDK upgrade.
+
+Use the documented verifier scripts with an explicit GA `--dotnet` path. The current protected Small API consumer records the exact GA Engine revision in `small-api/engine-lock.json`. Security and transaction/outbox consumers retain explicit fresh-tenant authorization; the upgrade does not add authority to caller metadata or enable optional features by default.
+
+Historical portable/tenant/tooling profile locks, dated measurements, frozen source and trace collectors retain their original RC SDK/runtime. Replay them from their recorded original source revision with that private RC SDK. The current root GA selection does not make old RC CoreCLR offsets, GC event mappings or timing results valid on GA. A new GA trace requires separately verified binary/source maps and capture controls. Original benchmark workloads and acceptance criteria remain unchanged; this migration establishes functional regression evidence only.
+
+Local Windows build 26300 is outside the versions listed in the checked Microsoft support table. Windows loopback PostgreSQL proofs use a WSL container; they do not establish native Windows database qualification. Hosted no-server SDK smoke, real provider fixtures, production acceptance and the full supported-host gate remain distinct. #3 stays Blocked/M0.

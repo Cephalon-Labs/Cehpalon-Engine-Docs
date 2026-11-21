@@ -5,6 +5,7 @@ MIT-licensed planning and documentation repository. Started on 2026-10-27 (Asia/
 This is a new baseline. Historical project notes are context only; they do not establish current implementation, CI results, maturity, or remote task IDs.
 
 - [Program plan](internal/planning/2026-10-27-program-plan.md)
+- [Current .NET 11 GA baseline and historical RC boundary](internal/adr/ADR-0044-dotnet11-ga-baseline.md)
 - [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
 - [Experimental portable CLI/scaffolding continuation](internal/planning/portable-cli-scaffolding.md)
 - [Experimental Small API CLI profile continuation](internal/planning/small-api-cli-profile.md)
