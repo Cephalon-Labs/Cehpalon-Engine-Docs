@@ -1,0 +1,6 @@
+{
+  "attempt01": "Bounded content/SHA/staging/index checks passed, proof write failed because Docs output parent was absent; original helper/raw note retained locally",
+  "correction": "Create proof directory; no SDK/source/benchmark change",
+  "attempt02": "Same archive checker passed including final proof write",
+  "original_archive_bytes_unchanged": true
+}

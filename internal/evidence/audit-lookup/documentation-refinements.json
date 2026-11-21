@@ -1,0 +1,6 @@
+{
+  "scope": "Final documentation wording only, after functional evidence",
+  "adr0048": "Lookup uses generated Core dispatch and checked tenant boundary; existing provider mutation fixtures use Composition host. No separate Composition module activation is claimed for lookup.",
+  "initial_declaration_snapshots_retained": true,
+  "runtime_behavior_or_test_input_change": false
+}

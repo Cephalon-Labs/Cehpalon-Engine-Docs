@@ -1,0 +1,52 @@
+{
+  "engine_main": "505d7f0e08057a0a24debe092e9956fd534790d4",
+  "consumer_source": "617e89e9e4713313e683cd50f08ae77d49b891fe",
+  "samples_main": "9a0967d6e3a914e893d17314772487e1ed711fc1",
+  "docs_baseline": "a438375737a46d96e91e7ad120afcfdc6ebc8335",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "final_counts": [
+    1378,
+    1375,
+    651,
+    651,
+    156,
+    156
+  ],
+  "source_counts": [
+    145,
+    145,
+    85,
+    85,
+    99,
+    99
+  ],
+  "archive": {
+    "archive": "security-api/evidence/2026-11-21-audit-lookup",
+    "files_including_sha256sums": 1243,
+    "sha256sum_entries": 1242,
+    "sha256sums_sha256": "063c048a74197dfccc8532f14ad77d1a1e7e70cc8c4741b058416cf23bdce3b8",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "Exact audit receipt lookup evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 1241,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "plan_sha256": "97295fa0009f1316e906a60717a049e22b02b87f5494f58a2e7d4fe24086682c",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row and original benchmark unchanged",
+  "original_benchmark_not_run": true,
+  "billing_usage_skip": false,
+  "limitations": "Exact tenant-scoped projected history retrieval, not global absence/health, snapshot/retention, production or performance qualification"
+}

@@ -10,6 +10,8 @@ The [bounded multi-batch continuation](2026-11-21-bounded-drain.md) adds finite 
 
 The [optional total drain budget](2026-11-21-total-drain-budget.md), [ADR0047](../adr/ADR-0047-total-outbox-drain-budget.md), bounds cooperative work across those batches without changing the legacy API, authority, provider or schema. Cancellation classification occurs before cleanup; no hard completion deadline or benchmark qualification follows.
 
+The [optional exact receipt lookup](2026-11-21-audit-receipt-lookup.md), [ADR0048](../adr/ADR-0048-exact-audit-receipt-lookup.md), adds tenant-scoped audit history retrieval by a known receipt with current-policy projection. It preserves existing page/storage/delivery APIs and does not establish global existence, snapshot pagination, retention or delivery health.
+
 The [2026-11-20 user refinement](2026-11-20-optional-access-audit.md) adds optional authentication, RBAC/ABAC and operation audit/history under existing REQ-05/#7/#8 and REQ-10/#18. [ADR0033](../adr/ADR-0033-optional-access-and-audit.md) defines the bounded portable/local consumer slice and remaining provider/lifecycle gates.
 
 The subsequent [authentication/tenant refinement](2026-11-20-auth-profiles-tenant-readsets.md) adds consumer-configured algorithm/key profiles, established ticket mapping, checked destination selection and explicitly granted tenant read sets under the same issues. [ADR0034](../adr/ADR-0034-authentication-profiles-tenant-readsets.md) preserves per-tenant boundaries and documents aggregate read/snapshot limits.

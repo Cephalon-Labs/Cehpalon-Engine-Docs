@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-21 optional total cooperative drain budget](2026-11-21-total-drain-budget.md).
+Latest handoff: [2026-11-21 optional exact audit receipt lookup](2026-11-21-audit-receipt-lookup.md).
+
+Prior delivery: [2026-11-21 optional total cooperative drain budget](2026-11-21-total-drain-budget.md).
 
 Prior delivery: [2026-11-21 bounded manual outbox delivery](2026-11-21-bounded-drain.md).
 

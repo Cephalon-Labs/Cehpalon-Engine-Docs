@@ -198,6 +198,20 @@ The PostgreSQL example calculates all counts and oldest pending database enqueue
 
 ## Read history and handle failure
 
+Projects can independently select exact history lookup by a known receipt:
+
+```csharp
+var lookup = TenantChangeAuditLookupReader.Activate(
+    currentProjectReadPolicy, () => projectLookupSource);
+// Inside an operation freshly checked for audit-trail/tenant/read:
+var record = lookup is null ? null : await lookup.FindAsync(
+    historyContext, receiptId, cancellationToken);
+```
+
+Implement `ITenantChangeAuditLookupSource` over the selected history store. Disabled activation skips its factory. An activated reader requires a nonempty receipt and live checked history scope, passes the original caller token and validates both returned tenant and receipt before projecting the record through its configured immutable read policy. Caller/scope checks also run after a null result and before return. Configure a new reader when changing that policy; the reader does not reload project configuration automatically. Existing pagination APIs remain unchanged.
+
+A null result describes absence from that selected history store at the read. It can include pending outbox publication or retention and does not prove never committed, globally absent or unhealthy delivery. Receipt IDs can repeat across tenants. Relay, inspect and ordinary operation-history permission do not grant field-history access. A DTO or receipt ID is not authority. The Engine installs no lookup endpoint or background work; route service requests through fresh protected dispatch and retain unexpected-error redaction. Provider failures remain original trusted-host diagnostics, and uncooperative reads are awaited. See [ADR0048](../../internal/adr/ADR-0048-exact-audit-receipt-lookup.md).
+
 TenantChangeAuditHistoryReader requires the distinct audit-trail/tenant/read checked scope. Ordinary operation-metadata history permission does not grant field history. The facade validates page size/tenant ownership, rechecks active context after asynchronous reads/projection and applies current project redaction. Implement retention, storage encryption, integrity verification and pagination in the selected provider.
 
 Required append has an independent bounded cancellation budget; the provider must cooperate. After a reported mutation, expiry/cancellation/append failure can mean data already changed and the trail may or may not have persisted. TenantChangeAuditWriteException exposes MayHaveCommitted. There is no automatic retry, rollback or exactly-once guarantee. Unhandled recorder failures become operation faults. The sample explicitly maps them to audit_trail.write_failed_may_have_committed and an operation rejection; callers must not infer unchanged data or blindly repeat the mutation. Atomic database/outbox integration belongs to the application/provider transaction. Browser cookie authentication also needs host-owned CSRF/cookie protections; this trail API does not configure browser security.

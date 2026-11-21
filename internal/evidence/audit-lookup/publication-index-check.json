@@ -1,0 +1,20 @@
+{
+  "archive": "security-api/evidence/2026-11-21-audit-lookup",
+  "files_including_sha256sums": 1243,
+  "sha256sum_entries": 1242,
+  "sha256sums_sha256": "063c048a74197dfccc8532f14ad77d1a1e7e70cc8c4741b058416cf23bdce3b8",
+  "all_git_index_blobs_equal_working_bytes": true,
+  "staged_scope": [
+    "Exact audit receipt lookup evidence archive"
+  ],
+  "raw_evidence_attribute": "security-api/evidence/** -text",
+  "publication_review": {
+    "scanned_files": 1241,
+    "private_fixture_secret_comparisons": "passed without publishing values",
+    "compact_jwt_material_matches": 0,
+    "private_pem_material_matches": 0,
+    "blocked_binary_key_archive_extensions": 0,
+    "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+    "limitations": "This bounded content/allowlist review is not a universal secret detector"
+  }
+}
