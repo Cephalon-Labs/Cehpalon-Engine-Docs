@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-21 optional indexed audit storage profile](2026-11-21-indexed-audit-storage.md).
+Latest handoff: [2026-11-21 optional cooperative audit read budget](2026-11-21-audit-read-budget.md).
+
+Prior delivery: [2026-11-21 optional indexed audit storage profile](2026-11-21-indexed-audit-storage.md).
 
 Prior delivery: [2026-11-21 exact resource history query](2026-11-21-resource-history-query.md).
 

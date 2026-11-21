@@ -1,0 +1,25 @@
+{
+  "post_archive": true,
+  "items": [
+    {
+      "project": "security-api/SecurityApi.Consumer.csproj",
+      "counts": {
+        "Compile": 19,
+        "Content": 0,
+        "None": 2
+      },
+      "evidence_items": 0,
+      "context": "Primary security source includes preserved user Properties/launchSettings.json as an extra None item; execution proofs use clean worktrees"
+    },
+    {
+      "project": "audit-outbox/PostgresAuditOutbox.Consumer.csproj",
+      "counts": {
+        "Compile": 19,
+        "Content": 0,
+        "None": 2
+      },
+      "evidence_items": 0,
+      "context": "Primary provider project; evidence items are excluded; execution proofs use clean worktrees"
+    }
+  ]
+}

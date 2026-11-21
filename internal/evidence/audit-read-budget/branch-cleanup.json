@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "owned_merged_refs_deleted": [
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine",
+      "deleted_merged_ref": "features/audit-read-budget",
+      "revision": "5184517a92a087abe4e0091d256142b6c35a2b39",
+      "source_raw_worktree_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine",
+      "deleted_merged_ref": "features/audit-read-budget-integration",
+      "revision": "5184517a92a087abe4e0091d256142b6c35a2b39",
+      "source_raw_worktree_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/audit-read-budget-consumer",
+      "revision": "1234ec9ab152bd7c1f03ec8da5c306d2b16abbe7",
+      "source_raw_worktree_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\arb-wsl-consumer",
+      "deleted_merged_ref": "features/audit-read-budget-source",
+      "revision": "1234ec9ab152bd7c1f03ec8da5c306d2b16abbe7",
+      "source_raw_worktree_retained": true,
+      "git_host": "WSL for Linux alternate path"
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\arb-integration\\.local\\arb-wsl-source01",
+      "deleted_merged_ref": "main",
+      "revision": "d0d49c7eb47ae8fedc23743dfe76b359b677d796",
+      "source_raw_worktree_retained": true,
+      "git_host": "WSL for Linux alternate path"
+    }
+  ],
+  "primary_repositories_main_only": true,
+  "source_raw_objectstore_retained": true
+}

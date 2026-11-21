@@ -1,0 +1,454 @@
+{
+  "observed_at_utc": "2026-11-21T12:29:19.684458+00:00",
+  "project_number": 4,
+  "project_id": "PVT_kwDOEDryKs4Bo6sb",
+  "project_url": "https://github.com/orgs/Cephalon-Labs/projects/4",
+  "public": false,
+  "closed": false,
+  "phase": "after",
+  "page_count": 1,
+  "cards_verified": 23,
+  "fields_per_card": 11,
+  "field_equalities_verified": 253,
+  "null_numeric_values_preserved": true,
+  "source": "Independent direct paginated Project GraphQL readback, compared with task metadata and observed snapshot; no remote mutation",
+  "rows": [
+    {
+      "number": 1,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IZM",
+      "node_id": "I_kwDOVY38nc8AAAABaOFxSg",
+      "project_fields": {
+        "Status": "Done",
+        "Priority": "P0",
+        "Estimate low (h)": 4.0,
+        "Estimate (h)": 6.0,
+        "Estimate high (h)": 8.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Not required",
+        "Feature": "governance"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 2,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IeI",
+      "node_id": "I_kwDOVY38nc8AAAABaOFzoA",
+      "project_fields": {
+        "Status": "Done",
+        "Priority": "P0",
+        "Estimate low (h)": 16.0,
+        "Estimate (h)": 24.0,
+        "Estimate high (h)": 32.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Not required",
+        "Feature": "architecture"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 3,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IjM",
+      "node_id": "I_kwDOVY38nc8AAAABaOF1sg",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P0",
+        "Estimate low (h)": 8.0,
+        "Estimate (h)": 16.0,
+        "Estimate high (h)": 24.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Not required",
+        "Feature": "runtime"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 4,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0IoU",
+      "node_id": "I_kwDOVY38nc8AAAABaOF4Fg",
+      "project_fields": {
+        "Status": "Done",
+        "Priority": "P1",
+        "Estimate low (h)": 16.0,
+        "Estimate (h)": 24.0,
+        "Estimate high (h)": 32.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Not required",
+        "Feature": "architecture"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 5,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Iuo",
+      "node_id": "I_kwDOVY38nc8AAAABaOF6_Q",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P0",
+        "Estimate low (h)": 32.0,
+        "Estimate (h)": 48.0,
+        "Estimate high (h)": 64.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Passed",
+        "Feature": "core"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 6,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Izc",
+      "node_id": "I_kwDOVY38nc8AAAABaOF9Mg",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P0",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Passed",
+        "Feature": "configuration"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 7,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0I3Y",
+      "node_id": "I_kwDOVY38nc8AAAABaOF_sA",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P0",
+        "Estimate low (h)": 32.0,
+        "Estimate (h)": 48.0,
+        "Estimate high (h)": 64.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "tenancy"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 8,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0I9o",
+      "node_id": "I_kwDOVY38nc8AAAABaOGB2A",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P0",
+        "Estimate low (h)": 32.0,
+        "Estimate (h)": 48.0,
+        "Estimate high (h)": 64.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "identity"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 9,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JDo",
+      "node_id": "I_kwDOVY38nc8AAAABaOGD_A",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "transports"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 10,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JIo",
+      "node_id": "I_kwDOVY38nc8AAAABaOGGRw",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P2",
+        "Estimate low (h)": 48.0,
+        "Estimate (h)": 72.0,
+        "Estimate high (h)": 96.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "transports"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 11,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JPM",
+      "node_id": "I_kwDOVY38nc8AAAABaOGIZQ",
+      "project_fields": {
+        "Status": "Blocked",
+        "Priority": "P1",
+        "Estimate low (h)": 24.0,
+        "Estimate (h)": 36.0,
+        "Estimate high (h)": 48.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Blocked",
+        "Benchmark gate": "Blocked",
+        "Feature": "samples"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 12,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JUg",
+      "node_id": "I_kwDOVY38nc8AAAABaOGK8g",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P1",
+        "Estimate low (h)": 48.0,
+        "Estimate (h)": 72.0,
+        "Estimate high (h)": 96.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "data"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 13,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JZ4",
+      "node_id": "I_kwDOVY38nc8AAAABaOGNtg",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P2",
+        "Estimate low (h)": 24.0,
+        "Estimate (h)": 36.0,
+        "Estimate high (h)": 48.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "cache"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 14,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JeY",
+      "node_id": "I_kwDOVY38nc8AAAABaOGQHw",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P1",
+        "Estimate low (h)": 64.0,
+        "Estimate (h)": 96.0,
+        "Estimate high (h)": 128.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "eventing"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 15,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JjY",
+      "node_id": "I_kwDOVY38nc8AAAABaOGSWQ",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P1",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "samples"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 16,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Jm0",
+      "node_id": "I_kwDOVY38nc8AAAABaOGUlw",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P1",
+        "Estimate low (h)": 64.0,
+        "Estimate (h)": 96.0,
+        "Estimate high (h)": 128.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "ai"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 17,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0JrE",
+      "node_id": "I_kwDOVY38nc8AAAABaOGXBQ",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P1",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "samples"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 18,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0Jw4",
+      "node_id": "I_kwDOVY38nc8AAAABaOGZkw",
+      "project_fields": {
+        "Status": "In Progress",
+        "Priority": "P1",
+        "Estimate low (h)": 32.0,
+        "Estimate (h)": 48.0,
+        "Estimate high (h)": 64.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "observability"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 19,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0J3o",
+      "node_id": "I_kwDOVY38nc8AAAABaOGbwQ",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P2",
+        "Estimate low (h)": 48.0,
+        "Estimate (h)": 72.0,
+        "Estimate high (h)": 96.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "hosting"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 20,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0J8k",
+      "node_id": "I_kwDOVY38nc8AAAABaOGd4Q",
+      "project_fields": {
+        "Status": "In Progress",
+        "Priority": "P2",
+        "Estimate low (h)": 40.0,
+        "Estimate (h)": 60.0,
+        "Estimate high (h)": 80.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Planned",
+        "Feature": "tooling"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 21,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0KEI",
+      "node_id": "I_kwDOVY38nc8AAAABaOGgPw",
+      "project_fields": {
+        "Status": "Done",
+        "Priority": "P0",
+        "Estimate low (h)": 24.0,
+        "Estimate (h)": 36.0,
+        "Estimate high (h)": 48.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Not required",
+        "Feature": "quality"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 22,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0KKY",
+      "node_id": "I_kwDOVY38nc8AAAABaOGifg",
+      "project_fields": {
+        "Status": "Backlog",
+        "Priority": "P2",
+        "Estimate low (h)": 24.0,
+        "Estimate (h)": 36.0,
+        "Estimate high (h)": 48.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Planned",
+        "Benchmark gate": "Not required",
+        "Feature": "release"
+      },
+      "matches_docs_and_observed": true
+    },
+    {
+      "number": 23,
+      "item_id": "PVTI_lADOEDryKs4Bo6sbzhD0KOs",
+      "node_id": "I_kwDOVY38nc8AAAABaOGk5A",
+      "project_fields": {
+        "Status": "Done",
+        "Priority": "P1",
+        "Estimate low (h)": 16.0,
+        "Estimate (h)": 24.0,
+        "Estimate high (h)": 32.0,
+        "Actual (h)": null,
+        "Remaining (h)": null,
+        "Maturity": "M0",
+        "Test gate": "Passed",
+        "Benchmark gate": "Not required",
+        "Feature": "governance"
+      },
+      "matches_docs_and_observed": true
+    }
+  ]
+}

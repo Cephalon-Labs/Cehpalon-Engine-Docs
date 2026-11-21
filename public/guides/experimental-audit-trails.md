@@ -245,3 +245,19 @@ Required append has an independent bounded cancellation budget; the provider mus
 Automatic TenantAuditServices still records authorization and terminal processing metadata separately. A terminal event reflects the processing outcome computed before required persistence, not atomic network delivery. Session observation restrictions survive checked identity copies/tenant/read-set contexts. Use WithValidity/IntersectValidity when wrapping those snapshots so you retain their original restrictions; reconstructing a public DTO neither authenticates nor preserves private constraints. This is an in-process trusted-host boundary, not a C# sandbox or continuous distributed session revocation.
 
 See the [generated security consumer](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/main/security-api), [decision](../../internal/adr/ADR-0039-configurable-audit-trails.md) and [validation report](../../internal/planning/observation-audit-trails.md). Original benchmark gates and #3 Blocked remain unchanged.
+
+
+Projects can select a separate cooperative budget for change-audit history, exact receipt lookup and resource-history reads:
+
+```csharp
+var resourceHistory = TenantChangeAuditResourceHistoryReader.ActivateWithBudget(
+    currentProjectReadPolicy, TimeSpan.FromSeconds(5), () => projectResourceHistorySource);
+// The history and receipt-lookup readers offer the same ActivateWithBudget shape.
+// Call from a fresh checked audit-trail/tenant/read operation context.
+var page = resourceHistory is null ? null : await resourceHistory.ReadAsync(
+    historyContext, query, cancellationToken);
+```
+
+A non-null budget is positive and at most one minute. Disabled policies skip the source factory; null keeps the original constructor/Activate behavior, provider token and legacy checks. Configure a new reader to change its policy or budget. Each configured read owns an independent system timer and linked token spanning provider work, validation, projection and completion checks. Original-caller cancellation takes precedence over an observed private expiry; otherwise expiry is a TimeoutException. Unrelated cancellation and non-cancellation provider faults retain the declared trusted-host diagnostics. Existing checked-scope, tenant, cursor and current-policy validation still applies to null/empty results.
+
+The reader awaits providers that ignore cancellation and does not dispose their lifetime. This is cooperative cancellation, without a hard elapsed bound, rollback or atomic response-delivery deadline. Providers own any additional asynchronous work and callbacks; callbacks must not block/throw or wait for reader completion. The local PostgreSQL sample exercises the legacy history/lookup/resource and indexed lookup/resource ports through generated protected dispatch; indexed storage does not offer tenant-wide history. See [ADR0051](../../internal/adr/ADR-0051-optional-audit-read-budget.md) and the [read-budget report](../../internal/planning/audit-read-budget.md). Runtime maturity and original benchmark gates remain unchanged.

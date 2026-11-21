@@ -1,0 +1,53 @@
+{
+  "engine_main": "5184517a92a087abe4e0091d256142b6c35a2b39",
+  "consumer_source": "1234ec9ab152bd7c1f03ec8da5c306d2b16abbe7",
+  "samples_main": "d7455e901264c0cb0cb97aea6a4830dd000d7ea7",
+  "docs_baseline": "fec5e01cfcef36e02a2e5350cb81b4ba9cb7d189",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "final_counts": [
+    1523,
+    1520,
+    651,
+    651,
+    244,
+    244
+  ],
+  "source_counts": [
+    147,
+    147,
+    85,
+    85,
+    106,
+    106
+  ],
+  "archive": {
+    "archive": "security-api/evidence/2026-11-21-audit-read-budget",
+    "files_including_sha256sums": 1327,
+    "sha256sum_entries": 1326,
+    "sha256sums_sha256": "6584e53c17ac92183f8f56bfde294aa178012a8b313c60dbbe7aa47941e49733",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "Optional cooperative audit read budget evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 1325,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "hosted_status": "passed",
+  "plan_sha256": "32b937ae5e3315b2c6a5150b9c0a90fa16d596c711acfd8ef75f58ced817af3c",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row and original benchmark unchanged",
+  "original_benchmark_not_run": true,
+  "billing_usage_skip": false,
+  "limitations": "Cooperative request cancellation and completion veto, no hard deadline/rollback/continuous authority/distributed provider/production qualification"
+}
