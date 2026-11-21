@@ -17,4 +17,4 @@ Publish guides with tested versions, supported profiles, runnable Samples and li
 
 - [Experimental public Small API measurements and limits](small-api-measurements.md)
 
-- [Experimental configurable audit history and trails](guides/experimental-audit-trails.md): project-selected metadata/diff/snapshot modes, field redaction, checked tenant history and optional awaited mutation/trail execution and provider transaction/outbox relay with explicit provider/commit limits.
+- [Experimental configurable audit history and trails](guides/experimental-audit-trails.md): project-selected metadata/diff/snapshot modes, field redaction, checked tenant history and optional awaited mutation/trail execution and provider transaction/outbox relay and protected count-only status with explicit provider/commit limits.

@@ -129,6 +129,27 @@ The sink must deduplicate `(tenant, receiptId)`: identical payload replay succee
 
 The owned PostgreSQL/Npgsql consumer demonstrates the tested same-database transaction/fence/dedup behavior. Portable interfaces alone do not prove a provider's atomicity, durability or isolation, and the fixture is not a production or native Windows database qualification. See [ADR0042](../../internal/adr/ADR-0042-audit-transaction-outbox.md) and the [conformance protocol](../../internal/validation/audit-outbox.md).
 
+### Inspect outbox status without reading payloads
+
+Projects may independently select `TenantChangeAuditOutboxStatusReader`. Disabled activation skips its provider factory; the Engine installs no polling loop, metrics listener or endpoint:
+
+```csharp
+var inspector = TenantChangeAuditOutboxStatusReader.Activate(
+    projectOutboxStatusEnabled, () => projectStatusSource);
+// Inside a NEW configured operation checked for audit-outbox/tenant/inspect:
+var status = inspector is null
+    ? null
+    : await inspector.ReadAsync(inspectContext, cancellationToken);
+```
+
+Implement `ITenantChangeAuditOutboxStatusSource` for the chosen provider. The immutable result exposes only its tenant, provider observation UTC, five counts and nullable oldest pending enqueue UTC. `Pending = Available + Claimed`; Claimed means active unexpired claims, while Available includes unclaimed and expired-claim pending records. `ExpiredClaims` is a subset of Available. `Delivered` counts retained outbox rows marked delivered, and need not equal a separately retained history table. Oldest is null exactly when no records are pending. Count relationships are validated without overflowing `long`.
+
+Grant inspect separately from relay, domain writes and field-history reads. Every call requires a live checked context and verifies returned tenant ownership after I/O. Public DTO construction is not authority. Provider timestamps describe that observation; the facade does not compare them to a client clock to invent freshness or grant access. Counts may change immediately after the statement and are not a global health verdict or a recovery command. Reading must not claim, acknowledge, release or alter records.
+
+Default read budget is5seconds, configurable to a positive value up to1minute. Caller cancellation retains its token; observed private-budget expiry without caller cancellation reports `TimeoutException`, including a provider that completes late after ignoring cancellation. The facade still awaits an uncooperative source, so this is not a hard deadline. Timeout Message is generic; inner provider cancellation details remain for trusted diagnostics and must not be serialized directly to public responses. Other provider failures remain distinct. Existing adapters retain unexpected-error redaction. No caching or automatic retries are installed.
+
+The PostgreSQL example calculates all counts and oldest pending database enqueue time in one tenant-filtered statement with one clock observation. It adds enqueue metadata only when creating new owned fixture schemas; no automatic migration of existing outboxes is installed. See [ADR0043](../../internal/adr/ADR-0043-outbox-operational-status.md).
+
 ## Read history and handle failure
 
 TenantChangeAuditHistoryReader requires the distinct audit-trail/tenant/read checked scope. Ordinary operation-metadata history permission does not grant field history. The facade validates page size/tenant ownership, rechecks active context after asynchronous reads/projection and applies current project redaction. Implement retention, storage encryption, integrity verification and pagination in the selected provider.

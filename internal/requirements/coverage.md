@@ -69,3 +69,5 @@ REQ-10/13 [same-process wait continuation](../planning/tooling-waits.md): correc
 - [Awaited audit execution](2026-11-21-audit-execution.md) - ADR0041; #18/#7/#8; optional mutation/required-trail flow, original gates unchanged.
 
 - [Optional audit transaction/outbox](2026-11-21-audit-outbox.md) - ADR0042; #18/#7/#8; project-selected provider transaction and explicit tenant relay, original gates unchanged.
+
+- [Optional protected outbox status](2026-11-21-outbox-status.md) - ADR0043; #18/#7/#8; count-only tenant inspection and explicit Project4 field readback, original gates unchanged.
