@@ -1,0 +1,20 @@
+{
+  "archive": "security-api/evidence/2026-11-22-audit-admission",
+  "files_including_sha256sums": 716,
+  "sha256sum_entries": 715,
+  "sha256sums_sha256": "4d8728fb70318be584d77225c588cecabc33813156c22938b0f7e79255f0654f",
+  "all_git_index_blobs_equal_working_bytes": true,
+  "staged_scope": [
+    "Optional shared audit-read concurrency admission evidence archive"
+  ],
+  "raw_evidence_attribute": "security-api/evidence/** -text",
+  "publication_review": {
+    "scanned_files": 714,
+    "private_fixture_secret_comparisons": "passed without publishing values",
+    "compact_jwt_material_matches": 0,
+    "private_pem_material_matches": 0,
+    "blocked_binary_key_archive_extensions": 0,
+    "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+    "limitations": "This bounded content/allowlist review is not a universal secret detector"
+  }
+}

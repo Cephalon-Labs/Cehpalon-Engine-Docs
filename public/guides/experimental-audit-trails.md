@@ -275,3 +275,23 @@ The existing sample host also supports resource history: set `ResourceHistoryEna
 Send tenant, exact resource kind/id, limit1..200 and optional continuation. The primitive continuation contains tenant/kind/id and last receipt Guid. Input bounds and Ordinal binding are validated before querying; actual authority still comes from the validated request ticket and fresh project checks. Grant `trail.resource-history` separately from lookup, entity access and ordinary history. Responses contain projected primitive entries and nullable next cursor using the same record mapper as lookup.
 
 Reuse a returned cursor with the same tenant/filters and optionally a different limit. A caller-created compatible missing bookmark is valid selection metadata. Pagination follows Guid-N receipt-key order, without chronological, snapshot or cryptographic authenticity guarantees; inserts/deletions can change later pages. The indexed source can return empty or underfilled terminal pages, and uses limit+1 lookahead. No response-byte or elapsed bound follows from the entry limit. Current read policy, selected physical identity checks and cooperative budget remain; budget ends before wire mapping/flush. Mixed receipt/resource requests fully join before the single storage owner disposes. See [ADR0053](../../internal/adr/ADR-0053-protected-audit-resource-history-transports.md) and the [resource transport report](../../internal/planning/audit-resource-history-transports.md).
+
+## Optional shared audit-read admission
+
+The experimental indexed audit transport host can share one total/per-tenant capacity budget across receipt lookup and resource history, HTTP and GraphQL:
+
+```csharp
+var options = new AuditReceiptTransportOptions {
+    ResourceHistoryEnabled = true,
+    ConcurrencyLimits = new AuditReadConcurrencyLimits(
+        MaximumConcurrentReads: 16, MaximumConcurrentReadsPerTenant: 4)
+};
+```
+
+These example limits are project choices, not measured deployment capacity. Null keeps the original unlimited dispatch path. Selected limits must be positive and the tenant limit cannot exceed the total. Disabled profiles ignore unused limits and activate no owned budget/source/listener. Each host owns its own budget.
+
+Established JWT identity and fresh membership/resource/RBAC-ABAC checks run before admission. Capacity uses the authorized tenant, shared across operations and transports; same resource/receipt IDs remain tenant-isolated. Rejections use `operation.capacity_exceeded` (HTTP503 or a GraphQL error) before business handler/provider work. No waiting queue, fairness, rate or distributed capacity guarantee.
+
+Capacity covers protected dispatch and owned-handler completion. Authentication, DTO mapping, serialization and wire delivery are outside that interval. Caller abort or cooperative timeout cannot release a slot while the handler is still completing. Shutdown closes both admissions, stops the app and fully joins work before disposing the source, even when stop fails. Optional `ConcurrencySnapshot` contains aggregate counts only; no tenant-tagged metric or listener is created.
+
+[Decision and limitations](../../internal/adr/ADR-0054-audit-read-concurrency-admission.md) · [Validation](../../internal/planning/audit-read-admission.md). Local indexed PostgreSQL/token fixtures remain M0 and do not establish throughput, native Windows DB, external IdP or production capacity.

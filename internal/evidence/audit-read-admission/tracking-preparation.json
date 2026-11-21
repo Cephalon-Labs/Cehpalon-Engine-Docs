@@ -1,0 +1,23 @@
+{
+  "status": "local_tracking_preparation_recovered",
+  "remote_mutations_before_recovery": 0,
+  "attempts": [
+    {
+      "stage": "wrapper_precheck",
+      "error": "FileNotFoundError: plan not yet generated; check mode incorrectly required plan",
+      "correction": "Read-only check now bypasses plan requirement"
+    },
+    {
+      "stage": "premature_plan_review",
+      "error": "FileNotFoundError: asynchronous plan had not finished",
+      "correction": "Wait for plan completion before review"
+    },
+    {
+      "stage": "first_plan",
+      "error": "ValueError: Issue body must be text within the API size limit",
+      "raw_local": "audit-read-admission-plan-attempt01.txt",
+      "raw_sha256": "6c1f9c76e43a09e9d37c99f6ef1f1c1686c9f76f5cf1f255f7538b356af50782",
+      "correction": "Losslessly archive duplicated historical result lines; preserve metadata/journals/all detailed sections"
+    }
+  ]
+}

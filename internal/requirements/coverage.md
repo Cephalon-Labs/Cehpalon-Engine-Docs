@@ -91,3 +91,5 @@ REQ-10/13 [same-process wait continuation](../planning/tooling-waits.md): correc
 - [Optional protected audit receipt lookup transports](2026-11-21-audit-receipt-transports.md) - ADR0052; #18/#7/#8; indexed-only HTTPS HTTP/GraphQL with fresh request authority and owned shutdown, original gates unchanged.
 
 - [Protected resource history over HTTPS HTTP/GraphQL](2026-11-22-audit-resource-history-transports.md) - ADR0053; #18/#7/#8; independently selected resource queries/cursors on existing host, cross-tenant proof, original gates unchanged.
+
+- [Optional shared audit-read admission](2026-11-22-audit-read-admission.md) - ADR0054; #18/#7/#8; fresh authorized tenant admission, shared receipt/resource transport limits and joined lifetime; original gates unchanged.

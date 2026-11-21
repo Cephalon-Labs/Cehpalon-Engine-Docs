@@ -39,3 +39,5 @@ This is a new baseline. Historical project notes are context only; they do not e
 - [Developer documentation boundary](public/README.md)
 
 GitHub issues and milestones belong to [Engine](https://github.com/Cephalon-Labs/Cehpalon-Engine). Docs stores requirements, decisions, evidence and one Markdown mirror per Engine issue. [Samples](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples) owns executable consumer proofs when implemented.
+
+- [Optional shared audit-read admission](internal/planning/audit-read-admission.md) - experimental total/per-tenant capacity across HTTPS HTTP/GraphQL.

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "scope": "Only three owned merged refs; all worktrees/raw/objects retained",
+  "deleted_refs": [
+    {
+      "branch": "features/audit-read-admission-host",
+      "revision": "255f75f2a6dc0642a83c9009972b8f849bbc8dcc",
+      "verified_main_ancestor": true,
+      "worktree_retained": "D:\\Cephalon\\.worktrees\\ara-host"
+    },
+    {
+      "branch": "features/audit-read-admission-consumer",
+      "revision": "046daea25984e708f57387707d0f7d6abc986c91",
+      "verified_main_ancestor": true,
+      "worktree_retained": "D:\\Cephalon\\.worktrees\\ara-consumer"
+    },
+    {
+      "branch": "features/audit-read-admission-source",
+      "revision": "046daea25984e708f57387707d0f7d6abc986c91",
+      "verified_main_ancestor": true,
+      "worktree_retained": "D:\\Cephalon\\.worktrees\\ara-wsl-consumer"
+    }
+  ],
+  "primary_samples_branches": [
+    "main"
+  ],
+  "new_remote_feature_branches": 0
+}
