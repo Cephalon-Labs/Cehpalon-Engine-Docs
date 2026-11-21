@@ -1,0 +1,55 @@
+{
+  "engine_main": "5184517a92a087abe4e0091d256142b6c35a2b39",
+  "engine_changed": false,
+  "new_engine_journal_entry": false,
+  "consumer_source": "234999b209a8cf021a458072dd2a790fa091a00a",
+  "samples_main": "05f119e75bcc2458bee9c610e4ba64f04d4dc6d0",
+  "docs_baseline": "f0077b87e05d7f95614ce92b444ce76fc84aa9c9",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "final_counts": [
+    651,
+    651,
+    308,
+    308
+  ],
+  "source_counts": [
+    85,
+    85,
+    109,
+    109
+  ],
+  "reused_engine_component_baseline": [
+    1523,
+    1520
+  ],
+  "new_host_hosted_execution": false,
+  "archive": {
+    "archive": "security-api/evidence/2026-11-22-resource-transport",
+    "files_including_sha256sums": 682,
+    "sha256sum_entries": 681,
+    "sha256sums_sha256": "1161af46e42e1c1d33353af07eabb8cedf7120f8f9dbc0c6d8f080193c5087ca",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "Optional protected audit resource history transports evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 680,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "plan_sha256": "26c5e5531e467690d66f1c26d119e834a23af0ca622dfa0bbda26db1a72e2ded",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row unchanged",
+  "issue20": "entire row/original benchmark unchanged",
+  "original_benchmark_not_run": true,
+  "billing_usage_skip": false,
+  "limitations": "Indexed resource history sample and local signed tokens; reader budget is cooperative, no hard response deadline/external IdP/native Windows DB/all provider/performance/production claim"
+}

@@ -1,0 +1,34 @@
+{
+  "verified_mirrors": 23,
+  "changed_bodies": [
+    7,
+    8,
+    18
+  ],
+  "other20_complete_rows_and_numeric_task_bytes_unchanged": true,
+  "all_issue_metadata_and_milestones_unchanged": true,
+  "issue3": "Blocked entire row preserved",
+  "issue20": "entire row preserved",
+  "plan_sha256": "26c5e5531e467690d66f1c26d119e834a23af0ca622dfa0bbda26db1a72e2ded",
+  "repos": {
+    "Cehpalon-Engine": {
+      "visibility": "public",
+      "license": "MIT"
+    },
+    "Cehpalon-Engine-Docs": {
+      "visibility": "public",
+      "license": "MIT"
+    },
+    "Cehpalon-Engine-Samples": {
+      "visibility": "public",
+      "license": "MIT"
+    }
+  },
+  "project4": "private",
+  "preserved_engine_file_sha256": {
+    "Tests/Composition.ContractTests/Program.cs": "d88a07242fbd1600a1fa08833d30bc905bf37f7d84d32f733c5bbf58916d78a7",
+    "Tests/Core.ContractTests/Program.cs": "8ca7dfcbfc73a9005a898ac220062440a41f33e7b54ced09674664cb589caa42",
+    "src/Cehpalon.Engine.Composition/PlanActivator.cs": "86d74c9c0ad17a2238e4d9d101054a0e23ee9ee5e496e696cad2290d3489a102",
+    "src/Cehpalon.Engine.Core/OperationRegistry.cs": "7d5426d7209ccea20c72b68f8e211ff635d7674381afb6ba8bff2d9974d6e4ea"
+  }
+}

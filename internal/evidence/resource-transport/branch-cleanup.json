@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "owned_merged_refs_deleted": [
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/audit-resource-history-host",
+      "revision": "7267a443d8832d1cb71576f17c74c46fab220ecc",
+      "source_raw_worktrees_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/audit-resource-history",
+      "revision": "234999b209a8cf021a458072dd2a790fa091a00a",
+      "source_raw_worktrees_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\arh-wsl-consumer",
+      "deleted_merged_ref": "features/resource-transport-source",
+      "revision": "234999b209a8cf021a458072dd2a790fa091a00a",
+      "source_raw_worktrees_retained": true,
+      "git_host": "WSL for Linux alternate paths"
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\arh-engine\\.local\\arh-wsl-source01",
+      "deleted_merged_ref": "main",
+      "revision": "5184517a92a087abe4e0091d256142b6c35a2b39",
+      "source_raw_worktrees_retained": true,
+      "git_host": "WSL for Linux alternate paths"
+    }
+  ],
+  "primary_repositories_main_only": true,
+  "source_raw_objectstore_retained": true
+}

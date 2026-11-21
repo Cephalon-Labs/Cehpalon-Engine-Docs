@@ -14,6 +14,7 @@ This is a new baseline. Historical project notes are context only; they do not e
 - [Optional PostgreSQL indexed audit storage profile](internal/adr/ADR-0050-optional-indexed-audit-storage.md)
 - [Optional cooperative audit read budget](internal/adr/ADR-0051-optional-audit-read-budget.md)
 - [Optional protected audit receipt lookup transports](internal/adr/ADR-0052-protected-audit-receipt-transports.md)
+- [Optional protected audit resource history transports](internal/adr/ADR-0053-protected-audit-resource-history-transports.md)
 - [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
 - [Experimental portable CLI/scaffolding continuation](internal/planning/portable-cli-scaffolding.md)
 - [Experimental Small API CLI profile continuation](internal/planning/small-api-cli-profile.md)
