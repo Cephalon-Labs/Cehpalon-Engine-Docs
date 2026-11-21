@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "owned_merged_refs_deleted": [
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/audit-receipt-transport-host",
+      "revision": "ac7b3cb6ad0229e61c226549ea067eb63b2d0a32",
+      "source_raw_worktrees_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\Cehpalon-Engine-Samples",
+      "deleted_merged_ref": "features/audit-receipt-transport",
+      "revision": "fd6afaad591aeac7eabf6a2cebebd2e1e4fb1118",
+      "source_raw_worktrees_retained": true
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\atl-wsl-consumer",
+      "deleted_merged_ref": "features/receipt-transport-source",
+      "revision": "fd6afaad591aeac7eabf6a2cebebd2e1e4fb1118",
+      "source_raw_worktrees_retained": true,
+      "git_host": "WSL for Linux alternate paths"
+    },
+    {
+      "repository": "D:\\Cephalon\\.worktrees\\atl-engine\\.local\\atl-wsl-source01",
+      "deleted_merged_ref": "main",
+      "revision": "5184517a92a087abe4e0091d256142b6c35a2b39",
+      "source_raw_worktrees_retained": true,
+      "git_host": "WSL for Linux alternate paths"
+    }
+  ],
+  "primary_repositories_main_only": true,
+  "source_raw_objectstore_retained": true
+}
