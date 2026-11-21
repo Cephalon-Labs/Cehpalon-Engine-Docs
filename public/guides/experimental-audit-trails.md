@@ -83,6 +83,52 @@ Null callback, failed preparation and pre-invocation cancellation occur before t
 
 After a receipt returns, the helper awaits checked completion using the private write deadline and then checks caller cancellation before returning the result. Thus caller cancellation alone does not suppress required persistence after a returned receipt; it can withhold a result after the append succeeded. Invalid/expired scope, invalid receipt, provider failure or private timeout can still prevent/fail recording. Direct `CompleteAsync(receipt, values, callerToken)` retains its earlier caller-token checks. Timeouts are cooperative: a provider or mutation that ignores cancellation can remain pending. The helper cannot force a consumer to await it or make database changes and trails atomic. No transaction/outbox, hard deadline or guaranteed delivery is implied. See [ADR0041](../../internal/adr/ADR-0041-audit-execution.md).
 
+### Select a provider transaction and outbox
+
+Projects can select the experimental transaction/outbox integration instead of direct required append. Its success means the business change **and pending outbox record committed together in the selected provider transaction**. It does not mean the final history sink has received that record. Existing direct APIs keep their earlier behavior.
+
+```csharp
+// Only invoke this activation when the project's outbox capability is selected.
+var executor = TenantChangeAuditOutboxExecutor<IDocumentMutationSession>
+    .ActivateValidated(policy, tenantRegistry, ["document.update"],
+        () => projectTransactionProvider);
+// Inside the active checked document handler:
+if (executor is null)
+    return await ordinaryApplicationMutation(cancellationToken);
+return await executor.ExecuteAsync(context, async (session, token) =>
+{
+    var change = await session.UpdateAsync(request, token);
+    return new TenantChangeAuditMutation<MyResponse>(change.Receipt, change.Result,
+        () => new TenantChangeStates(change.Before, change.After));
+}, cancellationToken);
+```
+
+`IDocumentMutationSession`, its method and response are application-owned ports. Implement `ITenantChangeAuditTransactionProvider<TSession>` so that every mutation through Session and every `StageAsync` use the **same actual transaction**, with immutable tenant binding and no use after completion/disposal. Commit/rollback lifecycle is separate from Session. An application that performs effects outside that transaction cannot obtain rollback protection for those effects. Provider acquisition must not mutate business data and must clean partial initialization itself if it fails.
+
+Validated activation checks the actual catalog before the provider factory; Disabled skips it. Metadata/field modes and lazy redaction use the same checked projection as direct audit recording. Only the frozen, redacted record enters outbox storage. Do not persist raw state graphs or callbacks. Do not auto-commit inside the mutation callback or retain its session for later work.
+
+`TenantChangeAuditTransactionException` exposes `Outcome`, `PrimaryFailure`, `RollbackFailure`, `DisposalFailure` and `MayHaveCommitted`. `RolledBack` requires provider rollback acknowledgement before any commit attempt. Failed rollback is `RollbackUnknown`; an error after commit invocation is `CommitUnknown`, with no automatic retry or rollback claim. Successful commit remains `Committed` even if later cancellation, scope expiry or disposal withholds the response. Inspect the outcome before reconciliation; repeating a request may repeat business work. Commit/rollback budgets are cooperative and do not forcibly terminate providers or arbitrary mutation callbacks.
+
+### Drain under fresh service authority
+
+Select relay independently and call it explicitly; the Engine installs no worker, timer or network endpoint:
+
+```csharp
+var relay = TenantChangeAuditOutboxRelay.Activate(projectRelayEnabled,
+    () => projectOutboxSource, () => projectIdempotentHistorySink);
+// Inside a NEW configured service operation checked for audit-outbox/tenant/relay:
+if (relay is not null)
+    await relay.RelayAsync(relayContext, maximum: 64, cancellationToken);
+```
+
+Dispatch a fresh trusted service identity through normal tenant checks for each bounded relay call. The original writer may have logged out or its request scope may have ended; that context must not be reused. Writer and history-reader permissions do not grant relay permission. Disabling new capture does not erase already queued records; the project chooses whether to keep draining them. All-off selection invokes neither executor nor relay providers.
+
+The source claims at most128 immutable unique records for one tenant, with an opaque lease GUID and expiry. Relay validates the complete batch before the first sink call, checks live scope and local UTC/monotonic validity, and acknowledges only after `AppendOnceAsync` accepts the record. The provider must enforce exact tenant/lease/receipt/expiry compare-and-set for acknowledgement and fence-specific release. Stale cleanup must not clear another worker's claim. A lease cannot be renewed by this facade.
+
+The sink must deduplicate `(tenant, receiptId)`: identical payload replay succeeds; conflicting payload fails. Sink success followed by acknowledgement loss/expiry can therefore replay. Earlier records in a batch may already be delivered/acknowledged when a later record fails. `TenantChangeAuditOutboxRelayException` exposes acknowledged count, possible delivery, primary and release failures. There is no automatic drop/dead-letter, business retry, atomic batch delivery or backend exactly-once guarantee. Replay preserves the original frozen payload/capture mode; current read policy may hide more, while queued-data changes require explicit provider retention/migration.
+
+The owned PostgreSQL/Npgsql consumer demonstrates the tested same-database transaction/fence/dedup behavior. Portable interfaces alone do not prove a provider's atomicity, durability or isolation, and the fixture is not a production or native Windows database qualification. See [ADR0042](../../internal/adr/ADR-0042-audit-transaction-outbox.md) and the [conformance protocol](../../internal/validation/audit-outbox.md).
+
 ## Read history and handle failure
 
 TenantChangeAuditHistoryReader requires the distinct audit-trail/tenant/read checked scope. Ordinary operation-metadata history permission does not grant field history. The facade validates page size/tenant ownership, rechecks active context after asynchronous reads/projection and applies current project redaction. Implement retention, storage encryption, integrity verification and pagination in the selected provider.

@@ -1,0 +1,25 @@
+# ADR-0042: Optional provider transaction and explicit audit outbox relay
+
+Status: Accepted bounded user-authorized continuation. Date2026-11-21. Tracking #18, #7/#8 regressions.
+
+## Decision
+
+Keep existing audit APIs unchanged. Add optional TenantChangeAuditOutboxExecutor<TSession>.ActivateValidated using actual registry/rule validation before the provider factory; Disabled returns null and skips catalog/required enumeration/provider work. Reuse the actual checked record projection rather than a fake direct sink. Runtime types stay in existing Audit.cs to preserve embedded scaffold source inventories17/32.
+
+ITenantChangeAuditTransactionProvider<TSession>.BeginAsync(tenant,token) returns a transaction with the project's Session, StageAsync(record), CommitAsync, RollbackAsync and async disposal. ExecuteAsync passes only Session and caller token to the mutation callback, which returns the existing typed receipt/result/lazy-state envelope. The trusted provider binds Session to the same physical transaction as Stage/Commit and enforces tenant ownership; external effects outside that session are outside rollback guarantees. Provider Begin must perform no business mutation and clean its partial initialization when acquisition fails.
+
+Validate active scope/registry/rule/cancellation before acquisition/callback, after awaits and immediately before commit. Construct the frozen bounded record and redact before Stage, so raw states and closures never enter outbox storage. Pre-commit errors attempt rollback under a private cooperative cleanup budget. Set commit-started before invoking Commit under its private cooperative budget, without caller cancellation; never retry or claim rollback after commit invocation. After successful commit, recheck scope and caller cancellation before releasing result. Provider deadlines are cooperative, not forced termination or a generic callback timeout.
+
+Expose transaction failure Outcome NotStarted/RolledBack/RollbackUnknown/CommitUnknown/Committed plus separate primary, rollback and disposal failures. RolledBack requires rollback acknowledgement before any commit attempt; failed rollback is unknown. A commit invocation error remains CommitUnknown even if disposal later rolls back. Successful commit followed by scope/cancellation/disposal failure remains Committed, with result withheld. MayHaveCommitted is conservative for unknown/committed outcomes; no rollback claim for effects outside the trusted session. Transaction lifecycle is separated from Session to reduce accidental early commits, not to create a C# sandbox.
+
+## Relay and recovery
+
+Host explicitly calls TenantChangeAuditOutboxRelay.RelayAsync with a fresh checked audit-outbox/tenant/relay context. It does not reuse the original writer context or require the writer's session to remain active after a committed change. Ordinary write/history permission does not grant relay authority. Disabled relay activation invokes no factories or background work.
+
+A provider claim returns an immutable tenant-bound lease (opaque lease GUID, UTC expiry and at most128 unique receipt records). Validate the whole batch, requested bound, tenant and local UTC/monotonic duration before any sink work. Source ClaimAsync receives tenant/maximum/lease duration. AcknowledgeAsync requires exact tenant+lease+receipt+unexpired authoritative provider fence; ReleaseAsync relinquishes only that fence and can run with a private cleanup budget after caller/scope failure. Stale cleanup must not disturb a newer claim. No renewal or implicit dead-letter/drop policy.
+
+Recheck the live relay context before publish and acknowledge and after awaits. AppendOnceAsync uses stable (tenant,receiptId) identity: identical payload replay succeeds; conflicting payload fails. A successful sink write followed by acknowledgement loss/expiry is replayable. Partial batches can have earlier delivered/acknowledged rows before later failure; no atomic batch-delivery or backend exactly-once claim. Retain original frozen/redacted payload across retries. Current read policy may further restrict history; capture-policy changes require explicit retention/migration to alter stored queued values.
+
+## Provider proof and limits
+
+Use existing pinned Npgsql10.0.3 in a separate optional consumer project, with an owned official PostgreSQL18 image resolved to its immutable digest before pull/start. Domain changes and outbox rows share one actual connection/transaction; sink dedup and fenced acknowledgement are provider SQL contracts proved by fault controls. [PostgreSQL transactions](https://www.postgresql.org/docs/current/tutorial-transactions.html) and [Npgsql transaction/connection guidance](https://www.npgsql.org/doc/basic-usage.html) inform the design; actual fixture evidence establishes only the tested profile. No host install/global setting change, package upgrade, automatic background service, distributed transaction, all-provider qualification, benchmark speedup or production acceptance. [Conformance protocol and retained attempt freezes](../validation/audit-outbox.md).

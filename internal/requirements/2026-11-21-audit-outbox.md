@@ -1,0 +1,9 @@
+# Optional project-selected audit transaction and outbox
+
+The user explicitly requests transaction/outbox support for audit trails, selectable per consuming project, with agents, tests, GitHub/Docs synchronization and main delivery. Keep #3 Blocked and original benchmark criteria unchanged. This is a bounded #18/#7/#8 continuation; retain #20 entire row, all metadata/M0/unknown hours.
+
+Provide portable provider contracts and an optional executor that stages the checked, redacted audit record in the same trusted provider transaction as the application's domain mutation. The callback receives the project's mutation session, while commit/rollback remain with the orchestrator. Make pre-commit rollback acknowledgement, unknown commit outcome and confirmed commit distinguishable, including later cancellation/scope/cleanup failures. Preserve original and cleanup failures; never retry a business mutation automatically. Existing direct recording, preparation and awaited execution remain compatible.
+
+Provide explicit tenant-scoped outbox relay under fresh configured service authority, with bounded immutable batches, claim fencing, acknowledgement after idempotent sink acceptance and safe replay after uncertainty. No automatic background workers or provider activation when disabled. Keep field capture modes/redaction and separate field-history permission. Provider/vendor objects remain outside mandatory portable contracts.
+
+Use an owned loopback-only PostgreSQL18 fixture through existing pinned Npgsql10.0.3 to test actual same-transaction domain/outbox writes, rollback, reconnect/restart persistence, redelivery and tenant isolation. Resolve the official image to an immutable digest before pull/start and retain provenance; do not change host/global configuration or existing databases. This sample is evidence for that exact fixture, not general database/Windows/production or performance qualification.

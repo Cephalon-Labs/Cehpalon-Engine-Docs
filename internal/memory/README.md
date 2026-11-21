@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-21 awaited audit execution](2026-11-21-audit-execution.md).
+Latest handoff: [2026-11-21 optional provider transaction and audit outbox](2026-11-21-audit-outbox.md).
+
+Prior delivery: [2026-11-21 awaited audit execution](2026-11-21-audit-execution.md).
 
 Prior delivery: [2026-11-20 audit preflight and prepared recording](2026-11-20-audit-preparation.md).
 
