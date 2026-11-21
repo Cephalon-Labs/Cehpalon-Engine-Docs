@@ -162,6 +162,17 @@ Defaults are16batches,2048acknowledgements and128perbatch; those are also the ex
 
 Existing `ActivateWithBudget` timeouts remain **per batch**. The helper adds no overall timer, elapsed-time guarantee, parallel workers, failed-batch retry, delay, quarantine or background loop. Each batch owns its existing fenced release. The original checked scope is revalidated between batches and at completion; this does not resolve identity/membership sources anew for each batch. Use a fresh dispatcher operation for a later manual call.
 
+Projects can separately opt into a total cooperative budget spanning multiple batches:
+
+```csharp
+var progress = relay is null ? null : await relay.DrainWithBudgetAsync(
+    relayContext, drainTimeout: TimeSpan.FromSeconds(10),
+    maximumBatches: 8, maximumRecords: 500, maximumPerBatch: 64,
+    cancellationToken: cancellationToken);
+```
+
+Null retains the original DrainAsync behavior. A configured total must be positive and at most one minute. It starts after initial admission and stays active through all batches and their cleanup; per-batch budgets remain independent. Cancellation is cooperative: the Engine awaits uncooperative I/O and independent fenced release rather than abandoning work. A total-budget timeout therefore sets no hard completion deadline. Caller cancellation preserves the original caller token. Relevant cancellation signals are classified when the primary failure is selected, before cleanup; a later signal does not replace an already selected provider error, per-batch timeout or total timeout. Release-only failures remain separate. Acknowledgements remain visible even when expiry during cleanup withholds success. Existing progress and authority limits apply. See [ADR0047](../../internal/adr/ADR-0047-total-outbox-drain-budget.md).
+
 The first failure stops subsequent calls. `TenantChangeAuditOutboxDrainException` retains the exact child `PrimaryFailure`/inner reference, started/completed batch counts, acknowledgements from completed and interrupted batches, aggregate acknowledgements and possible delivery. A provider rethrowing an older RelayException cannot contribute another invocation's partial totals: current partial observations require a private owned terminal marker. Earlier delivery/acknowledgement can remain committed, including when cancellation/scope failure withholds a final result. Do not interpret failure or zero known acknowledgements as rollback/no delivery. Raw inner diagnostics remain trusted-host-only. See [ADR0046](../../internal/adr/ADR-0046-bounded-outbox-drain.md).
 
 ### Inspect outbox status without reading payloads

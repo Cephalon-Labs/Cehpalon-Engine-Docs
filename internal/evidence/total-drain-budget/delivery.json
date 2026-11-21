@@ -1,0 +1,52 @@
+{
+  "engine_main": "7499db9759bc9e8017760fb4be34d35dd564393f",
+  "consumer_source": "894801d140a758a0765942338a4af44efdad4648",
+  "samples_main": "a1ee6e82551b191094ba39246752dea8a192877e",
+  "docs_baseline": "a40ea14db1120c55057265cc54af43b4e0e4ee6e",
+  "docs_self_sha_omitted": true,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "final_counts": [
+    1323,
+    1320,
+    651,
+    651,
+    132,
+    132
+  ],
+  "source_counts": [
+    144,
+    144,
+    85,
+    85,
+    96,
+    96
+  ],
+  "archive": {
+    "archive": "security-api/evidence/2026-11-21-total-drain-budget",
+    "files_including_sha256sums": 1008,
+    "sha256sum_entries": 1007,
+    "sha256sums_sha256": "9342b413c80561011baf4432fb3d0a573237716e238d29e00a21a1c18a8a0649",
+    "all_git_index_blobs_equal_working_bytes": true,
+    "staged_scope": [
+      "bounded drain evidence archive"
+    ],
+    "raw_evidence_attribute": "security-api/evidence/** -text",
+    "publication_review": {
+      "scanned_files": 1006,
+      "private_fixture_secret_comparisons": "passed without publishing values",
+      "compact_jwt_material_matches": 0,
+      "private_pem_material_matches": 0,
+      "blocked_binary_key_archive_extensions": 0,
+      "policy": "Explicit metadata/source/raw export only; SDK binaries/caches/build outputs/private fixture files excluded",
+      "limitations": "This bounded content/allowlist review is not a universal secret detector"
+    }
+  },
+  "plan_sha256": "dfad32cd10a5ad7bc2435dfb793c423472ebf40818d98c02066e5d040011a05a",
+  "tracking23_project253": true,
+  "issue3": "Blocked entire row preserved",
+  "issue20": "entire row and original benchmark preserved",
+  "original_benchmark_not_run": true,
+  "billing_usage_skip": false,
+  "limitations": "Cooperative optional total budget only, not hard completion deadline, forced cleanup, authority refresh, unique delivery or production qualification"
+}

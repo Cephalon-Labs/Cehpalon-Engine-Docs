@@ -8,6 +8,7 @@ This is a new baseline. Historical project notes are context only; they do not e
 - [Current .NET 11 GA baseline and historical RC boundary](internal/adr/ADR-0044-dotnet11-ga-baseline.md)
 - [Optional cooperative outbox relay budget](internal/adr/ADR-0045-cooperative-outbox-relay-budget.md)
 - [Bounded manual multi-batch outbox delivery](internal/adr/ADR-0046-bounded-outbox-drain.md)
+- [Optional total cooperative drain budget](internal/adr/ADR-0047-total-outbox-drain-budget.md)
 - [W0 selected providers, workloads and ADRs](internal/planning/w0-decisions.md)
 - [Experimental portable CLI/scaffolding continuation](internal/planning/portable-cli-scaffolding.md)
 - [Experimental Small API CLI profile continuation](internal/planning/small-api-cli-profile.md)
