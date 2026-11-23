@@ -1,0 +1,1 @@
+WSL-01 exercised exact local integration 16d59d839c9931d093b4a8786f669d0bac225542 and exited 0. The native temporary workspace disappeared before the JSON copy; the copy returned No such file or directory. The original receipt cannot be retained. Re-run the complete matrix once on the verified integrated source from persistent mounted paths to correct evidence retention.

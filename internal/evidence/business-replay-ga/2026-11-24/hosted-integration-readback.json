@@ -1,0 +1,14 @@
+{
+  "samples_pr": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/pull/5",
+  "hosted_run": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45245422430",
+  "base_before_merge": "f0fc683b05417d7038d99398dd7246b2c3892083",
+  "reviewed_head": "71e8cd92fbef17f1a1ee1f6a56b8eb42bd680771",
+  "hosted_tested_merge": "630c667cf954487d0d790dc01b1e3ca4a0e509c2",
+  "samples_merged_main": "a8ad452677c48d87a125460c552ee01c3e044046",
+  "verified_tree": "d9a5b60c04f9f7f031e20a760d2ac585c2baf3b9",
+  "hosted_jobs": {
+    "durable_order_and_inventory_replay_ubuntu_24_04": "success",
+    "small_api_benchmark_ga_build_ubuntu_24_04": "success",
+    "small_api_benchmark_ga_build_windows_server_2025": "success"
+  }
+}

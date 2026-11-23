@@ -1,0 +1,611 @@
+{
+  "status": "passed",
+  "samples_revision": "71e8cd92fbef17f1a1ee1f6a56b8eb42bd680771",
+  "restarts": [
+    {
+      "graceful_exit": 0,
+      "listener_closed_before_restart": true,
+      "same_container_and_volume": true,
+      "new_process_observed": true
+    },
+    {
+      "graceful_exit": 0,
+      "listener_closed_before_restart": true,
+      "same_container_and_volume": true,
+      "new_process_observed": true
+    },
+    {
+      "graceful_exit": 0,
+      "listener_closed_before_restart": true,
+      "same_container_and_volume": true,
+      "new_process_observed": true
+    }
+  ],
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "phases": [
+    {
+      "phase": "create",
+      "exit": 0,
+      "receipt": "Order and outbox committed together."
+    },
+    {
+      "phase": "publish-confirm-only",
+      "exit": 76,
+      "receipt": "Publisher confirm observed before outbox mark."
+    },
+    {
+      "phase": "publish",
+      "exit": 0,
+      "receipt": "Identical event confirmed and outbox marked."
+    },
+    {
+      "phase": "worker-exit-after-commit",
+      "exit": 77,
+      "receipt": "Worker commit acknowledged before delivery ACK."
+    },
+    {
+      "phase": "worker-replay",
+      "exit": 0,
+      "receipt": "Duplicate deliveries acknowledged: 1 redelivered and 1 initial; no second mutation."
+    },
+    {
+      "phase": "verify",
+      "exit": 0,
+      "receipt": "Final order, stock, inbox and tenant isolation verified; queue empty."
+    }
+  ],
+  "checkpoints": {
+    "bootstrap": {
+      "ledger": {
+        "inbox": [],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            10
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": []
+      }
+    },
+    "order_and_outbox": {
+      "ledger": {
+        "inbox": [],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            10
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            false
+          ]
+        ]
+      }
+    },
+    "confirmed_before_outbox_mark": {
+      "ledger": {
+        "inbox": [],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            10
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            false
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 1
+      }
+    },
+    "after_confirm_restart": {
+      "ledger": {
+        "inbox": [],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            10
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            false
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 1
+      }
+    },
+    "after_retry_mark": {
+      "ledger": {
+        "inbox": [],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            10
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            true
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 2
+      }
+    },
+    "committed_before_worker_ack": {
+      "ledger": {
+        "inbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101"
+          ]
+        ],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            8
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "reserved",
+            1
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            true
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 2
+      }
+    },
+    "after_worker_exit_restart": {
+      "ledger": {
+        "inbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101"
+          ]
+        ],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            8
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "reserved",
+            1
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            true
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 2
+      }
+    },
+    "after_duplicate_acks": {
+      "ledger": {
+        "inbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101"
+          ]
+        ],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            8
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "reserved",
+            1
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            true
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 0
+      }
+    },
+    "verified_after_final_restart": {
+      "ledger": {
+        "inbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101"
+          ]
+        ],
+        "stock": [
+          [
+            "A",
+            "fixture-sku",
+            8
+          ],
+          [
+            "B",
+            "fixture-sku",
+            20
+          ]
+        ],
+        "orders": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "reserved",
+            1
+          ],
+          [
+            "B",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "pending",
+            0
+          ]
+        ],
+        "outbox": [
+          [
+            "A",
+            "00000000-0000-0000-0000-000000000201",
+            "00000000-0000-0000-0000-000000000101",
+            "fixture-sku",
+            2,
+            "order.placed",
+            1,
+            0,
+            "00000000000000000000000000000101",
+            true
+          ]
+        ]
+      },
+      "broker": {
+        "name": "cephalon-order-replay",
+        "type": "quorum",
+        "messages_unacknowledged": 0,
+        "durable": true,
+        "messages_ready": 0
+      }
+    }
+  },
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "docker": "29.10.0 linux x86_64",
+  "host": "Linux-6.18.58.1-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "source": {
+    "multitenant-business/order-replay-proof/README.md": "ea3b8a01831b7272d2b1c3d3bf70299e5010aa797032c4ce384a62c97454bcac",
+    "multitenant-business/order-replay-proof/run-proof.py": "73cebb0fc28e735fae7fede64238aef0f4502206c6ae48c96c6f4e3f2cb12170",
+    "multitenant-business/order-replay/.gitattributes": "b676529378a2f637b304088647afea494152ba996f18976dc39f475851dcd77f",
+    "multitenant-business/order-replay/OrderReplay.Consumer.csproj": "41eec2634ea9bdc648f262778e30958bc5496771aee1c13558bcdd4b6eeffc32",
+    "multitenant-business/order-replay/Program.cs": "73f80dd666040fda899945c4c762a347689021b70637decdc8acebc5d81d39a6",
+    "multitenant-business/order-replay/README.md": "30a7efc8b2fa45fea7ba4d60b9020ea1ea9269cca30977825e5fecd31da10c5e",
+    "multitenant-business/order-replay/ReplayBroker.cs": "5dd5888082a7beed175115d651ca61a984044b4f9e784cfb6bc0da39c5272393",
+    "multitenant-business/order-replay/ReplayFixture.cs": "a35e662cc579884d0af72fad3148ce8ce06064cd42d914f679e5a11f80d76165",
+    "multitenant-business/order-replay/ReplayStore.cs": "fec5f1af3393cf35faad238b270be6d1d9940a1c1958680d41b524ee331d8a42",
+    "multitenant-business/order-replay/packages.lock.json": "724b75eb19688e5966681e2422f0d787617c86e9a240e9076b3168c6a4c9d740",
+    "multitenant-business/order-replay/schema.sql": "13447070ed80ee93455b3b7c2f8d6822f45c9722e5d649d5126d39c86ecb1623",
+    "multitenant-business/recovery-broker/run-proof.py": "37edefee24869dfbd7566817a4a8c53c0fb7a581eb4fa15ba549711212402f99",
+    "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58",
+    "NuGet.Config": "19479379b3e4d7bb931859d5f3b14412625092d065f7b867925992cd94afc8ac",
+    "Directory.Build.targets": "0b4fdaf8071be3d37623d03ff018eadbe906c02bd97c59482d2824e6df869084"
+  },
+  "execution_artifacts": {
+    "Cehpalon.Engine.Core.dll": "b0dff9c011b0c9186498164f40c0dac596203a011c69d3e3faff861c14b7e871",
+    "Cehpalon.Engine.Identity.Contracts.dll": "f16059db4f01916d157a1a8a18b26e2a482d09f62491346239d1be9876037b61",
+    "Cehpalon.Engine.Tenancy.dll": "7057872f02ee3cc3662562325ef48070b8f584f3984a9cecad8cd30af2bbd5c5",
+    "Npgsql.dll": "e2bcafe1660fe4543fe9dfcabed972ec8d32259e5ea8009462ce1de23c7034c2",
+    "OrderReplay.Consumer.deps.json": "ab6d48578656f42a2b6367e988cdf1683eede0620771904ee6ccc453d59a1e70",
+    "OrderReplay.Consumer.dll": "8ed6e7492ba639a3601c0eb13c205bd4ce40a6a7448e7eabf20c8207ed72f599",
+    "OrderReplay.Consumer.runtimeconfig.json": "8c019e2c7c9acc0440d8b263897f7b0079b1c6895307921604be20e732900366",
+    "RabbitMQ.Client.dll": "22d9ffa8cc2de798c61ec95b3f0b576c90d3370afa7128998859d3b2734d2910",
+    "System.Threading.RateLimiting.dll": "95b7e590ae833a7842bb8c0453032661e4110678248b0e43d26c39b2cc00716d"
+  },
+  "fixture": {
+    "image": "registry-1.docker.io/library/rabbitmq@sha256:184d4ae2a5d7fd4cbe1ad7165d1fb6c1377735ed2744c6be478deed5e8f0ba88",
+    "config_digest": "sha256:f145e7a82c858bcb253703571f5dce9ca48854358a68025c638e3fb5a4318969",
+    "platform": "linux/amd64",
+    "server": "4.4.0",
+    "erlang_otp": "29.1.2",
+    "client": "7.2.2",
+    "runtime": "11.0.0"
+  },
+  "postgresql": {
+    "image": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+    "config_digest": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+    "platform": "linux/amd64",
+    "server": "18.6",
+    "restricted_roles_and_force_rls": true
+  },
+  "postgresql_cleanup": {
+    "container_gone": true,
+    "volume_gone": true,
+    "loopback_closed": true
+  },
+  "rabbitmq_cleanup": {
+    "container_gone": true,
+    "volume_gone": true,
+    "network_gone": true,
+    "loopback_closed": true
+  }
+}

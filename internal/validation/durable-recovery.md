@@ -1,5 +1,7 @@
 # PostgreSQL crash and RabbitMQ durable queue recovery
 
+Follow-up on 2026-11-24: [joined Business recovery and Small API GA build](business-replay-and-ga-build.md) records the scoped replay and build work after this readiness snapshot.
+
 ## Plan
 
 Run separate, reproducible provider scenarios using disposable local

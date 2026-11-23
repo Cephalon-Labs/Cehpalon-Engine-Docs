@@ -1,0 +1,7 @@
+{
+  "status": "preparation-failed",
+  "stage": "PowerShell marshaling of a multiline bash -lc bootstrap",
+  "exit": 1,
+  "stderr": "mkdir: cannot create directory ‘’: No such file or directory",
+  "subsequent_invocation": "Persist LF shell script in ignored worktree and invoke by absolute WSL path."
+}

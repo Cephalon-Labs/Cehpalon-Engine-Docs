@@ -1,0 +1,27 @@
+{
+  "samples_source_revision": "630c667cf954487d0d790dc01b1e3ca4a0e509c2",
+  "samples_baseline": "f0fc683b05417d7038d99398dd7246b2c3892083",
+  "docs_baseline": "37328ff9469b9dd44e832af730705d4d18c39370",
+  "sample_blobs_sha256": {
+    "small-api-benchmark/Domain.cs": "3c9b446c46af112ffcb761f274e079fd1de2c29148c445841cfd65a8601479f2",
+    "small-api-benchmark/Driver.cs": "8bd7b26c021583e4ba745f7040ece3ac6ff0a068c2eacdd3bfc9eb6e4ef8a9f6",
+    "small-api-benchmark/Conformance.cs": "9a8e14aa2dd74885a4e8ef103c64c4a4f41ed58c3819c98517d5e2535b494bfe",
+    "small-api-benchmark/Wire.cs": "4a3fe032c1b41095003cf700491c8cee5001c98463337e2ec7e6cdf54515e429",
+    "small-api-benchmark/BenchmarkHost.cs": "877100b0da7c4012d8e39c176c7d45fb676bcf96d465efb1fab6c748b51f10bc",
+    "small-api-benchmark/Program.cs": "7d84d6915dd8e5aa194ad28d5b3ce6ab2059ab524ac21e21ac324176f841f8db",
+    "tools/benchmark_small_api.py": "e5cb12127bc4555ecc059752edbfa21a4977bd836aebe21e6b0bef0e8d6706af",
+    "tools/small_api_collector_evidence.py": "42f8c94f95ca0d94002cf5ee458642bbd229163f7908dbd511671350391f5a6b"
+  },
+  "docs_protocol_blobs_sha256": {
+    "internal/validation/small-api-workload.md": "5f2b1ae85af4545c0f97d795ccbb0cf0c381b0920cc584e46734f98afc49611f",
+    "internal/validation/business-workload.md": "eb32d4478f0bfb64c572c251b1fa5a5b7a54c933d42f552b77fb4d54ff6eb797",
+    "internal/adr/ADR-0003-multitenant-business-profile.md": "54efa81357ababb7eb6d0aab21c7df0393d3548a1f2b52b1c1a0e2c5522ca60e",
+    "internal/adr/ADR-0009-small-api-conformance-and-measurement.md": "880b6dd9f9afc1929efadda727a04ac0ac7ef547731f4b51bc5def0f222f8eea",
+    "internal/adr/ADR-0011-small-api-collector-connection-readiness.md": "03967a8e7a1f49e06257e6578eb06111e4bc18ede3f424445d8e852b4b01d0c8"
+  },
+  "changed_frozen_inputs": [
+    "tools/benchmark_small_api.py"
+  ],
+  "orchestrator_change": "Read the scoped Engine revision and SDK pins and require exact source and SDK matches. No change to workload, schedule, numerical gates, collector preparation, or reference classification.",
+  "package_lock_and_historical_evidence_preserved": true
+}

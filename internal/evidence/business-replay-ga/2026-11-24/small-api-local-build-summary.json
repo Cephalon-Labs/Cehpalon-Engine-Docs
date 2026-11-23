@@ -1,0 +1,56 @@
+{
+  "scope": "Exact clean locked Release builds only. No runtime sample, conformance matrix, or performance benchmark ran.",
+  "engine_revision": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "samples_revision": "901978cb836fa300dc19d6e6f38850c26c27c036",
+  "sdk": "11.0.100",
+  "packages_lock_sha256": "5c25d6dee86fe210da2a928d304efa705ca49ce5632b63b3b2b024edd7ffe01b",
+  "resolved_runtime_libraries_identical": true,
+  "source_hashes_identical": true,
+  "generated_registry_bytes_identical": true,
+  "local_builds": [
+    {
+      "host": "windows",
+      "manifest_sha256": "fd9ab5c5e9ae0bf18014347110142af9085bdbeaad199e14cd141f6ad4da7b92",
+      "runtime_config_sha256": "5ed69b0e1891dae5cf9180a836683489bf03983a0d791042caa0e8d43a05276f",
+      "runtime_deps_sha256": "19dc650299bb71de13a99967c151b586f75630ca3d93c54d79780ba506bc9045",
+      "source_count": 16,
+      "registry_sha256": "b27f89a3e248ab45b6625f598196d8e6a6685f209b24a6e880a427ea966b2948",
+      "assembly_sha256": "96b39f2f5da495ac9d0293d069e6363598bf6233412de380d5130a8eb49b263f",
+      "runtime_library_count": 57,
+      "frameworks": [
+        {
+          "name": "Microsoft.NETCore.App",
+          "version": "11.0.0"
+        },
+        {
+          "name": "Microsoft.AspNetCore.App",
+          "version": "11.0.0"
+        }
+      ]
+    },
+    {
+      "host": "wsl",
+      "manifest_sha256": "7e3541985766a5737e6f07088af5a7c0a74bf654e8eee355fd403849ae263ee1",
+      "runtime_config_sha256": "78072be84da805eb63a6bfb51bba6b3f053bf2c31e0f3e400c87c73fe2a3036c",
+      "runtime_deps_sha256": "bb6da91f9761997d3517789592208a73caf8962f525e5a8bd80a844c926eead9",
+      "source_count": 16,
+      "registry_sha256": "b27f89a3e248ab45b6625f598196d8e6a6685f209b24a6e880a427ea966b2948",
+      "assembly_sha256": "384fc61d93b42890ed7f0dd86ed5bb972ffabd61a29545d8273d2c294bf8297c",
+      "runtime_library_count": 57,
+      "frameworks": [
+        {
+          "name": "Microsoft.NETCore.App",
+          "version": "11.0.0"
+        },
+        {
+          "name": "Microsoft.AspNetCore.App",
+          "version": "11.0.0"
+        }
+      ]
+    }
+  ],
+  "offline_collector_contracts": {
+    "windows": 29,
+    "wsl": 29
+  }
+}

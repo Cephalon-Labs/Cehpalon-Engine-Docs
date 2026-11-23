@@ -1,5 +1,7 @@
 # Original benchmark readiness on 2026-11-24
 
+Follow-up on 2026-11-24: [joined Business recovery and Small API GA build](business-replay-and-ga-build.md) records the scoped replay and build work after this readiness snapshot.
+
 Full reference timing remains blocked. Windows and WSL use one i5-13500
 workstation. WSL exposes 20 logical CPUs and about 31.22 GiB RAM. The
 observed cgroup reports no CPU quota or memory cap. The Engine and
