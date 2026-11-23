@@ -1,0 +1,37 @@
+{
+  "scope": "Offline recheck of retained observation tables. The separate historical audit owns per-request replay.",
+  "reference_gate_passed_in_original_run": false,
+  "numeric_threshold_recheck": "passed",
+  "startup_observations": 120,
+  "nearest_rank_startup_p95_ms": {
+    "http": {
+      "baseline": 401.814949,
+      "engine": 417.954793
+    },
+    "graphql": {
+      "baseline": 844.554428,
+      "engine": 863.721846
+    }
+  },
+  "idle_observations": 20,
+  "idle_rss_samples_reported": 1200,
+  "load_runs": 20,
+  "load_correct_measured": 3600000,
+  "main_p95_population_cv": {
+    "http/baseline": 0.03975222388351421,
+    "http/engine": 0.031865658272372525,
+    "graphql/baseline": 0.014059362628291114,
+    "graphql/engine": 0.04769352318558627
+  },
+  "timed_diagnostics": 12,
+  "diagnostic_correct_measured": 1872000,
+  "inputs_sha256": {
+    "startup-observations.json": "477d22fe1b7286d81838715313b091a731aae3308c81e4459fbabc6167918c98",
+    "idle-observations.json": "b6d403c4c55b03a57a15f329405b77d21124d6956fb536e1373d0e6bc47fc29e",
+    "load-observations.json": "d3a892343ddf8409cd237a417e3d2d2081417d9d988cad02fab53dcb317231ea",
+    "diagnostic-observations.json": "95e0a06f3d2d31dcb75d546786ab6ed2b61815bb9cafdcd96b167989c5dbb264",
+    "summary.json": "558c3627d20af7ec3a0bf952d89ab9a5d8d7f178a0be3d1a13581b206cd4e483",
+    "startup-summary.json": "a16dd4e6fc68acf23ff2c64cd38db61b982e1b2cb610b7d9200d670c598fed63",
+    "load-summary.json": "5667de801e7d009203fd88b276c787d2650891f422cc6b024440ebf4579aa065"
+  }
+}

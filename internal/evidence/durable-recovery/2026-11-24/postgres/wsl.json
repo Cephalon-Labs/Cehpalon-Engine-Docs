@@ -1,0 +1,109 @@
+{
+  "result": "passed",
+  "samples_revision": "d7c35fb268a5b8b5192fe400cb3b86954afc371c",
+  "engine_revision": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "source_clean_and_unchanged": true,
+  "wsl_os": "Ubuntu 22.04.5 LTS",
+  "kernel": "Linux 6.18.58.1-microsoft-standard-WSL2 x86_64",
+  "docker_server_version": "29.10.0",
+  "dotnet_sdk_version": "11.0.100",
+  "dotnet_runtime_version": "11.0.0",
+  "postgresql_server_version": "18.6",
+  "postgresql_image_manifest": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+  "postgresql_image_config": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "npgsql_version": "10.0.3",
+  "package_lock_graph": "locked release restore",
+  "source_sha256": {
+    "Business.Postgres.Consumer.csproj": "eab1f743fe7b0851a52f5deedcb3a81f8bbb29422d2dee5001a77c59faeabf18",
+    "Program.cs": "032f84601954e400066d7c1b65abc7eda4f2b26d773c42fb250d81b47ce605b8",
+    "PostgresOrderStore.cs": "877e4868f5b2675ac74befeea4748c6000478dcd9c8970fb6a9b08f335865bfc",
+    "ConcurrentOrderChecks.cs": "d7c94954988c004f2c6eb63472d6c67a69530b68247bc5e44099f9c3506ad98a",
+    "migrations/001_orders.sql": "fb1d9b63a17fab904ce40465f8ff49a24596564e4122511e23ff0704c8055831",
+    "packages.lock.json": "c90975111b692a442cf8a309f85a0d087bae171eb4c77afd9a1f248757c9b749",
+    "run-proof.sh": "f8a0cb76cd30f8976654a22e7a99c16983db214ef822460a3a8d7631cf1df7ef",
+    "OVERLAP-PROTOCOL.md": "152b270d3a48820736d2ba938b92b8dbedffff21372e222be858b96308e7bd6c",
+    "OrderCrashChecks.cs": "d6edba5a88d8b1ef4fc54afe3492fa1639c2d42f0c22d47000b7e9577c311716",
+    "recovery-proof.sh": "3bea7a719ff0da9bc73ac7e2b9872b1c18283d7359d51592f1cc9bc8caaa74bb",
+    "RECOVERY-PROTOCOL.md": "b76ec643ce437c8d1b9a17ca31f39db485f36a9668da653f65e0ce19b4df6f18"
+  },
+  "binary_sha256": {
+    "Business.Postgres.Consumer.dll": "e8d23300d619bf1dbea7764558059467d8e23fe006e0085d139680ddf147de4d",
+    "Business.Postgres.Consumer.runtimeconfig.json": "8c019e2c7c9acc0440d8b263897f7b0079b1c6895307921604be20e732900366",
+    "Business.Postgres.Consumer.deps.json": "fd639fc43296261db210b608d42c1dbb52d78390d445015c64febc877c1d9c3a",
+    "Npgsql.dll": "e2bcafe1660fe4543fe9dfcabed972ec8d32259e5ea8009462ce1de23c7034c2"
+  },
+  "private_log_sha256": {
+    "restore.log": "10983455e3a27308ab8dbc06e0ce8877a109e07912f4b8ccf123d3f349f14a99",
+    "build.log": "1488b1dbd7fe29e124ecbb8d4c99ec56c87a8d4aa544460e4fa49583c19a724e",
+    "bootstrap.log": "e90983e77a25f9e9533e2f72d321a4145965c02785efc4faf3b28812e2fedbe0",
+    "migration-rollback.log": "11d7a5fa87f2343aec35a9b596a1d585a8db1d04762eb1d66265b59e731396b9",
+    "migration-apply.log": "b961c8ace3a60a4260d79b6165267fcd1a55deb293ab5eda0cd2f3a20507c800",
+    "migration-repeat.log": "37b4791b76521ca14264805b0a7ff5138c422e300cfb5b7bd98e5258ce3333bc",
+    "seed.log": "5acf0d1ccd259517dc90ec4419a7751aad5023eaae9b1425de35285db19779e5",
+    "results.log": "7128c8617eb19f5ed8743a409f4df112b9232a0fd9b93268b1266499a9c3e311",
+    "recovery-seed.log": "0ca05bc2145a80f893fd5a6f5c2c6e2caa0c8b8cae44edeb909cd31497cfb823",
+    "crash-stage.log": "952ede92e5cbf48e6a4a9a4994445124fd2d19fc52482d0ace274f831eb760ac",
+    "crash-stop.log": "ddc627d46c08f82eec2a55803a0d4ddf322970e976d597c55c0cc0521a88aaf2",
+    "crash-start.log": "ddc627d46c08f82eec2a55803a0d4ddf322970e976d597c55c0cc0521a88aaf2",
+    "postgresql-recovery.log": "5c22d574936468dcd2cef458a9ffaa371d185775e736690d6b505ea1ae4f9da9",
+    "crash-verify.log": "425572822bd7feebee1d5c2b639bb67a9293512e2f255de6f6888f9e6c0de71f",
+    "recovery-results.log": "756320a7755ca357ce87f0070f8bb89e3e0d456bec62e2ca5ae51605c21a1b5d"
+  },
+  "transcript_sha256": "9bbecedd64983ac842897b4c0acbc1ea6db50578f0f5b9954ad99a45910c0bba",
+  "legacy_transcript_sha256": "e9316bcdaca4d8281236192f39c2cb0c0207250eaf6ccb70128ccb303cad5cad",
+  "retained_nonfinal_sha256": {
+    "candidate_transcript": "9bbecedd64983ac842897b4c0acbc1ea6db50578f0f5b9954ad99a45910c0bba",
+    "first_exact_restore_log": "c9978de87639d8c579165d49d4773de82b4e5273c233bcd8c16d2006f5572916",
+    "first_exact_empty_build_log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "legacy_mode": "three-argument original checks passed without a forced stop",
+  "observations": [
+    "Migration rollback, explicit apply, owner and repeat refusal verified.",
+    "Same order ID isolated across tenant dispatches. Six scope controls performed zero database work.",
+    "Commit acknowledged. Same backend had no tenant scope after return. Stale revision changed zero rows.",
+    "Post-write cancellation rolled back. Same backend had no tenant scope after return.",
+    "Distinct tenant updates overlapped on separate PostgreSQL backends and committed independently.",
+    "Same-order contention had one committed update and one zero-row conditional outcome.",
+    "PostgreSQL lock-wait cancellation rolled back and the same backend returned without tenant scope.",
+    "Owned container and volume removed; loopback port closed.",
+    "Crash stage ready with one acknowledged commit and one held update.",
+    "Owned PostgreSQL received SIGKILL and exited with status 137.",
+    "Crash stage application joined after the stop signal.",
+    "Owned PostgreSQL restarted on the same storage and reported WAL recovery.",
+    "Fresh application saw only the acknowledged update and preserved tenant isolation after restart."
+  ],
+  "crash_recovery": {
+    "crash_signal": "SIGKILL",
+    "owned_container_exit_status": 137,
+    "precrash_open_update_confirmed_in_distinct_observer": true,
+    "before_after_durability_settings": {
+      "fsync": "on",
+      "synchronous_commit": "on",
+      "full_page_writes": "on"
+    },
+    "same_container_image_volume_database": true,
+    "new_postmaster_start_time": true,
+    "fresh_server_log_automatic_recovery_and_redo_done": true,
+    "fresh_application_process_and_pool": true,
+    "acknowledged_row_after_restart": {
+      "status": "complete",
+      "revision": 1
+    },
+    "uncommitted_row_after_restart": {
+      "status": "review",
+      "revision": 0
+    },
+    "unscoped_same_backends_saw_zero_rows": true,
+    "cross_tenant_denial_zero_store_operations": true
+  },
+  "preparation": [
+    "The first native setup stopped before restore or container creation because the previous temporary checkout no longer existed.",
+    "Isolated native checkouts rebuilt from exact Git archives and index metadata passed against the pinned PostgreSQL image.",
+    "The first exact restore completed; its build ended before fixture creation and printed no diagnostics.",
+    "The exact committed source passed crash recovery and a separate three-argument regression in two new owned containers."
+  ],
+  "scope": [
+    "A server/container crash with the fixture's existing storage, synthetic authority and local PostgreSQL only.",
+    "No lost commit acknowledgement, host/disk loss, managed failover, backup verification or point-in-time restore claimed."
+  ]
+}

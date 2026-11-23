@@ -1,0 +1,12 @@
+{
+  "samples": "d4a9ce97dfbaebb08b05d328488609b4ce753fce",
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "proof": [
+    "pre_stop",
+    "old_process_joined",
+    "same_storage_wal_recovery",
+    "commit_and_isolation_readback",
+    "cleanup"
+  ],
+  "transcript_sha256": "0e9414ad2e6a472c261d07ecd8c0e767472e041679a27b66fcf028767a02103b"
+}

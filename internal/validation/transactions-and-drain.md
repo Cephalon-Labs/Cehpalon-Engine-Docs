@@ -92,3 +92,5 @@ proof assertions. [Passing workflow](https://github.com/Cephalon-Labs/Cehpalon-E
 
 #7 remains Blocked, #12 remains Backlog and #18 remains In Progress at
 M0. Their broad acceptance criteria and benchmark gates remain open.
+
+[Durable provider recovery](durable-recovery.md) · [Original benchmark readiness](original-benchmark-readiness-2026-11-24.md)

@@ -1,0 +1,111 @@
+{
+  "status": "passed",
+  "samples_revision": "d4a9ce97dfbaebb08b05d328488609b4ce753fce",
+  "restarts": [
+    {
+      "graceful_exit": 0,
+      "listener_closed_before_restart": true,
+      "same_container_and_volume": true,
+      "new_process_observed": true
+    },
+    {
+      "graceful_exit": 0,
+      "listener_closed_before_restart": true,
+      "same_container_and_volume": true,
+      "new_process_observed": true
+    }
+  ],
+  "sdk": "11.0.100",
+  "docker": "28.0.4 linux x86_64",
+  "host": "Linux-7.0.0-1014-aws-x86_64-with-glibc2.39",
+  "source": {
+    "multitenant-business/recovery-broker/BrokerRestartProof.csproj": "790ffbf0497687e7f6c14a9659e1aebc04ee93f932f4deb6074a4f9bea9180c0",
+    "multitenant-business/recovery-broker/Program.cs": "c2fff0da53807e6f493fd9424be2dbefb9c52e96d28f686f89e1c00ce4291001",
+    "multitenant-business/recovery-broker/README.md": "a4d7d47c32ccbbb7b27a441684a9de0523614b94932d907f494ca3c53a68146d",
+    "multitenant-business/recovery-broker/packages.lock.json": "f29504e145cc8b52515fe3069dc328cfb45303d497518c60f65bfbf6ae16b7ce",
+    "multitenant-business/recovery-broker/run-proof.py": "37edefee24869dfbd7566817a4a8c53c0fb7a581eb4fa15ba549711212402f99",
+    "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58",
+    "NuGet.Config": "19479379b3e4d7bb931859d5f3b14412625092d065f7b867925992cd94afc8ac"
+  },
+  "execution_artifacts": {
+    "BrokerRestartProof.deps.json": "cdef3bac3e6ffcfebb5dd2f5bbe3abb7f19a99cc87a92a22ce9264a720de2457",
+    "BrokerRestartProof.dll": "7ab310b94fc44633725990346c9cf8ce667c1956b3b5bc1a12e7ed74f430b2ed",
+    "BrokerRestartProof.runtimeconfig.json": "f34751ad8de6c2f0c7ba8d09b109e0e8335aedebf4b7a4ae633d1bac71888356",
+    "RabbitMQ.Client.dll": "22d9ffa8cc2de798c61ec95b3f0b576c90d3370afa7128998859d3b2734d2910",
+    "System.Threading.RateLimiting.dll": "95b7e590ae833a7842bb8c0453032661e4110678248b0e43d26c39b2cc00716d"
+  },
+  "fixture": {
+    "image": "registry-1.docker.io/library/rabbitmq@sha256:184d4ae2a5d7fd4cbe1ad7165d1fb6c1377735ed2744c6be478deed5e8f0ba88",
+    "config_digest": "sha256:f145e7a82c858bcb253703571f5dce9ca48854358a68025c638e3fb5a4318969",
+    "platform": "linux/amd64",
+    "server": "4.4.0",
+    "erlang_otp": "29.1.2",
+    "client": "7.2.2",
+    "runtime": "11.0.0"
+  },
+  "seed": {
+    "confirmed": 3,
+    "payloadsMatched": true,
+    "acknowledgedBeforeStop": 1,
+    "acknowledgementChannelClosed": true,
+    "deliveredUnacknowledged": 1,
+    "ready": 1,
+    "consumerOpen": true
+  },
+  "before_stop": {
+    "name": "cephalon-restart",
+    "type": "quorum",
+    "messages_unacknowledged": 1,
+    "durable": true,
+    "messages_ready": 1
+  },
+  "seed_stop": {
+    "connectionClosed": true,
+    "autoRecovery": false
+  },
+  "after_first_restart": {
+    "name": "cephalon-restart",
+    "type": "quorum",
+    "messages_unacknowledged": 0,
+    "durable": true,
+    "messages_ready": 2
+  },
+  "recovery": {
+    "observedReady": 2,
+    "replayedUnacknowledged": 1,
+    "recoveredPending": 1,
+    "acknowledgedBeforeStopRecurred": false,
+    "payloadsMatched": true,
+    "unacknowledgedMarkedRedelivered": true,
+    "pendingMarkedRedelivered": false,
+    "manuallyAcknowledged": 2,
+    "readyAfterAcknowledgement": 0,
+    "emptyRead": true,
+    "independentSession": true
+  },
+  "after_acknowledgement": {
+    "name": "cephalon-restart",
+    "type": "quorum",
+    "messages_unacknowledged": 0,
+    "durable": true,
+    "messages_ready": 0
+  },
+  "after_second_restart": {
+    "name": "cephalon-restart",
+    "type": "quorum",
+    "messages_unacknowledged": 0,
+    "durable": true,
+    "messages_ready": 0
+  },
+  "empty": {
+    "ready": 0,
+    "emptyRead": true,
+    "independentSession": true
+  },
+  "cleanup": {
+    "container_gone": true,
+    "volume_gone": true,
+    "network_gone": true,
+    "loopback_closed": true
+  }
+}

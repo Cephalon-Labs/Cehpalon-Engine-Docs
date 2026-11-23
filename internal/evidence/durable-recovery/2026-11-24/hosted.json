@@ -1,0 +1,16 @@
+{
+  "pull_request": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/pull/4",
+  "recovery_workflow": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45242006503",
+  "regression_workflow": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45242006388",
+  "tested_pull_head": "73d50ad387b3b6274426db14e9eec14fb3411311",
+  "tested_checkout": "d4a9ce97dfbaebb08b05d328488609b4ce753fce",
+  "merged_samples_main": "f0fc683b05417d7038d99398dd7246b2c3892083",
+  "tree_comparison": "tested checkout, pull head and merged Samples main matched",
+  "jobs": {
+    "postgres_crash_recovery_ubuntu_24_04": "passed",
+    "rabbitmq_queue_recovery_ubuntu_24_04": "passed",
+    "postgres_overlap_ubuntu_24_04": "passed",
+    "https_drain_ubuntu_24_04": "passed",
+    "https_drain_windows_2025": "passed"
+  }
+}

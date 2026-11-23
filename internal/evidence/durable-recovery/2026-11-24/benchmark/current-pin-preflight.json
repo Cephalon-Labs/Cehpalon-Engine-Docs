@@ -1,0 +1,16 @@
+{
+  "samples": "b62699e51f5f62c94b3113fcda677601a18211e3",
+  "current_samples_global_sdk": "11.0.100",
+  "benchmark_lock_sdk": "11.0.100-rc.3.26522.148",
+  "benchmark_lock_engine": "6804271d429106864e01e4ec546a41dff771f84b",
+  "selected_sdk": "11.0.100",
+  "failing_stage": "before restore",
+  "reported_error": "SDK differs from Engine pin",
+  "rc3_on_current_samples_root": "SDK resolution failed because current root requests GA",
+  "logs_sha256": {
+    "ga_with_benchmark_lock": "40d337b451de829602fa4fa91074b7913992a699956816ac6ba04a33b68cc791",
+    "rc3_with_current_root": "b63857de95361c0bfdab5e64c052068210416caf3964e9fda8990b0d74d46862"
+  },
+  "post_merge_samples": "f0fc683b05417d7038d99398dd7246b2c3892083",
+  "post_merge_benchmark_inputs_match_checked_snapshot": true
+}

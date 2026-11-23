@@ -1,0 +1,38 @@
+{
+  "observed_date": "2026-11-24",
+  "windows": {
+    "edition": "Microsoft Windows 11 Pro",
+    "build": "26300",
+    "processor": [
+      {
+        "Name": "13th Gen Intel(R) Core(TM) i5-13500",
+        "NumberOfCores": 14,
+        "NumberOfLogicalProcessors": 20
+      }
+    ],
+    "physical_memory_bytes": 68448337920,
+    "configured_wslconfig": false
+  },
+  "wsl": {
+    "os": "Ubuntu 22.04.5 LTS",
+    "kernel": "6.18.58.1-microsoft-standard-WSL2",
+    "arch": "x86_64",
+    "logical_cpus": "20",
+    "memory_total_kib": "32735072",
+    "process_cgroup": "/non-systemd",
+    "root_cpu.max": "max 100000",
+    "process_cpu.max": "max 100000",
+    "root_cpuset.cpus.effective": "0-19",
+    "process_cpuset.cpus.effective": "0-19",
+    "root_memory.max": "max",
+    "process_memory.max": "max"
+  },
+  "repository_self_hosted_runner_counts": {
+    "Cehpalon-Engine": 0,
+    "Cehpalon-Engine-Samples": 0
+  },
+  "organization_runner_inventory": "403 not visible with current permissions",
+  "app_allocation": "shared workstation resources and uncapped observed WSL cgroup",
+  "load_driver_allocation": "no separate reference driver allocation was identified",
+  "numeric_workload_launched": false
+}
