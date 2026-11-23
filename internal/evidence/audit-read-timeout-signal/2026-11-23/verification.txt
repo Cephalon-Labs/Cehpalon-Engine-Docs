@@ -1,0 +1,1 @@
+Verified schema, 20 wire controls, 12 lock joins, 4 denials before SQL, and all existing targeted suites.

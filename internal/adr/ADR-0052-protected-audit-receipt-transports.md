@@ -18,7 +18,11 @@ Compile an immutable Composition plan from transport/security selection before h
 
 The trusted host configuration supplies actual TLS and an established JWT authentication handler, issuer/audience/algorithm/key trust and explicit scheme. Authenticate before authorization. Each request or GraphQL field uses a request-owned fixed HttpContext accessor and AspNetCoreJwtIdentitySource over a validated ticket, plus fresh injected membership/resource/RBAC-ABAC services. Do not use LookupHost.Run, its invented fixed service identity, a constructed DTO, a principal flag or tenant metadata as authority. Require the existing audit-trail/tenant/read checked scope and an explicit project lookup operation grant; ordinary entity/history permissions alone are insufficient.
 
-The wire bridge performs no duplicate reader authorization logic. Let TenantOperationDispatcher and TenantChangeAuditLookupReader.ActivateWithBudget enforce current checked context, tenant/receipt identity and captured immutable read policy. Map data only after success. Existing generic unexpected-error redaction and transport status semantics remain; no new timeout status. Reader budget ends at reader completion and excludes DTO serialization/network flush, so no end-to-end response deadline is claimed. Local signed-token fixtures are not real IdP/session/provider qualification.
+The wire bridge performs no duplicate reader authorization logic. Let TenantOperationDispatcher and TenantChangeAuditLookupReader.ActivateWithBudget enforce current checked context, tenant/receipt identity and captured immutable read policy. Map data only after success. Existing generic unexpected-error redaction and transport status semantics remain; no new timeout status in the default profile. Reader budget ends at reader completion and excludes DTO serialization/network flush, so no end-to-end response deadline is claimed. Local signed-token fixtures are not real IdP/session/provider qualification.
+
+2026-11-23 continuation: projects can opt into a distinct reader timeout signal
+for receipt lookup and resource history. The option preserves the original
+default wire behavior. See the [timeout signal contract and validation](../validation/audit-read-timeout-signal.md).
 
 ## Ownership and shutdown
 
