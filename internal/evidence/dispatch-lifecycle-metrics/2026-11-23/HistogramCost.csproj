@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <OutputType>Exe</OutputType>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <ProjectReference Include="$(EngineSource)/src/Cehpalon.Engine.Core/Cehpalon.Engine.Core.csproj" />
+    <ProjectReference Include="$(EngineSource)/src/Cehpalon.Engine.Composition/Cehpalon.Engine.Composition.csproj" />
+  </ItemGroup>
+</Project>
+

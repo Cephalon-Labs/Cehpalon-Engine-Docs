@@ -1,0 +1,102 @@
+[
+  {
+    "file": "windows.jsonl",
+    "os": "Microsoft Windows 10.0.26300",
+    "calls": 6400000,
+    "collectedSuccesses": 3200000,
+    "nanosecondsPerRead": {
+      "off": {
+        "median": 115.15020000000001,
+        "min": 113.4004,
+        "max": 142.5344
+      },
+      "on": {
+        "median": 120.88419999999999,
+        "min": 113.9272,
+        "max": 148.69
+      },
+      "onMinusOff": {
+        "median": 4.342399999999991,
+        "min": -5.216400000000007,
+        "max": 21.892399999999995
+      },
+      "offFirstDelta": {
+        "median": 6.147999999999996,
+        "min": 0.5267999999999944,
+        "max": 21.892399999999995
+      },
+      "onFirstDelta": {
+        "median": 3.825799999999994,
+        "min": -5.216400000000007,
+        "max": 13.161600000000007
+      }
+    },
+    "allocatedBytesPerRead": {
+      "off": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "on": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "onMinusOff": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  {
+    "file": "wsl.jsonl",
+    "os": "Ubuntu 22.04.5 LTS",
+    "calls": 6400000,
+    "collectedSuccesses": 3200000,
+    "nanosecondsPerRead": {
+      "off": {
+        "median": 98.58416399999999,
+        "min": 98.26774,
+        "max": 139.949024
+      },
+      "on": {
+        "median": 101.993652,
+        "min": 101.385936,
+        "max": 144.728276
+      },
+      "onMinusOff": {
+        "median": 3.530532000000001,
+        "min": -38.36364400000001,
+        "max": 33.925107999999994
+      },
+      "offFirstDelta": {
+        "median": 3.2697060000000064,
+        "min": -38.36364400000001,
+        "max": 12.198288000000005
+      },
+      "onFirstDelta": {
+        "median": 3.8804839999999956,
+        "min": -2.6991680000000002,
+        "max": 33.925107999999994
+      }
+    },
+    "allocatedBytesPerRead": {
+      "off": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "on": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      },
+      "onMinusOff": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  }
+]

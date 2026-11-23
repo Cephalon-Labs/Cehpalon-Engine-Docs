@@ -1,0 +1,9 @@
+{
+  "engine": "c18757f7ef4df2c78c73e902aa39d05424e6bcff",
+  "sdk": "11.0.100",
+  "windows_contracts": 1546,
+  "generated_windows_checks": 155,
+  "hosted_ubuntu_run": 45201013780,
+  "hosted_windows_run": 45201013780,
+  "platform_smoke_run": 45201014020
+}

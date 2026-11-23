@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "engine_revision": "c18757f7ef4df2c78c73e902aa39d05424e6bcff",
+  "sdk": "11.0.100",
+  "baseline_consumer_manifest_sha256": "926252e942a57013e7e204f45d5cd460fcf06cfb7388fb0a899aff59d128506e",
+  "generated_source_inputs": {
+    "Catalog.cs": "eaf75d58db602d5c47999302c8302a6275ab9346bca3122d0d4363cb136daf47",
+    "Consumer.csproj": "0251a30acd0da902126969191812729998fb81de19ec6c1c80c7aa5f4e57fd28",
+    "ContractExport.cs": "1c9186afbaf4f141b2307d62d6a4385da8e8507c34bcb200ac8d12b574e63e5b",
+    "FixtureHost.cs": "74caeffa165756f9565e3c14beb3d58c88513fc1f9c4855dc5cd90285a0b2d21",
+    "NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+    "Program.cs": "c024a2bcc0b032bfcc6e9edea589c4636aa9f214f57f32d49de7d04cea15e80d",
+    "README.md": "9dc873da075fab3fe37f59cb4114ffd78aa27e29a1958d594b414de392dd4860",
+    "SelfTest.cs": "fff7fa5f3c572435c7dbfefa7aa3a4ebf08dee34fee7691bc7447579899880f5",
+    "appsettings.graphql-only.json": "6ee480bcd32a8c113baa8acb0065925bf9a730fe67980a17bc51cb0e45ee6392",
+    "appsettings.graphql.json": "dfc5e9d1449790700a4be90c68cc60353d4cb60f2f0b43a0423ee1e2674b9ee9",
+    "appsettings.json": "47c8a0d3bc87411c5de745f488c855dc3c163e8658c50139faae47b8d93cbb3a",
+    "appsettings.off.json": "2fc99a87f142e3cba1a2f1be85a4d326b331ba0d5f754b5d8bbf230fc4358137",
+    "engine-source.json": "f6fd051846a9bbcdb4bb40de912cce72986866cf5db5749087258e769fc12565",
+    "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58"
+  },
+  "engine_source_manifest_sha256": "f6fd051846a9bbcdb4bb40de912cce72986866cf5db5749087258e769fc12565",
+  "engine_input_count": 32,
+  "observer_source_sha256": "120b419611f394d5e386be4d4ec5a4b6d65498573e89518576b5b5edf33a3626",
+  "proof_project_sha256": "07759d95ed0f5cb7f7d04b10fd39bc6b05b54dd0925481cd7e5f27fa9c1b470e",
+  "packages_lock_sha256": "f713cc4ae12a5648e03a269d2a3774ae05c545b10496e929da229cbd56c9d9c2",
+  "cases": [
+    {
+      "mode": "healthy",
+      "wire_controls": 6,
+      "measurements": 12,
+      "output_sha256": "ae2c6c83a20cc74deaff1306bf17a1cdec52ec760618a6dcc563d3a995e67ddb"
+    },
+    {
+      "mode": "publication-fault",
+      "wire_controls": 12,
+      "measurements": 0,
+      "output_sha256": "c2fb3e7085f1ee1b4301753effc78095aa773183e3d0cd6fc10ac60efaceb05d"
+    },
+    {
+      "mode": "measurement-fault",
+      "wire_controls": 6,
+      "measurements": 12,
+      "output_sha256": "cde51ae9aa90555eb316ef6f777ee412b4ffddb080a6eacf723abdf5f8c7545e"
+    }
+  ]
+}

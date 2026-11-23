@@ -1,0 +1,1 @@
+CS1555: Could not find SmallApiHistogramProbe for Main. Initial generated project declares EnableDefaultCompileItems=false. Proof preparation added an explicit Compile item.

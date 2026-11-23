@@ -1,0 +1,1 @@
+{"component":"Composition","observer":"throw","runtime":".NET 11.0.0","publications":1,"first":{"Error":"TypeInitializationException","Inner":"InvalidOperationException","Factories":0,"Disposals":0},"second":{"Error":"TypeInitializationException","Inner":"InvalidOperationException","Factories":0,"Disposals":0},"passes":true}

@@ -1,0 +1,121 @@
+{
+  "mode": "measurement-fault",
+  "runtime": ".NET 11.0.0",
+  "os": "Ubuntu 22.04.5 LTS",
+  "publications": [
+    "cehpalon.module.lifecycle.duration",
+    "cehpalon.operation.dispatch.duration"
+  ],
+  "checks": [
+    {
+      "transport": "http",
+      "scenario": "owner",
+      "status": 200,
+      "observations": 2
+    },
+    {
+      "transport": "http",
+      "scenario": "cross-tenant",
+      "status": 403,
+      "observations": 1
+    },
+    {
+      "transport": "http",
+      "scenario": "anonymous",
+      "status": 401,
+      "observations": 0
+    },
+    {
+      "transport": "graphql",
+      "scenario": "owner",
+      "status": 200,
+      "observations": 2
+    },
+    {
+      "transport": "graphql",
+      "scenario": "cross-tenant",
+      "status": 200,
+      "observations": 1
+    },
+    {
+      "transport": "graphql",
+      "scenario": "anonymous",
+      "status": 401,
+      "observations": 0
+    }
+  ],
+  "measurements": [
+    {
+      "Name": "cehpalon.module.lifecycle.duration",
+      "Phase": "activation",
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.module.lifecycle.duration",
+      "Phase": "activation",
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.module.lifecycle.duration",
+      "Phase": "activation",
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.operation.dispatch.duration",
+      "Phase": null,
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.operation.dispatch.duration",
+      "Phase": null,
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.operation.dispatch.duration",
+      "Phase": null,
+      "Outcome": "failure",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.operation.dispatch.duration",
+      "Phase": null,
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.operation.dispatch.duration",
+      "Phase": null,
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.operation.dispatch.duration",
+      "Phase": null,
+      "Outcome": "failure",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.module.lifecycle.duration",
+      "Phase": "disposal",
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.module.lifecycle.duration",
+      "Phase": "disposal",
+      "Outcome": "success",
+      "Valid": true
+    },
+    {
+      "Name": "cehpalon.module.lifecycle.duration",
+      "Phase": "disposal",
+      "Outcome": "success",
+      "Valid": true
+    }
+  ]
+}

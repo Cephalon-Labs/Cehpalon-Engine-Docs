@@ -1,0 +1,54 @@
+{
+  "dispatch": {
+    "off_minus_base": {
+      "nanoseconds": {
+        "median": 0.8714809999999993,
+        "min": -2.4337039999999988,
+        "max": 2.8439460000000025
+      },
+      "bytes": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "on_minus_off": {
+      "nanoseconds": {
+        "median": 32.837509,
+        "min": 30.047525999999998,
+        "max": 36.97295
+      },
+      "bytes": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  },
+  "lifecycle": {
+    "off_minus_base": {
+      "nanoseconds": {
+        "median": 22.34660000000008,
+        "min": -112.67150000000004,
+        "max": 48.45618000000002
+      },
+      "bytes": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    },
+    "on_minus_off": {
+      "nanoseconds": {
+        "median": 166.43453,
+        "min": 138.60184000000004,
+        "max": 195.86694
+      },
+      "bytes": {
+        "median": 0.0,
+        "min": 0.0,
+        "max": 0.0
+      }
+    }
+  }
+}
