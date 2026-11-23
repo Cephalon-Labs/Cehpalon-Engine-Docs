@@ -1,0 +1,9 @@
+{
+  "engine_revision": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "sdk": "11.0.100",
+  "source_state": "exact clean committed source",
+  "checks": 160,
+  "wire_checks": 25,
+  "raw_manifest_sha256": "2f12c1090b1afd7e3e207d5176173285d47cdb2e00ad8d56707a88747c6b7ba6",
+  "wire_sha256": "334e6dd9c13290cb25124c68506f34632d3e964f9378f202d117b487b1546b0e"
+}

@@ -1,0 +1,33 @@
+{
+  "guardrails": {
+    "passed": 8,
+    "total": 8
+  },
+  "dispatch": {
+    "median_extra_ns": 119.00334,
+    "median_extra_bytes": 0.0,
+    "extra_ns_per_op": [
+      124.41532999999998,
+      134.63267,
+      116.07657,
+      119.00334,
+      115.08297999999999
+    ],
+    "extra_bytes_per_op": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "small_composition": {
+    "median_ns": 18825.905,
+    "median_bytes": 9096.24
+  },
+  "large_composition": {
+    "median_ns": 1361089.75,
+    "median_bytes": 931728.8
+  },
+  "rows_validated": 20
+}

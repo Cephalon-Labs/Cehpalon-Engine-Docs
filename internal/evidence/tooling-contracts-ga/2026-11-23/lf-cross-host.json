@@ -1,0 +1,63 @@
+{
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "baseline_engine": "c18757f7ef4df2c78c73e902aa39d05424e6bcff",
+  "sdk": "11.0.100",
+  "checks_per_host": 160,
+  "wire_differential_per_host": 25,
+  "generated_registry_sha256": "5de79901e3c7a2ffe681c0d8b15289b3748b75363d3aef808455327b1c6f2171",
+  "canonical_artifacts": [
+    {
+      "profile": "api",
+      "files": {
+        "manifest.json": {
+          "bytes": 1500,
+          "sha256": "ccdef470372f5d643eabba0887b4e644b6bcc10159aa3d7d31f264e4cd41e0b5"
+        },
+        "openapi.json": {
+          "bytes": 48813,
+          "sha256": "e507daa77f9a39b73390c356d1420ba53dabbbaa148424d2d0fbc5dd2ba10414"
+        }
+      }
+    },
+    {
+      "profile": "both",
+      "files": {
+        "manifest.json": {
+          "bytes": 1665,
+          "sha256": "978f45a467ae05d90040aca1a0db6fb9b59a61d5820bb4c026644aa672af1514"
+        },
+        "openapi.json": {
+          "bytes": 48813,
+          "sha256": "e507daa77f9a39b73390c356d1420ba53dabbbaa148424d2d0fbc5dd2ba10414"
+        },
+        "schema.graphql": {
+          "bytes": 1261,
+          "sha256": "b378ab66b40bab1c5f465390c88a41ed10602c5f03be29c83b65c7642a86ad21"
+        }
+      }
+    },
+    {
+      "profile": "graphql",
+      "files": {
+        "manifest.json": {
+          "bytes": 1446,
+          "sha256": "d1c2c1eee34fecee0b2bd56d1ecc7567dbdc2ff49491fb2c10f19a17cca1e46a"
+        },
+        "schema.graphql": {
+          "bytes": 1261,
+          "sha256": "b378ab66b40bab1c5f465390c88a41ed10602c5f03be29c83b65c7642a86ad21"
+        }
+      }
+    },
+    {
+      "profile": "off",
+      "files": {
+        "manifest.json": {
+          "bytes": 1265,
+          "sha256": "aa0f884db118f07ce2334e89bc7b1beac7958b49c28dcc63c9c7aea8b72748b7"
+        }
+      }
+    }
+  ],
+  "scope": "Exact artifact-byte comparison against paired hosts and the previous LF baseline. Fixture correctness only."
+}

@@ -1,0 +1,31 @@
+{
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "contracts_run": 45207552894,
+  "platform_run": 45207551118,
+  "contracts": [
+    {
+      "job": "w1-contracts-ubuntu-24.04",
+      "checks": 1543,
+      "state": "exact clean committed source"
+    },
+    {
+      "job": "w1-contracts-windows-2025",
+      "checks": 1546,
+      "state": "exact clean committed source"
+    }
+  ],
+  "platform": [
+    {
+      "job": "platform-qualification-ubuntu-24.04",
+      "passed": 12,
+      "failed": 0,
+      "notRun": 2
+    },
+    {
+      "job": "platform-qualification-windows-2025",
+      "passed": 12,
+      "failed": 0,
+      "notRun": 2
+    }
+  ]
+}
