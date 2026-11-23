@@ -1,0 +1,38 @@
+{
+  "windowsProcessor": [
+    {
+      "cores": 14,
+      "logical": 20
+    }
+  ],
+  "files": {
+    "analyze.py": "228f173883a8c3dd08b52a6e9b5a91ad75ab2c158e420dadb928cee72309b9af",
+    "AuditReadContention.csproj": "8224eb7401a0efbf89a179e48962fd094d0627fba54eb83c0101acb484f99b10",
+    "packages.lock.json": "96e95792a96f3046214d562b765fcab14747278f4950ba455b10ee983bdbb347",
+    "Program.cs": "ee1807e26f27c5920062783505523412b60b2045f6fd80f2b96fbe2880304742",
+    "PROTOCOL.md": "0737e441587fbb145f7e382b76075c52cbc57341fe87f3d96a023ba07f1cf076",
+    "TenantFixture.cs": "3165444eb4b0a7f6783444d8407ec025f7063fd189f6904381864fc18facae22",
+    "windows/AuditReadContention.deps.json": "63fe5d55555c6c8e5ca44698b3c5a6ca45ebfffef1ba9dd09c93dacf85af5b93",
+    "windows/AuditReadContention.dll": "b1c41329903375b55fc5a154ace22d3529168497bba75596c4d043b21c20a967",
+    "windows/AuditReadContention.runtimeconfig.json": "7baaa10dc21f2a7cf009e76de09f1a2f706cdfb2139af15629791d7d2cb7fd4f",
+    "windows/Cehpalon.Engine.Core.dll": "0d99f1514a49e1ec4105b89d051dac9884b207398639f875a0da17039dafb17b",
+    "windows/Cehpalon.Engine.Identity.Contracts.dll": "aadce36c382c3b31de097b5e580eaa7c7b8da9cd94bcd092ec6d7d246da7aa34",
+    "windows/Cehpalon.Engine.Tenancy.dll": "7dddf6b55e7a9bed3457f64a2fd4fbfa0c6482b9239a0708e1d1bb066fce9f9c",
+    "windows/conformance.jsonl": "f8797ff794293274bc11b97bf446a74f1114b438e6dc6a7aca2d06708d2162e7",
+    "wsl/AuditReadContention.deps.json": "291024fe174845141954f0ff23731d22540f3d343c1213885d6121582dc22f55",
+    "wsl/AuditReadContention.dll": "e43efc0b8c46c98f693c0f66dcb7ed967cc817e6f1ae32537251e1d1b5084fd3",
+    "wsl/AuditReadContention.runtimeconfig.json": "8c019e2c7c9acc0440d8b263897f7b0079b1c6895307921604be20e732900366",
+    "wsl/Cehpalon.Engine.Core.dll": "6370491b5de46676f1cb5d328115b74d63b93b5004b15b6237ecc65062af4176",
+    "wsl/Cehpalon.Engine.Identity.Contracts.dll": "dcb7b0f841117c3059f8d2dd11159a86ab040f4a4a5219c49d0ccb7538c3eb56",
+    "wsl/Cehpalon.Engine.Tenancy.dll": "c9f5ca35f0b77b427966485ed72cfe4e108070d03a7ebae0e12e54be543dd99a",
+    "wsl/conformance.jsonl": "68e630f86dd1ba20f0d00eb550d5e3535611b9f636bb7aed4a60c324d94bedd9"
+  },
+  "wslKernel": "6.18.58.1-microsoft-standard-WSL2",
+  "engineClean": true,
+  "wslAllowedCpus": "Cpus_allowed_list:\t0-19",
+  "windowsSdk": "11.0.100",
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "wslDistro": "Ubuntu 22.04.5 LTS",
+  "storage": "Windows D: and WSL /mnt/d for SDK, source, binaries, and output",
+  "wslSdk": "11.0.100"
+}
