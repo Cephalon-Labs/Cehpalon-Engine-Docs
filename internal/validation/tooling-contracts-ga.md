@@ -36,3 +36,19 @@ The generated `engine-source.json` records local checkout paths, which
 differ between hosts by design.
 
 [Engine change](https://github.com/Cephalon-Labs/Cehpalon-Engine/commit/6fe7254404cf6b148370bd95befe8331e8932354) · [Cross-host replay](../evidence/tooling-contracts-ga/2026-11-23/lf-cross-host.json)
+
+## Hosted Samples build and restore
+
+The first Samples workflow selected Engine `ff66a46`, which predates
+the audit-read statistics types required by the checked-in audit-outbox
+consumer. The seed build stopped with compiler error CS0246.
+
+Samples `b66d9b1` aligned the workflow checkout and its portable and Small
+API locks with Engine `6fe7254`, already selected by the offline lock. The
+next Windows job passed the full Visual Studio/MSBuild build and restore
+workflow. Retained manifests record 62 build and restore checks, 70
+portable checks, 155 generated Small API checks, and the separate launch
+suites. The hosted Small API entry-point matrix also ran on the same locked
+Engine revision.
+
+[Failed run](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45207645544) · [Pin repair](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/commit/b66d9b18ad69f02acd6996750b56d3e4a076eb60) · [Successful hosted run](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45208916478)

@@ -1,0 +1,51 @@
+{
+  "failed_run": 45207645544,
+  "failure": "CS0246 in audit-outbox seed because hosted Engine pin predates audit-read statistics types",
+  "successful_run": 45208916478,
+  "samples": "b66d9b18ad69f02acd6996750b56d3e4a076eb60",
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "manifests": [
+    {
+      "suite": "build-restore",
+      "status": "passed",
+      "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+      "checks": 62,
+      "artifact_manifest_sha256": "740b9934afcec4a6e880677bb92771c2f42ad4a4629a5ad063ed617e9b7195f6"
+    },
+    {
+      "suite": "diagnostic-launches",
+      "status": "passed",
+      "engine": null,
+      "checks": 1,
+      "artifact_manifest_sha256": "7f05ea8258e9709e6c618582da1631ea06053fffed747511a13511bd1a3908c9"
+    },
+    {
+      "suite": "generated-portable",
+      "status": "passed",
+      "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+      "checks": 70,
+      "artifact_manifest_sha256": "17b9be40e03ed1a0b64121346ba1b76708682209c9eec4a1b5e73f2c6f53dbe6"
+    },
+    {
+      "suite": "generated-small-api",
+      "status": "passed",
+      "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+      "checks": 155,
+      "artifact_manifest_sha256": "9c1d10a25c09b4251ae46f20860cf308908f676f26bc9c907bc3474c932bbb8a"
+    },
+    {
+      "suite": "sample-launches",
+      "status": "passed",
+      "engine": null,
+      "checks": 71,
+      "artifact_manifest_sha256": "97e9af92d90c84377168f0c5942b567b329e7095551d28478cdf4c3396d98b1b"
+    },
+    {
+      "suite": "small-api-launch",
+      "status": "passed",
+      "engine": null,
+      "checks": 26,
+      "artifact_manifest_sha256": "d34634237519909eaf9f50f204ca25b08fdf207ce20dc981647b7e974fc11031"
+    }
+  ]
+}
