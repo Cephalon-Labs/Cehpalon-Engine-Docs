@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-23 Small API empty-argument startup](2026-11-23-small-api-no-args.md).
+Latest handoff: [2026-11-23 all sample and Tooling startup](2026-11-23-all-sample-startup.md).
+
+Prior startup delivery: [2026-11-23 Small API empty-argument startup](2026-11-23-small-api-no-args.md).
 
 Prior build delivery: [2026-11-23 Samples Visual Studio Build/restore](2026-11-23-small-api-visual-studio-restore.md).
 
