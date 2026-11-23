@@ -1,0 +1,14 @@
+{
+  "checked_at_bangkok_date": "2026-11-24",
+  "required_app": {"dedicated_vcpu": 2, "memory_max_bytes": 2147483648, "linux_x64": true},
+  "requires_independently_provisioned_driver": true,
+  "approved_app_and_driver_pair_verified": false,
+  "wsl_probe_result": "The Linux cgroup namespace can hide enclosing resource limits.",
+  "repository_self_hosted_runners": {
+    "engine": {"registered": 0, "online": 0},
+    "docs": {"registered": 0, "online": 0},
+    "samples": {"registered": 0, "online": 0}
+  },
+  "organization_runner_inventory_http_status": 403,
+  "timed_benchmark_launched": false
+}

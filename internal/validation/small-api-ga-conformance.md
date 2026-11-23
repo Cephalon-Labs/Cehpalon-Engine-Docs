@@ -1,5 +1,7 @@
 # Small API GA conformance and reference readiness
 
+Follow-up on 2026-11-24: [Two-host TLS preflight](small-api-two-host-preflight.md) records the subsequent harness and lab results.
+
 ## Executed conformance
 
 Both runs used Samples `a8ad452677c48d87a125460c552ee01c3e044046` and

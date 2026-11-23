@@ -1,0 +1,138 @@
+{
+  "scope": "Controller/app and load driver in separate Docker network namespaces on one shared WSL Linux host.",
+  "reference_qualified": false,
+  "timed_benchmark_launched": false,
+  "samples_revision": "1d984b0238bd614cb7c78675286ae25192ec9fac",
+  "engine_revision": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "sdk": "11.0.100",
+  "locked_release_deployment_files": 67,
+  "joined_lanes": [
+    {
+      "variant": "baseline",
+      "transport": "http",
+      "offered": 2000,
+      "correct": 2000,
+      "held_tls_connections": 128,
+      "measured_entered": false,
+      "warmup_entered": false,
+      "raw_accounting": {
+        "actual_offers": 2000,
+        "planned_offers": 180000,
+        "ordered_prefix_matches": true
+      },
+      "tls_ciphers": [
+        "TLS_AES_256_GCM_SHA384"
+      ],
+      "joined_driver_and_verified_evidence": true,
+      "owned_server_shutdown": true,
+      "raw_requests": "http-baseline-preflight-requests.jsonl.gz",
+      "raw_requests_sha256": "5af32858a353afdfe0711cd8ca1f13e69ae41dcb85e2f005cbe85067fdde1521",
+      "private_planned_manifest_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+    },
+    {
+      "variant": "engine",
+      "transport": "http",
+      "offered": 2000,
+      "correct": 2000,
+      "held_tls_connections": 128,
+      "measured_entered": false,
+      "warmup_entered": false,
+      "raw_accounting": {
+        "actual_offers": 2000,
+        "planned_offers": 180000,
+        "ordered_prefix_matches": true
+      },
+      "tls_ciphers": [
+        "TLS_AES_256_GCM_SHA384"
+      ],
+      "joined_driver_and_verified_evidence": true,
+      "owned_server_shutdown": true,
+      "raw_requests": "http-engine-preflight-requests.jsonl.gz",
+      "raw_requests_sha256": "4eb42286d20eacb63b4ddfffc09d85aded7f6ae5b54b9cffcb9a273980fae3d1",
+      "private_planned_manifest_sha256": "52405bec7e26db916f1d23ddc3b7e7732ce8ee85a57ea17315fcede8a756a8d0"
+    },
+    {
+      "variant": "baseline",
+      "transport": "graphql",
+      "offered": 2000,
+      "correct": 2000,
+      "held_tls_connections": 128,
+      "measured_entered": false,
+      "warmup_entered": false,
+      "raw_accounting": {
+        "actual_offers": 2000,
+        "planned_offers": 180000,
+        "ordered_prefix_matches": true
+      },
+      "tls_ciphers": [
+        "TLS_AES_256_GCM_SHA384"
+      ],
+      "joined_driver_and_verified_evidence": true,
+      "owned_server_shutdown": true,
+      "raw_requests": "graphql-baseline-preflight-requests.jsonl.gz",
+      "raw_requests_sha256": "c8c6eb4c1dc494854af1857ae3885dee09a6e4acc14609b3e75e6bfd8dbf8867",
+      "private_planned_manifest_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+    },
+    {
+      "variant": "engine",
+      "transport": "graphql",
+      "offered": 2000,
+      "correct": 2000,
+      "held_tls_connections": 128,
+      "measured_entered": false,
+      "warmup_entered": false,
+      "raw_accounting": {
+        "actual_offers": 2000,
+        "planned_offers": 180000,
+        "ordered_prefix_matches": true
+      },
+      "tls_ciphers": [
+        "TLS_AES_256_GCM_SHA384"
+      ],
+      "joined_driver_and_verified_evidence": true,
+      "owned_server_shutdown": true,
+      "raw_requests": "graphql-engine-preflight-requests.jsonl.gz",
+      "raw_requests_sha256": "99233fee563e60aed163e2fadc52cb8d5bb69296a663a1fa9e1711bace9d3764",
+      "private_planned_manifest_sha256": "944613ac999cb97066076bc4f2e199d4f29115c8cd31b5861d2bfe7019ce1376"
+    }
+  ],
+  "actual_offered_requests": 8000,
+  "actual_correct_requests": 8000,
+  "negative_preflight": {
+    "negative-ssh": "aborted before collector or timed phases",
+    "negative-resources": "aborted before collector or timed phases"
+  },
+  "tls_tests": {
+    "trusted_tls13": {
+      "exit": 0,
+      "expected_result": true
+    },
+    "wrong_ca": {
+      "exit": 1,
+      "expected_result": true
+    },
+    "wrong_ip_san": {
+      "exit": 1,
+      "expected_result": true
+    },
+    "tls12_rejected": {
+      "exit": 1,
+      "expected_result": true
+    },
+    "unlisted_peer_rejected": {
+      "exit": 1,
+      "expected_result": true
+    },
+    "listener_refused_after_stop": true,
+    "owned_resources_removed": true
+  },
+  "ssh_lease_test": {
+    "remote_tcp_from_driver_observed": true,
+    "closed_controller_lease": true,
+    "owned_remote_process_joined": true,
+    "remote_driver_exit": 124,
+    "structured_evidence_received": true,
+    "timed_phases_entered": false
+  },
+  "owned_app_driver_and_network_removed": true
+}

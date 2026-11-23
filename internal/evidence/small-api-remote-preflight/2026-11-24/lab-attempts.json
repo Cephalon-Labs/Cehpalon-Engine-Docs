@@ -1,0 +1,10 @@
+{
+  "attempts": [
+    {"attempt": "01", "code_outcome": "aborted before collector", "observed": "The test driver account could not read the staged helper from the shared fixture mount. Corrected public artifact read permissions in the harness."},
+    {"attempt": "02", "code_outcome": "aborted at first controller TLS connection", "observed": "The app rejected the WSL host-to-private-listener socket source."},
+    {"attempt": "03", "code_outcome": "aborted at first controller TLS connection", "observed": "The WSL route rewrote the accepted socket source despite an explicit source bind. An owned accept4 trace confirmed a source different from the declared app or driver."},
+    {"attempt": "04", "code_outcome": "all four collector preflights passed", "observed": "Separate lab network namespaces provided direct TCP routing and strict TLS. Wrong SSH host key and unavailable real resource admission scenarios aborted as expected."},
+    {"attempt": "05", "code_outcome": "SSH lease cancellation passed", "observed": "Remote process joined after the controller closed an active lease against an owned held socket."}
+  ],
+  "timed_w0_runs": 0
+}

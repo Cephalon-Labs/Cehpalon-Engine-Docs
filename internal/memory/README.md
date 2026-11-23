@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-24 Small API GA conformance and reference preflight](2026-11-24-small-api-ga-conformance.md).
+Latest handoff: [2026-11-24 Small API two-host TLS preflight](2026-11-24-small-api-two-host-preflight.md).
+
+Prior delivery: [2026-11-24 Small API GA conformance and reference preflight](2026-11-24-small-api-ga-conformance.md).
 
 Prior delivery: [2026-11-24 Business order replay and Small API GA build](2026-11-24-business-replay-ga.md).
 

@@ -1,0 +1,64 @@
+{
+  "baseline_samples_revision": "a8ad452677c48d87a125460c552ee01c3e044046",
+  "samples_revision": "1d984b0238bd614cb7c78675286ae25192ec9fac",
+  "unchanged_samples_blobs": {
+    "small-api-benchmark/Domain.cs": "3c9b446c46af112ffcb761f274e079fd1de2c29148c445841cfd65a8601479f2",
+    "small-api-benchmark/Driver.cs": "8bd7b26c021583e4ba745f7040ece3ac6ff0a068c2eacdd3bfc9eb6e4ef8a9f6",
+    "small-api-benchmark/Wire.cs": "4a3fe032c1b41095003cf700491c8cee5001c98463337e2ec7e6cdf54515e429",
+    "small-api-benchmark/Conformance.cs": "9a8e14aa2dd74885a4e8ef103c64c4a4f41ed58c3819c98517d5e2535b494bfe",
+    "small-api-benchmark/packages.lock.json": "5c25d6dee86fe210da2a928d304efa705ca49ce5632b63b3b2b024edd7ffe01b"
+  },
+  "unchanged_timed_and_scoring_methods_sha256": {
+    "diagnostic_preflight_failed": "650ed0e0703f562bdd83dc25e5097efdd5215c65e7168d5faa39bae6b6174374",
+    "diagnostic_summary": "39c3abc00298a8c505bed0a6e80cfd5242df60732fad533115ea57b54595f1be",
+    "diagnostics": "6a66b5a56bf4c81bab2e59d8456b9ffc877ca9bdf18c5f79c9a6fc7e89a6fdbe",
+    "idle": "7de67ce9caa31078e1933e8a692d4c00afe4702231175dcd1cae7df0ad8a7e22",
+    "load": "588e4955e33901db5b373dc3e5e1fe883138a7ad186ceb415b8f10622c996bc1",
+    "percentile": "3faea269901fd45ad9081b1154fceeea02d8bd9300bc63ac8cc83f2c1e78de53",
+    "phase_correct": "2e1943abb9541373dad851288a9bfac5d845ca8ed8924472ff3b231cee11f961",
+    "startup": "7a5dcf9fdc6ecd14ad6843884df3d9517b5cd0ac9f66cdf8e33d8e130afc465e"
+  },
+  "unchanged_protocol_document_blobs": {
+    "internal/validation/small-api-workload.md": "5f2b1ae85af4545c0f97d795ccbb0cf0c381b0920cc584e46734f98afc49611f",
+    "internal/validation/business-workload.md": "eb32d4478f0bfb64c572c251b1fa5a5b7a54c933d42f552b77fb4d54ff6eb797",
+    "internal/adr/ADR-0003-multitenant-business-profile.md": "54efa81357ababb7eb6d0aab21c7df0393d3548a1f2b52b1c1a0e2c5522ca60e",
+    "internal/adr/ADR-0009-small-api-conformance-and-measurement.md": "880b6dd9f9afc1929efadda727a04ac0ac7ef547731f4b51bc5def0f222f8eea",
+    "internal/adr/ADR-0011-small-api-collector-connection-readiness.md": "03967a8e7a1f49e06257e6578eb06111e4bc18ede3f424445d8e852b4b01d0c8"
+  },
+  "wsl_local_ga_conformance": {
+    "status": "passed",
+    "observed_cases": 4000,
+    "lanes": [
+      {
+        "transport": "http",
+        "variant": "baseline",
+        "passed_cases": 1000,
+        "passed_cancellation": 100,
+        "passed_lifecycle": 30
+      },
+      {
+        "transport": "graphql",
+        "variant": "baseline",
+        "passed_cases": 1000,
+        "passed_cancellation": 100,
+        "passed_lifecycle": 30
+      },
+      {
+        "transport": "http",
+        "variant": "engine",
+        "passed_cases": 1000,
+        "passed_cancellation": 100,
+        "passed_lifecycle": 30
+      },
+      {
+        "transport": "graphql",
+        "variant": "engine",
+        "passed_cases": 1000,
+        "passed_cancellation": 100,
+        "passed_lifecycle": 30
+      }
+    ],
+    "archived_fixture_hashes_match": true
+  },
+  "new_timed_reference_result": null
+}
