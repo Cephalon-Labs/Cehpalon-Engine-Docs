@@ -26,3 +26,5 @@ preparation failures occurred before provider startup and were retained.
 Full provider API, concurrent transaction, hosted CI, identity and
 Business workload gates remain open. #7 remains Blocked and #12 remains
 Backlog, both at M0. [Scope and next gates](../planning/postgresql-application-scope.md)
+
+[Overlapping READ COMMITTED transactions and lock-wait cancellation](transactions-and-drain.md#postgresql-order-transactions)

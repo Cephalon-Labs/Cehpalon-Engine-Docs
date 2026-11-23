@@ -1,0 +1,107 @@
+{
+  "status": "passed",
+  "engine_revision": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "probe_sha256": "98f5189fe45453518b672807beb850a828a88ca1b519381310eeb0e7e994e901",
+  "drain_probe_sha256": "34a298401ef5cc30e34a7cd3aa6822a33e4204841ef81ec9a911aa8d65a4953e",
+  "verifier_sha256": "ea8e93555ac32c62163f697a11fc27c491b4f8b92bbf5737eebb525f2ce373d1",
+  "protocol_sha256": "eb5c28e5cb43cebb3e8a18e6dc590965329d73e2168ba4e0218e542d9ce453c2",
+  "steps": [
+    {
+      "step": "engine-head-before",
+      "exit": 0,
+      "log_sha256": "6dcb76863053d1386578211d0668615865aabe0e6993c9e5eed3c75bef7d22bd"
+    },
+    {
+      "step": "engine-status-before",
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "step": "sdk",
+      "exit": 0,
+      "log_sha256": "0bfc55ed052ad680a22f2f57cb84cb32763e7b561081b696025356d41c88bd8c"
+    },
+    {
+      "step": "samples-head",
+      "exit": 0,
+      "log_sha256": "dcaebdff6fa048307ce0ebb5402b4ea502b0be3ac9da1e3ef308856e40e925ff"
+    },
+    {
+      "step": "cli-restore",
+      "exit": 0,
+      "log_sha256": "c60163f468c90dc9ffe2f82142badd7c9665aa5bae6ac53c00f1433d1071cba9"
+    },
+    {
+      "step": "cli-build",
+      "exit": 0,
+      "log_sha256": "09be56126b13d71bef4046304b21a96798bb5647c2a88ae5bf159fe45c8d754a"
+    },
+    {
+      "step": "new",
+      "exit": 0,
+      "log_sha256": "a354a4ab14f3cca95d3f9aa33bbfd8ea30c5639bb33fd4009fdf315b1bf2de90"
+    },
+    {
+      "step": "consumer-restore",
+      "exit": 0,
+      "log_sha256": "2cbdafb9e7e53c7c8f10f08a59dddc377602ea65cd9ef64dbe2a32ed5b1ecc5c"
+    },
+    {
+      "step": "consumer-locked-restore",
+      "exit": 0,
+      "log_sha256": "b7fe3f0c0fd670bb48d7be9afbe4ddf0426f2f21a83e5529f8e376924ffabff6"
+    },
+    {
+      "step": "consumer-build",
+      "exit": 0,
+      "log_sha256": "2bf716abeba81ec9361319bb26e31f7274b438dade285ad28d689dd8ebc39213"
+    },
+    {
+      "step": "wire-proof",
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "step": "engine-head-after",
+      "exit": 0,
+      "log_sha256": "6dcb76863053d1386578211d0668615865aabe0e6993c9e5eed3c75bef7d22bd"
+    },
+    {
+      "step": "engine-status-after",
+      "exit": 0,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "sdk": "11.0.100",
+  "samples_revision": "ba1525611521ad0d3624821059604f2a557a126a",
+  "generated_sha256": {
+    "Catalog.cs": "eaf75d58db602d5c47999302c8302a6275ab9346bca3122d0d4363cb136daf47",
+    "Consumer.csproj": "f67a32be6e6ead2ac39291052812462508d849ccf68ec6c10775a9d0fdd0a034",
+    "ContractExport.cs": "908194e53c1b57c369fa78a61af5196eed091ed14c4bd1043e3744fb5631117e",
+    "FixtureHost.cs": "74caeffa165756f9565e3c14beb3d58c88513fc1f9c4855dc5cd90285a0b2d21",
+    "NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+    "Program.cs": "c024a2bcc0b032bfcc6e9edea589c4636aa9f214f57f32d49de7d04cea15e80d",
+    "README.md": "ebc91ccc8f92d627734d62150bc6f48773caa5960822eab7e967a3f202ec621f",
+    "SelfTest.cs": "fff7fa5f3c572435c7dbfefa7aa3a4ebf08dee34fee7691bc7447579899880f5",
+    "appsettings.graphql-only.json": "6ee480bcd32a8c113baa8acb0065925bf9a730fe67980a17bc51cb0e45ee6392",
+    "appsettings.graphql.json": "dfc5e9d1449790700a4be90c68cc60353d4cb60f2f0b43a0423ee1e2674b9ee9",
+    "appsettings.json": "47c8a0d3bc87411c5de745f488c855dc3c163e8658c50139faae47b8d93cbb3a",
+    "appsettings.off.json": "2fc99a87f142e3cba1a2f1be85a4d326b331ba0d5f754b5d8bbf230fc4358137",
+    "engine-source.json": "6a81c732c16b15ac5e9e0a959dba17401178815a2f38db4ea9ea7d584398bd08",
+    "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58"
+  },
+  "engine_input_count": 32,
+  "proof_overlay_sha256": {
+    "Consumer.csproj": "544d0a5a9ce359ee101b6711598b6dce63a3403e8a857b8b217fe7cf29f98fdf",
+    "FixtureHost.cs": "195b97bdce461230e07e0be33c8616423cadc69de143c9edc73f41f231371714",
+    "DispatchCorrelationProbe.cs": "98f5189fe45453518b672807beb850a828a88ca1b519381310eeb0e7e994e901",
+    "DispatchDrainProbe.cs": "34a298401ef5cc30e34a7cd3aa6822a33e4204841ef81ec9a911aa8d65a4953e"
+  },
+  "packages_lock_sha256": "3671a1d2162c1a25ddbd3252f312db67abac9ccbb0875f683ea517ba53dc698a",
+  "consumer_binary_sha256": {
+    "PortableConsumer.DispatchCorrelationProof.runtimeconfig.json": "5ed69b0e1891dae5cf9180a836683489bf03983a0d791042caa0e8d43a05276f",
+    "PortableConsumer.DispatchCorrelationProof.dll": "43ddb53e20550c1cd3647a08f939f526d4066a0bad2d83e5522fc81ff577f178",
+    "Cehpalon.Engine.Core.dll": "43e6c9d705a3180f8d1d071731a19191f83ad6295d0b96876f0b2ed3e1c57728"
+  },
+  "wire_sha256": "5b0b7f26974cd87638359f286e124b8c9daa0182ff6fdd929035a05a77affcbd"
+}

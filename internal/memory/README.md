@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-23 scoped PostgreSQL order operations](2026-11-23-postgresql-order-scope.md).
+Latest handoff: [2026-11-24 PostgreSQL overlap and protected HTTPS drain](2026-11-24-transactions-and-drain.md).
+
+Prior delivery: [2026-11-23 scoped PostgreSQL order operations](2026-11-23-postgresql-order-scope.md).
 
 Prior delivery: [2026-11-23 Core dispatch completion observation](2026-11-23-dispatch-correlation.md).
 

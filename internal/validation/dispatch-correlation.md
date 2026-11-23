@@ -79,3 +79,5 @@ production benchmark qualification remain open.
 #18 stays In Progress at M0. The remaining observability scope includes
 supported-path shutdown and recovery, exporter effects and workload
 measurement under the original gates.
+
+[Controlled protected HTTPS drain and restart](transactions-and-drain.md#protected-https-drain-and-fresh-activation)

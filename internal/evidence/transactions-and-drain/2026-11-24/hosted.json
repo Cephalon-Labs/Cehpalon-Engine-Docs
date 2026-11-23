@@ -1,0 +1,15 @@
+{
+  "pull_request": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/pull/3",
+  "passing_run": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45237963550",
+  "initial_hosted_run": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45237547376",
+  "tested_pull_head": "13e9ee828eb54da7358e87b850a4bc94fdb0404e",
+  "tested_checkout": "31105d54fa668456ddaddb2143414fcb5a727029",
+  "merged_samples_main": "b62699e51f5f62c94b3113fcda677601a18211e3",
+  "jobs": {
+    "https-windows-2025": "passed",
+    "https-ubuntu-24.04": "passed",
+    "postgres-ubuntu-24.04": "passed"
+  },
+  "first_attempt_fault": "Ubuntu HTTPS invocation supplied multiple dotnet executable paths. Argument parsing stopped before starting the proof.",
+  "correction": "Select one dotnet application from PATH. Both proof sources and all assertions were preserved."
+}

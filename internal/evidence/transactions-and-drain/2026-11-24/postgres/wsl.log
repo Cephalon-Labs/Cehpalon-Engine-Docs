@@ -1,0 +1,19 @@
+PostgreSQL image registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d
+PostgreSQL config sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe
+PostgreSQL 18.6 ready on owned loopback.
+Migration rollback, explicit apply, owner and repeat refusal verified.
+Same order ID isolated across tenant dispatches. Six scope controls performed zero database work.
+Commit acknowledged. Same backend had no tenant scope after return. Stale revision changed zero rows.
+Post-write cancellation rolled back. Same backend had no tenant scope after return.
+Distinct tenant updates overlapped on separate PostgreSQL backends and committed independently.
+Same-order contention had one committed update and one zero-row conditional outcome.
+PostgreSQL lock-wait cancellation rolled back and the same backend returned without tenant scope.
+Business.Postgres.Consumer.csproj: OK
+Program.cs: OK
+PostgresOrderStore.cs: OK
+ConcurrentOrderChecks.cs: OK
+migrations/001_orders.sql: OK
+packages.lock.json: OK
+run-proof.sh: OK
+OVERLAP-PROTOCOL.md: OK
+Owned container and volume removed; loopback port closed.

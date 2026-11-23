@@ -1,0 +1,333 @@
+{
+  "outcome": "passed",
+  "runtime": ".NET 11.0.0",
+  "os": "Microsoft Windows 10.0.26300",
+  "lanes": [
+    {
+      "Budget": "total",
+      "CleanupOutcome": "success",
+      "Open": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 1,
+        "IsAdmissionClosed": false
+      },
+      "Closed": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 1,
+        "IsAdmissionClosed": true
+      },
+      "HeldCleanup": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 1,
+        "IsAdmissionClosed": true
+      },
+      "Drained": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 0,
+        "IsAdmissionClosed": true
+      },
+      "RestartedOpen": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 0,
+        "IsAdmissionClosed": false
+      },
+      "Cases": [
+        {
+          "Transport": "http",
+          "Scenario": "authorized-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 503,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "authenticated-denial-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 403,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "anonymous-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 401,
+          "NativeFormat": "W3C",
+          "Records": 0,
+          "Histograms": 0,
+          "Outcome": null,
+          "TraceMatchesNative": null,
+          "PrivateValuesExcluded": null,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "authorized-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "authenticated-denial-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "anonymous-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 401,
+          "NativeFormat": "W3C",
+          "Records": 0,
+          "Histograms": 0,
+          "Outcome": null,
+          "TraceMatchesNative": null,
+          "PrivateValuesExcluded": null,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "admitted-during-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 2,
+          "Outcome": "Success",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "fresh-host-owner",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 2,
+          "Outcome": "Success",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "fresh-host-owner",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 2,
+          "Outcome": "Success",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        }
+      ],
+      "CanceledWaitDidNotReleaseWork": true,
+      "CompletionAfterOwnedCleanup": true,
+      "OwnedListenerClosed": true,
+      "FreshListenerClosed": true
+    },
+    {
+      "Budget": "tenant",
+      "CleanupOutcome": "fault",
+      "Open": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 1,
+        "IsAdmissionClosed": false
+      },
+      "Closed": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 1,
+        "IsAdmissionClosed": true
+      },
+      "HeldCleanup": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 1,
+        "IsAdmissionClosed": true
+      },
+      "Drained": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 0,
+        "IsAdmissionClosed": true
+      },
+      "RestartedOpen": {
+        "MaximumConcurrentOperations": 2,
+        "ActiveOperations": 0,
+        "IsAdmissionClosed": false
+      },
+      "Cases": [
+        {
+          "Transport": "http",
+          "Scenario": "authorized-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 503,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "authenticated-denial-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 403,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "anonymous-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 401,
+          "NativeFormat": "W3C",
+          "Records": 0,
+          "Histograms": 0,
+          "Outcome": null,
+          "TraceMatchesNative": null,
+          "PrivateValuesExcluded": null,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "authorized-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "authenticated-denial-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 1,
+          "Outcome": "Failure",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "anonymous-after-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 401,
+          "NativeFormat": "W3C",
+          "Records": 0,
+          "Histograms": 0,
+          "Outcome": null,
+          "TraceMatchesNative": null,
+          "PrivateValuesExcluded": null,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "admitted-during-close",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 500,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 2,
+          "Outcome": "Fault",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "http",
+          "Scenario": "fresh-host-owner",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 2,
+          "Outcome": "Success",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        },
+        {
+          "Transport": "graphql",
+          "Scenario": "fresh-host-owner",
+          "Header": "valid",
+          "Enabled": true,
+          "Status": 200,
+          "NativeFormat": "W3C",
+          "Records": 1,
+          "Histograms": 2,
+          "Outcome": "Success",
+          "TraceMatchesNative": true,
+          "PrivateValuesExcluded": true,
+          "OverlappingReads": 0
+        }
+      ],
+      "CanceledWaitDidNotReleaseWork": true,
+      "CompletionAfterOwnedCleanup": true,
+      "OwnedListenerClosed": true,
+      "FreshListenerClosed": true
+    }
+  ],
+  "wireCases": 18,
+  "completions": 14,
+  "histograms": 20,
+  "unscopedSignals": 0
+}

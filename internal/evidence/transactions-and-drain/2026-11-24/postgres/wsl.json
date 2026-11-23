@@ -1,0 +1,93 @@
+{
+  "result": "passed",
+  "samples_revision": "4ba83d1de32f59a9eca42afb00a754a3fab2a9c1",
+  "engine_revision": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "source_clean_and_unchanged": true,
+  "wsl_os": "Ubuntu 22.04.5 LTS",
+  "kernel": "Linux 6.18.58.1-microsoft-standard-WSL2 x86_64",
+  "docker_server_version": "29.10.0",
+  "dotnet_sdk_version": "11.0.100",
+  "dotnet_runtime_version": "11.0.0",
+  "postgresql_server_version": "18.6",
+  "postgresql_image_manifest": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+  "postgresql_image_config": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "npgsql_version": "10.0.3",
+  "isolation_level": "Read Committed",
+  "package_lock_graph": "locked release restore",
+  "source_sha256": {
+    "Business.Postgres.Consumer.csproj": "eab1f743fe7b0851a52f5deedcb3a81f8bbb29422d2dee5001a77c59faeabf18",
+    "Program.cs": "8977ec59c58385413771fd8bf424ebe7de4579356656629a351b0f1cf5d2faef",
+    "PostgresOrderStore.cs": "877e4868f5b2675ac74befeea4748c6000478dcd9c8970fb6a9b08f335865bfc",
+    "ConcurrentOrderChecks.cs": "d7c94954988c004f2c6eb63472d6c67a69530b68247bc5e44099f9c3506ad98a",
+    "migrations/001_orders.sql": "fb1d9b63a17fab904ce40465f8ff49a24596564e4122511e23ff0704c8055831",
+    "packages.lock.json": "c90975111b692a442cf8a309f85a0d087bae171eb4c77afd9a1f248757c9b749",
+    "run-proof.sh": "9a408b6107fd6d70d51e75d661a98b54504fc6adc4ad1abcacbbe71d9a14b297",
+    "OVERLAP-PROTOCOL.md": "152b270d3a48820736d2ba938b92b8dbedffff21372e222be858b96308e7bd6c"
+  },
+  "binary_sha256": {
+    "Business.Postgres.Consumer.dll": "c40cc20ef6d76672d978ed48c4ffe03c1d22821d4bca3ff2dd89a8e94beaac24",
+    "Business.Postgres.Consumer.runtimeconfig.json": "8c019e2c7c9acc0440d8b263897f7b0079b1c6895307921604be20e732900366",
+    "Business.Postgres.Consumer.deps.json": "fd639fc43296261db210b608d42c1dbb52d78390d445015c64febc877c1d9c3a",
+    "Npgsql.dll": "e2bcafe1660fe4543fe9dfcabed972ec8d32259e5ea8009462ce1de23c7034c2"
+  },
+  "private_log_sha256": {
+    "restore.log": "303fd9bb1e14db30d092464e25d95c162715ccbd179c33682cc1ed51f789631b",
+    "build.log": "5e92fc45c150c56d26285d59580749291ef6779928baab4f30ed9a16b5fb3c25",
+    "bootstrap.log": "e90983e77a25f9e9533e2f72d321a4145965c02785efc4faf3b28812e2fedbe0",
+    "migration-rollback.log": "11d7a5fa87f2343aec35a9b596a1d585a8db1d04762eb1d66265b59e731396b9",
+    "migration-apply.log": "b961c8ace3a60a4260d79b6165267fcd1a55deb293ab5eda0cd2f3a20507c800",
+    "migration-repeat.log": "37b4791b76521ca14264805b0a7ff5138c422e300cfb5b7bd98e5258ce3333bc",
+    "seed.log": "5acf0d1ccd259517dc90ec4419a7751aad5023eaae9b1425de35285db19779e5",
+    "results.log": "7128c8617eb19f5ed8743a409f4df112b9232a0fd9b93268b1266499a9c3e311"
+  },
+  "transcript_sha256": "ece8bb0ac893ae8d011a412d43be713953f7df458cfd24f20138191f0d6ad902",
+  "observations": [
+    "Migration rollback, explicit apply, owner and repeat refusal verified.",
+    "Same order ID isolated across tenant dispatches. Six scope controls performed zero database work.",
+    "Commit acknowledged. Same backend had no tenant scope after return. Stale revision changed zero rows.",
+    "Post-write cancellation rolled back. Same backend had no tenant scope after return.",
+    "Distinct tenant updates overlapped on separate PostgreSQL backends and committed independently.",
+    "Same-order contention had one committed update and one zero-row conditional outcome.",
+    "PostgreSQL lock-wait cancellation rolled back and the same backend returned without tenant scope.",
+    "Owned container and volume removed; loopback port closed."
+  ],
+  "overlap_cases": [
+    {
+      "same_order_id": true,
+      "participants": "distinct tenants",
+      "distinct_backends": 2,
+      "server_observed_both_open": true,
+      "committed_writes": 2,
+      "committed_before_other_released": true
+    },
+    {
+      "same_order_id": true,
+      "participants": "same tenant",
+      "expected_revision": 0,
+      "server_observed_exact_blocker": true,
+      "committed_writes": 1,
+      "zero_row_conditional_outcomes": 1
+    },
+    {
+      "same_order_id": true,
+      "participants": "same tenant",
+      "server_observed_exact_blocker": true,
+      "waiter_postgresql_sqlstate": "57014",
+      "waiter_original_caller_token": true,
+      "waiter_acknowledged_rollbacks": 1,
+      "same_backend_scope_and_rows_cleared_before_holder_release": true,
+      "committed_writes": 1
+    }
+  ],
+  "preparation": [
+    "Native sparse preparation 01 refused three missing files outside the consumer cone before restore or container startup.",
+    "Candidate 02 corrected only sparse flags and passed against the pinned PostgreSQL image.",
+    "Clean-revision staging initially refused a copied Windows CRLF attributes file before restore or container startup.",
+    "The exact committed source passed in a new owned container after restoring that tracked file from its Git blob."
+  ],
+  "scope": [
+    "Synthetic authority, fixed seeded rows and one local PostgreSQL profile.",
+    "A separate preserved eligible-row stale case isolates the revision predicate. The contended zero-row outcome can follow both revision and terminal-status guards.",
+    "No throughput, production, external identity or commit acknowledgment fault evidence."
+  ]
+}

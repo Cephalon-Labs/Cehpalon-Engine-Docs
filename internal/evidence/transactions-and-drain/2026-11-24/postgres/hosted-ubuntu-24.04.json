@@ -1,0 +1,11 @@
+{
+  "samples": "31105d54fa668456ddaddb2143414fcb5a727029",
+  "engine": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "proof": [
+    "tenant_overlap",
+    "conditional_update",
+    "lock_wait_cancellation",
+    "cleanup"
+  ],
+  "log_sha256": "266abb2da9c74f5b478f2309e795c436fc2d1ef936d1f6c2cfd6aec5e75cd608"
+}
