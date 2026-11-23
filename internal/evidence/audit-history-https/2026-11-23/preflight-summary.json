@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "preflight": true,
+  "fixture": {
+    "kind": "seeded",
+    "resource_rows": 512,
+    "distractor_rows": 128,
+    "settings": {
+      "server_version": "PostgreSQL 18.7 (Debian 18.7-1.pgdg13+5) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+      "fsync": "on",
+      "synchronous_commit": "on",
+      "full_page_writes": "on"
+    }
+  },
+  "measured_requests": 0,
+  "controls": 36,
+  "batches": [],
+  "comparisons": []
+}

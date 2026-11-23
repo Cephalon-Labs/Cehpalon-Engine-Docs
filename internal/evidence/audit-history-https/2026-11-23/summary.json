@@ -1,0 +1,1813 @@
+{
+  "status": "passed",
+  "preflight": false,
+  "fixture": {
+    "kind": "seeded",
+    "resource_rows": 512,
+    "distractor_rows": 128,
+    "settings": {
+      "server_version": "PostgreSQL 18.7 (Debian 18.7-1.pgdg13+5) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",
+      "fsync": "on",
+      "synchronous_commit": "on",
+      "full_page_writes": "on"
+    }
+  },
+  "measured_requests": 3200,
+  "controls": 144,
+  "batches": [
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "before",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 8586825,
+      "p95_ns": 10141435,
+      "p99_ns": 11148301,
+      "allocated_bytes": 67278192,
+      "gc_collections": [
+        5,
+        0,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 31075016,
+        "collections": [
+          2,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 98353208,
+        "collections": [
+          7,
+          2,
+          1
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 13171369,
+      "p95_ns": 14246589,
+      "p99_ns": 14737893,
+      "allocated_bytes": 63072544,
+      "gc_collections": [
+        5,
+        0,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 111060552,
+        "collections": [
+          8,
+          2,
+          1
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 174133096,
+        "collections": [
+          13,
+          2,
+          1
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "before",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 21887182,
+      "p95_ns": 36952685,
+      "p99_ns": 39591440,
+      "allocated_bytes": 466071512,
+      "gc_collections": [
+        40,
+        22,
+        6
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 271569112,
+        "collections": [
+          21,
+          4,
+          2
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 737640624,
+        "collections": [
+          61,
+          26,
+          8
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 13480226,
+      "p95_ns": 41419207,
+      "p99_ns": 52542990,
+      "allocated_bytes": 424397632,
+      "gc_collections": [
+        33,
+        17,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 824337880,
+        "collections": [
+          68,
+          31,
+          8
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1248735512,
+        "collections": [
+          101,
+          48,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "after",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 8362935,
+      "p95_ns": 10471441,
+      "p99_ns": 15420970,
+      "allocated_bytes": 64245472,
+      "gc_collections": [
+        5,
+        0,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 30151544,
+        "collections": [
+          2,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 94397016,
+        "collections": [
+          7,
+          2,
+          1
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 13075785,
+      "p95_ns": 14114430,
+      "p99_ns": 15137850,
+      "allocated_bytes": 60047848,
+      "gc_collections": [
+        5,
+        0,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 106498720,
+        "collections": [
+          8,
+          2,
+          1
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 166546568,
+        "collections": [
+          13,
+          2,
+          1
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "after",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 23858833,
+      "p95_ns": 37205526,
+      "p99_ns": 38162970,
+      "allocated_bytes": 441312688,
+      "gc_collections": [
+        39,
+        22,
+        7
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 259120528,
+        "collections": [
+          19,
+          2,
+          1
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 700433216,
+        "collections": [
+          58,
+          24,
+          8
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 1,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 12953468,
+      "p95_ns": 53541295,
+      "p99_ns": 55707968,
+      "allocated_bytes": 401484512,
+      "gc_collections": [
+        32,
+        17,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 782601136,
+        "collections": [
+          64,
+          26,
+          8
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1184085648,
+        "collections": [
+          96,
+          43,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 13658689,
+      "p95_ns": 16310174,
+      "p99_ns": 16932558,
+      "allocated_bytes": 60043384,
+      "gc_collections": [
+        4,
+        0,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 29342608,
+        "collections": [
+          2,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 89385992,
+        "collections": [
+          6,
+          2,
+          1
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "after",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 26312620,
+      "p95_ns": 41608324,
+      "p99_ns": 47164987,
+      "allocated_bytes": 442061320,
+      "gc_collections": [
+        39,
+        20,
+        7
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 181992864,
+        "collections": [
+          13,
+          2,
+          1
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 624054184,
+        "collections": [
+          52,
+          22,
+          8
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 14727162,
+      "p95_ns": 17861030,
+      "p99_ns": 19172268,
+      "allocated_bytes": 401391088,
+      "gc_collections": [
+        32,
+        17,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 706377240,
+        "collections": [
+          58,
+          24,
+          8
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1107768328,
+        "collections": [
+          90,
+          41,
+          8
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "after",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 5695812,
+      "p95_ns": 6889909,
+      "p99_ns": 7035839,
+      "allocated_bytes": 63725488,
+      "gc_collections": [
+        5,
+        1,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 1120601560,
+        "collections": [
+          91,
+          42,
+          8
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1184327048,
+        "collections": [
+          96,
+          43,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 11246809,
+      "p95_ns": 13242778,
+      "p99_ns": 14629673,
+      "allocated_bytes": 63199376,
+      "gc_collections": [
+        5,
+        0,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 30128776,
+        "collections": [
+          2,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 93328152,
+        "collections": [
+          7,
+          2,
+          1
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "before",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 29099905,
+      "p95_ns": 43833464,
+      "p99_ns": 47948007,
+      "allocated_bytes": 466429328,
+      "gc_collections": [
+        38,
+        21,
+        5
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 191716176,
+        "collections": [
+          15,
+          4,
+          2
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 658145504,
+        "collections": [
+          53,
+          25,
+          7
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 14941124,
+      "p95_ns": 49800573,
+      "p99_ns": 53855985,
+      "allocated_bytes": 424390376,
+      "gc_collections": [
+        34,
+        18,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 745347456,
+        "collections": [
+          61,
+          31,
+          8
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1169737832,
+        "collections": [
+          95,
+          49,
+          8
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 2,
+      "lane": "before",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6368327,
+      "p95_ns": 7737442,
+      "p99_ns": 8200221,
+      "allocated_bytes": 66614272,
+      "gc_collections": [
+        6,
+        2,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 1183147624,
+        "collections": [
+          96,
+          49,
+          8
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1249761896,
+        "collections": [
+          102,
+          51,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "before",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 29707081,
+      "p95_ns": 41138985,
+      "p99_ns": 44104472,
+      "allocated_bytes": 466489296,
+      "gc_collections": [
+        41,
+        24,
+        7
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 114964440,
+        "collections": [
+          7,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 581453736,
+        "collections": [
+          48,
+          26,
+          8
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 34128546,
+      "p95_ns": 54176793,
+      "p99_ns": 61354132,
+      "allocated_bytes": 425149944,
+      "gc_collections": [
+        34,
+        18,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 669063880,
+        "collections": [
+          55,
+          29,
+          8
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1094213824,
+        "collections": [
+          89,
+          47,
+          8
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "before",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6134864,
+      "p95_ns": 6894955,
+      "p99_ns": 7119744,
+      "allocated_bytes": 66615792,
+      "gc_collections": [
+        6,
+        1,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 1107628272,
+        "collections": [
+          90,
+          48,
+          8
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1174244064,
+        "collections": [
+          96,
+          49,
+          8
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6650054,
+      "p95_ns": 7437714,
+      "p99_ns": 7750902,
+      "allocated_bytes": 62380584,
+      "gc_collections": [
+        5,
+        1,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 1186808200,
+        "collections": [
+          97,
+          50,
+          8
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1249188784,
+        "collections": [
+          102,
+          51,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "after",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 25229593,
+      "p95_ns": 38497961,
+      "p99_ns": 41567827,
+      "allocated_bytes": 443066960,
+      "gc_collections": [
+        38,
+        18,
+        6
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 109947336,
+        "collections": [
+          7,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 553014296,
+        "collections": [
+          45,
+          20,
+          7
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 35868901,
+      "p95_ns": 53455915,
+      "p99_ns": 56079300,
+      "allocated_bytes": 401653088,
+      "gc_collections": [
+        32,
+        16,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 635547480,
+        "collections": [
+          53,
+          25,
+          8
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1037200568,
+        "collections": [
+          85,
+          41,
+          8
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "after",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6258961,
+      "p95_ns": 7098384,
+      "p99_ns": 7875237,
+      "allocated_bytes": 63724024,
+      "gc_collections": [
+        5,
+        1,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 1050037928,
+        "collections": [
+          86,
+          42,
+          8
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1113761952,
+        "collections": [
+          91,
+          43,
+          8
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 3,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6361455,
+      "p95_ns": 6967235,
+      "p99_ns": 7348756,
+      "allocated_bytes": 59614216,
+      "gc_collections": [
+        4,
+        1,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 1125748032,
+        "collections": [
+          92,
+          44,
+          8
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1185362248,
+        "collections": [
+          96,
+          45,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 31283461,
+      "p95_ns": 76798418,
+      "p99_ns": 82061347,
+      "allocated_bytes": 403909472,
+      "gc_collections": [
+        33,
+        16,
+        1
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 100074736,
+        "collections": [
+          7,
+          2,
+          1
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 503984208,
+        "collections": [
+          40,
+          18,
+          2
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "after",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6319029,
+      "p95_ns": 7692610,
+      "p99_ns": 7882876,
+      "allocated_bytes": 63743456,
+      "gc_collections": [
+        6,
+        2,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 516841920,
+        "collections": [
+          41,
+          18,
+          2
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 580585376,
+        "collections": [
+          47,
+          20,
+          2
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "after",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6981128,
+      "p95_ns": 8158974,
+      "p99_ns": 8567440,
+      "allocated_bytes": 59542424,
+      "gc_collections": [
+        5,
+        2,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 592582360,
+        "collections": [
+          47,
+          20,
+          2
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 652124784,
+        "collections": [
+          52,
+          22,
+          2
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "after",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 12683056,
+      "p95_ns": 18326967,
+      "p99_ns": 20023276,
+      "allocated_bytes": 438720512,
+      "gc_collections": [
+        37,
+        21,
+        6
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 744928352,
+        "collections": [
+          59,
+          25,
+          2
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1183648864,
+        "collections": [
+          96,
+          46,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 40588644,
+      "p95_ns": 71145282,
+      "p99_ns": 80240346,
+      "allocated_bytes": 427086832,
+      "gc_collections": [
+        34,
+        19,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 105167080,
+        "collections": [
+          9,
+          4,
+          2
+        ],
+        "queries": 26,
+        "handlers": 26,
+        "results": 26,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 532253912,
+        "collections": [
+          43,
+          23,
+          2
+        ],
+        "queries": 126,
+        "handlers": 126,
+        "results": 126,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "before",
+      "transport": "http",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6266494,
+      "p95_ns": 7403874,
+      "p99_ns": 7823025,
+      "allocated_bytes": 66630312,
+      "gc_collections": [
+        5,
+        2,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 545689104,
+        "collections": [
+          44,
+          23,
+          2
+        ],
+        "queries": 146,
+        "handlers": 146,
+        "results": 146,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 612319416,
+        "collections": [
+          49,
+          25,
+          2
+        ],
+        "queries": 246,
+        "handlers": 246,
+        "results": 246,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "before",
+      "transport": "graphql",
+      "limit": 25,
+      "samples": 100,
+      "p50_ns": 6534417,
+      "p95_ns": 7373956,
+      "p99_ns": 7831898,
+      "allocated_bytes": 62444376,
+      "gc_collections": [
+        5,
+        2,
+        0
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 624900224,
+        "collections": [
+          50,
+          25,
+          2
+        ],
+        "queries": 266,
+        "handlers": 266,
+        "results": 266,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 687344600,
+        "collections": [
+          55,
+          27,
+          2
+        ],
+        "queries": 366,
+        "handlers": 366,
+        "results": 366,
+        "active": 0
+      }
+    },
+    {
+      "kind": "batch",
+      "pair": 4,
+      "lane": "before",
+      "transport": "http",
+      "limit": 200,
+      "samples": 100,
+      "p50_ns": 13815951,
+      "p95_ns": 17990699,
+      "p99_ns": 18765945,
+      "allocated_bytes": 461801624,
+      "gc_collections": [
+        39,
+        25,
+        6
+      ],
+      "source_queries": 100,
+      "before": {
+        "kind": "snapshot",
+        "allocated": 784786968,
+        "collections": [
+          62,
+          30,
+          2
+        ],
+        "queries": 386,
+        "handlers": 386,
+        "results": 386,
+        "active": 0
+      },
+      "after": {
+        "kind": "snapshot",
+        "allocated": 1246588592,
+        "collections": [
+          101,
+          55,
+          8
+        ],
+        "queries": 486,
+        "handlers": 486,
+        "results": 486,
+        "active": 0
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "transport": "http",
+      "limit": 25,
+      "pairs": [
+        {
+          "pair": 1,
+          "before": {
+            "p50_ms": 8.586825,
+            "p95_ms": 10.141435,
+            "p99_ms": 11.148301,
+            "bytes_per_request": 672781.92
+          },
+          "after": {
+            "p50_ms": 8.362935,
+            "p95_ms": 10.471441,
+            "p99_ms": 15.42097,
+            "bytes_per_request": 642454.72
+          },
+          "percent_change": {
+            "p50_ms": -2.607366517892229,
+            "p95_ms": 3.254036534277449,
+            "p99_ms": 38.325741294570356,
+            "bytes_per_request": -4.507731123333403
+          }
+        },
+        {
+          "pair": 2,
+          "before": {
+            "p50_ms": 6.368327,
+            "p95_ms": 7.737442,
+            "p99_ms": 8.200221,
+            "bytes_per_request": 666142.72
+          },
+          "after": {
+            "p50_ms": 5.695812,
+            "p95_ms": 6.889909,
+            "p99_ms": 7.035839,
+            "bytes_per_request": 637254.88
+          },
+          "percent_change": {
+            "p50_ms": -10.560308853486944,
+            "p95_ms": -10.953658844874049,
+            "p99_ms": -14.199397796717928,
+            "bytes_per_request": -4.336584208260952
+          }
+        },
+        {
+          "pair": 3,
+          "before": {
+            "p50_ms": 6.134864,
+            "p95_ms": 6.894955,
+            "p99_ms": 7.119744,
+            "bytes_per_request": 666157.92
+          },
+          "after": {
+            "p50_ms": 6.258961,
+            "p95_ms": 7.098384,
+            "p99_ms": 7.875237,
+            "bytes_per_request": 637240.24
+          },
+          "percent_change": {
+            "p50_ms": 2.022815827702118,
+            "p95_ms": 2.950403592191675,
+            "p99_ms": 10.611238269241152,
+            "bytes_per_request": -4.340964676964287
+          }
+        },
+        {
+          "pair": 4,
+          "before": {
+            "p50_ms": 6.266494,
+            "p95_ms": 7.403874,
+            "p99_ms": 7.823025,
+            "bytes_per_request": 666303.12
+          },
+          "after": {
+            "p50_ms": 6.319029,
+            "p95_ms": 7.69261,
+            "p99_ms": 7.882876,
+            "bytes_per_request": 637434.56
+          },
+          "percent_change": {
+            "p50_ms": 0.8383475672361529,
+            "p95_ms": 3.899796241805298,
+            "p99_ms": 0.7650621083276521,
+            "bytes_per_request": -4.3326466788869205
+          }
+        }
+      ],
+      "median_paired_percent": {
+        "p50_ms": -0.884509475328038,
+        "p95_ms": 3.102220063234562,
+        "p99_ms": 5.688150188784402,
+        "bytes_per_request": -4.338774442612619
+      }
+    },
+    {
+      "transport": "graphql",
+      "limit": 25,
+      "pairs": [
+        {
+          "pair": 1,
+          "before": {
+            "p50_ms": 13.171369,
+            "p95_ms": 14.246589,
+            "p99_ms": 14.737893,
+            "bytes_per_request": 630725.44
+          },
+          "after": {
+            "p50_ms": 13.075785,
+            "p95_ms": 14.11443,
+            "p99_ms": 15.13785,
+            "bytes_per_request": 600478.48
+          },
+          "percent_change": {
+            "p50_ms": -0.7256952561271346,
+            "p95_ms": -0.9276536299320459,
+            "p99_ms": 2.71380040552609,
+            "bytes_per_request": -4.795582686501431
+          }
+        },
+        {
+          "pair": 2,
+          "before": {
+            "p50_ms": 11.246809,
+            "p95_ms": 13.242778,
+            "p99_ms": 14.629673,
+            "bytes_per_request": 631993.76
+          },
+          "after": {
+            "p50_ms": 13.658689,
+            "p95_ms": 16.310174,
+            "p99_ms": 16.932558,
+            "bytes_per_request": 600433.84
+          },
+          "percent_change": {
+            "p50_ms": 21.44501609300913,
+            "p95_ms": 23.162783518684684,
+            "p99_ms": 15.741192574844298,
+            "bytes_per_request": -4.993707532808555
+          }
+        },
+        {
+          "pair": 3,
+          "before": {
+            "p50_ms": 6.650054,
+            "p95_ms": 7.437714,
+            "p99_ms": 7.750902,
+            "bytes_per_request": 623805.84
+          },
+          "after": {
+            "p50_ms": 6.361455,
+            "p95_ms": 6.967235,
+            "p99_ms": 7.348756,
+            "bytes_per_request": 596142.16
+          },
+          "percent_change": {
+            "p50_ms": -4.3397993459902695,
+            "p95_ms": -6.32558606044814,
+            "p99_ms": -5.188376785050308,
+            "bytes_per_request": -4.43466191339279
+          }
+        },
+        {
+          "pair": 4,
+          "before": {
+            "p50_ms": 6.534417,
+            "p95_ms": 7.373956,
+            "p99_ms": 7.831898,
+            "bytes_per_request": 624443.76
+          },
+          "after": {
+            "p50_ms": 6.981128,
+            "p95_ms": 8.158974,
+            "p99_ms": 8.56744,
+            "bytes_per_request": 595424.24
+          },
+          "percent_change": {
+            "p50_ms": 6.836279349787433,
+            "p95_ms": 10.645818879309843,
+            "p99_ms": 9.391618736607654,
+            "bytes_per_request": -4.647259186319685
+          }
+        }
+      ],
+      "median_paired_percent": {
+        "p50_ms": 3.055292046830149,
+        "p95_ms": 4.859082624688899,
+        "p99_ms": 6.052709571066872,
+        "bytes_per_request": -4.721420936410558
+      }
+    },
+    {
+      "transport": "http",
+      "limit": 200,
+      "pairs": [
+        {
+          "pair": 1,
+          "before": {
+            "p50_ms": 21.887182,
+            "p95_ms": 36.952685,
+            "p99_ms": 39.59144,
+            "bytes_per_request": 4660715.12
+          },
+          "after": {
+            "p50_ms": 23.858833,
+            "p95_ms": 37.205526,
+            "p99_ms": 38.16297,
+            "bytes_per_request": 4413126.88
+          },
+          "percent_change": {
+            "p50_ms": 9.00824509980318,
+            "p95_ms": 0.6842290350484559,
+            "p99_ms": -3.6080273917796335,
+            "bytes_per_request": -5.312237148706056
+          }
+        },
+        {
+          "pair": 2,
+          "before": {
+            "p50_ms": 29.099905,
+            "p95_ms": 43.833464,
+            "p99_ms": 47.948007,
+            "bytes_per_request": 4664293.28
+          },
+          "after": {
+            "p50_ms": 26.31262,
+            "p95_ms": 41.608324,
+            "p99_ms": 47.164987,
+            "bytes_per_request": 4420613.2
+          },
+          "percent_change": {
+            "p50_ms": -9.578330238535148,
+            "p95_ms": -5.076349886470288,
+            "p99_ms": -1.6330605774709128,
+            "bytes_per_request": -5.224373026560625
+          }
+        },
+        {
+          "pair": 3,
+          "before": {
+            "p50_ms": 29.707081,
+            "p95_ms": 41.138985,
+            "p99_ms": 44.104472,
+            "bytes_per_request": 4664892.96
+          },
+          "after": {
+            "p50_ms": 25.229593,
+            "p95_ms": 38.497961,
+            "p99_ms": 41.567827,
+            "bytes_per_request": 4430669.6
+          },
+          "percent_change": {
+            "p50_ms": -15.072123713534824,
+            "p95_ms": -6.419759748569398,
+            "p99_ms": -5.751446247899761,
+            "bytes_per_request": -5.02098037422064
+          }
+        },
+        {
+          "pair": 4,
+          "before": {
+            "p50_ms": 13.815951,
+            "p95_ms": 17.990699,
+            "p99_ms": 18.765945,
+            "bytes_per_request": 4618016.24
+          },
+          "after": {
+            "p50_ms": 12.683056,
+            "p95_ms": 18.326967,
+            "p99_ms": 20.023276,
+            "bytes_per_request": 4387205.12
+          },
+          "percent_change": {
+            "p50_ms": -8.199906036146187,
+            "p95_ms": 1.869121372104554,
+            "p99_ms": 6.7000675958498235,
+            "bytes_per_request": -4.998057780758258
+          }
+        }
+      ],
+      "median_paired_percent": {
+        "p50_ms": -8.889118137340667,
+        "p95_ms": -2.196060425710916,
+        "p99_ms": -2.6205439846252734,
+        "bytes_per_request": -5.122676700390633
+      }
+    },
+    {
+      "transport": "graphql",
+      "limit": 200,
+      "pairs": [
+        {
+          "pair": 1,
+          "before": {
+            "p50_ms": 13.480226,
+            "p95_ms": 41.419207,
+            "p99_ms": 52.54299,
+            "bytes_per_request": 4243976.32
+          },
+          "after": {
+            "p50_ms": 12.953468,
+            "p95_ms": 53.541295,
+            "p99_ms": 55.707968,
+            "bytes_per_request": 4014845.12
+          },
+          "percent_change": {
+            "p50_ms": -3.9076347829776648,
+            "p95_ms": 29.26682782700305,
+            "p99_ms": 6.023597058332619,
+            "bytes_per_request": -5.39897451642709
+          }
+        },
+        {
+          "pair": 2,
+          "before": {
+            "p50_ms": 14.941124,
+            "p95_ms": 49.800573,
+            "p99_ms": 53.855985,
+            "bytes_per_request": 4243903.76
+          },
+          "after": {
+            "p50_ms": 14.727162,
+            "p95_ms": 17.86103,
+            "p99_ms": 19.172268,
+            "bytes_per_request": 4013910.88
+          },
+          "percent_change": {
+            "p50_ms": -1.4320341628916267,
+            "p95_ms": -64.13489057645984,
+            "p99_ms": -64.40085906886672,
+            "bytes_per_request": -5.419370772913091
+          }
+        },
+        {
+          "pair": 3,
+          "before": {
+            "p50_ms": 34.128546,
+            "p95_ms": 54.176793,
+            "p99_ms": 61.354132,
+            "bytes_per_request": 4251499.44
+          },
+          "after": {
+            "p50_ms": 35.868901,
+            "p95_ms": 53.455915,
+            "p99_ms": 56.0793,
+            "bytes_per_request": 4016530.88
+          },
+          "percent_change": {
+            "p50_ms": 5.09941150144515,
+            "p95_ms": -1.3306029391588536,
+            "p99_ms": -8.597354127673096,
+            "bytes_per_request": -5.526722120419725
+          }
+        },
+        {
+          "pair": 4,
+          "before": {
+            "p50_ms": 40.588644,
+            "p95_ms": 71.145282,
+            "p99_ms": 80.240346,
+            "bytes_per_request": 4270868.32
+          },
+          "after": {
+            "p50_ms": 31.283461,
+            "p95_ms": 76.798418,
+            "p99_ms": 82.061347,
+            "bytes_per_request": 4039094.72
+          },
+          "percent_change": {
+            "p50_ms": -22.92558233775931,
+            "p95_ms": 7.945904269519954,
+            "p99_ms": 2.2694331352957953,
+            "bytes_per_request": -5.426849592028626
+          }
+        }
+      ],
+      "median_paired_percent": {
+        "p50_ms": -2.669834472934646,
+        "p95_ms": 3.3076506651805504,
+        "p99_ms": -3.1639604961886505,
+        "bytes_per_request": -5.423110182470858
+      }
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+80970584e0c3682ff63b70b99900e659d3219b50359831e786921fe7527aa5eb  control-03/measure_audit_history_https.py
+06cbc893e0d5462032c0b4843dfff65c9f86ab70f6157ed3cd562e395b789aba  control-03/protocol.md
+bcbe31a9e9c79f5646679b56f715ef148d45de4ce26af5728aaf3b198fb22f58  samples-before-02/audit-outbox/bin/Release/net11.0/PostgresAuditOutbox.Consumer.dll
+51eca56b7b8dff1807ec15d95fc42cf63b350670bfa5a548006ad30139e8a893  samples-before-02/audit-outbox/bin/Release/net11.0/Cehpalon.Engine.Tenancy.dll
+e2bcafe1660fe4543fe9dfcabed972ec8d32259e5ea8009462ce1de23c7034c2  samples-before-02/audit-outbox/bin/Release/net11.0/Npgsql.dll
+2e262532f769009a98d3c75ca623eb000f7151e79fc268d6ef896351b40147db  samples-after-02/audit-outbox/bin/Release/net11.0/PostgresAuditOutbox.Consumer.dll
+36d23110efb418f466456b661e0827d5463a746550790c0f7919fa3842e9b285  samples-after-02/audit-outbox/bin/Release/net11.0/Cehpalon.Engine.Tenancy.dll
+e2bcafe1660fe4543fe9dfcabed972ec8d32259e5ea8009462ce1de23c7034c2  samples-after-02/audit-outbox/bin/Release/net11.0/Npgsql.dll
