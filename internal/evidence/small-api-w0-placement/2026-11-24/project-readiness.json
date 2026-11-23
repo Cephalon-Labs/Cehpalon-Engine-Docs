@@ -1,0 +1,16 @@
+{
+  "checked_at_bangkok_date": "2026-11-24",
+  "samples_main": "7b577315bc86b00d457148f52b3c0fdf578e274a",
+  "engine_main": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "approved_project_app_and_driver_target_found": false,
+  "repository_self_hosted_runners": {
+    "engine": {"registered": 0, "online": 0},
+    "docs": {"registered": 0, "online": 0},
+    "samples": {"registered": 0, "online": 0}
+  },
+  "organization_runner_inventory_http_status": 403,
+  "project_alias_environment_override_or_infrastructure_inventory_target_found": false,
+  "provider_resources_provisioned": false,
+  "real_host_preflight_launched": false,
+  "timed_benchmark_launched": false
+}

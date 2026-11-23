@@ -1,5 +1,7 @@
 # Small API two-host TLS preflight
 
+Follow-up on 2026-11-24: [W0 machine allocation and staged deployment](../planning/small-api-w0-machine-allocation.md).
+
 The Samples runner now accepts a private two-host configuration for
 Small API. The controller runs on the app machine. It checks the
 locked Release deployment, launches the app on a private IPv4 TLS

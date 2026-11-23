@@ -1,0 +1,11 @@
+{
+  "wsl_root": {
+    "cpu.max": "max 100000",
+    "cpuset.cpus.effective": "0-19",
+    "memory.max": "max"
+  },
+  "qualified": false,
+  "observation": "The Linux cgroup namespace can hide enclosing resource limits.",
+  "reference_preflight_started": false,
+  "timed_benchmark_launched": false
+}
