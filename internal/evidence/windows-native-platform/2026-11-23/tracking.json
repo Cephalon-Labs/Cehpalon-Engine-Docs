@@ -1,0 +1,11 @@
+{
+  "mirrors_verified": 23,
+  "changed_issue": 3,
+  "status": "Done",
+  "test_gate": "Passed",
+  "changed_fields": [
+    "Status",
+    "Test gate"
+  ],
+  "sha256": "a1538230b9b6fe4f94583705a9426229a7b89b5f8475ecfb068df6827cf12852"
+}

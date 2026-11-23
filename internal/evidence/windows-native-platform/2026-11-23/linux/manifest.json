@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "revision": "c18757f7ef4df2c78c73e902aa39d05424e6bcff",
+  "source_sha256": "fae7ece1c4982c936e48d56ae8eff0bf9d6d589f021fbe845169ea0a10cb77c8",
+  "pin_manifest_sha256": "47630063d00bee68a8d368b0aa656fec4d6eff5b642791a4a01d17b25c258ddf",
+  "started_utc": "2026-11-23T15:30:07.287531+00:00",
+  "scope": "WSL Ubuntu SDK/driver plus owned Linux OCI fixtures. Loopback plaintext.",
+  "fixtures": {
+    "postgresql": {
+      "version_pin": "18.6",
+      "pull_reference": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+      "config_digest": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+      "platform": "linux/amd64",
+      "server_version": "18.6 (Debian 18.6-1.pgdg13+2)",
+      "os": "PRETTY_NAME=\"Debian GNU/Linux 13 (trixie)\""
+    },
+    "rabbitmq": {
+      "version_pin": "4.4.0",
+      "pull_reference": "registry-1.docker.io/library/rabbitmq@sha256:184d4ae2a5d7fd4cbe1ad7165d1fb6c1377735ed2744c6be478deed5e8f0ba88",
+      "config_digest": "sha256:f145e7a82c858bcb253703571f5dce9ca48854358a68025c638e3fb5a4318969",
+      "platform": "linux/amd64",
+      "server_version": "4.4.0",
+      "erlang_otp": "Erlang/OTP 29.1.2",
+      "os": "PRETTY_NAME=\"Ubuntu 26.04.1 LTS\""
+    }
+  },
+  "cleanup": {
+    "rabbitmq": {
+      "container_gone": true,
+      "loopback_closed": true,
+      "volumes_removed": true
+    },
+    "postgresql": {
+      "container_gone": true,
+      "loopback_closed": true,
+      "volumes_removed": true
+    },
+    "network_gone": true
+  },
+  "source_files": {
+    "Directory.Packages.props": "c04ec0b55ef1ed74c3defc8e4938951351ac546e2062f45c6336dff28d32a9c1",
+    "Tests/PlatformQualification/NuGet.Config": "f545a7e2ea14ac53cdfb91217cae67b8ff14275313f6298f9a3331d205b6c948",
+    "Tests/PlatformQualification/PlatformQualification.csproj": "d4141da578c945bf8ec2bdb44b41a5ac825599996f927e478b0fe27986a5e8e3",
+    "Tests/PlatformQualification/Program.cs": "9897992b38c59b2f19a533cfae5ff7a623961c9fb74c5fc60dac7ca93118811c",
+    "Tests/PlatformQualification/packages.lock.json": "06273e8dafac211be16f363b448b1c5911686dab0fa196937c5d78cb119fdc69",
+    "Tests/PlatformQualification/run-owned-fixtures.py": "3ee2aeca5126dee4333fce3a75a06e7a82a75fedef1b95fe3c57a17fb703626a",
+    "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58"
+  },
+  "docker_server": "29.10.0 linux/amd64",
+  "wsl_os": "PRETTY_NAME=\"Ubuntu 22.04.5 LTS\"",
+  "wsl_kernel": "Linux 6.18.58.1-microsoft-standard-WSL2 x86_64 GNU/Linux",
+  "sdk": "11.0.100",
+  "assembly_sha256": "310e90a4230cdc79321fc7e42bd198430920cee4aa4f4e0c59a2d5d05960f9f4",
+  "result": {
+    "passed": 14,
+    "failed": 0,
+    "not_run": 0,
+    "qualification_sha256": "4e68e1b51cfdae74890ceb250b8e7b2e86837306ef77f401b7d9f660d39ceac1"
+  },
+  "finished_utc": "2026-11-23T15:30:56.551520+00:00"
+}

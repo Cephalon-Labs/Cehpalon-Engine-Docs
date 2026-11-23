@@ -1,0 +1,60 @@
+{
+  "sample_commit": "50d628a935cb911e5d6283fd5f6b804ea8bcbf8a",
+  "sample_main_after_push": "309683bd9f09408615c6b6d559b3f7abc6a59419",
+  "runs": [
+    {
+      "os": "windows",
+      "status": "passed",
+      "observer_source_sha256": "ae5da81db4865ec29ba56b8f0407cf90edaa9a346312b43c4f883587f0862bc3",
+      "engine_input_count": 32,
+      "manifest_sha256": "3f1ee06bf38e84928f9b991d2a2dcee6986c35bea87c4175aeda8d3cf1eb4bd2",
+      "cases": [
+        {
+          "mode": "healthy",
+          "wire_controls": 6,
+          "measurements": 12,
+          "output_sha256": "fbfe7a6bb3a585dd00b4d2e551899f7954cab2edfa65ef609a9d2acc8b6d769c"
+        },
+        {
+          "mode": "publication-fault",
+          "wire_controls": 12,
+          "measurements": 0,
+          "output_sha256": "7ff542488d45cc940f602fb10326222ff80d93128392fbbedda4d46eadc25f70"
+        },
+        {
+          "mode": "measurement-fault",
+          "wire_controls": 6,
+          "measurements": 12,
+          "output_sha256": "8a893a6b6eb629a8c91c33c1859e6f224b2801a5fb4caeb98747c260dbfad005"
+        }
+      ]
+    },
+    {
+      "os": "wsl",
+      "status": "passed",
+      "observer_source_sha256": "ae5da81db4865ec29ba56b8f0407cf90edaa9a346312b43c4f883587f0862bc3",
+      "engine_input_count": 32,
+      "manifest_sha256": "de76de76b1f90795cc403be1b7d2cd618f0e59c68334294f3ba96c64aef3e3c0",
+      "cases": [
+        {
+          "mode": "healthy",
+          "wire_controls": 6,
+          "measurements": 12,
+          "output_sha256": "ae2c6c83a20cc74deaff1306bf17a1cdec52ec760618a6dcc563d3a995e67ddb"
+        },
+        {
+          "mode": "publication-fault",
+          "wire_controls": 12,
+          "measurements": 0,
+          "output_sha256": "c2fb3e7085f1ee1b4301753effc78095aa773183e3d0cd6fc10ac60efaceb05d"
+        },
+        {
+          "mode": "measurement-fault",
+          "wire_controls": 6,
+          "measurements": 12,
+          "output_sha256": "cde51ae9aa90555eb316ef6f777ee412b4ffddb080a6eacf723abdf5f8c7545e"
+        }
+      ]
+    }
+  ]
+}

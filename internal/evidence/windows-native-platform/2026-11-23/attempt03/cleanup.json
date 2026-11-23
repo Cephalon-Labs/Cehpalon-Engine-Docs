@@ -1,0 +1,7 @@
+{
+  "ownedPortsSelected": 4,
+  "failures": [
+    "RabbitMQ shutdown or process join failed."
+  ],
+  "remainingListenerCount": 0
+}

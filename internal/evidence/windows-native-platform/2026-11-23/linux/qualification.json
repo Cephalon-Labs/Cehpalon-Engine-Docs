@@ -1,0 +1,67 @@
+{
+  "framework": ".NET 11.0.0",
+  "runtime": "11.0.0",
+  "os": "Ubuntu 22.04.5 LTS",
+  "passed": 14,
+  "failed": 0,
+  "notRun": 0,
+  "results": [
+    {
+      "Name": "net11-ga-runtime-and-architecture",
+      "Status": "Passed"
+    },
+    {
+      "Name": "platform-config-provider-precedence",
+      "Status": "Passed"
+    },
+    {
+      "Name": "npgsql-assembly-and-datasource-disposal",
+      "Status": "Passed"
+    },
+    {
+      "Name": "rabbitmq-client-assembly-and-configuration",
+      "Status": "Passed"
+    },
+    {
+      "Name": "https-and-http-only-graphql-startup",
+      "Status": "Passed"
+    },
+    {
+      "Name": "https-fixture-custom-ca-chain-and-hostname",
+      "Status": "Passed"
+    },
+    {
+      "Name": "https-rejects-wrong-hostname",
+      "Status": "Passed"
+    },
+    {
+      "Name": "graphql-http-query-and-no-ide",
+      "Status": "Passed"
+    },
+    {
+      "Name": "jwt-valid-rs256-and-required-authentication",
+      "Status": "Passed"
+    },
+    {
+      "Name": "jwt-rejects-wrong-issuer-audience-expiry-signature",
+      "Status": "Passed"
+    },
+    {
+      "Name": "http-request-abort-reaches-handler-and-cleans-up",
+      "Status": "Passed"
+    },
+    {
+      "Name": "owned-host-graceful-shutdown",
+      "Status": "Passed"
+    },
+    {
+      "Name": "npgsql-real-provider-transaction-query-cancellation",
+      "Status": "Passed"
+    },
+    {
+      "Name": "rabbitmq-real-provider-confirm-manual-ack",
+      "Status": "Passed"
+    }
+  ],
+  "raw_report_sha256": "4e68e1b51cfdae74890ceb250b8e7b2e86837306ef77f401b7d9f660d39ceac1"
+}

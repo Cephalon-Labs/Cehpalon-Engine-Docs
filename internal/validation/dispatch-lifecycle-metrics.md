@@ -87,3 +87,5 @@ It observed +4.34 ns/read on Windows and +3.53 ns/read on WSL on paired
 medians, with no additional allocation in measured batches.
 
 [Raw data and protocols](../evidence/dispatch-lifecycle-metrics/2026-11-23) · [Hosted contracts](https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/45201013780) · [Hosted platform smoke](https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/45201014020)
+
+[Sample probe source](https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/tree/main/tooling-small-api/dispatch-lifecycle-metrics)

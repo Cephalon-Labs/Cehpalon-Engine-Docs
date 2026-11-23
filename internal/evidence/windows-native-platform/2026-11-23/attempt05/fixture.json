@@ -1,0 +1,53 @@
+{
+  "engineRevision": "f77c42b187483086e99a5ec5ade6bcd80b9ad738",
+  "cleanSource": false,
+  "runnerOs": "Microsoft Windows 10.0.26300",
+  "runnerArchitecture": "X64",
+  "windowsCaption": "Microsoft Windows 11 Pro",
+  "runnerImageOs": null,
+  "runnerImageVersion": null,
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "fixture": "Windows native x64 archive binaries, IPv4 loopback",
+  "artifacts": {
+    "dotnet-sdk-11.0.100-win-x64.zip": {
+      "digest": "5cdd9122c84873f090038548ebe8a4786e5c50a6b1b9792ca2c6dab82fd74a0d7f1d6cdf59e7dcd25e4903dd44f37af5d7ed73ecd3bca4d0cce948b5572452c3",
+      "algorithm": "SHA512",
+      "expectedDigest": "5cdd9122c84873f090038548ebe8a4786e5c50a6b1b9792ca2c6dab82fd74a0d7f1d6cdf59e7dcd25e4903dd44f37af5d7ed73ecd3bca4d0cce948b5572452c3",
+      "url": "https://builds.dotnet.microsoft.com/dotnet/Sdk/11.0.100/dotnet-sdk-11.0.100-win-x64.zip",
+      "bytes": 337835326
+    },
+    "postgresql-18.6-5-windows-x64-binaries.zip": {
+      "digest": "e2246ba91d22345bc3d017586c09ede52d9df180b1eeb480f050445f1cad84e2",
+      "algorithm": "SHA256",
+      "expectedDigest": "e2246ba91d22345bc3d017586c09ede52d9df180b1eeb480f050445f1cad84e2",
+      "url": "https://get.enterprisedb.com/postgresql/postgresql-18.6-5-windows-x64-binaries.zip",
+      "bytes": 384620317
+    },
+    "rabbitmq-server-windows-4.4.0.zip": {
+      "digest": "c077a084890e57e1498e479913d4d5bda77e88647e153b433e97f72a31431542",
+      "algorithm": "SHA256",
+      "expectedDigest": "c077a084890e57e1498e479913d4d5bda77e88647e153b433e97f72a31431542",
+      "url": "https://github.com/rabbitmq/rabbitmq-server/releases/download/v4.4.0/rabbitmq-server-windows-4.4.0.zip",
+      "bytes": 71254469
+    },
+    "otp_win64_29.1.2.zip": {
+      "digest": "4efe9772a84c6c1ef75377e9326815584958776c905f2bf687b62509e2d809c0",
+      "algorithm": "SHA256",
+      "expectedDigest": "4efe9772a84c6c1ef75377e9326815584958776c905f2bf687b62509e2d809c0",
+      "url": "https://github.com/erlang/otp/releases/download/OTP-29.1.2/otp_win64_29.1.2.zip",
+      "bytes": 187258393
+    }
+  },
+  "pythonVersionOutput": "Python 3.11.15",
+  "sdkVersionOutput": "11.0.100",
+  "epmdLoopbackAddresses": [
+    "::1",
+    "127.0.0.1"
+  ],
+  "providerVersions": {
+    "rabbitmq": "4.4.0",
+    "postgresql": "18.6",
+    "otp": "29.1.2"
+  }
+}

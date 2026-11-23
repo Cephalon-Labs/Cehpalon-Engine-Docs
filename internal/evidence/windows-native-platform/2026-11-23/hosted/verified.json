@@ -1,0 +1,36 @@
+{
+  "run": 45205225398,
+  "nativeJob": 137798998142,
+  "engineRevision": "a6fb5ace85b3fa01fb13f121e6efcbb91f600c16",
+  "windowsCaption": "Microsoft Windows Server 2025 Datacenter",
+  "os": "Microsoft Windows 10.0.26100",
+  "runnerImageOs": "win25-vs2026",
+  "runnerImageVersion": "20261116.315.1",
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "python": "Python 3.13.17",
+  "providerVersions": {
+    "postgresql": "18.6",
+    "otp": "29.1.2",
+    "rabbitmq": "4.4.0"
+  },
+  "passed": 14,
+  "failed": 0,
+  "notRun": 0,
+  "remainingListenerCount": 0,
+  "archiveCount": 4,
+  "artifacts": [
+    {
+      "name": "cleanup.json",
+      "sha256": "d44c504dc714345fafd793d24fb2c32bce0a2cd8e56dca6607998218b57ba0ed"
+    },
+    {
+      "name": "fixture.json",
+      "sha256": "865f88ddf06f5acb136052fdcf97280282cb7b8910c0941ec86f9d4186abdee7"
+    },
+    {
+      "name": "qualification.json",
+      "sha256": "2174c2301d0e6a013932f4999f9f1d08a37e05f6f2ac7844fb11d86fac91fcc2"
+    }
+  ]
+}

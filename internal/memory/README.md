@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-23 Dispatch and lifecycle histograms](2026-11-23-dispatch-lifecycle-metrics.md).
+Latest handoff: [2026-11-23 GA platform and real provider compatibility](2026-11-23-platform-real-providers-ga.md).
+
+Prior delivery: [2026-11-23 Dispatch and lifecycle histograms](2026-11-23-dispatch-lifecycle-metrics.md).
 
 Prior status and continuation plan: [2026-11-23 Engine status](2026-11-23-engine-continuation.md).
 
