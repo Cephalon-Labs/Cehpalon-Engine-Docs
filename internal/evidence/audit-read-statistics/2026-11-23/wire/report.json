@@ -1,0 +1,122 @@
+{
+  "phase": "wire",
+  "passed": 8,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "HTTP exported selected contracts match actual complete and selected response shapes",
+      "passed": true
+    },
+    {
+      "name": "HTTP resource-only export and runtime omit lookup and disabled transport work",
+      "passed": true
+    },
+    {
+      "name": "HTTP exported metadata never expands same-ID tenant grants or cursor binding",
+      "passed": true
+    },
+    {
+      "name": "HTTP catalog extraction preserves fresh authority sibling isolation and shared capacity",
+      "passed": true
+    },
+    {
+      "name": "GraphQL exported selected contracts match actual complete and selected response shapes",
+      "passed": true
+    },
+    {
+      "name": "GraphQL resource-only export and runtime omit lookup and disabled transport work",
+      "passed": true
+    },
+    {
+      "name": "GraphQL exported metadata never expands same-ID tenant grants or cursor binding",
+      "passed": true
+    },
+    {
+      "name": "GraphQL catalog extraction preserves fresh authority sibling isolation and shared capacity",
+      "passed": true
+    }
+  ],
+  "observations": [
+    {
+      "phase": "contract_wire_parity",
+      "transport": "HTTP",
+      "HTTP_full_JSON_and_GraphQL_selected_shapes": true,
+      "complete_type_surface_actual_SDL": false,
+      "schema_requests_and_introspection_remain_disabled": false,
+      "generated_checked_gateway_and_one_source": true
+    },
+    {
+      "phase": "contract_wire_disabled",
+      "transport": "HTTP",
+      "exported_and_runtime_lookup_absent": true,
+      "disabled_transport_absent": true,
+      "disabled_lookup_handler_and_source": 0,
+      "GraphQL_services_only_when_selected": true
+    },
+    {
+      "phase": "contract_wire_tenant_isolation",
+      "transport": "HTTP",
+      "same_receipt_resource_ID_A_B": true,
+      "same_authenticated_principal_separate_grants": true,
+      "forged_and_cross_bound_requests_no_query": true,
+      "artifacts_not_authority": true
+    },
+    {
+      "phase": "contract_wire_authority_and_capacity",
+      "transport": "HTTP",
+      "fresh_membership_resource_policy": true,
+      "GraphQL_per_field_authority": false,
+      "one_shared_cross_protocol_budget": true,
+      "positive_post_SQL_hold_not_SQL_running_claim": true,
+      "rejection_before_handler_query": true,
+      "release_recovery_and_join": true
+    },
+    {
+      "phase": "contract_wire_parity",
+      "transport": "GraphQL",
+      "HTTP_full_JSON_and_GraphQL_selected_shapes": true,
+      "complete_type_surface_actual_SDL": true,
+      "schema_requests_and_introspection_remain_disabled": true,
+      "generated_checked_gateway_and_one_source": true
+    },
+    {
+      "phase": "contract_wire_disabled",
+      "transport": "GraphQL",
+      "exported_and_runtime_lookup_absent": true,
+      "disabled_transport_absent": true,
+      "disabled_lookup_handler_and_source": 0,
+      "GraphQL_services_only_when_selected": true
+    },
+    {
+      "phase": "contract_wire_tenant_isolation",
+      "transport": "GraphQL",
+      "same_receipt_resource_ID_A_B": true,
+      "same_authenticated_principal_separate_grants": true,
+      "forged_and_cross_bound_requests_no_query": true,
+      "artifacts_not_authority": true
+    },
+    {
+      "phase": "contract_wire_authority_and_capacity",
+      "transport": "GraphQL",
+      "fresh_membership_resource_policy": true,
+      "GraphQL_per_field_authority": true,
+      "one_shared_cross_protocol_budget": true,
+      "positive_post_SQL_hold_not_SQL_running_claim": true,
+      "rejection_before_handler_query": true,
+      "release_recovery_and_join": true
+    }
+  ],
+  "schemas": [
+    "ao_c0dc7bc1c12d46b69da9c124eccd116f",
+    "ao_ef9059e7a3ab415ab93545517ee545d3",
+    "ao_80841bbb48d74c9ba4ed1c41f2b6adab",
+    "ao_23c8fb1e110346289536b079ce24f026",
+    "ao_63be71b359e54cbc9b5bb2d3d8404de7",
+    "ao_cb9944e37a4044628577bbdf7dca5570",
+    "ao_00b6ffbc5f85428bac6e2ccaedcc75c6",
+    "ao_a435a415d819488595a452d410b3f6ac"
+  ],
+  "scope": "Eight targeted audit-contract checks per phase; existing332-provider/651-security suites are reused baseline, not rerun or added to these totals.",
+  "shape_checker": "Bounded type/required/properties/items/allOf/anyOf/local-ref fixture checks; not a general JSON Schema validator. GraphQL subset shapes and exact actual SDL are separate.",
+  "topology": "WSL.NET direct owned loopback PostgreSQL"
+}

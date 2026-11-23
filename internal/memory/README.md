@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-23 Opt-in audit read timeout signal](2026-11-23-audit-read-timeout-signal.md).
+Latest handoff: [2026-11-23 Optional audit read statistics](2026-11-23-audit-read-statistics.md).
+
+Prior delivery: [2026-11-23 Opt-in audit read timeout signal](2026-11-23-audit-read-timeout-signal.md).
 
 Prior delivery: [2026-11-23 Public read timeout API](2026-11-23-audit-read-timeout-api.md).
 

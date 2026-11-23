@@ -1,0 +1,43 @@
+{
+  "contract_run": 45158542258,
+  "platform_smoke_run": 45158542282,
+  "engine_revision": "f77c42b187483086e99a5ec5ade6bcd80b9ad738",
+  "hosts": {
+    "ubuntu-24.04": {
+      "passed": 1537,
+      "suites": 20,
+      "targeted": {
+        "AuditTrail.ContractTests": {
+          "passed": 262,
+          "sha256": "921b67bb8e7f9efe0c572a5d4ae956a4496edc318ef7df0baf5f16d0db806500"
+        },
+        "GraphQL.ContractTests": {
+          "passed": 49,
+          "sha256": "d3be84fc57d48a7c9bd9397fcc5343710af9e2d5f83ea95938ed0d710ddd39f7"
+        },
+        "Http.ContractTests": {
+          "passed": 53,
+          "sha256": "88f8230c5477d25e960c125b6a682b131a923973799f9b1d3daf7f65aee2d732"
+        }
+      }
+    },
+    "windows-2025": {
+      "passed": 1540,
+      "suites": 20,
+      "targeted": {
+        "AuditTrail.ContractTests": {
+          "passed": 262,
+          "sha256": "93ea4c5d7f16b979a019c0d5f2758369224752791d45386dbacd595db345a033"
+        },
+        "GraphQL.ContractTests": {
+          "passed": 49,
+          "sha256": "5769f7b7e67143f0a073dfabf764942312fe22dc14301b9d86aea2e573a164ab"
+        },
+        "Http.ContractTests": {
+          "passed": 53,
+          "sha256": "f434d5486211909fd353022152072200f6b36950fe6761ce0819ae7bb8776c2c"
+        }
+      }
+    }
+  }
+}

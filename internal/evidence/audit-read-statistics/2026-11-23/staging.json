@@ -1,0 +1,14 @@
+{
+  "engine": "f77c42b187483086e99a5ec5ade6bcd80b9ad738",
+  "samples_base": "6b6cac0d1b524c7b90132f9672f0f16b14f5e7b9",
+  "sources": {
+    "engine.tar": "94fd7307ceac18e1ef34331782771d07c25b4ff69671dbf74f456fbfffdf687c",
+    "overlay/audit-outbox/AuditHistoryMeasurement.cs": "bb638a76e059ba91a4958d0dcc01efd755ccefa00a6e7f324982f9bb0abf432d",
+    "overlay/audit-outbox/AuditReceiptTransportHost.cs": "3d23559a7bbfbdd3e02217527847ee7a653f8ac63bccb1ddb61094ef5d519b47",
+    "overlay/audit-outbox/AuditTimeoutWireChecks.cs": "7ea504b644d299673f3f6cd0b28c191329e563f112b7eca89fc4eaa565f98b88",
+    "overlay/audit-outbox/README.md": "712d47033c3fa6c80d172fdb1f0e9929ff031e8326899bad5d4f361cdf3d5f0b",
+    "protocol.md": "7dbaedf5993c315ac74b04ce865f430e502a442eecf7cfc9baa841a3bc52ede7",
+    "run-wsl.sh": "de8e73b519e581a094339d9e9fb7ebe96a7f76805200b064d1314aa5a104da9a",
+    "samples.tar": "cc4025c531e4b8dfd24a152c71a398db88dad12020c36dacdcad3370604fde9b"
+  }
+}

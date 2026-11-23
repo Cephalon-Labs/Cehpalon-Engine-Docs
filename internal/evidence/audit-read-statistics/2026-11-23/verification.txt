@@ -1,0 +1,2 @@
+Verified 20 matching wire outcomes per mode, 20 counter transitions, and a shared GraphQL collector.
+Each mode recorded 12 lock joins and four cross-tenant denials before SQL.
