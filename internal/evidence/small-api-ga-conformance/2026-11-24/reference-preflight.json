@@ -1,0 +1,55 @@
+{
+  "checked_at_bangkok_date": "2026-11-24",
+  "requested_target": {
+    "os_architecture": "Linux x64",
+    "dedicated_application_vcpu": 2,
+    "application_memory_bytes": 1073741824,
+    "separate_load_driver": true,
+    "readiness": "unverified"
+  },
+  "original_w0_reference": {
+    "os_architecture": "Linux x64",
+    "dedicated_application_vcpu": 2,
+    "application_memory_bytes": 2147483648,
+    "separate_load_driver": true,
+    "readiness": "blocked",
+    "governing_protocol": "internal/validation/small-api-workload.md"
+  },
+  "live_local_observations": {
+    "platform": "WSL2 Ubuntu 22.04.5 LTS x86_64 on the shared Windows workstation",
+    "kernel": "6.18.58.1-microsoft-standard-WSL2",
+    "logical_cpus_visible": 20,
+    "physical_cores_in_windows_host": 14,
+    "windows_logical_cpus": 20,
+    "wsl_mem_total_kib": 32735072,
+    "wsl_root_and_job_cgroups": {
+      "cpu.max": "max 100000",
+      "cpuset.cpus.effective": "0-19",
+      "memory.max": "max",
+      "memory.swap.max": "max"
+    },
+    "independent_driver_allocation_observed": false
+  },
+  "inventory": {
+    "documentation_checked": "0b1d91d38e4fe011756a8ef9023692653f41e76f",
+    "approved_application_target_identified": false,
+    "approved_driver_target_identified": false,
+    "self_hosted_runner_counts": {
+      "Engine": { "registered": 0, "online": 0 },
+      "Docs": { "registered": 0, "online": 0 },
+      "Samples": { "registered": 0, "online": 0 }
+    },
+    "organization_runner_list_http_status": 403,
+    "project_mapped_remote_ssh_or_docker_alias_found": false,
+    "boundary": "Scoped read-only project and configured-alias inventory; no unapproved cloud endpoint access or provisioning."
+  },
+  "harness_checkout": "a8ad452677c48d87a125460c552ee01c3e044046",
+  "harness_evidence": {
+    "location": "tools/benchmark_small_api.py and small-api-benchmark/BenchmarkHost.cs",
+    "launch_topology": "One Linux execution environment; fixed taskset affinities, local child launches, loopback HTTPS",
+    "reference_classification": "Observational; no qualified reference verdict",
+    "remote_driver_boundary": "Constrained loopback binding, localhost fixture certificate and localhost first-response verification require supporting a separate-host topology before using it.",
+    "preflight_executed_under_load": false
+  },
+  "timed_benchmark_launched": false
+}

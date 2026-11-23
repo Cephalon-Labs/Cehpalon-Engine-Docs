@@ -1,0 +1,66 @@
+{
+  "scope": "Byte-preserved synthetic conformance JSONs and build manifests. Execution logs containing local paths and build outputs stay private.",
+  "hosts": {
+    "windows": {
+      "artifact": "windows-raw-conformance.tar.gz",
+      "bytes": 154767,
+      "sha256": "59b5ed4d00a796d0c8f08c406dda210114bd9310c82f3fddb89b640910bb6f3d",
+      "entry_sha256": {
+        "conformance/baseline-graphql/case-results.json": "37860ba8a74c9e2db7d546499a3b1824f272fab9050194200c7ab4b906891ec8",
+        "conformance/baseline-graphql/checks.json": "b8a1700ecf28f0e5c2aed19c96a3a933c712e64122fdd46c1a0de044f02b8ce7",
+        "conformance/baseline-graphql/lifecycle-cycles.json": "8b12ee4a0033c51f002160cb9bda350f402c0af0ebf2dd1c58a52c16d059debd",
+        "conformance/baseline-graphql/main-host-probes.json": "2db23af483cdec1b2efe6ae3b5002bf11d2844c4e03ad43c95bbf177f7afc999",
+        "conformance/baseline-http/case-results.json": "a5ddd2a0f55f559514acb58a508d1d5c22218d53cdc8d12fc83ac7f598ac89cd",
+        "conformance/baseline-http/checks.json": "2fce5c0f3d8777a1b6a31299bb9f1da30903942693dda8c901ff6a84d686fb80",
+        "conformance/baseline-http/lifecycle-cycles.json": "f466c7273820fa48505d96824b74ce5af74baf7bbb53f182e1156d3b7a04bf74",
+        "conformance/baseline-http/main-host-probes.json": "7aeeb2f4aca40e431ad4471be23a17cc84d75c0e53110294c0d6e46f8012d0a3",
+        "conformance/configuration-preflight.json": "b32b0e6ec23fdde2b85c1607d4a527a54164ac8921bde5515232c9cf9c05b788",
+        "conformance/dataset.json": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+        "conformance/engine-graphql/case-results.json": "d816c306bef45551b1e69e0da2a5f425148efd34f044b0efcc388c608f05d05c",
+        "conformance/engine-graphql/checks.json": "b8a1700ecf28f0e5c2aed19c96a3a933c712e64122fdd46c1a0de044f02b8ce7",
+        "conformance/engine-graphql/lifecycle-cycles.json": "fa8c8411306987426a26480b26d1b9bcf5bbdbe074c2098fb34324dd44844f92",
+        "conformance/engine-graphql/main-host-probes.json": "2db23af483cdec1b2efe6ae3b5002bf11d2844c4e03ad43c95bbf177f7afc999",
+        "conformance/engine-http/case-results.json": "65f73b7b645d9c90fc87019d26d3e5b4f69f861a97b1d0aabb94fd9978fb185c",
+        "conformance/engine-http/checks.json": "2fce5c0f3d8777a1b6a31299bb9f1da30903942693dda8c901ff6a84d686fb80",
+        "conformance/engine-http/lifecycle-cycles.json": "a218a3ef3215d604154816cb83539bc672cd0d5995d9238d560f000246fc36fd",
+        "conformance/engine-http/main-host-probes.json": "7aeeb2f4aca40e431ad4471be23a17cc84d75c0e53110294c0d6e46f8012d0a3",
+        "conformance/ordered-corpus.json": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+        "conformance/predeclared.json": "34c028b38e97cb31b12f1a76be18cdbc3460a6ae78232458dea026890830a7a1",
+        "conformance/summary.json": "0fc6083acadcfdcbb91662dc6c29a9c32324ae0e04913b284bd91fce40e9f491",
+        "manifest.json": "b23af9a385a15106bac7e6b1fde33b9516b3dde64d9567fed681fb479eb2cc91"
+      }
+    },
+    "wsl": {
+      "artifact": "wsl-raw-conformance.tar.gz",
+      "bytes": 155904,
+      "sha256": "07a544d565f38cf3fa420ef2e43d60a726e2a0aef4c7cf6234700305cc511216",
+      "entry_sha256": {
+        "conformance/baseline-graphql/case-results.json": "4ec41cbad295dda0b9b370accfb1dcb7682a836ffe81780770541dde898815c2",
+        "conformance/baseline-graphql/checks.json": "9beaa5e0976cc042dbf2ec100656a821735fe16ad9fa1a3de29350f46a75d9d3",
+        "conformance/baseline-graphql/lifecycle-cycles.json": "2afc09f2f9d5cb9ed05e7c84ce60728e7e18c8ee1e0928d9fe7d49713092d381",
+        "conformance/baseline-graphql/main-host-probes.json": "e23209086b4eebaca54cd8d68609cd3e7afa6a0dcaa0ffd8f5f6661aa2642525",
+        "conformance/baseline-http/case-results.json": "4b0f8bb5d67693158fd314d53bfd8463c662c571ad5f1da12514340d91701a86",
+        "conformance/baseline-http/checks.json": "5622b79c1014c2ae4606788c6d912da46d397d18537e00059ca940faa5a725bd",
+        "conformance/baseline-http/lifecycle-cycles.json": "e3f468c9461333257d084c3ad5a3376e5ac76ab149fce1b52dda3ffa33290867",
+        "conformance/baseline-http/main-host-probes.json": "076ef8c14669f108850adcada75e5b47e27a5508cebb4c5f022ad18a39452a04",
+        "conformance/configuration-preflight.json": "4b856e957fea7b3341ef6bc87e7a07b9dcbb725b6d7346460b3c3c6a2f6c170a",
+        "conformance/dataset.json": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+        "conformance/engine-graphql/case-results.json": "a09d29740a82cce8f5a980a2fb837c75a0ce97e3cc026991400a73e080c15ca5",
+        "conformance/engine-graphql/checks.json": "9beaa5e0976cc042dbf2ec100656a821735fe16ad9fa1a3de29350f46a75d9d3",
+        "conformance/engine-graphql/lifecycle-cycles.json": "f74d42e2aef5669491cca19decddcf81f2a19cb937011102995fbf226b7b9cb7",
+        "conformance/engine-graphql/main-host-probes.json": "e23209086b4eebaca54cd8d68609cd3e7afa6a0dcaa0ffd8f5f6661aa2642525",
+        "conformance/engine-http/case-results.json": "3bbe4c93648cf75b27a34d68fac99eb57d2630a1c123b7efcba2eb3fe0811b58",
+        "conformance/engine-http/checks.json": "5622b79c1014c2ae4606788c6d912da46d397d18537e00059ca940faa5a725bd",
+        "conformance/engine-http/lifecycle-cycles.json": "88ab9ce067a8eb6d9b48d725586321017125c493cb78b0aae2e2ba0b55dfe7b0",
+        "conformance/engine-http/main-host-probes.json": "076ef8c14669f108850adcada75e5b47e27a5508cebb4c5f022ad18a39452a04",
+        "conformance/ordered-corpus.json": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+        "conformance/predeclared.json": "c62a307df14ad9b806f6445c6d31e2bcf6907cc003f5ba8701f2c703c6676a46",
+        "conformance/summary.json": "c705c7c92d2e1aac26100b50882ce5e760882836fbf57a6943b1f5230efeaccc",
+        "manifest.json": "b3fcb785c5b6f514d5d19b3d4ba656bdcd0998293ae896eb02c330dea25ce6ad"
+      }
+    }
+  },
+  "archived_reference_fixture": "internal/evidence/small-api-tuning/preflight/tuning-conformance-linux-01-summary.json",
+  "dataset_corpus_and_final_state_hashes_equal_across_both_hosts_and_archived_fixture": true,
+  "generated_registry_equal_across_both_hosts": true
+}

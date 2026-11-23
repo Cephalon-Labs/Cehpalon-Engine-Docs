@@ -1,5 +1,7 @@
 # Business order replay and Small API GA build
 
+Follow-up on 2026-11-24: [GA conformance and current reference preflight](small-api-ga-conformance.md).
+
 The [test plan](../planning/business-replay-and-ga-build.md) fixed the
 replay checkpoints and build evidence before execution.
 

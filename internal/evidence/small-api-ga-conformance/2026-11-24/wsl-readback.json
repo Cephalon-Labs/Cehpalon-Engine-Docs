@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "failures": 0,
+  "sdk": "11.0.100",
+  "engine_revision": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "samples_revision": "a8ad452677c48d87a125460c552ee01c3e044046",
+  "generated_registry_sha256": "b27f89a3e248ab45b6625f598196d8e6a6685f209b24a6e880a427ea966b2948",
+  "assembly_sha256": "e5f46b612bf02e8c6ed9acf6b051e984bbb6ccec1f2d751976c3a702456ad912",
+  "build_manifest_sha256": "b3fcb785c5b6f514d5d19b3d4ba656bdcd0998293ae896eb02c330dea25ce6ad",
+  "dataset_sha256": "1f78590b75d2facbe87ddb8072d3870bdb1ae1fb02dd5ef2df052021de40564b",
+  "ordered_corpus_sha256": "d36fb51be1a5c62d013e9637d8371e9d9eae3b3059f3237f3fcc25e4eb8dcb9f",
+  "final_dataset_sha256": "a285ae0e130dbf825d8944028f5a3b600df27b914949e2c66dbe5f01dd8a9a0b",
+  "config_checks_passed": 5,
+  "lanes": [
+    {
+      "variant": "baseline",
+      "transport": "http",
+      "cases_passed": 1000,
+      "cases_observed": 1000,
+      "cancellation_passes": 100,
+      "cancellation_observed": 100,
+      "maximum_passing_server_ack_ms": 1.2588,
+      "lifecycle_passes": 30,
+      "lifecycle_observed": 30,
+      "functional_checks_passed": 6,
+      "functional_checks_observed": 6,
+      "probe_counters": {
+        "hostFactories": 1,
+        "apiFactories": 1,
+        "graphQLFactories": 0,
+        "graphQLServices": 0,
+        "forbiddenFactories": 0,
+        "endpointCount": 8,
+        "graphQLDiagnosticConstructors": 0,
+        "graphQLExecutorInitializations": 0,
+        "graphQLSchemasReady": 0
+      }
+    },
+    {
+      "variant": "baseline",
+      "transport": "graphql",
+      "cases_passed": 1000,
+      "cases_observed": 1000,
+      "cancellation_passes": 100,
+      "cancellation_observed": 100,
+      "maximum_passing_server_ack_ms": 0.4486,
+      "lifecycle_passes": 30,
+      "lifecycle_observed": 30,
+      "functional_checks_passed": 5,
+      "functional_checks_observed": 5,
+      "probe_counters": {
+        "hostFactories": 1,
+        "apiFactories": 1,
+        "graphQLFactories": 1,
+        "graphQLServices": 28,
+        "forbiddenFactories": 0,
+        "endpointCount": 9,
+        "graphQLDiagnosticConstructors": 1,
+        "graphQLExecutorInitializations": 1,
+        "graphQLSchemasReady": 1
+      }
+    },
+    {
+      "variant": "engine",
+      "transport": "http",
+      "cases_passed": 1000,
+      "cases_observed": 1000,
+      "cancellation_passes": 100,
+      "cancellation_observed": 100,
+      "maximum_passing_server_ack_ms": 0.4105,
+      "lifecycle_passes": 30,
+      "lifecycle_observed": 30,
+      "functional_checks_passed": 6,
+      "functional_checks_observed": 6,
+      "probe_counters": {
+        "hostFactories": 1,
+        "apiFactories": 1,
+        "graphQLFactories": 0,
+        "graphQLServices": 0,
+        "forbiddenFactories": 0,
+        "endpointCount": 8,
+        "graphQLDiagnosticConstructors": 0,
+        "graphQLExecutorInitializations": 0,
+        "graphQLSchemasReady": 0
+      }
+    },
+    {
+      "variant": "engine",
+      "transport": "graphql",
+      "cases_passed": 1000,
+      "cases_observed": 1000,
+      "cancellation_passes": 100,
+      "cancellation_observed": 100,
+      "maximum_passing_server_ack_ms": 0.5254,
+      "lifecycle_passes": 30,
+      "lifecycle_observed": 30,
+      "functional_checks_passed": 5,
+      "functional_checks_observed": 5,
+      "probe_counters": {
+        "hostFactories": 1,
+        "apiFactories": 1,
+        "graphQLFactories": 1,
+        "graphQLServices": 28,
+        "forbiddenFactories": 0,
+        "endpointCount": 9,
+        "graphQLDiagnosticConstructors": 1,
+        "graphQLExecutorInitializations": 1,
+        "graphQLSchemasReady": 1
+      }
+    }
+  ],
+  "failed_cases": []
+}
