@@ -1,0 +1,114 @@
+{
+  "samples_fixture_revision": "d430791a02355134a9610f22ea12d3376318fd7d",
+  "scope": "Disposable PostgreSQL fixture on WSL. Private raw manifests and logs are represented by their hashes.",
+  "sdk": "11.0.100",
+  "runtime": "11.0.0",
+  "wsl_os": "Ubuntu 22.04.5 LTS",
+  "wsl_kernel": "6.18.58.1-microsoft-standard-WSL2",
+  "docker_server": "29.10.0 linux/amd64",
+  "postgres_image": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+  "postgres_image_config": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe linux/amd64",
+  "postgres_version_num": 180006,
+  "npgsql": "10.0.3",
+  "resolved_package_evidence_attempt": "attempt04",
+  "expected_refusal": {
+    "attempt": "08",
+    "psql_exit": 3,
+    "pool_started": false
+  },
+  "earlier_preparation": "Attempt 01 stopped before creating a container because the WSL wrapper could not resolve a script-scoped value. Attempts 02\u201304 ran preceding fixture revisions. Full original records are retained locally.",
+  "attempts": [
+    {
+      "attempt": "05",
+      "mode": "rollback-only-and-admin-pool",
+      "sql_marker": "unset",
+      "outcome": "passed",
+      "datetime_utc": "2026-11-23T16:11:20.4488127Z",
+      "role_and_schema_rolled_back": true,
+      "pool_cases": 2,
+      "owned_fixture_cleanup": true,
+      "sql_source_sha256": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4",
+      "evidence_sha256": "8107876adf181ab46f5e0eb77e8b0fce6bc6cb335efa0e27198fccb837c769df",
+      "log_sha256": "9211041b6c5b9ff6d2e7fd4a06f153f9d8fb78eda33e57a40d8037f110563d21",
+      "fixture_container_removed": true,
+      "fixture_volume_removed": true,
+      "fixture_loopback_closed": true,
+      "unchanged_source": {
+        "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58",
+        "NuGet.Config": "19479379b3e4d7bb931859d5f3b14412625092d065f7b867925992cd94afc8ac",
+        "multitenant-business/qualification/run-postgres-probes.ps1": "0ef410e227b303924af8a5e99f2b32046f202c37f084e85c322c6a1cbe46f490",
+        "multitenant-business/qualification/PostgresPoolProbe.cs": "cb2e14b13f3e9a38e355c6b400536eb427db4c19a82b3e4507f465261961fc5d",
+        "multitenant-business/qualification/postgres-rls-probe.sql": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4"
+      }
+    },
+    {
+      "attempt": "06",
+      "mode": "runtime-pool",
+      "sql_marker": "unset",
+      "outcome": "passed",
+      "datetime_utc": "2026-11-23T16:11:27.5090631Z",
+      "role_and_schema_rolled_back": null,
+      "pool_cases": 2,
+      "owned_fixture_cleanup": true,
+      "sql_source_sha256": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4",
+      "evidence_sha256": "254811cb6502226f5dda79090dc0f723ad2c54442f9be5825853ef5db5be7293",
+      "log_sha256": "9389ad9a98f9c1e69c5a47c8525ad44289e6196b685b94702193119a366de72c",
+      "fixture_container_removed": true,
+      "fixture_volume_removed": true,
+      "fixture_loopback_closed": true,
+      "unchanged_source": {
+        "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58",
+        "NuGet.Config": "19479379b3e4d7bb931859d5f3b14412625092d065f7b867925992cd94afc8ac",
+        "multitenant-business/qualification/run-postgres-probes.ps1": "0ef410e227b303924af8a5e99f2b32046f202c37f084e85c322c6a1cbe46f490",
+        "multitenant-business/qualification/PostgresPoolProbe.cs": "cb2e14b13f3e9a38e355c6b400536eb427db4c19a82b3e4507f465261961fc5d",
+        "multitenant-business/qualification/postgres-rls-probe.sql": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4"
+      }
+    },
+    {
+      "attempt": "07",
+      "mode": "rollback-only-and-admin-pool",
+      "sql_marker": "false",
+      "outcome": "passed",
+      "datetime_utc": "2026-11-23T16:11:34.8680013Z",
+      "role_and_schema_rolled_back": true,
+      "pool_cases": 2,
+      "owned_fixture_cleanup": true,
+      "sql_source_sha256": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4",
+      "evidence_sha256": "5dac1c2e79368bac003aac5d42072d89d9be7203f7a389a98f9b33c95a9ce780",
+      "log_sha256": "f6983ff8bed18f788734d75e29a84058c8dc246e55c033c90e6f48fce68f9ddf",
+      "fixture_container_removed": true,
+      "fixture_volume_removed": true,
+      "fixture_loopback_closed": true,
+      "unchanged_source": {
+        "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58",
+        "NuGet.Config": "19479379b3e4d7bb931859d5f3b14412625092d065f7b867925992cd94afc8ac",
+        "multitenant-business/qualification/run-postgres-probes.ps1": "0ef410e227b303924af8a5e99f2b32046f202c37f084e85c322c6a1cbe46f490",
+        "multitenant-business/qualification/PostgresPoolProbe.cs": "cb2e14b13f3e9a38e355c6b400536eb427db4c19a82b3e4507f465261961fc5d",
+        "multitenant-business/qualification/postgres-rls-probe.sql": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4"
+      }
+    },
+    {
+      "attempt": "08",
+      "mode": "rollback-only-and-admin-pool",
+      "sql_marker": "missing-password",
+      "outcome": "failed",
+      "datetime_utc": "2026-11-23T16:11:39.8575385Z",
+      "role_and_schema_rolled_back": true,
+      "pool_cases": 0,
+      "owned_fixture_cleanup": true,
+      "sql_source_sha256": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4",
+      "evidence_sha256": "61fa49cbf748878ca9eabc1c479ca2e43efb4c102cbe3807c32874531b5f3035",
+      "log_sha256": "a6c2591af7192fb49d375b9633d1c3ad66d1e901ecdfc448f65cb995341f4429",
+      "fixture_container_removed": true,
+      "fixture_volume_removed": true,
+      "fixture_loopback_closed": true,
+      "unchanged_source": {
+        "global.json": "bfaf40d1a86baeea39cde6300a5aaa9c55917256d4fade475ac7ffa3bd58bb58",
+        "NuGet.Config": "19479379b3e4d7bb931859d5f3b14412625092d065f7b867925992cd94afc8ac",
+        "multitenant-business/qualification/run-postgres-probes.ps1": "0ef410e227b303924af8a5e99f2b32046f202c37f084e85c322c6a1cbe46f490",
+        "multitenant-business/qualification/PostgresPoolProbe.cs": "cb2e14b13f3e9a38e355c6b400536eb427db4c19a82b3e4507f465261961fc5d",
+        "multitenant-business/qualification/postgres-rls-probe.sql": "5254e953d2842e6ea68af5f3d62c1e132b404f2ce3c998ac665caa4eb6f98db4"
+      }
+    }
+  ]
+}

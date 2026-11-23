@@ -20,7 +20,7 @@ metric dimensions. A future internal child span requires its own lifecycle
 and observer-isolation design.
 [ASP.NET Core request diagnostics at .NET 11.0.0](https://github.com/dotnet/aspnetcore/blob/v11.0.0/src/Hosting/Hosting/src/Internal/HostingApplicationDiagnostics.cs#L378-L426)
 
-Use a fixed projection containing only the four defined values. Exclude
+Use the field allowlist above. Exclude
 custom correlation values, raw headers, trace state, baggage, tenant,
 principal, resource, operation and module identifiers, request contents,
 metadata and exception details. Export and retention settings belong to

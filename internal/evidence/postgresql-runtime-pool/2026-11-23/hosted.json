@@ -1,0 +1,17 @@
+{
+  "run": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/actions/runs/45213986875",
+  "tested_head": "399fd1aa47850021a85796895f5c50a428e74bef",
+  "host": "GitHub-hosted Ubuntu 24.04",
+  "conclusion": "success",
+  "default_probe": "success",
+  "restricted_runtime_probe": "success",
+  "recognized_receipts": [
+    "default commit",
+    "default rollback",
+    "runtime commit",
+    "runtime rollback"
+  ],
+  "pull_request": "https://github.com/Cephalon-Labs/Cehpalon-Engine-Samples/pull/2",
+  "merge_commit": "c7ab9c0fb2a613529d220031da8b24dd7446a151",
+  "merged_utc": "2026-11-23T16:16:04Z"
+}
