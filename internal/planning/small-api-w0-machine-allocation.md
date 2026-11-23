@@ -107,6 +107,26 @@ also matched the official SHA-512 for 11.0.100.
 [Deployment checksums](../evidence/small-api-w0-placement/2026-11-24/staging-receipt.json) ·
 [SDK integrity](../evidence/small-api-w0-placement/2026-11-24/sdk-integrity.json)
 
+## Validated Hetzner configuration
+
+A local Terraform 1.17.2 plan package with locked Hetzner Cloud
+provider 1.70.0 passed schema validation and five provider-mocked plan
+tests. The plan checks the CCX23 and CCX13 pairing in one Singapore
+Spread group, fixed private IPv4 addresses on one subnet, and a single
+public SSH rule on the app for an approved admin IPv4 /32. The
+driver has neither public IPv4 nor public IPv6. Its .NET runtime and
+deployment can be staged from the app over the private network.
+The negative tests cover a broad admin CIDR, non-IPv4 administration,
+a missing SSH key, and an unscoped attempt name.
+
+Mock planning leaves provider capacity, account authorization, guest
+configuration, host W0 admission and collector readiness for the
+real allocation. No credentialed provider plan ran. The deploy
+archive SHA-256 still matches the staged package.
+[Mock plan receipt](../evidence/small-api-w0-placement/2026-11-24/hetzner-mock-plan.json) ·
+[Hetzner firewall semantics](https://docs.hetzner.com/cloud/firewalls/faq/) ·
+[Terraform provider mocks](https://developer.hashicorp.com/terraform/language/tests/mocking)
+
 ## Current readiness
 
 No authorized app and driver pair was verified. The scoped checks

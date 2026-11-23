@@ -1,0 +1,31 @@
+{
+  "status": "schema-validated-and-mock-plan-passed",
+  "tested_terraform": {
+    "terraform_version": "1.17.2",
+    "platform": "windows_amd64",
+    "archive_sha256": "2244b7a379ea8c4b224a2eab411b7288f41ef36316fca27ae4b51b1cf2a53024",
+    "verified_against": "https://releases.hashicorp.com/terraform/1.17.2/terraform_1.17.2_SHA256SUMS"
+  },
+  "provider": "hetznercloud/hcloud",
+  "provider_version": "1.70.0",
+  "mock_plan_tests": [
+    "two_roles_with_shared_spread_placement_and_private_subnet",
+    "reject_wider_admin_network",
+    "reject_missing_project_key",
+    "reject_non_attempt_resource_label",
+    "reject_non_ipv4_admin_source"
+  ],
+  "cloud_resources_created": 0,
+  "credentialed_provider_plan_executed": false,
+  "real_host_preflight_launched": false,
+  "timed_benchmark_launched": false,
+  "deployment_bundle_sha256_verified": "37af529baf666b015b757710b843f8e97ce073eaea0f4ab2bba0c841ef2ba0ec",
+  "file_sha256": {
+    "README.md": "cf8151e29add2bc14761d184cf0d1b165903b259a6b24faf5ac48eb20879a13e",
+    "main.tf": "e7205cef20e32446d214a0b534f405d9b3da82ce6378ce4cca38aa871fa453f7",
+    "tests/placement.tftest.hcl": "318966deffda4e42928862c51310f68befed777dd00900487790c2c0d1107d36",
+    ".terraform.lock.hcl": "ba44370bb057e6adc14a4ff1f6daa5a56bc4c99b7ac69e14b635a0b7445914d7",
+    "validate.txt": "9e51e3066ff534543e9bb5c1c505246b7e25f637b5f66874d705166eba3d5ce5",
+    "mock-tests-03.txt": "dd1eef429a6c9d8a3ffdde436c0e1ad753491052a7a7f767fa9fa4c394f81fb4"
+  }
+}

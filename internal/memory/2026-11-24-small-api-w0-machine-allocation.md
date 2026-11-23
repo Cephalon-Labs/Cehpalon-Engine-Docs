@@ -11,4 +11,10 @@
   preflight was observed. The WSL reference resource gate still
   rejects the local environment. No timed benchmark was started.
 
+A local Terraform 1.17.2 and hcloud 1.70.0 mock plan passed five
+tests for the proposed Singapore pair, its private subnet and
+restricted public admin ingress. The driver remains private-only.
+There are separate local Terraform and Linux deployment bundles.
+No provider allocation or benchmark run followed.
+
 [Allocation and execution plan](../planning/small-api-w0-machine-allocation.md)
