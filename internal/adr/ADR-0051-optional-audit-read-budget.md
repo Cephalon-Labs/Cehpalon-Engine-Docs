@@ -40,3 +40,22 @@ Execute complete components plus security and provider consumers serially on Win
 Only #7/#8/#18 bodies and Engine commit journals are in scope. Review a bounded plan, dry run, apply the exact hash, read back23 mirrors and253 Project fields, and preserve all other20 rows/task bytes and all metadata, milestones, null hours and M0 gates. Keep #3 Blocked and #20 unchanged. Publish reviewed suitable source/raw evidence, push all three mains, delete only owned merged refs and retain user files, worktrees and raw data.
 
 Predeclared preparation correction02: consumer dev01 terminated at compile before provider/restart tests: two fixture calls to nonexistent TimeSpan.AddTicks. Replace only those calls with TimeSpan.FromTicks(TimeSpan.TicksPerMinute+1), preserving the same one-tick-over-limit test values. Retain dev01/frozen107inputs/declaration01 and raw compiler errors. Freeze declaration02 before that source correction; run the complete244 candidate as dev02 after reviewed source freeze. No product API, timeout range, workload, provider SQL,4096fixture, concurrency, Pooling=false, gates or benchmark changes; no unchanged-source favorable retry.
+
+## Public naming continuation, 2026-11-23
+
+Add `ActivateWithReadTimeout` to tenant-wide history, exact receipt lookup and
+exact resource history. It takes the same policy, nullable timeout and source
+factory. The original `ActivateWithBudget` signature forwards to the clearer
+name, with the same defaults, validation order, exception semantics and tokens.
+No caller must change its source or recompile solely for this addition. Use the
+new name in examples and the Samples transport host. Keep the system timer and
+all existing timeout behavior.
+
+Before delivery, exercise both names in Audit Trail contracts, including
+disabled factories, invalid bounds, exact provider faults, null behavior and
+linked-token reads. Run the current Samples binary's contract exports and real
+HTTPS HTTP/GraphQL PostgreSQL controls. Separately run the retained consumer
+compiled against `ActivateWithBudget` with only its Tenancy DLL replaced. Use
+fresh fixture schemas for the lock and tenant controls. No timed matrix is
+needed for this API compatibility check. Original benchmark criteria and gates
+remain in force.

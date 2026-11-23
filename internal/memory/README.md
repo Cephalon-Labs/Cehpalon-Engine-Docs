@@ -2,7 +2,9 @@
 
 อ่านไฟล์นี้ก่อนเริ่มงาน แล้วอ่าน handoff ที่เกี่ยวข้องและตรวจ GitHub/Git/CI ปัจจุบัน วันที่ในชื่อไฟล์อย่างเดียวไม่รับประกันลำดับเวลา
 
-Latest handoff: [2026-11-23 Optional audit read deadline overhead](2026-11-23-audit-read-deadline.md).
+Latest handoff: [2026-11-23 Public read timeout API](2026-11-23-audit-read-timeout-api.md).
+
+Prior delivery: [2026-11-23 Optional audit read deadline overhead](2026-11-23-audit-read-deadline.md).
 
 Prior delivery: [2026-11-23 Audit history over HTTPS and PostgreSQL](2026-11-23-audit-history-https.md).
 

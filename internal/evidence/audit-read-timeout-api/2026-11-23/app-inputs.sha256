@@ -1,0 +1,4 @@
+5024071650b525b43c189aa0d09a2e382a871c416d88e6fbb50f2d220e0ab591  samples/audit-outbox/bin/Release/net11.0/PostgresAuditOutbox.Consumer.dll
+2e92acfc52784dacf7beaa6dac55d8fb18c654a9af9e34d66af46cabc6c8224b  samples/audit-outbox/bin/Release/net11.0/Cehpalon.Engine.Tenancy.dll
+6f8c8870cdadeb09f23930f1ee278976e27de3656447176254851e22690347e0  legacy-app/PostgresAuditOutbox.Consumer.dll
+2e92acfc52784dacf7beaa6dac55d8fb18c654a9af9e34d66af46cabc6c8224b  legacy-app/Cehpalon.Engine.Tenancy.dll

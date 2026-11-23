@@ -1,0 +1,4 @@
+samples/audit-outbox/bin/Release/net11.0/PostgresAuditOutbox.Consumer.dll: OK
+samples/audit-outbox/bin/Release/net11.0/Cehpalon.Engine.Tenancy.dll: OK
+legacy-app/PostgresAuditOutbox.Consumer.dll: OK
+legacy-app/Cehpalon.Engine.Tenancy.dll: OK

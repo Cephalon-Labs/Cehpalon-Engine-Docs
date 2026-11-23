@@ -1,0 +1,23 @@
+{"kind": "read_deadline", "read_timeout_ms": null}
+{"handlers": 1, "kind": "control", "name": "A-owner", "queries": 1, "results": 1, "status": 200, "transport": "http"}
+{"handlers": 1, "kind": "control", "name": "B-owner", "queries": 1, "results": 1, "status": 200, "transport": "http"}
+{"handlers": 0, "kind": "control", "name": "A-to-B", "queries": 0, "results": 0, "status": 403, "transport": "http"}
+{"handlers": 0, "kind": "control", "name": "B-to-A", "queries": 0, "results": 0, "status": 403, "transport": "http"}
+{"handlers": 0, "kind": "control", "name": "missing-grant", "queries": 0, "results": 0, "status": 403, "transport": "http"}
+{"handlers": 0, "kind": "control", "name": "anonymous", "queries": 0, "results": 0, "status": 401, "transport": "http"}
+{"handlers": 0, "kind": "control", "name": "foreign-cursor", "queries": 0, "results": 0, "status": 400, "transport": "http"}
+{"handlers": 0, "kind": "control", "name": "membership-revoked", "queries": 0, "results": 0, "status": 403, "transport": "http"}
+{"handlers": 1, "kind": "control", "name": "membership-restored", "queries": 1, "results": 1, "status": 200, "transport": "http"}
+{"handlers": 1, "kind": "control", "name": "A-owner", "queries": 1, "results": 1, "status": 200, "transport": "graphql"}
+{"handlers": 1, "kind": "control", "name": "B-owner", "queries": 1, "results": 1, "status": 200, "transport": "graphql"}
+{"handlers": 0, "kind": "control", "name": "A-to-B", "queries": 0, "results": 0, "status": 200, "transport": "graphql"}
+{"handlers": 0, "kind": "control", "name": "B-to-A", "queries": 0, "results": 0, "status": 200, "transport": "graphql"}
+{"handlers": 0, "kind": "control", "name": "missing-grant", "queries": 0, "results": 0, "status": 200, "transport": "graphql"}
+{"handlers": 0, "kind": "control", "name": "anonymous", "queries": 0, "results": 0, "status": 401, "transport": "graphql"}
+{"handlers": 0, "kind": "control", "name": "foreign-cursor", "queries": 0, "results": 0, "status": 200, "transport": "graphql"}
+{"handlers": 0, "kind": "control", "name": "membership-revoked", "queries": 0, "results": 0, "status": 200, "transport": "graphql"}
+{"handlers": 1, "kind": "control", "name": "membership-restored", "queries": 1, "results": 1, "status": 200, "transport": "graphql"}
+{"digest": "b834247e6a96401d9de9201f8975a6a1836e8984a3823bf96d84d33f56dc2dfa", "kind": "preflight", "limit": 25, "transport": "http"}
+{"digest": "b834247e6a96401d9de9201f8975a6a1836e8984a3823bf96d84d33f56dc2dfa", "kind": "preflight", "limit": 25, "transport": "graphql"}
+{"digest": "05962a26ede4f84612dcabf326d6fb0c9dc496be5f60cf60e93ba2f14458c4c5", "kind": "preflight", "limit": 200, "transport": "http"}
+{"digest": "05962a26ede4f84612dcabf326d6fb0c9dc496be5f60cf60e93ba2f14458c4c5", "kind": "preflight", "limit": 200, "transport": "graphql"}
