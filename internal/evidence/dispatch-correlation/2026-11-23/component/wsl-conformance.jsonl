@@ -1,0 +1,18 @@
+{"type":"start","mode":"conformance","engine":"5e92ac1c7fa1e150e7e97de6d68e94b31ffba053","frequency":1000000000,"warmup":4,"dispatches":8,"pairs":2,"os":"Ubuntu 22.04.5 LTS","architecture":"X64","runtime":".NET 11.0.0","availableProcessors":20}
+{"type":"warmup","pair":0,"ambient":false,"enabled":false,"count":4,"Ticks":6232701,"Bytes":1592,"FactoryCalls":4,"Disposals":4,"Completions":0}
+{"type":"warmup","pair":0,"ambient":false,"enabled":true,"count":4,"Ticks":1591252,"Bytes":456,"FactoryCalls":4,"Disposals":4,"Completions":4}
+{"type":"warmup","pair":0,"ambient":false,"enabled":true,"count":4,"Ticks":7383,"Bytes":384,"FactoryCalls":4,"Disposals":4,"Completions":4}
+{"type":"warmup","pair":0,"ambient":false,"enabled":false,"count":4,"Ticks":3648,"Bytes":96,"FactoryCalls":4,"Disposals":4,"Completions":0}
+{"type":"sample","pair":1,"ambient":false,"enabled":false,"count":8,"Ticks":3617,"Bytes":192,"FactoryCalls":8,"Disposals":8,"Completions":0}
+{"type":"sample","pair":1,"ambient":false,"enabled":true,"count":8,"Ticks":5876,"Bytes":768,"FactoryCalls":8,"Disposals":8,"Completions":8}
+{"type":"sample","pair":2,"ambient":false,"enabled":true,"count":8,"Ticks":17975,"Bytes":768,"FactoryCalls":8,"Disposals":8,"Completions":8}
+{"type":"sample","pair":2,"ambient":false,"enabled":false,"count":8,"Ticks":1627,"Bytes":192,"FactoryCalls":8,"Disposals":8,"Completions":0}
+{"type":"warmup","pair":0,"ambient":true,"enabled":false,"count":4,"Ticks":2524,"Bytes":96,"FactoryCalls":4,"Disposals":4,"Completions":0}
+{"type":"warmup","pair":0,"ambient":true,"enabled":true,"count":4,"Ticks":20980,"Bytes":736,"FactoryCalls":4,"Disposals":4,"Completions":4}
+{"type":"warmup","pair":0,"ambient":true,"enabled":true,"count":4,"Ticks":5851,"Bytes":736,"FactoryCalls":4,"Disposals":4,"Completions":4}
+{"type":"warmup","pair":0,"ambient":true,"enabled":false,"count":4,"Ticks":1490,"Bytes":96,"FactoryCalls":4,"Disposals":4,"Completions":0}
+{"type":"sample","pair":1,"ambient":true,"enabled":false,"count":8,"Ticks":1616,"Bytes":192,"FactoryCalls":8,"Disposals":8,"Completions":0}
+{"type":"sample","pair":1,"ambient":true,"enabled":true,"count":8,"Ticks":5579,"Bytes":1472,"FactoryCalls":8,"Disposals":8,"Completions":8}
+{"type":"sample","pair":2,"ambient":true,"enabled":true,"count":8,"Ticks":14122,"Bytes":1472,"FactoryCalls":8,"Disposals":8,"Completions":8}
+{"type":"sample","pair":2,"ambient":true,"enabled":false,"count":8,"Ticks":1639,"Bytes":192,"FactoryCalls":8,"Disposals":8,"Completions":0}
+{"type":"completed"}

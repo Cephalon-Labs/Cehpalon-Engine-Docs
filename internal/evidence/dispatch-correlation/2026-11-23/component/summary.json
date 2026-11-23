@@ -1,0 +1,232 @@
+[
+  {
+    "input": "windows.jsonl",
+    "host": {
+      "type": "start",
+      "mode": "measure",
+      "engine": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+      "frequency": 10000000,
+      "warmup": 50000,
+      "dispatches": 200000,
+      "pairs": 12,
+      "os": "Microsoft Windows 10.0.26300",
+      "architecture": "X64",
+      "runtime": ".NET 11.0.0",
+      "availableProcessors": 20
+    },
+    "total_dispatches": 10000000,
+    "lanes": {
+      "absent": {
+        "ns": {
+          "off": {
+            "min": 54.1895,
+            "median": 54.90325,
+            "max": 60.2645
+          },
+          "on": {
+            "min": 115.4455,
+            "median": 117.002,
+            "max": 122.122
+          }
+        },
+        "bytes": {
+          "off": {
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "on": {
+            "min": 96.0,
+            "median": 96.0,
+            "max": 96.0
+          }
+        },
+        "paired_ns_on_minus_off": {
+          "min": 57.754000000000005,
+          "median": 61.92475,
+          "max": 66.9885
+        },
+        "paired_bytes_on_minus_off": {
+          "min": 72.0,
+          "median": 72.0,
+          "max": 72.0
+        },
+        "order": {
+          "off_first": {
+            "min": 60.948499999999996,
+            "median": 61.92475,
+            "max": 66.9885
+          },
+          "on_first": {
+            "min": 57.754000000000005,
+            "median": 61.770500000000006,
+            "max": 65.1645
+          }
+        }
+      },
+      "w3c": {
+        "ns": {
+          "off": {
+            "min": 54.368,
+            "median": 54.924499999999995,
+            "max": 55.73
+          },
+          "on": {
+            "min": 143.6845,
+            "median": 145.161,
+            "max": 147.5635
+          }
+        },
+        "bytes": {
+          "off": {
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "on": {
+            "min": 184.0,
+            "median": 184.0,
+            "max": 184.0
+          }
+        },
+        "paired_ns_on_minus_off": {
+          "min": 88.85150000000002,
+          "median": 90.08000000000001,
+          "max": 92.03150000000001
+        },
+        "paired_bytes_on_minus_off": {
+          "min": 160.0,
+          "median": 160.0,
+          "max": 160.0
+        },
+        "order": {
+          "off_first": {
+            "min": 89.21449999999999,
+            "median": 90.0665,
+            "max": 92.03150000000001
+          },
+          "on_first": {
+            "min": 88.85150000000002,
+            "median": 90.08000000000001,
+            "max": 91.60300000000001
+          }
+        }
+      }
+    }
+  },
+  {
+    "input": "wsl.jsonl",
+    "host": {
+      "type": "start",
+      "mode": "measure",
+      "engine": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+      "frequency": 1000000000,
+      "warmup": 50000,
+      "dispatches": 200000,
+      "pairs": 12,
+      "os": "Ubuntu 22.04.5 LTS",
+      "architecture": "X64",
+      "runtime": ".NET 11.0.0",
+      "availableProcessors": 20
+    },
+    "total_dispatches": 10000000,
+    "lanes": {
+      "absent": {
+        "ns": {
+          "off": {
+            "min": 58.35175,
+            "median": 60.725725,
+            "max": 63.185905
+          },
+          "on": {
+            "min": 133.55576,
+            "median": 134.3748175,
+            "max": 136.499845
+          }
+        },
+        "bytes": {
+          "off": {
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "on": {
+            "min": 96.0,
+            "median": 96.0,
+            "max": 96.0
+          }
+        },
+        "paired_ns_on_minus_off": {
+          "min": 71.38570999999999,
+          "median": 74.31105749999999,
+          "max": 75.96190999999999
+        },
+        "paired_bytes_on_minus_off": {
+          "min": 72.0,
+          "median": 72.0,
+          "max": 72.0
+        },
+        "order": {
+          "off_first": {
+            "min": 72.28170500000002,
+            "median": 73.71108,
+            "max": 75.96190999999999
+          },
+          "on_first": {
+            "min": 71.38570999999999,
+            "median": 74.53420249999999,
+            "max": 75.745525
+          }
+        }
+      },
+      "w3c": {
+        "ns": {
+          "off": {
+            "min": 59.16202,
+            "median": 60.301252500000004,
+            "max": 61.42461
+          },
+          "on": {
+            "min": 167.69451,
+            "median": 169.229545,
+            "max": 177.913205
+          }
+        },
+        "bytes": {
+          "off": {
+            "min": 24.0,
+            "median": 24.0,
+            "max": 24.0
+          },
+          "on": {
+            "min": 184.0,
+            "median": 184.0,
+            "max": 184.0
+          }
+        },
+        "paired_ns_on_minus_off": {
+          "min": 107.06593000000001,
+          "median": 109.208355,
+          "max": 118.751185
+        },
+        "paired_bytes_on_minus_off": {
+          "min": 160.0,
+          "median": 160.0,
+          "max": 160.0
+        },
+        "order": {
+          "off_first": {
+            "min": 107.716655,
+            "median": 109.7948425,
+            "max": 110.854355
+          },
+          "on_first": {
+            "min": 107.06593000000001,
+            "median": 108.699615,
+            "max": 118.751185
+          }
+        }
+      }
+    }
+  }
+]

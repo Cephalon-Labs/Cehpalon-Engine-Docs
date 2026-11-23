@@ -1,0 +1,1 @@
+Pre-build WSL attempt stopped before restore or tests. Linux Git could not resolve the Windows-linked worktree's D: metadata path. Recovery uses a separate WSL-created shared clone at the same Engine SHA.

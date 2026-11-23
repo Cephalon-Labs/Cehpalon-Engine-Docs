@@ -1,0 +1,38 @@
+{
+  "engine": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "contract_run": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/45217986263",
+  "platform_run": "https://github.com/Cephalon-Labs/Cehpalon-Engine/actions/runs/45217986280",
+  "runtime": "11.0.0",
+  "hosts": [
+    {
+      "host": "windows-2025",
+      "contract_checks": 1553,
+      "core_checks": 42,
+      "compiler_fixture_passed": true,
+      "platform_passed": 12,
+      "platform_failed": 0,
+      "platform_not_run": 2,
+      "platform_skipped": [
+        "npgsql-real-provider-transaction-query-cancellation",
+        "rabbitmq-real-provider-confirm-manual-ack"
+      ],
+      "contract_manifest_sha256": "fefb01f2da374ebb63507808b598cd8b3b3aceaa90d19ac5af5c53df978c915c",
+      "platform_report_sha256": "b5181f20468f0532ac67f20be1969393cc9bc6da7592a27ba89b5a84dfa4abc7"
+    },
+    {
+      "host": "ubuntu-24.04",
+      "contract_checks": 1550,
+      "core_checks": 42,
+      "compiler_fixture_passed": true,
+      "platform_passed": 12,
+      "platform_failed": 0,
+      "platform_not_run": 2,
+      "platform_skipped": [
+        "npgsql-real-provider-transaction-query-cancellation",
+        "rabbitmq-real-provider-confirm-manual-ack"
+      ],
+      "contract_manifest_sha256": "63cb335909c0dabf70dfac7b0b978fca3aa55595223adfdd0ea7d193a4ed83ad",
+      "platform_report_sha256": "49ee33861adbd63c6e7ea5f621c3acc5b0a1b05a36540f799009565f77472316"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Proposed dispatch trace and log correlation for #18
 
+The first delivery is implemented and has exact-revision component and protected HTTPS evidence. [Results and limits](../validation/dispatch-correlation.md)
+
 ## First delivery
 
 Allow a host to opt in to one completion record from a selected Core

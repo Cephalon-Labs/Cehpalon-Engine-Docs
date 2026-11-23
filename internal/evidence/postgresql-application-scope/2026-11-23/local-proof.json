@@ -1,0 +1,59 @@
+{
+  "result": "passed",
+  "samples_revision": "1bb96af512ae21f7a160a95c7d2d745086aaa573",
+  "engine_revision": "6fe7254404cf6b148370bd95befe8331e8932354",
+  "source_clean_and_unchanged": true,
+  "wsl_os": "Ubuntu 22.04.5 LTS",
+  "kernel": "Linux 6.18.58.1-microsoft-standard-WSL2 x86_64",
+  "docker_server_version": "29.10.0",
+  "dotnet_sdk_version": "11.0.100",
+  "dotnet_runtime_version": "11.0.0",
+  "postgresql_server_version": "18.6",
+  "postgresql_image_manifest": "registry-1.docker.io/library/postgres@sha256:9770878138a2e83abcb10856d30cc3f24dae0d317bb956db6ab9159de6c3c80d",
+  "postgresql_image_config": "sha256:79061104669bb30919d015b549c764e2d8021a18ee39cb175581a2588fe90dbe",
+  "npgsql_version": "10.0.3",
+  "package_lock_graph": "locked release restore",
+  "source_sha256": {
+    "Business.Postgres.Consumer.csproj": "eab1f743fe7b0851a52f5deedcb3a81f8bbb29422d2dee5001a77c59faeabf18",
+    "Program.cs": "280763dfe063d6b8162fbc28ecf22c3daf053df4562f459929f2323f08ce26cb",
+    "PostgresOrderStore.cs": "cf47d187b743a2f4052dbab69a0a866855c2efdca935122aa719492c81876341",
+    "migrations/001_orders.sql": "fb1d9b63a17fab904ce40465f8ff49a24596564e4122511e23ff0704c8055831",
+    "packages.lock.json": "c90975111b692a442cf8a309f85a0d087bae171eb4c77afd9a1f248757c9b749",
+    "run-proof.sh": "b0cccf96ca85eeb36242414aa9b19c93942bb87b58b90362673b94c455f649b9"
+  },
+  "binary_sha256": {
+    "Business.Postgres.Consumer.dll": "228a991c3d02d61b246a4cdf5e985d1436b0957eade2fa91be43e0b2ad29f4c3",
+    "Business.Postgres.Consumer.runtimeconfig.json": "8c019e2c7c9acc0440d8b263897f7b0079b1c6895307921604be20e732900366",
+    "Business.Postgres.Consumer.deps.json": "fd639fc43296261db210b608d42c1dbb52d78390d445015c64febc877c1d9c3a",
+    "Npgsql.dll": "e2bcafe1660fe4543fe9dfcabed972ec8d32259e5ea8009462ce1de23c7034c2"
+  },
+  "private_log_sha256": {
+    "restore.log": "de01ca61fa5effd6e97afe37f211119dc26dcf0a15c9d86b466d6810076d66fe",
+    "build.log": "24e049b7bed05cf8587d3b6bcc70200ccfe4650731e45757856bd720bf54670c",
+    "bootstrap.log": "e90983e77a25f9e9533e2f72d321a4145965c02785efc4faf3b28812e2fedbe0",
+    "migration-rollback.log": "11d7a5fa87f2343aec35a9b596a1d585a8db1d04762eb1d66265b59e731396b9",
+    "migration-apply.log": "b961c8ace3a60a4260d79b6165267fcd1a55deb293ab5eda0cd2f3a20507c800",
+    "migration-repeat.log": "37b4791b76521ca14264805b0a7ff5138c422e300cfb5b7bd98e5258ce3333bc",
+    "seed.log": "0ca05bc2145a80f893fd5a6f5c2c6e2caa0c8b8cae44edeb909cd31497cfb823",
+    "results.log": "220846683083cfc7b958bd0cc6dec85521d4b8a03484f9c3a8c2d13f4d5440a8"
+  },
+  "transcript_sha256": "ce442abaae332347bbc25b2f36fe9fcf88aeb08564268f1921a5e957e13d0d12",
+  "observations": [
+    "Migration rollback, explicit apply, owner and repeat refusal verified.",
+    "Same order ID isolated across tenant dispatches. Six scope controls performed zero database work.",
+    "Commit acknowledged. Same backend had no tenant scope after return. Stale revision changed zero rows.",
+    "Post-write cancellation rolled back. Same backend had no tenant scope after return.",
+    "Owned container and volume removed; loopback port closed."
+  ],
+  "preparation": [
+    "Native WSL Git could not read Windows worktree links; setup changed to native WSL clones.",
+    "Native sparse-checkout preparation did not include the pinned SDK file. Stopped before the fixture.",
+    "Owned sparse-checkout continuation was stopped before build or fixture creation for the separate timing window.",
+    "Frozen source passed before commit. The exact committed source reran successfully in a new container."
+  ],
+  "scope": [
+    "Synthetic configured identity sources, discrete conditional update, and initial migration only.",
+    "No database throughput, overlapping transactions, external identity, HTTPS or deployed production behavior measured.",
+    "Commit acknowledgement faults were not injected."
+  ]
+}

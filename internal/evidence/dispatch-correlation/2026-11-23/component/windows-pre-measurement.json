@@ -1,0 +1,21 @@
+{
+  "status": "ready",
+  "engine": "5e92ac1c7fa1e150e7e97de6d68e94b31ffba053",
+  "sdk": "11.0.100",
+  "build": "locked Release",
+  "source": {
+    "DispatchCorrelationCost.csproj": "207d7651b5ec7036448c671bee405311480acf579fe58b074f5c0b88aef0e103",
+    "Program.cs": "061b788365befede5c703a4383a825d607e51d292802c9c50458376a3f9fe063",
+    "packages.lock.json": "ec96251ef37a290999778c23ed560d79265f122a9038ca7f2dead0d1180015d1",
+    "PROTOCOL.md": "153d96609537512af1ad0d38d9a7fe6631302e7fb1bc58f80d8edffbbe6a4550",
+    "run.py": "a785581a27aa60cb4bb4c9d7e86b87357f6ad8cbda97084f0ef28f7e0a028230",
+    "analyze.py": "6a98114e29826c05f58d9a2cda19d176a3cdd59b977dc1a265375389ac4dcc04"
+  },
+  "artifacts": {
+    "Cehpalon.Engine.Core.dll": "0879d25529dec3ba08e2917e65436e14d6d7b61e088936a5b561c2e36b3c8de5",
+    "DispatchCorrelationCost.deps.json": "25cfe9c2e33ba32b4d471b80662295bd2ed060ceecf1b5357f2312ef6f554ea9",
+    "DispatchCorrelationCost.dll": "706ff5677a6403034a5bb8e1f5d92e28b42231310bad325d0fc18b1b6e9a76d9",
+    "DispatchCorrelationCost.runtimeconfig.json": "7baaa10dc21f2a7cf009e76de09f1a2f706cdfb2139af15629791d7d2cb7fd4f"
+  },
+  "conformance_sha256": "8dc5fa420c3c6a37e7dbbe5e0b60038ccea1d17fcd62d7718621aaaf19a0f467"
+}
