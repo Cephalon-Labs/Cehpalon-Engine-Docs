@@ -1,0 +1,37 @@
+{
+  "engine_before": "887c529c5975e37bd53082896b56d7eff448dbbc",
+  "engine_after": "4dedaeec12a6ae1e0d0d9313d79aa5d62113e7fa",
+  "sdk": "11.0.100",
+  "scope": "Windows x64 same-thread allocated bytes for synchronous, in-memory, protected resource history reads. No timed benchmark, SQL or throughput claim.",
+  "measurement": [
+    {
+      "workload": "metadata",
+      "before_bytes_per_page": 53168.0,
+      "after_bytes_per_page": 13080.0,
+      "percent_reduction": 75.4
+    },
+    {
+      "workload": "one-field",
+      "before_bytes_per_page": 193968.0,
+      "after_bytes_per_page": 131480.0,
+      "percent_reduction": 32.22
+    },
+    {
+      "workload": "wide-policy",
+      "before_bytes_per_page": 2608422.25,
+      "after_bytes_per_page": 1149337.25,
+      "percent_reduction": 55.94
+    }
+  ],
+  "files_sha256": {
+    "after-allocations.json": "d6d9bfbe16ac3e1b9737d3fab368fe7ec33f3cd6c399db9124b797e42a3a936d",
+    "allocation-probe.cs.txt": "fa072a0eb5cc1fd331a8cb6c5c222884682e1bcdc9ed90aed9e0a71b690701a2",
+    "allocation-probe.csproj.txt": "73c8b4d6111528143481f6216bbc2f02bd44a283de58fa140b6195c053ece3ca",
+    "audit-contracts.json": "617b0ff01a9f1abc247c847ed3bacd1d52fe716f825acc4b95c57c068b5b5c77",
+    "before-allocations.json": "643c9ddcbddcdeb4154fdc6b4907830bf7c78e461e6925dcb4ace17c956aa0b3"
+  },
+  "engine_assembly_sha256": {
+    "before": "3b0205928ebf3d3e536e8c3b3ff3dc321c3e83e7cea2b144a27b75ed09da1fc8",
+    "after": "c758a04ae0e910deda467f3381261a5d20703ca594d9c09533115190bec80e5c"
+  }
+}

@@ -1,0 +1,41 @@
+[
+  {
+    "workload": "metadata",
+    "rows": 200,
+    "fieldRules": 0,
+    "repetitions": 32,
+    "allocated_bytes": [
+      418560,
+      418560,
+      418560,
+      418560,
+      418560
+    ]
+  },
+  {
+    "workload": "one-field",
+    "rows": 200,
+    "fieldRules": 1,
+    "repetitions": 32,
+    "allocated_bytes": [
+      4207360,
+      4207608,
+      4207360,
+      4207360,
+      4207608
+    ]
+  },
+  {
+    "workload": "wide-policy",
+    "rows": 200,
+    "fieldRules": 64,
+    "repetitions": 32,
+    "allocated_bytes": [
+      36873704,
+      36873704,
+      36778792,
+      36668904,
+      36668904
+    ]
+  }
+]

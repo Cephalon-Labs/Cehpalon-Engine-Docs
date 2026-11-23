@@ -1,0 +1,88 @@
+using Cehpalon.Engine.Core;
+using Cehpalon.Engine.Identity;
+using Cehpalon.Engine.Tenancy;
+using System.Text.Json;
+
+var fixture = new Fixture();
+var results = new List<object>();
+foreach (var sample in new[] { ("metadata", 0, TenantChangeAuditMode.MetadataOnly), ("one-field", 1, TenantChangeAuditMode.BeforeAfterSnapshots), ("wide-policy", 64, TenantChangeAuditMode.BeforeAfterSnapshots) })
+{
+    var fieldNames = Enumerable.Range(0, sample.Item2).Select(i => $"field-{i:D2}").ToArray();
+    var policy = new TenantChangeAuditPolicy(sample.Item3,
+        [new("document.update", "write", "document", fieldNames.Select((name, i) => new TenantChangeFieldRule(name, redact: i % 8 == 0)))]);
+    var before = TenantChangeValue.Text("before");
+    var after = TenantChangeValue.Text("after");
+    var records = Enumerable.Range(2, 200).Select(i =>
+        new TenantChangeAuditRecord(
+            new(new Guid(i, 0, 0, new byte[8]), Fixture.Principal, "Bearer", Fixture.Tenant,
+                "document.update", "write", "document", "entity", "acl", TenantChangeKind.Update),
+            Fixture.Stamp, sample.Item3, fieldNames.Reverse().Select(name => new TenantChangeField(name, before, after)))).ToArray();
+    var continuation = new TenantChangeAuditResourceCursor(Fixture.Tenant, "document", "entity", new Guid(201, 0, 0, new byte[8]));
+    var reader = new TenantChangeAuditResourceHistoryReader(new Source(new(records, continuation)), policy);
+    var query = new TenantChangeAuditResourceQuery("document", "entity", 200,
+        new(Fixture.Tenant, "document", "entity", new Guid(1, 0, 0, new byte[8])));
+    await fixture.Run(context =>
+    {
+        TenantChangeAuditResourcePage Read()
+        {
+            var pending = reader.ReadAsync(context, query);
+            if (!pending.IsCompletedSuccessfully) throw new InvalidOperationException("Allocation scope requires synchronous completion.");
+            return pending.Result;
+        }
+
+        var page = Read();
+        if (page.Entries.Count != 200 || !ReferenceEquals(page.NextCursor, continuation) ||
+            !page.Entries.Select(r => r.Receipt.ReceiptId).SequenceEqual(records.Select(r => r.Receipt.ReceiptId)) ||
+            page.Entries.Any(row => row.Mode != sample.Item3 || row.CapturedMode != sample.Item3 ||
+                !row.Fields.Select(f => f.Name).SequenceEqual(fieldNames.Reverse()) ||
+                row.Fields.Where((f,i) => f.Before.Kind != (((fieldNames.Length-1-i) % 8 == 0) ? TenantChangeValueKind.Redacted : TenantChangeValueKind.Text)).Any()))
+            throw new InvalidOperationException("Projection or page mismatch.");
+        for (var i = 0; i < 32; i++) GC.KeepAlive(Read());
+        var trials = new long[5];
+        for (var j = 0; j < trials.Length; j++)
+        {
+            var start = GC.GetAllocatedBytesForCurrentThread();
+            for (var i = 0; i < 32; i++) GC.KeepAlive(Read());
+            trials[j] = GC.GetAllocatedBytesForCurrentThread() - start;
+        }
+        results.Add(new { workload = sample.Item1, rows = 200, fieldRules = sample.Item2, repetitions = 32, allocated_bytes = trials });
+        return Task.CompletedTask;
+    });
+}
+Console.WriteLine(JsonSerializer.Serialize(results, new JsonSerializerOptions { WriteIndented = true }));
+
+sealed class Source(TenantChangeAuditResourcePage page) : ITenantChangeAuditResourceHistorySource
+{
+    public ValueTask<TenantChangeAuditResourcePage> ReadAsync(TenantId tenant, TenantChangeAuditResourceQuery query, CancellationToken token)
+        => ValueTask.FromResult(tenant.Equals(Fixture.Tenant) ? page : throw new InvalidOperationException());
+}
+sealed class Fixture : IIdentitySource, ITenantMembershipSource, IResourceScopeSource, ITenantAccessPolicy
+{
+    public static DateTimeOffset Stamp { get; } = DateTimeOffset.UnixEpoch.AddDays(500);
+    public static TenantId Tenant { get; } = new("A");
+    public static PrincipalId Principal { get; } = new("issuer", "alice");
+    public ValueTask<IdentitySnapshot?> ResolveAsync(CancellationToken token)
+        => ValueTask.FromResult<IdentitySnapshot?>(new(Principal,"Bearer",Stamp.AddMinutes(-1),Stamp.AddMinutes(10)));
+    public ValueTask<TenantMembershipSnapshot?> ResolveAsync(IdentitySnapshot identity, TenantId tenant, CancellationToken token)
+        => ValueTask.FromResult<TenantMembershipSnapshot?>(new(identity.Principal, tenant, true, Stamp.AddMinutes(-1), Stamp.AddMinutes(10), "member"));
+    public ValueTask<ResourceScopeSnapshot?> ResolveAsync(TenantId tenant, string kind, string id, CancellationToken token)
+        => ValueTask.FromResult<ResourceScopeSnapshot?>(new(tenant,kind,id,"acl"));
+    public ValueTask<bool> IsAllowedAsync(TenantAccessRequest request, CancellationToken token) => ValueTask.FromResult(true);
+    public async Task Run(Func<TenantOperationContext, Task> callback)
+    {
+        var registry = new TenantOperationRegistryBuilder().Register<string, bool>("trail.resource-history","read","audit-trail",x=>x,
+            x=>new(Tenant,x),()=>new Handler(callback)).Build();
+        var services = new TenantSecurityServices(this,new(["issuer"],["Bearer"]),this,this,TimeSpan.FromMinutes(1),this,new FixedClock());
+        var result = await new TenantOperationDispatcher(registry,services).DispatchAsync<string,bool>("trail.resource-history","tenant",new("allocation-probe"));
+        if (!result.IsSuccess) throw new InvalidOperationException("Fixture dispatcher rejected the probe.");
+    }
+    sealed class Handler(Func<TenantOperationContext, Task> callback) : ITenantOperationHandler<string,bool>
+    {
+        public async ValueTask<OperationResult<bool>> HandleAsync(string request, TenantOperationContext context, CancellationToken token)
+        { await callback(context); return OperationResult<bool>.Success(true); }
+    }
+    sealed class FixedClock : TimeProvider
+    {
+        public override DateTimeOffset GetUtcNow() => Stamp;
+    }
+}
