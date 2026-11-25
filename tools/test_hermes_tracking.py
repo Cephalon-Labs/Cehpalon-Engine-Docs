@@ -1,9 +1,11 @@
 import sqlite3
+import stat
 import tempfile
 import unittest
 from collections import Counter
 from contextlib import closing
 from pathlib import Path
+from types import SimpleNamespace
 from unittest.mock import patch
 
 import hermes_tracking as mirror
@@ -73,6 +75,25 @@ class HermesTrackingTest(unittest.TestCase):
             with patch.object(Path, 'is_symlink', lambda path: path == db or is_symlink(path)):
                 with self.assertRaises(ValueError):
                     mirror.read_board(home)
+
+    def test_board_path_rejects_reparse_metadata_before_opening_database(self):
+        with tempfile.TemporaryDirectory() as directory:
+            home = Path(directory).resolve()
+            board = mirror.board_directory(home)
+            board.mkdir(parents=True)
+            original_lstat = Path.lstat
+            for target in (board.parent.parent, board.parent, board):
+                def classified(path):
+                    if path == target:
+                        return SimpleNamespace(st_mode=stat.S_IFDIR,
+                                               st_file_attributes=stat.FILE_ATTRIBUTE_REPARSE_POINT)
+                    return original_lstat(path)
+
+                with self.subTest(path=target), patch.object(Path, 'lstat', classified):
+                    with patch.object(mirror.sqlite3, 'connect') as connect:
+                        with self.assertRaisesRegex(ValueError, 'Unexpected board path'):
+                            mirror.read_board(home)
+                        connect.assert_not_called()
 
     def test_subprocess_environment_pins_target_and_drops_worker_overrides(self):
         home = Path('/isolated')

@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import re
 import sqlite3
+import stat
 import subprocess
 import sys
 
@@ -126,10 +127,14 @@ def board_directory(home):
 def checked_database(home):
     directory = board_directory(home)
     for path in (directory.parent.parent, directory.parent, directory):
-        if path.is_symlink() or (path.exists() and not path.is_dir()):
+        try:
+            metadata = path.lstat()
+        except FileNotFoundError:
+            return None
+        # Windows directory junctions may have directory mode, not symlink mode.
+        if (not stat.S_ISDIR(metadata.st_mode)
+                or getattr(metadata, 'st_file_attributes', 0) & stat.FILE_ATTRIBUTE_REPARSE_POINT):
             raise ValueError(f'Unexpected board path: {path}')
-    if not directory.exists():
-        return None
     metadata, db = directory / 'board.json', directory / 'kanban.db'
     for path in (metadata, db):
         if path.is_symlink() or not path.is_file() or path.stat().st_nlink != 1:
