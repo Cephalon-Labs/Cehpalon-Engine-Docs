@@ -243,7 +243,14 @@ def main():
             target = parent / output.name
             if parent.is_relative_to(home):
                 raise ValueError('Capture must be outside the live Kanban root')
-            # Keep the original leaf so O_EXCL rejects even a dangling symlink.
+            # On Windows exclusive creation can follow a dangling symlink.
+            # Inspect the leaf itself before opening in the trusted output directory.
+            try:
+                target.lstat()
+            except FileNotFoundError:
+                pass
+            else:
+                raise FileExistsError(f'Capture output already exists: {target}')
             capture_rows(target, read_board(home))
             return
         env = write_env(home, os.environ)

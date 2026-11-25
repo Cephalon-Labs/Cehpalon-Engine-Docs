@@ -98,9 +98,10 @@ class HermesTrackingTest(unittest.TestCase):
             except (OSError, NotImplementedError):
                 self.skipTest('symlinks not available to this account')
             with patch('sys.argv', ['hermes_tracking', '--kanban-home', str(home),
-                                   '--capture-plan', str(output)]), patch.object(mirror, 'read_board', return_value=[]):
+                                   '--capture-plan', str(output)]), patch.object(mirror, 'read_board') as read_board:
                 with self.assertRaises(FileExistsError):
                     mirror.main()
+                read_board.assert_not_called()
             self.assertFalse(target.exists())
             self.assertTrue(output.is_symlink())
 
