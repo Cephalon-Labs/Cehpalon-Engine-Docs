@@ -1,5 +1,7 @@
 import sqlite3
 import stat
+import subprocess
+import sys
 import tempfile
 import unittest
 from collections import Counter
@@ -94,6 +96,30 @@ class HermesTrackingTest(unittest.TestCase):
                         with self.assertRaisesRegex(ValueError, 'Unexpected board path'):
                             mirror.read_board(home)
                         connect.assert_not_called()
+
+    @unittest.skipUnless(sys.platform == 'win32', 'requires Windows directory junctions')
+    def test_board_directory_rejects_real_windows_junction_before_sqlite(self):
+        for index in range(3):
+            with self.subTest(component=index), tempfile.TemporaryDirectory() as directory:
+                root = Path(directory).resolve()
+                home = root / 'home'
+                board = mirror.board_directory(home)
+                junction = (board.parent.parent, board.parent, board)[index]
+                junction.parent.mkdir(parents=True)
+                target = root / 'fixture'
+                target.mkdir()
+                subprocess.run(['cmd.exe', '/d', '/c', 'mklink', '/J',
+                                str(junction.relative_to(root)), target.name],
+                               cwd=root, check=True, capture_output=True, timeout=15)
+                try:
+                    self.assertEqual(junction.lstat().st_reparse_tag, stat.IO_REPARSE_TAG_MOUNT_POINT)
+                    with patch.object(mirror.sqlite3, 'connect') as connect:
+                        with self.assertRaisesRegex(ValueError, 'Unexpected board path'):
+                            mirror.read_board(home)
+                        connect.assert_not_called()
+                finally:
+                    junction.rmdir()
+                self.assertTrue(target.is_dir())
 
     def test_subprocess_environment_pins_target_and_drops_worker_overrides(self):
         home = Path('/isolated')
