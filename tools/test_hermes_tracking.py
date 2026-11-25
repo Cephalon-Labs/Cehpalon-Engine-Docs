@@ -2,6 +2,7 @@ import sqlite3
 import tempfile
 import unittest
 from collections import Counter
+from contextlib import closing
 from pathlib import Path
 from unittest.mock import patch
 
@@ -54,17 +55,24 @@ class HermesTrackingTest(unittest.TestCase):
             meta.write_text(f'{{"slug":"{mirror.BOARD}","archived":false}}')
             with self.assertRaises(ValueError):
                 mirror.read_board(home)
-            with sqlite3.connect(db) as conn:
+            with closing(sqlite3.connect(db)) as conn, conn:
                 conn.execute('CREATE TABLE tasks (id, created_by, title, body, assignee, status)')
                 conn.execute("INSERT INTO tasks VALUES ('task','local','title','body',NULL,'todo')")
             before = db.read_bytes()
             self.assertEqual(mirror.read_board(home)[0]['status'], 'todo')
             self.assertEqual(db.read_bytes(), before)
+            # A second name for the database must be rejected. A hard link
+            # exercises this with no Windows symlink privilege requirement.
             other = home / 'other.db'
-            db.rename(other)
-            db.symlink_to(other)
+            other.hardlink_to(db)
             with self.assertRaises(ValueError):
                 mirror.read_board(home)
+
+            other.unlink()
+            is_symlink = Path.is_symlink
+            with patch.object(Path, 'is_symlink', lambda path: path == db or is_symlink(path)):
+                with self.assertRaises(ValueError):
+                    mirror.read_board(home)
 
     def test_subprocess_environment_pins_target_and_drops_worker_overrides(self):
         home = Path('/isolated')
