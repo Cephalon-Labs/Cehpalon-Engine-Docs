@@ -86,6 +86,96 @@ class HermesTrackingTest(unittest.TestCase):
                                'OTHER': 'keep'})
 
 
+    def test_capture_rejects_dangling_symlink(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory).resolve()
+            home = root / 'live'
+            home.mkdir()
+            target = root / 'missing.json'
+            output = root / 'capture.json'
+            try:
+                output.symlink_to(target)
+            except (OSError, NotImplementedError):
+                self.skipTest('symlinks not available to this account')
+            with patch('sys.argv', ['hermes_tracking', '--kanban-home', str(home),
+                                   '--capture-plan', str(output)]), patch.object(mirror, 'read_board', return_value=[]):
+                with self.assertRaises(FileExistsError):
+                    mirror.main()
+            self.assertFalse(target.exists())
+            self.assertTrue(output.is_symlink())
+
+    def test_board_snapshot_reads_only_committed_wal_rows(self):
+        with tempfile.TemporaryDirectory() as directory:
+            home = Path(directory).resolve()
+            board = mirror.board_directory(home)
+            board.mkdir(parents=True)
+            (board / 'board.json').write_text(f'{{"slug":"{mirror.BOARD}","archived":false}}')
+            db = board / 'kanban.db'
+            with closing(sqlite3.connect(db)) as writer:
+                self.assertEqual(writer.execute('PRAGMA journal_mode=WAL').fetchone()[0], 'wal')
+                writer.execute('PRAGMA wal_autocheckpoint=0')
+                writer.execute('CREATE TABLE tasks (id, created_by, title, body, assignee, status)')
+                writer.execute('PRAGMA wal_checkpoint(TRUNCATE)').fetchone()
+                before = db.read_bytes()
+                writer.execute("INSERT INTO tasks VALUES ('t_first','local','committed','body',NULL,'blocked')")
+                writer.commit()
+                writer.execute("UPDATE tasks SET title='uncommitted'")
+                self.assertEqual(mirror.read_board(home)[0]['title'], 'committed')
+                self.assertEqual(db.read_bytes(), before)
+
+    def test_plan_snapshot_uses_only_detached_rows(self):
+        card = mirror.Card('One', '<!-- cephalon-engine-mirror:issue:1 -->\n')
+        rows = [dict(id='t_first', created_by=mirror.OWNER, title=card.title, body=card.body,
+                     assignee=None, status='blocked')]
+        with tempfile.TemporaryDirectory() as home, patch.object(mirror, 'load', return_value=(
+                {'observed_at_utc': 'test'}, {'issue:1': card})), patch.object(
+                mirror, 'read_board', side_effect=AssertionError('live board access')):
+            path = Path(home) / 'rows.json'
+            mirror.capture_rows(path, rows)
+            with self.assertRaises(FileExistsError):
+                mirror.capture_rows(path, [])
+            before = path.read_bytes()
+            with patch('sys.argv', ['hermes_tracking', '--plan-snapshot', str(path)]), patch('builtins.print') as output:
+                mirror.main()
+            self.assertIn('"edit": 0', output.call_args.args[0])
+            self.assertEqual(path.read_bytes(), before)
+
+    def test_guard_rejects_stale_row_at_update_and_rolls_back_audit(self):
+        row = dict(id='t_first', created_by=mirror.OWNER, title='Old', body='old body',
+                   assignee=None, status='blocked')
+        with tempfile.TemporaryDirectory() as directory:
+            db = Path(directory).resolve() / 'kanban.db'
+            with closing(sqlite3.connect(db)) as writer, writer:
+                writer.execute('CREATE TABLE tasks (id, created_by, title, body, assignee, status)')
+                writer.execute('CREATE TABLE events (kind)')
+                writer.execute('INSERT INTO tasks VALUES (?, ?, ?, ?, ?, ?)', tuple(row.values()))
+
+            def hermes_edit(conn, task_id, *, title, body, board):
+                self.assertEqual(board, mirror.BOARD)
+                with conn:
+                    conn.execute('BEGIN IMMEDIATE')
+                    conn.execute("INSERT INTO events VALUES ('edited')")
+                    conn.execute('UPDATE tasks SET title=?, body=? WHERE id=?', (title, body, task_id))
+                return True
+
+            def racing_edit(*args, **kwargs):
+                with closing(sqlite3.connect(db)) as writer, writer:
+                    writer.execute("UPDATE tasks SET assignee='manual'")
+                return hermes_edit(*args, **kwargs)
+
+            card = mirror.Card('New', 'new body')
+            with self.assertRaisesRegex(ValueError, 'Mirror changed'):
+                mirror.edit_card(db, row, card, racing_edit)
+            with closing(sqlite3.connect(db)) as writer, writer:
+                self.assertEqual(writer.execute('SELECT title, assignee FROM tasks').fetchone(), ('Old', 'manual'))
+                self.assertEqual(writer.execute('SELECT * FROM events').fetchall(), [])
+                writer.execute('UPDATE tasks SET assignee=NULL')
+            mirror.edit_card(db, row, card, hermes_edit)
+            with closing(sqlite3.connect(db)) as reader:
+                self.assertEqual(reader.execute('SELECT title, body FROM tasks').fetchone(), ('New', 'new body'))
+                self.assertEqual(reader.execute('SELECT * FROM events').fetchall(), [('edited',)])
+                self.assertEqual(reader.execute("SELECT name FROM sqlite_master WHERE type='trigger'").fetchall(), [])
+
     def test_apply_stops_before_second_write_if_first_does_not_persist(self):
         cards = {f'issue:{n}': mirror.Card(str(n), f'<!-- cephalon-engine-mirror:issue:{n} -->\n')
                  for n in (1, 2)}
@@ -104,10 +194,12 @@ class HermesTrackingTest(unittest.TestCase):
         with patch.object(mirror, 'read_board', side_effect=[[row], [dict(row, title='Manual edit')], [row]]), patch.object(
                 mirror, 'load', return_value=({'observed_at_utc': 'test'}, {'issue:1': card})), tempfile.TemporaryDirectory() as home, patch(
                 'sys.argv', ['hermes_tracking', '--apply', '--kanban-home', home]), patch.object(
-                mirror.subprocess, 'check_output', return_value='') as cli:
-            with self.assertRaises(ValueError):
+                mirror.subprocess, 'check_output', return_value='') as cli, patch.object(
+                mirror, 'hermes_editor'), patch.object(mirror, 'edit_card') as edit:
+            with self.assertRaisesRegex(ValueError, 'Mirror changed during apply'):
                 mirror.main()
-        self.assertEqual(cli.call_count, 0)
+        cli.assert_not_called()
+        edit.assert_not_called()
 
 
     def test_noop_apply_rejects_replacement_card_at_final_readback(self):
