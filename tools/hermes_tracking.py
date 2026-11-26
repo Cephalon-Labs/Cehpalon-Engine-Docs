@@ -8,6 +8,7 @@ import os
 from pathlib import Path
 import re
 import sqlite3
+import stat
 import subprocess
 import sys
 
@@ -27,6 +28,8 @@ REFERENCES = (
     ('Shared Engine governance skill', 'skills/cehpalon-engine/SKILL.md'),
 )
 MARKER = re.compile(r'<!-- cephalon-engine-mirror:(issue:[1-9][0-9]*|milestone:[1-9][0-9]*|docs:engine) -->\n')
+FIELDS = ('id', 'created_by', 'title', 'body', 'assignee', 'status')
+STALE_EDIT = 'cephalon mirror precondition failed'
 
 
 @dataclass(frozen=True)
@@ -121,13 +124,17 @@ def board_directory(home):
     return home / 'kanban' / 'boards' / BOARD
 
 
-def read_board(home):
+def checked_database(home):
     directory = board_directory(home)
     for path in (directory.parent.parent, directory.parent, directory):
-        if path.is_symlink() or (path.exists() and not path.is_dir()):
+        try:
+            metadata = path.lstat()
+        except FileNotFoundError:
+            return None
+        # Windows directory junctions may have directory mode, not symlink mode.
+        if (not stat.S_ISDIR(metadata.st_mode)
+                or getattr(metadata, 'st_file_attributes', 0) & stat.FILE_ATTRIBUTE_REPARSE_POINT):
             raise ValueError(f'Unexpected board path: {path}')
-    if not directory.exists():
-        return None
     metadata, db = directory / 'board.json', directory / 'kanban.db'
     for path in (metadata, db):
         if path.is_symlink() or not path.is_file() or path.stat().st_nlink != 1:
@@ -139,11 +146,73 @@ def read_board(home):
     meta = json.loads(metadata.read_text(encoding='utf-8'))
     if not isinstance(meta, dict) or meta.get('slug') != BOARD or meta.get('archived') is not False:
         raise ValueError('Unexpected or archived mirror board metadata')
-    # CLI `list` may promote tasks. Read all statuses without schema init or dispatch.
+    return db
+
+
+def read_board(home):
+    db = checked_database(home)
+    if db is None:
+        return None
+    # One SELECT observes a consistent committed view, including WAL. SQLite
+    # may still touch coordination sidecars; strict planning uses detached rows.
     with closing(sqlite3.connect(db.as_uri() + '?mode=ro', uri=True)) as conn:
         conn.row_factory = sqlite3.Row
         return [dict(row) for row in conn.execute(
-            'SELECT id, created_by, title, body, assignee, status FROM tasks ORDER BY id')]
+            f"SELECT {', '.join(FIELDS)} FROM tasks ORDER BY id")]
+
+
+def capture_rows(path, rows):
+    payload = json.dumps(dict(format=1, board=BOARD, rows=rows), ensure_ascii=False)
+    fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600)
+    with os.fdopen(fd, 'w', encoding='utf-8') as handle:
+        handle.write(payload + '\n')
+
+
+def load_rows(path):
+    payload = json.loads(path.read_text(encoding='utf-8'))
+    if (not isinstance(payload, dict) or payload.get('format') != 1
+            or payload.get('board') != BOARD or 'rows' not in payload):
+        raise ValueError('Not a mirror planning snapshot')
+    rows = payload['rows']
+    if rows is not None and (not isinstance(rows, list) or any(
+            not isinstance(row, dict) or row.keys() != set(FIELDS)
+            or any(not isinstance(row[key], str) for key in FIELDS if key != 'assignee')
+            or (row['assignee'] is not None and not isinstance(row['assignee'], str))
+            for row in rows)):
+        raise ValueError('Malformed mirror planning rows')
+    return rows
+
+
+def hermes_editor():
+    try:
+        from hermes_cli.kanban_db import edit_task
+    except ImportError as error:
+        raise ValueError('Mirror edits need the Python interpreter from the Hermes installation') from error
+    return edit_task
+
+
+def edit_card(db, expected, card, edit_task):
+    # A TEMP trigger is scoped to this connection. Hermes owns the durable
+    # UPDATE, write fence, transaction, audit event and post-commit hooks.
+    # mode=rw refuses to create a DB; do not run Hermes schema initialization.
+    with closing(sqlite3.connect(db.as_uri() + '?mode=rw', uri=True, isolation_level=None)) as conn:
+        conn.row_factory = sqlite3.Row
+        conn.execute('PRAGMA foreign_keys=ON')
+        conn.execute(f"CREATE TEMP TABLE mirror_expected ({', '.join(FIELDS)})")
+        conn.execute('INSERT INTO mirror_expected VALUES (?, ?, ?, ?, ?, ?)',
+                     tuple(expected[key] for key in FIELDS))
+        match = ' AND '.join(f'OLD.{key} IS e.{key} COLLATE BINARY' for key in FIELDS)
+        conn.execute(f'''CREATE TEMP TRIGGER mirror_expected_update BEFORE UPDATE ON main.tasks
+                         WHEN NOT EXISTS (SELECT 1 FROM mirror_expected AS e WHERE {match})
+                         BEGIN SELECT RAISE(ABORT, '{STALE_EDIT}'); END''')
+        try:
+            ok = edit_task(conn, expected['id'], title=card.title, body=card.body, board=BOARD)
+        except sqlite3.IntegrityError as error:
+            if str(error) != STALE_EDIT:
+                raise
+            ok = False
+        if not ok:
+            raise ValueError('Mirror changed during edit; read back before retrying')
 
 
 def write_env(home, environ):
@@ -156,13 +225,40 @@ def write_env(home, environ):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--hermes', default='hermes', help='Hermes executable')
-    parser.add_argument('--kanban-home', required=True, type=Path, help='Shared Hermes Kanban root (not a profile directory)')
-    parser.add_argument('--apply', action='store_true', help='Write only to the dedicated Hermes mirror board')
+    parser.add_argument('--kanban-home', type=Path, help='Shared Hermes Kanban root (not a profile directory)')
+    modes = parser.add_mutually_exclusive_group(required=True)
+    modes.add_argument('--apply', action='store_true', help='Write only to the dedicated Hermes mirror board')
+    modes.add_argument('--live-plan', action='store_true', help='Plan from a live read (may touch SQLite sidecars)')
+    modes.add_argument('--capture-plan', type=Path, metavar='PATH', help='Capture live committed rows to a new private file')
+    modes.add_argument('--plan-snapshot', type=Path, metavar='PATH', help='Plan from detached rows; no live board access')
     args = parser.parse_args()
-    home = args.kanban_home.expanduser().resolve(strict=True)
-    if not home.is_dir():
-        raise ValueError('Kanban root must be an existing directory')
-    env = write_env(home, os.environ)
+    if args.plan_snapshot is not None:
+        if args.kanban_home is not None:
+            parser.error('--plan-snapshot does not use --kanban-home')
+        home = None
+    else:
+        if args.kanban_home is None:
+            parser.error('--kanban-home is required for live operations')
+        home = args.kanban_home.expanduser().resolve(strict=True)
+        if not home.is_dir():
+            raise ValueError('Kanban root must be an existing directory')
+        if args.capture_plan is not None:
+            output = args.capture_plan.expanduser()
+            parent = output.parent.resolve(strict=True)
+            target = parent / output.name
+            if parent.is_relative_to(home):
+                raise ValueError('Capture must be outside the live Kanban root')
+            # On Windows exclusive creation can follow a dangling symlink.
+            # Inspect the leaf itself before opening in the trusted output directory.
+            try:
+                target.lstat()
+            except FileNotFoundError:
+                pass
+            else:
+                raise FileExistsError(f'Capture output already exists: {target}')
+            capture_rows(target, read_board(home))
+            return
+        env = write_env(home, os.environ)
 
     def call(*argv, input=None):
         return subprocess.check_output([args.hermes, 'kanban', *argv], input=input,
@@ -175,14 +271,16 @@ def main():
     root = Path(__file__).resolve().parents[1]
     snapshot, cards = load(root)
     # Scope: one checkout/controller; prevent concurrent cooperating applies.
-    lock = home / f'.{BOARD}.lock'
     if args.apply:
+        lock = home / f'.{BOARD}.lock'
         with os.fdopen(os.open(lock, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o600), 'w') as handle:
             handle.write(f'{os.getpid()}\n')
     try:
-        rows = read_board(home)
+        rows = (load_rows(args.plan_snapshot.expanduser()) if args.plan_snapshot is not None
+                else read_board(home))
         ops = plan(cards, rows or [])
         if args.apply:
+            editor = hermes_editor() if any(op == 'edit' for op, _, _ in ops) else None
             if rows is None:
                 call('boards', 'create', BOARD, '--name', 'Cephalon Engine — reference mirror',
                      '--description', 'Project 4 snapshot references only. Not an execution board. Do not assign or dispatch.')
@@ -198,7 +296,10 @@ def main():
                           '--idempotency-key', f'{REPO}:{PROJECT_ID}:{key}', '--body-file', '-',
                           '--json', '--', card.title, input=card.body)
                 else:
-                    board('edit', f'--title={card.title}', f'--body={card.body}', '--', task_id)
+                    db = checked_database(home)
+                    if db is None:
+                        raise ValueError('Mirror disappeared before edit')
+                    edit_card(db, next(row for row in rows if row['id'] == task_id), card, editor)
                 current = read_board(home)
                 if current is None:
                     raise ValueError('Mirror disappeared after write')
@@ -219,7 +320,9 @@ def main():
             if final_rows is None or final_rows != rows or plan(cards, final_rows):
                 raise ValueError('Hermes final readback does not match the verified cards')
             rows = final_rows
-        report = dict(board=BOARD, kanban_home=str(home), observed_at=snapshot['observed_at_utc'],
+        report = dict(board=BOARD, kanban_home=str(home) if home is not None else None,
+                      plan_snapshot=str(args.plan_snapshot) if args.plan_snapshot is not None else None,
+                      observed_at=snapshot['observed_at_utc'],
                       desired=len(cards), create=sum(op[0] == 'create' for op in ops),
                       edit=sum(op[0] == 'edit' for op in ops), applied=args.apply)
         if args.apply:
